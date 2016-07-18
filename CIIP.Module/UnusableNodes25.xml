@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="客户关系">
+        <Items Id="Items">
+          <Item Id="往来单位">
+            <Items Id="Items">
+              <Node Id="供应商" UnusableNodeName="ListViewCriteriaNavigationItem" Criteria="供应商" ViewId="往来单位_ListView" Caption="供应商" Index="3" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="技术支持">
+        <Items Id="Items">
+          <Item Id="系统菜单">
+            <Items Id="Items">
+              <Item Id="起始页" ViewId="起始页" />
+            </Items>
+          </Item>
+          <Item Id="审批流程">
+            <Items Id="Items">
+              <Item Id="AdmiralXpoStateMachine_ListView" ViewId="AdmiralXpoStateMachine_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <BOModel Id="BOModel">
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.往来单位" ImageName="ActiveCustomersList" />
+  </BOModel>
+  <Views Id="Views">
+    <DetailView Id="AdmiralXpoState_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="AdmiralXpoState" ShowCaption="False">
+              <LayoutGroup Id="AdmiralXpoState_col1">
+                <LayoutItem Id="Caption" ViewItem="Caption" Index="1" />
+                <LayoutItem Id="Height" Removed="True" />
+                <LayoutItem Id="X" Removed="True" />
+                <LayoutItem Id="Y" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="AdmiralXpoState_col2">
+                <LayoutItem Id="Caption" Removed="True" />
+                <LayoutItem Id="Width" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="AdmiralXpoStateMachine_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="TargetObjectType" AllowEdit="False" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tab">
+            <LayoutGroup Id="Designer" Caption="设计器" Index="0">
+              <LayoutItem Id="Flow" ShowCaption="False" />
+            </LayoutGroup>
+            <LayoutGroup Id="BaseInfo" Caption="信息" Index="1">
+              <LayoutGroup Id="AdmiralXpoStateMachine">
+                <LayoutGroup Id="AdmiralXpoStateMachine_col1">
+                  <LayoutItem Id="Name" Index="0" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="AdmiralXpoTransition_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="SourceState" AllowEdit="False" />
+        <PropertyEditor Id="TargetState" AllowEdit="False" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="AdmiralXpoTransition" ShowCaption="False" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="起始页" ClassName="IMatrix.ERP.Module.BusinessObjects.SYS.NavigationMenu" Caption="起始页" AllowDelete="False" AllowEdit="False" AllowNew="False">
+      <Items Id="Items">
+        <PropertyEditor Id="Actions" PropertyName="Actions" View="NavigationMenu_Actions_ListView" />
+        <PropertyEditor Id="Menu" PropertyName="Menu" />
+        <PropertyEditor Id="Name" PropertyName="Name" />
+        <PropertyEditor Id="Nodes" PropertyName="Nodes" View="NavigationMenu_Nodes_ListView" />
+        <PropertyEditor Id="RadialMenu" PropertyName="RadialMenu" />
+      </Items>
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="流程菜单" Index="0" Caption="流程菜单">
+            <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" />
+          </LayoutGroup>
+          <LayoutGroup Id="辐射菜单" Index="1">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="行政区域_ListView_Grid" ClassName="IMatrix.ERP.Module.BusinessObjects.行政区域" MasterDetailMode="ListViewAndDetailView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="名称" PropertyName="名称" Width="400" SortIndex="0" SortOrder="Ascending" Index="0" />
+        <ColumnInfo Id="级别" PropertyName="级别" Width="50" Index="1" />
+        <ColumnInfo Id="上级" PropertyName="上级" Width="70" Index="2" />
+      </Columns>
+      <Variants Id="Variants">
+        <Variant Id="行政区域-列表结构" ViewID="行政区域_ListView_Grid" Caption="行政区域-列表结构" />
+        <Variant Id="行政区域-树形结构" ViewID="行政区域_ListView" Caption="行政区域-树形结构" />
+      </Variants>
+    </ListView>
+    <DetailView Id="BusinessObject_DetailView_BOLogic" ClassName="IMatrix.ERP.Module.BusinessObjects.SYS.BusinessObject">
+      <Items Id="Items">
+        <PropertyEditor Id="Base" PropertyName="Base" />
+        <PropertyEditor Id="CanInherits" PropertyName="CanInherits" />
+        <PropertyEditor Id="Caption" PropertyName="Caption" />
+        <PropertyEditor Id="Category" PropertyName="Category" />
+        <PropertyEditor Id="CollectionProperties" PropertyName="CollectionProperties" View="BusinessObject_CollectionProperties_ListView" />
+        <PropertyEditor Id="Description" PropertyName="Description" />
+        <PropertyEditor Id="GenericParameters" PropertyName="GenericParameters" View="BusinessObject_GenericParameters_ListView" />
+        <PropertyEditor Id="IsAbstract" PropertyName="IsAbstract" />
+        <PropertyEditor Id="IsCloneable" PropertyName="IsCloneable" />
+        <PropertyEditor Id="IsCreatableItem" PropertyName="IsCreatableItem" />
+        <PropertyEditor Id="IsPersistent" PropertyName="IsPersistent" />
+        <PropertyEditor Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" />
+        <PropertyEditor Id="IsVisibileInReports" PropertyName="IsVisibileInReports" />
+        <PropertyEditor Id="Methods" PropertyName="Methods" />
+        <PropertyEditor Id="Properties" PropertyName="Properties" View="BusinessObject_Properties_ListView" />
+        <PropertyEditor Id="创建时间" PropertyName="创建时间" />
+        <PropertyEditor Id="创建者" PropertyName="创建者" />
+        <PropertyEditor Id="名称" PropertyName="名称" AllowEdit="False" />
+        <PropertyEditor Id="修改时间" PropertyName="修改时间" />
+        <PropertyEditor Id="修改者" PropertyName="修改者" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False">
+          <LayoutItem Id="名称" ViewItem="名称" Index="0" />
+          <LayoutItem Id="Methods" ViewItem="Methods" ShowCaption="False" Index="1" CaptionLocation="Top" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="行政区域_ListView">
+      <Variants Id="Variants">
+        <Variant Id="行政区域-列表结构" ViewID="行政区域_ListView_Grid" Caption="行政区域-列表结构" />
+      </Variants>
+    </ListView>
+  </Views>
+</Application>

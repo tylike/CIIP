@@ -1,0 +1,19 @@
+13.07.16 20:41:43.471	================================================================================
+13.07.16 20:41:43.481	Trace Log for CIIP.Win.EXE is started
+13.07.16 20:41:43.482	================================================================================
+13.07.16 20:41:43.483	System Environment
+	OS Version: Microsoft Windows NT 6.2.9200.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+
+	CLR Version: 4.0.30319.42000
+	eXpressApp Version: 15.2.9.0
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=True
+	Languages=zh-CN
+	SafeMode=trueoo
+13.07.16 20:41:43.484	Initialize application
+=======================
+13.07.16 20:41:43.485		Command line arguments: 
+		C:\dev\IMatrix.ERP\IMatrix.ERP\CIIP.Win\bin\Debug\CIIP.Win.EXE

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Admiral.StateMachine" Logo="ExpressAppLogo">
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="AdmiralXpoStateMachine_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="AdmiralXpoStateMachine" Removed="True">
+              <LayoutGroup Id="AdmiralXpoStateMachine_col1">
+                <LayoutItem Id="Flow" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="States_Group" Removed="True" />
+          <TabbedGroup Id="Tab" IsNewNode="True">
+            <LayoutGroup Id="BaseInfo" Index="0" IsNewNode="True">
+              <LayoutGroup Id="AdmiralXpoStateMachine" Index="0" Direction="Horizontal" Caption="Admiral Xpo State Machine" ShowCaption="True" IsNewNode="True">
+                <LayoutGroup Id="AdmiralXpoStateMachine_col1" Index="0" ShowCaption="False" IsNewNode="True">
+                  <LayoutItem Id="Active" ViewItem="Active" ShowCaption="" Index="1" IsNewNode="True" />
+                  <LayoutItem Id="ExpandActionsInDetailView" ViewItem="ExpandActionsInDetailView" ShowCaption="" Index="2" IsNewNode="True" />
+                  <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="3" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="AdmiralXpoStateMachine_col2" Index="1" ShowCaption="False" IsNewNode="True">
+                  <LayoutItem Id="StartState" ViewItem="StartState" ShowCaption="" Index="0" IsNewNode="True" />
+                  <LayoutItem Id="StatePropertyName" ViewItem="StatePropertyName" ShowCaption="" Index="1" IsNewNode="True" />
+                  <LayoutItem Id="TargetObjectType" ViewItem="TargetObjectType" ShowCaption="" Index="2" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="States_Group" Index="1" Direction="Horizontal" ShowCaption="True" IsNewNode="True">
+                <LayoutItem Id="States" ViewItem="States" ShowCaption="" Index="0" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Designer" Index="1" IsNewNode="True">
+              <LayoutItem Id="Flow" ViewItem="Flow" ShowCaption="" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

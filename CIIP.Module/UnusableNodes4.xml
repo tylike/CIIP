@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="销售订单_Items_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="单位" Index="1" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

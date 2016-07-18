@@ -1,0 +1,856 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="商信互联企业信息管理平台" Logo="ExpressAppLogo">
+  <ActionDesign>
+    <Actions>
+      <Action Id="BindAnalysisData" Caption="绑定数据" />
+      <Action Id="Cancel" Caption="取消" />
+      <Action Id="ChangeStateAction" Caption="改变状态" />
+      <Action Id="ChangeVariant" Caption="视图" />
+      <Action Id="Delete" Caption="删除" />
+      <Action Id="DialogCancel" Caption="取消" />
+      <Action Id="DialogClose" Caption="关闭" />
+      <Action Id="FlowToNext" ImageName="BO_StateMachine">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="Entry 1" ImageName="Action_Debug_Stop" />
+          <ChoiceActionItem Id="Entry 2" ImageName="Action_ModelDifferences_Reset" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="Link" Caption="链接" />
+      <Action Id="Logoff" Caption="退出" />
+      <Action Id="Logon" Caption="登陆" />
+      <Action Id="NavigateBack" Caption="后退" />
+      <Action Id="NavigateForward" Caption="向前" />
+      <Action Id="New" Caption="新建" />
+      <Action Id="NextObject" Caption="下一个" />
+      <Action Id="PreviewReportV2" Caption="预览" />
+      <Action Id="PreviousObject" Caption="上一个" />
+      <Action Id="Refresh" Caption="刷新" />
+      <Action Id="RefreshNotifications" Caption="刷新" />
+      <Action Id="ReportViewerDialogControllerV2_Close" Caption="关闭" />
+      <Action Id="ResetViewSettings" Caption="重置设置" />
+      <Action Id="RuntimeListViewSetup" ImageName="Action_Copy_CellValue" />
+      <Action Id="Save" Caption="保存" />
+      <Action Id="SaveAndClose" Caption="保存关闭" />
+      <Action Id="SaveAndNew" Caption="保存新建" />
+      <Action Id="ShowAllContexts" Caption="验证" />
+      <Action Id="ShowBusinessObjectLogic" ImageName="whitix" />
+      <Action Id="ShowInReportV2" Caption="显示报表" />
+      <Action Id="ShowLayout" ImageName="ModelEditor_Action_Modules" />
+      <Action Id="ShowNavigationItem" Caption="导航" />
+      <Action Id="ShowPartialLogic" ImageName="logic" />
+      <Action Id="UnbindAnalysisData" Caption="取消绑定" />
+      <Action Id="Unlink" Caption="取消链接" />
+      <Action Id="更新模型" ImageName="ModelEditor_DashboardView" />
+      <Action Id="显示流程" ImageName="Action_Workflow_ShowWorkflowInstances" />
+      <Action Id="状态转换设计" ImageName="BO_StateMachine" Caption="状态转换" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessForm" ImageName="ModelEditor_Views" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessModule" ImageName="module" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObject" ImageName="businessModel" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObjectPartialLogic" ImageName="logic" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.NameSpace" ImageName="BO_Folder" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.RuntimeController" ImageName="ModelEditor_Controllers" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.SimpleType" ImageName="PG_Class" />
+    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
+      <OwnMembers>
+        <Member Name="Password" Caption="密码" />
+        <Member Name="UserName" Caption="用户" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="任务日历" />
+    <Class Name="常用基类.单据" ImageName="order" />
+  </BOModel>
+  <NavigationItems StartupNavigationItem="起始页">
+    <Items>
+      <Item Id="客户关系" Index="0" ImageName="relationship" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="市场营销" Index="0" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="销售报价" Index="1" ViewId="销售报价_ListView" AutoGenerate="True" ChildItemsDisplayStyle="List" IsNewNode="True" />
+          <Item Id="销售订单" Index="2" ChildItemsDisplayStyle="List" AutoGenerate="True" ViewId="销售订单_ListView" IsNewNode="True" />
+          <Item Id="销售合同" Index="3" ViewId="销售合同_ListView" AutoGenerate="True" ChildItemsDisplayStyle="List" IsNewNode="True" />
+          <Item Id="往来单位" Index="4" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="本周新增" Index="0" Caption="本月新增客户" ViewId="往来单位_ListView" Criteria="客户 &amp;&amp; IsThisMonth(创建时间)" IsNewNode="True" />
+              <Item Id="本月新增供应商" ViewId="往来单位_ListView" Caption="本月新增供应商" AutoGenerate="False" Criteria="供应商 &amp;&amp; IsThisMonth(创建时间)" Index="1" IsNewNode="True" />
+              <Item Id="客户信息" Criteria="客户" ViewId="往来单位_ListView" Caption="客户信息" Index="2" IsNewNode="True" />
+              <Item Id="往来单位_ListView" ViewId="往来单位_ListView" ObjectKey="" Index="5" IsNewNode="True" />
+              <Item Id="销售区域_ListView" ViewId="销售区域_ListView" ObjectKey="" Index="7" IsNewNode="True" />
+              <Item Id="地址_ListView" ViewId="地址_ListView" ObjectKey="" Index="8" IsNewNode="True" />
+              <Item Id="地址类型_ListView" ViewId="地址类型_ListView" ObjectKey="" Index="9" IsNewNode="True" />
+              <Item Id="行政区域_ListView" ViewId="行政区域_ListView" ObjectKey="" Index="10" IsNewNode="True" />
+              <Item Id="职位_ListView" ViewId="职位_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="销售计划" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="采购管理" Index="1" ImageName="BO_Order_Item" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="采购计划" Index="0" IsNewNode="True" />
+          <Item Id="采购申请" Index="1" IsNewNode="True" />
+          <Item Id="采购询价" Index="2" IsNewNode="True" />
+          <Item Id="采购订单" Index="3" IsNewNode="True" />
+          <Item Id="采购合同" Index="4" IsNewNode="True" />
+          <Item Id="采购到货" Index="5" IsNewNode="True" />
+          <Item Id="采购入库" Index="6" IsNewNode="True" />
+          <Item Id="采购退货" Index="7" IsNewNode="True" />
+          <Item Id="退货出库" Index="8" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="销售管理" Index="2" ImageName="BO_Sale" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="销售计划" Index="0" IsNewNode="True" />
+          <Item Id="销售申请" Index="1" IsNewNode="True" />
+          <Item Id="销售报价" Index="2" IsNewNode="True" />
+          <Item Id="销售订单" Index="3" IsNewNode="True" />
+          <Item Id="销售合同" Index="4" IsNewNode="True" />
+          <Item Id="退货入库" Index="5" IsNewNode="True" />
+          <Item Id="销售发货" Index="6" IsNewNode="True" />
+          <Item Id="销售退货" Index="7" IsNewNode="True" />
+          <Item Id="销售出库" Index="8" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="财务管理" Index="3" ImageName="BO_Sale_v92" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="采购付款" Index="0" IsNewNode="True" />
+          <Item Id="采购退款" Index="1" IsNewNode="True" />
+          <Item Id="销售退款" Index="2" IsNewNode="True" />
+          <Item Id="销售收款" Index="3" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="售后服务" Index="4" ImageName="CustomerServices" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="客服记录" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Caption="数据分析" Index="5" ImageName="Action_Chart_ShowDesigner">
+        <Items>
+          <Item Id="Analysis_ListView" Removed="True" />
+          <Item Id="Dashboard" IsNewNode="True" />
+          <Item Id="ReportsV2" Removed="True" />
+          <Item Id="数据分析" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="Analysis_ListView" ViewId="Analysis_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="业务报表" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="ReportsV2" ViewId="ReportDataV2_ListView" ObjectKey="" Caption="Reports" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="质量检测" Index="6" ImageName="qCheck" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="质检单据" IsNewNode="True" />
+          <Item Id="质检申请" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Default" Caption="系统首页" Index="7" Visible="False">
+        <Items>
+          <Item Id="Event_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="技术支持" Index="8" ImageName="Settings" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="业务定制" Index="0" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="NameSpace" ViewId="NameSpace_ListView" Index="0" IsNewNode="True" />
+              <Item Id="用户业务" ViewId="BusinessObject_ListView" Index="1" IsNewNode="True" />
+              <Item Id="简单类型" ViewId="SimpleType_ListView" Index="2" IsNewNode="True" />
+              <Item Id="BusinessModule" ViewId="BusinessModule_ListView" IsNewNode="True" />
+              <Item Id="控制器" ViewId="RuntimeController_ListView" Caption="控制器" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="审批流程" Index="1" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="AdmiralXpoStateMachine_ListView" ObjectKey="" ViewId="CIIPXpoStateMachine_ListView" IsNewNode="True" />
+              <Item Id="Flow_ListView" ViewId="Flow_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="单据流程状态记录_ListView" ViewId="单据流程状态记录_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="单据设置" Index="2" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="单据编号方案_ListView" ViewId="单据编号方案_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="组织架构" Index="3" IsNewNode="True" />
+          <Item Id="系统菜单" Index="4" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="起始页" ObjectKey="系统菜单" ViewId="起始页" IsNewNode="True" />
+              <Item Id="系统菜单" ViewId="NavigationMenu_ListView" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="系统设置" Index="8" Removed="True">
+        <Items>
+          <Item Id="常用税率_ListView" Removed="True" />
+          <Item Id="单据编号方案_ListView" Removed="True" />
+          <Item Id="节假日_ListView" Removed="True" />
+          <Item Id="日期维度_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="仓库管理" ImageName="warehouse" Index="9" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="采购入库" IsNewNode="True" />
+          <Item Id="采购退货" IsNewNode="True" />
+          <Item Id="产品调拨" IsNewNode="True" />
+          <Item Id="库存盘点" IsNewNode="True" />
+          <Item Id="库存情况" IsNewNode="True" />
+          <Item Id="销售出库" IsNewNode="True" />
+          <Item Id="销售退货" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="审批流程" Index="10" Removed="True" />
+      <Item Id="生产管理" ImageName="production" Index="10" IsNewNode="True" />
+      <Item Id="安全设置" Index="12" Removed="True">
+        <Items>
+          <Item Id="系统用户_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="State Machine" Removed="True" />
+    </Items>
+  </NavigationItems>
+  <Options DataAccessMode="Server">
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="15.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
+  </SchemaModules>
+  <Validation>
+    <Rules>
+      <RuleRequiredField Id="FlowNameRequired" TargetPropertyName="名称" TargetContextIDs="Save" TargetType="CIIP.Module.BusinessObjects.Flow.Flow" IsNewNode="True" />
+    </Rules>
+  </Validation>
+  <Views>
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <TabbedGroup Id="Info" Index="0" IsNewNode="True">
+            <LayoutGroup Id="常用设置" Index="0" IsNewNode="True">
+              <LayoutGroup Id="主表设置" ShowCaption="True" IsNewNode="True">
+                <LayoutGroup Id="R1" Direction="Horizontal" Index="0" IsNewNode="True">
+                  <LayoutItem Id="名称" ViewItem="名称" Index="0" IsNewNode="True" />
+                  <LayoutItem Id="Caption" ViewItem="Caption" Index="1" IsNewNode="True" />
+                  <LayoutItem Id="Base" Index="2" ViewItem="Base" IsNewNode="True" />
+                  <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
+                  <LayoutItem Id="Navigation" ViewItem="NavigationItem" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Properties" ShowCaption="False" ViewItem="Properties" Index="1" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="子表设置" ShowCaption="True" IsNewNode="True">
+                <LayoutGroup Id="R1" Index="0" Direction="Horizontal" IsNewNode="True">
+                  <LayoutItem Id="ItemBusinessObject.名称" Index="0" ViewItem="ItemBusinessObject.名称" IsNewNode="True" />
+                  <LayoutItem Id="ItemBusinessObject.Caption" Index="1" ViewItem="ItemBusinessObject.Caption" IsNewNode="True" />
+                  <LayoutItem Id="ItemBusinessObject.Base" Index="2" ViewItem="ItemBusinessObject.Base" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="ItemBusinessObject.Properties" ShowCaption="False" ViewItem="ItemBusinessObject.Properties" Index="1" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="高级设置" Index="1" IsNewNode="True">
+              <LayoutGroup Id="主表设置" Index="0" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="CanCustomLogic" Index="0" ViewItem="CanCustomLogic" IsNewNode="True" />
+                <LayoutItem Id="IsCloneable" Index="0" ViewItem="IsCloneable" IsNewNode="True" />
+                <LayoutItem Id="IsPersistent" Index="1" ViewItem="IsPersistent" IsNewNode="True" />
+                <LayoutItem Id="IsVisibileInReports" Index="1" ViewItem="IsVisibileInReports" IsNewNode="True" />
+                <LayoutItem Id="CanInherits" Index="2" ViewItem="CanInherits" IsNewNode="True" />
+                <LayoutItem Id="IsCreatableItem" Index="2" ViewItem="IsCreatableItem" IsNewNode="True" />
+                <LayoutItem Id="IsAbstract" Index="3" ViewItem="IsAbstract" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Description" Index="1" ViewItem="Description" IsNewNode="True" />
+              <LayoutGroup Id="子表设置" Index="1" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="ItemBusinessObject.CanCustomLogic" ViewItem="ItemBusinessObject.CanCustomLogic" Index="0" IsNewNode="True" />
+                <LayoutItem Id="ItemBusinessObject.IsCloneable" Index="1" ViewItem="ItemBusinessObject.IsCloneable" IsNewNode="True" />
+                <LayoutItem Id="ItemBusinessObject.IsPersistent" Index="2" ViewItem="ItemBusinessObject.IsPersistent" IsNewNode="True" />
+                <LayoutItem Id="ItemBusinessObject.IsVisibileInReports" Index="3" ViewItem="ItemBusinessObject.IsVisibileInReports" IsNewNode="True" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" Index="4" ViewItem="ItemBusinessObject.CanInherits" IsNewNode="True" />
+                <LayoutItem Id="ItemBusinessObject.IsCreatableItem" Index="5" ViewItem="ItemBusinessObject.IsCreatableItem" IsNewNode="True" />
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" Index="6" ViewItem="ItemBusinessObject.IsAbstract" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="ItemBusinessObject.Description" Index="2" ViewItem="ItemBusinessObject.Description" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="1" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" RelativeSize="25.619834710743802" IsNewNode="True" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" RelativeSize="23.140495867768596" IsNewNode="True" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" RelativeSize="23.140495867768596" IsNewNode="True" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" RelativeSize="28.099173553719009" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="77.055103884372173" Removed="True">
+            <LayoutGroup Id="BusinessForm" Caption="主表" RelativeSize="35.052754982415" Index="2" Removed="True">
+              <LayoutGroup Id="BusinessForm_col1" RelativeSize="50.038491147036183">
+                <LayoutItem Id="ItemBusinessObject.IsPersistent" Index="1" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" Index="2" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" Index="3" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.Base" Index="4" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.IsCloneable" Index="5" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.IsVisibileInReports" Index="6" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.IsCreatableItem" Index="7" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.IsRuntimeDefine" Index="8" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.CanCustomLogic" RelativeSize="13.432835820895523" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="BusinessForm_col2" RelativeSize="49.961508852963817">
+                <LayoutItem Id="ItemBusinessObject.Category" RelativeSize="13.432835820895523" Index="0" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.Caption" RelativeSize="10.447761194029852" Index="1" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.Description" RelativeSize="10.447761194029852" Index="2" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.名称" RelativeSize="10.447761194029852" Index="3" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.创建者" RelativeSize="10.447761194029852" Index="4" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.修改者" RelativeSize="10.447761194029852" Index="5" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.创建时间" RelativeSize="10.447761194029852" Index="6" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.修改时间" RelativeSize="23.880597014925375" Index="7" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObject" RelativeSize="21.922626025791324" Index="3" Removed="True">
+              <LayoutGroup Id="BusinessObject_col1" RelativeSize="50.038491147036183">
+                <LayoutItem Id="Base" RelativeSize="23.076923076923077" Removed="True" />
+                <LayoutItem Id="CanCustomLogic" RelativeSize="23.076923076923077" Removed="True" />
+                <LayoutItem Id="CanInherits" RelativeSize="17.948717948717949" Removed="True" />
+                <LayoutItem Id="IsAbstract" RelativeSize="17.948717948717949" Removed="True" />
+                <LayoutItem Id="IsPersistent" RelativeSize="17.948717948717949" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="BusinessObject_col2" RelativeSize="49.961508852963817">
+                <LayoutItem Id="IsCloneable" RelativeSize="23.076923076923077" Removed="True" />
+                <LayoutItem Id="IsCreatableItem" RelativeSize="58.974358974358971" Removed="True" />
+                <LayoutItem Id="IsRuntimeDefine" RelativeSize="41.025641025641029" Removed="True" />
+                <LayoutItem Id="IsVisibileInReports" RelativeSize="17.948717948717949" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObjectBase" RelativeSize="7.6201641266119582" Caption="BusinessObjectBase" Index="4" Removed="True">
+              <LayoutItem Id="Category" ViewItem="Category" Index="0" RelativeSize="52.307692307692307" Removed="True" />
+              <LayoutItem Id="Description" RelativeSize="47.692307692307693" Index="1" Removed="True" />
+              <LayoutItem Id="Caption" RelativeSize="30.107526881720432" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" RelativeSize="3.9859320046893316" Index="5" Removed="True">
+              <LayoutItem Id="名称" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" RelativeSize="14.185228604923799" Index="6" Removed="True">
+              <LayoutItem Id="创建时间" RelativeSize="23.140495867768596" />
+              <LayoutItem Id="创建者" RelativeSize="25.619834710743802" />
+              <LayoutItem Id="修改时间" RelativeSize="28.099173553719009" />
+              <LayoutItem Id="修改者" RelativeSize="23.140495867768596" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Removed="True" />
+          <TabbedGroup Id="Tabs" RelativeSize="22.944896115627824" Removed="True">
+            <LayoutGroup Id="ItemBusinessObject.CollectionProperties" RelativeSize="100" Index="0">
+              <LayoutItem Id="ItemBusinessObject.CollectionProperties" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="ItemBusinessObject.GenericParameters" RelativeSize="100" Index="1">
+              <LayoutItem Id="ItemBusinessObject.GenericParameters" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="CollectionProperties" RelativeSize="100" Index="2">
+              <LayoutItem Id="CollectionProperties" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Properties" RelativeSize="100" Index="2" Removed="True">
+              <LayoutItem Id="Properties" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="GenericParameters" RelativeSize="100" Index="3">
+              <LayoutItem Id="GenericParameters" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="ItemBusinessObject.Properties" RelativeSize="100" Removed="True">
+              <LayoutItem Id="ItemBusinessObject.Properties" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="BusinessObject_CollectionProperties_ListView" AllowEdit="True" NewItemRowPosition="Bottom">
+      <Columns>
+        <ColumnInfo Id="PropertyType" Index="1" />
+        <ColumnInfo Id="RelationProperty" Index="2" />
+      </Columns>
+    </ListView>
+    <DetailView Id="BusinessObject_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="NameObject" Index="0" Direction="Horizontal">
+              <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
+              <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
+              <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
+              <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Descriptor" Index="1" IsNewNode="True">
+              <LayoutItem Id="Descripton" ViewItem="Description" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObject" Index="2" ShowCaption="False">
+              <LayoutGroup Id="Col1" Index="6" Direction="Horizontal" RelativeSize="30" IsNewNode="True">
+                <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="0" IsNewNode="True" />
+                <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="1" IsNewNode="True" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" Index="2" IsNewNode="True" />
+                <LayoutItem Id="IsVisibileInReports" ViewItem="IsVisibileInReports" Index="3" IsNewNode="True" />
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" Index="4" IsNewNode="True" />
+                <LayoutItem Id="IsCreatableItem" ViewItem="IsCreatableItem" Index="5" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Col2" Index="7" IsNewNode="True" />
+              <LayoutGroup Id="BusinessObject_col1" Removed="True">
+                <LayoutItem Id="Base" Removed="True" />
+                <LayoutItem Id="CanInherits" Removed="True" />
+                <LayoutItem Id="IsAbstract" Removed="True" />
+                <LayoutItem Id="IsPersistent" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="BusinessObject_col2" Removed="True">
+                <LayoutItem Id="IsCloneable" Removed="True" />
+                <LayoutItem Id="IsCreatableItem" Removed="True" />
+                <LayoutItem Id="IsRuntimeDefine" Removed="True" />
+                <LayoutItem Id="IsVisibileInReports" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObjectBase" Index="2" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Methods" Removed="True" />
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="3" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView_BOLogic" ClassName="CIIP.Module.BusinessObjects.SYS.BusinessObject" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Base" PropertyName="Base" IsNewNode="True" />
+        <PropertyEditor Id="CanCustomLogic" PropertyName="CanCustomLogic" IsNewNode="True" />
+        <PropertyEditor Id="CanInherits" PropertyName="CanInherits" IsNewNode="True" />
+        <PropertyEditor Id="Caption" PropertyName="Caption" IsNewNode="True" />
+        <PropertyEditor Id="Category" PropertyName="Category" IsNewNode="True" />
+        <PropertyEditor Id="CollectionProperties" PropertyName="CollectionProperties" View="BusinessObject_CollectionProperties_ListView" IsNewNode="True" />
+        <PropertyEditor Id="Description" PropertyName="Description" IsNewNode="True" />
+        <PropertyEditor Id="GenericParameters" PropertyName="GenericParameters" View="BusinessObject_GenericParameters_ListView" IsNewNode="True" />
+        <PropertyEditor Id="IsAbstract" PropertyName="IsAbstract" IsNewNode="True" />
+        <PropertyEditor Id="IsCloneable" PropertyName="IsCloneable" IsNewNode="True" />
+        <PropertyEditor Id="IsCreatableItem" PropertyName="IsCreatableItem" IsNewNode="True" />
+        <PropertyEditor Id="IsGenericTypeDefine" PropertyName="IsGenericTypeDefine" IsNewNode="True" />
+        <PropertyEditor Id="IsPersistent" PropertyName="IsPersistent" IsNewNode="True" />
+        <PropertyEditor Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" IsNewNode="True" />
+        <PropertyEditor Id="IsVisibileInReports" PropertyName="IsVisibileInReports" IsNewNode="True" />
+        <PropertyEditor Id="Methods" PropertyName="Methods" View="BusinessObject_Methods_ListView" IsNewNode="True" />
+        <PropertyEditor Id="NavigationItem" PropertyName="NavigationItem" IsNewNode="True" />
+        <PropertyEditor Id="Properties" PropertyName="Properties" View="BusinessObject_Properties_ListView" IsNewNode="True" />
+        <PropertyEditor Id="创建时间" PropertyName="创建时间" IsNewNode="True" />
+        <PropertyEditor Id="创建者" PropertyName="创建者" IsNewNode="True" />
+        <PropertyEditor Id="名称" PropertyName="名称" IsNewNode="True" />
+        <PropertyEditor Id="修改时间" PropertyName="修改时间" IsNewNode="True" />
+        <PropertyEditor Id="修改者" PropertyName="修改者" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
+          <LayoutItem Id="Methods" ViewItem="Methods" ShowCaption="False" Index="0" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="BusinessObject_GenericParameters_ListView" AllowEdit="True" AllowDelete="False" AllowLink="False" AllowNew="False" />
+    <ListView Id="BusinessObject_LookupListView">
+      <Columns>
+        <ColumnInfo Id="名称" PropertyName="名称" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Caption" Index="1" />
+      </Columns>
+    </ListView>
+    <ListView Id="BusinessObject_Methods_ListView">
+      <Columns>
+        <ColumnInfo Id="AccessorModifier" Index="-1" />
+        <ColumnInfo Id="CodeName" Index="-1" />
+        <ColumnInfo Id="MethodModifier" Index="-1" />
+        <ColumnInfo Id="ReturnValue" Index="-1" />
+        <ColumnInfo Id="Code" Removed="True" />
+        <ColumnInfo Id="DefaultLocation" Width="160" Removed="True" />
+        <ColumnInfo Id="MethodDefineCode" Width="150" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="BusinessObject_Properties_ListView" AllowEdit="True" NewItemRowPosition="Bottom" MasterDetailMode="ListViewAndDetailView">
+      <Columns>
+        <ColumnInfo Id="PropertyType" Index="1" />
+        <ColumnInfo Id="Expression" Index="2" />
+      </Columns>
+    </ListView>
+    <ListView Id="BusinessObjectBase_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Caption" PropertyName="Caption" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="BusinessObjectEvent_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Parameters_Group" Removed="True" />
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+          <LayoutGroup Id="SizeableEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObjectLayout_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeFile">
+              <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObjectPartialLogicBase" Removed="True">
+              <LayoutItem Id="BusinessObject" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObjectPartialLogic_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" />
+            <LayoutGroup Id="NameObject" Removed="True">
+              <LayoutItem Id="名称" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CIIPXpoStateMachine_DetailView">
+      <Items>
+        <PropertyEditor Id="TargetObjectType" AllowEdit="False" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="CIIPXpoStateMachine">
+              <LayoutGroup Id="CIIPXpoStateMachine_col1">
+                <LayoutItem Id="Active" Removed="True" />
+                <LayoutItem Id="ExpandActionsInDetailView" Removed="True" />
+                <LayoutItem Id="Flow" Removed="True" />
+                <LayoutItem Id="Name" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CIIPXpoStateMachine_col2">
+                <LayoutItem Id="StartState" Removed="True" />
+                <LayoutItem Id="StatePropertyName" Removed="True" />
+                <LayoutItem Id="TargetObjectType" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="States_Group" Removed="True">
+            <LayoutItem Id="States" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" IsNewNode="True">
+            <LayoutGroup Id="设计" Index="0" Caption="设计" IsNewNode="True">
+              <LayoutItem Id="Flow" ViewItem="Flow" Index="0" ShowCaption="False" CaptionLocation="Top" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="设置" Index="1" IsNewNode="True">
+              <LayoutItem Id="StartState" ViewItem="StartState" Index="0" IsNewNode="True" />
+              <LayoutItem Id="States" ViewItem="States" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Active" ViewItem="Active" Index="1" IsNewNode="True" />
+              <LayoutItem Id="StatePropertyName" ViewItem="StatePropertyName" Index="1" IsNewNode="True" />
+              <LayoutItem Id="ExpandActionsInDetailView" ViewItem="ExpandActionsInDetailView" Index="2" IsNewNode="True" />
+              <LayoutItem Id="TargetObjectType" ViewItem="TargetObjectType" Index="2" IsNewNode="True" />
+              <LayoutItem Id="Name" ViewItem="Name" Index="3" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CIIPXpoTransition_DetailView">
+      <Items>
+        <PropertyEditor Id="SourceState" AllowEdit="False" />
+        <PropertyEditor Id="TargetState" AllowEdit="False" />
+      </Items>
+    </DetailView>
+    <ListView Id="Event_ListView" DataAccessMode="Client" />
+    <DetailView Id="Flow_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="True" Caption="单据转换流程设计" IsNewNode="True">
+              <LayoutGroup Id="NameObject" Index="0" ShowCaption="False" IsNewNode="True">
+                <LayoutItem Id="名称" ViewItem="名称" Index="0" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Flow" Index="2" ShowCaption="False" IsNewNode="True">
+                <LayoutItem Id="FlowObject" ViewItem="FlowObject" ShowCaption="False" Index="0" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Actions" Caption="详细信息">
+              <LayoutItem Id="Nodes" ViewItem="Nodes" ShowCaption="False" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Nodes" Index="1" Removed="True">
+              <LayoutItem Id="Nodes" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="NameObject" Index="0" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="1" Removed="True" />
+            <LayoutGroup Id="Flow" Index="2">
+              <LayoutItem Id="FlowObject" ShowCaption="False" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FlowAction_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="FlowAction">
+              <LayoutGroup Id="R1" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="From" ViewItem="From" Index="1" IsNewNode="True" />
+                <LayoutItem Id="To" ViewItem="To" Index="2" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FlowInstance_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="FlowInstance">
+              <LayoutItem Id="Flow" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="MethodDefine_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Parameters_Group" ShowCaption="False" Removed="True">
+            <LayoutItem Id="Parameters" SizeConstraintsType="Custom" MaxSize="200, 0" Index="1" ShowCaption="False" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="MethodDefine" Removed="True">
+              <LayoutGroup Id="MethodDefine_col1">
+                <LayoutItem Id="AccessorModifier" Index="0" />
+                <LayoutItem Id="ReturnValue" Index="1" />
+                <LayoutItem Id="Code" Index="2" Removed="True" />
+                <LayoutItem Id="MethodModifier" Index="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="MethodDefine_col2">
+                <LayoutItem Id="名称" ViewItem="名称" Index="3" IsNewNode="True" />
+                <LayoutItem Id="DefaultLocation" Removed="True" />
+                <LayoutItem Id="MethodDefineCode" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True">
+              <LayoutItem Id="名称" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Removed="True">
+            <LayoutItem Id="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tab" IsNewNode="True">
+            <LayoutGroup Id="代码" Caption="代码" IsNewNode="True">
+              <LayoutItem Id="Code" ViewItem="Code" ShowCaption="False" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="声明" IsNewNode="True">
+              <LayoutGroup Id="MethodDefine" Index="0" Caption="Method Define" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
+                <LayoutGroup Id="MethodDefine_col1" Index="0" ShowCaption="False" IsNewNode="True">
+                  <LayoutItem Id="AccessorModifier" Index="0" ViewItem="AccessorModifier" IsNewNode="True" />
+                  <LayoutItem Id="ReturnValue" Index="1" ViewItem="ReturnValue" IsNewNode="True" />
+                  <LayoutItem Id="MethodModifier" Index="2" ViewItem="MethodModifier" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="MethodDefine_col2" Index="1" ShowCaption="False" IsNewNode="True">
+                  <LayoutItem Id="CodeName" ViewItem="CodeName" Index="0" IsNewNode="True" />
+                  <LayoutItem Id="名称" ViewItem="名称" Index="3" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="功能说明" ViewItem="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Index="0" CaptionLocation="Top" IsNewNode="True" />
+              <LayoutItem Id="Parameters" ViewItem="Parameters" SizeConstraintsType="Default" MaxSize="200, 0" ShowCaption="False" Index="1" CaptionLocation="Top" IsNewNode="True" />
+              <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
+                <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
+                <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
+                <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
+                <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="NameSpace_ListView">
+      <Columns>
+        <ColumnInfo Id="FullName" Index="-1" />
+      </Columns>
+    </ListView>
+    <ListView Id="NavigationItem_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" SortIndex="-1" SortOrder="None" />
+      </Columns>
+    </ListView>
+    <DetailView Id="NavigationLine_DetailView">
+      <Items>
+        <PropertyEditor Id="Caption" Index="0" />
+        <PropertyEditor Id="From" AllowEdit="False" />
+        <PropertyEditor Id="To" AllowEdit="False" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" ShowCaption="True" Caption="导航线段">
+            <LayoutItem Id="Caption" ViewItem="Caption" Index="0" IsNewNode="True" />
+            <LayoutGroup Id="NavigationLine" ShowCaption="False">
+              <LayoutGroup Id="NavigationLine_col1">
+                <LayoutItem Id="Caption" Index="0" Removed="True" />
+                <LayoutItem Id="BeginItemPointIndex" Index="1" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="NavigationMenu_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="LayoutTabs" IsNewNode="True">
+            <LayoutGroup Id="L0" Index="0" Caption="设计器" IsNewNode="True">
+              <LayoutItem Id="Caption" Index="0" ViewItem="Name" IsNewNode="True" />
+              <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="L1" Index="1" Caption="详细信息" IsNewNode="True">
+              <LayoutItem Id="Actions" ViewItem="Actions" ShowCaption="False" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Nodes" ViewItem="Nodes" ShowCaption="False" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="NavigationMenu">
+              <LayoutItem Id="Menu" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="NavigationMenuItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="NavigationMenuItem" Caption="导航菜单项目">
+              <LayoutGroup Id="NavigationMenuItem_col1">
+                <LayoutItem Id="NavigationItemPath" ViewItem="NavigationItemPath" Index="0" IsNewNode="True" />
+                <LayoutItem Id="Width" Index="1" />
+                <LayoutItem Id="Height" Index="2" />
+                <LayoutItem Id="Caption" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="NavigationMenuItem_col2">
+                <LayoutItem Id="Caption" ViewItem="Caption" Index="0" IsNewNode="True" />
+                <LayoutItem Id="NavigationItemPath" Index="0" Removed="True" />
+                <LayoutItem Id="X" Index="1" />
+                <LayoutItem Id="Y" Index="2" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Property_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyBase" ShowCaption="False">
+              <LayoutGroup Id="PropertyBase_col1">
+                <LayoutItem Id="名称" ViewItem="名称" Index="0" IsNewNode="True" />
+                <LayoutItem Id="Expression" ViewItem="Expression" Index="1" IsNewNode="True" />
+                <LayoutItem Id="PropertyType" ViewItem="PropertyType" Index="1" IsNewNode="True" />
+                <LayoutItem Id="RelationProperty" Index="2" />
+                <LayoutItem Id="DataSourceProperty" Index="3" />
+                <LayoutItem Id="VisibleInDetailView" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PropertyBase_col2">
+                <LayoutItem Id="Size" ViewItem="Size" Index="0" IsNewNode="True" />
+                <LayoutItem Id="VisibleInDetailView" ViewItem="VisibleInDetailView" Index="2" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True">
+              <LayoutItem Id="名称" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Property" Removed="True">
+              <LayoutItem Id="Expression" Removed="True" />
+              <LayoutItem Id="PropertyType" Removed="True" />
+              <LayoutItem Id="Size" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuntimeViewController_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeFile">
+              <LayoutItem Id="Code" CaptionLocation="Top" ShowCaption="False" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuntimeWindowController_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeFile">
+              <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SystemLogonParameter_DetailView" Caption="欢迎使用商信互联企业信息管理平台" DefaultFocusedItem="Password">
+      <Items>
+        <ActionContainerViewItem Id="ConfigDB" ActionContainer="ConfigDB" PaintStyle="Caption" IsNewNode="True" />
+        <StaticImage Id="Logo" ImageName="B" SizeMode="StretchImage" IsNewNode="True" />
+        <PropertyEditor Id="Password" Caption="        密    码    " />
+        <PropertyEditor Id="UserName" Caption="        用    户    " />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="LogoFF" Index="0" SizeConstraintsType="Custom" MinSize="600, 305" ViewItem="" IsNewNode="True" />
+            <LayoutGroup Id="AuthenticationStandardLogonParameters" Index="1" Direction="Horizontal">
+              <LayoutGroup Id="Content" IsNewNode="True">
+                <LayoutItem Id="UserName" Index="0" ViewItem="UserName" IsNewNode="True" />
+                <LayoutItem Id="Password" Index="1" ViewItem="Password" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Password" SizeConstraintsType="Custom" MinSize="400, 32" Removed="True" />
+              <LayoutItem Id="UserName" SizeConstraintsType="Custom" MinSize="400, 32" Removed="True" />
+              <LayoutGroup Id="ZW" RelativeSize="5" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SystemLogonParameter" Index="2" Direction="Horizontal">
+              <LayoutItem Id="ConfigDB" ViewItem="ConfigDB" IsNewNode="True" />
+              <LayoutItem Id="SafeMode" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="起始页" ClassName="CIIP.Module.BusinessObjects.SYS.NavigationMenu" Caption="起始页" AllowDelete="False" AllowEdit="False" AllowNew="False" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Actions" PropertyName="Actions" View="NavigationMenu_Actions_ListView" IsNewNode="True" />
+        <PropertyEditor Id="Menu" PropertyName="Menu" IsNewNode="True" />
+        <PropertyEditor Id="Name" PropertyName="Name" IsNewNode="True" />
+        <PropertyEditor Id="Nodes" PropertyName="Nodes" View="NavigationMenu_Nodes_ListView" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <TabbedGroup Id="Tabs" IsNewNode="True">
+          <LayoutGroup Id="流程菜单" Index="0" Caption="流程菜单" IsNewNode="True">
+            <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="辐射菜单" Index="1" IsNewNode="True">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" IsNewNode="True" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

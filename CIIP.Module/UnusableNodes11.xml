@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="BusinessObject_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeUnitBase" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Items" Removed="True" />
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="3" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Form_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeUnitBase" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Items" Removed="True" />
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="5" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Form_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" MasterDetailView="" />
+    <DetailView Id="Namespace_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeUnitBase" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleObject" Index="3" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Namespace_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Category" Index="-1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ObjectAfterConstruction_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Parameters" Caption="内容">
+              <LayoutItem Id="Parameters" RelativeSize="20" />
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="1" RelativeSize="80" />
+            </LayoutGroup>
+            <LayoutGroup Id="Codes" Removed="True">
+              <LayoutItem Id="Codes" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectDeletingEvent_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Parameters" Caption="内容">
+              <LayoutItem Id="Parameters" RelativeSize="20" />
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="1" RelativeSize="80" />
+            </LayoutGroup>
+            <LayoutGroup Id="Codes" Removed="True">
+              <LayoutItem Id="Codes" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectPropertyChangedEvent_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Parameters" Caption="内容">
+              <LayoutItem Id="Parameters" RelativeSize="20" />
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="1" RelativeSize="80" />
+            </LayoutGroup>
+            <LayoutGroup Id="Codes" Removed="True">
+              <LayoutItem Id="Codes" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectSavedEvent_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Codes" Index="0" Removed="True">
+              <LayoutItem Id="Codes" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Parameters" Index="1">
+              <LayoutItem Id="Parameters" RelativeSize="20" />
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="1" RelativeSize="80" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ObjectSavingEvent_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Parameters">
+              <LayoutItem Id="Parameters" RelativeSize="20" />
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="1" RelativeSize="80" />
+            </LayoutGroup>
+            <LayoutGroup Id="Codes" Removed="True">
+              <LayoutItem Id="Codes" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

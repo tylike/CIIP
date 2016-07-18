@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.CreateBusinessObject" ImageName="TemplatesV2Images.Action_New" />
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.FindBusinessObject" ImageName="Action_Search" />
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.ForEachStatement" ImageName="basicstepover" />
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.MethodCode" ImageName="sourceview" />
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.SwitchCaseStatement" ImageName="basicstepinto" />
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.SwitchStatement" ImageName="basicstepinto" />
+  </BOModel>
+  <Views Id="Views">
+    <DetailView Id="AssignValue_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="名称" AllowEdit="False" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="AssignValue" Direction="Horizontal" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="BusinessObject_Methods_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Index" Index="-1" />
+        <ColumnInfo Id="ParentUnit" Index="-1" />
+      </Columns>
+      <Sorting Id="Sorting">
+        <SortProperty Id="Index" PropertyName="Index" />
+      </Sorting>
+    </ListView>
+    <DetailView Id="CreateBusinessObject_DetailView">
+      <Items Id="Items">
+        <StaticText Id="S_End" Text="&gt;()" />
+        <StaticText Id="S_ObjectSpaceCreateObject" Text="ObjectSpace.Create&lt;" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CreateBusinessObject" Direction="Horizontal" RelativeSize="4.3804755944931166">
+              <LayoutItem Id="S_ObjectSpaceCreateObject" ViewItem="S_ObjectSpaceCreateObject" Index="0" ShowCaption="False" RelativeSize="17.61487964989059" />
+              <LayoutItem Id="CreateObjectType" Index="1" ShowCaption="False" RelativeSize="18.927789934354486" />
+              <LayoutItem Id="S_End" ViewItem="S_End" ShowCaption="False" Index="2" RelativeSize="63.457330415754924" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="1" RelativeSize="95.61952440550688">
+              <LayoutItem Id="创建者" RelativeSize="24.835886214442013" />
+              <LayoutItem Id="修改者" RelativeSize="24.835886214442013" />
+              <LayoutItem Id="创建时间" RelativeSize="24.726477024070022" />
+              <LayoutItem Id="修改时间" RelativeSize="25.601750547045953" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FindBusinessObject_DetailView">
+      <Items Id="Items">
+        <StaticText Id="FindObjectCondition" Text=")" />
+        <StaticText Id="ObjectSpaceFindObject" Text="ObjectSpace.FindObject&lt;" />
+        <StaticText Id="ObjectType" Text="&gt;(" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="FindBusinessObject" Direction="Horizontal">
+              <LayoutItem Id="OSFO" ViewItem="ObjectSpaceFindObject" Index="0" ShowCaption="False" />
+              <LayoutItem Id="FindObjectType" Index="1" ShowCaption="False" />
+              <LayoutItem Id="OT" ViewItem="ObjectType" Index="2" ShowCaption="False" />
+              <LayoutItem Id="Expression" Index="3" ShowCaption="False" />
+              <LayoutItem Id="FOC" ViewItem="FindObjectCondition" Index="4" ShowCaption="False" />
+              <LayoutItem Id="ByKey" Index="5" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" />
+            <LayoutGroup Id="NameObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ForEachStatement_DetailView">
+      <Items Id="Items">
+        <StaticText Id="BeginKH" Caption="" Text="foreach(var " />
+        <StaticText Id="EndKH" Text=")" />
+        <StaticText Id="in" Caption="" Text="in" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ForEachStatement" Direction="Horizontal">
+              <LayoutItem Id="BeginKH" ViewItem="BeginKH" Index="0" ShowCaption="False" MaxSize="100, 0" />
+              <LayoutItem Id="CodeName" Index="1" ShowCaption="False" MaxSize="100, 0" />
+              <LayoutItem Id="IN" ViewItem="in" Index="2" ShowCaption="False" />
+              <LayoutItem Id="Items" Index="3" ShowCaption="False" MaxSize="100, 0" />
+              <LayoutItem Id="ENDKH" ViewItem="EndKH" Index="4" ShowCaption="False" />
+            </LayoutGroup>
+            <LayoutGroup Id="Variants" Index="0" ShowCaption="False">
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="0" />
+              <LayoutItem Id="Variants" ViewItem="Variants" ShowCaption="False" Index="0" SizeConstraintsType="Custom" MaxSize="0, 200" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="LogicCodeUnit_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Index" Index="-1" />
+      </Columns>
+      <Sorting Id="Sorting">
+        <SortProperty Id="Index" PropertyName="Index" />
+      </Sorting>
+    </ListView>
+    <DetailView Id="ObjectAfterConstruction_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="名称" ViewItem="名称" Index="0" />
+            <LayoutGroup Id="NameObject" Index="2" Removed="True">
+              <LayoutItem Id="名称" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Body">
+              <LayoutItem Id="Codes" ViewItem="Codes" ShowCaption="False" Index="1" />
+              <LayoutItem Id="Parameters" ViewItem="Parameters" ShowCaption="False" Index="3" MinSize="0, 100" MaxSize="0, 200" SizeConstraintsType="Custom" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleObject" Index="4" Direction="Horizontal" ShowCaption="False">
+            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" />
+            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" />
+            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" />
+            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView_BOLogic">
+      <Items Id="Items">
+        <PropertyEditor Id="Methods" PropertyName="Methods" View="BusinessObject_Methods_ListView" />
+      </Items>
+    </DetailView>
+  </Views>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="AddStatement" ImageName="ModelEditor_Categorized" PaintStyle="CaptionAndImage" />
+      <Action Id="ShowBusinessObjectLogic" ImageName="whitix" />
+    </Actions>
+  </ActionDesign>
+</Application>

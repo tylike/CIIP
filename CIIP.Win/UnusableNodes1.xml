@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="销售管理">
+        <Items Id="Items">
+          <Item Id="销售报价_ListView" Index="0" />
+          <Item Id="销售订单_ListView" Index="1" />
+        </Items>
+      </Item>
+      <Item Id="仓库管理">
+        <Items Id="Items">
+          <Item Id="库存盘点_ListView" Index="4" />
+          <Item Id="报损单_ListView" Index="5" />
+          <Item Id="报溢单_ListView" Index="6" />
+          <Item Id="调拨单_ListView" Index="7" />
+          <Item Id="调拨出库_ListView" Index="8" />
+          <Item Id="调拨入库_ListView" Index="9" />
+        </Items>
+      </Item>
+      <Item Id="采购管理">
+        <Items Id="Items">
+          <Item Id="采购订单_ListView" Index="1" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

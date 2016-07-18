@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="SaleReportByDistrict_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="月份" ViewItem="月份" Index="0" />
+            <LayoutItem Id="Items" ViewItem="Items" ShowCaption="False" Index="1" CaptionLocation="Top" />
+            <LayoutGroup Id="SaleReportByDistrict" Removed="True">
+              <LayoutItem Id="月份" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

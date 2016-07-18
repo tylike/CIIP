@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" ?>
+<Application>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <Views>
+    <DetailView Id="DashboardViewer_DetailView" Caption="Dashboard" ClassName="CIIP.Win.General.DashBoard.BusinessObjects.DashboardDefinition" IsNewNode="True">
+      <Items IsNewNode="True">
+        <PropertyEditor Id="Xml" PropertyName="Xml" PropertyEditorType="CIIP.Win.General.DashBoard.PropertyEditors.DashboardViewEditor" IsNewNode="True" />
+      </Items>
+      <Layout IsNewNode="True">
+        <LayoutGroup Id="Main" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+          <LayoutItem Id="Xml" ViewItem="Xml" Index="0" ShowCaption="False" SizeConstraintsType="Default" RelativeSize="100" IsNewNode="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

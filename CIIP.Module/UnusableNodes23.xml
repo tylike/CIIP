@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.单据" ImageName="BO_Order_Item" />
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.明细" ImageName="BO_Product" />
+  </BOModel>
+  <Views Id="Views">
+    <DetailView Id="BusinessObject_DetailView_BOLogic">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutItem Id="Methods" ViewItem="Methods" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

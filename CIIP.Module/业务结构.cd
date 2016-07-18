@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.PMS.采购询价" Collapsed="true">
+    <Position X="3.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\PMS\询价\采购询价.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.订单&lt;TItem&gt;" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jSQCAhIAiQAYAIiBAAASLIAACgEgQAqgYAAAAAAIBAg=</HashCode>
+      <FileName>BusinessObjects\基类\订单\订单.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.单据&lt;TItem&gt;" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAQAAAAAAAAAAAACEAAAAAAAAAAAAAAEAEAA=</HashCode>
+      <FileName>BusinessObjects\基类\单据.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.单据" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAEEEAAAQIAAEAAAAAAQIAAAAIAAAAAAAAAAQAACAA=</HashCode>
+      <FileName>BusinessObjects\基类\单据.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.仓库单据基类&lt;TItem&gt;" Collapsed="true">
+    <Position X="13.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAEAAQAAAAAAAAAAAAABAAAgABAAAAAEQAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\仓库单据基类.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.PMS.采购订单" Collapsed="true">
+    <Position X="5.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\PMS\订单\采购订单.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.SMS.销售报价" Collapsed="true">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SMS\报价\销售报价.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.SMS.销售订单" Collapsed="true">
+    <Position X="11" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SMS\订单\销售订单.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.采购入库" Collapsed="true">
+    <Position X="16" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\采购\入库\采购入库.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.采购退货" Collapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\采购\退货\采购退货.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.报损单" Collapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\盘点\报损\报损单.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.报溢单" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\盘点\报溢\报溢单.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.库存盘点" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\盘点\库存盘点.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.调拨出库" Collapsed="true">
+    <Position X="16" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\调拨\出库\调拨出库.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.调拨入库" Collapsed="true">
+    <Position X="18.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\调拨\入库\调拨入库.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.调拨单" Collapsed="true">
+    <Position X="20.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAQAAAAAEAUAAAACAAQIAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\调拨\调拨单.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.销售出库" Collapsed="true">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\销售\出库\销售出库.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.销售退货" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\销售\退货\销售退货.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.订单明细&lt;TMaster&gt;" Collapsed="true">
+    <Position X="3.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAgAIBRAAAAEAADBCIQAAAACmBEABAAAAAAAIBOA=</HashCode>
+      <FileName>BusinessObjects\基类\订单\订单明细.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.SMS.销售订单明细" Collapsed="true">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SMS\订单\销售订单明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.明细&lt;TMaster&gt;" Collapsed="true">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\基类\明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.SimpleObject" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.PMS.采购订单明细" Collapsed="true">
+    <Position X="0.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\PMS\订单\采购订单明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.PMS.采购合同明细" Collapsed="true">
+    <Position X="23" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\PMS\合同\采购合同明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.PMS.采购询价明细" Collapsed="true">
+    <Position X="6.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>BusinessObjects\PMS\询价\采购询价明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.SMS.销售报价明细" Collapsed="true">
+    <Position X="25.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SMS\报价\销售报价明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.SMS.销售合同明细" Collapsed="true">
+    <Position X="27.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SMS\合同\销售合同明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.采购入库明细" Collapsed="true">
+    <Position X="7.75" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\采购\入库\采购入库明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.库存单据明细&lt;TMaster&gt;" Collapsed="true">
+    <Position X="17.75" Y="7.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAQAAAAAAAAAAAAAAAIAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\库存单据明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.采购退货明细" Collapsed="true">
+    <Position X="10.25" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\采购\退货\采购退货明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.报损明细" Collapsed="true">
+    <Position X="12.5" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\盘点\报损\报损明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.报溢明细" Collapsed="true">
+    <Position X="14.5" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\盘点\报溢\报溢明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.库存盘点明细" Collapsed="true">
+    <Position X="16.75" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\盘点\库存盘点明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.调拨出库明细" Collapsed="true">
+    <Position X="19" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\调拨\出库\调拨出库明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.调拨入库明细" Collapsed="true">
+    <Position X="21" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\调拨\入库\调拨入库明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.调拨明细" Collapsed="true">
+    <Position X="23" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAQAAAAAEAUAAAAABAYAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\调拨\调拨明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.销售出库明细" Collapsed="true">
+    <Position X="25" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\销售\出库\销售出库明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.销售退货明细" Collapsed="true">
+    <Position X="27.5" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\WMS\销售\退货\销售退货明细.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.WMS.库存流水" Collapsed="true">
+    <Position X="17.75" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAEAAAEAARAAAQEAAABAAIAFAAiABUBQAAABAgAAACA=</HashCode>
+      <FileName>BusinessObjects\WMS\库存流水.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

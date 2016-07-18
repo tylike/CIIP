@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="生成业务模型" ImageName="build" PaintStyle="CaptionAndImage" Caption="生成模型" />
+    </Actions>
+  </ActionDesign>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="技术支持">
+        <Items Id="Items">
+          <Item Id="系统菜单">
+            <Items Id="Items">
+              <Item Id="起始页" ViewId="起始页" />
+            </Items>
+          </Item>
+          <Item Id="审批流程">
+            <Items Id="Items">
+              <Item Id="AdmiralXpoStateMachine_ListView" ViewId="AdmiralXpoStateMachine_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+      <Item Id="客户关系">
+        <Items Id="Items">
+          <Item Id="销售计划">
+            <Items Id="Items">
+              <Item Id="月销计划_ListView" ViewId="月销计划_ListView" />
+              <Item Id="年度销售计划_ListView" ViewId="年度销售计划_ListView" />
+            </Items>
+          </Item>
+          <Item Id="往来单位">
+            <Items Id="Items">
+              <Item Id="职位_ListView" ViewId="职位_ListView" />
+              <Item Id="行政区域_ListView" ViewId="行政区域_ListView" />
+              <Item Id="地址类型_ListView" ViewId="地址类型_ListView" />
+              <Item Id="地址_ListView" ViewId="地址_ListView" />
+              <Item Id="销售区域_ListView" ViewId="销售区域_ListView" />
+              <Item Id="往来单位_ListView" ViewId="往来单位_ListView" />
+              <Item Id="客户信息" ViewId="往来单位_ListView" />
+              <Item Id="本月新增供应商" ViewId="往来单位_ListView" />
+              <Item Id="本周新增" ViewId="往来单位_ListView" />
+            </Items>
+          </Item>
+          <Item Id="销售合同" ViewId="销售合同_ListView" />
+          <Item Id="销售订单" ViewId="销售订单_ListView" />
+          <Item Id="销售报价" ViewId="销售报价_ListView" />
+          <Item Id="市场营销">
+            <Items Id="Items">
+              <Item Id="营销活动_ListView" ViewId="营销活动_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

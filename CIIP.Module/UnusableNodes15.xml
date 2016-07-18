@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="技术支持">
+        <Items Id="Items">
+          <Item Id="业务定制">
+            <Items Id="Items">
+              <Item Id="代码" ViewId="CodeUnitBase_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

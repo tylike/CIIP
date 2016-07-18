@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="采购入库单_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="订单" ShowCaption="False">
+              <LayoutGroup Id="订单_col1">
+                <LayoutItem Id="供应商" ViewItem="供应商" Index="1" />
+                <LayoutItem Id="下单日期" Removed="True" />
+                <LayoutItem Id="业务员" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="订单_col2">
+                <LayoutItem Id="下单日期" ViewItem="下单日期" Index="1" />
+                <LayoutItem Id="业务员" ViewItem="业务员" Index="2" />
+                <LayoutItem Id="供应商" Removed="True" />
+                <LayoutItem Id="客户" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="销售订单_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="订单">
+              <LayoutGroup Id="订单_col1">
+                <LayoutItem Id="编号" Index="0" />
+                <LayoutItem Id="客户" Index="0" ViewItem="客户" />
+                <LayoutItem Id="下单日期" Index="1" Removed="True" />
+                <LayoutItem Id="业务员" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="订单_col2">
+                <LayoutItem Id="客户" Index="0" Removed="True" />
+                <LayoutItem Id="下单日期" Index="1" ViewItem="下单日期" />
+                <LayoutItem Id="业务员" ViewItem="业务员" Index="1" />
+                <LayoutItem Id="供应商" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

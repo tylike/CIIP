@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="IMatrix.ERP.Module.BusinessObjects.产品库存" DefaultListViewAllowEdit="True" DefaultListViewNewItemRowPosition="Bottom" ImageName="BO_Product" />
+  </BOModel>
+</Application>
