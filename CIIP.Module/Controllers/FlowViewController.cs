@@ -21,6 +21,7 @@ using System.ComponentModel;
 using CIIP.Module.BusinessObjects;
 using CIIP.Module.BusinessObjects.Flow;
 using 常用基类;
+using DevExpress.ExpressApp.Model;
 
 namespace CIIP.Module.Controllers
 {
@@ -40,8 +41,6 @@ namespace CIIP.Module.Controllers
         
         private void FlowToNext_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
-            
-
             ObjectSpace.CommitChanges();
             var newFormOs = Application.CreateObjectSpace();
             
