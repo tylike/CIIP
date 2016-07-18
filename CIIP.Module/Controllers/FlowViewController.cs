@@ -30,6 +30,7 @@ namespace CIIP.Module.Controllers
     {
         public FlowViewController()
         {
+
             InitializeComponent();
             TargetObjectType = typeof(单据);
             //FlowToNext.TargetObjectsCriteria = "审核状态='已审核'";
