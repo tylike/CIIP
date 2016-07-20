@@ -1,0 +1,401 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Scheduler.Win.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Scheduler.Win.IModelOptionsSchedulerModule">
+
+            <summary>
+                <para>Used to extend the Application Model with the SchedulerModule node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.IModelOptionsSchedulerModule.SchedulerModule">
+            <summary>
+                <para>Provides access to the SchedulerModule node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Scheduler.Win.IModelOptionsScheduler"/> object representing the SchedulerModule node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Scheduler.Win.IModelOptionsScheduler">
+
+            <summary>
+                <para>The SchedulerModule node contains options defining the behavior of Actions in the Scheduler Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.IModelOptionsScheduler.RecurrentAppointmentEditAction">
+            <summary>
+                <para>Specifies the action that will be performed when double-clicking a recurrent event.
+</para>
+            </summary>
+            <value>A <b>RecurrentAppointmentAction</b> enumeration value specifying the action that will be performed when double-clicking a recurrent event.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor">
+
+            <summary>
+                <para>Represents the Scheduling List Editor used in the <b>XAF</b> Windows Forms applications.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+            <summary>
+                <para>Creates and initializes an instance of the SchedulerListEditor class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model's node, which contains information on the View that will use the instantiated List Editor.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.ApplyModel">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.Appointments">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.AppointmentsCustomFieldMappings">
+            <summary>
+                <para>Provides access to the collection of objects specifying mappings of the appointments' custom properties to appropriate data fields. 
+</para>
+            </summary>
+            <value>An <b>AppointmentCustomFieldMappingCollection</b> object specifying mappings of the appointments' custom properties to appropriate data fields. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.AppointmentsMappings">
+            <summary>
+                <para>Provides access to an object that allows the persistent properties of the appointments maintained by the current storage to be bound to appropriate fields in the data source. 
+</para>
+            </summary>
+            <value>An <b>AppointmentMappingInfo</b> object that allows the persistent properties of the appointments maintained by the current storage to be bound to appropriate fields in the data source.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.BeginUpdate">
+            <summary>
+                <para>Prevents the SchedulerListEditor's control from being updated until the <see cref="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.EndUpdate"/> method is called. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.BreakLinksToControls">
+            <summary>
+                <para>Removes references to the SchedulerListEditor's control and its event handlers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.ContextMenuTemplate">
+            <summary>
+                <para>Returns a null reference.
+</para>
+            </summary>
+            <value><i>null</i> (<i>Nothing</i> in VB).
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.DailyPrintStyleCalendarHeaderVisible">
+            <summary>
+                <para>Specifies whether or not the calendar header must be visible when printing the <see cref="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SchedulerControl"/> in a Day view, via the Printing System.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.DateNavigator">
+            <summary>
+                <para>Provides access to the SchedulerListEditor's Date Navigator.
+</para>
+            </summary>
+            <value>A <b>DevExpress.XtraScheduler.Native.IDateNavigatorControllerOwner</b> object that represents a Date Navigator.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.Dispose">
+            <summary>
+                <para>Releases all resources used by the SchedulerListEditor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.EndUpdate">
+            <summary>
+                <para>Unlocks the SchedulerListEditor's control after a call to the <see cref="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.BeginUpdate"/> method and causes an immediate update. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.OnExporting">
+            <summary>
+                <para>Performs the required pre-export actions under the <b>SchedulerListEditor</b>.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.OptionsCustomization">
+            <summary>
+                <para>Provides access to the scheduler's customization options.
+</para>
+            </summary>
+            <value>A <b>SchedulerOptionsCustomization</b> object representing the scheduler's customization options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.Printable">
+            <summary>
+                <para>Specifies the control to be exported via the <see cref="P:DevExpress.ExpressApp.SystemModule.ExportController.ExportAction"/>.
+</para>
+            </summary>
+            <value>An <b>IPrintable</b> object that is the control used for exporting. The default value is the SchedulerListEditor's <see cref="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SchedulerControl"/> property value.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.PrintableChanged">
+            <summary>
+                <para>Occurs when the <see cref="P:DevExpress.ExpressApp.SystemModule.IExportable.Printable"/> control is created and disposed of.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.Refresh">
+            <summary>
+                <para>Updates the <see cref="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SchedulerControl"/> to reflect any changes made in the data sources which store the Events and Event resources. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.Resources">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.ResourcesDataSource">
+            <summary>
+                <para>Provides access to the object that stores resources.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Collections.IList"/> object that stores resources.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.ResourcesMappings">
+            <summary>
+                <para>Provides access to an object that allows the persistent properties of the resources maintained by the current storage to be bound to appropriate fields in the data source. 
+</para>
+            </summary>
+            <value>A <b>ResourceMappingInfo</b> object that allows the persistent properties of the resources maintained by the current storage to be bound to appropriate fields in the data source.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SaveModel">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SchedulerControl">
+            <summary>
+                <para>Provides access to the SchedulerListEditor's control.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> object that is the <b>SchedulerListEditor</b>'s control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SelectedAppointments">
+            <summary>
+                <para>Provides access to the collection of selected appointments.
+</para>
+            </summary>
+            <value>An <b>AppointmentBaseCollection</b> object representing the collection of selected appointments.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SelectedInterval">
+            <summary>
+                <para>Specifies the time interval currently selected in the scheduler's active view by an end-user. 
+</para>
+            </summary>
+            <value>A <b>TimeInterval</b> object specifying the time interval currently selected in the scheduler's active view by an end-user.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SelectedResource">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.Start">
+            <summary>
+                <para>Specifies the start date of the scheduler. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.DateTime"/> object specifying the start date of the scheduler.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.StorageBase">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SupportedExportFormats">
+            <summary>
+                <para>Provides access to the list of export formats supported by the current Scheduler List Editor.
+</para>
+            </summary>
+            <value>An <b>List&lt;</b><see cref="T:DevExpress.XtraPrinting.ExportTarget"/><b>&gt;</b> object that is a list of supported export formats.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerListEditor.SupportsDataAccessMode(DevExpress.ExpressApp.CollectionSourceDataAccessMode)">
+            <summary>
+                <para>Determines whether or not the given data access mode is supported by the SchedulerListEditor.
+</para>
+            </summary>
+            <param name="dataAccessMode">
+		A <see cref="T:DevExpress.ExpressApp.CollectionSourceDataAccessMode"/> enumeration value that specifies the data access mode.
+
+            </param>
+            <returns><b>true</b>, if the specified mode is supported, otherwise - <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.Scheduler.Win.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule.#ctor">
+            <summary>
+                <para>Creates an instance of the SchedulerWindowsFormsModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+            <summary>
+                <para>Registers the <b>ListViewDataAccessModeGeneratorUpdater</b> Generator Updater.
+</para>
+            </summary>
+            <param name="updaters">
+		A <b>ModelNodesGeneratorUpdaters</b> object providing access to the list of Generator Updaters.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Scheduler.Win.IModelOptionsSchedulerModule"/> interface.
+</para>
+            </summary>
+            <param name="extenders">
+		A <b>ModelInterfaceExtenders</b> object that is a collection of Application Model interface extenders. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the SchedulerWindowsFormsModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the SchedulerWindowsFormsModule module.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule.GetXafResourceLocalizerTypes">
+            <summary>
+                <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the SchedulerWindowsFormsModule.
+</para>
+            </summary>
+            <returns>An <b>ICollection</b> collection containing the types of the Resource Localizers supplied with the <b>SchedulerWindowsFormsModule</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Scheduler.Win.SchedulerWindowsFormsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the SchedulerWindowsFormsModule after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

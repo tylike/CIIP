@@ -1,0 +1,726 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Validation.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelRuleBase">
+
+            <summary>
+                <para>The RuleBase node defines a particular rule.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelApplicationValidation">
+
+            <summary>
+                <para>Used to extend the Application Model with the Validation node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelApplicationValidation.Validation">
+            <summary>
+                <para>Provides access to the Validation node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Validation.IModelValidation"/> object representing the Validation node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelActionValidationContexts">
+
+            <summary>
+                <para>Used to extend the Application Model's Action node with properties specific to the Validation Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelActionValidationContexts.ValidationContexts">
+            <summary>
+                <para>Specifies validation context IDs separated by a semicolon.
+</para>
+            </summary>
+            <value>A string specifying validation context IDs separated by a semicolon.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelValidationRules">
+
+            <summary>
+                <para>The Rules node defines all the Rules that are applied in an application.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelValidationContexts">
+
+            <summary>
+                <para>The Contexts node defines the validation contexts used in the application.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelValidationContext">
+
+            <summary>
+                <para>The Context node defines a particular validation context.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelValidationContext.AllowInplaceValidation">
+            <summary>
+                <para>Specifies whether or not in-place validation is allowed for the current context. 
+
+</para>
+            </summary>
+            <value><b>true</b>, if the current context uses in-place validation; otherwise, <b>false</b>. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelValidationContext.Caption">
+            <summary>
+                <para>Specifies a caption for the current Context.
+</para>
+            </summary>
+            <value>A string specifying a caption for the current Context.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelValidationContext.Id">
+            <summary>
+                <para>Specifies the current Context identifier.
+</para>
+            </summary>
+            <value>A string specifying the current Context identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.IModelValidation">
+
+            <summary>
+                <para>The Validation node defines Contexts and Rules used in your application.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelValidation.Contexts">
+            <summary>
+                <para>Provides access to the Contexts node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Validation.IModelValidationContexts"/> object representing the Contexts node.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelValidation.ErrorMessageTemplates">
+            <summary>
+                <para>Provides access to the ErrorMessageTemplates node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Persistent.Validation.IModelValidationdDefaultErrorMessageTemplates"/> object representing the ErrorMessageTemplates node.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.IModelValidation.Rules">
+            <summary>
+                <para>Provides access to the Rules node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.Validation.IModelValidationRules"/> object representing the Rules node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.ActionValidationController">
+
+            <summary>
+                <para>Represents a <see cref="T:DevExpress.ExpressApp.Controller"/> descendant that allows Actions to be used as Validation Contexts.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ActionValidationController.#ctor">
+            <summary>
+                <para>Creates an instance of the ActionValidationController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.DeleteContextValidatingEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.DeleteContextValidating"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.DeleteContextValidatingEventArgs.#ctor(DevExpress.Persistent.Validation.ContextIdentifier,System.Collections.ArrayList,System.Object)">
+            <summary>
+                <para>Initializes a new instance of the DeleteContextValidatingEventArgs class.
+</para>
+            </summary>
+            <param name="context">
+		A <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/> object that specifies the validation context.
+
+            </param>
+            <param name="targetObjects">
+		An <b>ArrayList</b> list of target objects.
+
+            </param>
+            <param name="deletingObject">
+		An object that will be deleted.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.DeleteContextValidatingEventArgs.DeletingObject">
+            <summary>
+                <para>Gets an object that will be deleted.
+</para>
+            </summary>
+            <value>An object that will be deleted.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs">
+
+            <summary>
+                <para>Serves as the base class for the <see cref="T:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs"/> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.#ctor(DevExpress.ExpressApp.XafApplication,System.Collections.Generic.List`1,System.Collections.Generic.List`1)">
+            <summary>
+                <para>Creates a new instance of the CustomizeRulesEventArgs.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.Application"/> property.
+
+            </param>
+            <param name="rules">
+		A <b>List</b> collection of additional validation rules to be used by the application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.Rules"/> property.
+
+            </param>
+            <param name="ruleSources">
+		A <b>List</b> collection of additional validation rule sources to be used by the application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.RuleSources"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.Application">
+            <summary>
+                <para>Specifies the object providing methods and properties to manage the current application.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.Rules">
+            <summary>
+                <para>Specifies additional validation rules to be used by the application.
+</para>
+            </summary>
+            <value>A <b>List</b> collection of additional validation rules to be used by the application.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.RuleSources">
+            <summary>
+                <para>Specifies additional validation rule sources to be used by the application.
+</para>
+            </summary>
+            <value>A <b>List</b> collection of additional validation rule sources to be used by the application.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.RuleSetInitializedEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Validation.ValidationModule.RuleSetInitialized"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.RuleSetInitializedEventArgs.#ctor(DevExpress.Persistent.Validation.RuleSet)">
+            <summary>
+                <para>Creates a new instance of the RuleSetInitializedEventArgs.
+</para>
+            </summary>
+            <param name="ruleSet">
+		A <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> object, which specifies the Validation Rules declared in an application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.RuleSetInitializedEventArgs.RuleSet"/> property.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.RuleSetInitializedEventArgs.RuleSet">
+            <summary>
+                <para>Specifies the Validation Rules declared in an application. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> object, which is the Validation Rules declared in an application. 
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Validation.ValidationModule.CustomizeApplicationRuntimeRules"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs.#ctor(DevExpress.ExpressApp.XafApplication,System.Collections.Generic.List`1,System.Collections.Generic.List`1,DevExpress.ExpressApp.IObjectSpaceProvider,DevExpress.Persistent.Validation.RuleSet)">
+            <summary>
+                <para>Creates a new instance of the CustomizeApplicationRuntimeRulesEventArgs.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.Application"/> property.
+
+            </param>
+            <param name="rules">
+		A <b>List</b> collection of additional validation rules to be used by the application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.Rules"/> property.
+
+            </param>
+            <param name="ruleSources">
+		A <b>List</b> collection of additional validation rule sources to be used by the application. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeRulesEventArgs.RuleSources"/> property.
+
+            </param>
+            <param name="objectSpaceProvider">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpaceProvider"/>, which is the Object Space Provider to be used to create Object Spaces for creation of additional validation rules. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs.ObjectSpaceProvider"/> property.
+
+            </param>
+            <param name="applicationModelRuleSet">
+		A <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> object, which is the validation rules declared via the Application Model. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs.ApplicationModelRuleSet"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs.ApplicationModelRuleSet">
+            <summary>
+                <para>Specifies validation rules declared via the Application Model.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> object, which is the validation rules declared via the Application Model.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomizeApplicationRuntimeRulesEventArgs.ObjectSpaceProvider">
+            <summary>
+                <para>Specifies the Object Space Provider to be used to create Object Spaces for creation of additional validation rules.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.IObjectSpaceProvider"/>, which is the Object Space Provider to be used to create Object Spaces for creation of additional validation rules.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.ValidationModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.Validation.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.#ctor">
+            <summary>
+                <para>Creates an instance of the ValidationModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.ValidationModule.AllowValidationDetailsAccess">
+            <summary>
+                <para>Specifies whether end-users are allowed to view validation result details.
+</para>
+            </summary>
+            <value><b>true</b>, if end-users are allowed to view validation result details; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Validation.ValidationModule.CustomizeApplicationRuntimeRules">
+            <summary>
+                <para>Occurs when the <see cref="M:DevExpress.ExpressApp.Validation.ValidationModule.InitializeRuleSet"/> method is invoked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+            <summary>
+                <para>Customizes metadata on business classes specific to the ValidationModule before loading the metadata to the Application Model's <b>BOModel</b> node.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object which holds metadata information on business classes to be loaded to the Application Model. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.ValidationModule.EnableControllersOnLogonWindow">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Validation.IModelApplicationValidation"/> interfaces.
+</para>
+            </summary>
+            <param name="extenders">
+		A <b>ModelInterfaceExtenders</b> object that is a collection of Application Model interface extenders. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.GetContextCaption(System.String,DevExpress.ExpressApp.Model.IModelApplication)">
+            <summary>
+                <para>Retrieves the caption associated with a particular validation context.
+</para>
+            </summary>
+            <param name="contextId">
+		A string representation of a context identifier whose associated caption must be retrieved.
+
+            </param>
+            <param name="modelApplication">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelApplication"/> object, which is the root node of the Application Model.
+
+            </param>
+            <returns>A string containing the caption associated with the <i>contextId</i> validation context.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the ValidationModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the ValidationModule module.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.ValidationModule.IgnoreWarningAndInformationRules">
+            <summary>
+                <para>Specifies whether or not <b>Warning</b> and <b>Information</b> type rules are ignored (see <see cref="P:DevExpress.Persistent.Validation.IRuleBaseProperties.ResultType"/>).
+
+</para>
+            </summary>
+            <value><b>true</b>, when  <b>Warning</b> and <b>Information</b> rules are ignored; otherwise - <b>false</b>. The default is <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.InitializeRuleSet">
+            <summary>
+                <para>Initializes the <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> object assigned to the <see cref="P:DevExpress.Persistent.Validation.Validator.RuleSet"/> property.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Validation.ValidationModule.RuleSetInitialized">
+            <summary>
+                <para>Occurs after the <see cref="T:DevExpress.Persistent.Validation.RuleSet"/> object assigned to the <see cref="P:DevExpress.Persistent.Validation.Validator.RuleSet"/> property has been initialized via the <see cref="M:DevExpress.ExpressApp.Validation.ValidationModule.InitializeRuleSet"/> method.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ValidationModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the ValidationModule after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.ModelValidationContextsNodeGenerator">
+
+            <summary>
+                <para>A Nodes Generator that generates the content of the <see cref="T:DevExpress.ExpressApp.Validation.IModelValidationContexts"/> node.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ModelValidationContextsNodeGenerator.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ModelValidationContextsNodeGenerator class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.ModelValidationRulesNodeGenerator">
+
+            <summary>
+                <para>A Nodes Generator that generates the content of the <see cref="T:DevExpress.ExpressApp.Validation.IModelValidationRules"/> node.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ModelValidationRulesNodeGenerator.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ModelValidationRulesNodeGenerator class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ModelValidationRulesNodeGenerator.GetRuleInfoString(DevExpress.Persistent.Validation.IRuleBaseProperties)">
+            <summary>
+                <para>Returns a string that specifies the <see cref="T:DevExpress.Persistent.Validation.IRuleBaseProperties"/> object in a human-readable manner.
+
+</para>
+            </summary>
+            <param name="ruleProperties">
+		An <b>IRuleBaseProperties</b> object to be specified in a human-readable manner.
+
+            </param>
+            <returns>A string that specifies the <b>IRuleBaseProperties</b> object in a human-readable manner.
+
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.NeedToValidateObjectEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.NeedToValidateObject"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.NeedToValidateObjectEventArgs.#ctor(System.Object)">
+            <summary>
+                <para>Creates an instance of the NeedToValidateObjectEventArgs class.
+</para>
+            </summary>
+            <param name="currentObject">
+		An object which is about to be validated. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.NeedToValidateObjectEventArgs.CurrentObject"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.NeedToValidateObjectEventArgs.CurrentObject">
+            <summary>
+                <para>Specifies an object which is about to be validated.
+</para>
+            </summary>
+            <value>An object which is about to be validated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.NeedToValidateObjectEventArgs.NeedToValidate">
+            <summary>
+                <para>Indicates whether the <see cref="P:DevExpress.ExpressApp.Validation.NeedToValidateObjectEventArgs.CurrentObject"/> must be validated.
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>CurrentObject</b> must be validated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.CustomGetAggregatedObjectsToValidateEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.CustomGetAggregatedObjectsToValidate"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.CustomGetAggregatedObjectsToValidateEventArgs.#ctor(System.Object)">
+            <summary>
+                <para>Creates an instance of the CustomGetAggregatedObjectsToValidateEventArgs class.
+</para>
+            </summary>
+            <param name="ownerObject">
+		An object whose aggregated objects are about to be validated. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.CustomGetAggregatedObjectsToValidateEventArgs.OwnerObject"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomGetAggregatedObjectsToValidateEventArgs.AggregatedObjects">
+            <summary>
+                <para>Specifies the <see cref="P:DevExpress.ExpressApp.Validation.CustomGetAggregatedObjectsToValidateEventArgs.OwnerObject"/>'s aggregated objects to be validated.
+</para>
+            </summary>
+            <value>An <see cref="T:System.Collections.ArrayList"/> of the <b>OwnerObject</b>'s aggregated objects to be validated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.CustomGetAggregatedObjectsToValidateEventArgs.OwnerObject">
+            <summary>
+                <para>Specifies the object whose aggregated objects are about to be validated.
+</para>
+            </summary>
+            <value>An object whose aggregated objects are about to be validated.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.ContextValidating"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs.#ctor(DevExpress.Persistent.Validation.ContextIdentifier,System.Collections.ArrayList)">
+            <summary>
+                <para>Creates a new instance of the ContextValidatingEventArgs class.
+</para>
+            </summary>
+            <param name="context">
+		A <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/> object, specifying the validation context whose associated validation rules are about to be checked. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs.Context"/> property.
+
+            </param>
+            <param name="targetObjects">
+		An <see cref="T:System.Collections.ArrayList"/> of objects that are about to be validated in the validation context specified by the <b>Context</b> property. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs.TargetObjects"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs.Context">
+            <summary>
+                <para>Specifies the validation context whose associated validation rules are about to be checked.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Persistent.Validation.ContextIdentifier"/> object specifying the validation context whose associated validation rules are about to be checked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs.TargetObjects">
+            <summary>
+                <para>Specifies the objects that are about to be validated in the validation context specified by the <see cref="P:DevExpress.ExpressApp.Validation.ContextValidatingEventArgs.Context"/> property.
+</para>
+            </summary>
+            <value>An <see cref="T:System.Collections.ArrayList"/> of objects that are about to be validated in the validation context specified by the <b>Context</b> property.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Validation.PersistenceValidationController">
+
+            <summary>
+                <para>Validates persistent objects when they are saved or deleted via the UI.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Validation.PersistenceValidationController.#ctor">
+            <summary>
+                <para>Creates an instance of the PersistenceValidationController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Validation.PersistenceValidationController.AllowAllViewTypes">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.ContextValidating">
+            <summary>
+                <para>Occurs when validation rules associated with the <b>Delete</b> or <b>Save</b> validation contexts are about to be checked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.CustomGetAggregatedObjectsToValidate">
+            <summary>
+                <para>Occurs when determining which aggregated objects should be validated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.DeleteContextValidating">
+            <summary>
+                <para>Occurs when an object that will be deleted is validated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Validation.PersistenceValidationController.NeedToValidateObject">
+            <summary>
+                <para>Occurs when determining objects to be validated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Validation.PersistenceValidationController.ViewObjectSpaceActiveKey">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+    </members>
+</doc>

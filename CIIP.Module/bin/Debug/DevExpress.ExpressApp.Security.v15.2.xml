@@ -1,0 +1,1984 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Security.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Security.HasRightsToModifyMemberController">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.ViewController"/> descendant that makes Property Editors read-only or editable, dependent on the current user's permissions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.HasRightsToModifyMemberController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HasRightsToModifyMemberController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.HasRightsToModifyMemberController.AllowEditKey">
+            <summary>
+                <para>The name of the key that is added to the Property Editor's <see cref="P:DevExpress.ExpressApp.Editors.PropertyEditor.AllowEdit"/> <see cref="T:DevExpress.ExpressApp.Utils.BoolList"/> to indicate whether or not an editor is enabled due to security restrictions.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.HasRightsToModifyMemberController.UpdatePropertyEditors">
+            <summary>
+                <para>Makes the Property Editors' states read-only or editable, dependent on the current user's permissions.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.MyDetailsController">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.WindowController"/> descendant that adds the <b>My Details</b> item to the Navigation System, and contains the <b>MyDetails</b> Action.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.MyDetailsController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MyDetailsController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.CanGenerateMyDetailsNavigationItem">
+            <summary>
+                <para>Specifies whether to add the <b>MyDetails</b> item to the Navigation System. The default value is <b>true</b>, i.e. the <b>MyDetails</b> item is added.
+
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsAction">
+            <summary>
+                <para>Gets a <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> used to invoke the <b>My Details</b> Detail View.
+</para>
+            </summary>
+            <value>A <b>SimpleAction</b> object used to invoke the <b>My Details</b> Detail View.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsActionActiveKeySecurity">
+            <summary>
+                <para>This field is for internal use only.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsActionActiveKeyShortcutIsAssigned">
+            <summary>
+                <para>A string representing a key of the <see cref="P:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsAction"/>'s <see cref="P:DevExpress.ExpressApp.Actions.ActionBase.Active"/> collection. This key indicates that the Action shortcut is assigned.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsActionActiveKeyUserTypeAvailable">
+            <summary>
+                <para>This field is for internal use only.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsActionId">
+            <summary>
+                <para>Gets a string representing the identifier of the <see cref="P:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsAction"/>.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsActionImageName">
+            <summary>
+                <para>Gets a string representing the image name used as <see cref="P:DevExpress.ExpressApp.Actions.ActionBase.ImageName"/> of the <see cref="P:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsAction"/> Action, and used as <see cref="P:DevExpress.ExpressApp.Model.IModelBaseChoiceActionItem.ImageName"/> of the <b>MyDetails</b> navigation item.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsNavigationItemId">
+            <summary>
+                <para>Gets a string representing the identifier of the <b>My Details</b> navigation item (see <see cref="P:DevExpress.ExpressApp.Model.IModelBaseChoiceActionItem.Id"/>).
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsObjectKey">
+            <summary>
+                <para>Gets a string representing an object key used when generating the <b>My Details</b> navigation item.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.MyDetailsController.MyDetailsViewShortcut">
+            <summary>
+                <para>Specifies a View shortcut used when generating the <b>My Details</b> navigation item.
+</para>
+            </summary>
+            <value>A string representing a View shortcut used when generating the <b>My Details</b> navigation item.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole">
+
+            <summary>
+                <para>A persistent class that defines the security role.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+                <para>Initializes a new instance of the SecuritySystemRole class in a particular Session
+</para>
+            </summary>
+            <param name="session">
+		A <b>DevExpress.Xpo.Session</b> object, which is a persistent objects cache where the role will be instantiated.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.ChildRoles">
+            <summary>
+                <para>Gets the current role's child roles list.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/>&gt; collection which is the list of the current role's child roles.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.ParentRoles">
+            <summary>
+                <para>Gets the current role's master roles list.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/>&gt; collection which is the list of the current role's master roles.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole.Users">
+            <summary>
+                <para>A list of users associated with the current role.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser"/>&gt; collection which is the list of users associated with the current role.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser">
+
+            <summary>
+                <para>An XAF user who has a list of associated security roles.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+                <para>Initializes a new instance of the SecuritySystemUser class in a particular Session
+</para>
+            </summary>
+            <param name="session">
+		A <b>DevExpress.Xpo.Session</b> object, which is a persistent objects cache where the user will be instantiated.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser.Roles">
+            <summary>
+                <para>A list of roles associated with the current user.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.Xpo.XPCollection"/>&lt;<see cref="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole"/>&gt; collection which is the list of roles associated with the current user.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.UserWithRolesExtensions">
+
+            <summary>
+                <para>Provides extension methods for <see cref="T:DevExpress.ExpressApp.Security.ISecurityUserWithRoles"/> implementation.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.UserWithRolesExtensions.IsUserInRole(DevExpress.Persistent.Base.Security.IUserWithRoles,System.String)">
+            <summary>
+                <para>Static extension method that determines whether the user belongs to a specific role.
+</para>
+            </summary>
+            <param name="user">
+		An <b>ISecurityUserWithRoles</b> object that specifies the user.
+
+            </param>
+            <param name="roleName">
+		A string that specifies the role name (see <see cref="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.Name"/>).
+
+            </param>
+            <returns><b>true</b>, if the user belongs to the given role; otherwise - <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper">
+
+            <summary>
+                <para>Provides static helper methods to be used in the Middle Tier Security - WCF Service scenario.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.AddKnownType(System.Type)">
+            <summary>
+                <para>Adds the specified type to the WCF data service contract's known types list.
+</para>
+            </summary>
+            <param name="type">
+		A <b>System.Type</b> object to be added to the WCF data service contract's known types list.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.CreateDefaultBinding">
+            <summary>
+                <para>Creates a <a href="http://msdn.microsoft.com/en-us/library/system.servicemodel.channels.binding.aspx">Binding</a> object that can be used in the Middle Tier Security - WCF Service scenario.
+</para>
+            </summary>
+            <returns>A <b>System.ServiceModel.Channels.Binding</b> object that can be used in the WCF Application Server implementation.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.GetKnownTypes(System.Reflection.ICustomAttributeProvider)">
+            <summary>
+                <para>Gets a list of types that are known by the WCF data service's contract.
+</para>
+            </summary>
+            <param name="provider">
+		An <b>ICustomAttributeProvider</b> object.
+
+            </param>
+            <returns>An <b>IEnumerable</b> list of types that are known by the WCF data service's contract.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ClientServer.Wcf.WcfDataServerHelper.ResetKnownTypesLock">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase">
+
+            <summary>
+                <para>An abstract base class for Security System Users.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+                <para>Initializes a new instance of the SecuritySystemUserBase class in a particular Session
+</para>
+            </summary>
+            <param name="session">
+		A <b>DevExpress.Xpo.Session</b> object, which is a persistent objects cache where the user will be instantiated.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.ChangePasswordOnFirstLogon">
+            <summary>
+                <para>Specifies whether the user must change his/her password the next time he/she logs on.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the user must change his/her password the next time he/she logs on; otherwise - <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.ComparePassword(System.String)">
+            <summary>
+                <para>Compares the current user's stored encrypted password with its plain-text representation.
+</para>
+            </summary>
+            <param name="password">
+		A string which is the plain-text password for comparison.
+
+            </param>
+            <returns><b>true</b> if the passwords are identical, otherwise - <b>false</b>
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.IsActive">
+            <summary>
+                <para>Specifies if a user is allowed to logon.
+</para>
+            </summary>
+            <value><b>true</b> if a user is active; otherwise - <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.Oid">
+            <summary>
+                <para>Specifies the user's identifier.
+</para>
+            </summary>
+            <value>A <b>System.Guid</b> object which is the user's unique identifier.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.SetPassword(System.String)">
+            <summary>
+                <para>Changes the user password.
+</para>
+            </summary>
+            <param name="password">
+		A string which is a new password.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase.UserName">
+            <summary>
+                <para>Specifies the user's login name.
+</para>
+            </summary>
+            <value>A string which is the user's login name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.IOperationPermissionProvider">
+
+            <summary>
+                <para>Declares members of a class which provides security permissions associated with it. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.IOperationPermissionProvider.GetChildren">
+            <summary>
+                <para>Returns a list of IOperationPermissionProvider objects associated with the current object.
+</para>
+            </summary>
+            <returns>An <b>IEnumerable</b> list of  objects associated with the current object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.IOperationPermissionProvider.GetPermissions">
+            <summary>
+                <para>Returns permissions that are directly assigned to the current object.
+</para>
+            </summary>
+            <returns>An <b>IEnumerable&lt;</b><see cref="T:DevExpress.ExpressApp.Security.IOperationPermission"/><b>&gt;</b> list of permissions that are directly assigned to the current object.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.ISecurityUserWithRoles">
+
+            <summary>
+                <para>Declares members of a class which is a Security System User with a collection of associated Roles.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.ISecurityUserWithRoles.Roles">
+            <summary>
+                <para>A list of roles associated with the current user.
+</para>
+            </summary>
+            <value>An <b>IList</b> collection which is the list of roles associated with the current user.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.ISecurityUser">
+
+            <summary>
+                <para>Declares members of a class which is a Security System User.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.ISecurityUser.IsActive">
+            <summary>
+                <para>Specifies if a user is allowed to logon.
+</para>
+            </summary>
+            <value><b>true</b> if a user is active; otherwise - <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.ISecurityUser.UserName">
+            <summary>
+                <para>Specifies the user's login name.
+</para>
+            </summary>
+            <value>A string which is the user's login name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase">
+
+            <summary>
+                <para>An abstract base class for security roles.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+                <para>Initializes a new instance of the SecuritySystemRoleBase class in a particular Session
+</para>
+            </summary>
+            <param name="session">
+		A <b>DevExpress.Xpo.Session</b> object, which is a persistent objects cache where the role will be instantiated.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.AutoAssociationPermissions">
+            <summary>
+                <para>Specifies, whether or not the required permissions are automatically configured for associated objects/collections.
+</para>
+            </summary>
+            <value><b>true</b>, if permissions are automatically configured for associations, otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.CanEditModel">
+            <summary>
+                <para>Specifies whether users associated with the current role can use the Model Editor. A <b>DevExpress.Xpo.Session</b> object, which is a persistent objects cache where the user will be instantiated.
+</para>
+            </summary>
+            <value><b>true</b>, if users associated with the current role can use the Model Editor; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.IsAdministrative">
+            <summary>
+                <para>Specifies whether users associated with the current role are administrators.
+</para>
+            </summary>
+            <value><b>true</b>, if users associated with the current role are administrators; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.Name">
+            <summary>
+                <para>Specifies the name of the security role.
+</para>
+            </summary>
+            <value>A string which is the name of the security role.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase.TypeAssociationPermissionsOwnerHelper">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.PermissionRequestProcessorBase`1">
+
+            <summary>
+                <para>An abstract base class for Permission Request Processors.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.PermissionRequestProcessorBase`1.IsGranted(DevExpress.ExpressApp.Security.ProcessorPermissionRequestType)">
+            <summary>
+                <para>Determines whether or not a specified permission is granted.
+</para>
+            </summary>
+            <param name="permissionRequest">
+		An <see cref="T:DevExpress.ExpressApp.Security.IPermissionRequest"/> object that is a Permission Request.
+
+            </param>
+            <returns><b>true</b>, when a permission is granted; otherwise - <b>false</b>;
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationBase">
+
+            <summary>
+                <para>An abstract base class for Security System authentication types.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationBase.AskLogonParametersViaUI">
+            <summary>
+                <para>Indicates whether or not the logon process is interactive (logon parameters are requested via the logon dialog).
+</para>
+            </summary>
+            <value><b>true</b>, when the logon process is interactive, otherwise - false.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.Authenticate(DevExpress.ExpressApp.IObjectSpace)">
+            <summary>
+                <para>Authenticates a user trying to find the corresponding user object by comparing logon parameter values with the information stored in the database.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> Object Space used for data manipulation.
+
+            </param>
+            <returns>An object which is an authenticated user.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.ClearSecuredLogonParameters">
+            <summary>
+                <para>Resets values exposed by the Logon Parameters object that should not be accessible after logon (e.g., password).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Security.AuthenticationBase.CreateCustomLogonParameters">
+            <summary>
+                <para>Occurs when the <see cref="P:DevExpress.ExpressApp.Security.AuthenticationBase.LogonParameters"/> property getter is called.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.GetBusinessClasses">
+            <summary>
+                <para>Returns a list of business classes to be added to the Application Model.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationBase.IsLogoffEnabled">
+            <summary>
+                <para>Indicates whether to enable the <see cref="P:DevExpress.ExpressApp.SystemModule.LogoffController.LogoffAction"/> Action.
+</para>
+            </summary>
+            <value><b>true</b>, if the Logoff Action is enabled; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.IsSecurityMember(System.Object,System.String)">
+            <summary>
+                <para>Checks if the specified member is used by the security system.
+</para>
+            </summary>
+            <param name="theObject">
+		A type that owns a member to be checked.
+
+            </param>
+            <param name="memberName">
+		A string which is the name of a member to be checked.
+
+            </param>
+            <returns><b>true</b>, if the specified member is a member used by the security system, otherwise - <b>false</b>.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.IsSecurityMember(System.Type,System.String)">
+            <summary>
+                <para>Checks if the specified member is used by the security system.
+</para>
+            </summary>
+            <param name="type">
+		A type that owns a member to be checked.
+
+            </param>
+            <param name="memberName">
+		A string which is the name of a member to be checked.
+
+            </param>
+            <returns><b>true</b>, if the specified member is a member used by the security system, otherwise - <b>false</b>.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.Logoff">
+            <summary>
+                <para>Permorms the logoff.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationBase.LogonParameters">
+            <summary>
+                <para>Returns the Logon Parameters object.
+</para>
+            </summary>
+            <value>A Logon Parameters object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationBase.Name">
+            <summary>
+                <para>Gets the name of the current authentication type.
+</para>
+            </summary>
+            <value>A string which is the name of the current authentication type.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationBase.SetLogonParameters(System.Object)">
+            <summary>
+                <para>Initializes the Logon Parameters.
+</para>
+            </summary>
+            <param name="logonParameters">
+		The Logon Parameters object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationBase.UserType">
+            <summary>
+                <para>Specifies the type of user that is supported by the authentication.
+</para>
+            </summary>
+            <value>A <b>Sustem.Type</b> object which is the type of user supported by the authentication.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.OperationPermissionBase">
+
+            <summary>
+                <para>An abstact base class for Operation Permissions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.OperationPermissionBase.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the OperationPermissionBase class.
+</para>
+            </summary>
+            <param name="operation">
+		A string which specifies the secured operation.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.OperationPermissionBase.GetSupportedOperations">
+            <summary>
+                <para>Returns the list of operations that are supported by the current Operation Permission.
+</para>
+            </summary>
+            <returns>An <b>IList</b> collection of operations that are supported by the current Operation Permission.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.OperationPermissionBase.Operation">
+            <summary>
+                <para>Gets the name of a secured operation.
+</para>
+            </summary>
+            <value>A string which is the name of a secured operation.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.TypeOperationPermission">
+
+            <summary>
+                <para>An Operation Permission for all objects of a specified type.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.TypeOperationPermission.#ctor(System.Type,System.String)">
+            <summary>
+                <para>Initializes a new instance of the TypeOperationPermission class.
+</para>
+            </summary>
+            <param name="objectType">
+		A <b>System.Type</b> object which is the secured type.
+
+            </param>
+            <param name="operation">
+		A string which is the name of the secured operation. Supported operations are "Read", "Write", "Create", "Delete" and "Navigate".
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.TypeOperationPermission.GetSupportedOperations">
+            <summary>
+                <para>Returns the list of operations that are supported by the current Operation Permission.
+</para>
+            </summary>
+            <returns>An <b>IList</b> collection of operations that are supported by the current Operation Permission.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.TypeOperationPermission.ObjectType">
+            <summary>
+                <para>The type of the secured object.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> object which is the secured type.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.MemberOperationPermission">
+
+            <summary>
+                <para>An operation Permission for a specific object member.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.MemberOperationPermission.#ctor(System.Type,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the MemberOperationPermission class.
+</para>
+            </summary>
+            <param name="objectType">
+		A <b>System.Type</b> object which is the type exposing the secured member.
+
+            </param>
+            <param name="memberName">
+		A string which is the name of the secured member.
+
+            </param>
+            <param name="operation">
+		A string which is the name of the secured operation. Supported operations are "Read" and "Write".
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.MemberOperationPermission.GetSupportedOperations">
+            <summary>
+                <para>Returns the list of operations that are supported by the current Operation Permission.
+</para>
+            </summary>
+            <returns>An <b>IList</b> collection of operations that are supported by the current Operation Permission.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.MemberOperationPermission.MemberName">
+            <summary>
+                <para>Gets a string which is the name of the secured member.
+</para>
+            </summary>
+            <value>A string which is the name of the secured member.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.MemberOperationPermission.ObjectType">
+            <summary>
+                <para>Gets the type exposing the secured member.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> object which is the type exposing the secured member.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.ModelOperationPermission">
+
+            <summary>
+                <para>The Operation Permission for using the Model Editor at run time.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ModelOperationPermission.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ModelOperationPermission class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ModelOperationPermission.GetSupportedOperations">
+            <summary>
+                <para>Returns the list of operations that are supported by the current Operation Permission.
+</para>
+            </summary>
+            <returns>An <b>IList</b> collection of operations that are supported by the current Operation Permission.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.ObjectOperationPermission">
+
+            <summary>
+                <para>An Operation Permission for objects that satisfy a specified criteria.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ObjectOperationPermission.#ctor(System.Type,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the ObjectOperationPermission class.
+</para>
+            </summary>
+            <param name="objectType">
+		A <b>System.Type</b> object which is the type of the secured object.
+
+            </param>
+            <param name="criteria">
+		A string which specifies a criteria satisfied by a the secured object.
+
+            </param>
+            <param name="operation">
+		A string which is the name of the secured operation. Supported operations are "Read", "Write", "Delete" and "Navigate".
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.ObjectOperationPermission.Criteria">
+            <summary>
+                <para>Gets a criteria satisfied by a secured object.
+
+</para>
+            </summary>
+            <value>A string which specifies a criteria satisfied by a secured object.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.ObjectOperationPermission.GetSupportedOperations">
+            <summary>
+                <para>Returns the list of operations that are supported by the current Operation Permission.
+</para>
+            </summary>
+            <returns>An <b>IList</b> collection of operations that are supported by the current Operation Permission.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.ObjectOperationPermission.ObjectType">
+            <summary>
+                <para>Gets the type of the secured object.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> object which is the type of the secured object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.CustomCreateUserEventArgs">
+
+            <summary>
+                <para>Arguments, passed to the <see cref="E:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.CustomCreateUser"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.CustomCreateUserEventArgs.#ctor(DevExpress.ExpressApp.IObjectSpace,System.String)">
+            <summary>
+                <para>Initializes a new instance of the CustomCreateUserEventArgs class.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> Object Space used to create a user persistent object.
+
+            </param>
+            <param name="userName">
+		A string which is the auto-created user login name.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.CustomCreateUserEventArgs.ObjectSpace">
+            <summary>
+                <para>Gets an Object Space used to create a user persistent object.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> Object Space used to create a user persistent object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.CustomCreateUserEventArgs.User">
+            <summary>
+                <para>Specifies an auto-created user.
+</para>
+            </summary>
+            <value>An auto-created user object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.CustomCreateUserEventArgs.UserName">
+            <summary>
+                <para>Gets the login name of the auto-created user.
+</para>
+            </summary>
+            <value>A string which is the login name of the auto-created user.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.SecurityStrategy">
+
+            <summary>
+                <para>An abstract base class for Security Strategies.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.#ctor(System.Type,DevExpress.ExpressApp.Security.AuthenticationBase)">
+            <summary>
+                <para>Initializes a new instance of the SecurityStrategy class with the specified user type and authentication.
+</para>
+            </summary>
+            <param name="userType">
+		The type of a security strategy user.
+
+            </param>
+            <param name="authentication">
+		An <see cref="T:DevExpress.ExpressApp.Security.AuthenticationBase"/> object which is the authentication used within the security strategy.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SecurityStrategy class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.SecurityStrategy.AdditionalSecuredTypes">
+            <summary>
+                <para>Specifies the list extra types that can be secured (by default, only persistent types can be secured).
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.SecurityStrategy.AdministratorRoleName">
+            <summary>
+                <para>Specifies the name of the administrator role.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Security.SecurityStrategy.CustomizeRequestProcessors">
+            <summary>
+                <para>Occurs after Permission Request Processors are registered. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.DelayPermissionDictionaryLoading">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.GetBusinessClasses">
+            <summary>
+                <para>Returns a list of persistent types that are used within the current security strategy.
+</para>
+            </summary>
+            <returns>An <b>IList</b> object that is the list of persistent types that are used within the current security strategy.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.GetSecuredTypes">
+            <summary>
+                <para>Returns a list of business classes that can be secured.
+</para>
+            </summary>
+            <returns>An <b>IEnumerable</b> list of secured types.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.IsGranted(DevExpress.ExpressApp.Security.IPermissionRequest)">
+            <summary>
+                <para>Checks whether the specified operation is allowed.
+</para>
+            </summary>
+            <param name="permissionRequest">
+		An <b>IPermissionRequest</b> object that specifies the secured operation.
+
+            </param>
+            <returns><b>true</b>, when the operation is allowed; otherwise - <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.IsGranted(System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Checks whether the specified operations are allowed.
+
+</para>
+            </summary>
+            <param name="permissionRequests">
+		An <b>IList</b> object that specifies the secured operations.
+
+            </param>
+            <returns><b>true</b>, when the operations are allowed; otherwise - <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.IsSecuredType(System.Type)">
+            <summary>
+                <para>Checks if the specified type can be secured.
+</para>
+            </summary>
+            <param name="type">
+		A <b>System.Type</b> object.
+
+            </param>
+            <returns><b>true</b>, if the specified type can be secured; otherwise - <b>false</b>;
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.Logoff">
+            <summary>
+                <para>Logs the current user off.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategy.Logon(System.Object)">
+            <summary>
+                <para>Intended for internal use and should not be called from your code. Use another overload of this method that takes an <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> parameter instead.
+</para>
+            </summary>
+            <param name="user">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.SecuredNonPersistentTypes">
+            <summary>
+                <para>This property is now obsolete. Use the <see cref="F:DevExpress.ExpressApp.Security.SecurityStrategy.AdditionalSecuredTypes"/> property instead. 
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.TraceLevel">
+            <summary>
+                <para>Specifies the trace level for logs.
+</para>
+            </summary>
+            <value>A <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.tracelevel.aspx">TraceLevel</a> enumeration value that  specifies the trace level for logs.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.SecurityStrategy.TraceSwitchName">
+            <summary>
+                <para>Gets the name of a <a href="http://msdn.microsoft.com/en-us/library/system.diagnostics.traceswitch.aspx">TraceSwitch</a> used by SecurityStrategy.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.UserId">
+            <summary>
+                <para>An identifier of the current user.
+</para>
+            </summary>
+            <value>An object that is the current user's unique identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.UserName">
+            <summary>
+                <para>Gets the current user name.
+</para>
+            </summary>
+            <value>A string that is the current user name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategy.UserType">
+            <summary>
+                <para>Specifies the type of user that is supported by the security strategy.
+</para>
+            </summary>
+            <value>The type of user that is supported by the security strategy.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.SecurityUserBase">
+
+            <summary>
+                <para>An abstract base class for XAF users.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.ChangePasswordOnFirstLogon">
+            <summary>
+                <para>Specifies whether the user must change password next time he/she logs on. 
+
+</para>
+            </summary>
+            <value><b>true</b>, if the user must change password next time he/she logs on; otherwise - <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.ComparePassword(System.String)">
+            <summary>
+                <para>Compares the current user's stored encrypted password with its plain-text representation.
+</para>
+            </summary>
+            <param name="password">
+		A string which is the plain-text password for comparison.
+
+            </param>
+            <returns><b>true</b> if the passwords are identical, otherwise - <b>false</b>
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.ComparePassword(System.String,System.String)">
+            <summary>
+                <para>Compares the specified encrypted password with its plain-text representation.
+</para>
+            </summary>
+            <param name="storedPassword">
+		A string which is the plain-text password for comparison.
+
+            </param>
+            <param name="password">
+		A string which is the encrypted password for comparison.
+
+            </param>
+            <returns><b>true</b> if the passwords are identical, otherwise - <b>false</b>
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.GeneratePassword(System.String)">
+            <summary>
+                <para>Generates an encrypted password.
+</para>
+            </summary>
+            <param name="password">
+		A string which is an unencrypted password.
+
+            </param>
+            <returns>An encrypted password value.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.IsActive">
+            <summary>
+                <para>Specifies if a user is allowed to logon.
+
+</para>
+            </summary>
+            <value><b>true</b> if a user is active; otherwise - <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.Oid">
+            <summary>
+                <para>Specifies the user's identifier.
+</para>
+            </summary>
+            <value>A <b>System.Guid</b> object which is the user's unique identifier.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityUserBase.SetPassword(System.String)">
+            <summary>
+                <para>Changes the user password.
+</para>
+            </summary>
+            <param name="password">
+		A string which is a new password.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityUserBase.UserName">
+            <summary>
+                <para>Specifies the user's login name.
+</para>
+            </summary>
+            <value>A string which is the user's login name.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.SecurityStrategyComplex">
+
+            <summary>
+                <para>A Security Strategy that maintains users who have a list of associated roles.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategyComplex.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SecurityStrategyComplex class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategyComplex.#ctor(System.Type,System.Type,DevExpress.ExpressApp.Security.AuthenticationBase)">
+            <summary>
+                <para>Initializes a new instance of the SecurityStrategyComplex class with the specified user type, role type, and authentication.
+</para>
+            </summary>
+            <param name="userType">
+		The type of a security strategy user.
+
+            </param>
+            <param name="roleType">
+		The type of a security strategy role.
+
+            </param>
+            <param name="authentication">
+		An <see cref="T:DevExpress.ExpressApp.Security.AuthenticationBase"/> object which is the authentication used within the security strategy.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Security.SecurityStrategyComplex.CustomInitializeNewUser">
+            <summary>
+                <para>Occurs when a user is automatically created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityStrategyComplex.GetBusinessClasses">
+            <summary>
+                <para>Returns a list of persistent types that are used within the current security strategy.
+</para>
+            </summary>
+            <returns>An <b>IList</b> object that is the list of persistent types that are used within the current security strategy.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategyComplex.NewUserRoleName">
+            <summary>
+                <para>Specifies the name of role which is assigned to auto-created users.
+</para>
+            </summary>
+            <value>A string which is the name of the role assigned to auto-created users.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityStrategyComplex.RoleType">
+            <summary>
+                <para>Specifies the type of a security strategy role.
+</para>
+            </summary>
+            <value>The type of a security strategy role.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationStandard`2">
+
+            <summary>
+                <para>An Authentication that assumes an interactive logon. A user inputs logon parameters (e.g. user name and password) manually via the logon dialog.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard`2.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationStandard&lt;UserType, LogonParametersType&gt; class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationStandard`1">
+
+            <summary>
+                <para>An Authentication that assumes an interactive logon. A user inputs logon parameters (e.g. user name and password) manually via the logon dialog.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard`1.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationStandard class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationStandard">
+
+            <summary>
+                <para>An Authentication that assumes an interactive logon. A user inputs logon parameters (e.g. user name and password) manually via the logon dialog.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.#ctor(System.Type,System.Type)">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationStandard class with the specified user type and logon parameters type.
+</para>
+            </summary>
+            <param name="userType">
+		The user type used within the authentication.
+
+            </param>
+            <param name="logonParametersType">
+		The logon parameters type used within the authentication.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationStandard class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationStandard.AskLogonParametersViaUI">
+            <summary>
+                <para>A boolean value indicating whether the logon process is interactive (a user inputs logon parameters manually).
+</para>
+            </summary>
+            <value><b>true</b>, if the logon process is interactive; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.Authenticate(DevExpress.ExpressApp.IObjectSpace)">
+            <summary>
+                <para>Returns an authenticated user.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which is an object space used to find a user by logon parameters.
+
+            </param>
+            <returns>An object which is the authenticated user.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.ClearSecuredLogonParameters">
+            <summary>
+                <para>Clears the logon parameters' password.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.GetBusinessClasses">
+            <summary>
+                <para>Returns a list of persistent types that are used within the current authentication.
+</para>
+            </summary>
+            <returns>An <b>IList</b> object that is the list of persistent types that are used within the current authentication.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationStandard.IsLogoffEnabled">
+            <summary>
+                <para>Gets a boolean value indicating that a user can log off and then logon again without restarting the application.
+
+</para>
+            </summary>
+            <value>A boolean value indicating that a user can log off the application.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.IsSecurityMember(System.Type,System.String)">
+            <summary>
+                <para>Checks if the specified member is a member of the <b>IAuthenticationStandardUser</b> interface.
+
+</para>
+            </summary>
+            <param name="type">
+		A type that owns a member to be checked.
+
+            </param>
+            <param name="memberName">
+		A string which is the name of a member to be checked.
+
+            </param>
+            <returns><b>true</b>, if the specified member is a member of the <b>IAuthenticationActiveDirectoryUser</b> interface, otherwise - <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.Logoff">
+            <summary>
+                <para>Re-creates the Logon Parameters object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationStandard.LogonParameters">
+            <summary>
+                <para>Gets the logon parameters object.
+</para>
+            </summary>
+            <value>An object that is the logon parameters.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationStandard.LogonParametersType">
+            <summary>
+                <para>Specifies the type of logon parameters.
+</para>
+            </summary>
+            <value>The type of logon parameters.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationStandard.SetLogonParameters(System.Object)">
+            <summary>
+                <para>Initializes the Logon Parameters.
+</para>
+            </summary>
+            <param name="logonParameters">
+		The Logon Parameters object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationStandard.UserType">
+            <summary>
+                <para>Specifies the type of user that is supported by the authentication.
+</para>
+            </summary>
+            <value>The type of user that is supported by the authentication.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory`2">
+
+            <summary>
+                <para>An Authentication that assumes an automatic logon. The user name is taken from the currently used Windows account.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory`2.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationActiveDirectory&lt;UserType, LogonParametersType&gt; class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory`1">
+
+            <summary>
+                <para>An Authentication that assumes an automatic logon. The user name is taken from the currently used Windows account.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory`1.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationActiveDirectory class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory">
+
+            <summary>
+                <para>An Authentication that assumes an automatic logon.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.#ctor(System.Type,System.Type)">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationActiveDirectory class with the specified user type and logon parameters type.
+</para>
+            </summary>
+            <param name="userType">
+		The user type used within the authentication.
+
+            </param>
+            <param name="logonParametersType">
+		The logon parameters type used within the authentication.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.#ctor">
+            <summary>
+                <para>Initializes a new instance of the AuthenticationActiveDirectory class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.AskLogonParametersViaUI">
+            <summary>
+                <para>A boolean value indicating whether the logon process is interactive (a user inputs logon parameters manually).
+</para>
+            </summary>
+            <value><b>true</b>, if the logon process is interactive; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.Authenticate(DevExpress.ExpressApp.IObjectSpace)">
+            <summary>
+                <para>Returns an authenticated user.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which is an object space used to find a user by logon parameters.
+
+            </param>
+            <returns>An object which is the authenticated user.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.CreateUserAutomatically">
+            <summary>
+                <para>Specifies whether a user is created automatically for the Windows account used to run the application.
+</para>
+            </summary>
+            <value><b>true</b>, if a user is created automatically for the Windows account used to run the application; otherwise - <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.CustomCreateUser">
+            <summary>
+                <para>Occurs when a user is auto-created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.GetBusinessClasses">
+            <summary>
+                <para>Returns a list of persistent types that are used within the current authentication.
+</para>
+            </summary>
+            <returns>An <b>IList</b> object that is the list of persistent types that are used within the current authentication.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.IsLogoffEnabled">
+            <summary>
+                <para>Gets a boolean value indicating that a user can log off and then logon again without restarting the application.
+
+</para>
+            </summary>
+            <value>A boolean value indicating that a user can log off the application.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.IsSecurityMember(System.Type,System.String)">
+            <summary>
+                <para>Checks is the specified member is a member of the <b>IAuthenticationActiveDirectoryUser</b> interface.
+</para>
+            </summary>
+            <param name="type">
+		A type that owns a member to be checked.
+
+            </param>
+            <param name="memberName">
+		A string which is the name of a member to be checked.
+
+            </param>
+            <returns><b>true</b>, if the specified member is a member of the <b>IAuthenticationActiveDirectoryUser</b> interface, otherwise - <b>false</b>.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.Logoff">
+            <summary>
+                <para>Logs the current user off.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.LogonParameters">
+            <summary>
+                <para>Gets the logon parameters object.
+</para>
+            </summary>
+            <value>An object that is the logon parameters.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.LogonParametersType">
+            <summary>
+                <para>Specifies the type of logon parameters.
+</para>
+            </summary>
+            <value>The type of logon parameters.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.SetLogonParameters(System.Object)">
+            <summary>
+                <para>Initializes the Logon Parameters.
+</para>
+            </summary>
+            <param name="logonParameters">
+		The Logon Parameters object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.AuthenticationActiveDirectory.UserType">
+            <summary>
+                <para>Specifies the type of user that is supported by the authentication.
+</para>
+            </summary>
+            <value>The type of user that is supported by the authentication.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Security.SecurityModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.Security.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.#ctor">
+            <summary>
+                <para>Creates an instance of the SecurityModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+            <summary>
+                <para>Adds Generator Updaters that perform the Application Model customizations required by the Security System.
+</para>
+            </summary>
+            <param name="updaters">
+		A <b>ModelNodesGeneratorUpdaters </b> collection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityModule.CanHandleObjectFormatterCustomGetValueEvent">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityModule.ChangePasswordOnLogonAction">
+            <summary>
+                <para>An Action that shows the <b>Change password on first logon</b> dialog.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.PopupWindowShowAction"/> Action that shows the <b>Change password on first logon</b> dialog.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.CommitCurrentUserLogonParameters(DevExpress.ExpressApp.IObjectSpace,System.String,System.Object)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="objectSpace">
+		 
+            </param>
+            <param name="password">
+		 
+            </param>
+            <param name="sourceObject">
+		 
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Security.SecurityModule.CustomChangePasswordOnLogon">
+            <summary>
+                <para>Occurs when the <b>ChangePasswordOnLogon</b> Action is being executed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+            <summary>
+                <para>Registers the User and Role types within the <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object that supplies metadata on types used in an XAF application.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object that supplies metadata on types used in an XAF application.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Security.SecurityModule.CustomUpdateLogonParameters">
+            <summary>
+                <para>Occurs when the <see cref="M:DevExpress.ExpressApp.Security.SecurityModule.TryUpdateLogonParameters"/> method is executed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the SecurityModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the SecurityModule module.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.GetStartupActions">
+            <summary>
+                <para>Returns a list of Pop-up Window Show Actions that must be executed before loading the application's main Window. 
+</para>
+            </summary>
+            <returns>An <b>IList&lt;</b><see cref="T:DevExpress.ExpressApp.Actions.PopupWindowShowAction"/><b>&gt;</b> list  that must be executed before loading the application's main Window. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.GetUserType(DevExpress.ExpressApp.XafApplication,DevExpress.ExpressApp.ApplicationModulesManager)">
+            <summary>
+                <para>Returns the type of Security System users.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the current application.
+
+            </param>
+            <param name="modulesManager">
+		An <b>ApplicationModulesManager</b> object that manages the current application's modules.
+
+            </param>
+            <returns>A <b>System.Type</b> value that is the type of Security System users.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.GetXafResourceLocalizerTypes">
+            <summary>
+                <para>Returns a collection of additional Resource Localizer types that can be used in an application that uses the SecurityModule.
+</para>
+            </summary>
+            <returns>An <b>ICollection</b> collection containing the types of the Resource Localizers supplied with the <b>SecurityModule</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Configures the XAF application to operate with the Security module.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages an XAF application.
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.SecurityModule.StrictSecurityStrategyBehavior">
+            <summary>
+                <para>Specifies whether to throw a user-friendly exception when a prohibited operation is executed in an Object Space (see <see cref="T:DevExpress.ExpressApp.BaseObjectSpace"/>). The default value is <b>true</b>. If you set this field to false, then the Security System will not prohibit object manipulations performed in your custom code.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Security.SecurityModule.TryUpdateLogonParameters(System.String,System.Object)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="password">
+		 
+            </param>
+            <param name="sourceObject">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Security.SecurityModule.UsedExportedTypes">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Security.SecurityModule.UserType">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraGauges.v15.2.Presets</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraGauges.Presets.Styles.StyleManagerForm">
+
+            <summary>
+                <para>A Style Manager form allows end-users to customize gauge styles at runtime. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Presets.Styles.StyleManagerForm.#ctor(DevExpress.XtraGauges.Base.IGaugeContainer)">
+            <summary>
+                <para>Initializes a new instance of the StyleManagerForm class with the specified gauge container.
+
+</para>
+            </summary>
+            <param name="container">
+		An object implementing the <b>IGaugeContainer</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Presets.Styles.StyleManagerForm.GaugeContainer">
+            <summary>
+                <para>Provides access to the gauge container located in this StyleManagerForm.
+
+
+</para>
+            </summary>
+            <value>An object implementing the <b>IGaugeContainer</b> interface.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Presets.Styles.StyleManagerForm.Show(DevExpress.XtraGauges.Base.IGaugeContainer)">
+            <summary>
+                <para>Show a <b>Style Manager</b> form including the specified gauge container.
+
+</para>
+            </summary>
+            <param name="gaugeContainer">
+		An object implementing the <b>IGaugeContainer</b> interface.
+
+            </param>
+            <returns>A Boolean value returned by the form.
+</returns>
+
+
+        </member>
+    </members>
+</doc>

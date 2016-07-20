@@ -1,0 +1,1136 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Xpo.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Xpo.XpoDataView">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XpoDataView.#ctor(DevExpress.ExpressApp.Xpo.XPObjectSpace,System.Type,System.Collections.Generic.IList`1,DevExpress.Data.Filtering.CriteriaOperator,System.Collections.Generic.IList`1)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="objectSpace">
+		 
+            </param>
+            <param name="objectType">
+		 
+            </param>
+            <param name="expressions">
+		 
+            </param>
+            <param name="criteria">
+		 
+            </param>
+            <param name="sorting">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XpoDataView.#ctor(DevExpress.ExpressApp.Xpo.XPObjectSpace,System.Type,System.String,DevExpress.Data.Filtering.CriteriaOperator,System.Collections.Generic.IList`1)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="objectSpace">
+		 
+            </param>
+            <param name="objectType">
+		 
+            </param>
+            <param name="expressions">
+		 
+            </param>
+            <param name="criteria">
+		 
+            </param>
+            <param name="sorting">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XpoDataView.Dispose">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.XpoDataView.Filter">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.DC.DCBaseObject">
+
+            <summary>
+                <para>The default base persistent class for classes that are generated for Domain Components (DC).
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.DCBaseObject.Oid">
+            <summary>
+                <para>Specifies the persistent object's identifier.
+</para>
+            </summary>
+            <value>A globally unique identifier which represents the persistent object's identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject">
+
+            <summary>
+                <para>The base class for intermediate classes that define many-to-many associations between Domain Components.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject.#ctor(DevExpress.Xpo.Session)">
+            <summary>
+                <para>Initializes a new instance of the DCIntermediateObject class in a particular Session.
+</para>
+            </summary>
+            <param name="session">
+		A <b>DevExpress.Xpo.Session</b> object which represents a persistent object's cache where the business object will be instantiated.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject.LeftObject">
+            <summary>
+                <para>Gets the left object of the association.
+</para>
+            </summary>
+            <value>The left object of the association.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject.LeftObjectType">
+            <summary>
+                <para>Gets the type of the <see cref="P:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject.LeftObject"/>.
+
+</para>
+            </summary>
+            <value>The type of the left object.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject.RightObject">
+            <summary>
+                <para>Gets the right object of the association.
+</para>
+            </summary>
+            <value>The right object of the association.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject.RightObjectType">
+            <summary>
+                <para>Gets the type of the <see cref="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.RightObject"/>.
+
+</para>
+            </summary>
+            <value>The type of the right object.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObjectSettings">
+
+            <summary>
+                <para>Specifies settings for intermediate classes that define many-to-many associations between Domain Components.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObjectSettings.BaseType">
+            <summary>
+                <para>Specifies the base type for intermediate classes that define many-to-many associations between Domain Components.
+</para>
+            </summary>
+            <value>The <b>System.Type</b> object that is the base type for intermediate classes that define many-to-many associations. The default type is <see cref="T:DevExpress.ExpressApp.DC.ClassGeneration.DCIntermediateObject"/>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject">
+
+            <summary>
+                <para>Declares members of the class that can be a base for intermediate classes defining many-to-many associations between Domain Components.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.LeftObject">
+            <summary>
+                <para>Gets the left object of the association.
+
+</para>
+            </summary>
+            <value>The left object of the association.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.LeftObjectType">
+            <summary>
+                <para>Gets the type of the <see cref="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.LeftObject"/>.
+
+</para>
+            </summary>
+            <value>The type of the left object.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.RightObject">
+            <summary>
+                <para>Gets the right object of the association.
+</para>
+            </summary>
+            <value>The right object of the association.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.RightObjectType">
+            <summary>
+                <para>Gets the type of the <see cref="P:DevExpress.ExpressApp.DC.ClassGeneration.IDCIntermediateObject.RightObject"/>.
+
+</para>
+            </summary>
+            <value>The type of the right object.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Xpo.CalculatedPersistentAliasAttribute">
+
+            <summary>
+                <para>Applied to a business class. Allows you to dynamically configure a persistent alias for the target business class' property.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.CalculatedPersistentAliasAttribute.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the CalculatedPersistentAliasAttribute class.
+</para>
+            </summary>
+            <param name="propertyName">
+		A string holding the property name for which you would like to set up a persistent alias. This parameter's value is assigned to the <see cref="P:DevExpress.ExpressApp.Xpo.CalculatedPersistentAliasAttribute.PropertyName"/> property.
+
+            </param>
+            <param name="calculatedAliasPropertyName">
+		A string holding the name of a public static property which returns the alias' expression. This parameter's value is assigned to the <see cref="P:DevExpress.ExpressApp.Xpo.CalculatedPersistentAliasAttribute.CalculatedAliasPropertyName"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.CalculatedPersistentAliasAttribute.CalculatedAliasPropertyName">
+            <summary>
+                <para>Specifies the name of a property which returns the persistent alias' expression.
+</para>
+            </summary>
+            <value>A string holding the name of the public static property which returns the alias' expression.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.CalculatedPersistentAliasAttribute.PropertyName">
+            <summary>
+                <para>Specifies the property name for which you would like to set up a persistent alias.
+</para>
+            </summary>
+            <value>A string holding the property name for which a persistent alias should be configured.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Xpo.XPObjectSpace">
+
+            <summary>
+                <para>An Object Space which is used for data manipulation via the DevExpress ORM Tool (XPO).
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.#ctor(DevExpress.ExpressApp.DC.ITypesInfo,DevExpress.ExpressApp.DC.Xpo.XpoTypeInfoSource,DevExpress.ExpressApp.Xpo.CreateUnitOfWorkHandler)">
+            <summary>
+                <para>Creates a new instance of the XPObjectSpace class.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object providing access to XAF-related information on business classes.
+
+            </param>
+            <param name="xpoTypeInfoSource">
+		An <b>XpoTypeInfoSource</b> object that is a source of XPO-related information on business classes.
+
+            </param>
+            <param name="createUnitOfWorkDelegate">
+		A <b>CreateUnitOfWorkHandler</b> object that is a delegate that encapsulates a method for creating a <see cref="T:DevExpress.Xpo.UnitOfWork"/> for the Object Space's <see cref="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Session"/>. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.ApplyCriteria(System.Object,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Filters a particular collection on the server side.
+</para>
+            </summary>
+            <param name="collection">
+		An Object representing the collection to be filtered.
+
+            </param>
+            <param name="criteria">
+		A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects on the server side.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.ApplyFilter(System.Object,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Filters a particular collection on the client side.
+</para>
+            </summary>
+            <param name="collection">
+		A collection to be filtered.
+
+            </param>
+            <param name="filter">
+		A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects on the client side.
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Xpo.XPObjectSpace.AsyncServerModeSourceDismissSession">
+            <summary>
+                <para>A delegate which is used internally.
+</para>
+            </summary>
+            <returns>A <b>ResolveSessionEventArgs</b> type that is the type of the parameter of the method that this delegate encapsulates.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.Xpo.XPObjectSpace.AsyncServerModeSourceResolveSession">
+            <summary>
+                <para>A delegate which is used internally.
+</para>
+            </summary>
+            <returns>A <b>ResolveSessionEventArgs</b> type that is the type of the parameter of the method that this delegate encapsulates.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CanApplyCriteria(System.Type)">
+            <summary>
+                <para>Indicates whether collections of a particular type can be filtered on the server side.
+</para>
+            </summary>
+            <param name="collectionType">
+		A <see cref="T:System.Type"/> object specifying the type of collections whose server-side filtering capability must be determined.
+
+            </param>
+            <returns><b>true</b>, if collections of the specified type can be filtered on the server side; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CanApplyFilter(System.Object)">
+            <summary>
+                <para>Indicates whether a particular collection can be filtered on the client side.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose client-side filtering capability must be determined.
+
+            </param>
+            <returns><b>true</b>, if the specified collection can be filtered on the client side; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CanInstantiate(System.Type)">
+            <summary>
+                <para>Indicates whether instances of a particular type can be created.
+</para>
+            </summary>
+            <param name="type">
+		An object type for which it must be determined whether its instances can be created.
+
+            </param>
+            <returns><b>true</b>, if instances of the specified type can be created; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CombineCriteria(DevExpress.Data.Filtering.CriteriaOperator[])">
+            <summary>
+                <para>Combines criteria operators passed as parameters.
+</para>
+            </summary>
+            <param name="criteriaOperators">
+		A comma-separated list of criteria operators to be combined.
+
+            </param>
+            <returns>A <b>CriteriaOperator</b> object that is a group criteria operator combining the criteria operators passed as parameters.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Connection">
+            <summary>
+                <para>Gets the connection to the underlying data source.
+</para>
+            </summary>
+            <value>An <b>IDbConnection</b> object that is the connection to the underlying data source.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.Contains(System.Object)">
+            <summary>
+                <para>Indicates whether a specified object belongs to the current Object Space.
+</para>
+            </summary>
+            <param name="obj">
+		An object that represents the persistent object to be tested.
+
+            </param>
+            <returns><b>true</b> if the specified persistent object belongs to the current Object Space; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CreateNestedObjectSpace">
+            <summary>
+                <para>Creates a nested Object Space.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object that is a created nested Object Space.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CreateParseCriteriaScope">
+            <summary>
+                <para>Used when parsing a CriteriaOperator represented by a string and containing persistent objects.
+</para>
+            </summary>
+            <returns>An <b>IDisposable</b> object used to restore persistent objects from a serialized string.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CreateServerCollection(System.Type,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Creates and initializes a new instance of the <see cref="T:DevExpress.Xpo.XPServerCollectionSource"/> class with the current Object Space's <see cref="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Session"/> and criteria-specific options.
+</para>
+            </summary>
+            <param name="objectType">
+		The type of persistent objects to include into the collection.
+
+            </param>
+            <param name="criteria">
+		The <b>DevExpress.Data.Filtering.CriteriaOperator</b> that specifies the criteria for object selection in a data store. 
+
+            </param>
+            <returns>A server collection that includes the persistent objects of the specified type. In addition, only objects that satisfy the specified criteria will be retrieved to this collection.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.CreateSortingCollection(System.Collections.Generic.IList`1)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="sorting">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Database">
+            <summary>
+                <para>Gets the name of the database used when a connection associated with the current Object Space's <see cref="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Session"/> is opened. 
+</para>
+            </summary>
+            <value>A string that is the name of the database used when a connection is opened.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.Dispose">
+            <summary>
+                <para>Releases all resources used by an XPObjectSpace object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.EnableObjectDeletionOnRemove(System.Object,System.Boolean)">
+            <summary>
+                <para>Enables/disables the deletion of persistent objects from the data source when they are removed from the specified collection.
+
+</para>
+            </summary>
+            <param name="collection">
+		A collection of persistent objects that are requested to be removed from the database along with their removal from the collection.
+
+            </param>
+            <param name="enable">
+		<b>true</b>, to enable the deletion from the database along with the removal from the collection; <b>false</b>, to disable it.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.Evaluate(System.Type,DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Evaluates the specified criteria for business objects of the given type.
+</para>
+            </summary>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object that identifies the type of objects against which the expression will be evaluated.
+
+            </param>
+            <param name="expression">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that specifies the expression to evaluate.
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that specifies the filter criteria. The objects that match this criteria will be used to evaluate the expression.
+
+            </param>
+            <returns>The value evaluated.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.FindObject(System.Type,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean)">
+            <summary>
+                <para>Searches for the first object which matches the specified criteria.
+</para>
+            </summary>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object which is the type of objects to search for. 
+
+            </param>
+            <param name="criteria">
+		A <b>DevExpress.Data.Filtering.CriteriaOperator</b> descendant which is the criteria for matching persistent objects. 
+
+            </param>
+            <param name="inTransaction">
+		<b>true</b> if all objects (in the database and retrieved) are processed by the specified criteria; otherwise, <b>false</b>.
+
+            </param>
+            <returns>An object which is the first persistent object which matches the specified criteria. <b>null</b> (<b>Nothing</b> in Visual Basic) if there is no persistent object which matches the criteria. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.FindObjectSpaceByObject(System.Object)">
+            <summary>
+                <para>Determines the Object Space used to load and save a specified persistent object.
+</para>
+            </summary>
+            <param name="obj">
+		The object whose Object Space must be determined.
+
+            </param>
+            <returns>An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to load and save the specified persistent object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetCollectionSorting(System.Object)">
+            <summary>
+                <para>Returns the sort settings for a particular collection. 
+</para>
+            </summary>
+            <param name="collection">
+		An Object that is the collection whose sort settings are requested.
+
+            </param>
+            <returns>A list of <b>SortProperty</b> objects specifying the sort order for the <i>collection</i>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetCriteria(System.Object)">
+            <summary>
+                <para>Returns the criteria used to filter a particular collection on the server side.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose server-side filter must be retrieved.
+
+            </param>
+            <returns>A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects on the server side.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetDisplayableProperties(System.Object)">
+            <summary>
+                <para>Gets the properties considered visible by the specified collection.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose visible properties will be retrieved.
+
+            </param>
+            <returns>A semicolon-separated list of property names considered visible by a particular collection.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetEvaluatorContextDescriptor(System.Type)">
+            <summary>
+                <para>Creates an instance of the <b>EvaluatorContextDescriptor</b> that is used to supply metadata on the specified type to the <b>ExpressionEvaluator</b> objects.
+</para>
+            </summary>
+            <param name="type">
+		A type for which an instance of the <b>EvaluatorContextDescriptor</b> class must be created.
+
+            </param>
+            <returns>An <b>EvaluatorContextDescriptor</b> object initialized for the specified type.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetFilter(System.Object)">
+            <summary>
+                <para>Returns the criteria used to filter a particular collection on the client side.
+</para>
+            </summary>
+            <param name="collection">
+		An object representing the collection whose client-side filter must be retrieved.
+
+            </param>
+            <returns>A <b>DevExpress.Data.Filtering.CriteriaOperator</b> object that specifies the criteria used to filter objects on the client side.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetIntermediateObjectReferences(System.Object,System.Object@,System.Object@)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="obj">
+		 
+            </param>
+            <param name="left">
+		 
+            </param>
+            <param name="right">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetKeyPropertyName(System.Type)">
+            <summary>
+                <para>Gets the name of the specified type's key property.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object which represents the type of the objects whose key property name is requested. 
+
+            </param>
+            <returns>A string specifying the key property's name.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetKeyPropertyType(System.Type)">
+            <summary>
+                <para>Gets the key property type of the specified business type.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object which is the type of the objects whose key property type is requested. 
+
+            </param>
+            <returns>A <see cref="T:System.Type"/> object which is the type of the specified type's key property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetKeyValue(System.Object)">
+            <summary>
+                <para>Returns the key property's value of the specified persistent object. 
+</para>
+            </summary>
+            <param name="obj">
+		An object whose key property's value is requested.
+
+            </param>
+            <returns>An object which is the value of the specified object's key property. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetKeyValueAsString(System.Object)">
+            <summary>
+                <para>Returns the key property's value of the specified object, converted to a string representation.
+</para>
+            </summary>
+            <param name="obj">
+		An object whose key property value is requested.
+
+            </param>
+            <returns>A string which is the value of the specified object's key property. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetObject(System.Object)">
+            <summary>
+                <para>Retrieves an object from another Object Space to the current Object Space.
+</para>
+            </summary>
+            <param name="obj">
+		An object that represents a template object from another Object Space.
+
+            </param>
+            <returns>An object retrieved from the database via the current Object Space.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetObjectByKey(System.Type,System.Object)">
+            <summary>
+                <para>Returns the persistent object that has the specified value for its key property.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object which is the type of the object to search for. 
+
+            </param>
+            <param name="key">
+		An object that is the persistent object's key property value. 
+
+            </param>
+            <returns>A persistent object with the specified value for its key property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetObjectKey(System.Type,System.String)">
+            <summary>
+                <para>Converts the key property value string representation into its actual type.
+</para>
+            </summary>
+            <param name="objectType">
+		A <see cref="T:System.Type"/> object which is the type of the object whose key property value is to be converted. 
+
+            </param>
+            <param name="objectKeyString">
+		A string that is the key property value to be converted.
+
+            </param>
+            <returns>An object that is the value of the specified type's key property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetObjectsQuery``1(System.Boolean)">
+            <summary>
+                <para>Gets a queryable data structure that provides functionality to evaluate queries against a specific business object type.
+</para>
+            </summary>
+            <param name="inTransaction">
+		<b>true</b>, if querying a data store for objects includes all in-memory changes into query results; otherwise, <b>false</b>.
+
+            </param>
+            <returns>An <see cref="T:System.Linq.IQueryable`1[[]]"/> object that provides functionality to evaluate queries against a specific business object type.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetObjectsToDelete(System.Boolean)">
+            <summary>
+                <para>Returns a collection of persistent objects that are deleted in the transaction currently in progress, or optionally, in any of its parent transactions.
+</para>
+            </summary>
+            <param name="includeParent">
+		<b>true</b>, to return persistent objects that are deleted in the parent transaction(s); otherwise, <b>false</b>.
+
+            </param>
+            <returns>A <see cref="T:System.Collections.ICollection"/> object representing the collection of persistent objects that are deleted in the transaction currently in progress.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetObjectsToSave(System.Boolean)">
+            <summary>
+                <para>Returns a collection of persistent objects that are saved in the transaction currently in progress, or optionally, in any of its parent transactions. 
+</para>
+            </summary>
+            <param name="includeParent">
+		<b>true</b>, to return persistent objects that are saved in the parent transaction(s); otherwise, <b>false</b>.
+
+            </param>
+            <returns>The collection of persistent objects that are saved in the transaction currently in progress. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.GetTopReturnedObjectsCount(System.Object)">
+            <summary>
+                <para>Returns the maximum number of objects to be retrieved by the specified collection from a data store.
+</para>
+            </summary>
+            <param name="collection">
+		A collection that is the subject for determining the number of objects that can be retrieved by it.
+
+
+            </param>
+            <returns>An integer value specifying the maximum number of objects that can be retrieved by the specified collection from the database. <b>0</b> indicates that all objects will be retrieved. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsCollectionLoaded(System.Object)">
+            <summary>
+                <para>Indicates whether a particular collection is loaded with objects from the database.
+</para>
+            </summary>
+            <param name="collection">
+		An object representing the collection for which it must be determined whether it is loaded with objects from the database.
+
+            </param>
+            <returns><b>true</b>, if the specified collection is loaded with objects from the database; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsConnected">
+            <summary>
+                <para>Indicates whether the XPObjectSpace's Session is connected to the database.
+</para>
+            </summary>
+            <value><b>true</b>, if the <see cref="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Session"/> is connected to the database; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsDeletedObject(System.Object)">
+            <summary>
+                <para>Indicates whether the specified persistent object is deleted and this is committed to the database.
+</para>
+            </summary>
+            <param name="obj">
+		The object to test. 
+
+            </param>
+            <returns><b>true</b> if the specified object is marked as deleted; otherwise, <b>false</b>. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsDeletionDeferredType(System.Type)">
+            <summary>
+                <para>Returns a value that indicates if the deferred deletion is enabled for persistent objects of a given type.
+</para>
+            </summary>
+            <param name="type">
+		A <see cref="T:System.Type"/> object that is a type of persistent object.
+
+            </param>
+            <returns><b>true</b>, if the deferred deletion is enabled; otherwise - <b>fale</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsDisposedObject(System.Object)">
+            <summary>
+                <para>Determines whether an object has been disposed of.
+</para>
+            </summary>
+            <param name="obj">
+		An object to test.
+
+            </param>
+            <returns><b>true</b>, if the specified object has been disposed of; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsIntermediateObject(System.Object)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="obj">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsNewObject(System.Object)">
+            <summary>
+                <para>Indicates whether a specified object has been created but has not been saved to the database.
+</para>
+            </summary>
+            <param name="obj">
+		A object to be tested.
+
+            </param>
+            <returns><b>true</b> if the specified object has not been yet saved to the database; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsObjectDeletionOnRemoveEnabled(System.Object)">
+            <summary>
+                <para>Indicates whether the deletion of persistent objects from the data source when they are removed from the specified collection is enabled.
+</para>
+            </summary>
+            <param name="collection">
+		A collection of persistent objects that are requested to be removed from the database along with their removal from the collection.
+
+
+            </param>
+            <returns><b>true</b>, if the deletion from the database along with removal from the collection is enabled; <b>false</b>, if disabled.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsObjectToDelete(System.Object)">
+            <summary>
+                <para>Indicates whether the specified object has been deleted but not committed in the transaction currently in progress.
+</para>
+            </summary>
+            <param name="obj">
+		The persistent object to test.
+
+            </param>
+            <returns><b>true</b>, if the specified object is marked as deleted in the transaction currently in progress; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.IsObjectToSave(System.Object)">
+            <summary>
+                <para>Indicates whether the specified object has been added, deleted or modified, but not committed in the transaction currently in progress.
+</para>
+            </summary>
+            <param name="obj">
+		An object for which it is requested whether it should be saved.
+
+            </param>
+            <returns><b>true</b>, if the specified object has been added, deleted or modified, but not committed; otherwise, <b>false</b>. 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.ModifiedObjects">
+            <summary>
+                <para>Returns a collection of objects that have been created, modified or deleted after they were retrieved or committed.
+</para>
+            </summary>
+            <value>An <b>IList</b> collection that contains the modified objects belonging to the current Object Space.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.ParseCriteria(System.String)">
+            <summary>
+                <para>Parses the specified criteria expression in the XPObjectSpace's <see cref="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Session"/>.
+</para>
+            </summary>
+            <param name="criteria">
+		A string representation of the criteria.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object that specifies an expression.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.RaiseObjectPropertyChanged(System.Object,System.String)">
+            <summary>
+                <para>This method is intended for internal use.
+</para>
+            </summary>
+            <param name="obj">
+		An object whose property has been changed.
+
+            </param>
+            <param name="propertyName">
+		A string that is the name of the property that has been changed.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.ReloadCollection(System.Object)">
+            <summary>
+                <para>Clears a collection, and marks it to be reloaded with data from the database. 
+</para>
+            </summary>
+            <param name="collection">
+		An Object that is the collection to be reloaded. 
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.ReloadObject(System.Object)">
+            <summary>
+                <para>Reloads the state of the specified persistent object and its aggregated objects from the data store.
+</para>
+            </summary>
+            <param name="obj">
+		An object which represents the persistent object whose state needs to be reloaded. 
+
+            </param>
+            <returns>The object specified by the <i>obj</i> parameter after it has been reloaded.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.RemoveFromModifiedObjects(System.Object)">
+            <summary>
+                <para>Removes the specified object from the list of objects to be committed.
+</para>
+            </summary>
+            <param name="obj">
+		An object to be removed from the list of modified objects.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Xpo.XPObjectSpace.Session">
+            <summary>
+                <para>Provides access to a Session that is used to load and save persistent objects. 
+</para>
+            </summary>
+            <value>A <b>DevExpress.Xpo.Session</b> object which is used by the current Object Space to load and save persistent objects.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.SetCollectionSorting(System.Object,System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Applies the specified sorting to a given collection.
+</para>
+            </summary>
+            <param name="collection">
+		An object that is a collection to be sorted.
+
+            </param>
+            <param name="sorting">
+		An <b>IList&lt;</b><see cref="T:DevExpress.Xpo.SortProperty"/><b>&gt;</b> object that specifies the sorting to be applied.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.SetDisplayableProperties(System.Object,System.String)">
+            <summary>
+                <para>Sets the properties to be visible by the specified collection.
+</para>
+            </summary>
+            <param name="collection">
+		A collection whose visible properties are set.
+
+            </param>
+            <param name="displayableProperties">
+		A semicolon-separated list of property names to be visible by a particular collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.SetTopReturnedObjectsCount(System.Object,System.Int32)">
+            <summary>
+                <para>Sets the maximum number of objects that can be retrieved from the specified collection in a data store.
+
+
+</para>
+            </summary>
+            <param name="collection">
+		A collection from which a number of objects will be retrieved.
+
+
+
+            </param>
+            <param name="topReturnedObjects">
+		An integer value specifying the maximum number of objects that can be retrieved by the specified collection from the database. <b>0</b> indicates that all objects will be retrieved. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Xpo.XPObjectSpace.TryGetObjectHandle(System.Object,System.String@)">
+            <summary>
+                <para>Creates a handle for the specified object if this object is persistent and is not a new one.
+</para>
+            </summary>
+            <param name="theObject">
+		An object for which a handle is created.
+
+            </param>
+            <param name="handle">
+		A string that is the handle created for the specified object.
+
+            </param>
+            <returns><b>true</b> if a handle has been created successfully for the specified object; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.MiddleTier.ServerApplication">
+
+            <summary>
+                <para>Manages an XAF Application Server.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.MiddleTier.ServerApplication.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ServerApplication class.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

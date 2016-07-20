@@ -1,0 +1,1988 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.ReportsV2.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.InplaceReportsCacheHelper">
+
+            <summary>
+                <para>Provides helper methods used to manage in-place reports cache.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.InplaceReportsCacheHelper.#ctor">
+            <summary>
+                <para>Initializes a new instance of the InplaceReportsCacheHelper class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.InplaceReportsCacheHelper.ClearInplaceReportsCache">
+            <summary>
+                <para>Resets the inplace reports cache.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.InplaceReportsCacheHelper.GetReportDataInfoList(System.Type)">
+            <summary>
+                <para>Returns information on all report data objects that are stored in the application database, have the <see cref="P:DevExpress.ExpressApp.ReportsV2.IInplaceReportV2.IsInplaceReport"/> property set to <b>true</b> and the <see cref="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.DataType"/> property set to the given type.
+</para>
+            </summary>
+            <param name="targetObjectType">
+		A <b>System.Type</b> object that specifies the <see cref="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.DataType"/> of the required inplace reports.
+
+            </param>
+            <returns>A <b>List</b> object that contains information on inplace report data objects that target the given type.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.CreateCustomReportContainerEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CreateCustomReportContainer"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.CreateCustomReportContainerEventArgs.#ctor(DevExpress.ExpressApp.ReportsV2.IReportContainer,DevExpress.ExpressApp.ReportsV2.IReportDataV2)">
+            <summary>
+                <para>Initializes a new instance of the CreateCustomReportContainerEventArgs class.
+</para>
+            </summary>
+            <param name="reportContainer">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportContainer"/> object that specifies the report markup (<see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object), the associated parameters object type and the report's display name.
+
+            </param>
+            <param name="reportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> object used to store reports.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CreateCustomReportContainerEventArgs.ReportContainer">
+            <summary>
+                <para>Specifies the Report Container object.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportContainer"/> object that specifies the report markup (<see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object), the associated parameters object type and the report's display name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CreateCustomReportContainerEventArgs.ReportData">
+            <summary>
+                <para>Gets the report data object used to persist reports.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> object used to persist reports.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.ReportsV2.ReportServiceController.CustomShowPreview"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.#ctor(System.String,DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean,DevExpress.Xpo.SortProperty[],System.Boolean,DevExpress.ExpressApp.ShowViewParameters)">
+            <summary>
+                <para>Initializes a new instance of the CustomShowPreviewEventArgs class.
+</para>
+            </summary>
+            <param name="reportContainerHandle">
+		A string that specifies the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object.
+
+            </param>
+            <param name="parametersObject">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+            <param name="canApplyCriteria">
+		<b>true</b>, if the criteria can be applied; otherwise, <b>false</b>.
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specifies data sorting.
+
+            </param>
+            <param name="canApplySortProperty">
+		<b>true</b>, if the sorting can be applied; otherwise, <b>false</b>.
+
+            </param>
+            <param name="showViewParameters">
+		A <see cref="T:DevExpress.ExpressApp.ShowViewParameters"/> object used to display a Detail View with a report preview.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.CanApplyCriteria">
+            <summary>
+                <para>Gets whether or not the criteria can be applied.
+</para>
+            </summary>
+            <value><b>true</b>, if the criteria can be applied; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.CanApplySortProperty">
+            <summary>
+                <para>Gets whether or not sorting can be applied.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the sorting can be applied; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.Criteria">
+            <summary>
+                <para>Gets the criteria applied to data.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.ParametersObject">
+            <summary>
+                <para>Gets the report parameters object.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.ReportContainerHandle">
+            <summary>
+                <para>Gets the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object.
+</para>
+            </summary>
+            <value>A string that specifies the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.ShowViewParameters">
+            <summary>
+                <para>Gets a set of parameters used to display a new Detail View with report preview.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.ShowViewParameters"/> object used to display a Detail View with report preview.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CustomShowPreviewEventArgs.SortProperty">
+            <summary>
+                <para>Gets the sorting applied to data.
+</para>
+            </summary>
+            <value>An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specify data sorting.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.CreateCustomParametersDetailViewEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.ReportsV2.ReportServiceController.CreateCustomParametersDetailView"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.CreateCustomParametersDetailViewEventArgs.#ctor(DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase,DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Initializes a new instance of the CreateCustomParametersDetailViewEventArgs class.
+</para>
+            </summary>
+            <param name="reportParametersObject">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specify report parameters.
+
+            </param>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the current XAF application.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CreateCustomParametersDetailViewEventArgs.Application">
+            <summary>
+                <para>Gets the object that manages the current XAF application.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the current XAF application.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CreateCustomParametersDetailViewEventArgs.DetailView">
+            <summary>
+                <para>Specifies the Detail View for the report parameters object.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.DetailView"/> object that displays the report parameters object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.CreateCustomParametersDetailViewEventArgs.ReportParametersObject">
+            <summary>
+                <para>Gets the report parameters object.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.ReportsV2.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.#ctor">
+            <summary>
+                <para>Creates an instance of the ReportsModuleV2 class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ActivateReportController(DevExpress.ExpressApp.Controller)">
+            <summary>
+                <para>Activates the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore"/> Controller.
+</para>
+            </summary>
+            <param name="controller">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore"/> instance to be activated.
+
+            </param>
+            <returns><b>true</b>, if the <b>ReportsController</b> has been successfully activated; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.AddGeneratorUpdaters(DevExpress.ExpressApp.Model.Core.ModelNodesGeneratorUpdaters)">
+            <summary>
+                <para>Registers the Generator Updater of the Reports V2 Module.
+
+</para>
+            </summary>
+            <param name="updaters">
+		A <b>ModelNodesGeneratorUpdaters</b> object providing access to the list of Generator Updaters.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+            <summary>
+                <para>Customizes metadata on business classes specific to the ReportsModuleV2 before loading the metadata to the Application Model's <b>BOModel</b> node.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object which holds metadata information on business classes to be loaded to the Application Model. 
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.DefaultEnableInplaceReports">
+            <summary>
+                <para>Specifies the default value for the <see cref="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.EnableInplaceReports"/> property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.DefaultReportDataCaption">
+            <summary>
+                <para>Specifies the display caption associated with the class specified by the <see cref="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ReportDataType"/> property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.DefaultReportDataImageName">
+            <summary>
+                <para>Specifies the name of the image associated with the class specified by the <see cref="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ReportDataType"/> property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.DefaultReportDataNavigationItemCaption">
+            <summary>
+                <para>Specifies the default caption for the navigation group created by the Reports V2 module.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.DefaultReportDataNavigationItemId">
+            <summary>
+                <para>Specifies the default identifier for the navigation group created by the Reports V2module.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.EnableInplaceReports">
+            <summary>
+                <para>Specifies whether inplace reports are enabled.
+</para>
+            </summary>
+            <value><b>true</b>, when inplace reports are enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.Model.IModelClassReportsVisibility"/> and <see cref="T:DevExpress.ExpressApp.Reports.IModelNavigationItemsForReports"/> interfaces.
+</para>
+            </summary>
+            <param name="extenders">
+		A <b>ModelInterfaceExtenders</b> object that is a collection of Application Model interface extenders. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.FindPredefinedReportTypeMemberName(System.Type)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="reportDataType">
+		 
+
+            </param>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.FindReportsModule(DevExpress.ExpressApp.ModuleList)">
+            <summary>
+                <para>Searches for a ReportsModuleV2 instance in a particular module list.
+</para>
+            </summary>
+            <param name="modules">
+		A <b>ModuleList</b> object, which is a collection of modules.
+
+            </param>
+            <returns>A ReportsModuleV2 instance found in the <i>modules</i> module list.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.GetEmptyDisplayNameErrorMessage">
+            <summary>
+                <para>Returns the error message text to be displayed when the report display name is empty.
+</para>
+            </summary>
+            <returns>A string which containes the error message text to be displayed when the report display name is empty.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the ReportsModuleV2 module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the ReportsModuleV2 module.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.InplaceReportsCacheHelper">
+            <summary>
+                <para>Gets an object that provides helper methods used to manage in-place reports cache.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.ReportsV2.InplaceReportsCacheHelper"/> object that provides helper methods used to manage in-place reports cache.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.IsInplaceReportMemberName">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ParametersObjectTypeNameMemberName">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.PredefinedReportTypeMemberName">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ReportDataType">
+            <summary>
+                <para>Specifies the report data type used by the Reports V2 module.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Type"/> object specifying the report data type used by the Reports module.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ReportsDataSourceHelper">
+            <summary>
+                <para>Specifies an object that provides helper methods and events used to manage reports and their data sources.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ReportStoreMode">
+            <summary>
+                <para>Specifies the format used to store reports in the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsStorage"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportStoreModes"/> enumeration value that specifies the format used to store reports.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the ReportsModuleV2 after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application. This parameter value is set for the <see cref="P:DevExpress.ExpressApp.ModuleBase.Application"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.ShowAdditionalNavigation">
+            <summary>
+                <para>Specifies the default value for the <see cref="P:DevExpress.ExpressApp.Reports.IModelNavigationItemsForReports.GenerateRelatedReportsGroup"/> property.
+</para>
+            </summary>
+            <value><b>true</b>, to enable context navigation for the Reports module, by default; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.XtraReportContextName">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportDataProvider">
+
+            <summary>
+                <para>Provides static members used to manage report data.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataProvider.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportDataProvider class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataProvider.MassUpdateDataType``1(DevExpress.ExpressApp.IObjectSpace,System.String,System.Type,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="objectSpace">
+		 
+
+            </param>
+            <param name="oldDataType">
+		 
+
+            </param>
+            <param name="newDataType">
+		 
+
+            </param>
+            <param name="dataTypeMemberName">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataProvider.MassUpdateDataType``1(DevExpress.ExpressApp.IObjectSpace,System.String,System.Type)">
+            <summary>
+                <para>Updates references to a particular data type in all reports stored in the application database.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object used to access report data.
+
+
+            </param>
+            <param name="oldDataType">
+		A string which is the old full name of a data type.
+
+            </param>
+            <param name="newDataType">
+		A <see cref="T:System.Type"/> which is the new data type. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportDataProvider.ReportObjectSpaceProvider">
+            <summary>
+                <para>Specifies an object used to create an Object Space used to access report data.
+</para>
+            </summary>
+            <value>An <b>IObjectSpaceCreater</b> object used to create an Object Space used to access report data.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportDataProvider.ReportsStorage">
+            <summary>
+                <para>Specifies the Reports Storage that manages loading and persisting reports.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsStorage"/> object that manages loading and persisting reports.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportsStorage">
+
+            <summary>
+                <para>Manages loading and persisting reports in the Reports V2 Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportsStorage class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CanSetData(System.String)">
+            <summary>
+                <para>Determines whether it is allowed to store a report in a <b>Report Storage</b> using the specified handle.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying the handle to store a report.
+
+            </param>
+            <returns><b>true</b>, if it is allowed to store a report using the specified handle; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CollectInplaceReportsData">
+            <summary>
+                <para>Returns information on all stored report data objects that have the <see cref="P:DevExpress.ExpressApp.ReportsV2.IInplaceReportV2.IsInplaceReport"/> property set to <b>true</b>.
+</para>
+            </summary>
+            <returns>A List object that contains information on inplace report data objects that target the given type.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CopyFrom(DevExpress.ExpressApp.ReportsV2.IReportDataV2,DevExpress.ExpressApp.ReportsV2.IReportDataV2Writable)">
+            <summary>
+                <para>Creates a copy of the specified report data persistent object.
+</para>
+            </summary>
+            <param name="sourceReportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> source object.
+
+            </param>
+            <param name="targetReportData">
+		An <b>IReportDataV2Writable</b> target object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CopyReports(DevExpress.ExpressApp.ReportsV2.IReportDataV2[])">
+            <summary>
+                <para>Creates a copy of each report data object from the specified list.
+</para>
+            </summary>
+            <param name="reportsData">
+		An array of <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> objects.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CreateCustomReportContainer">
+            <summary>
+                <para>Occurs when the <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportContainer"/> object is created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CreateNewReportHandle">
+            <summary>
+                <para>Creates a new report handle.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> specifying a report handle.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.CreateNewReportHandle(System.Type)">
+            <summary>
+                <para>Creates a new report handle.
+</para>
+            </summary>
+            <param name="reportDataType">
+		The <see cref="T:System.Type"/> of the report data objects used to persist reports.
+
+
+            </param>
+            <returns>A <see cref="T:System.String"/> specifying a report handle.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.GetData(System.String)">
+            <summary>
+                <para>Returns a report object stored in a <b>Report Storage</b> using the specified handle.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying a handle which was used to store a report.
+
+            </param>
+            <returns>An array of <see cref="T:System.Byte"/> values representing a stream containing a report definition.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.GetNewUrl">
+            <summary>
+                <para>Returns a unique handle for a report being restored from the <b>Report Storage</b>.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, specifying the handle.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.GetReportContainerByHandle(System.String)">
+            <summary>
+                <para>Gets the Report Container by the specified handle.
+</para>
+            </summary>
+            <param name="handle">
+		A <see cref="T:System.String"/> specifying a report handle.
+
+            </param>
+            <returns>An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportContainer"/> object that specifies the report markup (<see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object), the associated parameters object type and the report's display name. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.GetReportContainerHandle(DevExpress.ExpressApp.ReportsV2.IReportDataV2)">
+            <summary>
+                <para>Gets the report container handle for the specified report data object.
+</para>
+            </summary>
+            <param name="reportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> persistent object used to store reports.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> specifying a report handle.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.GetReportDataObjectHandleFromUrl(System.String)">
+            <summary>
+                <para>Removes the <see cref="F:DevExpress.ExpressApp.ReportsV2.ReportsStorage.NewStorageUrlPrefix"/> prefix from the specified handle.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying a new report handle.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> specifying an existing report handle.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.GetReportDataTypeFromHandle(System.String)">
+            <summary>
+                <para>Returns the report data type using the specified handle.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying a handle, which was used to retrive a report.
+
+            </param>
+            <returns>A <see cref="T:System.Type"/> specifying the report data type.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsStorage.IgnoreSecurity">
+            <summary>
+                <para>For internal use
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.IsNewReportHandle(System.String)">
+            <summary>
+                <para>Checks if the specified report handle is new.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying a report handle.
+
+            </param>
+            <returns><b>true</b>, if the report handle is new; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.IsValidUrl(System.String)">
+            <summary>
+                <para>Determines whether the specified report handle is valid in the current <b>Report Storage</b>.
+</para>
+            </summary>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying a handle value.
+
+            </param>
+            <returns><b>true</b>, if a report exists in a storage for the specified handle; otherwise, <b>false</b>
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.LoadReport(DevExpress.ExpressApp.ReportsV2.IReportDataV2)">
+            <summary>
+                <para>Loads the specified report data object.
+</para>
+            </summary>
+            <param name="reportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> persistent object used to store reports.
+
+            </param>
+            <returns>An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report content.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportsStorage.NewStorageUrlPrefix">
+            <summary>
+                <para>Specifies the prefix used for new report handles.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportsStorage.QuerySubReportUrl">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.RegisterExtension(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="report">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsStorage.ReportDataType">
+            <summary>
+                <para>Specifies the type of the report data objects used to persist reports.
+</para>
+            </summary>
+            <value>The <see cref="T:System.Type"/> of the report data objects used to persist reports.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.SaveReport(DevExpress.ExpressApp.ReportsV2.IReportDataV2Writable,DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Persists the specified <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object in the report data object.
+
+</para>
+            </summary>
+            <param name="reportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> persistent object used to store reports.
+
+            </param>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report content.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.SetData(DevExpress.XtraReports.UI.XtraReport,System.IO.Stream)">
+            <summary>
+                <para>Stores the specified report to a Report Storage using the specified handle.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object to be saved.
+
+            </param>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object which should be used to save a report.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.SetData(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Stores the specified report to a Report Storage using the specified handle.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object to be saved.
+
+            </param>
+            <param name="url">
+		A <see cref="T:System.String"/> specifying the handle which should be used to save a report.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsStorage.SetNewData(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Stores the specified report object in a <b>Report Storage</b> as a new report using the default handle.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
+            </param>
+            <param name="defaultUrl">
+		A <see cref="T:System.String"/> value specifying the new handle.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value specifying the report's handle.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportContainer">
+
+            <summary>
+                <para>An object that specifies the report markup (<see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object), the associated parameters object type and the report's display name. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportContainer.#ctor(DevExpress.ExpressApp.ReportsV2.IReportDataV2)">
+            <summary>
+                <para>Initializes a new instance of the ReportContainer class.
+</para>
+            </summary>
+            <param name="reportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> object that specifies the persistent report data.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportContainer.#ctor(DevExpress.ExpressApp.ReportsV2.IReportDataV2,System.Boolean)">
+            <summary>
+                <para>Initializes a new instance of the ReportContainer class.
+</para>
+            </summary>
+            <param name="reportData">
+		An <see cref="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2"/> object that specifies the persistent report data.
+
+            </param>
+            <param name="loadReport">
+		<b>true</b>, if the report should be loaded to the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsStorage"/>; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportContainer.DisplayName">
+            <summary>
+                <para>Gets the report's display name.
+</para>
+            </summary>
+            <value>A string which is the report's display name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportContainer.Report">
+            <summary>
+                <para>Gets the report markup.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report markup.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase">
+
+            <summary>
+                <para>The base class for classes that specify parameters shown in a popup Detail View before a report is executed.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase.GetCriteria">
+            <summary>
+                <para>Returns the criteria used to filter data displayed in a report.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase.GetSorting">
+            <summary>
+                <para>Returns the list of properties rules used to sort data displayed in a report.
+</para>
+            </summary>
+            <returns>An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specify data sorting.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase.ObjectSpace">
+            <summary>
+                <para>Gets an Object Space used by the report parameters Detail View.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object used by the report parameters Detail View.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.PreviewReportDialogController">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.SystemModule.DialogController"/> descendant activated for the report parameters dialog.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PreviewReportDialogController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PreviewReportDialogController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController">
+
+            <summary>
+                <para>An <see cref="T:DevExpress.ExpressApp.ObjectViewController"/> that provides the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> used to execute In-Place Reports.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the PrintSelectionBaseController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ActiveKeyControlsCreated">
+            <summary>
+                <para>The name of the key that activates the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> when the current View's controls are created.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ActiveKeyDisableActionWhenThereAreChanges">
+            <summary>
+                <para>The name of the key that deactivates the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> when the data is modified in the current View.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ActiveKeyDisableForLookupListView">
+            <summary>
+                <para>The name of the key that deactivates the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> in lookup List Views.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ActiveKeyInplaceReportsAreEnabledInModule">
+            <summary>
+                <para>The name of the key that activates the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> when the use of inplace reports is enabled via the <see cref="P:DevExpress.ExpressApp.ReportsV2.ReportsModuleV2.EnableInplaceReports"/> property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ActiveKeyObjectHasKeyMember">
+            <summary>
+                <para>The name of the key that deactivates the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> when the current View's object type has no key member.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ActiveKeyViewSupportsSelection">
+            <summary>
+                <para>The name of the key that activates the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> when the current View supports selection.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction">
+            <summary>
+                <para>Gets a Single Choice Action that executes the chosen inplace report for the currently selected objects.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SingleChoiceAction"/> that executes the chosen inplace report for the currently selected objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportActionEnableMode">
+            <summary>
+                <para>Specifies when the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportAction"/> is disabled with regard to data modifications in the current View.
+</para>
+            </summary>
+            <value>An <b>ActionEnabledMode</b> enumeration value that specifies when the <b>ShowInReportAction</b> is disabled.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportActionEnableModeDefault">
+            <summary>
+                <para>Specifies the default value of the <see cref="P:DevExpress.ExpressApp.ReportsV2.PrintSelectionBaseController.ShowInReportActionEnableMode"/>  property.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore">
+
+            <summary>
+                <para>An <see cref="T:DevExpress.ExpressApp.ObjectViewController"/> that provides the <see cref="P:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore.ExecuteReportAction"/> used to execute reports.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportsControllerCore class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.ReportsControllerCore.ExecuteReportAction">
+            <summary>
+                <para>An Action that executes the selected report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> that executes the selected report.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportServiceController">
+
+            <summary>
+                <para>The <see cref="T:DevExpress.ExpressApp.Controller"/> that contains the common code used to display the Preview Report and Report Designer windows.
+</para>
+            </summary>
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportServiceController.CreateCustomParametersDetailView">
+            <summary>
+                <para>Occurs when the Detail View for the report parameters object is created.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportServiceController.CustomShowPreview">
+            <summary>
+                <para>Occurs when the Preview Report window is displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportServiceController.QueryRootReportComponentName">
+            <summary>
+                <para>Occurs when the default name of a user-defined report is queried.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportServiceController.QueryRootReportDataSourceComponent">
+            <summary>
+                <para>Occurs when the data source component of a user-defined report is queried.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.SetupBeforePrint(DevExpress.XtraReports.UI.XtraReport,DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean,DevExpress.Xpo.SortProperty[],System.Boolean)">
+            <summary>
+                <para>Prepares the report for further printing.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+            <param name="parametersObject">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+            <param name="canApplyCriteria">
+		<b>true</b>, if the criteria can be applied; otherwise, <b>false</b>.
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specifies data sorting.
+
+            </param>
+            <param name="canApplySortProperty">
+		<b>true</b>, if the sorting can be applied; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.SetupBeforePrint(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Prepares the report for further printing.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowDesigner(DevExpress.XtraReports.UI.XtraReport,System.String)">
+            <summary>
+                <para>Invokes the Report Designer (WinForms or ASP.NET).
+</para>
+            </summary>
+            <param name="report">
+		An <b>XtraReport</b> object representing the report to be modified in the <b>Report Designer</b>.
+
+            </param>
+            <param name="reportHandle">
+		A <see cref="T:System.String"/> specifying a report handle.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowDesigner(System.Type,System.Object)">
+            <summary>
+                <para>Invokes the Report Designer (WinForms or ASP.NET).
+</para>
+            </summary>
+            <param name="reportDataType">
+		A <see cref="T:System.Type"/> of the report to be modified in the <b>Report Designer</b>.
+
+            </param>
+            <param name="reportDataKey">
+		An object representing the key property value of the <b>ReportData</b> object to be modified in the <b>Report Designer</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowPreview(System.String,DevExpress.Xpo.SortProperty[])">
+            <summary>
+                <para>Displays the Preview Report window.
+</para>
+            </summary>
+            <param name="reportContainerHandle">
+		Gets the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object. 
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specifies data sorting.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowPreview(System.String,DevExpress.Data.Filtering.CriteriaOperator,DevExpress.Xpo.SortProperty[])">
+            <summary>
+                <para>Displays the Preview Report window.
+</para>
+            </summary>
+            <param name="reportContainerHandle">
+		Gets the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object. 
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specifies data sorting.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowPreview(System.String,DevExpress.Data.Filtering.CriteriaOperator)">
+            <summary>
+                <para>Displays the Preview Report window.
+</para>
+            </summary>
+            <param name="reportContainerHandle">
+		Gets the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object. 
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowPreview(System.String)">
+            <summary>
+                <para>Displays the Preview Report window.
+</para>
+            </summary>
+            <param name="reportContainerHandle">
+		Gets the handle of the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportContainer"/> object. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportServiceController.ShowWizard(System.Type)">
+            <summary>
+                <para>Invokes the Report Wizard.
+</para>
+            </summary>
+            <param name="reportDataType">
+		A <see cref="T:System.Type"/> of the report object to be generated by the <b>Report Wizard</b>.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper">
+
+            <summary>
+                <para>Provides helper methods and events used to manage reports and their data sources. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.#ctor(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Initializes a new instance of the ReportDataSourceHelper class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages an XAF application.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.AttachCriteriaWithReportParametersManager(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Subscribes to the report's <see cref="E:DevExpress.XtraReports.UI.XRControl.BeforePrint"/> event and updates the report's data source criteria.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.BeforeShowPreview">
+            <summary>
+                <para>Occurs when the <see cref="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetupBeforePrint"/> method is executed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.CreateReportObjectSpaceProviderCore(System.ComponentModel.Component)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="component">
+		 
+
+            </param>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.CustomSetCriteria">
+            <summary>
+                <para>Occurs when criteria are applied to the report data source.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.CustomSetSorting">
+            <summary>
+                <para>Occurs when sorting is applied to the report data source.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.CustomSetupReportDataSource">
+            <summary>
+                <para>Occurs when the report data source is initialized.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.GetMasterReportDataSource(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Returns the data source of the specified report.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
+            </param>
+            <returns>The data source object that provides data for a master report.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.RegisterObjectSpaceProviderService(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Registers a service that supplies an <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> when it is required by the report data source.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.RegisterReportEnumLocalizer(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Registers a localizer for enumeration types used in a report.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetupBeforePrint(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Prepares the report for further printing.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetupBeforePrint(DevExpress.XtraReports.UI.XtraReport,DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean,DevExpress.Xpo.SortProperty[],System.Boolean)">
+            <summary>
+                <para>Prepares the report for further printing.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+            <param name="parametersObject">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+            <param name="canApplyCriteria">
+		<b>true</b>, if the criteria can be applied; otherwise, <b>false</b>.
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specifies data sorting.
+
+            </param>
+            <param name="canApplySortProperty">
+		<b>true</b>, if the sorting can be applied; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetupReport(DevExpress.XtraReports.UI.XtraReport)">
+            <summary>
+                <para>Initializes the specified report.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetupReport(DevExpress.XtraReports.UI.XtraReport,DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean,DevExpress.Xpo.SortProperty[],System.Boolean)">
+            <summary>
+                <para>Initializes the specified report.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+            <param name="parametersObject">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+            <param name="canApplyCriteria">
+		<b>true</b>, if the criteria can be applied; otherwise, <b>false</b>.
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specify data sorting.
+
+
+            </param>
+            <param name="canApplySortProperty">
+		<b>true</b>, if the sorting can be applied; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetupReportDataSource(DevExpress.XtraReports.UI.XtraReport,DevExpress.Data.Filtering.CriteriaOperator,System.Boolean,DevExpress.Xpo.SortProperty[],System.Boolean)">
+            <summary>
+                <para>Passes criteria and sorting to the report data source.
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+            <param name="criteria">
+		A <see cref="T:DevExpress.Data.Filtering.CriteriaOperator"/> object used to filter data.
+
+            </param>
+            <param name="canApplyCriteria">
+		<b>true</b>, if the criteria can be applied; otherwise, <b>false</b>.
+
+            </param>
+            <param name="sortProperty">
+		An array of <see cref="T:DevExpress.Xpo.SortProperty"/> objects which specifies data sorting.
+
+            </param>
+            <param name="canApplySortProperty">
+		<b>true</b>, if the sorting can be applied; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.SetXafReportParametersObject(DevExpress.XtraReports.UI.XtraReport,DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase)">
+            <summary>
+                <para>Adds a <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> descendant object that specifies report parameters to the <see cref="P:DevExpress.XtraReports.UI.XtraReport.Parameters"/> collection (if this object exists). 
+</para>
+            </summary>
+            <param name="report">
+		An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report.
+
+            </param>
+            <param name="parametersObject">
+		A <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> object that specifies report parameters.
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportDataSourceHelper.XafReportParametersObjectName">
+            <summary>
+                <para>Specifies the name of the XtraReport parameter that provides access to the XAF report parameters object.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.IReportContainer">
+
+            <summary>
+                <para>Implemented by Report Containers. 
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportContainer.DisplayName">
+            <summary>
+                <para>Gets the report's display name.
+</para>
+            </summary>
+            <value>A string which is the report's display name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportContainer.ParametersObjectType">
+            <summary>
+                <para>Gets the type of the report parameters object.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> object that specifies the type of the report parameters object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportContainer.Report">
+            <summary>
+                <para>Gets the report markup.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> object that specifies the report markup.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.IInplaceReportV2">
+
+            <summary>
+                <para>Implemented by persistent classes used to store reports that can be used as inplace repors.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IInplaceReportV2.DataTypeName">
+            <summary>
+                <para>Gets the name of the report's data type.
+</para>
+            </summary>
+            <value>A string which is the name of the report's data type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IInplaceReportV2.IsInplaceReport">
+            <summary>
+                <para>Specifies whether or not the report is inplace.
+</para>
+            </summary>
+            <value><b>true</b>, if the report is inplace; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.IReportDataV2">
+
+            <summary>
+                <para>Implemented by persistent classes used to store reports used by the Reports V2 Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.Content">
+            <summary>
+                <para>Gets a report content.
+</para>
+            </summary>
+            <value>A byte array that is the report content.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.DataType">
+            <summary>
+                <para>Gets the type of persistent objects that are displayed within the report.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> value that specifies the type of persistent objects displayed within the report.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.DisplayName">
+            <summary>
+                <para>Gets the report's display name.
+</para>
+            </summary>
+            <value>A string which is the report's display name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.IsPredefined">
+            <summary>
+                <para>Gets a boolean value that indicates whether or not the report is predefined.
+</para>
+            </summary>
+            <value><b>true</b>, if a report is predefined in code; <b>false</b>, if a report is created at runtime.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.ParametersObjectType">
+            <summary>
+                <para>Gets the type of the reports parameter object.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> of an object that specifies report parameters (typically, the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportParametersObjectBase"/> descendant).
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.IReportDataV2.PredefinedReportType">
+            <summary>
+                <para>Gets the type of the predefined report.
+</para>
+            </summary>
+            <value>A <b>System.Type</b> object that specifies the type of the predefined report.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> descendant intended to register <see cref="T:DevExpress.XtraReports.UI.XtraReport"/> objects created at design time for the use with the Reports V2 Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.#ctor(DevExpress.ExpressApp.XafApplication,DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Initializes a new instance of the PredefinedReportsUpdater class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages the current XAF application.
+
+            </param>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object that is the business objects cache.
+
+            </param>
+            <param name="currentDBVersion">
+		A <b>System.Version</b> object that represents the module version saved in the database.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.AddPredefinedReport(DevExpress.ExpressApp.ReportsV2.IReportDataV2)">
+            <summary>
+                <para>Adds the specified predefined report to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <param name="reportData">
+		An <b>IReportDataV2</b> object that specifies the report data.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.AddPredefinedReport``1(System.String,System.Type,System.Type)">
+            <summary>
+                <para>Adds the specified predefined report to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <param name="displayName">
+		A string which is the report's display name.
+
+            </param>
+            <param name="dataType">
+		A type of the business object used by the report's data source.
+
+            </param>
+            <param name="parametersObjectType">
+		A type of Parameters Object (see Data Filtering in Reports V2).
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.AddPredefinedReport``1(System.String)">
+            <summary>
+                <para>Adds the specified predefined report to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <param name="displayName">
+		A string which is the report's display name.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.AddPredefinedReport``1(System.String,System.Type,System.Type,System.Boolean)">
+            <summary>
+                <para>Adds the specified predefined report to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <param name="displayName">
+		A string which is the report's display name.
+
+            </param>
+            <param name="dataType">
+		A type of the business object used by the report's data source.
+
+            </param>
+            <param name="parametersObjectType">
+		A type of Parameters Object (see Data Filtering in Reports V2).
+
+            </param>
+            <param name="isInplaceReport">
+		A boolean value that indicates whether or not the report is an inplace report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.AddPredefinedReport``1(System.String,System.Type,System.Boolean)">
+            <summary>
+                <para>Adds the specified predefined report to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <param name="displayName">
+		A string which is the report's display name.
+
+            </param>
+            <param name="dataType">
+		A type of the business object used by the report's data source.
+
+            </param>
+            <param name="isInplaceReport">
+		A boolean value that indicates whether or not the report is an inplace report.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.AddPredefinedReport``1(System.String,System.Type)">
+            <summary>
+                <para>Adds the specified predefined report to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <param name="displayName">
+		A string which is the report's display name.
+
+            </param>
+            <param name="dataType">
+		A type of the business object used by the report's data source.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.PredefinedReports">
+            <summary>
+                <para>Gets a list of predefined reports added to the PredefinedReportsUpdater instance.
+</para>
+            </summary>
+            <value>A <b>IList</b> list of predefined reports.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.ReportDataComparer">
+            <summary>
+                <para>Specifies an object used to compare report data objects to avoid report data duplication in the database.
+</para>
+            </summary>
+            <value>An <b>IEqualityComparer</b> object used to compare report data objects.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.UpdateDatabaseAfterUpdateSchema">
+            <summary>
+                <para>Performs a database update after the database schema is updated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater.UseMultipleUpdaters">
+            <summary>
+                <para>Specifies the value indicating that multiple <see cref="T:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater"/> instances are used. 
+</para>
+            </summary>
+            <value><b>true</b>, if multiple <see cref="T:DevExpress.ExpressApp.ReportsV2.PredefinedReportsUpdater"/> instances are used; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.ReportsV2.ReportStoreModes">
+
+            <summary>
+                <para>Contains values that specify the format used to store reports in the <see cref="T:DevExpress.ExpressApp.ReportsV2.ReportsStorage"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportStoreModes.DOM">
+            <summary>
+                <para>Reports are stored in the DOM format.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.ReportsV2.ReportStoreModes.XML">
+            <summary>
+                <para>Reports are stored in the XML format. Using this format instead of DOM can decrease the loading time of complex reports.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

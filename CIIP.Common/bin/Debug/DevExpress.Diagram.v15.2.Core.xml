@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Diagram.v15.2.Core</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Diagram.Core.MeasureUnit">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.MeasureUnit.#ctor(System.Double,System.Int32,System.String,DevExpress.Diagram.Core.TickStepsData[])">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="dpi">
+		 
+            </param>
+            <param name="multiplier">
+		 
+            </param>
+            <param name="name">
+		 
+            </param>
+            <param name="stepsData">
+		 
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnit.Dpi">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnit.Multiplier">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnit.Name">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnit.StepsData">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.MeasureUnit.ToString">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Diagram.Core.CanvasSizeMode">
+
+            <summary>
+                <para>Lists the values used to specify whether the canvas size is automatically changed to fit the current shapes layout.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.CanvasSizeMode.AutoSize">
+            <summary>
+                <para>The canvas is automatically resized to fit the current shapes layout.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.CanvasSizeMode.None">
+            <summary>
+                <para>The canvas size does not change on moving shapes outside of it.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Diagram.Core.DiagramTool">
+
+            <summary>
+                <para>The base class for classes that represent diagram tools.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.DiagramTool.CreateActiveInputState(DevExpress.Diagram.Core.IDiagramControl,DevExpress.Diagram.Core.IInputElement,DevExpress.Diagram.Core.IMouseButtonArgs)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="diagram">
+		 
+            </param>
+            <param name="item">
+		 
+            </param>
+            <param name="mouseArgs">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.DiagramTool.CreateFeedbackHelper(DevExpress.Diagram.Core.IDiagramControl)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="diagram">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.DiagramTool.DefaultAction(DevExpress.Diagram.Core.IDiagramControl)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="diagram">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.DiagramTool.GetDefaultInputStateCursor(DevExpress.Diagram.Core.IDiagramControl,DevExpress.Diagram.Core.IInputElement,DevExpress.Diagram.Core.IMouseArgs)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="diagram">
+		 
+            </param>
+            <param name="item">
+		 
+            </param>
+            <param name="mouseArgs">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Diagram.Core.DiagramTool.ShowFullSelectionUI">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.DiagramTool.StartDrag(DevExpress.Diagram.Core.InputState,DevExpress.Diagram.Core.IDiagramControl,DevExpress.Diagram.Core.IMouseArgs,System.Windows.Input.MouseButton)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="state">
+		 
+            </param>
+            <param name="diagram">
+		 
+            </param>
+            <param name="args">
+		 
+            </param>
+            <param name="button">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Diagram.Core.DiagramTool.ToolId">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Diagram.Core.DiagramTool.ToolName">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.DiagramTool.ToString">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.Diagram.Core.MeasureUnits">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.MeasureUnits.FromPixels(DevExpress.Diagram.Core.MeasureUnit,System.Double)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="unit">
+		 
+            </param>
+            <param name="value">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnits.Inches">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnits.Millimeters">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="F:DevExpress.Diagram.Core.MeasureUnits.Pixels">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Diagram.Core.MeasureUnits.ToPixels(DevExpress.Diagram.Core.MeasureUnit,System.Double)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="unit">
+		 
+            </param>
+            <param name="value">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+    </members>
+</doc>

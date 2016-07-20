@@ -184,7 +184,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>DevDashboardModule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Templates\DashboardDesignerForm.resx">
       <DependentUpon>DashboardDesignerForm.cs</DependentUpon>
     </EmbeddedResource>

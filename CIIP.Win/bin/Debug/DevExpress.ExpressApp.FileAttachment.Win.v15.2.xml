@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.FileAttachment.Win.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelOptionsFileAttachments">
+
+            <summary>
+                <para>Used to extend the Application Model with the Attachments node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelOptionsFileAttachments.Attachments">
+            <summary>
+                <para>Provides access to the Attachments node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.FileAttachments.Win.IModelOptionsFileAttachment"/> object representing the Attachments node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelCommonFileTypeFilters">
+
+            <summary>
+                <para>Used to extend the Application Model with the FileTypeFilters node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelCommonFileTypeFilters.FileTypeFilters">
+            <summary>
+                <para>Provides access to the Application Model's FileTypeFilters node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilters"/> object representing the FileTypeFilters node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilterExtension">
+
+            <summary>
+                <para>The Extension node defines a file extension associated with a file type filter.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilterExtension.Extension">
+            <summary>
+                <para>Specifies a file extension associated with the current file type filter.
+</para>
+            </summary>
+            <value>A string specifying a file extension associated with the current file type filter.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilterExtensions">
+
+            <summary>
+                <para>The Extensions node provides access to the file extensions associated with a file type filter.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilter">
+
+            <summary>
+                <para>The FileTypeFilter node defines a file type filter.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilter.Caption">
+            <summary>
+                <para>Specifies the current file type filter's description.
+</para>
+            </summary>
+            <value>A string specifying the current file type filter's description.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilter.Extension">
+            <summary>
+                <para>Provides access to the Application Model's Extensions node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilterExtensions"/> object representing the Extensions node.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilter.Id">
+            <summary>
+                <para>Indicates the current file type filter identifier.
+</para>
+            </summary>
+            <value>A string specifying the current file type filter identifier.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilters">
+
+            <summary>
+                <para>The FilteTypeFilters node defines file type filters (see <see cref="T:DevExpress.Persistent.Base.FileTypeFilterAttribute"/>) for properties whose type implements the <b>DevExpress.Persistent.Base.IFileData</b> interface or inherits from the <b>DevExpress.Persistent.BaseImpl.FileAttachmentBase</b> class.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilters.FileTypesFilter">
+            <summary>
+                <para>Specifies all file type filters declared for the current property.
+</para>
+            </summary>
+            <value>A string specifying all file type filters declared for the current property.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.IModelOptionsFileAttachment">
+
+            <summary>
+                <para>The Attachments node contains options defining the behavior the File Attachments Module.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.IModelOptionsFileAttachment.DefaultDirectory">
+            <summary>
+                <para>Specifies the default directory for file attachments.
+</para>
+            </summary>
+            <value>A string specifying the default directory for file attachments.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentListViewController">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.ViewController"/> that allows users to create a new object with the selected file attachment via the <b>AddFromFile</b> Action and by dragging and dropping a file into the List Editor's control.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentListViewController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FileAttachmentListViewController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentListViewController.AddFromFileAction">
+            <summary>
+                <para>Provides access to the FileAttachmentListViewController's <b>AddFromFile</b> Action.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that is the <b>AddFromFile</b> Action.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentController">
+
+            <summary>
+                <para>A <see cref="T:DevExpress.ExpressApp.ViewController"/> that provides Actions to open and save file attachments (<b>Open</b> and <b>SaveTo</b>).
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentController.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FileAttachmentController class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentController.OpenAction">
+            <summary>
+                <para>Provides access to the FileAttachmentController's <b>Open</b> Action.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that is the <b>Open</b> Action.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentController.SaveToAction">
+            <summary>
+                <para>Provides access to the FileAttachmentController's <b>SaveTo</b> Action.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Actions.SimpleAction"/> object that is the <b>SaveTo</b> Action.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.CustomFileOperationEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.CustomOpenFileWithDefaultProgram"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.CustomFileOperationEventArgs.#ctor(DevExpress.Persistent.Base.IFileData)">
+            <summary>
+                <para>Creates a new instance of the CustomFileOperationEventArgs class.
+</para>
+            </summary>
+            <param name="fileData">
+		An <b>IFileData</b> object, representing a file about to be opened via its associated program. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.FileAttachments.Win.CustomFileOperationEventArgs.FileData"/> property.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.CustomFileOperationEventArgs.FileData">
+            <summary>
+                <para>Specifies a file about to be opened via its associated program.
+</para>
+            </summary>
+            <value>An <b>IFileData</b> object, representing a file about to be opened via its associated program.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.CustomFileListOperationEventArgs">
+
+            <summary>
+                <para>Arguments passed to the <see cref="E:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.CustomSaveFiles"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.CustomFileListOperationEventArgs.#ctor(System.Collections.Generic.List`1)">
+            <summary>
+                <para>Creates a new instance of the CustomFileListOperationEventArgs class.
+</para>
+            </summary>
+            <param name="fileDataList">
+		A <b>List</b> object, which is a list of files about to be saved to a hard disk. This parameter value is assigned to the <see cref="P:DevExpress.ExpressApp.FileAttachments.Win.CustomFileListOperationEventArgs.FileDataList"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.FileAttachments.Win.CustomFileListOperationEventArgs.FileDataList">
+            <summary>
+                <para>Specifies files about to be saved to a hard disk.
+</para>
+            </summary>
+            <value>A <b>List</b> object, which is a list of files about to be saved to a hard disk.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.FileAttachment.Win.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.#ctor">
+            <summary>
+                <para>Creates an instance of the FileAttachmentsWindowsFormsModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.CreateFileData(DevExpress.ExpressApp.IObjectSpace,DevExpress.ExpressApp.DC.IMemberInfo)">
+            <summary>
+                <para>Creates a new <b>IFileData</b> object via the specified Object Space.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object specifying the Object Space where a new <b>IFileData</b> object will be created.
+
+            </param>
+            <param name="memberDescriptor">
+		An <see cref="T:DevExpress.ExpressApp.DC.IMemberInfo"/> object supplying metadata on the property to which the created <b>IFileData</b> object will be assigned.
+
+            </param>
+            <returns>The created <b>IFileData</b> object.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.CustomOpenFileWithDefaultProgram">
+            <summary>
+                <para>Occurs prior to opening an attached file via its associated program.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.CustomSaveFiles">
+            <summary>
+                <para>Occurs when attached files are about to be saved to a hard disk.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.FileAttachments.Win.IModelOptionsFileAttachments"/> and <see cref="T:DevExpress.ExpressApp.FileAttachments.Win.IModelCommonFileTypeFilters"/> interfaces.
+</para>
+            </summary>
+            <param name="extenders">
+		A <b>ModelInterfaceExtenders</b> object that is a collection of Application Model interface extenders. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.GetFileDataManager(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Provides access to the file data manager used by the FileAttachmentsWindowsFormsModule.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that provides methods and properties to manage the current application.
+
+            </param>
+            <returns>An <b>IFileDataManager</b> object that can be used to open stored files using an associated application or to save them to a local disk.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.GetFileTypesFilter(DevExpress.ExpressApp.Model.IModelClass,System.String)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="modelClass">
+		 
+
+            </param>
+            <param name="propertyName">
+		 
+
+            </param>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the FileAttachmentsWindowsFormsModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the FileAttachmentsWindowsFormsModule module.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule.LocalizationGroup">
+            <summary>
+                <para>Specifies the name of a localization group node containing localization items specific to the Windows Forms File Attachments Module functionality.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.FileAttachments.Win.FileTypeFiltersNodesGenerator">
+
+            <summary>
+                <para>A Nodes Generator that generates the content of the <see cref="T:DevExpress.ExpressApp.FileAttachments.Win.IModelFileTypeFilters"/> node.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.FileAttachments.Win.FileTypeFiltersNodesGenerator.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FileTypeFiltersNodesGenerator class.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

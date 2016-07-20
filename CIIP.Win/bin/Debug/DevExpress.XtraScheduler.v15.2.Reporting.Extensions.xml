@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraScheduler.v15.2.Reporting.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraScheduler.Reporting.UI.SchedulerReportDesignTool">
+
+            <summary>
+                <para>Enables access to the End-User Designer form which allows a Scheduler report to be edited by end-users.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.UI.SchedulerReportDesignTool.#ctor(DevExpress.XtraScheduler.Reporting.XtraSchedulerReport)">
+            <summary>
+                <para>Initializes a new instance of the SchedulerReportDesignTool class for the specified report.
+</para>
+            </summary>
+            <param name="report">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport"/> instance representing the report for which the End-User Designer should be invoked.
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

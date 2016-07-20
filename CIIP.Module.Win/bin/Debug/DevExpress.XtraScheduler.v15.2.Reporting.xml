@@ -1,0 +1,2239 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraScheduler.v15.2.Reporting</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportResourceHeaderOptions">
+
+            <summary>
+                <para>Provides options used to specify how resource headers are printed in Scheduler Reporting.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportResourceHeaderOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportResourceHeaderOptions class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportResourceHeaderOptions.Height">
+            <summary>
+                <para>Overrides the corresponding property of the base class to hide it.
+</para>
+            </summary>
+            <value>Always 0.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportWeekViewAppointmentDisplayOptions">
+
+            <summary>
+                <para>Provides options used to specify how appointments are displayed in a <see cref="T:DevExpress.XtraScheduler.Reporting.FullWeek"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportWeekViewAppointmentDisplayOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportWeekViewAppointmentDisplayOptions class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppointmentDisplayOptions">
+
+            <summary>
+                <para>Provides options used to specify how appointments are displayed in a <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalWeek"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppointmentDisplayOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportMonthViewAppointmentDisplayOptions class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportDayViewAppointmentDisplayOptions">
+
+            <summary>
+                <para>Provides options used to specify how appointments are displayed in a <see cref="T:DevExpress.XtraScheduler.Reporting.DayViewTimeCells"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportDayViewAppointmentDisplayOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportDayViewAppointmentDisplayOptions class with the default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportDayViewAppointmentDisplayOptions.ShowShadows">
+            <summary>
+                <para>Overrides the corresponding member of the base class.
+</para>
+            </summary>
+            <value>Always <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TimeIntervalInfoBase">
+
+            <summary>
+                <para>Represents a base class for information controls displaying time intervals in the report.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeIntervalInfoBase.PrintContentMode">
+            <summary>
+                <para>Gets or sets how the time interval for display is chosen.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.PrintContentMode"/> enumeration specifying which time interval to print.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeIntervalInfoBase.PrintTimeInterval">
+            <summary>
+                <para>Gets the time interval printed by the control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object representing the time interval.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ControlCornersOptions">
+
+            <summary>
+                <para>Provides options which define the characteristics of the corners for certain controls.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ControlCornersOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ControlCornersOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ControlCornersOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies all the settings from the ControlCornersOptions object passed as a parameter.
+</para>
+            </summary>
+            <param name="options">
+		A collection whose elements are copied to the current object. If <b>null</b> (<b>Nothing</b> in Visual Basic), then a <see cref="T:System.ArgumentNullException"/> will be thrown.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ControlCornersOptions.Bottom">
+            <summary>
+                <para>Gets or sets an indent from the bottom corner.
+</para>
+            </summary>
+            <value>An integer value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ControlCornersOptions.Top">
+            <summary>
+                <para>Gets or sets an indent from the top corner.
+</para>
+            </summary>
+            <value>An integer value.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ControlCornersOptions.ToString">
+            <summary>
+                <para>Returns the textual representation of control corners options.
+
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of control corners options.
+
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType">
+
+            <summary>
+                <para>Lists the values used to specify how the string representing the time interval should be formatted in the <see cref="T:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType.Daily">
+            <summary>
+                <para>Prints two lines: the  date (format string "dd MMMM yyyy") and the day of the week (format string "dddd").
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType.Default">
+            <summary>
+                <para>Uses the most appropriate <see cref="P:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo.FormatType"/> for the associated view.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType.Monthly">
+            <summary>
+                <para>Prints two lines: the start date of the printed interval (format string "dd MMMM") and the end date of the printed interval (format string "dd MMMM yyyy").
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType.Timeline">
+            <summary>
+                <para>Prints the start and end time of the visible interval obtained via the <see cref="M:DevExpress.XtraScheduler.TimeScale.FormatCaption"/> method of the base time scale.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType.Weekly">
+            <summary>
+                <para>Prints two lines: the start date of the printed interval (format string "dd MMMM") and the end date of the printed interval (format string "dd MMMM yyyy").
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.FormatTimeIntervalInfo">
+
+            <summary>
+                <para>An information control used to print a textual view of the time interval, using the specified format.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.FormatTimeIntervalInfo.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FormatTimeIntervalInfo class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.FormatTimeIntervalInfo.AutoFormat">
+            <summary>
+                <para>Specifies whether the date format is dependant on the bound time cells.
+</para>
+            </summary>
+            <value><b>true</b> to select the format automatically dependant on the time cells; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.FormatTimeIntervalInfo.FormatString">
+            <summary>
+                <para>Specifies the format string to display the datetime value by the control.
+</para>
+            </summary>
+            <value>A format string.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.FormatTimeIntervalInfo.TimeCells">
+            <summary>
+                <para>Gets or sets the time cells determining the date ranges displayed in the control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase"/> descendant representing the bound time cells.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TextCustomizingEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.CustomizeText"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TextCustomizingEventHandler.Invoke(System.Object,DevExpress.XtraScheduler.Reporting.TextCustomizingEventArgs)">
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.CustomizeText"/> event. 
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.TextCustomizingEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting">
+
+            <summary>
+                <para>Lists types used to specify how the <see cref="T:DevExpress.XtraScheduler.Reporting.TimelineCells"/> can be paged (partitioned and aligned) when creating a report.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.Day">
+            <summary>
+                <para>Specifies the time span with duration equal to one day.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.Hour">
+            <summary>
+                <para>Specifies the time span with duration equal to one hour.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.Month">
+            <summary>
+                <para>Specifies the time span with duration equal to one month.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.None">
+            <summary>
+                <para>Specifies that no special interval partitioning and aligning is required.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.Quarter">
+            <summary>
+                <para>Specifies the time span with duration equal to one quarter.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.Week">
+            <summary>
+                <para>Specifies the time span with duration equal to one week.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting.Year">
+            <summary>
+                <para>Specifies the time span with duration equal to one year.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TextCustomizingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.CustomizeText"/> event raised by information controls, such as <see cref="T:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo"/> and <see cref="T:DevExpress.XtraScheduler.Reporting.ResourceInfo"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TextCustomizingEventArgs.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the TextCustomizingEventArgs class with the specified text string.
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> object containing text being printed in the control.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TextCustomizingEventArgs.Text">
+            <summary>
+                <para>Gets or sets the text printed by the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> representing the text being printed.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.SchedulerStoragePrintAdapter">
+
+            <summary>
+                <para>A component bound to the <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> used for retrieving data and scheduler settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerStoragePrintAdapter.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SchedulerStoragePrintAdapter class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerStoragePrintAdapter.#ctor(DevExpress.XtraScheduler.ISchedulerStorageBase)">
+            <summary>
+                <para>Initializes new instance of the SchedulerStoragePrintAdapter class with the specified settings.
+</para>
+            </summary>
+            <param name="storage">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.SchedulerStoragePrintAdapter.ResourceColorSchemas">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.SchedulerStoragePrintAdapter.SchedulerStorage">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerStoragePrintAdapter.SetSourceObject(System.Object)">
+            <summary>
+                <para>Specifies the correct scheduling source, irrespective of its type.
+
+</para>
+            </summary>
+            <param name="sourceObject">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> or the <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders">
+
+            <summary>
+                <para>A control for printing the time scale captions.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders.#ctor">
+            <summary>
+                <para>Initializes a new instance of the TimelineScaleHeaders class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders.#ctor(DevExpress.XtraScheduler.Reporting.ReportTimelineView)">
+            <summary>
+                <para>Initializes a new instance of the TimelineScaleHeaders class linked to the specified View component.
+</para>
+            </summary>
+            <param name="timelineView">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportTimelineView"/> component representing a <see cref="T:DevExpress.XtraScheduler.TimelineView"/> in the scheduler report.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders.CustomDrawDayHeader">
+            <summary>
+                <para>Enables timeline headers to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders.GetBaseTimeScale">
+            <summary>
+                <para>Gets the time scale having the minimum time interval among enabled scales.
+
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraScheduler.TimeScale"/> object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control linked to the <b>TimeScaleHeaders</b> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control linked to the current contrrol.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineScaleHeaders.View">
+            <summary>
+                <para>Gets or sets the associated view.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportTimelineView"/> object, representing the Scheduler report view.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter">
+
+            <summary>
+                <para>A component bound to the <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> used for retrieving data and scheduler settings..
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter.#ctor(DevExpress.XtraScheduler.SchedulerControl)">
+            <summary>
+                <para>Initializes a new instance of the SchedulerControlPrintAdapter class with the specified <b>Scheduler Control</b>.
+</para>
+            </summary>
+            <param name="control">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> instance, which is the report's scheduling source.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SchedulerControlPrintAdapter class with defauilt settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter.GetWorkDays">
+            <summary>
+                <para>Obtains the collection which identifies which days are assigned to a workweek. 
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraScheduler.WorkDaysCollection"/> object which identifies work days. 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter.ResourceColorSchemas">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter.SchedulerControl">
+            <summary>
+                <para>Gets or sets the Scheduler control which is the source of the <see cref="T:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport"/>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> instance which is the report' s source.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.SchedulerControlPrintAdapter.SetSourceObject(System.Object)">
+            <summary>
+                <para>Specifies the correct scheduling source, irrespective of its type.
+
+</para>
+            </summary>
+            <param name="sourceObject">
+		A <see cref="T:DevExpress.XtraScheduler.SchedulerStorage"/> or the <see cref="T:DevExpress.XtraScheduler.SchedulerControl"/> object.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase">
+
+            <summary>
+                <para>Represents a base class for the time cell controls in the report.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.AppointmentDisplayOptions">
+            <summary>
+                <para>Provides access to options specifying the visual aspects of appointments in the report.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.AppointmentDisplayOptions"/> class instance, containing options for appointments.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.AppointmentViewInfoCustomizing">
+            <summary>
+                <para>Enables you to customize the appointment's appearance by modifying the style elements when it is printed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.CustomDrawAppointment">
+            <summary>
+                <para>Enables appointments to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.CustomDrawAppointmentBackground">
+            <summary>
+                <para>Enables the backgrounds of appointments to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.CustomDrawTimeCell">
+            <summary>
+                <para>Enables time cells to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.InitAppointmentDisplayText">
+            <summary>
+                <para>Enables you to modify the text in the appointment.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.InitAppointmentImages">
+            <summary>
+                <para>Enables you to print custom images within the appointment.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.PrintColorSchemas">
+            <summary>
+                <para>Provides access to options specifying the color mode for printing certain view elements.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsPrintColorSchemaOptions"/> object containing color mode settings for elements of the <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase"/> descendant.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase.Scripts">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TextInfoControlBase">
+
+            <summary>
+                <para>Represents a base class for information controls in the report.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.AutoScaleFont">
+            <summary>
+                <para>Gets or sets whether the control's font is modified automatically, so that the text fits the control's dimensions. 
+</para>
+            </summary>
+            <value><b>true</b> to scale the control's font automatically; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.CustomizeText">
+            <summary>
+                <para>Occurs before the control is rendered, and enables you to modify the text being printed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.Font">
+            <summary>
+                <para>Gets or sets the  font used to print the text in the informational controls.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Font"/> to apply to the text displayed by the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.ForeColor">
+            <summary>
+                <para>Gets or sets the foreground color of the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object that represents the foreground color of the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TextInfoControlBase.View">
+            <summary>
+                <para>Gets or sets the associated view.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportViewBase"/> class descendant, representing the Scheduler report view.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.DataDependentControlBase">
+
+            <summary>
+                <para>Represents a base class for the controls which provide auxiliary information on the schedule.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DataDependentControlBase.PrintInColumn">
+            <summary>
+                <para>Specifies in which columns the control is printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.PrintInColumnMode"/> enumeration member.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.DayViewControlBase">
+
+            <summary>
+                <para>Represents a base class that implements a time ruler in the report.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewControlBase.View">
+            <summary>
+                <para>Gets or sets a linked View component.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportDayView"/> object, representing the View to which the control is bound.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions">
+
+            <summary>
+                <para>Provides the options characterizing the extra cells in a daily report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ExtraCellsOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies all the settings from the ExtraCellsOptions object passed as a parameter.
+</para>
+            </summary>
+            <param name="options">
+		A collection whose elements are copied to the current object. If <b>null</b> (<b>Nothing</b> in Visual Basic), then a <see cref="T:System.ArgumentNullException"/> will be thrown.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions.MinCount">
+            <summary>
+                <para>Gets or sets the mimimum number of extra cells printed below the scheduling area in the report.
+</para>
+            </summary>
+            <value>An integer, specifying the number of cells.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions.ToString">
+            <summary>
+                <para>Returns the textual representation of extra cells options.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value which is the textual representation of extra cells options.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions.Visible">
+            <summary>
+                <para>Gets or sets whether the extra cells are printed below the scheduling area of the report.
+</para>
+            </summary>
+            <value><b>true</b> to print extra cells; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportMonthView">
+
+            <summary>
+                <para>A View component for a monthly (multi-week) style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportMonthView.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportMonthView class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportMonthView.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of the ReportMonthView's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppearance"/> object that provides the appearance settings for ReportMonthView elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportMonthView.ExactlyOneMonth">
+            <summary>
+                <para>Specifies whether exactly one month is printed on a page, and trailing dates are not shown.
+
+</para>
+            </summary>
+            <value><b>true</b> to print exactly one month on a page; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportMonthView.VisibleWeekCount">
+            <summary>
+                <para>Overrides the <see cref="P:DevExpress.XtraScheduler.Reporting.ReportWeekView.VisibleWeekCount"/> property to hide it.
+</para>
+            </summary>
+            <value>An integer representing a number of weeks.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportViewCollection">
+
+            <summary>
+                <para>Represents a collection of report views.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewCollection.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportViewCollection class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewCollection.AddRange(DevExpress.XtraScheduler.Reporting.ReportViewBase[])">
+            <summary>
+                <para>Adds all items from the specified collection of report views to the <b>ReportViewCollection</b>.
+</para>
+            </summary>
+            <param name="items">
+		A collection of <see cref="T:DevExpress.XtraScheduler.Reporting.ReportViewBase"/> objects to add.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ResourceInfo">
+
+            <summary>
+                <para>An information control used for resource listing.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ResourceInfo.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ResourceInfo class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ResourceInfo.#ctor(DevExpress.XtraScheduler.Reporting.ReportViewBase)">
+            <summary>
+                <para>Initializes a new instance of the ResourceInfo class with the specified View.
+</para>
+            </summary>
+            <param name="view">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportViewBase"/> class descendant, representing the associated view.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ResourceInfo.PrintResources">
+            <summary>
+                <para>Provides access to the collection of resources currently being printed.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.ResourceBaseCollection"/> object representing a collection of resources.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ResourceInfo.ResourceDelimiter">
+            <summary>
+                <para>Gets or sets the symbol or group of symbols used as a delimiter in the resource list, printed using the <b>ResourceInfo</b> control.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> representing the character sequence used as a delimiter .
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ResourceInfo.TimeCells">
+            <summary>
+                <para>Gets or sets the time cells control associated with the current <b>ResourceInfo</b> control.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase"/> class descendant.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportWeekView">
+
+            <summary>
+                <para>A View component for a weekly style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportWeekView.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportWeekView class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportWeekView.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of the ReportWeekView's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportWeekViewAppearance"/> object that provides the appearance settings for ReportWeekView elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportWeekView.VisibleWeekCount">
+            <summary>
+                <para>Gets or sets the number of weeks in a group.
+</para>
+            </summary>
+            <value>An integer representing a number of weeks.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportWeekView.VisibleWeekDayColumnCount">
+            <summary>
+                <para>Gets or sets the maximum number of columns into which the week can be split.
+
+</para>
+            </summary>
+            <value>An integer, representing the number of columns.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportTimelineView">
+
+            <summary>
+                <para>A View component for a timeline style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportTimelineView.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportTimelineView class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportTimelineView.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of the ReportTimelineView's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportTimelineViewAppearance"/> object that provides the appearance settings for ReportTimelineView elements.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportTimelineView.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportTimelineView.EndInit">
+            <summary>
+                <para>Ends the component initialization.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportTimelineView.GetBaseTimeScale">
+            <summary>
+                <para>Gets the time scale having the minimum time interval among enabled scales.
+
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraScheduler.TimeScale"/> object.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportTimelineView.Scales">
+            <summary>
+                <para>Provides access to a collection of time scales in the view. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.TimeScaleCollection"/> object containing time scales for this view. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportTimelineView.VisibleIntervalColumnCount">
+            <summary>
+                <para>Gets or sets the number of sections in which the group of intervals specified by the <see cref="P:DevExpress.XtraScheduler.Reporting.ReportTimelineView.VisibleIntervalCount"/> is split.
+</para>
+            </summary>
+            <value>An integer, specifying the  number of sections.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportTimelineView.VisibleIntervalCount">
+            <summary>
+                <para>Gets or sets the number of intervals in a group.
+</para>
+            </summary>
+            <value>An integer representing a number of days.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportTimelineView.VisibleIntervalsSplitting">
+            <summary>
+                <para>Gets or sets the time interval to which columns are aligned on pages. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.VisibleIntervalsSplitting"/> enumeration member specifying a which span to that the timeline is split.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportDayView">
+
+            <summary>
+                <para>A View component for a daily style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportDayView.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ReportDayView class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportDayView.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of the ReportDayView's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppearance"/> object that provides the appearance settings for ReportDayView elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportDayView.VisibleDayColumnCount">
+            <summary>
+                <para>Gets or sets the maximum number of days in a columns in which the group of days specified by the <see cref="P:DevExpress.XtraScheduler.Reporting.ReportDayView.VisibleDayCount"/> is split.
+</para>
+            </summary>
+            <value>An integer, specifying the  number of columns.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportDayView.VisibleDayCount">
+            <summary>
+                <para>Gets or sets the number of days in a group.
+</para>
+            </summary>
+            <value>An integer representing a number of days.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport">
+
+            <summary>
+                <para>Represents the base class for a report in the XtraScheduler Suite.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.#ctor">
+            <summary>
+                <para>Initializes a new instance of the XtraSchedulerReport class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.CreateDocument(System.Boolean)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="buildPagesInBackground">
+		 
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.DefaultReportTemplateExt">
+            <summary>
+                <para>The <b>.schrepx</b> file extension of scheduler report templates.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.GetResourceColorSchema(DevExpress.XtraScheduler.Resource)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="resource">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.PrintColorSchema">
+            <summary>
+                <para>Gets or sets the color mode used to print the report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.PrintColorSchema"/> enumeration member, specifying the color mode.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.SchedulerAdapter">
+            <summary>
+                <para>Gets or sets the scheduler adapter for the current report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.SchedulerPrintAdapter"/> class descendant, representing a SchedulerControl or a SchedulerStorage print adapter.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.XtraSchedulerReport.Views">
+            <summary>
+                <para>Provides access to the collection of Views available for the current report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportViewCollection"/> object, containing a report's Views.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders">
+
+            <summary>
+                <para>A control used to print vertical captions containing resource names.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders.#ctor">
+            <summary>
+                <para>Initializes a new instance of the VerticalResourceHeaders class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders.Corners">
+            <summary>
+                <para>Provides access to settings that characterize how the control corners should be adjusted for proper alignment with linked controls.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ControlCornersOptions"/>
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders.CustomDrawResourceHeader">
+            <summary>
+                <para>Enables vertical resource headers to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders.Options">
+            <summary>
+                <para>Provides access to an object specifying appearance options for a scheduler report's resource headers.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportResourceHeaderOptions"/> object that represents the resource headers options for Scheduler Reporting.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders.TimeCells">
+            <summary>
+                <para>Gets or sets the time cells control associated with the current <see cref="T:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase"/> descendant, representing a linked time cells control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TimelineCells">
+
+            <summary>
+                <para>A time cell control for the timeline style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TimelineCells.#ctor">
+            <summary>
+                <para>Initializes a new instance of the TimelineCells class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineCells.CanGrow">
+            <summary>
+                <para>Gets or sets whether the cell's height can grow to display the contents in full.
+</para>
+            </summary>
+            <value><b>true</b> if the cell's height can grow to fit its content; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineCells.CanShrink">
+            <summary>
+                <para>Gets or sets a value indicating whether the cell's height can decrease if its content does not completely fill the control.
+</para>
+            </summary>
+            <value><b>true</b> if the label's height can decrease in order to remove unused space; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineCells.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the horizontal headers control linked to the <b>TimelineCells.</b>
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalHeadersControlBase"/> descendant class instance, representing the horizontal headers control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineCells.ShowMoreItems">
+            <summary>
+                <para>Specifies whether the "More items..." text is printed in the column that contains hidden appointments.
+</para>
+            </summary>
+            <value><b>true</b> to print the text indicating the presence of hidden appointments in a column; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineCells.VerticalLayoutType">
+            <summary>
+                <para>Gets or sets how the time cell rows fit within the control's boundaries. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ControlContentLayoutType"/> enumeration member, specifying the layout type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimelineCells.View">
+            <summary>
+                <para>Gets or sets the associated view.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportTimelineView"/> object, representing the Scheduler report view.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo">
+
+            <summary>
+                <para>An information control used to print a textual view of the time interval.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo.#ctor">
+            <summary>
+                <para>Initializes a new instance of the TimeIntervalInfo class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo.#ctor(DevExpress.XtraScheduler.Reporting.ReportViewBase)">
+            <summary>
+                <para>Initializes a new instance of the TimeIntervalInfo class with the specified View.
+</para>
+            </summary>
+            <param name="view">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportViewBase"/> class descendant, representing the associated view.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo.FormatType">
+            <summary>
+                <para>Specifies the format pattern used to print information in the <b>TimeIntervalInfo</b> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeIntervalFormatType"/> enumeration, representing a format type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.TimeIntervalInfo.TimeCells">
+            <summary>
+                <para>Gets or sets the time cells control associated with the current <b>TimeIntervalInfo</b> control.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase"/> class descendant.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.PrintInColumnMode">
+
+            <summary>
+                <para>Lists the columns in which the information control is printed.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintInColumnMode.All">
+            <summary>
+                <para>The control is printed in all columns.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintInColumnMode.Even">
+            <summary>
+                <para>The control is printed only in even columns.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintInColumnMode.Odd">
+            <summary>
+                <para>The control is printed only in odd columns.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.PrintColorSchema">
+
+            <summary>
+                <para>Lists the color schemas applied to different elements of the report.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintColorSchema.BlackAndWhite">
+            <summary>
+                <para><para>Prints Scheduler elements in black-and-white.</para>
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintColorSchema.Default">
+            <summary>
+                <para><para>Prints Scheduler elements in default color mode.</para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintColorSchema.FullColor">
+            <summary>
+                <para><para>Prints Scheduler elements in full color.</para>
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintColorSchema.GrayScale">
+            <summary>
+                <para><para>Prints Scheduler elements in shades of gray.</para>
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.HorizontalWeek">
+
+            <summary>
+                <para>A time cell control for the multi-week (monthly) report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.HorizontalWeek.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HorizontalWeek class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.AppointmentDisplayOptions">
+            <summary>
+                <para>Provides access to options specifying the visual aspects of appointments in the report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportMonthViewAppointmentDisplayOptions"/> class instance, containing options for appointments.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.CanGrow">
+            <summary>
+                <para>Gets or sets whether the cell's height can grow to display the contents in full.
+</para>
+            </summary>
+            <value><b>true</b> if the cell's height can grow to fit its content; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.CanShrink">
+            <summary>
+                <para>Gets or sets a value indicating whether the cell's height can decrease if its content does not completely fill the control.
+</para>
+            </summary>
+            <value><b>true</b> if the label's height can decrease in order to remove unused space; otherwise, <b>false</b>. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.CompressWeekend">
+            <summary>
+                <para>Gets or sets a value indicating if the weekend days (<b>Saturday</b> and <b>Sunday</b>) should be printed as one day.
+</para>
+            </summary>
+            <value><b>true</b> to print weekends in a single day cell; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control associated with the current <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalWeek"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> object representing the associated control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.VerticalLayoutType">
+            <summary>
+                <para>Gets or sets how the time cell rows are fitted within the control's boundaries. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ControlContentLayoutType"/> enumeration member, specifying the layout type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalWeek.VisibleWeekDays">
+            <summary>
+                <para>Gets or sets days of the week visible in the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalWeek"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.WeekDays"/> enumeration member, representing a day or a group of days.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders">
+
+            <summary>
+                <para>A control used to print horizontal captions containing resource names.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HorizontalResourceHeaders class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders.CustomDrawResourceHeader">
+            <summary>
+                <para>Enables horizontal resource headers to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders"/> control associated with the current <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders"/> object representing the associated control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders.Options">
+            <summary>
+                <para>Provides access to an object specifying appearance options for a scheduler report's resource headers.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportResourceHeaderOptions"/> object that represents the resource headers options for Scheduler Reporting.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders">
+
+            <summary>
+                <para>A control used to print horizontal captions containing dates.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders.#ctor">
+            <summary>
+                <para>Initializes a new instance of the HorizontalDateHeaders class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders.CustomDrawDayHeader">
+            <summary>
+                <para>Enables day headers to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control associated with the current <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> object representing the associated control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.FullWeek">
+
+            <summary>
+                <para>A time cell control for the weekly style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.FullWeek.#ctor">
+            <summary>
+                <para>Initializes a new instance of the FullWeek class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.FullWeek.AppointmentDisplayOptions">
+            <summary>
+                <para>Provides access to options specifying the visual aspects of appointments in the report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportWeekViewAppointmentDisplayOptions"/> class instance, containing options for appointments.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.FullWeek.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control associated with the current <see cref="T:DevExpress.XtraScheduler.Reporting.FullWeek"/> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> object representing the associated control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.FullWeek.VerticalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders"/> control associated with the current <see cref="T:DevExpress.XtraScheduler.Reporting.FullWeek"/> control.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.VerticalResourceHeaders"/> object representing the associated control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler">
+
+            <summary>
+                <para>A time ruler for the daily style report.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DayViewTimeRuler class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler.#ctor(DevExpress.XtraScheduler.Reporting.ReportDayView)">
+            <summary>
+                <para>Initializes a new instance of the DayViewTimeRuler class linked to the specified view component.
+</para>
+            </summary>
+            <param name="dayView">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportDayView"/> class instance, representing the Day View component.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler.Corners">
+            <summary>
+                <para>Provides access to the options defined for proper alignment of the <b>DayViewTimeRuler</b> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ControlCornersOptions"/> object, containing options for the time ruler corners.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler.CustomDrawDayViewTimeRuler">
+            <summary>
+                <para>Enables the <see cref="T:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler"/> to be printed in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler.TimeCells">
+            <summary>
+                <para>Gets or sets the <b>DayViewTimeCells</b> control linked to the current <b>DayViewTimeRuler</b>.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.DayViewTimeCells"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler.TimeRuler">
+            <summary>
+                <para>Provides access to the options which characterize the <see cref="T:DevExpress.XtraScheduler.TimeRuler"/> object.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.TimeRuler"/> object containing settings applied to the <see cref="T:DevExpress.XtraScheduler.Reporting.DayViewTimeRuler"/> control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.DayViewTimeCells">
+
+            <summary>
+                <para>A time cell control used for printing the Day View.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DayViewTimeCells class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.#ctor(DevExpress.XtraScheduler.Reporting.ReportDayView)">
+            <summary>
+                <para>Initializes a new instance of the DayViewTimeCells class linked to the specified view component.
+</para>
+            </summary>
+            <param name="view">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportDayView"/> class instance, representing the Day View component.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.AppointmentDisplayOptions">
+            <summary>
+                <para>Provides access to options specifying the visual aspects of appointments in the report.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportDayViewAppointmentDisplayOptions"/> class instance, containing options for appointments.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.CustomDrawDayViewAllDayArea">
+            <summary>
+                <para>Enables the all-day area of the DayView report to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.ExtraCells">
+            <summary>
+                <para>Provides access to the characteristics of the extra cells, printed below the scheduling area in the Day View.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.XtraScheduler.Reporting.ExtraCellsOptions"/> class instance, containing options pertaining to the extra cells.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.HorizontalHeaders">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalDateHeaders"/> or the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalResourceHeaders"/> control linked to the <b>DayViewTimeCells.</b>
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalHeadersControlBase"/> class descendant instance, representing a horizontal header.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.PrintColorSchemas">
+            <summary>
+                <para>Provides access to options specifying the color mode for printing of certain view elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.DayViewTimeCellsPrintColorSchemaOptions"/> object containing color mode settings for elements of the <see cref="T:DevExpress.XtraScheduler.Reporting.DayViewTimeCells"/> control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.ShowAllAppointmentsAtTimeCells">
+            <summary>
+                <para>Speicifies whether all-day appointments are shown in the time cells instead of the all-day area.
+
+</para>
+            </summary>
+            <value><b>true</b> to show all appointments in the time cell area; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.ShowAllDayArea">
+            <summary>
+                <para>Specifies whether the all-day area is visible.
+</para>
+            </summary>
+            <value><b>true</b> to show the all-day area; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.ShowWorkTimeOnly">
+            <summary>
+                <para>Specifies whether the displayed time interval is restricted to work time only.
+</para>
+            </summary>
+            <value><b>true</b> to show only the  work time interval; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.StatusLineWidth">
+            <summary>
+                <para>Gets or sets the width of Status Lines for the <b>Day View</b> (measured in pixels).
+</para>
+            </summary>
+            <value>An integer that specifies the status line width in pixels.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.TimeScale">
+            <summary>
+                <para>Gets or sets the time scale used to define time cells.
+</para>
+            </summary>
+            <value>A <see cref="T:System.TimeSpan"/> value representing the time interval occupied by a time cell.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.VerticalLayoutType">
+            <summary>
+                <para>Gets or sets how the time cells are fitted within the control's boundaries. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ControlContentLayoutType"/> enumeration, specifying the layout type.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.View">
+            <summary>
+                <para>Gets or sets the associated view.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportDayView"/> object, representing the Scheduler report view.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.VisibleTime">
+            <summary>
+                <para>Gets or sets the visible time interval of the day.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.TimeOfDayInterval"/> object, specifying the visible time interval.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.VisibleTimeSnapMode">
+            <summary>
+                <para>Specifies whether the start of the scheduler visible interval should be displayed as set without adjusting it to a custom time ruler.
+</para>
+            </summary>
+            <value><b>true</b>, if the start of the scheduler visible interval should be shown as specified without stretching it to the time slot of the ruler; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayViewTimeCells.VisibleWeekDays">
+            <summary>
+                <para>Gets or sets which days of the week are shown in the report.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.WeekDays"/> enumeration member specifying the days of the week.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.DayOfWeekHeaders">
+
+            <summary>
+                <para>A control to print headers indicating the days of week.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.DayOfWeekHeaders.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DayOfWeekHeaders class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.DayOfWeekHeaders.CustomDrawDayOfWeekHeader">
+            <summary>
+                <para>Enables the <see cref="T:DevExpress.XtraScheduler.Reporting.DayOfWeekHeaders"/> control to be painted in a custom manner.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayOfWeekHeaders.TimeCells">
+            <summary>
+                <para>Gets or sets the <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalWeek"/> control associated with the current <b>DayOfWeekHeaders</b> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.HorizontalWeek"/> object representing a linked control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.DayOfWeekHeaders.View">
+            <summary>
+                <para>Gets or sets the associated view.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportWeekView"/> object, representing the Scheduler report view.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ControlContentLayoutType">
+
+            <summary>
+                <para>Lists two types for fitting the control's content within a control's dimensions.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.ControlContentLayoutType.Fit">
+            <summary>
+                <para>The content corresponding to the entire time interval is fit into the dimensions specified for a control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.ControlContentLayoutType.Tile">
+            <summary>
+                <para>The content is printed in tiles, with all the tiles covering the entire time interval. This approach allows you to print only a part of the control's content within the control's boundaries, so each minimal time unit (time cell) occupies the control's boundaries.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ColumnArrangementMode">
+
+            <summary>
+                <para>List the arrangement orders of columns in a sequence.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.ColumnArrangementMode.Ascending">
+            <summary>
+                <para>Specifies that groups are arranged in ascending order, according to the number of items in a group.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.ColumnArrangementMode.Descending">
+            <summary>
+                <para>Specifies that groups are arranged in descending order, according to the number of items in a group.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.PrintContentMode">
+
+            <summary>
+                <para>Lists the modes specifying which columns are chosen to set printed time intervals for the information controls.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintContentMode.AllColumns">
+            <summary>
+                <para>Prints information for all columns in a multicolumn mode.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraScheduler.Reporting.PrintContentMode.CurrentColumn">
+            <summary>
+                <para>Prints information for the current column only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.ReportViewBase">
+
+            <summary>
+                <para>A base class for all components, representing the View in the XtraScheduler Report.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportViewBase.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of the ReportViewBase's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.BaseViewAppearance"/> object that provides the appearance settings for ReportViewBase elements.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewBase.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportViewBase.ColumnArrangement">
+            <summary>
+                <para>Specifies the order in which the numbers of intervals in columns are arranged.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.ColumnArrangementMode"/> enumeration representing the order.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewBase.EndInit">
+            <summary>
+                <para>Ends the component initialization.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewBase.GetAppointments(DevExpress.XtraScheduler.TimeInterval,DevExpress.XtraScheduler.ResourceBaseCollection)">
+            <summary>
+                <para>Returns a collection of appointments that fall within the specified time interval and are associated with a specified resource.
+
+</para>
+            </summary>
+            <param name="timeInterval">
+		A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object which contains the required time interval.
+
+            </param>
+            <param name="resources">
+		A <see cref="T:DevExpress.XtraScheduler.ResourceBaseCollection"/> object containing the required resources.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.XtraScheduler.AppointmentBaseCollection"/> collection of appointments which meet the requirements.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewBase.GetLabelColor(System.Object)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="labelId">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewBase.GetService(System.Type)">
+            <summary>
+                <para>Gets the service object of the specified type. 
+</para>
+            </summary>
+            <param name="serviceType">
+		An object that specifies the type of service object to get. 
+
+            </param>
+            <returns>A service object of the specified type, or a null reference (<b>Nothing</b> in Visual Basic) if there is no service object of this type. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.ReportViewBase.GetStatus(System.Object)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="statusId">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportViewBase.GroupType">
+            <summary>
+                <para>Gets or sets a value that specifies the type of grouping applied to the View.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.SchedulerGroupType"/> enumeration value that specifies how appointments are grouped within the View.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.ReportViewBase.VisibleResourceCount">
+            <summary>
+                <para>Gets or sets the maximum number of resources displayed in one section.
+</para>
+            </summary>
+            <value>An integer, representing the number of resources.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraScheduler.Reporting.CalendarControl">
+
+            <summary>
+                <para>Represents a Calendar control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.CalendarControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CalendarControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraScheduler.Reporting.CalendarControl.#ctor(DevExpress.XtraScheduler.Reporting.ReportViewBase)">
+            <summary>
+                <para>Initializes a new instance of the CalendarControl class with the specified View.
+</para>
+            </summary>
+            <param name="view">
+		A <see cref="T:DevExpress.XtraScheduler.Reporting.ReportViewBase"/> descendant, representing an associated view.
+
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraScheduler.Reporting.CalendarControl.CustomDrawDayNumberCell">
+            <summary>
+                <para>Provides the ability to custom paint dates in the Calendar control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.CalendarControl.PrintTimeInterval">
+            <summary>
+                <para>Gets the time interval (in days) currently displayed by the linked time cells.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.TimeInterval"/> object, representing the interval in days.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraScheduler.Reporting.CalendarControl.TimeCells">
+            <summary>
+                <para>Gets or sets the time cells control associated with the current <b>CalendarControl</b> control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraScheduler.Reporting.TimeCellsControlBase"/> descendant, representing a linked time cells control.
+</value>
+
+
+        </member>
+    </members>
+</doc>

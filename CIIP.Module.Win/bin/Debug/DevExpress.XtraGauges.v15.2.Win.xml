@@ -1,0 +1,3286 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraGauges.v15.2.Win</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent">
+
+            <summary>
+                <para>Represents a background layer within digital gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the DigitalBackgroundLayerComponent class.
+</para>
+            </summary>
+            <param name="name">
+		A string that specifies the name of the created component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DigitalBackgroundLayerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent">
+
+            <summary>
+                <para>Represents an effect layer within linear gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleEffectLayerComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleEffectLayerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent">
+
+            <summary>
+                <para>Represents a state indicator within linear gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleStateIndicatorComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleStateIndicatorComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.GaugeControl">
+
+            <summary>
+                <para>Represents a Gauge Control, a container of gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GaugeControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.About">
+            <summary>
+                <para>Activates the GaugeControl's <b>About</b> dialog.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraGauges.Win.GaugeControl.EditValueChanged">
+            <summary>
+                <para>Fires after a gauge value has been changed. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToHtml(System.IO.Stream,DevExpress.XtraPrinting.HtmlExportOptions)">
+            <summary>
+                <para>Exports the control to the specified stream in HTML format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object which specifies the export options to be applied when the control's data is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToHtml(System.String,DevExpress.XtraPrinting.HtmlExportOptions)">
+            <summary>
+                <para>Exports the control to the specified file in HTML format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.HtmlExportOptions"/> object which specifies the export options to be applied when the control's data is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToHtml(System.IO.Stream)">
+            <summary>
+                <para>Exports the control to the specified stream in HTML format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToHtml(System.String)">
+            <summary>
+                <para>Exports the control to the specified file in HTML format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToImage(System.String,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                <para>Exports the control to the specified file in Image format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+            <param name="format">
+		A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object which specifies the image format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToImage(System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+                <para>Exports the control to the specified stream in Image format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+            <param name="format">
+		A <see cref="T:System.Drawing.Imaging.ImageFormat"/> object which specifies the image format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToMht(System.String,DevExpress.XtraPrinting.MhtExportOptions)">
+            <summary>
+                <para>Exports the control to the specified file in MHT format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object which specifies the export options to be applied when the control's data is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToMht(System.IO.Stream,DevExpress.XtraPrinting.MhtExportOptions)">
+            <summary>
+                <para>Exports the control to the specified stream in MHT format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.MhtExportOptions"/> object which specifies the export options to be applied when the control's data is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToMht(System.String)">
+            <summary>
+                <para>Exports the control to the specified file in MHT format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToMht(System.IO.Stream)">
+            <summary>
+                <para>Exports a gauge control to the specified stream in MHT format.
+
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object to which the created MHT file should be sent.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToPdf(System.String)">
+            <summary>
+                <para>Exports the control to the specified file in PDF format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the control to the specified stream in PDF format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the export options to be applied when the control's data is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToPdf(System.IO.Stream)">
+            <summary>
+                <para>Exports the control to the specified stream in PDF format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToPdf(System.String,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports a gauge control to the specified file path in PDF format using the specified PDF-specific options.
+
+</para>
+            </summary>
+            <param name="filePath">
+		A <see cref="T:System.String"/> which specifies the file name (including the full path) for the created PDF file.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options to be applied when a gauge control is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToXls(System.IO.Stream)">
+            <summary>
+                <para>Exports the control to the specified stream in XLS format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, which the created document is exported to.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ExportToXls(System.String)">
+            <summary>
+                <para>Exports the control to the specified file in XLS format.
+</para>
+            </summary>
+            <param name="filePath">
+		A string that specifies the full path to the file which the control will be exported to.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControl.IsPrintingAvailable">
+            <summary>
+                <para>Indicates whether the GaugeControl can be printed and exported in various formats.
+
+</para>
+            </summary>
+            <value><b>true</b> if the control can be printed and exported; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.Print(DevExpress.XtraGauges.Core.Printing.PrintSizeMode)">
+            <summary>
+                <para>Prints the control.
+</para>
+            </summary>
+            <param name="sizeMode">
+		A PrintSizeMode value that specifies whether the gauge control must be stretched, zoomed in the printout or printed as is.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.Print">
+            <summary>
+                <para>Prints the current gauge control. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ShowPrintPreview(DevExpress.XtraGauges.Core.Printing.PrintSizeMode)">
+            <summary>
+                <para>Invokes the Print Preview Form, which shows the print preview of the gauge. 
+
+</para>
+            </summary>
+            <param name="sizeMode">
+		A <b>PrintSizeMode</b> enumeration value that specifies whether the gauge control must be stretched, zoomed or printed as is.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControl.ShowRibbonPrintPreview(DevExpress.XtraGauges.Core.Printing.PrintSizeMode)">
+            <summary>
+                <para>Invokes the Ribbon Print Preview Form, which shows the print preview of the gauge. 
+</para>
+            </summary>
+            <param name="sizeMode">
+		A <b>PrintSizeMode</b> enumeration value which specifies the size mode used to print the gauge.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControl.ShowToolTips">
+            <summary>
+                <para>Gets or sets whether tooltips are enabled for gauges.
+</para>
+            </summary>
+            <value><b>true</b> if tooltips are enabled for gauges; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControl.ToolTipController">
+            <summary>
+                <para>Gets or sets the tooltip controller component that controls the appearance, position and content of the hints displayed for the current gauge control.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.Utils.ToolTipController"/> component which controls the appearance and behavior of the hints displayed for the gauge control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent">
+
+            <summary>
+                <para>Represents a background layer  within linear gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleBackgroundLayerComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleBackgroundLayerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent">
+
+            <summary>
+                <para>Represents a needle within circular gauges.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleNeedleComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the scale needle.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleNeedleComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent">
+
+            <summary>
+                <para>Represents a state indicator within circular gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleStateIndicatorComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleStateIndicatorComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent">
+
+            <summary>
+                <para>Represents a scale within a circular gauge.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the scale.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.AppearanceMajorTickmark">
+            <summary>
+                <para>Provides access to appearance options of major tick marks.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object providing access to major tick marks' appearance options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.AppearanceMinorTickmark">
+            <summary>
+                <para>Provides access to appearance options of minor tick marks.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object providing access to minor tick marks' appearance options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.AppearanceScale">
+            <summary>
+                <para>Provides access to appearance settings of the scale arc.
+</para>
+            </summary>
+            <value>A BaseScaleAppearance object that provides corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.AppearanceTickmarkText">
+            <summary>
+                <para>Provides access to appearance settings of tick mark text labels.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object containing corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.AppearanceTickmarkTextBackground">
+            <summary>
+                <para>Provides access to appearance settings of the background of tick mark text labels.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object containing corresponding settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.EasingFunction">
+            <summary>
+                <para>Gets or sets an animation function that defines how values change during animation.
+
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.XtraGauges.Core.Model.IEasingFunction"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.EasingMode">
+            <summary>
+                <para>Gets or sets a value that specifies how the animation interpolates.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraGauges.Core.Model.EasingMode"/> enumeration value that specifies how the animation interpolates.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.EnableAnimation">
+            <summary>
+                <para>Gets or sets a value specifying whether value indicators should be animated when changing their values.
+</para>
+            </summary>
+            <value><b>true</b> to enable animation; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.FrameCount">
+            <summary>
+                <para>Gets or sets the time interval between two animation steps, in ticks.
+</para>
+            </summary>
+            <value>An integer value that is the animation interval.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.FrameDelay">
+            <summary>
+                <para>Gets or sets the animation duration, in ticks.
+</para>
+            </summary>
+            <value>An integer value that is the animation duration.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.GetLabelShemeColor">
+            <summary>
+                <para>Gets a color used to paint labels on this scale.
+</para>
+            </summary>
+            <returns>A Color used to paint a label on this ArcScaleComponent object.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent.IsAnimating">
+            <summary>
+                <para>Gets a value indicating whether or not the animation is currently running.
+
+</para>
+            </summary>
+            <value><b>true</b> if the animation is running; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent">
+
+            <summary>
+                <para>Represents a spindle cap within circular gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleSpindleCapComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleSpindleCapComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Base.BaseGaugeWin">
+
+            <summary>
+                <para>Represents the base class for gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.#ctor">
+            <summary>
+                <para>Initializes a new instance of the BaseGaugeWin class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.#ctor(DevExpress.XtraGauges.Base.IGaugeContainer)">
+            <summary>
+                <para>Initializes a new instance of the BaseGaugeWin class with the specified container.
+</para>
+            </summary>
+            <param name="container">
+		A container that will own the created gauge.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.AddImageIndicator">
+            <summary>
+                <para>Adds an image indicator to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.AddLabel">
+            <summary>
+                <para>Creates a new label and adds it to the <see cref="P:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.Labels"/> collection.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Base.LabelComponent"/> object that represents the created label.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.Images">
+            <summary>
+                <para>Provides access to the collection of custom images used within this gauge.
+</para>
+            </summary>
+            <value>An ImageIndicatorComponentCollection object that is the collection of Image Indicator components used within this gauge
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.Labels">
+            <summary>
+                <para>Provides access to the collection of static labels for the current gauge.
+</para>
+            </summary>
+            <value>A <b>LabelComponentCollection</b> object that represents the collection of static labels for the current gauge.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.Name">
+            <summary>
+                <para>Gets or sets the gauge's name.
+</para>
+            </summary>
+            <value>A string that specifies the gauge's name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.BaseGaugeWin.OptionsToolTip">
+            <summary>
+                <para>Provides options that control the tooltip display for the gauge's elements.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraGauges.Win.Base.OptionsToolTip"/> object that contains corresponding options.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent">
+
+            <summary>
+                <para>Represents a background layer within circular gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleBackgroundLayerComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleBackgroundLayerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge">
+
+            <summary>
+                <para>Imitates a static device or simple indicator that has a fixed set of states.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge.#ctor">
+            <summary>
+                <para>Initializes a new instance of the StateIndicatorGauge class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge.AddIndicator">
+            <summary>
+                <para>Adds an indicator to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge.Indicators">
+            <summary>
+                <para>Provides access to the state indicator collection for the current gauge.
+</para>
+            </summary>
+            <value>A StateIndicatorComponentCollection object that represents the collection of state indicator objects.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent">
+
+            <summary>
+                <para>Represents an effect layer within digital gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the DigitalEffectLayerComponent class.
+</para>
+            </summary>
+            <param name="name">
+		A string that specifies the name of the created component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DigitalEffectLayerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Base.LabelComponent">
+
+            <summary>
+                <para>Represents a label for a gauge.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.LabelComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LabelComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A string that specifies the component's name. This value is assigned to the <b>Name</b> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.LabelComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LabelComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.LabelComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.LabelComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.LabelComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.LabelComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.LabelComponent.UseColorScheme">
+            <summary>
+                <para>Gets or sets whether the Color Scheme should be applied to this LabelComponent.
+</para>
+            </summary>
+            <value><b>true</b>, if the Color Scheme should be applied to this LabelComponent; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Base.OptionsToolTip">
+
+            <summary>
+                <para>Contains settings that specify the contents of tooltips for a specific gauge.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.OptionsToolTip.#ctor">
+            <summary>
+                <para>Initializes a new instance of the OptionsToolTip class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.OptionsToolTip.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		A OptionsToolTip object whose settings are copied to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.Tooltip">
+            <summary>
+                <para>Gets or sets a tooltip for the current gauge.
+</para>
+            </summary>
+            <value>A string that specifies a tooltip for the current gauge.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.TooltipFormat">
+            <summary>
+                <para>Gets or sets the format used to generate a tooltip's text. This property is in effect if the <see cref="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.Tooltip"/> property is set to an empty string.
+</para>
+            </summary>
+            <value>A string that specifies the format to generate a tooltip's text.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.TooltipIconType">
+            <summary>
+                <para>Gets or sets the tooltip icon type.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ToolTipIconType"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.TooltipTitle">
+            <summary>
+                <para>Gets or sets a tooltip's title for the current gauge.
+</para>
+            </summary>
+            <value>A string that specifies a tooltip's title for the current gauge.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.TooltipTitleFormat">
+            <summary>
+                <para>Gets or sets the format used to generate a tooltip's title. This property is in effect if the <see cref="P:DevExpress.XtraGauges.Win.Base.OptionsToolTip.TooltipTitle"/> property is set to an empty string.
+</para>
+            </summary>
+            <value>A string that specifies the format to generate a tooltip's title.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent">
+
+            <summary>
+                <para>A gauge element that displays custom images for different gauge states.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the StateImageIndicatorComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the StateImageIndicatorComponent class.
+</para>
+            </summary>
+            <param name="name">
+		A string that specifies the name of the created component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.Color">
+            <summary>
+                <para>Gets or sets the control's color.
+</para>
+            </summary>
+            <value>The control's color.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.ImageStateCollection">
+            <summary>
+                <para>Provides access to the image state collection.
+</para>
+            </summary>
+            <value>An ImageIndicatorStateCollection object that contains states for the state image indicator.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.IndicatorScale">
+            <summary>
+                <para>Gets or sets the scale object to which the current StateImageIndicatorComponent object is linked.
+</para>
+            </summary>
+            <value>An IScale object that represents the scale to which the current object is linked.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.StateImages">
+            <summary>
+                <para>Gets or sets the source of the images that indicate a state image indicator's state.
+</para>
+            </summary>
+            <value>An object which is the source of state images.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.StateIndex">
+            <summary>
+                <para>Gets or sets the index of a state image that is currently displayed within the <see cref="T:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent"/>.
+</para>
+            </summary>
+            <value>An Int32  value that is the currently displayed image's index. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent.XtraCreateImageStateCollectionItem(DevExpress.Utils.Serializing.XtraItemEventArgs)">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code. 
+</para>
+            </summary>
+            <param name="e">
+		An XtraItemEventArgs object.
+
+            </param>
+            <returns>An object.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent">
+
+            <summary>
+                <para>Imitates a simple indicator that has a set of custom images and displays any image within a gauge.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ImageIndicatorComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ImageIndicatorComponent class.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the image indicator.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.Color">
+            <summary>
+                <para>Gets or sets the control's color.
+</para>
+            </summary>
+            <value>The control's color.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Base.ImageIndicatorComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.GaugeControlBase">
+
+            <summary>
+                <para>Represents the base class for the GaugeControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.#ctor">
+            <summary>
+                <para>Initializes a new instance of the GaugeControlBase class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.AddCircularGauge">
+            <summary>
+                <para>Adds a new <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge"/> to the control.
+</para>
+            </summary>
+            <returns>The newly created <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge"/>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.AddDigitalGauge">
+            <summary>
+                <para>Adds a new <see cref="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge"/> to the control.
+</para>
+            </summary>
+            <returns>The newly created <see cref="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge"/>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.AddGauge(DevExpress.XtraGauges.Base.GaugeType)">
+            <summary>
+                <para>Adds a new gauge of the specified type to the control.
+</para>
+            </summary>
+            <param name="type">
+		The type of gauge to be added.
+
+            </param>
+            <returns>The newly created gauge.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.AddLinearGauge">
+            <summary>
+                <para>Adds a new <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge"/> to the control.
+</para>
+            </summary>
+            <returns>The newly created <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge"/>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.AddStateIndicatorGauge">
+            <summary>
+                <para>Adds a new <see cref="T:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge"/> to the control.
+</para>
+            </summary>
+            <returns>The newly created <see cref="T:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge"/>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.AutoLayout">
+            <summary>
+                <para>Gets or sets whether gauges are automatically arranged within the Gauge control to avoid overlapping.
+</para>
+            </summary>
+            <value><b>true</b> if gauges are automatically arranged within the GaugeControl; otherwise, <b>false</b>
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.BackColor">
+            <summary>
+                <para>Gets or sets the control's background color.
+</para>
+            </summary>
+            <value>The control's background color.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.BorderStyle">
+            <summary>
+                <para>Gets or sets the control's border style. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Controls.BorderStyles"/> enumeration value specifying the control's border style. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.ColorScheme">
+            <summary>
+                <para>Provides access to settings that manage the color scheme, currently applied to this control.
+</para>
+            </summary>
+            <value>A <see cref="ColorScheme"/> object that stores color scheme settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.Cursor">
+            <summary>
+                <para>Gets or sets the control's cursor.
+</para>
+            </summary>
+            <value>The control's cursor.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.Font">
+            <summary>
+                <para>This member is not supported by the class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.ForeColor">
+            <summary>
+                <para>This member is not supported by the class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.Gauges">
+            <summary>
+                <para>Gets the collection of gauges displayed in the control.
+</para>
+            </summary>
+            <value>The collection of gauges displayed in the control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.GraphicsProperties">
+            <summary>
+                <para>Provides access to the graphic properties to customize the gauge rendering. 
+</para>
+            </summary>
+            <value>A GraphicProperties object that contains properties for working with a GDI graphic.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.InitializeDefault(System.Object)">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="parameter">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.InvalidateRect(System.Drawing.RectangleF)">
+            <summary>
+                <para>Invalidates the specified region of the control (adds it to the control's update region, which is the area that will be repainted at the next paint operation), and causes a paint message to be sent to the control.
+
+</para>
+            </summary>
+            <param name="bounds">
+		A Rectangle that represents the region to invalidate.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.Items">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.LayoutInterval">
+            <summary>
+                <para>Gets or sets an interval between two neighboring gauges in the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.AutoLayout"/> mode.
+</para>
+            </summary>
+            <value>An integer value specifying the interval between gauges.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.LayoutPadding">
+            <summary>
+                <para>Gets or sets a padding around all gauges in the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.AutoLayout"/> mode.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraGauges.Core.Base.Thickness"/> value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.LookAndFeel">
+            <summary>
+                <para>Provides access to the settings that specify the look and feel of the Gauge control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object whose properties specify the Gauge control's look and feel.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.ResetBackColor">
+            <summary>
+                <para>Sets the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.BackColor"/> property to its default value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.ResetColorScheme">
+            <summary>
+                <para>Sets the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.ColorScheme"/> property to its default value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.ResetGraphicsProperties">
+            <summary>
+                <para>Sets the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.GraphicsProperties"/> property to its default value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.RestoreLayoutFromRegistry(System.String)">
+            <summary>
+                <para>Restores the layout of gauges and their elements stored at the specified system registry path.
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path. If the specified path doesn't exist, calling this method has no effect.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.RestoreLayoutFromStream(System.IO.Stream)">
+            <summary>
+                <para>Restores the layout of gauges and their elements from the specified stream. 
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant which stores the layout.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.RestoreLayoutFromXml(System.String)">
+            <summary>
+                <para>Restores the layout of gauges and their elements from a specific XML file
+</para>
+            </summary>
+            <param name="xmlFile">
+		A string value specifying the path to the XML file that stores the layout. If the specified file doesn't exist, a <see cref="T:System.IO.FileNotFoundException"/> type exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.RestoreStyleFromStream(System.IO.Stream)">
+            <summary>
+                <para>Restores a style of gauges and their elements from the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object that stores the Gauge control's style.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.RestoreStyleFromXml(System.String)">
+            <summary>
+                <para>Restores the style from the specified XML file.
+</para>
+            </summary>
+            <param name="path">
+		A <see cref="T:System.String"/> value which specifies the path to the XML file that contains the style to be loaded. If the specified file doesn't exist, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.RightToLeft">
+            <summary>
+                <para>This member is not supported by the class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.SaveLayoutToRegistry(System.String)">
+            <summary>
+                <para>Saves the layout of gauges and their elements to a system registry path. 
+</para>
+            </summary>
+            <param name="path">
+		A string value specifying the system registry path to which the layout is saved.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.SaveLayoutToStream(System.IO.Stream)">
+            <summary>
+                <para>Saves the layout of gauges and their elements to a specific stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant to which the layout is written. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.SaveLayoutToXml(System.String)">
+            <summary>
+                <para>Saves the layout of gauges and their elements to a specific XML file. 
+
+</para>
+            </summary>
+            <param name="xmlFile">
+		A string that specifies the path to the file where the layout will be stored. If an empty string is specified, an exception is raised. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.SaveStyleToStream(System.IO.Stream)">
+            <summary>
+                <para>Saves the Gauge control's current style to the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> descendant to which the style is written.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.SaveStyleToXml(System.String)">
+            <summary>
+                <para>Saves the Gauge control's current style to a file in XML format.
+</para>
+            </summary>
+            <param name="path">
+		A <see cref="T:System.String"/> value that specifies the path to the file where the style should be stored. If an empty string is specified, an exception is raised.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.ShouldSerializeBackColor">
+            <summary>
+                <para>Indicates whether or not the effective value of the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.BackColor"/> property should be serialized during serialization of a GaugeControlBase object.
+</para>
+            </summary>
+            <returns>This method returns <b>false</b> to avoid serialization of the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.BackColor"/> property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.ShouldSerializeColorScheme">
+            <summary>
+                <para>Indicates whether or not the effective value of the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.ColorScheme"/> property should be serialized during serialization of a GaugeControlBase object.
+</para>
+            </summary>
+            <returns>This method returns <b>false</b> to avoid serialization of the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.ColorScheme"/> property.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.ShouldSerializeGraphicsProperties">
+            <summary>
+                <para>Indicates whether or not the effective value of the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.GraphicsProperties"/> property should be serialized during serialization of a GaugeControlBase object
+</para>
+            </summary>
+            <returns>This method returns <b>false</b> to avoid serialization of the <see cref="P:DevExpress.XtraGauges.Win.GaugeControlBase.GraphicsProperties"/> property.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.SizeEx">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>A System.Drawing.Size structure.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.GaugeControlBase.Text">
+            <summary>
+                <para>This member is not supported by the class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.GaugeControlBase.UpdateRect(System.Drawing.RectangleF)">
+            <summary>
+                <para>Redraws the specified region.
+</para>
+            </summary>
+            <param name="rect">
+		A Rectangle that specifies the region to be updated. The <b>RectangleF.Empty</b> value to update the entire client region.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent">
+
+            <summary>
+                <para>Represents a marker within circular gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleMarkerComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the scale marker.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleMarkerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent">
+
+            <summary>
+                <para>Represents an element of a <see cref="T:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorGauge"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the StateIndicatorComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the StateIndicatorComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.State.StateIndicatorComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent">
+
+            <summary>
+                <para>Represents a marker within linear gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleMarkerComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleMarkerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent">
+
+            <summary>
+                <para>Represents a level bar within linear gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleLevelComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleLevelComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent">
+
+            <summary>
+                <para>Represents a range bar within circular gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleRangeBarComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleRangeBarComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.AppearanceRangeBar">
+            <summary>
+                <para>Contains appearance settings used to paint the range bar.
+</para>
+            </summary>
+            <value>A RangeBarAppearance object that provides corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.EndAngle">
+            <summary>
+                <para>Gets or sets the angle that specifies the scale end position.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value that is the end angle of the scale.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent.StartAngle">
+            <summary>
+                <para>Gets or sets the angle that specifies the scale start position.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value (in degrees).
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent">
+
+            <summary>
+                <para>Represents an effect layer within circular gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleEffectLayerComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ArcScaleEffectLayerComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge">
+
+            <summary>
+                <para>Represents a horizontally or vertically oriented bar with scales.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearGauge class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddBackgroundLayer">
+            <summary>
+                <para>Adds a background layer to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleBackgroundLayerComponent"/> object that represents the background layer that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddDefaultElements">
+            <summary>
+                <para>Adds the default elements (a scale, background layer and level bar) to the gauge.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddEffectLayer">
+            <summary>
+                <para>Adds an effect layer to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleEffectLayerComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddLevel">
+            <summary>
+                <para>Adds a level bar to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleLevelComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddMarker">
+            <summary>
+                <para>Adds a marker to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleMarkerComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddRangeBar">
+            <summary>
+                <para>Adds a range bar to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddScale">
+            <summary>
+                <para>Adds a scale to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AddStateIndicator">
+            <summary>
+                <para>Adds a state indicator to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleStateIndicatorComponent"/> object that has been added.
+
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.AutoSize">
+            <summary>
+                <para>Gets or sets a value indicating whether the size of a LinearGauge control should be determined automatically.
+</para>
+            </summary>
+            <value><b>true</b>, to automatically determine the size; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.BackgroundLayers">
+            <summary>
+                <para>Provides access to the background layer collection for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleBackgroundLayerComponentCollection object that represents the collection of background layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.EffectLayers">
+            <summary>
+                <para>Provides access to the effect layer collection for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleEffectLayerComponentCollection object that represents the collection of effect layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.Indicators">
+            <summary>
+                <para>Provides access to the state indicator collection for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleStateIndicatorComponentCollection object that represents the collection of state indicator objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.Levels">
+            <summary>
+                <para>Provides access to the level bar collection for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleLevelComponentCollection object that represents the collection of level bar objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.Markers">
+            <summary>
+                <para>Provides access to the marker collection for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleMarkerComponentCollection object that represents the collection of marker objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.Orientation">
+            <summary>
+                <para>Gets or sets the gauge's orientation.
+</para>
+            </summary>
+            <value>A ScaleOrientation value that specifies the gauge's orientation.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.RangeBars">
+            <summary>
+                <para>Provides access to the range bar collection for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleRangeBarComponentCollection object that represents the collection of range bar objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearGauge.Scales">
+            <summary>
+                <para>Provides access to the collection of scales for the current gauge.
+</para>
+            </summary>
+            <value>A LinearScaleComponentCollection object that represents the collection of scale objects.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge">
+
+            <summary>
+                <para>Displays numbers and text in the manner like LEDS do.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DigitalGauge class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.#ctor(DevExpress.XtraGauges.Base.IGaugeContainer)">
+            <summary>
+                <para>Initializes a new instance of the DigitalGauge class.
+</para>
+            </summary>
+            <param name="container">
+		A container that will own the created gauge.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.AddBackgroundLayer">
+            <summary>
+                <para>Adds a background layer to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalBackgroundLayerComponent"/> object that represents the background layer that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.AddDefaultElements">
+            <summary>
+                <para>Adds the default elements (the background layer, etc.) to the gauge.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.AddEffectLayer">
+            <summary>
+                <para>Adds an effect layer to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalEffectLayerComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.AppearanceOff">
+            <summary>
+                <para>Contains appearance settings used to paint segments that are not active.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object that contains corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.AppearanceOn">
+            <summary>
+                <para>Contains appearance settings used to paint active segments.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object that contains corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.ApplyTextSettings(DevExpress.XtraGauges.Core.TextSettings)">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <param name="settings">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.BackgroundLayers">
+            <summary>
+                <para>Provides access to the background layer collection for the current gauge.
+</para>
+            </summary>
+            <value>A DigitalBackgroundLayerComponentCollection object that represents the collection of background layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.DigitCount">
+            <summary>
+                <para>Gets or sets the number of characters displayed by the gauge.
+</para>
+            </summary>
+            <value>An integer value that specifes the number of characters displayed by the gauge.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.DisplayMode">
+            <summary>
+                <para>Gets or sets the text display mode.
+</para>
+            </summary>
+            <value>A DigitalGaugeDisplayMode value that specifies the text display mode.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.EffectLayers">
+            <summary>
+                <para>Provides access to the effect layer collection for the current gauge.
+</para>
+            </summary>
+            <value>A DigitalEffectLayerComponentCollection object that represents the collection of effect layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.LetterSpacing">
+            <summary>
+                <para>Gets or sets the spacing between characters.
+</para>
+            </summary>
+            <value>The spacing between characters, in relative coordinates.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.Padding">
+            <summary>
+                <para>Gets or sets the amount of space between a gauge's borders and the digits it displays.
+</para>
+            </summary>
+            <value>A DevExpress.XtraGauges.Core.Base.TextSpacing object containing padding settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Digital.DigitalGauge.Text">
+            <summary>
+                <para>Gets or sets the text displayed by the gauge.
+</para>
+            </summary>
+            <value>A string that specifies the text displayed by the gauge.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge">
+
+            <summary>
+                <para>Represents a gauge that can have a circular, semi-circular or any round scale. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.#ctor">
+            <summary>
+                <para>Initializes a new instance of the CircularGauge class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddBackgroundLayer">
+            <summary>
+                <para>Adds a background layer to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleBackgroundLayerComponent"/> object that represents the background layer that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddDefaultElements">
+            <summary>
+                <para>Adds the default elements (a scale, a background layer and a needle) to the gauge.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddEffectLayer">
+            <summary>
+                <para>Adds an effect layer to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleEffectLayerComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddMarker">
+            <summary>
+                <para>Adds a marker to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleMarkerComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddNeedle">
+            <summary>
+                <para>Adds a needle to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleNeedleComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddRangeBar">
+            <summary>
+                <para>Adds a range bar to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleRangeBarComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddScale">
+            <summary>
+                <para>Adds a scale to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddSpindleCap">
+            <summary>
+                <para>Adds a spindle cap to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleSpindleCapComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddStateImageIndicator">
+            <summary>
+                <para>Adds a state image indicator to the gauge.
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.XtraGauges.Win.Base.StateImageIndicatorComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AddStateIndicator">
+            <summary>
+                <para>Adds a state indicator to the gauge.
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.XtraGauges.Win.Gauges.Circular.ArcScaleStateIndicatorComponent"/> object that has been added.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.AutoSize">
+            <summary>
+                <para>Gets or sets a value indicating whether the size of a CircularGauge control should be determined automatically.
+</para>
+            </summary>
+            <value><b>true</b>, to automatically determine the size; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.BackgroundLayers">
+            <summary>
+                <para>Provides access to the background layer collection for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleBackgroundLayerComponentCollection object that represents the collection of background layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.EffectLayers">
+            <summary>
+                <para>Provides access to the effect layer collection for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleEffectLayerComponentCollection object that represents the collection of effect layers.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.ImageIndicators">
+            <summary>
+                <para>Provides access to the state image indicators collection for this gauge.
+</para>
+            </summary>
+            <value>A StateImageIndicatorComponentCollection object that represents the collection of state image indicator objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.Indicators">
+            <summary>
+                <para>Provides access to the state indicator collection for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleStateIndicatorComponentCollection object that represents the collection of state indicator objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.Markers">
+            <summary>
+                <para>Provides access to the marker collection for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleMarkerComponentCollection object that represents the collection of marker objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.Needles">
+            <summary>
+                <para>Provides access to the needle collection for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleNeedleComponentCollection object that represents the collection of needle objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.RangeBars">
+            <summary>
+                <para>Provides access to the range bar collection for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleRangeBarComponentCollection object that represents the collection of range bar objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.Scales">
+            <summary>
+                <para>Provides access to the collection of scales for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleComponentCollection object that represents the collection of scale objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Circular.CircularGauge.SpindleCaps">
+            <summary>
+                <para>Provides access to the collection of spindle caps for the current gauge.
+</para>
+            </summary>
+            <value>An ArcScaleSpindleCapComponentCollection object that represents the collection of spindle caps.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent">
+
+            <summary>
+                <para>Represents a range bar within linear gauges.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleRangeBarComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleRangeBarComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.AppearanceRangeBar">
+            <summary>
+                <para>Contains appearance settings used to paint the range bar.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object that provides corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleRangeBarComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent">
+
+            <summary>
+                <para>Represents a scale within a linear gauge.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleComponent class with the specified name.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> value that specifies the name of the component.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.#ctor">
+            <summary>
+                <para>Initializes a new instance of the LinearScaleComponent class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.AppearanceMajorTickmark">
+            <summary>
+                <para>Provides access to appearance options of major tick marks.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object providing access to major tick marks' appearance options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.AppearanceMinorTickmark">
+            <summary>
+                <para>Provides access to appearance options of minor tick marks.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object providing access to minor tick marks' appearance options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.AppearanceScale">
+            <summary>
+                <para>Provides access to appearance settings of the scale.
+</para>
+            </summary>
+            <value>A BaseScaleAppearance object that provides corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.AppearanceTickmarkText">
+            <summary>
+                <para>Provides access to appearance settings of tick mark text labels.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object containing corresponding appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.AppearanceTickmarkTextBackground">
+            <summary>
+                <para>Provides access to appearance settings of the background of tick mark text labels.
+</para>
+            </summary>
+            <value>A BaseShapeAppearance object containing corresponding settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.BeginInit">
+            <summary>
+                <para>Starts the runtime initialization of a component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.BindingContext">
+            <summary>
+                <para>Gets or sets the <b>BindingContext</b> for the control. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.BindingContext"/> for the control. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.DataBindings">
+            <summary>
+                <para>Provides access to the collection of data bindings for the control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Windows.Forms.ControlBindingsCollection"/> object representing a collection of data bindings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.EasingFunction">
+            <summary>
+                <para>Gets or sets an animation function that defines how values change during animation.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.XtraGauges.Core.Model.IEasingFunction"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.EasingMode">
+            <summary>
+                <para>Gets or sets a value that specifies how the animation interpolates.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraGauges.Core.Model.EasingMode"/> enumeration value that specifies how the animation interpolates.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.EnableAnimation">
+            <summary>
+                <para>Gets or sets a value specifying whether value indicators should be animated when changing their values.
+</para>
+            </summary>
+            <value><b>true</b> to enable animation; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.EndInit">
+            <summary>
+                <para>Finishes the runtime initialization of the component.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.FrameCount">
+            <summary>
+                <para>Gets or sets the time interval between two animation steps, in ticks.
+</para>
+            </summary>
+            <value>An integer value that is the animation interval.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.FrameDelay">
+            <summary>
+                <para>Gets or sets the animation duration, in ticks.
+</para>
+            </summary>
+            <value>An integer value that is the animation duration.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.GetLabelShemeColor">
+            <summary>
+                <para>Returns the color applied to labels owned by this LinearScaleComponent.
+</para>
+            </summary>
+            <returns>A Color applied to labels owned by this LinearScaleComponent.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraGauges.Win.Gauges.Linear.LinearScaleComponent.IsAnimating">
+            <summary>
+                <para>Gets a value indicating whether or not the animation is currently running.
+
+</para>
+            </summary>
+            <value><b>true</b> if the animation is running; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+    </members>
+</doc>

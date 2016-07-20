@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.Notifications.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.Notifications.NotificationsService">
+
+            <summary>
+                <para>A service used by the <see cref="T:DevExpress.ExpressApp.Notifications.NotificationsModule"/> to process the notifications. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.#ctor(DevExpress.ExpressApp.XafApplication,DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider)">
+            <summary>
+                <para>Initializes a new instance of the NotificationsService class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages an XAF application.
+
+
+            </param>
+            <param name="defaultNotificationsProvider">
+		The <see cref="T:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider"/> object that specifies the Notifications Provider.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.#ctor(DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider)">
+            <summary>
+                <para>Initializes a new instance of the NotificationsService class.
+</para>
+            </summary>
+            <param name="defaultNotificationsProvider">
+		A <see cref="T:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider"/> object.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.Dismiss(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Removes the specified notification items.
+</para>
+            </summary>
+            <param name="itemsToDismiss">
+		An <b>IEnumerable&lt;</b><see cref="T:DevExpress.Persistent.Base.General.INotificationItem"/><b>&gt;</b> list of notification items to be dismissed.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.Dispose">
+            <summary>
+                <para>Releases all resources used by an NotificationsService object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.GetActiveNotificationsCount">
+            <summary>
+                <para>Returns the number of active notifications.
+</para>
+            </summary>
+            <returns>An integer value which is the number of active notifications.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.GetPostponedNotificationsCount">
+            <summary>
+                <para>Returns the number of postponed notifications.
+</para>
+            </summary>
+            <returns>An integer value which is the number of postponed notifications.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Notifications.NotificationsService.ItemsProcessed">
+            <summary>
+                <para>Occurs when an <see cref="T:DevExpress.Persistent.Base.General.ISupportNotifications"/> object is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Notifications.NotificationsService.NotificationsChanged">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsService.NotificationsProviders">
+            <summary>
+                <para>Gets a list of registered Notifications Providers.
+</para>
+            </summary>
+            <value>A <b>ReadOnlyCollection&lt;</b><see cref="T:DevExpress.Persistent.Base.General.INotificationsProvider"/><b>&gt;</b> list of objects that provide notifications. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Notifications.NotificationsService.NotificationTriggered">
+            <summary>
+                <para>Occurs when there are notifications to display.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.Postpone(System.Collections.Generic.IEnumerable`1,System.TimeSpan)">
+            <summary>
+                <para>Postpones the specified notification items for the given amount of time.
+</para>
+            </summary>
+            <param name="itemsToPostpone">
+		An <b>IEnumerable&lt;</b><see cref="T:DevExpress.Persistent.Base.General.INotificationItem"/><b>&gt;</b> object to be dismissed.
+
+            </param>
+            <param name="postponeTime">
+		A <see cref="T:System.TimeSpan"/> object that specifies the amount of time to postpone the notification.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.Refresh">
+            <summary>
+                <para>Refreshes the list of active notifications.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.RefreshNotifications">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.RegisterNotificationsProvider(DevExpress.Persistent.Base.General.INotificationsProvider)">
+            <summary>
+                <para>Registers the specified Notifications Provider
+</para>
+            </summary>
+            <param name="notificationProvider">
+		An <see cref="T:DevExpress.Persistent.Base.General.INotificationsProvider"/> object to register.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.SetItemChanged(DevExpress.Persistent.Base.General.INotificationItem)">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+            <param name="item">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.UnregisterNotificationsProvider(DevExpress.Persistent.Base.General.INotificationsProvider)">
+            <summary>
+                <para>Unregisters the specified Notifications Provider
+</para>
+            </summary>
+            <param name="notificationProvider">
+		An <see cref="T:DevExpress.Persistent.Base.General.INotificationsProvider"/> object to register.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsService.UpdateDefaultNotificationsProvider(DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider)">
+            <summary>
+                <para>Recreates the <see cref="T:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider"/>.
+</para>
+            </summary>
+            <param name="newDefaultNotificationsProvider">
+		The <see cref="T:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider"/> that specifies the new default Notifications Provider
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider">
+
+            <summary>
+                <para>A Notifications Provider that collects notifications from any business objects that support the <see cref="T:DevExpress.Persistent.Base.General.INotificationsProvider"/> interface.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.#ctor(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Initializes a new instance of the DefaultNotificationsProvider class.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages an XAF application.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.CustomizeNotificationCollectionCriteria">
+            <summary>
+                <para>Occurs before a criteria is applied to the notifications collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.Dismiss(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Dismisses the specified notification item.
+</para>
+            </summary>
+            <param name="notificationItems">
+		An <see cref="T:DevExpress.Persistent.Base.General.INotificationItem"/> object to be dismissed. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.Dispose">
+            <summary>
+                <para>Releases all resources used by an DefaultNotificationsProvider object.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.GetActiveNotificationsCount">
+            <summary>
+                <para>Returns the number of active notifications.
+</para>
+            </summary>
+            <returns>An integer value which is the number of active notifications.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.GetNotificationItems">
+            <summary>
+                <para>Returns the list of notification items.
+</para>
+            </summary>
+            <returns>An <b>IEnumerable&lt;</b><see cref="T:DevExpress.Persistent.Base.General.INotificationItem"/><b>&gt;</b> list of notification items. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.GetPostponedNotificationsCount">
+            <summary>
+                <para>Returns the number of postponed notifications.
+</para>
+            </summary>
+            <returns>An integer value which is the number of postponed notifications.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.NotificationTypesInfo">
+            <summary>
+                <para>Gets information on business object types supported by the DefaultNotificationsProvider provider.
+</para>
+            </summary>
+            <value>A <b>HashSet</b> object that provides information on business object types supported by the <b>DefaultNotificatonProvider</b> provider. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider.Postpone(System.Collections.Generic.IEnumerable`1,System.TimeSpan)">
+            <summary>
+                <para>Postpones the specified notification item for the given amount of time.
+</para>
+            </summary>
+            <param name="notificationItems">
+		A collection of <see cref="T:DevExpress.Persistent.Base.General.INotificationItem"/> notification items to postpone. 
+
+            </param>
+            <param name="postponeTime">
+		A <see cref="T:System.TimeSpan"/> object that specifies the amount of time to postpone the notification. 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.Notifications.NotificationsModule">
+
+            <summary>
+                <para>The XAF module contained in the <i>DevExpress.ExpressApp.Notifications.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsModule.#ctor">
+            <summary>
+                <para>Initializes a new instance of the NotificationsModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsModule.CanAccessPostponedItems">
+            <summary>
+                <para>Specifies if the <b>ShowNotifications</b> Action remains enabled when there are postponed notifications and no active notifications.
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>ShowNotifications</b> Action remains enabled when there are postponed notifications and no active notifications; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsModule.CustomizeTypesInfo(DevExpress.ExpressApp.DC.ITypesInfo)">
+            <summary>
+                <para>Customizes metadata on business classes specific to the NotificationsModule before loading the metadata to the Application Model's <b>BOModel</b> node.
+</para>
+            </summary>
+            <param name="typesInfo">
+		An <see cref="T:DevExpress.ExpressApp.DC.ITypesInfo"/> object which holds metadata information on business classes to be loaded to the Application Model. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsModule.DefaultNotificationsProvider">
+            <summary>
+                <para>Specifies the default Notifications Service and Notifications Providers that collects notifications from <see cref="T:DevExpress.Persistent.Base.General.ISupportNotifications"/> business objects.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Notifications.DefaultNotificationsProvider"/> object that collects notifications from business objects.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsModule.NotificationsRefreshInterval">
+            <summary>
+                <para>Specifies the amount of time between successive refreshes of the notifications.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.TimeSpan"/> value that specifies the amount of time between successive refreshes of the notifications.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsModule.NotificationsService">
+            <summary>
+                <para>Gets the Notifications Service.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.Notifications.NotificationsService"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsModule.NotificationsStartDelay">
+            <summary>
+                <para>Specifies the delay from the application start to the initial Reminders Window display.
+</para>
+            </summary>
+            <value>A <see cref="T:System.TimeSpan"/> value that specifies the delay from the application start to the initial Reminders Window display. The default is 5 seconds.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.Notifications.NotificationsModule.Setup(DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Sets up the NotificationsModule after it has been added to the <see cref="P:DevExpress.ExpressApp.XafApplication.Modules"/> collection.
+</para>
+            </summary>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that manages an XAF application.
+
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.Notifications.NotificationsModule.ShowNotificationsWindow">
+            <summary>
+                <para>Specifies if the Reminders Window is displayed automatically or a user should invoke it manually.
+</para>
+            </summary>
+            <value><b>true</b> if the window is displayed automatically; otherwise, <b>false</b>. The default is <b>true</b>.
+
+</value>
+
+
+        </member>
+    </members>
+</doc>

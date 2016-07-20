@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.TreeListEditors.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.TreeListEditors.DataBindingMode">
+
+            <summary>
+                <para>Contains values which specify how <b>ASPxTreeList</b> controls are bound to data. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.TreeListEditors.DataBindingMode.Unbound">
+            <summary>
+                <para>When an <b>ASPxTreeList</b> control is loaded, all the existing nodes are loaded from the database.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.TreeListEditors.DataBindingMode.Virtual">
+            <summary>
+                <para>Only the nodes that must be displayed in a UI are loaded from the database.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.TreeListEditors.TreeListEditorsModuleBase">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.TreeListEditors.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.TreeListEditors.TreeListEditorsModuleBase.#ctor">
+            <summary>
+                <para>Creates an instance of the TreeListEditorsModuleBase class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.TreeListEditors.TreeListEditorsModuleBase.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the TreeListEditorsModuleBase module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the TreeListEditorsModuleBase module.
+</returns>
+
+
+        </member>
+    </members>
+</doc>

@@ -110,7 +110,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>CodeFirstViewModule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseUpdate\ReadMe.txt" />

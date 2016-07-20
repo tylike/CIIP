@@ -1,0 +1,2239 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraDiagram.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraDiagram.DiagramShape">
+
+            <summary>
+                <para>Displays a shape on the diagram canvas.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramShape.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DiagramShape class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramShape.#ctor(DevExpress.Diagram.Core.ShapeDescription,System.Drawing.Rectangle)">
+            <summary>
+                <para>Initializes a new instance of the DiagramShape class with the specified settings.
+</para>
+            </summary>
+            <param name="shape">
+		The shape kind. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Shape"/> property.
+
+            </param>
+            <param name="bounds">
+		The shape's bounds. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Bounds"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramShape.#ctor(DevExpress.Diagram.Core.ShapeDescription)">
+            <summary>
+                <para>Initializes a new instance of the DiagramShape class with the specified settings.
+</para>
+            </summary>
+            <param name="shape">
+		The shape kind. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Shape"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramShape.#ctor(DevExpress.Diagram.Core.ShapeDescription,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the DiagramShape class with the specified settings.
+</para>
+            </summary>
+            <param name="shape">
+		The shape kind. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Shape"/> property.
+
+            </param>
+            <param name="x">
+		The shape's X coordinate of the top left corner. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.X"/> property.
+
+            </param>
+            <param name="y">
+		The shape's Y coordinate of the top left corner. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Y"/> property.
+
+            </param>
+            <param name="width">
+		The shape's width. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Width"/> property.
+
+            </param>
+            <param name="height">
+		The shape's height. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Height"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramShape.#ctor(DevExpress.Diagram.Core.ShapeDescription,System.Drawing.Rectangle,System.String)">
+            <summary>
+                <para>Initializes a new instance of the DiagramShape class with the specified settings.
+</para>
+            </summary>
+            <param name="shape">
+		The shape kind. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Shape"/> property.
+
+            </param>
+            <param name="bounds">
+		The shape's bounds. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Bounds"/> property.
+
+            </param>
+            <param name="content">
+		The shape's text. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Content"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramShape.#ctor(DevExpress.Diagram.Core.ShapeDescription,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+                <para>Initializes a new instance of the DiagramShape class with the specified settings.
+</para>
+            </summary>
+            <param name="shape">
+		The shape kind. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Shape"/> property.
+
+            </param>
+            <param name="x">
+		The shape's X coordinate of the top left corner. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.X"/> property.
+
+            </param>
+            <param name="y">
+		The shape's Y coordinate of the top left corner. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Y"/> property.
+
+            </param>
+            <param name="width">
+		The shape's width. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Width"/> property.
+
+            </param>
+            <param name="height">
+		The shape's height. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramItem.Height"/> property.
+
+            </param>
+            <param name="content">
+		The shape's text. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramShape.Content"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramShape.Content">
+            <summary>
+                <para>Gets or sets the text displayed by the shape.
+</para>
+            </summary>
+            <value>The text displayed by the diagram shape.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramShape.Parameters">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramShape.Shape">
+            <summary>
+                <para>Gets or sets the shape kind.
+</para>
+            </summary>
+            <value>An object that specifies the shape kind.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.DiagramControl">
+
+            <summary>
+                <para>Allows you and your end-users to create diagrams.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DiagramControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.About">
+            <summary>
+                <para>Invokes the <b>About</b> dialog. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Appearance">
+            <summary>
+                <para>Gets or sets appearance settings applied to the DiagramControl's elements.
+</para>
+            </summary>
+            <value>The appearance settings applied to the DiagramControl's elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.BackColor">
+            <summary>
+                <para>This property is not supported. Use the <see cref="P:DevExpress.XtraDiagram.DiagramControl.Appearance"/> property instead.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.BackColorChanged">
+            <summary>
+                <para>This member is not supported.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.BeginUpdate">
+            <summary>
+                <para>Locks the DiagramControl, preventing visual updates of the object and its elements until the <b>EndUpdate</b> or <b>CancelUpdate</b> method is called.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.CalcHitInfo(System.Drawing.Point)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="diagramRelativePoint">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.CalcHitItem(System.Drawing.Point)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="diagramRelativePoint">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.CanRedo">
+            <summary>
+                <para>Gets whether the Redo action can currently be performed.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the Redo action can be performed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.CanUndo">
+            <summary>
+                <para>Gets whether the Undo action can currently be performed.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the Undo action can be performed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.CanvasSizeMode">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.ClearSelection">
+            <summary>
+                <para>Clears the current selection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.CreateRibbon">
+            <summary>
+                <para>Creates a Ribbon menu at the top of the form with diagram-specific commands.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Cursor">
+            <summary>
+                <para>This member is not supported.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.CustomLoadDocument">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.CustomSaveDocument">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.DiagramViewInfo">
+            <summary>
+                <para>Returns the object which contains the internal information used to render the DiagramControl.
+</para>
+            </summary>
+            <value>An object that contains the internal information used to render the DiagramControl.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.DocumentSource">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.EndUpdate">
+            <summary>
+                <para>Unlocks the DiagramControl object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.ExceptionMessage">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.FileDialogFilter">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Font">
+            <summary>
+                <para>This member is not supported. Use the <see cref="P:DevExpress.XtraDiagram.DiagramControl.Appearance"/> property instead.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.FontChanged">
+            <summary>
+                <para>This member is not supported by the DiagramControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.ForeColor">
+            <summary>
+                <para>This member is not supported. Use the <see cref="P:DevExpress.XtraDiagram.DiagramControl.Appearance"/> property instead.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.ForeColorChanged">
+            <summary>
+                <para>This member is not supported by the DiagramControl class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.HasChanges">
+            <summary>
+                <para>Gets whether the diagram has been changed.
+</para>
+            </summary>
+            <value><b>true</b>, if the diagram has been changed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.InitializeRibbon(DevExpress.XtraBars.Ribbon.RibbonControl)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="ribbon">
+		 
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.IsHScrollVisible">
+            <summary>
+                <para>Gets whether the horizontal scroll bar is visible.
+</para>
+            </summary>
+            <value><b>true</b>, if the horizontal scroll bar is visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.IsLoading">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.IsTextEditMode">
+            <summary>
+                <para>Gets whether a shape's text is currently being edited.
+
+</para>
+            </summary>
+            <value><b>true</b>, if shape text editing is in progress; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.IsVScrollVisible">
+            <summary>
+                <para>Gets whether the vertical scroll bar is visible.
+</para>
+            </summary>
+            <value><b>true</b>, if the vertical scroll bar is visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Items">
+            <summary>
+                <para>Provides access to the collection of diagram items displayed by the DiagramControl.
+</para>
+            </summary>
+            <value>The collection of diagram items.
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.XtraDiagram.DiagramControl.ItemTypeRegistrator">
+            <summary>
+                <para>The shape registrator. This member supports the internal infrastructure, and typically is not intended to be used directly from your code.
+
+</para>
+            </summary>
+            <returns>An object that specifies the shape registrator.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.LastShapeStyles">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.LoadDocument(System.String)">
+            <summary>
+                <para>Loads a diagram stored in the specified file.
+</para>
+            </summary>
+            <param name="fileName">
+		The full path to the file that stores the diagram to be loaded.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.LoadDocument(System.IO.Stream)">
+            <summary>
+                <para>Loads a diagram stored in the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		A stream that stores the diagram to be loaded.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.MenuManager">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.OpenFile">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.OptionsBehavior">
+            <summary>
+                <para>Contains options that control the DiagramControl's behavior.
+</para>
+            </summary>
+            <value>The DiagramControl's behavior options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.OptionsDesigner">
+            <summary>
+                <para>Contains Diagram Designer-specific settings.
+</para>
+            </summary>
+            <value>An object that returns designer specific settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.OptionsLayout">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.OptionsView">
+            <summary>
+                <para>Contains the DiagramControl's view settings.
+</para>
+            </summary>
+            <value>An object that specifies the DiagramControl's view settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Page">
+            <summary>
+                <para>Gets the root container where diagram items are arranged. This member supports the internal infrastructure, and typically is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>The root diagram item container.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.PropertyGrid">
+            <summary>
+                <para>Gets or sets the Property Grid control that displays the properties of a diagram item, once it is selected on the diagram canvas, at runtime.
+
+</para>
+            </summary>
+            <value>The Property Grid control displaying a selected diagram item's settings.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.ResetBackColor">
+            <summary>
+                <para>Sets the <see cref="P:DevExpress.XtraDiagram.DiagramControl.BackColor"/> property to Color.Empty.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.RootToolsModel">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.RunDesigner(System.Windows.Forms.Form)">
+            <summary>
+                <para>Invokes the Diagram Designer as a modal form with the specified owner.
+</para>
+            </summary>
+            <param name="ownerForm">
+		The owner of the Diagram Designer that is to be opened as a modal form.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.RunDesigner">
+            <summary>
+                <para>Invokes the Diagram Designer as a modal form. The current form will be the owner of the created modal form.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SaveDocument(System.String)">
+            <summary>
+                <para>Saves the diagram to the specified file.
+</para>
+            </summary>
+            <param name="fileName">
+		The full path to the file where the diagram will be saved.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SaveDocument(System.IO.Stream)">
+            <summary>
+                <para>Saves the diagram to the specified stream.
+</para>
+            </summary>
+            <param name="stream">
+		The stream where the diagram will be saved.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.ScrollPos">
+            <summary>
+                <para>Gets or sets the positions of the horizontal and vertical bars.
+</para>
+            </summary>
+            <value>An object that specifies the positions of the horizontal and vertical bars.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.SelectedItems">
+            <summary>
+                <para>Provides access to the current selection.
+</para>
+            </summary>
+            <value>An array of selected items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.SelectedStencils">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.SelectionChanged">
+            <summary>
+                <para>Fires when the selection changes (new items are selected, or currently selected items are deselected).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.SelectionModel">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.SelectionToolsModel">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SelectItem(DevExpress.XtraDiagram.DiagramItem,System.Boolean)">
+            <summary>
+                <para>Selects the specified item. Allows you to specify whether to clear the current selection prior to selecting this item.
+</para>
+            </summary>
+            <param name="item">
+		The item to be selected.
+
+            </param>
+            <param name="addToSelection">
+		<b>true</b> to select the item without clearing the existing selection; <b>false</b> to clear the existing selection and then select the specified item.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SelectItem(DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Clears the existing selection and then selects the specified item.
+</para>
+            </summary>
+            <param name="item">
+		The item to be selected.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SelectItems(System.Collections.Generic.IEnumerable`1,System.Boolean)">
+            <summary>
+                <para>Selects the specified items. Allows you to specify whether to clear the current selection prior to selecting these items.
+</para>
+            </summary>
+            <param name="items">
+		The items to be selected.
+
+            </param>
+            <param name="addToSelection">
+		<b>true</b> to select the items without clearing the existing selection; <b>false</b> to clear the existing selection and then select the specified items.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SelectItems(System.Collections.Generic.IEnumerable`1)">
+            <summary>
+                <para>Clears the existing selection and then selects the specified items.
+</para>
+            </summary>
+            <param name="items">
+		The items to be selected.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.SelectItems(DevExpress.XtraDiagram.DiagramItem[])">
+            <summary>
+                <para>Clears the existing selection and then selects the specified items.
+</para>
+            </summary>
+            <param name="items">
+		A comma-separated list of <see cref="T:DevExpress.XtraDiagram.DiagramItem"/> objects, or an array of these objects.
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.ShowingEditor">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.ShowingOpenDialog">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramControl.ShowingSaveDialog">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Title">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramControl.Toolbox">
+            <summary>
+                <para>Gets or sets a Toolbox Control linked to the DiagramControl and populated with diagram shapes.
+</para>
+            </summary>
+            <value>A Toolbox Control.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramControl.UpdateRoute">
+            <summary>
+                <para>Recalculates the routes of all diagram connectors.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.DiagramItem">
+
+            <summary>
+                <para>The base class for diagram items.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItem.#ctor(System.Drawing.Rectangle)">
+            <summary>
+                <para>Initializes a new instance of the DiagramItem class with the specified bounds.
+</para>
+            </summary>
+            <param name="bounds">
+		An object that specifies the coordinates and size of the created DiagramItem.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItem.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DiagramItem class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItem.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+                <para>Initializes a new instance of the DiagramItem class with the specified position and size.
+</para>
+            </summary>
+            <param name="x">
+		The X coordinate of the DiagramItem's upper left corner.
+
+            </param>
+            <param name="y">
+		The Y coordinate of the DiagramItem's upper left corner.
+
+            </param>
+            <param name="width">
+		The width of the created object.
+
+            </param>
+            <param name="height">
+		The height of the created object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Anchors">
+            <summary>
+                <para>Gets or sets the sides of the root item (page) to which the current DiagramItem object is anchored.
+</para>
+            </summary>
+            <value>The sides of the root item (page) to which the current DiagramItem object is anchored.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Angle">
+            <summary>
+                <para>Gets or sets the angle by which the DiagramItem is rotated, in degrees.
+</para>
+            </summary>
+            <value>The rotation angle, in degrees.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Appearance">
+            <summary>
+                <para>Provides access to the item's appearance settings.
+</para>
+            </summary>
+            <value>The object that provides the item's appearance settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.BackgroundId">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Bounds">
+            <summary>
+                <para>Gets or sets the item's bounds.
+</para>
+            </summary>
+            <value>The item's bounds.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanCopy">
+            <summary>
+                <para>Gets or sets whether the item can be copied to the clipboard in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the item can be copied; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanDelete">
+            <summary>
+                <para>Gets or sets whether the item can be deleted in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the item can be deleted; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanMove">
+            <summary>
+                <para>Gets or sets whether the item can be moved in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the item can be moved; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanResize">
+            <summary>
+                <para>Gets or sets whether the item can be resized in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the item can be resized; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanRotate">
+            <summary>
+                <para>Gets or sets whether the item can be rotated in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the item can be rotated; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanSelect">
+            <summary>
+                <para>Gets or sets whether the current item can be selected on the diagram canvas.
+</para>
+            </summary>
+            <value><b>true</b>, if item selection is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanSnapToOtherItems">
+            <summary>
+                <para>Gets or sets whether the item can snap to alignment guides (snap lines) of other items during item movement and resizing operations in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the item takes into account the snap lines of other items; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CanSnapToThisItem">
+            <summary>
+                <para>Gets or sets whether other items can snap to the alignment guides (snap lines) of the current item during movement and resizing operations in the Diagram Designer.
+
+</para>
+            </summary>
+            <value><b>true</b>, if other items take into account the snap lines of the current item; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.ConnectionPoints">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.CustomStyleId">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.ForegroundId">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.HasChildren">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Height">
+            <summary>
+                <para>Gets or sets the item's height.
+</para>
+            </summary>
+            <value>The item's height.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.IsSelected">
+            <summary>
+                <para>Gets whether the current item is selected.
+</para>
+            </summary>
+            <value><b>true</b>, if the current item is selected; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Items">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.MinHeight">
+            <summary>
+                <para>Gets or sets the item's minimum height.
+</para>
+            </summary>
+            <value>The item's minimum height.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.MinSize">
+            <summary>
+                <para>Gets or sets the item's minimum size.
+</para>
+            </summary>
+            <value>The item's minimum size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.MinWidth">
+            <summary>
+                <para>Gets or sets the item's minimum width.
+</para>
+            </summary>
+            <value>The item's minimum width.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Owner">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Position">
+            <summary>
+                <para>Gets or sets the coordinates of the item's upper left corner.
+</para>
+            </summary>
+            <value>The coordinates of the item's upper left corner.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.SelectionLayer">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Size">
+            <summary>
+                <para>Gets or sets the item's size.
+</para>
+            </summary>
+            <value>The item's size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Stroke">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.StrokeDashArray">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.StrokeId">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.StrokeThickness">
+            <summary>
+                <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.TabStop">
+            <summary>
+                <para>Gets or sets whether the current item can be navigated to during item navigation using the TAB key.
+</para>
+            </summary>
+            <value><b>true</b>, if the current item can be navigated to during item navigation using the TAB key; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Tag">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.ThemeStyleId">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Weight">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Width">
+            <summary>
+                <para>Gets or sets the item's width.
+</para>
+            </summary>
+            <value>The item's width.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.X">
+            <summary>
+                <para>Gets or sets the horizontal coordinate of the item's upper left corner.
+</para>
+            </summary>
+            <value>The horizontal coordinate of the item's upper left corner.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItem.Y">
+            <summary>
+                <para>Gets or sets the vertical coordinate of the item's upper left corner.
+</para>
+            </summary>
+            <value>The vertical coordinate of the item's upper left corner.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.DiagramConnector">
+
+            <summary>
+                <para>Connects two diagram items or two points.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,DevExpress.XtraDiagram.DiagramItem,DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginItem">
+		The connector's starting item. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginItem"/> property.
+
+            </param>
+            <param name="endItem">
+		The connector's ending item. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndItem"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Utils.PointFloat,DevExpress.Utils.PointFloat)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,System.Drawing.Point,System.Drawing.Point,System.Drawing.Point[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,DevExpress.Utils.PointFloat,DevExpress.Utils.PointFloat)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Utils.PointFloat,DevExpress.Utils.PointFloat,DevExpress.Utils.PointFloat[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,System.Drawing.PointF,System.Drawing.PointF,System.Drawing.PointF[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,DevExpress.Utils.PointFloat,DevExpress.Utils.PointFloat,DevExpress.Utils.PointFloat[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(System.Drawing.Point,System.Drawing.Point,System.Drawing.Point[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.XtraDiagram.DiagramItem,DevExpress.XtraDiagram.DiagramItem,System.Drawing.PointF[])">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginItem">
+		The connector's starting item. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginItem"/> property.
+
+            </param>
+            <param name="endItem">
+		The connector's ending item. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndItem"/> property.
+
+            </param>
+            <param name="intermediatePoints">
+		A collection of bend points. This object is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.Diagram.Core.ConnectorType,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="connectorType">
+		The connector type. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.Type"/> property.
+
+            </param>
+            <param name="beginPoint">
+		The connector's starting point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint"/> property.
+
+            </param>
+            <param name="endPoint">
+		The connector's ending point. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.#ctor(DevExpress.XtraDiagram.DiagramItem,DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Initializes a new instance of the DiagramConnector class with the specified settings.
+</para>
+            </summary>
+            <param name="beginItem">
+		The connector's starting item. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.BeginItem"/> property.
+
+            </param>
+            <param name="endItem">
+		The connector's ending item. This value is used to initialize the <see cref="P:DevExpress.XtraDiagram.DiagramConnector.EndItem"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.Angle">
+            <summary>
+                <para>This member is not supported by the DiagramConnector class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.BeginArrow">
+            <summary>
+                <para>Gets or sets the connector's start arrow style.
+</para>
+            </summary>
+            <value>An object that specifies the start arrow style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.BeginArrowSize">
+            <summary>
+                <para>Gets or sets the connector's starting arrow size.
+
+</para>
+            </summary>
+            <value>The starting arrow size.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.BeginItem">
+            <summary>
+                <para>Gets or sets the start item for the connector.
+</para>
+            </summary>
+            <value>The connector's start item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.BeginItemPointIndex">
+            <summary>
+                <para>Gets or sets the connection point on the start diagram item to which the connector is glued.
+
+</para>
+            </summary>
+            <value>A zero-based index of the connection point on the start diagram item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.BeginPoint">
+            <summary>
+                <para>Gets or sets the connector's starting point within the diagram canvas.
+
+</para>
+            </summary>
+            <value>The starting point of the connector.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.CanRotate">
+            <summary>
+                <para>This member is not supported by the DiagramConnector class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.CanSnapToOtherItems">
+            <summary>
+                <para>This member is not supported by the DiagramConnector class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.CanSnapToThisItem">
+            <summary>
+                <para>This member is not supported by the DiagramConnector class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.EndArrow">
+            <summary>
+                <para>Gets or sets the connector's end arrow style.
+</para>
+            </summary>
+            <value>An object that specifies the end arrow style.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.EndArrowSize">
+            <summary>
+                <para>Gets or sets the connector's ending arrow size.
+
+</para>
+            </summary>
+            <value>The ending arrow size.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.EndItem">
+            <summary>
+                <para>Gets or sets the end item for the connector.
+</para>
+            </summary>
+            <value>The connector's end item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.EndItemPointIndex">
+            <summary>
+                <para>Gets or sets the connection point on the end diagram item to which the connector is glued.
+
+</para>
+            </summary>
+            <value>A zero-based index of the connection point on the end diagram item.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.EndPoint">
+            <summary>
+                <para>Gets or sets the connector's end point on the diagram canvas.
+
+</para>
+            </summary>
+            <value>The end point of the connector.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.IntermediatePoints">
+            <summary>
+                <para>Gets or sets a collection of bend points for the connector.
+</para>
+            </summary>
+            <value>A collection of bend points.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.Position">
+            <summary>
+                <para>This member is not supported by the DiagramConnector class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.Size">
+            <summary>
+                <para>This member is not supported by the DiagramConnector class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.Text">
+            <summary>
+                <para>Gets or sets the text displayed by the connector.
+</para>
+            </summary>
+            <value>The text displayed by the connector.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramConnector.Type">
+            <summary>
+                <para>Gets or sets the connector's type.
+</para>
+            </summary>
+            <value>The connector's type.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramConnector.UpdateRoute">
+            <summary>
+                <para>Recalculates the diagram connector's route.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.Options.DiagramOptionsView">
+
+            <summary>
+                <para>Contains the DiagramControl's view settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.Options.DiagramOptionsView.#ctor(DevExpress.XtraDiagram.DiagramControl)">
+            <summary>
+                <para>Initializes a new instance of the DiagramOptionsView class.
+</para>
+            </summary>
+            <param name="diagram">
+		The owner of the options object created.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.AllowThemes">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.Options.DiagramOptionsView.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="other">
+		The settings to be copied to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.GridSize">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.MeasureUnit">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.PageSize">
+            <summary>
+                <para>Gets or sets the diagram canvas size.
+</para>
+            </summary>
+            <value>The diagram canvas size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.ScrollMargin">
+            <summary>
+                <para>Gets or sets the minimum diagram margin.
+</para>
+            </summary>
+            <value>The minimum diagram margin.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.ShowGrid">
+            <summary>
+                <para>Gets or sets whether to draw the grid, which helps you position shapes on the diagram canvas. 
+
+
+</para>
+            </summary>
+            <value><b>true</b>, to draw the grid; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.ShowRulers">
+            <summary>
+                <para>Gets or sets whether the diagram rulers are visible.
+</para>
+            </summary>
+            <value><b>true</b>, if the diagram rulers are visible; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.Theme">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.TransparentRulerBackground">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsView.ZoomFactor">
+            <summary>
+                <para>Gets or sets the current zoom factor.
+</para>
+            </summary>
+            <value>A positive value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior">
+
+            <summary>
+                <para>Contains options that control the DiagramControl's behavior.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.#ctor(DevExpress.XtraDiagram.DiagramControl)">
+            <summary>
+                <para>Initializes a new instance of the DiagramOptionsBehavior class.
+</para>
+            </summary>
+            <param name="diagram">
+		The owner of the created object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.ActiveTool">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.AllowDiagramProperties">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.AllowEmptySelection">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="other">
+		The settings to be copied to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.BringIntoViewMargin">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.GlueToConnectionPointDistance">
+            <summary>
+                <para>Gets or sets the minimum distance between a connector's point being dragged and a shape's connection point at which the "glue" feature is activated. If the connector's point is dropped at this position or nearer, the connector will be glued to the highlighted connection point on the shape.
+</para>
+            </summary>
+            <value>The minimum distance at which the "glue-to-connection-point" feature is activated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.GlueToItemDistance">
+            <summary>
+                <para>Gets or sets the minimum distance between a connector's point being dragged and a shape at which the "glue-to-item" feature is activated. If the connector's point is dropped at this position or nearer, the connector will be glued to the shape.
+</para>
+            </summary>
+            <value>The minimum distance at which the "glue-to-item" feature is activated.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.MinDragDistance">
+            <summary>
+                <para>Gets or sets the threshold, in pixels, for a shape drag-and-drop operation to start.
+</para>
+            </summary>
+            <value>The threshold, in pixels, for a shape drag-and-drop operation to start.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.PropertiesPanelVisibility">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.ResizingMode">
+            <summary>
+                <para>Gets or sets how diagram items are resized.
+</para>
+            </summary>
+            <value>A value that specifies how diagram items are resized.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.SkinGallery">
+            <summary>
+                <para>Gets or sets whether the visibility and enabled state of the skin gallery in the Ribbon menu.
+</para>
+            </summary>
+            <value>A value that specifies the visibility and enabled state of the skin gallery in the Ribbon menu.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.SnapToGrid">
+            <summary>
+                <para>Gets or sets whether a diagram item can snap to grid lines during item movement and resizing operations in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if a diagram item can snap to grid lines; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.SnapToItems">
+            <summary>
+                <para>Gets or sets whether a diagram item can snap to alignment guides (snap lines) of other items during item movement and resizing operations in the Diagram Designer.
+</para>
+            </summary>
+            <value><b>true</b>, if the snapping feature is enabled; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.SnapToItemsDistance">
+            <summary>
+                <para>Gets or sets the minimum distance between alignment guides of a shape being dragged and another shape's alignment guides at which the "snap-to-items" feature is activated. If the dragged shape is dropped at this position, it will be aligned with the second shape.
+</para>
+            </summary>
+            <value>The minimum distance between alignment guides of two shapes at which the "snap-to-items" feature is activated during shape drag-and-drop.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsBehavior.UseTabNavigation">
+            <summary>
+                <para>Gets or sets whether navigation through diagram items using the TAB key is enabled.
+</para>
+            </summary>
+            <value><b>Default</b> or <b>True</b>, if TAB navigation through items is enabled; otherwise, <b>False</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.DiagramItemCollection">
+
+            <summary>
+                <para>A collection of <see cref="T:DevExpress.XtraDiagram.DiagramItem"/> objects.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.#ctor(DevExpress.Diagram.Core.IDiagramItem)">
+            <summary>
+                <para>Initializes a new instance of the DiagramItemCollection class.
+</para>
+            </summary>
+            <param name="owner">
+		The collection's owner.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.Add(DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Adds the specified item to the collection. 
+</para>
+            </summary>
+            <param name="item">
+		An item to be added to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.AddRange(DevExpress.XtraDiagram.DiagramItem[])">
+            <summary>
+                <para>Adds an array of items to the collection.
+</para>
+            </summary>
+            <param name="items">
+		A comma-separated list of items or an array of items.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.BeginUpdate">
+            <summary>
+                <para>Locks the DiagramItemCollection by preventing change notifications from being fired, preventing visual updates until the <b>EndUpdate</b> method is called.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.Contains(DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Returns whether the specified item belongs to the current collection.
+</para>
+            </summary>
+            <param name="item">
+		The item to locate in the collection.
+
+            </param>
+            <returns><b>true</b> if the specified item belongs to the collection; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.EndUpdate">
+            <summary>
+                <para>Unlocks the DiagramItemCollection object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.IndexOf(DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Returns the zero-based index of the specified item in the collection.
+</para>
+            </summary>
+            <param name="item">
+		The item whose index in the collection needs to be returned. 
+
+            </param>
+            <returns>A zero-based index of the required item.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.Insert(System.Int32,DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Inserts a new element at the specified position.
+</para>
+            </summary>
+            <param name="position">
+		The zero-based index specifying the position at which the <i>item</i> should be inserted.
+
+            </param>
+            <param name="item">
+		The item to insert.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.DiagramItemCollection.Item(System.Int32)">
+            <summary>
+                <para>Provides indexed access to the items in the collection.
+</para>
+            </summary>
+            <param name="index">
+		An integer value that specifies the index of the item to be returned from the collection.
+
+            </param>
+            <value>An object stored at the specified index in the collection.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraDiagram.DiagramItemCollection.ListChanged">
+            <summary>
+                <para>Fires when the collection changes.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.DiagramItemCollection.Remove(DevExpress.XtraDiagram.DiagramItem)">
+            <summary>
+                <para>Removes the specified object from the collection.
+</para>
+            </summary>
+            <param name="item">
+		The item to be removed from the collection.
+
+            </param>
+            <returns><b>true</b> if the item is successfully removed from the collection; <b>false</b> if the specified item does not belong to the current collection.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.XtraDiagram.Options.DiagramOptionsDesigner">
+
+            <summary>
+                <para>Contains Diagram Designer-specific settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.Options.DiagramOptionsDesigner.#ctor(DevExpress.XtraDiagram.DiagramControl)">
+            <summary>
+                <para>Initializes a new instance of the DiagramOptionsDesigner class.
+</para>
+            </summary>
+            <param name="diagram">
+		The owner of the options object created.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraDiagram.Options.DiagramOptionsDesigner.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="other">
+		The settings to be copied to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraDiagram.Options.DiagramOptionsDesigner.FormIcon">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+    </members>
+</doc>

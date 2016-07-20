@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraRichEdit.v15.2.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraRichEdit.Localization.RichEditExtensionsResLocalizer">
+
+            <summary>
+                <para>A default localizer to translate resources for WinForms Rich Editor UI.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Localization.RichEditExtensionsResLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditExtensionsResLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraRichEdit.Localization.RichEditExtensionsLocalizer">
+
+            <summary>
+                <para>A base class that provides necessary functionality for custom localizers of captions used in RichEditControl UI.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Localization.RichEditExtensionsLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditExtensionsLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Localization.RichEditExtensionsLocalizer.CreateDefaultLocalizer">
+            <summary>
+                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object representing resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Localization.RichEditExtensionsLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns a localizer object, which provides resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object, which provides resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraRichEdit.Localization.RichEditExtensionsLocalizer.GetString(DevExpress.XtraRichEdit.Localization.RichEditExtensionsStringId)">
+            <summary>
+                <para>Returns a localized string for the given string identifier.
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.XtraRichEdit.Localization.RichEditExtensionsStringId"/> enumeration value identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+    </members>
+</doc>

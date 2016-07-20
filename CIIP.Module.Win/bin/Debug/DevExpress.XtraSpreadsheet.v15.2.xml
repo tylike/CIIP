@@ -1,0 +1,3069 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.XtraSpreadsheet.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeader"/> event of the SpreadsheetControl. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawColumnHeader</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.WorksheetDisplayArea">
+
+            <summary>
+                <para>An object that enables you to specify the visible worksheet area.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.#ctor(DevExpress.XtraSpreadsheet.Internal.InnerSpreadsheetControl)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="innerControl">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.GetColumnCount(System.String)">
+            <summary>
+                <para>Returns the number of visible columns in the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetName">
+		A string value specifying the worksheet name in the worksheet collection.
+
+            </param>
+            <returns>An integer that represents the number of columns currently visible in a worksheet.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.GetColumnCount(System.Int32)">
+            <summary>
+                <para>Returns the number of visible columns in the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetIndex">
+		An integer that is the zero-based index of the worksheet in the worksheet collection.
+
+            </param>
+            <returns>An integer that represents the number of columns currently visible in a worksheet.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.GetRowCount(System.String)">
+            <summary>
+                <para>Returns the number of visible rows in the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetName">
+		A string value specifying the worksheet name in the worksheet collection.
+
+            </param>
+            <returns>An integer that represents the number of rows currently visible in a worksheet.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.GetRowCount(System.Int32)">
+            <summary>
+                <para>Returns the number of visible rows in the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetIndex">
+		An integer that is the zero-based index of the worksheet in the worksheet collection.
+
+            </param>
+            <returns>An integer that represents the number of rows currently visible in a worksheet.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.Reset(System.String)">
+            <summary>
+                <para>Displays all columns and rows in the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetName">
+		A string value specifying the worksheet name in the worksheet collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.Reset(System.Int32)">
+            <summary>
+                <para>Displays all columns and rows in the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetIndex">
+		An integer that is the zero-based index of the worksheet in the worksheet collection.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.SetSize(System.String,System.Int32,System.Int32)">
+            <summary>
+                <para>Defines the number of visible columns and rows for the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetName">
+		A string value specifying the name of the worksheet whose visible area should be restricted.
+
+
+            </param>
+            <param name="maxColumnCount">
+		An integer that represents the maximum number of columns to be displayed in a worksheet. The value must be a whole number between 1 and 16,384.
+
+            </param>
+            <param name="maxRowCount">
+		An integer that represents the maximum number of rows to be displayed in a worksheet. The value must be a whole number between 1 and 1,048,576.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.WorksheetDisplayArea.SetSize(System.Int32,System.Int32,System.Int32)">
+            <summary>
+                <para>Defines the number of visible columns and rows for the specified worksheet.
+</para>
+            </summary>
+            <param name="worksheetIndex">
+		An integer that is the zero-based index of the worksheet whose visible area should be restricted.
+
+
+            </param>
+            <param name="maxColumnCount">
+		An integer that represents the maximum number of columns to be displayed in a worksheet. The value must be a whole number between 1 and 16,384.
+
+            </param>
+            <param name="maxRowCount">
+		An integer that represents the maximum number of rows to be displayed in a worksheet. The value must be a whole number between 1 and 1,048,576.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeader"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderEventArgs.ColumnIndex">
+            <summary>
+                <para>Returns the column index of the column header being painted.
+</para>
+            </summary>
+            <value>An integer that is the zero-based worksheet column index. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawCellEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawCell"/> event of the SpreadsheetControl. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawCellEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawCellEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawCell</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgs">
+
+            <summary>
+                <para>Provides data for the SpreadsheetControl.CustomDrawCell event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgs.Font">
+            <summary>
+                <para>Gets the font attributes of the painted cell.
+
+</para>
+            </summary>
+            <value>A System.Drawing.Font object specifying the font options (font name, size, color and etc.).
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgs.ForeColor">
+            <summary>
+                <para>Gets or sets the color of the text within the painted cell.
+</para>
+            </summary>
+            <value>A System.Drawing.Color object specifying the foreground color.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgs.Text">
+            <summary>
+                <para>Gets or sets the painted cell's text.
+</para>
+            </summary>
+            <value>A System.String object specifying the text of the painted cell.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawCellBackgroundEventHandler">
+
+            <summary>
+                <para>Represents a method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawCellBackground"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawCellBackgroundEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawCellBackgroundEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawCellBackground</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawCellBackgroundEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawCellBackgroundEventArgs">
+
+            <summary>
+                <para>Provides data for the SpreadsheetControl.CustomDrawCellBackground event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellBackgroundEventArgs.BackColor">
+            <summary>
+                <para>Gets or sets the background color of the painted cell.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/>  structure that specifies the cell's background color. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.PopupMenuShowingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.PopupMenuShowing"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.PopupMenuShowingEventArgs.#ctor(DevExpress.XtraSpreadsheet.Menu.SpreadsheetPopupMenu,DevExpress.XtraSpreadsheet.SpreadsheetMenuType)">
+            <summary>
+                <para>Initializes a new instance of the PopupMenuShowingEventArgs class with the specified parameters.
+</para>
+            </summary>
+            <param name="menu">
+		The SpreadsheetPopupMenu object which represents the context menu to be invoked.
+
+            </param>
+            <param name="menuType">
+		One of the <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetMenuType"/> enumeration values specifying the type of the context menu.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.PopupMenuShowingEventArgs.Menu">
+            <summary>
+                <para>Gets or sets the SpreadsheetControl's popup menu for which the event was raised.
+</para>
+            </summary>
+            <value>The SpreadsheetPopupMenu object which represents the current context menu.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.PopupMenuShowingEventArgs.MenuType">
+            <summary>
+                <para>Returns the type of the current SpreadsheetControl's popup menu.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetMenuType"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventHandler">
+
+            <summary>
+                <para>A method that will handle the <b>CustomDrawFrozenPaneBorder</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawFrozenPaneBorder</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl that raised the event.
+
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawFrozenPaneBorder"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs.ForeColor">
+            <summary>
+                <para>Gets the color of the frozen pane border line.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/>  structure that specifies the color of the frozen pane border line. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs.Point1">
+            <summary>
+                <para>Gets the first endpoint of the frozen pane border line.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Point"/> structure that specifies the point where the line drawing starts.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs.Point2">
+            <summary>
+                <para>Gets the second endpoint of the frozen pane border line.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Point"/> structure that specifies the point where the line drawing finishes.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs.Type">
+            <summary>
+                <para>Gets whether the frozen pane is vertical or horizontal.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.FrozenPaneBorderType"/> enumeration member.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawFrozenPaneBorderEventArgs.Width">
+            <summary>
+                <para>Gets the width of the frozen pane border line.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value that specifies the width of the frozen pane border line.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetVerticalScrollbarOptions">
+
+            <summary>
+                <para>Contains options for the vertical scrollbar of the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetVerticalScrollbarOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetVerticalScrollbarOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.FrozenPaneBorderType">
+
+            <summary>
+                <para>Lists values used to specify the frozen pane type.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.FrozenPaneBorderType.Horizontal">
+            <summary>
+                <para>The horizontal frozen pane (frozen rows).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.FrozenPaneBorderType.Vertical">
+            <summary>
+                <para>The vertical frozen pane (frozen columns).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions">
+
+            <summary>
+                <para>Contains various options which can be specified for the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.#ctor(DevExpress.XtraSpreadsheet.Internal.InnerSpreadsheetDocumentServer)">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetControlOptions class with the specified settings.
+</para>
+            </summary>
+            <param name="documentServer">
+		 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.Behavior">
+            <summary>
+                <para>Provides access to an object that enables you to apply restrictions to different spreadsheet operations.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetBehaviorOptions"/> class instance containing restriction specifications.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.DataSourceWizard">
+            <summary>
+                <para>Provides access to the customization options of the Data Source Wizard.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions"/> object containing options which affect the layout and behavior of the <b>Data Source Wizard</b> and <b>Query Builder</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.HorizontalScrollbar">
+            <summary>
+                <para>Provides access to the options specific to the horizontal scrollbar of the SpreadsheetControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetHorizontalScrollbarOptions"/> object used to specify options for the horizontal scrollbar.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.PivotTableFieldList">
+            <summary>
+                <para>Provides access to the options that specify the size and starting position of the PivotTable Field List pane at run time. 
+</para>
+            </summary>
+            <value>A <b>SpreadsheetPivotTableFieldListOptions</b> containing Field List options.  
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.Print">
+            <summary>
+                <para>Provides access to options used to generate and preview a printed document in the SpreadsheetControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetPrintOptions"/> object containing options for previewing and printing a document in the SpreadsheetControl. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.TabSelector">
+            <summary>
+                <para>Provides access to the options specific to the <b>Sheet Tab Selector</b> of the SpreadsheetControl. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetTabSelectorOptions"/> object used to specify options for the Sheet Tab Selector. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.VerticalScrollbar">
+            <summary>
+                <para>Provides access to the options specific to the vertical scrollbar of the SpreadsheetControl.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetVerticalScrollbarOptions"/> object used to specify options for the vertical scrollbar.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions.View">
+            <summary>
+                <para>Gets the <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControl"/>'s view options. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetViewOptions"/> object that specifies the display settings for the SpreadsheetControl.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions">
+
+            <summary>
+                <para>Contains options which affect the behavior of the Data Source Wizard.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetDataSourceWizardOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions.AlwaysSaveCredentials">
+            <summary>
+                <para>Gets or sets whether the user will be prompted to save credentials after creating a connection string.
+</para>
+            </summary>
+            <value><b>True</b> to save credentials in the connection string without prompting; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions.DataSourceTypes">
+            <summary>
+                <para>Gets or sets data source types displayed on the Select the data source type page of the Data Source Wizard. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Office.Options.DataSourceTypes"/> enumeration member.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions.DisableNewConnections">
+            <summary>
+                <para>Gets or sets whether an option for the user to create a new connection by specifying connection parameters is shown.
+</para>
+            </summary>
+            <value><b>True</b> to choose form existing connections only; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions.EnableCustomSql">
+            <summary>
+                <para>Gets or sets whether the direct SQL text editing is enabled.
+</para>
+            </summary>
+            <value><b>True</b> to enable direct SQL text editing; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetDataSourceWizardOptions.QueryBuilderLight">
+            <summary>
+                <para>Gets or sets whether to hide a panel containing SQL text in Query Builder. 
+</para>
+            </summary>
+            <value><b>True</b>, to hide SQL query text in Query Builder; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderBackgroundEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeaderBackground"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderBackgroundEventArgs.ColumnIndex">
+            <summary>
+                <para>Returns the column index of the column header being painted.
+</para>
+            </summary>
+            <value>An integer that is the zero-based worksheet column index. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetControl">
+
+            <summary>
+                <para>A spreadsheet control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.About">
+            <summary>
+                <para>Invokes the <b>About</b> dialog box.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.AcceptsEscape">
+            <summary>
+                <para>Gets or sets a value indicating whether pressing the ESC key is processed by the SpreadsheetControl.
+</para>
+            </summary>
+            <value><b>true</b> if the input ESC key is processed by the SpreadsheetControl, otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.AcceptsReturn">
+            <summary>
+                <para>Gets or sets a value indicating whether pressing the RETURN key is processed by the SpreadsheetControl.
+</para>
+            </summary>
+            <value><b>true</b> if the input RETURN key is processed by the SpreadsheetControl, otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.AcceptsTab">
+            <summary>
+                <para>Gets or sets a value indicating whether pressing the TAB key is processed by the SpreadsheetControl instead of moving the focus to the next control in the tab order.
+</para>
+            </summary>
+            <value><b>true</b> if the input TAB key is processed by the SpreadsheetControl, otherwise <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.ActiveCell">
+            <summary>
+                <para>Gets an active cell in the active worksheet.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Cell"/> object that specifies an active cell in the worksheet that is currently active.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ActiveSheetChanged">
+            <summary>
+                <para>Occurs after an active worksheet has been changed via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ActiveSheetChanging">
+            <summary>
+                <para>Occurs when an active worksheet is about to be changed via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.ActiveView">
+            <summary>
+                <para>Provides access to a SpreadsheetView object that contains layout information. This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value>A DevExpress.Spreadsheet.SpreadsheetView object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.ActiveWorksheet">
+            <summary>
+                <para>Gets the worksheet that is currently displayed in the SpreadsheetControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Worksheet"/> object that specifies the active worksheet.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)">
+            <summary>
+                <para>Adds the specified service to the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="callback">
+		A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.AddService(System.Type,System.Object)">
+            <summary>
+                <para>Adds the specified service to the service container. 
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add. 
+
+            </param>
+            <param name="serviceInstance">
+		An instance of the service type to add. This object must implement or inherit from the type indicated by the serviceType parameter.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.AddService(System.Type,System.Object,System.Boolean)">
+            <summary>
+                <para>Adds the specified service to the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add.
+
+            </param>
+            <param name="serviceInstance">
+		An instance of the service type to add. This object must implement or inherit from the type indicated by the serviceType parameter.
+
+            </param>
+            <param name="promote">
+		<b>true</b>, to promote this request to any parent service containers; otherwise, <b>false</b>.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback,System.Boolean)">
+            <summary>
+                <para>Adds the specified service to the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to add.
+
+            </param>
+            <param name="callback">
+		A callback object that is used to create the service. This allows a service to be declared as available, but delays the creation of the object until the service is requested. 
+
+            </param>
+            <param name="promote">
+		<b>true</b>, to promote this request to any parent service containers; otherwise, <b>false</b>. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.AllowDrop">
+            <summary>
+                <para>Overrides the System.Windows.Forms.Control.AllowDrop property.
+</para>
+            </summary>
+            <value><b>true</b>, if drag-and-drop operations are allowed in the SpreadsheetControl; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.AssignShortcutKeyToCommand(System.Windows.Forms.Keys,System.Windows.Forms.Keys,DevExpress.XtraSpreadsheet.Commands.SpreadsheetCommandId)">
+            <summary>
+                <para>Assigns a shortcut key to a command.
+</para>
+            </summary>
+            <param name="key">
+		A System.Windows.Forms.Keys enumeration member specifying a key to assign. 
+
+            </param>
+            <param name="modifier">
+		A System.Windows.Forms.Keys enumeration member specifying a modifier key. 
+
+            </param>
+            <param name="commandId">
+		A SpreadsheetCommandId enumeration member specifying a command. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.BackColor">
+            <summary>
+                <para>This property is not supported by the SpreadsheetControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.BackgroundImage">
+            <summary>
+                <para>This property has no effect on the SpreadsheetControl.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.BackgroundImageLayout">
+            <summary>
+                <para>This property has no effect on the SpreadsheetControl.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.BeforeDispose">
+            <summary>
+                <para>Occurs before the SpreadsheetControl control is released from memory.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.BeforeExport">
+            <summary>
+                <para>Occurs before the document is saved (exported to a certain format).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.BeforeImport">
+            <summary>
+                <para>Occurs before a document is loaded (imported from an external source).
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.BeforePrintSheet">
+            <summary>
+                <para>Provides the capability to prevent printing of the required worksheets in a workbook. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.BeginUpdate">
+            <summary>
+                <para>Locks the SpreadsheetControl, preventing visual updates of the object and its elements until the <b>EndUpdate</b> or <b>CancelUpdate</b> method is called.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.BorderStyle">
+            <summary>
+                <para>Gets or sets the SpreadsheetControl's border style.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraEditors.Controls.BorderStyles"/> enumeration value specifying the border style for the SpreadsheetControl. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.CancelUpdate">
+            <summary>
+                <para>Unlocks the SpreadsheetControl object after it has been locked by the <b>BeginUpdate</b> method, without causing an immediate visual update.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CellBeginEdit">
+            <summary>
+                <para>Occurs before the cell editor is opened.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CellCancelEdit">
+            <summary>
+                <para>Occurs before the cell editor is closed and the entered value is rolled back.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CellEndEdit">
+            <summary>
+                <para>Occurs before the cell editor is closed and the entered value is committed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CellValueChanged">
+            <summary>
+                <para>Occurs after the cell content has been changed via the SpreadsheetControl UI.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.CircleInvalidData">
+            <summary>
+                <para>Displays circles around invalid data in a worksheet to which data validation is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ClearValidationCircles">
+            <summary>
+                <para>Hides circles around invalid data in a worksheet to which data validation is applied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Clipboard">
+            <summary>
+                <para>Provides access to the object used for working with the system clipboard.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Spreadsheet.IClipboardManager"/> interface.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ClipboardDataObtained">
+            <summary>
+                <para>Occurs after data on the clipboard is obtained and recognized, but before data is actually pasted.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ClipboardDataPasted">
+            <summary>
+                <para>Occurs after data has been pasted from the clipboard onto a worksheet.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ClipboardDataPasting">
+            <summary>
+                <para> Occurs before data is pasted from the clipboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.CloseCellEditor(DevExpress.XtraSpreadsheet.CellEditorEnterValueMode)">
+            <summary>
+                <para>Closes the cell editor.
+</para>
+            </summary>
+            <param name="mode">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CellEditorEnterValueMode"/> enumeration member.
+
+            </param>
+            <returns><b>true</b>, if the cell editor is closed successfully; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ColumnsInserted">
+            <summary>
+                <para>Occurs after new columns have been added to a worksheet via the SpreadsheetControl's UI.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ColumnsRemoved">
+            <summary>
+                <para>Occurs after columns have been deleted from a worksheet via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ContentChanged">
+            <summary>
+                <para>Occurs when the document content is changed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CopiedRangePasted">
+            <summary>
+                <para>Occurs after the range content has been pasted from the clipboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CopiedRangePasting">
+            <summary>
+                <para>Occurs before the range content is pasted from the clipboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.CreateCommand(DevExpress.XtraSpreadsheet.Commands.SpreadsheetCommandId)">
+            <summary>
+                <para>Creates a command by its identifier.
+</para>
+            </summary>
+            <param name="commandId">
+		A <b>DevExpress.XtraSpreadsheet.Commands.SpreadsheetCommandId</b> structure that identifies the command.
+
+            </param>
+            <returns>A <b>DevExpress.XtraSpreadsheet.Commands.SpreadsheetCommand</b> object that is the command used in a Spreadsheet UI.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.CreateNewDocument">
+            <summary>
+                <para>Creates a new empty workbook, loads and displays it.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawCell">
+            <summary>
+                <para>Provides the capability to perform custom painting of cell content.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawCellBackground">
+            <summary>
+                <para>Provides the capability to perform custom painting of the cell background.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeader">
+            <summary>
+                <para>Enables the column header to be painted manually.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeaderBackground">
+            <summary>
+                <para>Enables the column header background to be painted manually.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawFrozenPaneBorder">
+            <summary>
+                <para>Enables frozen pane borders to be painted manually. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeader">
+            <summary>
+                <para>Enables the row header to be painted manually.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeaderBackground">
+            <summary>
+                <para>Enables the row header background to be painted manually.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.DefinedNameDeleting">
+            <summary>
+                <para>Occurs before a Defined Name is deleted.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.DefinedNameEditing">
+            <summary>
+                <para>Occurs before a Defined Name is being edited.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.DefinedNameValidating">
+            <summary>
+                <para>Occurs when a new  Defined Name is created before it is added to a collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Document">
+            <summary>
+                <para>Provides access to a workbook loaded in the control.
+</para>
+            </summary>
+            <value>An object implementing the <see cref="T:DevExpress.Spreadsheet.IWorkbook"/> interface.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.DocumentClosing">
+            <summary>
+                <para>Occurs when a document that has not yet been saved is about to be closed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.DocumentLoaded">
+            <summary>
+                <para>Occurs after a document is loaded into the SpreadsheetControl.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.DocumentPropertiesChanged">
+            <summary>
+                <para>Occurs after one of the <see cref="T:DevExpress.Spreadsheet.DocumentProperties"/> is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.DpiX">
+            <summary>
+                <para>Gets the current dpi value for the X-coordinate.
+</para>
+            </summary>
+            <value>A <b>Single</b> dpi value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.DpiY">
+            <summary>
+                <para>Gets the current dpi value for the Y-coordinate.
+</para>
+            </summary>
+            <value>A <b>Single</b> dpi value.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.EmptyDocumentCreated">
+            <summary>
+                <para>Occurs when a new document is created in the SpreadsheetControl.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.EndUpdate">
+            <summary>
+                <para>Unlocks the SpreadsheetControl object after a call to the <b>BeginUpdate</b> method and causes an immediate visual update.
+
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.String,System.Int32)">
+            <summary>
+                <para>Exports the specified worksheet to the specified file in HTML format. 
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value which contains the full path (including the file name and extension) specifying where the HTML file will be created.
+
+            </param>
+            <param name="sheetIndex">
+		An integer value that is the index of the worksheet to be exported to HTML.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.IO.Stream,DevExpress.Spreadsheet.Range)">
+            <summary>
+                <para>Exports the specified range to the specified stream in HTML format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object to which the created HTML file should be sent. 
+
+            </param>
+            <param name="range">
+		A <see cref="T:DevExpress.Spreadsheet.Range"/> object to be exported to HTML.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.IO.Stream,DevExpress.Spreadsheet.Worksheet)">
+            <summary>
+                <para>Exports the specified worksheet to the specified stream in HTML format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object to which the created HTML file should be sent. 
+
+            </param>
+            <param name="sheet">
+		A <see cref="T:DevExpress.Spreadsheet.Worksheet"/> object to be exported to HTML.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.IO.Stream,System.Int32)">
+            <summary>
+                <para>Exports the specified worksheet to the specified stream in HTML format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object to which the created HTML file should be sent. 
+
+            </param>
+            <param name="sheetIndex">
+		An integer value that is the index of the worksheet to be exported to HTML.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.String,DevExpress.Spreadsheet.Range)">
+            <summary>
+                <para>Exports the specified range to the specified file in HTML format.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value which contains the full path (including the file name and extension) specifying where the HTML file will be created.
+
+            </param>
+            <param name="range">
+		A <see cref="T:DevExpress.Spreadsheet.Range"/> object to be exported to HTML.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.String,DevExpress.Spreadsheet.Worksheet)">
+            <summary>
+                <para>Exports the specified worksheet to the specified file in HTML format.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value which contains the full path (including the file name and extension) specifying where the HTML file will be created.
+
+            </param>
+            <param name="sheet">
+		A <see cref="T:DevExpress.Spreadsheet.Worksheet"/> object to be exported to HTML.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.String,DevExpress.XtraSpreadsheet.Export.HtmlDocumentExporterOptions)">
+            <summary>
+                <para>Exports the document's data to the specified file in HTML format using the specified options.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> value which contains the full path (including the file name and extension) specifying where the HTML file will be created.
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraSpreadsheet.Export.HtmlDocumentExporterOptions"/> instance containing required export options. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToHtml(System.IO.Stream,DevExpress.XtraSpreadsheet.Export.HtmlDocumentExporterOptions)">
+            <summary>
+                <para>Exports the document's data to the specified stream in HTML format using the specified options.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object to which the created HTML file should be sent. 
+
+            </param>
+            <param name="options">
+		A <see cref="T:DevExpress.XtraSpreadsheet.Export.HtmlDocumentExporterOptions"/> instance containing required export options. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToPdf(System.String,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the content of the SpreadsheetControl to the specified file in PDF format using the specified options.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> which specifies the name (including the full path) of the PDF file to which the data is exported.
+
+            </param>
+            <param name="pdfExportOptions">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToPdf(System.IO.Stream)">
+            <summary>
+                <para>Exports the content of the SpreadsheetControl to the specified stream in PDF format.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object to which the created document is exported.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the content of the SpreadsheetControl to the specified stream in PDF format using the specified options.
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the created document is exported.
+
+            </param>
+            <param name="pdfExportOptions">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the PDF export options.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ExportToPdf(System.String)">
+            <summary>
+                <para>Exports the content of the SpreadsheetControl to the specified file in PDF format.
+</para>
+            </summary>
+            <param name="fileName">
+		A <see cref="T:System.String"/> which specifies the name (including the full path) of the PDF file to which the data is exported.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Font">
+            <summary>
+                <para>This property is not supported by the SpreadsheetControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.ForeColor">
+            <summary>
+                <para>This property is not supported by the SpreadsheetControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.GetCellBounds(System.Int32,System.Int32)">
+            <summary>
+                <para>Obtains the bounds of a cell specified by the row and column indices.
+
+</para>
+            </summary>
+            <param name="rowIndex">
+		An integer that is the zero-based index of the row that contains the required cell.
+
+            </param>
+            <param name="columnIndex">
+		An integer that is the zero-based index of the column that contains the required cell.
+
+            </param>
+            <returns>A <see cref="T:System.Drawing.Rectangle"/> object that is the rectangle with the specified location and size.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.GetCellFromPoint(System.Drawing.PointF)">
+            <summary>
+                <para>Gets a worksheet cell located at the specified point.
+</para>
+            </summary>
+            <param name="clientPoint">
+		A <see cref="T:System.Drawing.PointF"/> structure specifying the location for which the position is retrieved. The point coordinates are measured in documents units.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Spreadsheet.Cell"/> object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.GetSelectedRanges">
+            <summary>
+                <para>Returns cell ranges currently selected in the active worksheet.
+</para>
+            </summary>
+            <returns>A list of the <see cref="T:DevExpress.Spreadsheet.Range"/> objects.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.GetSelectedShapes">
+            <summary>
+                <para>Returns shapes currently selected in the active worksheet.
+</para>
+            </summary>
+            <returns>A list of the <see cref="T:DevExpress.Spreadsheet.Shape"/> objects.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.GetService(System.Type)">
+            <summary>
+                <para>Gets the service object of the specified type.
+</para>
+            </summary>
+            <param name="serviceType">
+		An object that specifies the type of service object to get. 
+
+            </param>
+            <returns>A service object of the specified type, or a null reference (Nothing in Visual Basic) if there is no service object of this type. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.GetService``1">
+            <summary>
+                <para>Gets the specified service.
+</para>
+            </summary>
+            <returns>A service object of the specified type or null for reference types and zero for numeric value types if a service is not available.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.HyperlinkClick">
+            <summary>
+                <para>Occurs when an end-user activates the hyperlink before navigating to the referenced location.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.InitializeDocument">
+            <summary>
+                <para>Occurs before a document is loaded. Handle this event to set the initial document settings.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.InvalidFormatException">
+            <summary>
+                <para>Fires when the supplied data could not be recognized as data in the assumed format for import.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.IsCellEditorActive">
+            <summary>
+                <para>Gets whether the cell editor is currently active.
+</para>
+            </summary>
+            <value><b>true</b>, if the cell editor is opened; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.IsPrintingAvailable">
+            <summary>
+                <para>Indicates whether the SpreadsheetControl can be printed or exported.
+</para>
+            </summary>
+            <value><b>true</b>, if the control can be printed and exported; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.IsUpdateLocked">
+            <summary>
+                <para>Gets whether the control has been locked for updating.
+</para>
+            </summary>
+            <value><b>true</b>, if the control is locked; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.LayoutUnit">
+            <summary>
+                <para>Gets or sets a unit of measure used for a document layout.
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.Office.DocumentLayoutUnit"/> enumeration value.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.LoadDocument(System.String)">
+            <summary>
+                <para>Loads a document from a file. The document format is identified by the file extension.
+</para>
+            </summary>
+            <param name="fileName">
+		A string specifying the file to load (including the full path).
+
+            </param>
+            <returns><b>true</b>, if a document is loaded successfully; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.LoadDocument(System.String,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Loads a document from a file, specifying the document format.
+</para>
+            </summary>
+            <param name="fileName">
+		A string specifying the file to load (including the full path).
+
+            </param>
+            <param name="format">
+		One of the <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> members.
+
+            </param>
+            <returns><b>true</b>, if a document is loaded successfully; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.LoadDocument(System.IO.Stream,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Loads a document from a stream, specifying the document format.
+</para>
+            </summary>
+            <param name="stream">
+		The stream from which to load a document.
+
+            </param>
+            <param name="format">
+		One of the <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> members.
+
+            </param>
+            <returns><b>true</b>, if a document is loaded successfully; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.LoadDocument(System.Byte[],DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Loads a document from a byte array.
+</para>
+            </summary>
+            <param name="buffer">
+		A <see cref="T:System.Byte[]"/> object that is an array of bytes containing document data in the specified format.
+
+            </param>
+            <param name="format">
+		A <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> enumeration member specifying the format of the document to be loaded.
+
+
+            </param>
+            <returns><b>true</b>, if the document is successfully loaded; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.LoadDocument">
+            <summary>
+                <para>Invokes the <b>Open</b> dialog, creates a specific importer and loads the file.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.LoadDocument(System.Windows.Forms.IWin32Window)">
+            <summary>
+                <para>Invokes the <b>Open</b> file dialog as a child of the specified parent window.
+</para>
+            </summary>
+            <param name="parent">
+		The <see cref="?:System.Windows.Forms.IWin32Window"/> that is the parent window. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.LookAndFeel">
+            <summary>
+                <para>Provides access to the control's look and feel settings.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.LookAndFeel.UserLookAndFeel"/> object whose properties specify the control's look and feel.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.MenuManager">
+            <summary>
+                <para>Gets or sets the menu manager which controls the look and feel of context menus.
+</para>
+            </summary>
+            <value>An object that implements the <see cref="T:DevExpress.Utils.Menu.IDXMenuManager"/> interface.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Modified">
+            <summary>
+                <para>Gets or sets a value that indicates that the document content was modified since it was last saved.
+</para>
+            </summary>
+            <value><b>true</b>, if the control's content was modified since it was last saved; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ModifiedChanged">
+            <summary>
+                <para>Occurs when the value of the <see cref="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Modified"/> property is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.OpenCellEditor(DevExpress.XtraSpreadsheet.CellEditorMode)">
+            <summary>
+                <para>Invokes a cell editor and switches to the spreadsheet edit mode, allowing you to edit cell content.
+
+</para>
+            </summary>
+            <param name="mode">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CellEditorMode"/> that specifies the editor and the mode in which it is activated.
+
+            </param>
+            <returns><b>true</b>, if the cell editor is active; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Options">
+            <summary>
+                <para>Provides access to the variety of options which can be specified for the document loaded into the SpreadsheetControl and the control itself.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControlOptions"/> object.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.PanesFrozen">
+            <summary>
+                <para>Occurs after a worksheet area has been frozen via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.PanesUnfrozen">
+            <summary>
+                <para>Occurs after a frozen worksheet area has been unlocked via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.PopupMenuShowing">
+            <summary>
+                <para>Occurs when a popup menu is about to be displayed for the SpreadsheetControl's visual elements.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.Print">
+            <summary>
+                <para>Prints the document to the default printer.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.PropertyChanged">
+            <summary>
+                <para>Occurs every time any of the SpreadsheetControl class properties has changed its value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ProtectionWarning">
+            <summary>
+                <para>Occurs when attempting to edit a locked cell in a protected worksheet.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.RangeCopied">
+            <summary>
+                <para>Occurs after the range content has been placed onto the clipboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.RangeCopying">
+            <summary>
+                <para>Occurs before a cell range is copied in a worksheet.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.ReadOnly">
+            <summary>
+                <para>Gets or sets whether document modifications are prohibited.
+</para>
+            </summary>
+            <value><b>true</b>, if the document is in a read-only state; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ReadOnlyChanged">
+            <summary>
+                <para>Occurs when the SpreadsheetControl's read-only state is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.RemoveService(System.Type)">
+            <summary>
+                <para>Removes the service of the specified type from the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to remove.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.RemoveService(System.Type,System.Boolean)">
+            <summary>
+                <para>Removes the service of the specified type from the service container.
+</para>
+            </summary>
+            <param name="serviceType">
+		The type of service to remove.
+
+            </param>
+            <param name="promote">
+		<b>true</b>, to promote this request to any parent service containers; <b>otherwise</b>, false.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.RemoveShortcutKey(System.Windows.Forms.Keys,System.Windows.Forms.Keys)">
+            <summary>
+                <para>Removes a command shortcut.
+</para>
+            </summary>
+            <param name="key">
+		A System.Windows.Forms.Keys enumeration member specifying a shortcut key. 
+
+            </param>
+            <param name="modifier">
+		A System.Windows.Forms.Keys enumeration member specifying a modifier key. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ReplaceService``1(``0)">
+            <summary>
+                <para>Performs a service substitution.
+</para>
+            </summary>
+            <param name="newService">
+		A service of the specified type that will be registered.
+
+            </param>
+            <returns>Previously registered service of the specified type, or null (<b>Nothing</b> in Visual Basic) if the service does not exist.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ResetLayout">
+            <summary>
+                <para>Updates the layout of the document loaded into control and the control itself.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.RightToLeft">
+            <summary>
+                <para>This property is not in effect for the SpreadsheetControl class.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.RowsInserted">
+            <summary>
+                <para>Occurs after new rows have been added to a worksheet via the SpreadsheetControl's UI.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.RowsRemoved">
+            <summary>
+                <para>Occurs after rows have been deleted from a worksheet via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocument(System.String,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves the control's document to a file, specifying the document format.
+</para>
+            </summary>
+            <param name="fileName">
+		A string value specifying the path to a file in which to save the control's document.
+
+
+            </param>
+            <param name="format">
+		One of the <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> enumeration values.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocument(System.String)">
+            <summary>
+                <para>Saves the document to the specified file. The file format is identified by the file extension.
+</para>
+            </summary>
+            <param name="fileName">
+		A string value specifying the path to a file in which to save the document.
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocument(System.IO.Stream,DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves the workbook to a stream, specifying the export format.
+</para>
+            </summary>
+            <param name="stream">
+		The <see cref="T:System.IO.Stream"/> object to output the document to.
+
+            </param>
+            <param name="format">
+		One of the <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> values that is the format of the exported document.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocument(DevExpress.Spreadsheet.DocumentFormat)">
+            <summary>
+                <para>Saves a document to an array of bytes in the specified format.
+</para>
+            </summary>
+            <param name="format">
+		A <see cref="T:DevExpress.Spreadsheet.DocumentFormat"/> enumeration member specifying the format of the document to be saved.
+
+
+            </param>
+            <returns>A <see cref="T:System.Byte[]"/> object that is an array of bytes containing document data in the specified format.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocument">
+            <summary>
+                <para>Saves a document in its original format to its original location.
+</para>
+            </summary>
+            <returns><b>true</b>, if a document has been successfully saved; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocument(System.Windows.Forms.IWin32Window)">
+            <summary>
+                <para>Saves a document in its original format to its original location. If original format and location are not specified, invokes the <b>Save As</b> dialog that is shown modally as a child of the specified parent window.
+</para>
+            </summary>
+            <param name="parent">
+		The <see cref="?:System.Windows.Forms.IWin32Window"/> that is the parent window. 
+
+            </param>
+            <returns><b>true</b>, if a document has been successfully saved; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocumentAs(System.Windows.Forms.IWin32Window)">
+            <summary>
+                <para>Invokes the <b>Save As</b> dialog which is shown modally as a child of the specified parent window.
+</para>
+            </summary>
+            <param name="parent">
+		The <see cref="?:System.Windows.Forms.IWin32Window"/> that is the parent window. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SaveDocumentAs">
+            <summary>
+                <para>Invokes the <b>Save As</b> dialog and saves a document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ScrollPositionChanged">
+            <summary>
+                <para>Occurs when a worksheet is being scrolled in the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.SelectedCell">
+            <summary>
+                <para>Gets or sets an active cell in the active worksheet.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Range"/> object specifying an active cell in a worksheet that is currently active. If you assign a cell located in a worksheet that is not active, an exception is raised.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.SelectedPicture">
+            <summary>
+                <para>Gets or sets a picture selected in the active worksheet.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Picture"/> object. If you assign a picture located in a worksheet that is not active, an exception is raised.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.SelectedShape">
+            <summary>
+                <para>Gets or sets a shape selected in the active worksheet.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Shape"/> object. If you assign a shape located in a worksheet that is not active, an exception is raised.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Selection">
+            <summary>
+                <para>Gets or sets a cell range selected in the active worksheet.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Range"/> object specifying the cell selection in a worksheet that is currently active. If you assign a cell range located in a worksheet that is not active, an exception is raised.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.SelectionChanged">
+            <summary>
+                <para>Fires in response to changing cell selection in an active worksheet.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SetSelectedRanges(System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Sets cell ranges selected in the active worksheet.
+</para>
+            </summary>
+            <param name="ranges">
+		A list of the <see cref="T:DevExpress.Spreadsheet.Range"/> objects.
+
+            </param>
+            <returns><b>true</b> if cell ranges are selected successfully; otherwise <b>false</b>. If you pass <b>null</b> (<b>Nothing</b> in Visual Basic), or an empty list, or a list that contains at least one cell range located in a worksheet other than the current worksheet, the method returns <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SetSelectedRanges(System.Collections.Generic.IList`1,System.Boolean)">
+            <summary>
+                <para>Selects cell ranges in the worksheet and specifies whether the selection expands to fit merged cells.
+</para>
+            </summary>
+            <param name="ranges">
+		A list of the <see cref="T:DevExpress.Spreadsheet.Range"/> objects.
+
+            </param>
+            <param name="expandToMergedCellsSize">
+		<b>true</b>, to expand the selection to include merged cells; otherwise, <b>false</b>.
+
+            </param>
+            <returns><b>true</b>, if cell ranges are selected successfully; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.SetSelectedShapes(System.Collections.Generic.IList`1)">
+            <summary>
+                <para>Sets shapes selected in the active worksheet.
+
+</para>
+            </summary>
+            <param name="Shapes">
+		A list of the <see cref="T:DevExpress.Spreadsheet.Shape"/> objects.
+
+            </param>
+            <returns><b>true</b> if shapes are selected successfully; otherwise <b>false</b>. If you pass a list that contains at least one shape located in a worksheet that is not active, the method returns <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ShapesCopying">
+            <summary>
+                <para>Notifies that the shape object contained in the current document is being copied.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.SheetInserted">
+            <summary>
+                <para>Occurs after a new worksheet has been added into a workbook via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.SheetRemoved">
+            <summary>
+                <para>Occurs after a worksheet has been removed from a workbook via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.SheetRenamed">
+            <summary>
+                <para>Occurs after a worksheet has been renamed via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.SheetRenaming">
+            <summary>
+                <para>Occurs when a worksheet is about to be renamed via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ShowPrintDialog">
+            <summary>
+                <para>Invokes the <b>Print</b> dialog to select a printer, specify the print options (number of copies, page range, and paper source) and print the document. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ShowPrintPreview">
+            <summary>
+                <para>Invokes the <b>Print Preview</b> window with a Bars UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetControl.ShowRibbonPrintPreview">
+            <summary>
+                <para>Invokes the <b>Print Preview</b> window with a Ribbon UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.ToolTipController">
+            <summary>
+                <para>Gets or sets the tooltip controller component that controls the appearance, position and the content of the hints displayed by the SpreadsheetControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.ToolTipController"/> component which controls the appearance and behavior of the hints displayed by the SpreadsheetControl.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.UnhandledException">
+            <summary>
+                <para>This event is raised when an exception, unhandled by the SpreadsheetControl, occurs.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.Unit">
+            <summary>
+                <para>Gets or sets a unit of measure used in the workbook. 
+</para>
+            </summary>
+            <value>The <see cref="T:DevExpress.Office.DocumentUnit"/> enumeration member.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.UnitChanged">
+            <summary>
+                <para>Fires after a unit of measurement used in the workbook is changed.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.UnitChanging">
+            <summary>
+                <para>Fires before a unit of measurement used within the workbook is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.UpdateUI">
+            <summary>
+                <para>Raised when changes occur which may affect the control's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ValidateCustomSqlQuery">
+            <summary>
+                <para>Allows validation of the custom SQL query created using the Data Source Wizard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.VisibleRange">
+            <summary>
+                <para>Gets the cell range that is currently visible in the SpreadsheetControl.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Range"/> object specifying the current visible range of cells.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.VisibleUnfrozenRange">
+            <summary>
+                <para>Gets the visible cell range of the scrollable area when there are frozen rows and columns in the worksheet.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Range"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetControl.WorksheetDisplayArea">
+            <summary>
+                <para>Provides access to an object enabling you to specify a worksheet area that is visible in the SpreadsheetControl and allows end-user input.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.WorksheetDisplayArea"/> object.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.ZoomChanged">
+            <summary>
+                <para>Occurs when the current zoom level of the active worksheet has been changed via the SpreadsheetControl's UI.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetTabSelectorOptions">
+
+            <summary>
+                <para>Contains options which can be specified for the <b>Sheet Tab Selector</b> of the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetTabSelectorOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetTabSelectorOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetTabSelectorOptions.Visibility">
+            <summary>
+                <para>Gets or sets a value that indicates whether the Sheet Tab Selector of the SpreadsheetControl should be displayed or hidden. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetElementVisibility"/> enumeration value that specifies the visibility of the <b>Sheet Tab Selector</b>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetHorizontalScrollbarOptions">
+
+            <summary>
+                <para>Contains options for the horizontal scrollbar of the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetHorizontalScrollbarOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetHorizontalScrollbarOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetElementVisibility">
+
+            <summary>
+                <para>Lists values used to specify the visibility of a certain element of the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetElementVisibility.Default">
+            <summary>
+                <para>The element of the SpreadsheetControl is hidden or displayed as specified by the workbook display options.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetElementVisibility.Hidden">
+            <summary>
+                <para>The element of the SpreadsheetControl is always hidden. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetElementVisibility.Visible">
+            <summary>
+                <para>The element of the SpreadsheetControl is always displayed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl">
+
+            <summary>
+                <para>A formula bar control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetFormulaBarControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.BeforeDispose">
+            <summary>
+                <para>Occurs before the SpreadsheetFormulaBarControl control is released from memory.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.BeforeEnter">
+            <summary>
+                <para>Occurs before the SpreadsheetFormulaBarControl is entered.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.CancelButtonClick">
+            <summary>
+                <para>Occurs when the <b>Cancel</b> button on the <b>Formula Bar</b> has been clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.Controller">
+            <summary>
+                <para>This member supports the internal infrastructure and is not intended to be used directly from your code.
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.ExecuteResourceNavigatorAction(DevExpress.XtraEditors.NavigatorButtonType)">
+            <summary>
+                <para>Executes the command corresponding to one of the SpreadsheetFormularBarControl's buttons.
+
+</para>
+            </summary>
+            <param name="type">
+		One of the <see cref="T:DevExpress.XtraEditors.NavigatorButtonType"/> enumeration values that is the type of button displayed in the <b>Formula Bar</b>.
+
+            </param>
+            <returns><b>true</b>, if the command is executed; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.Expanded">
+            <summary>
+                <para>Gets or sets whether the <b>Formula Bar</b> is expanded or collapsed.
+</para>
+            </summary>
+            <value><b>true</b>, if the <b>Formula Bar</b> is expanded; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.InsertFunctionButtonClick">
+            <summary>
+                <para>Occurs when the <b>Insert Function</b> button on the <b>Formula Bar</b> has been clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.IsResourceNavigatorActionEnabled(DevExpress.XtraEditors.NavigatorButtonType)">
+            <summary>
+                <para>Determines whether the specified button on the <b>Formula Bar</b> is enabled.
+</para>
+            </summary>
+            <param name="type">
+		One of the <see cref="T:DevExpress.XtraEditors.NavigatorButtonType"/> enumeration values that is the type of button displayed in the <b>Formula Bar</b>.
+
+            </param>
+            <returns><b>true</b>, if the button is enabled; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.KeyDown">
+            <summary>
+                <para>Occurs when a key is pressed while the SpreadsheetFormulaBarControl has focus.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.OkButtonClick">
+            <summary>
+                <para>Occurs when the <b>Enter</b> button on the <b>Formula Bar</b> has been clicked.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.Rollback">
+            <summary>
+                <para>Occurs before the user input is canceled and the modified value is replaced with a value before modification.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetFormulaBarControl.SpreadsheetControl">
+            <summary>
+                <para>Gets or sets the SpreadsheetControl to which the <b>Formula Bar</b> is bound.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControl"/> with which the <b>Formula Bar</b> interacts. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderBackgroundEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeaderBackground"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderBackgroundEventArgs.RowIndex">
+            <summary>
+                <para>Returns the row index of the column header being painted.
+</para>
+            </summary>
+            <value>An integer that is the zero-based worksheet row index. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl">
+
+            <summary>
+                <para>A name box control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.#ctor">
+            <summary>
+                <para>Initializes a new instance of the SpreadsheetNameBoxControl class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.BeforeDispose">
+            <summary>
+                <para>Occurs before the SpreadsheetNameBoxControl control is released from memory.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.EditorTypeName">
+            <summary>
+                <para>Gets the class name of the editor.
+</para>
+            </summary>
+            <value>A System.String object identifying the class name.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.Properties">
+            <summary>
+                <para>Gets an object that contains settings specific to the <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl"/> control.
+</para>
+            </summary>
+            <value>A RepositoryItemNameBox object that contains settings for the current <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl"/>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.ReadOnly">
+            <summary>
+                <para>Gets or sets a value indicating whether the SpreadsheetNameBoxControl's value can be changed by end-users.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> enumeration value specifying the accessibility of the SpreadsheetNameBoxControl control.
+The default is <b>DefaultBoolean.Default</b>.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.ReadOnlyChanged">
+            <summary>
+                <para>Occurs when the value of the <see cref="P:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.ReadOnly"/> property has changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetNameBoxControl.SpreadsheetControl">
+            <summary>
+                <para>Gets or sets the SpreadsheetControl to which the <b>Name Box</b> is bound.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControl"/> with which the <b>Name Box</b> interacts. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeader"/> event of the SpreadsheetControl. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawRowHeaderEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawRowHeader</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeader"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderEventArgs.RowIndex">
+            <summary>
+                <para>Returns the column index of the row header being painted.
+</para>
+            </summary>
+            <value>An integer that is the zero-based worksheet row index. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderBackgroundEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeaderBackground"/> event of the SpreadsheetControl. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderBackgroundEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawRowHeaderBackgroundEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawRowHeaderBackground</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawRowHeaderBackgroundEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderBackgroundEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeaderBackground"/> event of the SpreadsheetControl. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderBackgroundEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderBackgroundEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>CustomDrawCellColumnHeaderBackground</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.CustomDrawColumnHeaderBackgroundEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase">
+
+            <summary>
+                <para>Represents the base class for classes that provide data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeaderBackground"/>, <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawColumnHeader"/>, <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeaderBackground"/> and <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawRowHeader"/> events of the SpreadsheetControl.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.Appearance">
+            <summary>
+                <para>Provides access to the properties that control the appearance of a worksheet header.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object which provides the appearance settings used to paint the header.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.BackColor">
+            <summary>
+                <para> Gets the background color of the header.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object that identifies the background color of the header.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.Bounds">
+            <summary>
+                <para>Gets the header's bound rectangle.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Rectangle"/> object specifying the header boundaries.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.Control">
+            <summary>
+                <para>Provides access to the SpreadsheetControl that raised the event.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetControl"/> object.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.Font">
+            <summary>
+                <para>Gets the font used to paint the header caption.
+
+</para>
+            </summary>
+            <value>A System.Drawing.Font object specifying font options (font name, size, color and etc.).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.ForeColor">
+            <summary>
+                <para>Gets the color used to paint the header caption text.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Color"/> object specifying the text color.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.IsHovered">
+            <summary>
+                <para>Gets whether a mouse is currently over the worksheet header.
+</para>
+            </summary>
+            <value><b>true</b>, if a row or column header is hovered over with a mouse; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.IsSelected">
+            <summary>
+                <para>Gets whether the current column contains selected cell(s).
+</para>
+            </summary>
+            <value><b>true</b>, if the column contains selected cell(s); otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawHeaderEventArgsBase.Text">
+            <summary>
+                <para>Gets the text of the header caption.
+</para>
+            </summary>
+            <value>A string that is the header caption.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetMenuType">
+
+            <summary>
+                <para>Lists values used to specify the type of the SpreadsheetControl's context menu.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.AutoFilter">
+            <summary>
+                <para>Specifies a context menu which can be invoked by clicking the <b>AutoFilter</b> drop-down arrow.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.Cell">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking any cell in a worksheet.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.Chart">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking a chart in a worksheet. 
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.ColumnHeading">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking a column header. 
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.DrawingObjects">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking a drawing object when a worksheet contains several drawing objects, such as pictures or charts.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.Picture">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking a picture embedded in a worksheet.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.PivotTable">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking any cell in a pivot table.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.PivotTableAutoFilter">
+            <summary>
+                <para>Specifies a context menu which can be invoked by clicking the <b>AutoFilter</b> drop-down arrow on the row or column label of a pivot table.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.RowHeading">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking a row header.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.SelectAllButton">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking the <b>Select All</b> button in the upper-left corner of a worksheet.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetMenuType.SheetTab">
+            <summary>
+                <para>Specifies a context menu which can be invoked by right-clicking a worksheet tab.
+<para></para>
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.PopupMenuShowingEventHandler">
+
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.PopupMenuShowing"/> event of the SpreadsheetControl. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.PopupMenuShowingEventHandler.Invoke(System.Object,DevExpress.XtraSpreadsheet.PopupMenuShowingEventArgs)">
+            <summary>
+                <para>A method that will handle the <b>PopupMenuShowing</b> event of the SpreadsheetControl.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the SpreadsheetControl which raised the event.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.XtraSpreadsheet.PopupMenuShowingEventArgs"/> object which contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarOptions">
+
+            <summary>
+                <para>Represents the base class for scrollbar options.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarOptions.Visibility">
+            <summary>
+                <para>Gets or sets a value that indicates whether the SpreadsheetControl's scrollbar should be displayed or hidden.
+</para>
+            </summary>
+            <value>One of the <see cref="T:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarVisibility"/> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawObjectEventsArgs">
+
+            <summary>
+                <para>Represents the base class for all classes that provide data for the custom draw events.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawObjectEventsArgs.Cache">
+            <summary>
+                <para>Gets an object which specifies the storage for the pens, fonts and brushes.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.Drawing.GraphicsCache"/> object.
+
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.XtraSpreadsheet.CustomDrawObjectEventsArgs.DrawDefault">
+            <summary>
+                <para>Renders the element using the default drawing mechanism.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawObjectEventsArgs.Graphics">
+            <summary>
+                <para>Gets an object used for painting.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Graphics"/> object which provides a means for painting.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawObjectEventsArgs.Handled">
+            <summary>
+                <para>Gets or sets whether an event was handled. If it was handled, the default actions are not required.
+
+
+</para>
+            </summary>
+            <value><b>true</b>, if default painting isn't required; otherwise, <b>false</b>.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgsBase">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraSpreadsheet.SpreadsheetControl.CustomDrawCell"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgsBase.Bounds">
+            <summary>
+                <para>Returns the bounding rectangle of the drawing area.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Rectangle"/> value which specifies the object's bounding rectangle. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgsBase.Cell">
+            <summary>
+                <para>Gets the worksheet cell being painted.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Spreadsheet.Cell"/> object that is the worksheet cell.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.XtraSpreadsheet.CustomDrawCellEventArgsBase.FillBounds">
+            <summary>
+                <para>Returns the bounding rectangle of the drawing area for painting the cell background.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Rectangle"/> value which specifies the object's bounding rectangle. 
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarVisibility">
+
+            <summary>
+                <para>Lists values used to specify the visibility of a scrollbar in the SpreadsheetControl. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarVisibility.Auto">
+            <summary>
+                <para>The scrollbar is hidden or displayed depending on the workbook display options.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarVisibility.Hidden">
+            <summary>
+                <para>The scrollbar is always hidden.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.XtraSpreadsheet.SpreadsheetScrollbarVisibility.Visible">
+            <summary>
+                <para>The scrollbar is always displayed.
+</para>
+            </summary>
+
+
+        </member>
+    </members>
+</doc>

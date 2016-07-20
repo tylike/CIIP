@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.ExpressApp.PivotGrid.v15.2</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.ExpressApp.PivotGrid.IPivotSettings">
+
+            <summary>
+                <para>Declares members of classes that specify settings of the pivot grid List Editor used by a List View.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.AddNewColumns">
+            <summary>
+                <para>Specifies whether columns deleted via the <see cref="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.Settings"/> property in the current Application Model layer, but existing in previous layers, should be retained in the Pivot Grid List Editor. 
+</para>
+            </summary>
+            <value><b>true</b>, if columns deleted in the current Application Model layer, but existing in previous layers, should be retained in the Pivot Grid List Editor; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ChartDataVertical">
+            <summary>
+                <para>Specifies whether chart series are created based on pivot table columns or rows. 
+</para>
+            </summary>
+            <value><b>true</b>, if pivot table columns are represented by series on a chart; <b>false</b>, if pivot table rows are represented by series on a chart.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ChartSettings">
+            <summary>
+                <para>Specifies settings of the chart accompanying the pivot table.
+</para>
+            </summary>
+            <value>A string representing serialized chart settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.CustomizationEnabled">
+            <summary>
+                <para>Indicates whether end-users can customize pivot table settings in Windows Forms applications, via the context menu's Invoke Wizard and Clear Settings Actions.
+</para>
+            </summary>
+            <value><b>true</b>, if end-user customizations are allowed in Windows Forms applications; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.LayoutSettings">
+            <summary>
+                <para>Specifies layout settings.
+</para>
+            </summary>
+            <value>A string representing serialized layout settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.RemoveOldColumns">
+            <summary>
+                <para>Specifies whether columns defined via the <see cref="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.Settings"/> property in previous Application Model layers, not defined in the current layer, should be available in the Pivot Grid List Editor. 
+</para>
+            </summary>
+            <value><b>true</b>, if columns defined in previous Application Model layers via the <b>Settings</b> property, not defined in the current layer, are not available in the Pivot Grid List Editor; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.Settings">
+            <summary>
+                <para>Provides access to the settings of the pivot grid List Editor used by a List View, editable via the Pivot Grid Property Editor.
+</para>
+            </summary>
+            <value>A string representing the serialized pivot table settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ShowChart">
+            <summary>
+                <para>Specifies whether the chart accompanying the pivot table is displayed.
+</para>
+            </summary>
+            <value><b>true</b>, if the chart accompanying the pivot table is displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ShowColumnGrandTotals">
+            <summary>
+                <para>Specifies whether column grand totals are displayed in the chart accompanying the pivot table.
+</para>
+            </summary>
+            <value><b>true</b>, if column grand totals are displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ShowColumnTotals">
+            <summary>
+                <para>Specifies whether column totals are displayed in the chart accompanying the pivot table.
+</para>
+            </summary>
+            <value><b>true</b>, if column totals are displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ShowRowGrandTotals">
+            <summary>
+                <para>Specifies whether row grand totals are displayed in the chart accompanying the pivot table.
+</para>
+            </summary>
+            <value><b>true</b>, if row grand totals are displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IPivotSettings.ShowRowTotals">
+            <summary>
+                <para>Specifies whether row totals are displayed in the chart accompanying the pivot table.
+</para>
+            </summary>
+            <value><b>true</b>, if row totals are displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.PivotGrid.PivotGridModule">
+
+            <summary>
+                <para>The module contained in the <i>DevExpress.ExpressApp.PivotGrid.v15.2.dll</i> assembly.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridModule.#ctor">
+            <summary>
+                <para>Creates an instance of the PivotGridModule class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridModule.ExtendModelInterfaces(DevExpress.ExpressApp.Model.ModelInterfaceExtenders)">
+            <summary>
+                <para>Extends the Application Model with the <see cref="T:DevExpress.ExpressApp.PivotGrid.IModelPivotListView"/> interface.
+</para>
+            </summary>
+            <param name="extenders">
+		A <b>ModelInterfaceExtenders</b> object that is a collection of Application Model interface extenders. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridModule.GetModuleUpdaters(DevExpress.ExpressApp.IObjectSpace,System.Version)">
+            <summary>
+                <para>Returns the list of <see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/> updaters that handle database updates for the PivotGridModule module.
+</para>
+            </summary>
+            <param name="objectSpace">
+		An <see cref="T:DevExpress.ExpressApp.IObjectSpace"/> object which represents the Object Space used to update the database.
+
+            </param>
+            <param name="versionFromDB">
+		A <b>System.Version</b> object which represents the current database version.
+
+            </param>
+            <returns>An IEnumerable&lt;<see cref="T:DevExpress.ExpressApp.Updating.ModuleUpdater"/>&gt; list of updaters that handle database updates for the PivotGridModule module.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridModule.GetXafResourceLocalizerTypes">
+            <summary>
+                <para>Returns a collection of Resource Localizer types that can be used in an application that uses the current module.
+</para>
+            </summary>
+            <returns>An <b>ICollection</b> collection containing the types of the Resource Localizers to be supplied with the current module.
+</returns>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.PivotGrid.PivotGridModule.LocalizationGroup">
+            <summary>
+                <para>Specifies the name of a localization group node containing localization items specific to the Pivot Grid Module functionality.
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.PivotGrid.IModelPivotSettings">
+
+            <summary>
+                <para>The PivotSettings node provides access to the settings of the pivot grid List Editor used by a List View.
+</para>
+            </summary>
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.PivotGrid.IModelPivotListView">
+
+            <summary>
+                <para>Used to extend the Application Model with the PivotSettings node.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.IModelPivotListView.PivotSettings">
+            <summary>
+                <para>Provides access to the PivotSettings node.
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.ExpressApp.PivotGrid.IModelPivotSettings"/> object representing the PivotSettings node.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase">
+
+            <summary>
+                <para>An abstract class that serves as the base class for the Pivot Grid List Editors. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.#ctor(DevExpress.ExpressApp.Model.IModelListView)">
+            <summary>
+                <para>Creates and initializes an instance of the PivotGridListEditorBase class.
+</para>
+            </summary>
+            <param name="model">
+		An <see cref="T:DevExpress.ExpressApp.Model.IModelListView"/> object representing the Application Model's node, which contains information on the View that will use the instantiated List Editor.
+
+            </param>
+
+
+        </member>
+        <member name="F:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.Alias">
+            <summary>
+                <para>This field is intended for internal use. 
+</para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.ApplyModel">
+            <summary>
+                <para>Updates the current List Editor's state in accordance with the information stored in the Application Model. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.BreakLinksToControls">
+            <summary>
+                <para>Removes references to the PivotGridListEditorBase's control and its event handlers.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.ChartControl">
+            <summary>
+                <para>Provides access to the PivotGridListEditorBase's charting control.
+</para>
+            </summary>
+            <value>An object representing the current List Editor's charting control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.ContextMenuTemplate">
+            <summary>
+                <para>Provides access to the PivotGridListEditorBase's Context Menu Template.
+</para>
+            </summary>
+            <value>A control which implements the <b>IContextMenuTemplate</b> interface and represents a List Editor's Context Menu Template. 
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.ControlDataSourceChanged">
+            <summary>
+                <para>Occurs when the <see cref="P:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.PivotGridControl"/>'s data source is changed.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.Dispose">
+            <summary>
+                <para>Releases all resources used by the current List Editor.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.GetIndexByObject(System.Object)">
+            <summary>
+                <para>Returns the index of an object that represents the PivotGridListEditorBase's row.
+</para>
+            </summary>
+            <param name="obj">
+		An object that represents the Pivot Grid List Editor's row. 
+
+            </param>
+            <returns>An index of an object that represents the Pivot Grid List Editor's row. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.GetObjectByIndex(System.Int32)">
+            <summary>
+                <para>Returns an object that represents the PivotGridListEditorBase's row with the specified index. 
+</para>
+            </summary>
+            <param name="index">
+		The index of an object that represents the Pivot Grid List Editor's row. 
+
+            </param>
+            <returns>The object that represents the Pivot Grid List Editor's row with the specified index. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.GetOrderedObjects">
+            <summary>
+                <para>Returns an ordered list of objects that represent the PivotGridListEditorBase's rows.
+</para>
+            </summary>
+            <returns>An ordered list of objects that represent the Pivot Grid List Editor's rows. 
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.GetSelectedObjects">
+            <summary>
+                <para>Returns a collection of objects that are currently selected in the PivotGridListEditorBase's control. 
+</para>
+            </summary>
+            <returns>A list of the selected objects.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.PivotGridControl">
+            <summary>
+                <para>Provides access to the PivotGridListEditorBase's pivot grid control.
+</para>
+            </summary>
+            <value>An object representing the current List Editor's pivot grid control.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.Refresh">
+            <summary>
+                <para>Refreshes the bound data source of the PivotGridListEditorBase's control.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.SaveModel">
+            <summary>
+                <para>Writes information on a List Editor's control to the Application Model.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.SelectionType">
+            <summary>
+                <para>Returns the selection type supported by the PivotGridListEditorBase. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.ExpressApp.SelectionType"/> enumeration value that represents the selection type supported by the current List Editor. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.ExpressApp.PivotGrid.PivotGridListEditorBase.Setup(DevExpress.ExpressApp.CollectionSourceBase,DevExpress.ExpressApp.XafApplication)">
+            <summary>
+                <para>Performs additional initialization of the PivotGridListEditorBase.
+</para>
+            </summary>
+            <param name="collectionSource">
+		A <see cref="T:DevExpress.ExpressApp.CollectionSourceBase"/> object that is the Collection Source of the List View that the current List Editor represents in a UI.
+
+
+            </param>
+            <param name="application">
+		An <see cref="T:DevExpress.ExpressApp.XafApplication"/> object that can be used to manage the current application. 
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

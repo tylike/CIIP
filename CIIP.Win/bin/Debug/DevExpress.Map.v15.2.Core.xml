@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Map.v15.2.Core</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Map.AttributeDisplayValueEditEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.XtraMap.MapItemsLayerBase.AttributeDisplayValueEdit"/> and <see cref="E:DevExpress.Xpf.Map.VectorLayerBase.AttributeDisplayValueEdit"/> events.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Map.AttributeDisplayValueEditEventArgs.#ctor(System.String,System.Object,System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the AttributeDisplayValueEditEventArgs class with the specified values of event arguments.
+</para>
+            </summary>
+            <param name="name">
+		A <see cref="T:System.String"/> object representing the name of an attribute.
+
+            </param>
+            <param name="value">
+		An <see cref="T:System.Object"/> storing an attribute value.
+
+            </param>
+            <param name="displayValue">
+		A <see cref="T:System.String"/> object that is the string representation of the attribute value.
+
+            </param>
+            <param name="patternFragment">
+		A <see cref="T:System.String"/> object representing a fragment of a text pattern, which will be replaced with the display value.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Map.AttributeDisplayValueEditEventArgs.DisplayValue">
+            <summary>
+                <para>Gets or sets an attribute display value.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object that is the string representation of the attribute value.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Map.AttributeDisplayValueEditEventArgs.Name">
+            <summary>
+                <para>Returns the name of an attribute.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object representing the name of attribute whose display value should be customized.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Map.AttributeDisplayValueEditEventArgs.PatternFragment">
+            <summary>
+                <para>Returns the pattern fragment which will be replaced with the <see cref="P:DevExpress.Map.AttributeDisplayValueEditEventArgs.DisplayValue"/>.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> object representing the fragment pattern.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Map.AttributeDisplayValueEditEventArgs.Value">
+            <summary>
+                <para>Returns an attribute value.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> storing an attribute value.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Map.ISupportCoordPoints">
+
+            <summary>
+                <para>The interface that should be implemented by map vector items specified using an array of points.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Map.ISupportCoordPoints.Points">
+            <summary>
+                <para>Gets or sets the list of points determining the shape of map items implementing this interface.
+</para>
+            </summary>
+            <value>A list of <see cref="T:DevExpress.Map.CoordPoint"/> class descendant objects.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Map.ISupportCoordLocation">
+
+            <summary>
+                <para>The interface that should be provided by map vector items whose location can be determined.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.Map.ISupportCoordLocation.Location">
+            <summary>
+                <para>Gets or sets the location of map items implementing this interface.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Map.CoordPoint"/> class descendant object.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Map.RangeDistributionBase">
+
+            <summary>
+                <para>The base for classes that define distribution of color ranges in a colorizer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Map.RangeDistributionBase.ConvertRangeValue(System.Double,System.Double,System.Double)">
+            <summary>
+                <para>Converts the specified range value.
+</para>
+            </summary>
+            <param name="min">
+		A <see cref="T:System.Double"/> object that is the minimum possible value.
+
+            </param>
+            <param name="max">
+		A <see cref="T:System.Double"/> object that is the maximum possible value.
+
+            </param>
+            <param name="value">
+		A value to be converted.
+
+            </param>
+            <returns>A <see cref="Double"/> object that is the result of the conversion.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Map.CoordPoint">
+
+            <summary>
+                <para>The base class for all map coordinate points.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.Equals(System.Object)">
+            <summary>
+                <para>Determines whether the two specified CoordPoint objects are equal.
+</para>
+            </summary>
+            <param name="o">
+		The object to compare with the current object.
+
+            </param>
+            <returns><b>true</b> if specified objects are equal; otherwise <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.GetHashCode">
+            <summary>
+                <para>Gets the hash code (a number) that corresponds to the value of the current CoordPoint object.
+</para>
+            </summary>
+            <returns>An integer value that is the hash code for the current object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.GetX">
+            <summary>
+                <para>Returns the value of the X coordinate.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Double"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.GetY">
+            <summary>
+                <para>Returns the value of the Y coordinate.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.Double"/> value.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.Offset(System.Double,System.Double)">
+            <summary>
+                <para>Initializes an instance of a <see cref="T:DevExpress.Map.CoordPoint"/> class descendant object offset by specified values.
+</para>
+            </summary>
+            <param name="offsetX">
+		A <see cref="T:System.Double"/> value specifying an X coordinate offset.
+
+            </param>
+            <param name="offsetY">
+		A <see cref="T:System.Double"/> value specifying an Y coordinate offset.
+
+            </param>
+            <returns>A <see cref="T:DevExpress.Map.CoordPoint"/> class descendant object.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.ToString">
+            <summary>
+                <para>Returns the textual representation of the CoordPoint.
+
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of the CoordPoint.
+
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Map.CoordPoint.ToString(System.IFormatProvider)">
+            <summary>
+                <para>Returns the textual representation of the CoordPoint.
+
+</para>
+            </summary>
+            <param name="provider">
+		An object implementing the <see cref="T:System.IFormatProvider"/> interface.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> value, which is the textual representation of the CoordPoint.
+
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Map.AttributeDisplayValueEditEventHandler">
+
+            <summary>
+                <para> </para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Map.AttributeDisplayValueEditEventHandler.Invoke(System.Object,DevExpress.Map.AttributeDisplayValueEditEventArgs)">
+            <summary>
+                <para>A method that will handle the <see cref="E:DevExpress.XtraMap.MapItemsLayerBase.AttributeDisplayValueEdit"/> and <see cref="E:DevExpress.Xpf.Map.VectorLayerBase.AttributeDisplayValueEdit"/> events.
+</para>
+            </summary>
+            <param name="sender">
+		The event source. This parameter identifies the <see cref="T:DevExpress.XtraMap.MapItemsLayerBase"/> (WinForms) or <see cref="T:DevExpress.Xpf.Map.VectorLayerBase"/> (WPF) which raised the event.
+
+            </param>
+            <param name="e">
+		 
+            </param>
+
+
+        </member>
+    </members>
+</doc>

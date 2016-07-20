@@ -404,7 +404,6 @@
       <SubType>Designer</SubType>
       <DependentUpon>ERPModule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="System\ListView\DisableShowDetailViewViewController.resx">
       <DependentUpon>DisableShowDetailViewViewController.cs</DependentUpon>
     </EmbeddedResource>
