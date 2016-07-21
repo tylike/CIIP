@@ -44,39 +44,7 @@ namespace CIIP.Module.Controllers
             // Perform various tasks depending on the target View.
         }
 
-        //private void NewObject_CollectCreatableItemTypes(object sender, CollectTypesEventArgs e)
-        //{
-            
-        //}
-
-        //private void NewObject_CollectDescendantTypes(object sender, CollectTypesEventArgs e)
-        //{
-        //    if (this.Frame is NestedFrame)
-        //    {
-        //        var owner = (this.Frame as NestedFrame).ViewItem.CurrentObject as ICustomizedChildrenNewTypes;
-        //        if (owner != null && owner.Types != null)
-        //        {
-        //            if (owner.Except)
-        //            {
-        //                foreach (var exc in owner.Types)
-        //                {
-        //                    e.Types.Remove(exc);
-        //                }
-        //            }
-        //            else
-        //            {
-        //                var t = e.Types.ToArray();
-        //                foreach (var type in t)
-        //                {
-        //                    if (!owner.Types.Contains(type))
-        //                    {
-        //                        e.Types.Remove(type);
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
+        
 
         private void View_CreateCustomCurrentObjectDetailView(object sender, CreateCustomCurrentObjectDetailViewEventArgs e)
         {
