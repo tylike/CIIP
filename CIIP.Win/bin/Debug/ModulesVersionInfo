@@ -15,10 +15,10 @@
 \ViewVariantsModule	15.2.9.0
 \CodeFirstViewModule	1.1.0.0
 \AdmiralStateMachineModule	1.1.0.0
-\FormCodeModule	1.0.6035.17960
-\IconModule	1.0.6035.16913
-\RuntimeModule	36.0.0.0
-\ERPModule	1.1.0.60
+\FormCodeModule	1.0.6046.38918
+\IconModule	1.0.6046.38915
+\RuntimeModule	1.0.0.0
+\ERPModule	1.1.0.62
 \FileAttachmentsWindowsFormsModule	15.2.9.0
 \HtmlPropertyEditorWindowsFormsModule	15.2.9.0
 \NotificationsWindowsFormsModule	15.2.9.0
@@ -28,6 +28,6 @@
 \SchedulerWindowsFormsModule	15.2.9.0
 \TreeListEditorsWindowsFormsModule	15.2.9.0
 \ValidationWindowsFormsModule	15.2.9.0
-\DevDashboardModule	1.0.6035.16913
+\DevDashboardModule	1.0.6046.38915
 \ERPWindowsFormsModule	1.1.0.0
 \SecurityModule	15.2.9.0

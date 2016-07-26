@@ -4,7 +4,7 @@
   <description asmv2:iconFile="epr.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="CIIP.Win" version="1.0.6045.41010" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="CIIP.Win" version="1.0.6051.18795" language="neutral" processorArchitecture="msil" />
     <commandLine file="CIIP.Win.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>igd65PWkelAKqAs6jA4C76+BuDmKyasiajRjfGfqgUs=</dsig:DigestValue>
+        <dsig:DigestValue>p24y9Z2cbPkSJvVybUWSoCyW06Rdc6Nrtx0rxqJilZs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tTsTFiojji6u/BoCLWOtUAWqaFi0SYiXGAi/XLiLvvE=</dsig:DigestValue>
+        <dsig:DigestValue>LCcwwrp+1v+SYW0jmD8vkLANtWDaL0w9gGhq8LXozeM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -98,43 +98,43 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dJbvk/rD2hWPV1zN/2Xxcz3c3V65FDEDErefz9Pz4Us=</dsig:DigestValue>
+        <dsig:DigestValue>r5/B31rrIfJ/suFixX58SL89I2BedkBmc9qG4fZsIlQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.Dashboard.dll" size="60416">
-      <assemblyIdentity name="CIIP.Dashboard" version="1.0.6045.24105" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="CIIP.Dashboard" version="1.0.6046.38915" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>w6b5mTLSW5Z5ICoYo41jDQVCDQIH18tbpDT2llHVhec=</dsig:DigestValue>
+        <dsig:DigestValue>EyHb0RwdXg/9r5mkNYCOThHWCNbkodm/TlxFfoMwZrQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.FormCode.dll" size="17920">
-      <assemblyIdentity name="CIIP.FormCode" version="1.0.6044.20353" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="CIIP.FormCode" version="1.0.6046.38918" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>HhLlreon6k5fNWcvtHfR8vD9qyfzSNUglUDmwLeBKqc=</dsig:DigestValue>
+        <dsig:DigestValue>FEmy1pV8CbaXVIN+zZEN0n3mv3ns8LevgzWd5MZ/0SY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.Icon.dll" size="3951104">
-      <assemblyIdentity name="CIIP.Icon" version="1.0.6044.20350" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="CIIP.Icon" version="1.0.6046.38915" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xO67GD3EO2PN9pjoZ12FeAbOdc3VX6HHNaiHVWYyUhw=</dsig:DigestValue>
+        <dsig:DigestValue>J6AumEIlgO6kDF/gQZIiiSt6r3oODuru+qepdPm5CbU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,7 +146,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CGpsddLl9se1DTdOl2FGTdbel+tM79TT98V6co4nMk8=</dsig:DigestValue>
+        <dsig:DigestValue>pl3Jjy7RL2nCoMf4kq1VrOfizcAgxvRMTl+uq09Repk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,19 +158,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gNyI6nass26rxtIOtA3SB2qXx51zm8dPCLefCQcPQx4=</dsig:DigestValue>
+        <dsig:DigestValue>G/dlX0Mr0E1wg3At9hzNAgNEWayC5Xoe9kA6TEbUGRc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.Win.exe" size="936328">
-      <assemblyIdentity name="CIIP.Win" version="1.0.6045.41010" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.Win.exe" size="935816">
+      <assemblyIdentity name="CIIP.Win" version="1.0.6051.18795" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xBjoiZRkhm5uBtpHx3PNZJhVmlISOupGxkeYxCZsUN4=</dsig:DigestValue>
+        <dsig:DigestValue>TZRZzG/njetTltVMfs8u3iz8okKg/fwivlls1Gbk+4I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2634,13 +2634,13 @@
       <dsig:DigestValue>IVmnh5pCmWuitW2e30aWzFkTNCdjzmq7UmyIOCPWnP8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="CIIP.Win.exe.config" size="3072">
+  <file name="CIIP.Win.exe.config" size="3094">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>hS8LgL7r6VXMfpbbGSN8jJuF8Iw4A3qiU8CPxZe6D1c=</dsig:DigestValue>
+      <dsig:DigestValue>eFDvUdni4UXOkjL6kwtZolJTYVEteJxmNvObZepfB+s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="epr.ico" size="3262">
@@ -3415,6 +3415,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>G4OlIVz3rS8OIVYTHVj1fBXXPQ2oZPpEH6Jremf9AJ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ZH-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" size="185608">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U9KIaWdjiC6QsLdO/w6BnlmRi9J1pmahPoObLKQTRlA=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

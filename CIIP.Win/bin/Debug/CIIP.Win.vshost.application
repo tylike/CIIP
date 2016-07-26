@@ -7,14 +7,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="CIIP.Win.exe.manifest" size="173460">
+    <dependentAssembly dependencyType="install" codebase="CIIP.Win.exe.manifest" size="173891">
       <assemblyIdentity name="CIIP.Win.exe" version="2016.1.0.172" publicKeyToken="0000000000000000" language="zh-Hans" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jpJSAio+Z9QcY/7EBQ6xREGDMa5WVuSueOaFk1nG81k=</dsig:DigestValue>
+        <dsig:DigestValue>117kf494/nWjZTLEhnhD4sUpjkKabsGZF83HULu8Qy0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

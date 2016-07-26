@@ -1017,24 +1017,28 @@ namespace 仓库管理
 
         public override void AutoRun()
         {
-            CreateView("库位产品库存",
+            var exist = ReflectionHelper.FindType("采购管理.采购询价");
+            if (exist != null)
+            {
+                CreateView("库位产品库存",
 @"SELECT   产品, 库位, SUM(数量 * 操作类型) AS 数量, SUM(总价 * 操作类型) AS 总价
 FROM      dbo.库存流水
 Where 有效=1
 GROUP BY 产品, 库位");
 
-            CreateView("产品库存",
-@"SELECT   产品, SUM(数量 * 操作类型) AS 数量, SUM(总价 * 操作类型) AS 总价
+                CreateView("产品库存",
+    @"SELECT   产品, SUM(数量 * 操作类型) AS 数量, SUM(总价 * 操作类型) AS 总价
 FROM      dbo.库存流水
 Where 有效=1
 GROUP BY 产品");
 
-            CreateView("仓库产品库存",
-@"SELECT   产品,库位.仓库, SUM(数量 * 操作类型) AS 数量, SUM(总价 * 操作类型) AS 总价
+                CreateView("仓库产品库存",
+    @"SELECT   产品,库位.仓库, SUM(数量 * 操作类型) AS 数量, SUM(总价 * 操作类型) AS 总价
 FROM      dbo.库存流水 left join 库位
 on dbo.库存流水.库位 = 库位.Oid
 Where 有效=1
 GROUP BY 产品,库位.仓库");
+            }
 
             checkedState = os.GetObjectByKey<CIIPXpoStateValue>("Checked");
             if(checkedState == null)

@@ -201,11 +201,12 @@ namespace CIIP.Module.Win.Editors
             ErrorListView.Items.Clear();
             if (diags != null)
             {
+                var zhcn = System.Globalization.CultureInfo.CreateSpecificCulture("zh-CN");
                 foreach (var item in diags.Where(x => x.DefaultSeverity != DiagnosticSeverity.Hidden))
                 {
                     var line = item.Location.GetLineSpan().ToString();
 
-                    var lvi = new ListViewItem(new string[] { item.Severity.ToString(), item.GetMessage(), line }, 0);
+                    var lvi = new ListViewItem(new string[] { item.Severity.ToString(), item.GetMessage(zhcn), line }, 0);
                     lvi.Tag = item;
                     ErrorListView.Items.Add(lvi);
                 }

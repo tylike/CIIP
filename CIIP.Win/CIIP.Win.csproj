@@ -257,6 +257,9 @@
     <Compile Include="ERPWindowsFormsApplication.Designer.cs">
       <DependentUpon>ERPWindowsFormsApplication.cs</DependentUpon>
     </Compile>
+    <Content Include="ZH-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
