@@ -72,27 +72,27 @@ namespace CIIP.Win {
             //    MessageBox.Show(sds.Connection.ConnectionString);
             //}
             AdmiralEnvironment.IsWindows = true;
-            var conn = AdmiralEnvironment.ReadConnectionString();// "Provider=Microsoft.Jet.OLEDB.4.0;Password=;User ID=Admin;Data Source=IMatrix.ERP.mdb;Mode=Share Deny None;";
+            var conn = "";// AdmiralEnvironment.ReadConnectionString();// "Provider=Microsoft.Jet.OLEDB.4.0;Password=;User ID=Admin;Data Source=IMatrix.ERP.mdb;Mode=Share Deny None;";
 
-            while (string.IsNullOrEmpty(conn))
-            {
-                var frm = new FrmEditConnectionString();
-                if (frm.ShowDialog() != DialogResult.OK)
-                {
-                    MessageBox.Show("没有配置连接字符串，将退出系统，如需继续，请重新运行商信系统！");
-                    Application.Exit();
-                    return;
-                }
-                conn = AdmiralEnvironment.ReadConnectionString();
-            }
-            
-
-
-            //if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            //while (string.IsNullOrEmpty(conn))
             //{
-            //    //winApplication.ConnectionString = 
-            //    conn = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            //    var frm = new FrmEditConnectionString();
+            //    if (frm.ShowDialog() != DialogResult.OK)
+            //    {
+            //        MessageBox.Show("没有配置连接字符串，将退出系统，如需继续，请重新运行商信系统！");
+            //        Application.Exit();
+            //        return;
+            //    }
+            //    conn = AdmiralEnvironment.ReadConnectionString();
             //}
+
+
+
+            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            {
+                //winApplication.ConnectionString = 
+                conn = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            }
 
             try
             {

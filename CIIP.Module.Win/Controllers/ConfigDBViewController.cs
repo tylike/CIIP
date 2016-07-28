@@ -28,6 +28,7 @@ namespace CIIP.Module.Controllers
             InitializeComponent();
             TargetObjectType = typeof(SystemLogonParameter);
             TargetViewType = ViewType.DetailView;
+            ConfigDB.Active["CodeHidden"] = false;
             // Target required Views (via the TargetXXX properties) and create their Actions.
         }
         protected override void OnActivated()
