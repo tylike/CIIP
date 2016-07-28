@@ -20,6 +20,7 @@ using System.IO;
 using System.Xml;
 using ICSharpCode.AvalonEdit.Highlighting;
 using System.Text.RegularExpressions;
+using DevExpress.XtraEditors;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -85,6 +86,7 @@ namespace CIIP.Module.Win.Editors
                 if (value.ShowSolutionFiles)
                 {
                     solutionTreeView.Nodes.Clear();
+                    solutionTreeView.MouseClick += SolutionTreeView_MouseClick;
                     var solution = solutionTreeView.Nodes.Add("Solution");
 
                     foreach (var item in _workspace.Workspace.CurrentSolution.Projects)
@@ -114,6 +116,24 @@ namespace CIIP.Module.Win.Editors
             #endregion
 
 
+        }
+
+        private void SolutionTreeView_MouseClick(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                var fbd = new FolderBrowserDialog();
+                if (fbd.ShowDialog() == DialogResult.OK)
+                {
+                    var path = fbd.SelectedPath;
+                    foreach (var item in _workspace.Workspace.CurrentSolution.Projects.First().Documents)
+                    {
+                        //var file = File.(path + "\\" + item.Name);
+                        File.WriteAllText(path + "\\" + item.Name, item.GetTextAsync().Result.ToString());
+                    }
+                    XtraMessageBox.Show("导出代码完成!");
+                }
+            }
         }
 
         private void CreateEditor()
