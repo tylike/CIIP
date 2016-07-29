@@ -12958,3 +12958,798 @@ Loaded assemblies
 
 28.07.16 10:03:02.162	Application stopping
 =====================
+29.07.16 16:54:06.747	================================================================================
+29.07.16 16:54:06.783	Trace Log for CIIP.Win.vshost.exe is started
+29.07.16 16:54:06.791	================================================================================
+29.07.16 16:54:06.796	System Environment
+	OS Version: Microsoft Windows NT 6.2.9200.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+
+	CLR Version: 4.0.30319.42000
+	eXpressApp Version: 16.1.4.0
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=True
+	Languages=zh-CN
+	SafeMode=trueoo
+29.07.16 16:54:06.829	Initialize application
+=======================
+29.07.16 16:54:06.830		Command line arguments: 
+		C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Win.vshost.exe
+29.07.16 16:54:08.637	--------------------------------------------------------------------------------
+							Initialize Modules Manager
+
+29.07.16 16:54:08.639	--------------------------------------------------------------------------------
+							
+
+29.07.16 16:54:09.320	--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll
+	Admiral.ImportData, Version=1.0.6054.28650, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Admiral.ImportData.dll
+	Admiral.ImportData.Win, Version=1.0.6054.28654, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Admiral.ImportData.Win.dll
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	CIIP.AdmiralStateMachine, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.AdmiralStateMachine.dll
+	CIIP.CodeFirstView, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.CodeFirstView.dll
+	CIIP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Common.dll
+	CIIP.Dashboard, Version=1.0.6054.30398, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Dashboard.dll
+	CIIP.FormCode, Version=1.0.6054.30402, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.FormCode.dll
+	CIIP.Icon, Version=1.0.6054.30398, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Icon.dll
+	CIIP.Module, Version=1.1.0.62, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Module.dll
+	CIIP.Module.Win, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Module.Win.dll
+	CIIP.Win, Version=1.0.6054.30415, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Win.exe
+	DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Data.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Data.v16.1.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ConditionalAppearance.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ConditionalAppearance.v16.1.dll
+	DevExpress.ExpressApp.FileAttachment.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.FileAttachment.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.FileAttachment.Win.v16.1.dll
+	DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.dll
+	DevExpress.ExpressApp.Notifications.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Notifications.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Notifications.v16.1.dll
+	DevExpress.ExpressApp.Notifications.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Notifications.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Notifications.Win.v16.1.dll
+	DevExpress.ExpressApp.Objects.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Objects.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Objects.v16.1.dll
+	DevExpress.ExpressApp.PivotChart.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotChart.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotChart.v16.1.dll
+	DevExpress.ExpressApp.PivotChart.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotChart.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotChart.Win.v16.1.dll
+	DevExpress.ExpressApp.PivotGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotGrid.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotGrid.v16.1.dll
+	DevExpress.ExpressApp.PivotGrid.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotGrid.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotGrid.Win.v16.1.dll
+	DevExpress.ExpressApp.ReportsV2.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ReportsV2.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ReportsV2.v16.1.dll
+	DevExpress.ExpressApp.ReportsV2.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ReportsV2.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ReportsV2.Win.v16.1.dll
+	DevExpress.ExpressApp.Scheduler.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Scheduler.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Scheduler.v16.1.dll
+	DevExpress.ExpressApp.Scheduler.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Scheduler.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Scheduler.Win.v16.1.dll
+	DevExpress.ExpressApp.Security.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v15.2.dll
+	DevExpress.ExpressApp.Security.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v16.1.dll
+	DevExpress.ExpressApp.Security.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.Xpo.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.Xpo.v16.1.dll
+	DevExpress.ExpressApp.StateMachine.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.StateMachine.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.StateMachine.v16.1.dll
+	DevExpress.ExpressApp.TreeListEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.v16.1.dll
+	DevExpress.ExpressApp.TreeListEditors.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.Win.v16.1.dll
+	DevExpress.ExpressApp.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.ExpressApp.v15.2.dll
+	DevExpress.ExpressApp.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.v16.1.dll
+	DevExpress.ExpressApp.Validation.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.v16.1.dll
+	DevExpress.ExpressApp.Validation.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.Win.v16.1.dll
+	DevExpress.ExpressApp.ViewVariantsModule.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ViewVariantsModule.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ViewVariantsModule.v16.1.dll
+	DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Win.v16.1.dll
+	DevExpress.ExpressApp.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Xpo.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Xpo.v16.1.dll
+	DevExpress.Persistent.Base.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Persistent.Base.v15.2.dll
+	DevExpress.Persistent.Base.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Persistent.Base.v16.1.dll
+	DevExpress.Persistent.BaseImpl.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v15.2.dll
+	DevExpress.Persistent.BaseImpl.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v16.1.dll
+	DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Printing.v16.1.Core\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Printing.v16.1.Core.dll
+	DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Utils.v16.1.dll
+	DevExpress.Xpo.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Xpo.v15.2.dll
+	DevExpress.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Xpo.v16.1.dll
+	DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraBars.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraBars.v16.1.dll
+	DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraEditors.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraEditors.v16.1.dll
+	DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraReports.v16.1.dll
+	DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v16.1.Extensions\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraReports.v16.1.Extensions.dll
+	Microsoft.VisualStudio.Debugger.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll
+	Microsoft.VisualStudio.HostingProcess.Utilities, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll
+	Microsoft.VisualStudio.HostingProcess.Utilities.Sync, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll
+	mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+	mscorlib.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\mscorlib.resources.dll
+	RuntimeModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	RuntimeModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Runtime\BusinessObject\RuntimeBusinessObject.dll
+	System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+	System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll
+	System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll
+	System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll
+	System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll
+	System.Deployment.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment.resources\v4.0_4.0.0.0_zh-Hans_b03f5f7f11d50a3a\System.Deployment.resources.dll
+	System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Design.dll
+	System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
+	System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll
+	System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll
+	System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll
+	System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll
+	System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll
+	System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll
+	System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
+	System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll
+	vshost32, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Win.vshost.exe
+无法加载一个或多个请求的类型。有关更多信息，请检索 LoaderExceptions 属性。
+未将对象引用设置到对象的实例。
+29.07.16 16:54:10.034	SetupModules
+29.07.16 16:54:10.660	Customize TypesInfo
+29.07.16 16:54:10.688	The ValueManagerType is initialized by the default value: SimpleValueManager.
+29.07.16 16:54:10.715	Stack trace:
+   在 DevExpress.Persistent.Base.ValueManager.CreateValueManager[ValueType](String key)
+   在 DevExpress.Persistent.Base.ValueManager.GetValueManager[ValueType](String key)
+   在 DevExpress.ExpressApp.SecuritySystem.SetInstance(ISecurityStrategyBase instance)
+   在 DevExpress.ExpressApp.XafApplication.InitializeSecuritySystem(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(ExpressApplicationSetupParameters parameters)
+   在 DevExpress.ExpressApp.XafApplication.Setup(String applicationName, IList`1 objectSpaceProviders, ApplicationModulesManager modulesManager, ISecurityStrategyBase security)
+   在 DevExpress.ExpressApp.XafApplication.Setup()
+   在 CIIP.Win.Program.Main() 位置 C:\dev\IMatrix.ERP\CIIP\CIIP.Win\Program.cs:行号 172
+   在 System.AppDomain._nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.AppDomain.nExecuteAssembly(RuntimeAssembly assembly, String[] args)
+   在 System.Runtime.Hosting.ManifestRunner.Run(Boolean checkAptModel)
+   在 System.Runtime.Hosting.ManifestRunner.ExecuteAsAssembly()
+   在 System.Runtime.Hosting.ApplicationActivator.CreateInstance(ActivationContext activationContext, String[] activationCustomData)
+   在 System.Runtime.Hosting.ApplicationActivator.CreateInstance(ActivationContext activationContext)
+   在 System.Activator.CreateInstance(ActivationContext activationContext)
+   在 Microsoft.VisualStudio.HostingProcess.HostProc.RunUsersAssemblyDebugInZone()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Objects.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ConditionalAppearance.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.resources, Version=1.0.6054.28650, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“Admiral.ImportData.Win.resources, Version=1.0.6054.28654, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.StateMachine.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ViewVariantsModule.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.CodeFirstView.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.AdmiralStateMachine.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.FormCode.resources, Version=1.0.6054.30402, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Icon.resources, Version=1.0.6054.30398, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“RuntimeModule.resources, Version=1.0.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.resources, Version=1.1.0.62, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.FileAttachment.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Notifications.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotChart.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.PivotGrid.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.ReportsV2.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Scheduler.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.TreeListEditors.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Validation.Win.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Dashboard.resources, Version=1.0.6054.30398, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh-CN, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh-CHS, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh-Hans, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“CIIP.Module.Win.resources, Version=1.1.0.0, Culture=zh, PublicKeyToken=null”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh-CN, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh-CHS, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh-Hans, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+未能加载文件或程序集“DevExpress.ExpressApp.Security.v16.1.resources, Version=16.1.0.0, Culture=zh, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+29.07.16 16:54:18.330		preferredLanguageName: zh-CN
+								userLanguageName: zh-CN
+
+29.07.16 16:54:18.331		preferredLanguageName: zh-CN
+								userFormattingCultureName: zh-CN
+								selectedFormattingCultureName: 
+
+29.07.16 16:54:18.332	Logon With Parameters
+29.07.16 16:54:18.332		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: c08fce1b-c88a-4a78-a50e-23bdd6380e5e
+								Category: Unspecified
+
+29.07.16 16:54:18.564	Generate default Model for Action containers
+29.07.16 16:54:18.921	IsGrantedAdapter.CustomHasPermissionTo - SecuritySystem.CurrentUser is empty
+29.07.16 16:54:18.944	IsGrantedAdapter.CustomHasPermissionTo - SecuritySystem.CurrentUser is empty
+29.07.16 16:54:18.949	IsGrantedAdapter.CustomHasPermissionTo - SecuritySystem.CurrentUser is empty
+29.07.16 16:54:25.142	--------------------------------------------------------------------------------
+							Execute action
+
+29.07.16 16:54:25.144		Type: DevExpress.ExpressApp.Actions.SimpleAction
+								ID: Logon
+								Category: PopupActions
+								Controller.Name: DevExpress.ExpressApp.LogonController
+								Context.Name: 欢迎使用商信互联企业信息管理平台
+								Context.IsRoot: True
+								Context.SelectedObjects.Count: 1
+								Context.CurrentObject: CIIP.Module.BusinessObjects.SYS.SystemLogonParameter
+
+29.07.16 16:54:25.145	--------------------------------------------------------------------------------
+							Execute action
+
+29.07.16 16:54:25.146		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+								ID: c08fce1b-c88a-4a78-a50e-23bdd6380e5e
+								Category: Unspecified
+
+29.07.16 16:54:25.266	--------------------------------------------------------------------------------
+							Start logon process
+
+29.07.16 16:54:25.288	--------------------------------------------------------------------------------
+							Checking Compatibility
+
+29.07.16 16:54:25.289		ConnectionString: Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=IMatrix.ERP.R2;
+29.07.16 16:54:25.290		ConnectionString: 
+29.07.16 16:54:25.349	Check App Name Compatibility
+29.07.16 16:54:25.350	Check stored module versions against the versions of the loaded modules
+29.07.16 16:54:25.351	module 'SystemModule' (DevExpress.ExpressApp.v16.1). Local version: 16.1.4.0, Version on DB: 15.2.9.0
+29.07.16 16:54:25.352	DatabaseIsOld
+29.07.16 16:54:25.409	--------------------------------------------------------------------------------
+							UpdateDB
+
+29.07.16 16:54:25.419		ConnectionString: Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=IMatrix.ERP.R2;
+29.07.16 16:54:25.622	Check App Name Compatibility
+29.07.16 16:54:25.622	Check stored module versions against the versions of the loaded modules
+29.07.16 16:54:25.622	module 'SystemModule' (DevExpress.ExpressApp.v16.1). Local version: 16.1.4.0, Version on DB: 15.2.9.0
+29.07.16 16:54:25.622	DatabaseIsOld
+29.07.16 16:54:26.351	Module: SystemModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.353	Module: BusinessClassLibraryCustomizationModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.355	Module: ConditionalAppearanceModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.356	Module: ValidationModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.357	Module: ImportDataModule. Old version: 1.0.6016.29153. New version: 1.0.6054.28650
+29.07.16 16:54:26.358	Module: SystemWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.359	Module: ImportDataWinModule. Old version: 1.0.6016.29156. New version: 1.0.6054.28654
+29.07.16 16:54:26.361	Module: NotificationsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.362	Module: PivotChartModuleBase. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.363	Module: PivotGridModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.364	Module: ReportsModuleV2. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.365	Module: SchedulerModuleBase. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.366	Module: StateMachineModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.367	Module: TreeListEditorsModuleBase. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.368	Module: ViewVariantsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.368	Module: CodeFirstViewModule. Old version: 1.1.0.0. New version: 1.1.0.0
+29.07.16 16:54:26.368	Module: AdmiralStateMachineModule. Old version: 1.1.0.0. New version: 1.1.0.0
+29.07.16 16:54:26.369	Module: FormCodeModule. Old version: 1.0.6054.15838. New version: 1.0.6054.30402
+29.07.16 16:54:26.370	Module: IconModule. Old version: 1.0.6054.15838. New version: 1.0.6054.30398
+29.07.16 16:54:26.370	Module: RuntimeModule. Old version: 1.0.0.0. New version: 1.0.0.0
+29.07.16 16:54:26.370	Module: ERPModule. Old version: 1.1.0.62. New version: 1.1.0.62
+29.07.16 16:54:26.371	Module: FileAttachmentsWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.372	Module: HtmlPropertyEditorWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.373	Module: NotificationsWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.374	Module: PivotChartWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.375	Module: PivotGridWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.376	Module: ReportsWindowsFormsModuleV2. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.377	Module: SchedulerWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.378	Module: TreeListEditorsWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.379	Module: ValidationWindowsFormsModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.380	Module: DevDashboardModule. Old version: 1.0.6054.15868. New version: 1.0.6054.30398
+29.07.16 16:54:26.380	Module: ERPWindowsFormsModule. Old version: 1.1.0.0. New version: 1.1.0.0
+29.07.16 16:54:26.381	Module: SecurityModule. Old version: 15.2.9.0. New version: 16.1.4.0
+29.07.16 16:54:26.396	Check App Name Compatibility
+29.07.16 16:54:26.397	Check stored module versions against the versions of the loaded modules
+29.07.16 16:54:26.398	module 'SystemModule' (DevExpress.ExpressApp.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.399	module 'BusinessClassLibraryCustomizationModule' (DevExpress.ExpressApp.Objects.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.400	module 'ConditionalAppearanceModule' (DevExpress.ExpressApp.ConditionalAppearance.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.401	module 'ValidationModule' (DevExpress.ExpressApp.Validation.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.402	module 'ImportDataModule' (Admiral.ImportData). Local version: 1.0.6054.28650, Version on DB: 1.0.6054.28650
+29.07.16 16:54:26.402	module 'SystemWindowsFormsModule' (DevExpress.ExpressApp.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.403	module 'ImportDataWinModule' (Admiral.ImportData.Win). Local version: 1.0.6054.28654, Version on DB: 1.0.6054.28654
+29.07.16 16:54:26.404	module 'NotificationsModule' (DevExpress.ExpressApp.Notifications.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.404	module 'PivotChartModuleBase' (DevExpress.ExpressApp.PivotChart.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.405	module 'PivotGridModule' (DevExpress.ExpressApp.PivotGrid.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.406	module 'ReportsModuleV2' (DevExpress.ExpressApp.ReportsV2.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.406	module 'SchedulerModuleBase' (DevExpress.ExpressApp.Scheduler.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.407	module 'StateMachineModule' (DevExpress.ExpressApp.StateMachine.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.408	module 'TreeListEditorsModuleBase' (DevExpress.ExpressApp.TreeListEditors.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.409	module 'ViewVariantsModule' (DevExpress.ExpressApp.ViewVariantsModule.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.409	module 'CodeFirstViewModule' (CIIP.CodeFirstView). Local version: 1.1.0.0, Version on DB: 1.1.0.0
+29.07.16 16:54:26.410	module 'AdmiralStateMachineModule' (CIIP.AdmiralStateMachine). Local version: 1.1.0.0, Version on DB: 1.1.0.0
+29.07.16 16:54:26.411	module 'FormCodeModule' (CIIP.FormCode). Local version: 1.0.6054.30402, Version on DB: 1.0.6054.30402
+29.07.16 16:54:26.411	module 'IconModule' (CIIP.Icon). Local version: 1.0.6054.30398, Version on DB: 1.0.6054.30398
+29.07.16 16:54:26.412	module 'RuntimeModule' (RuntimeModule). Local version: 1.0.0.0, Version on DB: 1.0.0.0
+29.07.16 16:54:26.413	module 'ERPModule' (CIIP.Module). Local version: 1.1.0.62, Version on DB: 1.1.0.62
+29.07.16 16:54:26.414	module 'FileAttachmentsWindowsFormsModule' (DevExpress.ExpressApp.FileAttachment.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.414	module 'HtmlPropertyEditorWindowsFormsModule' (DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.415	module 'NotificationsWindowsFormsModule' (DevExpress.ExpressApp.Notifications.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.415	module 'PivotChartWindowsFormsModule' (DevExpress.ExpressApp.PivotChart.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.416	module 'PivotGridWindowsFormsModule' (DevExpress.ExpressApp.PivotGrid.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.417	module 'ReportsWindowsFormsModuleV2' (DevExpress.ExpressApp.ReportsV2.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.418	module 'SchedulerWindowsFormsModule' (DevExpress.ExpressApp.Scheduler.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.419	module 'TreeListEditorsWindowsFormsModule' (DevExpress.ExpressApp.TreeListEditors.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.419	module 'ValidationWindowsFormsModule' (DevExpress.ExpressApp.Validation.Win.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.420	module 'DevDashboardModule' (CIIP.Dashboard). Local version: 1.0.6054.30398, Version on DB: 1.0.6054.30398
+29.07.16 16:54:26.421	module 'ERPWindowsFormsModule' (CIIP.Module.Win). Local version: 1.1.0.0, Version on DB: 1.1.0.0
+29.07.16 16:54:26.422	module 'SecurityModule' (DevExpress.ExpressApp.Security.v16.1). Local version: 16.1.4.0, Version on DB: 16.1.4.0
+29.07.16 16:54:26.472	--------------------------------------------------------------------------------
+							Logon successful
+
+29.07.16 16:54:26.586	--------------------------------------------------------------------------------
+							Logon completed
+
+29.07.16 16:54:26.852	Action 'c08fce1b-c88a-4a78-a50e-23bdd6380e5e' done
+29.07.16 16:54:26.853	Window closing: 欢迎使用商信互联企业信息管理平台
+29.07.16 16:54:26.927	Action 'Logon' done
+29.07.16 16:54:26.928	Window closed: 欢迎使用商信互联企业信息管理平台
+29.07.16 16:54:26.960		startUpActions: 1
+29.07.16 16:54:27.039	--------------------------------------------------------------------------------
+							Execute action
+
+29.07.16 16:54:27.040		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+								ID: ChooseSkin
+								Category: Appearance
+								Controller.Name: DevExpress.ExpressApp.Win.SystemModule.ChooseSkinController
+
+29.07.16 16:54:27.040		SelectedItem: Office 2016 Colorful
+29.07.16 16:54:27.041	Action 'ChooseSkin' done
+29.07.16 16:54:27.090	--------------------------------------------------------------------------------
+							Initialize 'ShowNavigationItem' action items
+
+29.07.16 16:54:27.574	Cannot register action (Id = SubSystem0) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.575	Cannot register action (Id = SubSystem1) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.577	Cannot register action (Id = SubSystem2) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.577	Cannot register action (Id = SubSystem3) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.578	Cannot register action (Id = SubSystem4) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.579	Cannot register action (Id = SubSystem5) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.580	Cannot register action (Id = SubSystem6) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.581	Cannot register action (Id = SubSystem7) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.581	Cannot register action (Id = SubSystem8) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.582	Cannot register action (Id = SubSystem9) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.583	Cannot register action (Id = SubSystem10) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.584	Cannot register action (Id = SubSystem11) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.585	Cannot register action (Id = SubSystem12) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.586	Cannot register action (Id = SubSystem13) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.587	Cannot register action (Id = SubSystem14) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.588	Cannot register action (Id = SubSystem15) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.590	Cannot register action (Id = SubSystem16) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.591	Cannot register action (Id = SubSystem17) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.592	Cannot register action (Id = SubSystem18) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.592	Cannot register action (Id = SubSystem19) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:27.593	Cannot register action (Id = SubSystem20) in the NavigationActionContainer: the navigation action should be of the SingleChoiceAction type.
+29.07.16 16:54:28.564	Resolve the 'DevExpress.ExpressApp.Win.v16.1.XmlSerializers, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.XmlSerializers, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+29.07.16 16:54:28.686	Resolve the 'DevExpress.ExpressApp.Win.v16.1.XmlSerializers, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a' assembly
+未能加载文件或程序集“DevExpress.ExpressApp.Win.v16.1.XmlSerializers, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a”或它的某一个依赖项。系统找不到指定的文件。
+“常用基类.单据`1[TItem]”上的 GenericArguments[0] (“TItem”)与类型参数“TItem”的约束冲突。
+“常用基类.单据`1[TItem]”上的 GenericArguments[0] (“TItem”)与类型参数“TItem”的约束冲突。
+Exception occurs while assigning the 'ListView, ID:BusinessObject_ListView' view to WinWindow:
+“常用基类.单据`1[TItem]”上的 GenericArguments[0] (“TItem”)与类型参数“TItem”的约束冲突。
+Exception occurs while assigning the 'ListView, ID:BusinessObject_ListView' view to WinWindow:
+“常用基类.单据`1[TItem]”上的 GenericArguments[0] (“TItem”)与类型参数“TItem”的约束冲突。
+29.07.16 16:54:30.076	================================================================================
+The error occurred:
+
+	Type:       TypeLoadException
+	Message:    “常用基类.单据`1[TItem]”上的 GenericArguments[0] (“TItem”)与类型参数“TItem”的约束冲突。
+	Data:       0 entries
+	Stack trace:
+
+   在 System.Reflection.RuntimeAssembly.GetType(RuntimeAssembly assembly, String name, Boolean throwOnError, Boolean ignoreCase, ObjectHandleOnStack type)
+   在 System.Reflection.RuntimeAssembly.GetType(String name, Boolean throwOnError, Boolean ignoreCase)
+   在 System.Reflection.Assembly.GetType(String name)
+   在 DevExpress.Persistent.Base.ReflectionHelper.FindTypeInAssemblies(String typeName, ICollection`1 assemblies)
+   在 DevExpress.Persistent.Base.ReflectionHelper.FindTypeInfoByName(String typeName)
+   在 DevExpress.ExpressApp.Utils.TypeToStringConverter.ConvertFromStorageType(Object stringObjectType)
+   在 DevExpress.Xpo.Helpers.QueryData.ConvertedValueAccessor.get_Value()
+   在 DevExpress.Xpo.Helpers.ObjectCollectionLoader.ObjectLoader.DataMember.AcquireValue()
+   在 DevExpress.Xpo.Helpers.ObjectCollectionLoader.ObjectLoader.LoadProperties(OptimisticLockingReadMergeBehavior loadMerge)
+   在 DevExpress.Xpo.Helpers.ObjectCollectionLoader.ObjectLoader.InternalLoadObject(Object id, OptimisticLockingReadMergeBehavior loadMerge)
+   在 DevExpress.Xpo.Helpers.ObjectCollectionLoader.ObjectLoader.LoadObject()
+   在 DevExpress.Xpo.Helpers.ObjectCollectionLoader.InternalLoadObjects(LoadDataResult loadResult, Boolean useStubs)
+   在 DevExpress.Xpo.Helpers.ObjectCollectionLoader.LoadObjects(ObjectsQuery[] queries)
+   在 DevExpress.Xpo.SimpleObjectLayer.LoadObjects(Session session, ObjectsQuery[] queries)
+   在 DevExpress.Xpo.Session.GetObjectsInternal(ObjectsQuery[] queries)
+   在 DevExpress.Xpo.Session.<>c__DisplayClasse.<GetObjects>b__c()
+   在 DevExpress.Xpo.Logger.LogManager.Log[T](String category, LogHandler`1 handler, MessageHandler`1 createMessageHandler)
+   在 DevExpress.Xpo.Session.GetObjects(ObjectsQuery[] queries)
+   在 DevExpress.Xpo.Session.GetObjects(ObjectsQuery query)
+   在 DevExpress.Xpo.XPBaseCollection.Load()
+   在 DevExpress.Xpo.XPBaseCollection.get_Objects()
+   在 DevExpress.Xpo.XPBaseCollection.System.Collections.IEnumerable.GetEnumerator()
+   在 DevExpress.ExpressApp.StateMachine.StateMachineCacheController.EnsureCache()
+   在 DevExpress.ExpressApp.StateMachine.StateMachineCacheController.GetStateMachinesByType(Type targetObjectType)
+   在 DevExpress.ExpressApp.StateMachine.StateMachineControllerBase`1.GetStateMachines()
+   在 DevExpress.ExpressApp.StateMachine.StateMachineAppearanceController.appearanceController_CollectAppearanceRules(Object sender, CollectAppearanceRulesEventArgs e)
+   在 DevExpress.ExpressApp.ConditionalAppearance.AppearanceController.OnCollectAppearanceRules(CollectAppearanceRulesEventArgs ea)
+   在 DevExpress.ExpressApp.ConditionalAppearance.AppearanceController.CustomCollectAppearanceRules(IViewInfo view, String itemName)
+   在 DevExpress.ExpressApp.ConditionalAppearance.AppearanceController.GetAppearanceRules(IViewInfo view, String itemType, String itemName, Object item)
+   在 DevExpress.ExpressApp.ConditionalAppearance.AppearanceController.GetTargetedActions(ObjectView view)
+   在 DevExpress.ExpressApp.ConditionalAppearance.ActionAppearanceController.CollectActions()
+   在 DevExpress.ExpressApp.ConditionalAppearance.ActionAppearanceController.RefreshActionsAppearance()
+   在 DevExpress.ExpressApp.ConditionalAppearance.ActionAppearanceController.DevExpress.ExpressApp.ConditionalAppearance.ISupportRefreshItemsAppearance.RefreshViewItemsAppearance()
+   在 DevExpress.ExpressApp.ConditionalAppearance.AppearanceController.Refresh()
+   在 DevExpress.ExpressApp.ConditionalAppearance.AppearanceController.AppearanceEndUpdate()
+   在 DevExpress.ExpressApp.StateMachine.StateMachineAppearanceController.OnViewControlsCreated()
+   在 DevExpress.ExpressApp.ViewController.view_ControlsCreated(Object sender, EventArgs e)
+   在 System.EventHandler.Invoke(Object sender, EventArgs e)
+   在 DevExpress.ExpressApp.View.OnControlsCreated()
+   在 DevExpress.ExpressApp.View.CreateControls()
+   在 DevExpress.ExpressApp.Win.Templates.ViewSiteManager.EnsureViewControl()
+   在 DevExpress.ExpressApp.Win.Templates.ViewSiteManager.FillViewSite()
+   在 DevExpress.ExpressApp.Win.Templates.ViewSiteManager.OnViewChanged()
+   在 DevExpress.ExpressApp.Win.Templates.ViewSiteManager.SetView(View view)
+   在 DevExpress.ExpressApp.Win.Templates.Ribbon.DetailRibbonFormV2.DevExpress.ExpressApp.Templates.IFrameTemplate.SetView(View view)
+   在 DevExpress.ExpressApp.Frame.SetTemplateView(View view)
+   在 DevExpress.ExpressApp.Frame.SetView(View view, Boolean updateControllers, Frame sourceFrame)
+	InnerException is null
+
+--------------------------------------------------------------------------------
+Loaded assemblies
+	Accessibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll
+	Admiral.ImportData, Version=1.0.6054.28650, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Admiral.ImportData.dll
+	Admiral.ImportData.Win, Version=1.0.6054.28654, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Admiral.ImportData.Win.dll
+	Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	b0sodg0q, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	CIIP.AdmiralStateMachine, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.AdmiralStateMachine.dll
+	CIIP.CodeFirstView, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.CodeFirstView.dll
+	CIIP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Common.dll
+	CIIP.Dashboard, Version=1.0.6054.30398, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Dashboard.dll
+	CIIP.FormCode, Version=1.0.6054.30402, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.FormCode.dll
+	CIIP.Icon, Version=1.0.6054.30398, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Icon.dll
+	CIIP.Module, Version=1.1.0.62, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Module.dll
+	CIIP.Module.Win, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Module.Win.dll
+	CIIP.Win, Version=1.0.6054.30415, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Win.exe
+	DevExpress.BonusSkins.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.BonusSkins.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.BonusSkins.v16.1.dll
+	DevExpress.Dashboard.v16.1.Win, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Dashboard.v16.1.Win\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Dashboard.v16.1.Win.dll
+	DevExpress.Data.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Data.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Data.v15.2.dll
+	DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Data.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Data.v16.1.dll
+	DevExpress.Diagram.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Diagram.v16.1.Core\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Diagram.v16.1.Core.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ConditionalAppearance.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ConditionalAppearance.v16.1.dll
+	DevExpress.ExpressApp.FileAttachment.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.FileAttachment.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.FileAttachment.Win.v16.1.dll
+	DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.dll
+	DevExpress.ExpressApp.Images.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Images.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Images.v16.1.dll
+	DevExpress.ExpressApp.Notifications.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Notifications.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Notifications.v16.1.dll
+	DevExpress.ExpressApp.Notifications.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Notifications.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Notifications.Win.v16.1.dll
+	DevExpress.ExpressApp.Objects.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Objects.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Objects.v16.1.dll
+	DevExpress.ExpressApp.PivotChart.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotChart.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotChart.v16.1.dll
+	DevExpress.ExpressApp.PivotChart.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotChart.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotChart.Win.v16.1.dll
+	DevExpress.ExpressApp.PivotGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotGrid.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotGrid.v16.1.dll
+	DevExpress.ExpressApp.PivotGrid.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.PivotGrid.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.PivotGrid.Win.v16.1.dll
+	DevExpress.ExpressApp.ReportsV2.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ReportsV2.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ReportsV2.v16.1.dll
+	DevExpress.ExpressApp.ReportsV2.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ReportsV2.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ReportsV2.Win.v16.1.dll
+	DevExpress.ExpressApp.Scheduler.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Scheduler.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Scheduler.v16.1.dll
+	DevExpress.ExpressApp.Scheduler.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Scheduler.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Scheduler.Win.v16.1.dll
+	DevExpress.ExpressApp.Security.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v15.2.dll
+	DevExpress.ExpressApp.Security.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v16.1.dll
+	DevExpress.ExpressApp.Security.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.Xpo.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.Xpo.v16.1.dll
+	DevExpress.ExpressApp.StateMachine.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.StateMachine.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.StateMachine.v16.1.dll
+	DevExpress.ExpressApp.TreeListEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.v16.1.dll
+	DevExpress.ExpressApp.TreeListEditors.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.TreeListEditors.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.TreeListEditors.Win.v16.1.dll
+	DevExpress.ExpressApp.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.ExpressApp.v15.2.dll
+	DevExpress.ExpressApp.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.v16.1.dll
+	DevExpress.ExpressApp.Validation.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.v16.1.dll
+	DevExpress.ExpressApp.Validation.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.Win.v16.1.dll
+	DevExpress.ExpressApp.ViewVariantsModule.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.ViewVariantsModule.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.ViewVariantsModule.v16.1.dll
+	DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Win.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Win.v16.1.dll
+	DevExpress.ExpressApp.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.ExpressApp.Xpo.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.ExpressApp.Xpo.v16.1.dll
+	DevExpress.Mvvm.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Mvvm.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Mvvm.v16.1.dll
+	DevExpress.Office.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Office.v16.1.Core\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Office.v16.1.Core.dll
+	DevExpress.Persistent.Base.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Persistent.Base.v15.2.dll
+	DevExpress.Persistent.Base.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.Base.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Persistent.Base.v16.1.dll
+	DevExpress.Persistent.BaseImpl.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v15.2.dll
+	DevExpress.Persistent.BaseImpl.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Persistent.BaseImpl.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Persistent.BaseImpl.v16.1.dll
+	DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Printing.v16.1.Core\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Printing.v16.1.Core.dll
+	DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Utils.v16.1.dll
+	DevExpress.Utils.v16.1.UI, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Utils.v16.1.UI\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Utils.v16.1.UI.dll
+	DevExpress.Xpo.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v15.2\v4.0_15.2.9.0__b88d1754d700e49a\DevExpress.Xpo.v15.2.dll
+	DevExpress.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.Xpo.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.Xpo.v16.1.dll
+	DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraBars.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraBars.v16.1.dll
+	DevExpress.XtraCharts.v16.1.Wizard, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraCharts.v16.1.Wizard\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraCharts.v16.1.Wizard.dll
+	DevExpress.XtraDiagram.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraDiagram.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraDiagram.v16.1.dll
+	DevExpress.XtraEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraEditors.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraEditors.v16.1.dll
+	DevExpress.XtraGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraGrid.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraGrid.v16.1.dll
+	DevExpress.XtraLayout.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraLayout.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraLayout.v16.1.dll
+	DevExpress.XtraNavBar.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraNavBar.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraNavBar.v16.1.dll
+	DevExpress.XtraPrinting.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraPrinting.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraPrinting.v16.1.dll
+	DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraReports.v16.1.dll
+	DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraReports.v16.1.Extensions\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraReports.v16.1.Extensions.dll
+	DevExpress.XtraScheduler.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraScheduler.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraScheduler.v16.1.dll
+	DevExpress.XtraScheduler.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraScheduler.v16.1.Core\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraScheduler.v16.1.Core.dll
+	DevExpress.XtraTreeList.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraTreeList.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraTreeList.v16.1.dll
+	DevExpress.XtraVerticalGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\DevExpress.XtraVerticalGrid.v16.1\v4.0_16.1.4.0__b88d1754d700e49a\DevExpress.XtraVerticalGrid.v16.1.dll
+	ICSharpCode.AvalonEdit, Version=5.0.3.0, Culture=neutral, PublicKeyToken=9cc39be672370310, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\ICSharpCode.AvalonEdit.dll
+	Microsoft.CodeAnalysis, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Microsoft.CodeAnalysis.dll
+	Microsoft.GeneratedCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=InMemory Module
+	Microsoft.VisualStudio.Debugger.Runtime, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll
+	Microsoft.VisualStudio.HostingProcess.Utilities, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll
+	Microsoft.VisualStudio.HostingProcess.Utilities.Sync, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll
+	Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\assembly\GAC\Microsoft.VisualStudio.OLE.Interop\7.1.40304.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.OLE.Interop.dll
+	mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+	mscorlib.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\mscorlib.resources.dll
+	PresentationCore, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\PresentationCore\v4.0_4.0.0.0__31bf3856ad364e35\PresentationCore.dll
+	PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\PresentationFramework\v4.0_4.0.0.0__31bf3856ad364e35\PresentationFramework.dll
+	RuntimeModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=
+	RuntimeModule, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\Runtime\BusinessObject\RuntimeBusinessObject.dll
+	System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll
+	System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ComponentModel.DataAnnotations\v4.0_4.0.0.0__31bf3856ad364e35\System.ComponentModel.DataAnnotations.dll
+	System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll
+	System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll
+	System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll
+	System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Data.Linq.dll
+	System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll
+	System.Deployment.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment.resources\v4.0_4.0.0.0_zh-Hans_b03f5f7f11d50a3a\System.Deployment.resources.dll
+	System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Design\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Design.dll
+	System.Diagnostics.Debug, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Diagnostics.Debug\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Diagnostics.Debug.dll
+	System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
+	System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.EnterpriseServices\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.EnterpriseServices.dll
+	System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll
+	System.resources, Version=4.0.0.0, Culture=zh-Hans, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_zh-Hans_b77a5c561934e089\System.resources.dll
+	System.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Runtime.dll
+	System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll
+	System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll
+	System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll
+	System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll
+	System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Web.Services\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll
+	System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
+	System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll
+	System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll
+	UIAutomationClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\UIAutomationClient\v4.0_4.0.0.0__31bf3856ad364e35\UIAutomationClient.dll
+	vshost32, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\dev\IMatrix.ERP\CIIP\CIIP.Win\bin\Debug\CIIP.Win.vshost.exe
+	WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Location=C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\WindowsBase\v4.0_4.0.0.0__31bf3856ad364e35\WindowsBase.dll
+	WpfXamlDiagnosticsTap, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Users\chen\AppData\Local\Temp\VisualStudio.XamlDiagnostics.17644\WpfXamlDiagnosticsTap.dll
+================================================================================
+
+29.07.16 16:54:35.531	Application startup done
+=========================
+29.07.16 16:54:35.532	Application running
+====================
+29.07.16 16:54:37.870	Window closing: 商信互联企业信息管理平台
+29.07.16 16:54:37.898	Window closed: 商信互联企业信息管理平台
+29.07.16 16:54:38.041	Save model changes
+===================
+29.07.16 16:54:39.106	Save model changes
+===================
+29.07.16 16:54:39.164	--------------------------------------------------------------------------------
+							Logoff completed
+
+29.07.16 16:54:39.167	Application stopping
+=====================

@@ -1,32 +1,19 @@
 ﻿using System;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using CIIP.Module.Controllers;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Model;
 using DevExpress.XtraDiagram;
-using DevExpress.XtraEditors.ViewInfo;
-using CIIP.Module.BusinessObjects.Flow;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.Diagram.Core;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Model.Core;
-using DevExpress.ExpressApp.Xpo;
 using DevExpress.Xpo;
-using DevExpress.XtraCharts;
-using CIIP.Module.BusinessObjects;
-using CIIP.Module.Controllers;
-using DevExpress.ExpressApp.Utils;
-using DevExpress.Persistent.Base;
-using DevExpress.XtraDiagram.Adorners;
 using DevExpress.Utils;
-using DevExpress.ExpressApp.Win;
 using DevExpress.Diagram.Core.Layout;
-using CIIP;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -279,8 +266,7 @@ namespace CIIP.Module.Win.Editors
             para.Application = Application;
             para.CreateShape = (x) =>
             {
-                var rst = new DiagramShapeEx(SDLDiagramShapes.Procedure, x.X, x.Y, x.Width,
-                    x.Height);
+                var rst = new DiagramShapeEx(SDLDiagramShapes.Procedure, x.X, x.Y, x.Width, x.Height);
                 rst.Image = x.GetImage();
                 _diagram.Items.Add(rst);
                 _diagram.SelectItem(rst);
@@ -367,7 +353,7 @@ namespace CIIP.Module.Win.Editors
             }
             if (Flow is IAutoLayout)
             {
-                _diagram.LayoutTreeDiagram(new TreeLayoutSettings(40.0, 40.0, Direction.Down, 20), SplitToConnectedComponentsMode.AllComponents);
+                _diagram.ApplyTreeLayout(new TreeLayoutSettings(40.0, 40.0, DevExpress.Diagram.Core.Direction.Down, 20), SplitToConnectedComponentsMode.AllComponents);
 
             }
         }
@@ -436,8 +422,8 @@ namespace CIIP.Module.Win.Editors
                     var fn = item.Tag as IFlowNode;
                     fn.X = (int)item.Position.X;
                     fn.Y = (int)item.Position.Y;
-                    fn.Width = item.Width;
-                    fn.Height = item.Height;
+                    fn.Width = (int)item.Width;
+                    fn.Height = (int)item.Height;
                 }
 
                 if (item.Tag is IFlowAction)

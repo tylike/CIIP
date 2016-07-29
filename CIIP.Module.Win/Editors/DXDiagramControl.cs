@@ -14,12 +14,6 @@ namespace CIIP.Module.Win.Editors
         public DXDiagramControl()
         {
             this.Items.ListChanged += Items_ListChanged;
-            
-        }
-
-        protected override DiagramController CreateDiagramController()
-        {
-            return new DiagramControllerEx(this);
         }
         
         protected override void OnSelectionChanged(DiagramSelectionChangedEventArgs e)
@@ -141,11 +135,6 @@ namespace CIIP.Module.Win.Editors
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-        }
-
-        protected override DiagramControlViewInfo CreateViewInfo()
-        {
-            return new DiagramControlViewInfoEx(this);
         }
     }
 }

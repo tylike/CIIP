@@ -68,135 +68,139 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CIIP.Icon\bin\Debug\CIIP.Icon.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.FileAttachment.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.FileAttachment.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Notifications.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Notifications.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Notifications.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Notifications.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Objects.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotChart.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotChart.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotGrid.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ReportsV2.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ReportsV2.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Scheduler.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Scheduler.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Scheduler.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Security.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.StateMachine.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Validation.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.Web.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Validation.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v15.2">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Printing.v15.2.Core">
+    <Reference Include="DevExpress.PivotGrid.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v16.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v15.2">
+    <Reference Include="DevExpress.Printing.v16.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v15.2">
+    <Reference Include="DevExpress.Data.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v15.2">
+    <Reference Include="DevExpress.ExpressApp.Images.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Web.v15.2">
-      <SpecificVersion>False</SpecificVersion>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v15.2">
+    <Reference Include="DevExpress.ExpressApp.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v15.2">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.Spreadsheet.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v15.2">
+    <Reference Include="DevExpress.ExpressApp.Web.v16.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxPivotGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxScheduler.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxSpellChecker.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxThemes.v15.2">
+    <Reference Include="DevExpress.Persistent.Base.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v15.2">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v16.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v16.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Office.v15.2.Core">
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v15.2.Core">
+    <Reference Include="DevExpress.Web.ASPxTreeList.v16.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v16.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.v15.2">
+    <Reference Include="DevExpress.RichEdit.v16.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v15.2">
+    <Reference Include="DevExpress.Web.v16.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Charts.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v15.2.Web, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Sparkline.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.CodeParser.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v15.2.Extensions, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v15.2.Web, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v15.2.Core, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v16.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v16.1.Web, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Extensions, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v16.1.Web, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -243,252 +247,89 @@
     <Content Include="Global.asax" />
     <Content Include="Images\Logo.png" />
     <Content Include="Login.aspx" />
-    <Content Include="ZH-Hans\DevExpress.Charts.Designer.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Dashboard.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Dashboard.v15.2.Web.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Dashboard.v15.2.Win.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Data.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.DataAccess.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.DataAccess.v15.2.UI.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.PivotChart.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Reports.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.Web.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Security.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Validation.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Web.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Win.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Map.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Office.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Pdf.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.PivotGrid.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Printing.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.RichEdit.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Snap.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Snap.v15.2.Extensions.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Snap.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Sparkline.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Spreadsheet.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Utils.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Utils.v15.2.UI.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxHtmlEditor.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxRichEdit.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxScheduler.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpellChecker.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpreadsheet.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxTreeList.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Charts.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Controls.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Core.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Docking.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.DocumentViewer.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Gauges.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Grid.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.LayoutControl.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.NavBar.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.PdfViewer.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Printing.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.PropertyGrid.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.ReportDesigner.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Ribbon.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.RichEdit.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Scheduler.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.SpellChecker.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Spreadsheet.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpo.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraBars.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraCharts.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraCharts.v15.2.Wizard.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraEditors.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraGauges.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraGauges.v15.2.Presets.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraGrid.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraLayout.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraNavBar.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraPdfViewer.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraPivotGrid.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraPrinting.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraReports.v15.2.Extensions.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraReports.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraReports.v15.2.Web.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v15.2.Core.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v15.2.Reporting.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraSpellChecker.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraSpreadsheet.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraTreeList.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraVerticalGrid.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraWizard.v15.2.resources.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="ZH-Hans\DevExpress.Charts.Designer.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Dashboard.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Dashboard.v16.1.Web.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Dashboard.v16.1.Win.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.DataAccess.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.DataAccess.v16.1.UI.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Diagram.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.PivotChart.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Reports.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.Web.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Security.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Validation.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Web.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Win.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Map.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.PivotGrid.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Snap.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Snap.v16.1.Extensions.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Snap.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Sparkline.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Spreadsheet.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Utils.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Utils.v16.1.UI.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxScheduler.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxTreeList.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Web.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Charts.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Controls.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Core.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Docking.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.DocumentViewer.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Gauges.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Grid.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.LayoutControl.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.NavBar.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.PdfViewer.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Printing.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.PropertyGrid.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.ReportDesigner.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Ribbon.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.RichEdit.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Scheduler.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.SpellChecker.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpf.Spreadsheet.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.Xpo.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraBars.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraCharts.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraCharts.v16.1.Wizard.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraEditors.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraGauges.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraGauges.v16.1.Presets.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraGrid.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraLayout.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraNavBar.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraPdfViewer.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraPivotGrid.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraPrinting.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraReports.v16.1.Extensions.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraReports.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraReports.v16.1.Web.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v16.1.Extensions.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.Core.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.Extensions.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraSpellChecker.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraSpreadsheet.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraTreeList.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraVerticalGrid.v16.1.resources.dll" />
+    <Content Include="ZH-Hans\DevExpress.XtraWizard.v16.1.resources.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Default.aspx.designer.cs">
