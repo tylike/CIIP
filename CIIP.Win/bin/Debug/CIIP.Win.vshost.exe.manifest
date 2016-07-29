@@ -4,7 +4,7 @@
   <description asmv2:iconFile="epr.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="CIIP.Win" version="1.0.6054.30415" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="CIIP.Win" version="1.0.6054.30629" language="neutral" processorArchitecture="msil" />
     <commandLine file="CIIP.Win.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -164,13 +164,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.Win.exe" size="935816">
-      <assemblyIdentity name="CIIP.Win" version="1.0.6054.30415" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="CIIP.Win" version="1.0.6054.30629" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F+ijIa9TLzN03LZEruaLTs7GHDcc+9SlUspQRuTzJwQ=</dsig:DigestValue>
+        <dsig:DigestValue>Yd1BmDrcBJrFaUjZ6aWw3TGs7prdJMXWN3CZDJGMjmY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -2691,742 +2691,751 @@
       <dsig:DigestValue>hDtFh9KoFLJX8NZrxswyBmO0fR40f/rAqnQjUDPPMpU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Charts.Designer.v15.2.resources.dll" size="54784">
+  <file name="ZH-Hans\DevExpress.Charts.Designer.v16.1.resources.dll" size="54784">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RIVwC486clFvVQ1atVnVS8uTGwai1xN3dfI5JdBG3SQ=</dsig:DigestValue>
+      <dsig:DigestValue>vtG75hBmD0w4uaxhmh55GfyuwS5ZMiwLQiagN/VFb94=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Dashboard.v15.2.Core.resources.dll" size="31232">
+  <file name="ZH-Hans\DevExpress.Dashboard.v16.1.Core.resources.dll" size="33280">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rSlCeo2O6tKXrMiJ/g1OV2gpTP1RiFJ84QjakEPUdbA=</dsig:DigestValue>
+      <dsig:DigestValue>x4mQNCnW3mbJ/SdDMKjpNgWiF9307K6rnqFM1OH7axc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Dashboard.v15.2.Web.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.Dashboard.v16.1.Web.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>APWAHWJRIhjfyyuQ9Hg9VYs7MhZd3Dh+ioTbiXg8FFg=</dsig:DigestValue>
+      <dsig:DigestValue>cDzTS14dfa0zsH8rLlMhS/ctD4T66D5gPJLfIos6/mQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Dashboard.v15.2.Win.resources.dll" size="135168">
+  <file name="ZH-Hans\DevExpress.Dashboard.v16.1.Win.resources.dll" size="167424">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pu9Rte6vfX9XbnbnR8hMwuvUsqkuhtQOOfouyF+xE1Y=</dsig:DigestValue>
+      <dsig:DigestValue>Qbce+7xIjpEUFNNeXHsnCqrRKXIs8+mL0JEydH+4hTw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Data.v15.2.resources.dll" size="165376">
+  <file name="ZH-Hans\DevExpress.Data.v16.1.resources.dll" size="168448">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Cd960WR8oWY1tkIILFj0hdxaai0UXrNKLcbMi6eWuDA=</dsig:DigestValue>
+      <dsig:DigestValue>fopmMvQGX2xC+XfKSXrrPOtYn+JcoUCCDq6KnVEX/Xc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.DataAccess.v15.2.resources.dll" size="8192">
+  <file name="ZH-Hans\DevExpress.DataAccess.v16.1.resources.dll" size="8704">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>m+EQ5IpItMrYKkdpIC+V2OpiZRHFFHzVmd/GcL+3BuY=</dsig:DigestValue>
+      <dsig:DigestValue>kJVZGCTJ83zuwHzptdYgDxA33JJOGjaPmXTRFCa6KJE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.DataAccess.v15.2.UI.resources.dll" size="14336">
+  <file name="ZH-Hans\DevExpress.DataAccess.v16.1.UI.resources.dll" size="14336">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2X1sCf4yJIox0WMF/N59fK3IA4z7k/WtosBJQys6BrM=</dsig:DigestValue>
+      <dsig:DigestValue>9UCqvCJRXkPH9TlNEWciw4F7If9LT9BPQQ429quKSFo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v15.2.resources.dll" size="6144">
+  <file name="ZH-Hans\DevExpress.Diagram.v16.1.Core.resources.dll" size="12800">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bCdwz6pctckz9m85s5BpyxFD76lYiCif0mFZNWGR9+A=</dsig:DigestValue>
+      <dsig:DigestValue>cipEZ/6mpXRSFRYVYodJdAYC8xpNRfXYEFsGJyQJKsg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.PivotChart.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources.dll" size="6144">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>j4JJwWlzPjszyfz/q425Ap7cEqWmWSXiodcD9APPwSw=</dsig:DigestValue>
+      <dsig:DigestValue>HAiArcJvqb8TXzMc0AJiZ8eIVzubyCAAdWG3SyMeQZg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Reports.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.ExpressApp.PivotChart.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>egnUdQmllzPITO0UG+RSuDyayxt4Mzvb9caK8yvJafw=</dsig:DigestValue>
+      <dsig:DigestValue>PZP2pIpv2laTuEUAS/63LcsKvMuWXVJDHLpTdK/pjX0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Scheduler.v15.2.resources.dll" size="4608">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Reports.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>JFoRR3dX3tiiMJkj60N403DUrElWFtYlj5Qo0Md/GR8=</dsig:DigestValue>
+      <dsig:DigestValue>IRmR6DVnkcWlP5RAChAaSjwvr6lo88ihePH3UlQdTrM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Scheduler.Web.v15.2.resources.dll" size="4608">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Scheduler.v16.1.resources.dll" size="4608">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gdXH2NKQEn6obHJppeyyqJBVyh1c2FIELG8d1bGaKMo=</dsig:DigestValue>
+      <dsig:DigestValue>MNgMJmLQbAx5a6DiPr48NcOEMdaPbieCQNxWL/yHFfA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Security.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Scheduler.Web.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>HuMmTSNDKTejkQFDowQOF/YQoO6oc3ggb5lPbf5AaKw=</dsig:DigestValue>
+      <dsig:DigestValue>RZbSEtgf53salXjQMxlKISz9bL82wPjFM0/8Qr6BaSk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.v15.2.resources.dll" size="23040">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Security.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>SfB9OlmENpyAoz7lylVNmpXdKobbvkkPnRDiP+wXD0k=</dsig:DigestValue>
+      <dsig:DigestValue>OE5ZDSJ5N0w7+Hujnd4beVVYHxHZE2FOqYO+tsATZko=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Validation.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.ExpressApp.v16.1.resources.dll" size="23552">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>z8YYTMEX38EhfYXD6NnoLGzt1OsMpMK8GvUA4ToeYSM=</dsig:DigestValue>
+      <dsig:DigestValue>KnsPj3Oh7mdJbI6SrwjXN00s9rPv2yaoOvQAZ21Wtoc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Web.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Validation.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>LzAw3z6YZLjzii/CgRCye6CGUAWPvke+9FIgpLraiqU=</dsig:DigestValue>
+      <dsig:DigestValue>jV6Fllg5DEgA4w18YXHW3+9wPqsGdlJAZ0gUkX0MkOU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.ExpressApp.Win.v15.2.resources.dll" size="26624">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Web.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>kfHrInYhy4+Yjg14LPHQidfuEL4NPZHrGZH0Bw7nnJI=</dsig:DigestValue>
+      <dsig:DigestValue>FElD/7gfHfNs+MItOCpGQzEOhq/9KYZPCnZz+RQXkRQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Map.v15.2.Core.resources.dll" size="5632">
+  <file name="ZH-Hans\DevExpress.ExpressApp.Win.v16.1.resources.dll" size="29184">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NqoUQ+xT7xObw+OJT8GN/U9afbqjJbHM2yLh4uu9Cz0=</dsig:DigestValue>
+      <dsig:DigestValue>Y2hzOvBpV0i0i5+yBvWwo0P9vqUzqro1lDeR8HlY1EI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Office.v15.2.Core.resources.dll" size="22016">
+  <file name="ZH-Hans\DevExpress.Map.v16.1.Core.resources.dll" size="6144">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Y2nJ44heEieyP54aU7MpZAzDXgXyFOhHe/Mybb3fu9Y=</dsig:DigestValue>
+      <dsig:DigestValue>QVuaEannQ5NlbZ2Oh3uKSIFIbVC0XuQl1v3+HRio2M4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Pdf.v15.2.Core.resources.dll" size="10752">
+  <file name="ZH-Hans\DevExpress.Office.v16.1.Core.resources.dll" size="22016">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>e1ZxxAH2JsnAxyUEsNiUTOivyvs2ZJmAO2RSrc5YtiY=</dsig:DigestValue>
+      <dsig:DigestValue>djE9zOKGUGtS5SWkpRAxYn9htN+cm05CEsDPY1v+krc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.PivotGrid.v15.2.Core.resources.dll" size="79872">
+  <file name="ZH-Hans\DevExpress.Pdf.v16.1.Core.resources.dll" size="11776">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>aW9tC71iwND+DN+AxPKzjCgCqm1E1uOQofAagZe4XQY=</dsig:DigestValue>
+      <dsig:DigestValue>K6wZYALdShJ9bP39q36crJ5glEEsUurpnxKE7C+e9QM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Printing.v15.2.Core.resources.dll" size="7168">
+  <file name="ZH-Hans\DevExpress.PivotGrid.v16.1.Core.resources.dll" size="79872">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6QLA8PuXpeeDTHxUvEzHif3I4ARBn+O7yWvFqdwgwDw=</dsig:DigestValue>
+      <dsig:DigestValue>Acm003oHKAj74CVxeFC8CjFRKPIANmkmlIoQ7Go0P20=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.RichEdit.v15.2.Core.resources.dll" size="172032">
+  <file name="ZH-Hans\DevExpress.Printing.v16.1.Core.resources.dll" size="7168">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>EvYwdT03TRKvxR0SyFU+K9GqzbJjIPAzUcC+E8Hj2VY=</dsig:DigestValue>
+      <dsig:DigestValue>jjSQ+Gm/gSuMvyxrNqbD+hC1U7+csKPvaTon2ldOPhY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Snap.v15.2.Core.resources.dll" size="31232">
+  <file name="ZH-Hans\DevExpress.RichEdit.v16.1.Core.resources.dll" size="173056">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WoLx2atkwD6EBCENGGylNPEUfEIn8tZgkjkdn3Mdpvs=</dsig:DigestValue>
+      <dsig:DigestValue>mCshvcf7BecN3vz6O19CMR8aCGVVRyzCHWCulb4cavc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Snap.v15.2.Extensions.resources.dll" size="16384">
+  <file name="ZH-Hans\DevExpress.Snap.v16.1.Core.resources.dll" size="31232">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bnu9zt1eBgYr2ffZ2LB22Ou0m0JzMXjvM35UlkqJYE0=</dsig:DigestValue>
+      <dsig:DigestValue>VkNg+Zs7cPi4dtYrDGKqs+1wKzI8JOVrgYKume55jmU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Snap.v15.2.resources.dll" size="4608">
+  <file name="ZH-Hans\DevExpress.Snap.v16.1.Extensions.resources.dll" size="16896">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>stYT/er57+7wpEwff04MWd1u8YBSCIeMXmPJJTKMNCc=</dsig:DigestValue>
+      <dsig:DigestValue>IiLRH3QmwTwdM62PLueLu8rMToaFRhoLvJ9yDx1Zm4c=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Sparkline.v15.2.Core.resources.dll" size="8192">
+  <file name="ZH-Hans\DevExpress.Snap.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>woujmbAUB0lGD9ULKgF5o7eD6MagnjbdZH4hbZTikIU=</dsig:DigestValue>
+      <dsig:DigestValue>H261Yi7oFaiAHuGiciftMfjcoA5tTP79Da5HDVzeF+w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Spreadsheet.v15.2.Core.resources.dll" size="596992">
+  <file name="ZH-Hans\DevExpress.Sparkline.v16.1.Core.resources.dll" size="8192">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lC5Uo2m1RPGjiqO69McMnoQ1x9dCUST5DNXQRaUiL2w=</dsig:DigestValue>
+      <dsig:DigestValue>WO2uVVCJLQRsYVWbqmrBIhM8incO3SzIp72Ni2H/q0o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Utils.v15.2.resources.dll" size="20992">
+  <file name="ZH-Hans\DevExpress.Spreadsheet.v16.1.Core.resources.dll" size="596992">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NcyxqeASkrmt2JEYV5/WhjOjnFRSh1EzLBtpndVrH8s=</dsig:DigestValue>
+      <dsig:DigestValue>rLQd4QjGu6YoGlkBUBA+FqbpQp2iCeSubfREv2LjetU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Utils.v15.2.UI.resources.dll" size="11776">
+  <file name="ZH-Hans\DevExpress.Utils.v16.1.resources.dll" size="21504">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>62ngnIZQ+4rz3iJh9iy4zYpDBodqXefzwdkdroekuKE=</dsig:DigestValue>
+      <dsig:DigestValue>9V4gmVkyjDeuD1EiPAvt4sh+QX3UbbemKGuQNI6UjG4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.ASPxHtmlEditor.v15.2.resources.dll" size="34304">
+  <file name="ZH-Hans\DevExpress.Utils.v16.1.UI.resources.dll" size="12288">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>D5yFgi/smGMGUcGVc9uOZlzMBxNAla/iex64eSuBJW0=</dsig:DigestValue>
+      <dsig:DigestValue>HUmovuOOOpOd/rjr1piQHRWyaQ+XWgco1B8ben0kCTg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.ASPxRichEdit.v15.2.resources.dll" size="11776">
+  <file name="ZH-Hans\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll" size="34816">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>C9F8ySY17MnZfGf6jyGvhjkrRDw0S3MIeApgDdLbksk=</dsig:DigestValue>
+      <dsig:DigestValue>zj79TZ90KTyySh/xd9lNiSQ0oBHbNfI+sTj/5OHucyg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.ASPxScheduler.v15.2.resources.dll" size="10752">
+  <file name="ZH-Hans\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll" size="16384">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>3xl8iMnwIZiyT9w6QjMMjdcBaS6uAXwv98T5YcLdv74=</dsig:DigestValue>
+      <dsig:DigestValue>yHQsEqX8KVDDSCIZ1JYkL0iYZhqOPVRYBmPHKerZ1fs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.ASPxSpellChecker.v15.2.resources.dll" size="6656">
+  <file name="ZH-Hans\DevExpress.Web.ASPxScheduler.v16.1.resources.dll" size="10752">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1kAOrzD6xqQjhgptogVKQnDiYLEALwS5KPt79gQ56/E=</dsig:DigestValue>
+      <dsig:DigestValue>pCwMBL/vjRS3sivYe9BAY9tgkz9aw4lWeqdC0UWwCuo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.ASPxSpreadsheet.v15.2.resources.dll" size="9216">
+  <file name="ZH-Hans\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll" size="7168">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>/GqQc8MaPaOfrTVJjshyRzUXDh+/9i6wjHbLjg7zzFk=</dsig:DigestValue>
+      <dsig:DigestValue>p1lbnm3/bf6tvCO5RbAX+tPmJ9nakTlJ5Fn+UDq2S5g=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.ASPxTreeList.v15.2.resources.dll" size="5632">
+  <file name="ZH-Hans\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll" size="11776">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GIjAWbVjnKhtFdrtw269zEAhbk/VriFyYG9QpKZAXzo=</dsig:DigestValue>
+      <dsig:DigestValue>LIAzXYO+ko7sC9mI+1fJOLNcAFvPtHFQoHFKqUZEDy4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Web.v15.2.resources.dll" size="33792">
+  <file name="ZH-Hans\DevExpress.Web.ASPxTreeList.v16.1.resources.dll" size="5632">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>p2A2OMlF5JlJDi/8siHkEwDI19TuDARoNWGjZMr0QCo=</dsig:DigestValue>
+      <dsig:DigestValue>JPJJUguKdnRL3ewbynDyT51MDWanWKD5wPptgEDggFY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Charts.v15.2.resources.dll" size="7168">
+  <file name="ZH-Hans\DevExpress.Web.v16.1.resources.dll" size="35840">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>d7Tw3tShDXyQzC7YP0LJi71oF76r2/bzWmbea00pkiI=</dsig:DigestValue>
+      <dsig:DigestValue>wXisfqARKec4Bb3A7hsnVQtTNya40sIfdFv7X77jz08=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Controls.v15.2.resources.dll" size="6144">
+  <file name="ZH-Hans\DevExpress.Xpf.Charts.v16.1.resources.dll" size="7168">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>zNbeL5VgCTPAK6jR63BqBII6/SnK5mK2LfEMJRJ97+U=</dsig:DigestValue>
+      <dsig:DigestValue>4B/rP80yjul+U+OH17fN3aWn+vjFbU4p8ml23ghAUg8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Core.v15.2.resources.dll" size="82944">
+  <file name="ZH-Hans\DevExpress.Xpf.Controls.v16.1.resources.dll" size="4608">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>LD8OZmgV0Ux7BkKkp3QoEchvq5cfZws8qwmbXon5lAY=</dsig:DigestValue>
+      <dsig:DigestValue>jKvNbKtzf1mbraAlcSWdou4Y7CfN+H35OUK9JcJ4zO4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Docking.v15.2.resources.dll" size="17920">
+  <file name="ZH-Hans\DevExpress.Xpf.Core.v16.1.resources.dll" size="87040">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1AoGsaLDJcNsk+0kMRS2Xcf1jcpWae5XUDMf+mPAatQ=</dsig:DigestValue>
+      <dsig:DigestValue>WZFgcYtofMS0Y6cZjQpv8e2bCNSPCBMkJKfPrDaG7Ss=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.DocumentViewer.v15.2.Core.resources.dll" size="13824">
+  <file name="ZH-Hans\DevExpress.Xpf.Docking.v16.1.resources.dll" size="17920">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>/f6dMr2GG7hoz6OdpyeEdhfsK0XdjjFLHaiUdBiJ03A=</dsig:DigestValue>
+      <dsig:DigestValue>3Wqds3dOC8CpFi2wGH7TFqCTViE4Rz4kU9hOJuSl4DI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Gauges.v15.2.resources.dll" size="6144">
+  <file name="ZH-Hans\DevExpress.Xpf.DocumentViewer.v16.1.Core.resources.dll" size="12800">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>lgFgrEmiv5BGZiZ69+wEICsVkdvCFt/Iqitvst9ESZk=</dsig:DigestValue>
+      <dsig:DigestValue>BqbOjpixCZI4v1s4aADbNzFboKh2QlvUgm+bzTd5XYE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Grid.v15.2.Core.resources.dll" size="36864">
+  <file name="ZH-Hans\DevExpress.Xpf.Gauges.v16.1.resources.dll" size="6144">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R2Py+w7h7BIQysT1IUq+2mhCf1VNyOzNAwgNvd7xbxg=</dsig:DigestValue>
+      <dsig:DigestValue>7TfFa8MB5kaFSgDhQedkM5lG0PYrn+gV0WCXeZDGLFY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.LayoutControl.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.Xpf.Grid.v16.1.Core.resources.dll" size="36864">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>aJuchi+cjMoPBNdXxPVnpwf+8m7VHV5QX+bs7aS8zvE=</dsig:DigestValue>
+      <dsig:DigestValue>kQskRan9WeK2XposYKM1Sk2rREHGkNUbtXZ/vPNah24=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.NavBar.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.Xpf.LayoutControl.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>gHBdF/+T6xPpYClzYYfBICAlvp0EGX6t56wWRIvAUPw=</dsig:DigestValue>
+      <dsig:DigestValue>XgdO2blov+66WFS8vMTUyRBajSKi3/GAUKN33njMB2o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.PdfViewer.v15.2.resources.dll" size="12288">
+  <file name="ZH-Hans\DevExpress.Xpf.NavBar.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>KVKhm4lsQ5fs1HWC3UpnGmporvcVX9yPGc0lKzBTmc0=</dsig:DigestValue>
+      <dsig:DigestValue>xL0bPQTR/LH3mqNPbcPxCfqvdTIypZ7rEX8pBtekTGg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Printing.v15.2.resources.dll" size="36352">
+  <file name="ZH-Hans\DevExpress.Xpf.PdfViewer.v16.1.resources.dll" size="12288">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bh1MWm3pEQo1ikcTYYNVbuYRuCQEcsAuZihi4HGkm0k=</dsig:DigestValue>
+      <dsig:DigestValue>e28hB32WhSZWRP6arO1p8oBV/HQWga/o9dvwkuQe26s=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.PropertyGrid.v15.2.resources.dll" size="4608">
+  <file name="ZH-Hans\DevExpress.Xpf.Printing.v16.1.resources.dll" size="37376">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>yEsplELCk3TDFil6sQwTawutGbArEA8dUHyEReje6yM=</dsig:DigestValue>
+      <dsig:DigestValue>t+T2r1yvQyUBLE5g7L2AcVu45zB8pFmcb4IY6m66ntk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.ReportDesigner.v15.2.resources.dll" size="30720">
+  <file name="ZH-Hans\DevExpress.Xpf.PropertyGrid.v16.1.resources.dll" size="4608">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NQpRS2wZuXJnolAmCl0xjipbRf/xVq8AU4tTFtIUDgI=</dsig:DigestValue>
+      <dsig:DigestValue>k2yHg+55NsFtDSMb6PPtz8bXga4c4DdHUfES0NFCLzo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Ribbon.v15.2.resources.dll" size="12288">
+  <file name="ZH-Hans\DevExpress.Xpf.ReportDesigner.v16.1.resources.dll" size="30720">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sbbNod9xo5yI5+yey0Ug52K3G/VnPa0HVtHvZ/bNaYI=</dsig:DigestValue>
+      <dsig:DigestValue>ViD/O0Qo8qEqE9FaeAMUS/qgHZo/zgssGZmwh6+Qjaw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.RichEdit.v15.2.resources.dll" size="53248">
+  <file name="ZH-Hans\DevExpress.Xpf.Ribbon.v16.1.resources.dll" size="12288">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>X3jsqSCKMzqr+KiW+hGa76BBKS2T3dTAi1aIxvavLqk=</dsig:DigestValue>
+      <dsig:DigestValue>ERs/aploT6nBqbW/g4oZaJDoJq+0fDHNHRpFVurZnhU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Scheduler.v15.2.resources.dll" size="14848">
+  <file name="ZH-Hans\DevExpress.Xpf.RichEdit.v16.1.resources.dll" size="53248">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>nlsRzjKpAF30aNvR81VNlcQlUQw0efyhNuzqogydY5w=</dsig:DigestValue>
+      <dsig:DigestValue>v3asX5cgiEjPaF8F7lZpakpDIi/4Mv6wQraij60Gl78=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.SpellChecker.v15.2.resources.dll" size="10240">
+  <file name="ZH-Hans\DevExpress.Xpf.Scheduler.v16.1.resources.dll" size="15360">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>m0dcjg/e5U814Fk1u4SbCXDWX9QJjruZ732Pr4TRv8g=</dsig:DigestValue>
+      <dsig:DigestValue>Oz0cTNi22pCzXsKuWNILFmX6l6m7UuNaUYrYkVmObj0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpf.Spreadsheet.v15.2.resources.dll" size="14848">
+  <file name="ZH-Hans\DevExpress.Xpf.SpellChecker.v16.1.resources.dll" size="10240">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>51z+aoaKDIADKNsWk/9cAozY2hWLC6MLlkDc8orJ/DU=</dsig:DigestValue>
+      <dsig:DigestValue>wFRUBlOcH8L+jLPxZ1RVHgI3EKorclPHETvWuMt3Vrw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.Xpo.v15.2.resources.dll" size="35840">
+  <file name="ZH-Hans\DevExpress.Xpf.Spreadsheet.v16.1.resources.dll" size="15360">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>rMx5z1UBNAYZR66sXvsptTMeKpSdN7u+ad95R+GH+ZM=</dsig:DigestValue>
+      <dsig:DigestValue>wTHaEmhW+0MLCLNz3cg59uZyxN3iUVb5lBY6MuXfp7w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraBars.v15.2.resources.dll" size="28672">
+  <file name="ZH-Hans\DevExpress.Xpo.v16.1.resources.dll" size="38400">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>p+Fb26hHEvuLzjPxLYFiVypyzTKUFw821/2eLzSi8mY=</dsig:DigestValue>
+      <dsig:DigestValue>aT1ORqCP+UfeCRdJ8ug3tFFMlIZ5dmzRW4EGRIw3q9I=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraCharts.v15.2.resources.dll" size="246784">
+  <file name="ZH-Hans\DevExpress.XtraBars.v16.1.resources.dll" size="30208">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RqaTisi/qAjX8zceH/snzcVWH6TuolxzOvH2ipVVqeE=</dsig:DigestValue>
+      <dsig:DigestValue>lyu1u/cBLVhb1I1vKukdtr2q9ytUWoy7TUDw6TeAC5Y=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraCharts.v15.2.Wizard.resources.dll" size="165888">
+  <file name="ZH-Hans\DevExpress.XtraCharts.v16.1.resources.dll" size="240128">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ccLJUyLkraa1WirLTs23oz9xiLF8V7F0MyjWYaXghjs=</dsig:DigestValue>
+      <dsig:DigestValue>dWGwHOlrzJ/EdAW3AmN68CEYp39vKW7z0Grvo1p+oSk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraEditors.v15.2.resources.dll" size="66048">
+  <file name="ZH-Hans\DevExpress.XtraCharts.v16.1.Wizard.resources.dll" size="162816">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dxy+CFaB9gLlaV51gWO0PUnO7iwlCBfT8CslqYmpFQo=</dsig:DigestValue>
+      <dsig:DigestValue>jF+4MpME4RNnYGxgs27ieB3tAKh0N9G0umFsphZ2eN0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraGauges.v15.2.Core.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.XtraEditors.v16.1.resources.dll" size="68096">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>KhZJlNp3UMATorPtkk7N49QnJNiB9H8db7rSG8b3PsI=</dsig:DigestValue>
+      <dsig:DigestValue>Nfizv/CWgbIDSRQy+2YBnoIZxc8jcx5srpTjhxC3zE0=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraGauges.v15.2.Presets.resources.dll" size="11264">
+  <file name="ZH-Hans\DevExpress.XtraGauges.v16.1.Core.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>J4VrWhd52Y6aCWZ10707ewbd+iobDXy5XqcyVa9CkMs=</dsig:DigestValue>
+      <dsig:DigestValue>hU2OyBDyW6umfZpG0wS1zm1yvM4A04SMtdDAKIiTkQg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraGrid.v15.2.resources.dll" size="78336">
+  <file name="ZH-Hans\DevExpress.XtraGauges.v16.1.Presets.resources.dll" size="11264">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>7Fs/H5OMCaxvg1uZY7QoxZ2rYrbfxcx9jrNOPs2EY6o=</dsig:DigestValue>
+      <dsig:DigestValue>c+JqdEzsX3OXEMPu9yoILduWLzwGIVsQlQ/tGZJ1lg8=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraLayout.v15.2.resources.dll" size="10240">
+  <file name="ZH-Hans\DevExpress.XtraGrid.v16.1.resources.dll" size="78336">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>aUu0qIoeofZaYpG+auVX9m/Bumg2CfzV4+vV0fJELLY=</dsig:DigestValue>
+      <dsig:DigestValue>yoqHRPv37RtuzAwSv9WpwpvpJTLyRmSIDSLBkMVax3A=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraNavBar.v15.2.resources.dll" size="5632">
+  <file name="ZH-Hans\DevExpress.XtraLayout.v16.1.resources.dll" size="10752">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>dSYVwAnuc+SHTzCI76R8TlF9zv1WBZWjZJ7aWWdEARU=</dsig:DigestValue>
+      <dsig:DigestValue>68Le4hwr/NM8bj7zXv5iS5u6Q8khpzCXeWaCur+3VKo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraPdfViewer.v15.2.resources.dll" size="19456">
+  <file name="ZH-Hans\DevExpress.XtraNavBar.v16.1.resources.dll" size="5632">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>FnqYUG7RmBnvpaxCcGpBjlIGS0Fkz12LE1f0jyPsDAg=</dsig:DigestValue>
+      <dsig:DigestValue>iHEh51FpMKzLbareOsf9f0G0sUWoZdnNYRyOwp5GzIM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraPivotGrid.v15.2.resources.dll" size="5120">
+  <file name="ZH-Hans\DevExpress.XtraPdfViewer.v16.1.resources.dll" size="18944">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>w8Dg6zmuRZZLz+CDgLRgnydPu72pqZ68oWJrUELvCGQ=</dsig:DigestValue>
+      <dsig:DigestValue>2YgQfB0wHv++YxeMkPUrPpbU1vSXJNC2nH2dbzzHLNE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraPrinting.v15.2.resources.dll" size="15360">
+  <file name="ZH-Hans\DevExpress.XtraPivotGrid.v16.1.resources.dll" size="5120">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>w3AeqtPmYoxi+AjXjivbr02gr//Dq0tqFfIny/LZGHs=</dsig:DigestValue>
+      <dsig:DigestValue>iClTnWSiyz4iVtaVhyP54BRpF9FwikGHMVcvrhW4fTY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraReports.v15.2.Extensions.resources.dll" size="139264">
+  <file name="ZH-Hans\DevExpress.XtraPrinting.v16.1.resources.dll" size="15360">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tCt6TYexE5p1xEEZjasiSBQxYTzi4pejoNmjmpqM1Z4=</dsig:DigestValue>
+      <dsig:DigestValue>jymF6gRUxYrlKd1ipI2hFsO7SwF8U0FKQAXmamFhelY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraReports.v15.2.resources.dll" size="143872">
+  <file name="ZH-Hans\DevExpress.XtraReports.v16.1.Extensions.resources.dll" size="143360">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VF2SE4CK/gQubYdPXq3odtJDnyJXKTilynyDkYIPBFk=</dsig:DigestValue>
+      <dsig:DigestValue>eYM3wS1zE03H24SMK33I1x80UL+pukcGMn/fhUNvlYg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraReports.v15.2.Web.resources.dll" size="16384">
+  <file name="ZH-Hans\DevExpress.XtraReports.v16.1.resources.dll" size="144384">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NE3YhoWSk/81ct3q0SV++YvGFb2liDG2l9AAlF64QGE=</dsig:DigestValue>
+      <dsig:DigestValue>xlhmZ85qREhGhBZsmj/yUopgpvFoO3s6CfmFU5Na0uw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraRichEdit.v15.2.Extensions.resources.dll" size="10240">
+  <file name="ZH-Hans\DevExpress.XtraReports.v16.1.Web.resources.dll" size="16384">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pX8MnsbV6Ki6V6Dufy9wT5j/NkEXOPpa6rNgHTyKmzM=</dsig:DigestValue>
+      <dsig:DigestValue>OYNtW6XfZ+CHvhcb8ddsq65E0d/eXh9aesHAY60wFw4=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraRichEdit.v15.2.resources.dll" size="54272">
+  <file name="ZH-Hans\DevExpress.XtraRichEdit.v16.1.Extensions.resources.dll" size="10240">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>a/YoBHI4W6izLFwTIIyoxt98Q1l+nUI0yuf/TITH1DI=</dsig:DigestValue>
+      <dsig:DigestValue>p+7nJtwSbmqc3TnY08Pg0dnvRYwO+aYpC1xiq9OvFYc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraScheduler.v15.2.Core.resources.dll" size="50688">
+  <file name="ZH-Hans\DevExpress.XtraRichEdit.v16.1.resources.dll" size="55296">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>DTM2blk9h7jdReIgN7o6VrWu/QH9KOwEfAXV4M6wFmU=</dsig:DigestValue>
+      <dsig:DigestValue>tRU7iW/rp8qkogiiCZJRsmUjFpniGtRC8CxLmtlcPmc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraScheduler.v15.2.Extensions.resources.dll" size="54272">
+  <file name="ZH-Hans\DevExpress.XtraScheduler.v16.1.Core.resources.dll" size="50688">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uUGPMB3jXiJRs3gAh7aFj5aw/Ugvo45BlN8mtNsXPF4=</dsig:DigestValue>
+      <dsig:DigestValue>mu28jxABhLwH0NVPBpP0/FZa8DAgkPWl4tw+0ei0fHc=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraScheduler.v15.2.Reporting.resources.dll" size="6656">
+  <file name="ZH-Hans\DevExpress.XtraScheduler.v16.1.Extensions.resources.dll" size="54272">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>8EJhw5mtocu7bNwot/GMOF3eNbzd4vaqR4vRWTQN4IQ=</dsig:DigestValue>
+      <dsig:DigestValue>OEFj3NA38097L5x2CyFwe9ctsJRhTSdIrDbyMGdr1Bo=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraScheduler.v15.2.resources.dll" size="79360">
+  <file name="ZH-Hans\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll" size="6656">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>3AAkkVpQn4L8jnd4ae26rVOlbpC7kvSxy0Q0EWu4ads=</dsig:DigestValue>
+      <dsig:DigestValue>waEHYUdPwQ4wY2xxMTDHkLjNUYoJDoZfcwlkM88FSDQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraSpellChecker.v15.2.resources.dll" size="12288">
+  <file name="ZH-Hans\DevExpress.XtraScheduler.v16.1.resources.dll" size="81408">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>UiwaQ6x2dNAisBVu/giGeu/uJwSzaXnyZ28Faokpb60=</dsig:DigestValue>
+      <dsig:DigestValue>023oWL/R5pWV3qk622OlKIsGKNjnS7dE42HBEnWtO6k=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraSpreadsheet.v15.2.resources.dll" size="16384">
+  <file name="ZH-Hans\DevExpress.XtraSpellChecker.v16.1.resources.dll" size="12288">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>zlG70kKMU2ttw+oqZJ05pM5YZbCGrSAqV6N+2nvuu/U=</dsig:DigestValue>
+      <dsig:DigestValue>rYfzJ3uNe+r62bKWJmgR3UzFAIb8RQyg2o/t936b84o=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraTreeList.v15.2.resources.dll" size="36864">
+  <file name="ZH-Hans\DevExpress.XtraSpreadsheet.v16.1.resources.dll" size="15872">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mbhA1nBwAL731Lj/GBXMt3mua4xn9zuX/N+W067gOm4=</dsig:DigestValue>
+      <dsig:DigestValue>vVsObM2UDyxipg+PTaMJbMV0Wp+X0E/3EaV2zHtS7uM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraVerticalGrid.v15.2.resources.dll" size="5632">
+  <file name="ZH-Hans\DevExpress.XtraTreeList.v16.1.resources.dll" size="36864">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>NZl2bIzngV96duifvbqesh26cctrrF5L3+EJADsnABI=</dsig:DigestValue>
+      <dsig:DigestValue>zG0ay++vXNw3mmqiheAyA1L1JtXbvv0XXDpDTEompfM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ZH-Hans\DevExpress.XtraWizard.v15.2.resources.dll" size="5632">
+  <file name="ZH-Hans\DevExpress.XtraVerticalGrid.v16.1.resources.dll" size="6144">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>G4OlIVz3rS8OIVYTHVj1fBXXPQ2oZPpEH6Jremf9AJ8=</dsig:DigestValue>
+      <dsig:DigestValue>3KadT72DBVNmyrzYlT+hWb3Inufc8Wv2MdqZuGwIQYM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ZH-Hans\DevExpress.XtraWizard.v16.1.resources.dll" size="5632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ChppSGXK/9BryMfVybVb8MSPk4O3VjkT+vgJIhZPkcY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="ZH-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll" size="185608">
