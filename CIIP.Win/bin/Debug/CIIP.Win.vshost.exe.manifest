@@ -4,7 +4,7 @@
   <description asmv2:iconFile="epr.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="CIIP.Win" version="1.0.6115.29777" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="CIIP.Win" version="1.0.6115.30158" language="neutral" processorArchitecture="msil" />
     <commandLine file="CIIP.Win.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,25 +44,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Admiral.ImportData.dll" size="38912">
-      <assemblyIdentity name="Admiral.ImportData" version="1.0.6054.28650" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Admiral.ImportData" version="1.0.6115.30010" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>etKzDIiVta9s4XXs4yiB4rQixwCw46758PRhS0kOx2w=</dsig:DigestValue>
+        <dsig:DigestValue>T3+FmekL3Ss95JaznlWgw8iabjWrDoi3vXwRRcK0VvQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Admiral.ImportData.Win.dll" size="271872">
-      <assemblyIdentity name="Admiral.ImportData.Win" version="1.0.6054.28654" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Admiral.ImportData.Win" version="1.0.6115.30010" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BerZVeEUIFJdBlfomV6BijlSPbjU/fK6f9ASqo2iZEA=</dsig:DigestValue>
+        <dsig:DigestValue>SsTst+fmIHdB/818o67dBZzGtbB441dk5xE3xFkBfAo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -146,7 +146,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Pd1t7O7rV/TRjnwk+L5/VsGR1iTJFMBdnfQ+lB/80FA=</dsig:DigestValue>
+        <dsig:DigestValue>x1lm8VRAYagj38kG2Bm5Y9KqSixlYHJ5vqZFfiPHqI8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -158,19 +158,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>TOLGbR0MMhtNBxlrrKHyX6wJQU1dlIgww4OdRUQzYhA=</dsig:DigestValue>
+        <dsig:DigestValue>1v6xifYcyFKq5rj4PH/4Ze7T1yevoopaqTAqYUiElis=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CIIP.Win.exe" size="935816">
-      <assemblyIdentity name="CIIP.Win" version="1.0.6115.29777" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="CIIP.Win" version="1.0.6115.30158" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>5UimnfU4uC+PKXN9yeYkaFGPWdxpjJuW59KN0nbvdfo=</dsig:DigestValue>
+        <dsig:DigestValue>0GgkU/OIPprieYV+U1UYjUlkugSC/eHtaBY76/MJt6g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
