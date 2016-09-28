@@ -315,7 +315,7 @@
     <value>ribbonStatusBar</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonStatusBar, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonStatusBar.Parent" xml:space="preserve">
     <value>$this</value>
@@ -327,7 +327,7 @@
     <value>ribbonControl</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Ribbon.XafRibbonControlV2, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -370,7 +370,7 @@
     <value>viewSitePanel</value>
   </data>
   <data name="&gt;&gt;viewSitePanel.Type" xml:space="preserve">
-    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraEditors.PanelControl, DevExpress.Utils.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;viewSitePanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -397,7 +397,7 @@
     <value>navigation</value>
   </data>
   <data name="&gt;&gt;navigation.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.ActionContainers.NavigationActionContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.ActionContainers.NavigationActionContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;navigation.Parent" xml:space="preserve">
     <value>dockPanelNavigation_Container</value>
@@ -424,7 +424,7 @@
     <value>dockPanelNavigation_Container</value>
   </data>
   <data name="&gt;&gt;dockPanelNavigation_Container.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;dockPanelNavigation_Container.Parent" xml:space="preserve">
     <value>dockPanelNavigation</value>
@@ -448,7 +448,7 @@
     <value>dockPanelNavigation</value>
   </data>
   <data name="&gt;&gt;dockPanelNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;dockPanelNavigation.Parent" xml:space="preserve">
     <value>$this</value>
@@ -472,7 +472,7 @@
     <value>dockPanel1_Container</value>
   </data>
   <data name="&gt;&gt;dockPanel1_Container.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking.ControlContainer, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;dockPanel1_Container.Parent" xml:space="preserve">
     <value>SearchPanel</value>
@@ -496,7 +496,7 @@
     <value>SearchPanel</value>
   </data>
   <data name="&gt;&gt;SearchPanel.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking.DockPanel, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;SearchPanel.Parent" xml:space="preserve">
     <value>$this</value>
@@ -517,583 +517,583 @@
     <value>barActionContainerViewsHistoryNavigation</value>
   </data>
   <data name="&gt;&gt;barActionContainerViewsHistoryNavigation.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerViewsHistoryNavigation.Name" xml:space="preserve">
     <value>barContainerViewsHistoryNavigation</value>
   </data>
   <data name="&gt;&gt;barContainerViewsHistoryNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerObjectsCreation.Name" xml:space="preserve">
     <value>barActionContainerObjectsCreation</value>
   </data>
   <data name="&gt;&gt;barActionContainerObjectsCreation.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerObjectsCreation.Name" xml:space="preserve">
     <value>barContainerObjectsCreation</value>
   </data>
   <data name="&gt;&gt;barContainerObjectsCreation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerFile.Name" xml:space="preserve">
     <value>barActionContainerFile</value>
   </data>
   <data name="&gt;&gt;barActionContainerFile.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerFile.Name" xml:space="preserve">
     <value>barContainerFile</value>
   </data>
   <data name="&gt;&gt;barContainerFile.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerSave.Name" xml:space="preserve">
     <value>barActionContainerSave</value>
   </data>
   <data name="&gt;&gt;barActionContainerSave.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerSave.Name" xml:space="preserve">
     <value>barContainerSave</value>
   </data>
   <data name="&gt;&gt;barContainerSave.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerPrint.Name" xml:space="preserve">
     <value>barActionContainerPrint</value>
   </data>
   <data name="&gt;&gt;barActionContainerPrint.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerPrint.Name" xml:space="preserve">
     <value>barContainerPrint</value>
   </data>
   <data name="&gt;&gt;barContainerPrint.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerEdit.Name" xml:space="preserve">
     <value>barActionContainerEdit</value>
   </data>
   <data name="&gt;&gt;barActionContainerEdit.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerEdit.Name" xml:space="preserve">
     <value>barContainerEdit</value>
   </data>
   <data name="&gt;&gt;barContainerEdit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerUndoRedo.Name" xml:space="preserve">
     <value>barActionContainerUndoRedo</value>
   </data>
   <data name="&gt;&gt;barActionContainerUndoRedo.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerUndoRedo.Name" xml:space="preserve">
     <value>barContainerUndoRedo</value>
   </data>
   <data name="&gt;&gt;barContainerUndoRedo.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerOpenObject.Name" xml:space="preserve">
     <value>barActionContainerOpenObject</value>
   </data>
   <data name="&gt;&gt;barActionContainerOpenObject.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerOpenObject.Name" xml:space="preserve">
     <value>barContainerOpenObject</value>
   </data>
   <data name="&gt;&gt;barContainerOpenObject.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerExport.Name" xml:space="preserve">
     <value>barActionContainerExport</value>
   </data>
   <data name="&gt;&gt;barActionContainerExport.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerExport.Name" xml:space="preserve">
     <value>barContainerExport</value>
   </data>
   <data name="&gt;&gt;barContainerExport.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerRecordEdit.Name" xml:space="preserve">
     <value>barActionContainerRecordEdit</value>
   </data>
   <data name="&gt;&gt;barActionContainerRecordEdit.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerRecordEdit.Name" xml:space="preserve">
     <value>barContainerRecordEdit</value>
   </data>
   <data name="&gt;&gt;barContainerRecordEdit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerWorkflow.Name" xml:space="preserve">
     <value>barActionContainerWorkflow</value>
   </data>
   <data name="&gt;&gt;barActionContainerWorkflow.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerWorkflow.Name" xml:space="preserve">
     <value>barContainerWorkflow</value>
   </data>
   <data name="&gt;&gt;barContainerWorkflow.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerView.Name" xml:space="preserve">
     <value>barActionContainerView</value>
   </data>
   <data name="&gt;&gt;barActionContainerView.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerView.Name" xml:space="preserve">
     <value>barContainerView</value>
   </data>
   <data name="&gt;&gt;barContainerView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerReports.Name" xml:space="preserve">
     <value>barActionContainerReports</value>
   </data>
   <data name="&gt;&gt;barActionContainerReports.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerReports.Name" xml:space="preserve">
     <value>barContainerReports</value>
   </data>
   <data name="&gt;&gt;barContainerReports.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerDefault.Name" xml:space="preserve">
     <value>barActionContainerDefault</value>
   </data>
   <data name="&gt;&gt;barActionContainerDefault.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerDefault.Name" xml:space="preserve">
     <value>barContainerDefault</value>
   </data>
   <data name="&gt;&gt;barContainerDefault.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerPanels.Name" xml:space="preserve">
     <value>barActionContainerPanels</value>
   </data>
   <data name="&gt;&gt;barActionContainerPanels.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerPanels.Name" xml:space="preserve">
     <value>barContainerPanels</value>
   </data>
   <data name="&gt;&gt;barContainerPanels.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerRecordsNavigation.Name" xml:space="preserve">
     <value>barActionContainerRecordsNavigation</value>
   </data>
   <data name="&gt;&gt;barActionContainerRecordsNavigation.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerRecordsNavigation.Name" xml:space="preserve">
     <value>barContainerRecordsNavigation</value>
   </data>
   <data name="&gt;&gt;barContainerRecordsNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerFilters.Name" xml:space="preserve">
     <value>barActionContainerFilters</value>
   </data>
   <data name="&gt;&gt;barActionContainerFilters.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerFilters.Name" xml:space="preserve">
     <value>barContainerFilters</value>
   </data>
   <data name="&gt;&gt;barContainerFilters.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerSearch.Name" xml:space="preserve">
     <value>barActionContainerSearch</value>
   </data>
   <data name="&gt;&gt;barActionContainerSearch.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerSearch.Name" xml:space="preserve">
     <value>barContainerSearch</value>
   </data>
   <data name="&gt;&gt;barContainerSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerFullTextSearch.Name" xml:space="preserve">
     <value>barActionContainerFullTextSearch</value>
   </data>
   <data name="&gt;&gt;barActionContainerFullTextSearch.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerFullTextSearch.Name" xml:space="preserve">
     <value>barContainerFullTextSearch</value>
   </data>
   <data name="&gt;&gt;barContainerFullTextSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerViewsNavigation.Name" xml:space="preserve">
     <value>barActionContainerViewsNavigation</value>
   </data>
   <data name="&gt;&gt;barActionContainerViewsNavigation.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerViewsNavigation.Name" xml:space="preserve">
     <value>barContainerViewsNavigation</value>
   </data>
   <data name="&gt;&gt;barContainerViewsNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerWindows.Name" xml:space="preserve">
     <value>barActionContainerWindows</value>
   </data>
   <data name="&gt;&gt;barActionContainerWindows.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerWindows.Name" xml:space="preserve">
     <value>barContainerWindows</value>
   </data>
   <data name="&gt;&gt;barContainerWindows.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerTools.Name" xml:space="preserve">
     <value>barActionContainerTools</value>
   </data>
   <data name="&gt;&gt;barActionContainerTools.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerTools.Name" xml:space="preserve">
     <value>barContainerTools</value>
   </data>
   <data name="&gt;&gt;barContainerTools.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerOptions.Name" xml:space="preserve">
     <value>barActionContainerOptions</value>
   </data>
   <data name="&gt;&gt;barActionContainerOptions.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerOptions.Name" xml:space="preserve">
     <value>barContainerOptions</value>
   </data>
   <data name="&gt;&gt;barContainerOptions.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerDiagnostic.Name" xml:space="preserve">
     <value>barActionContainerDiagnostic</value>
   </data>
   <data name="&gt;&gt;barActionContainerDiagnostic.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerDiagnostic.Name" xml:space="preserve">
     <value>barContainerDiagnostic</value>
   </data>
   <data name="&gt;&gt;barContainerDiagnostic.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerExit.Name" xml:space="preserve">
     <value>barActionContainerExit</value>
   </data>
   <data name="&gt;&gt;barActionContainerExit.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerExit.Name" xml:space="preserve">
     <value>barContainerExit</value>
   </data>
   <data name="&gt;&gt;barContainerExit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerAbout.Name" xml:space="preserve">
     <value>barActionContainerAbout</value>
   </data>
   <data name="&gt;&gt;barActionContainerAbout.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerAbout.Name" xml:space="preserve">
     <value>barContainerAbout</value>
   </data>
   <data name="&gt;&gt;barContainerAbout.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerMenu.Name" xml:space="preserve">
     <value>barActionContainerMenu</value>
   </data>
   <data name="&gt;&gt;barActionContainerMenu.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerMenu.Name" xml:space="preserve">
     <value>barContainerMenu</value>
   </data>
   <data name="&gt;&gt;barContainerMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barActionContainerNotifications.Name" xml:space="preserve">
     <value>barActionContainerNotifications</value>
   </data>
   <data name="&gt;&gt;barActionContainerNotifications.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Bars.ActionControls.BarLinkActionControlContainer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerNotifications.Name" xml:space="preserve">
     <value>barContainerNotifications</value>
   </data>
   <data name="&gt;&gt;barContainerNotifications.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonChooseSkinActionControl.Name" xml:space="preserve">
     <value>ribbonChooseSkinActionControl</value>
   </data>
   <data name="&gt;&gt;ribbonChooseSkinActionControl.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.Ribbon.ActionControls.RibbonChooseSkinActionControl, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.Ribbon.ActionControls.RibbonChooseSkinActionControl, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGallerySkins.Name" xml:space="preserve">
     <value>ribbonGallerySkins</value>
   </data>
   <data name="&gt;&gt;ribbonGallerySkins.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.RibbonGalleryBarItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;applicationMenu.Name" xml:space="preserve">
     <value>applicationMenu</value>
   </data>
   <data name="&gt;&gt;applicationMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.ApplicationMenu, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;mainBarAndDockingController.Name" xml:space="preserve">
     <value>mainBarAndDockingController</value>
   </data>
   <data name="&gt;&gt;mainBarAndDockingController.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarAndDockingController, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarAndDockingController, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barMdiChildrenListItem.Name" xml:space="preserve">
     <value>barMdiChildrenListItem</value>
   </data>
   <data name="&gt;&gt;barMdiChildrenListItem.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarDockingMenuItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarDockingMenuItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barSubItemPanels.Name" xml:space="preserve">
     <value>barSubItemPanels</value>
   </data>
   <data name="&gt;&gt;barSubItemPanels.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;barContainerStatusMessages.Name" xml:space="preserve">
     <value>barContainerStatusMessages</value>
   </data>
   <data name="&gt;&gt;barContainerStatusMessages.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.BarLinkContainerExItem, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;defaultPage.Name" xml:space="preserve">
     <value>defaultPage</value>
   </data>
   <data name="&gt;&gt;defaultPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupViewsHistoryNavigation.Name" xml:space="preserve">
     <value>ribbonGroupViewsHistoryNavigation</value>
   </data>
   <data name="&gt;&gt;ribbonGroupViewsHistoryNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupObjectsCreation.Name" xml:space="preserve">
     <value>ribbonGroupObjectsCreation</value>
   </data>
   <data name="&gt;&gt;ribbonGroupObjectsCreation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupSave.Name" xml:space="preserve">
     <value>ribbonGroupSave</value>
   </data>
   <data name="&gt;&gt;ribbonGroupSave.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupEdit.Name" xml:space="preserve">
     <value>ribbonGroupEdit</value>
   </data>
   <data name="&gt;&gt;ribbonGroupEdit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupRecordEdit.Name" xml:space="preserve">
     <value>ribbonGroupRecordEdit</value>
   </data>
   <data name="&gt;&gt;ribbonGroupRecordEdit.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupOpenObject.Name" xml:space="preserve">
     <value>ribbonGroupOpenObject</value>
   </data>
   <data name="&gt;&gt;ribbonGroupOpenObject.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupWorkflow.Name" xml:space="preserve">
     <value>ribbonGroupWorkflow</value>
   </data>
   <data name="&gt;&gt;ribbonGroupWorkflow.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupView.Name" xml:space="preserve">
     <value>ribbonGroupView</value>
   </data>
   <data name="&gt;&gt;ribbonGroupView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupDefault.Name" xml:space="preserve">
     <value>ribbonGroupDefault</value>
   </data>
   <data name="&gt;&gt;ribbonGroupDefault.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupRecordsNavigation.Name" xml:space="preserve">
     <value>ribbonGroupRecordsNavigation</value>
   </data>
   <data name="&gt;&gt;ribbonGroupRecordsNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupFilters.Name" xml:space="preserve">
     <value>ribbonGroupFilters</value>
   </data>
   <data name="&gt;&gt;ribbonGroupFilters.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupSearch.Name" xml:space="preserve">
     <value>ribbonGroupSearch</value>
   </data>
   <data name="&gt;&gt;ribbonGroupSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupFullTextSearch.Name" xml:space="preserve">
     <value>ribbonGroupFullTextSearch</value>
   </data>
   <data name="&gt;&gt;ribbonGroupFullTextSearch.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;viewPage.Name" xml:space="preserve">
     <value>viewPage</value>
   </data>
   <data name="&gt;&gt;viewPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupViewsNavigation.Name" xml:space="preserve">
     <value>ribbonGroupViewsNavigation</value>
   </data>
   <data name="&gt;&gt;ribbonGroupViewsNavigation.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupAppearance.Name" xml:space="preserve">
     <value>ribbonGroupAppearance</value>
   </data>
   <data name="&gt;&gt;ribbonGroupAppearance.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupWindows.Name" xml:space="preserve">
     <value>ribbonGroupWindows</value>
   </data>
   <data name="&gt;&gt;ribbonGroupWindows.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;defaultPageGroup.Name" xml:space="preserve">
     <value>defaultPageGroup</value>
   </data>
   <data name="&gt;&gt;defaultPageGroup.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;toolsPage.Name" xml:space="preserve">
     <value>toolsPage</value>
   </data>
   <data name="&gt;&gt;toolsPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupTools.Name" xml:space="preserve">
     <value>ribbonGroupTools</value>
   </data>
   <data name="&gt;&gt;ribbonGroupTools.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupOptions.Name" xml:space="preserve">
     <value>ribbonGroupOptions</value>
   </data>
   <data name="&gt;&gt;ribbonGroupOptions.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;ribbonGroupDiagnostic.Name" xml:space="preserve">
     <value>ribbonGroupDiagnostic</value>
   </data>
   <data name="&gt;&gt;ribbonGroupDiagnostic.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPageGroup, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;windowPage.Name" xml:space="preserve">
     <value>windowPage</value>
   </data>
   <data name="&gt;&gt;windowPage.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonPage, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;dockManager.Name" xml:space="preserve">
     <value>dockManager</value>
   </data>
   <data name="&gt;&gt;dockManager.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking.DockManager, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking.DockManager, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;documentManager.Name" xml:space="preserve">
     <value>documentManager</value>
   </data>
   <data name="&gt;&gt;documentManager.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking2010.DocumentManager, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking2010.DocumentManager, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;noDocumentsView.Name" xml:space="preserve">
     <value>noDocumentsView</value>
   </data>
   <data name="&gt;&gt;noDocumentsView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking2010.Views.NoDocuments.NoDocumentsView, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking2010.Views.NoDocuments.NoDocumentsView, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;tabbedView.Name" xml:space="preserve">
     <value>tabbedView</value>
   </data>
   <data name="&gt;&gt;tabbedView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;nativeMdiView.Name" xml:space="preserve">
     <value>nativeMdiView</value>
   </data>
   <data name="&gt;&gt;nativeMdiView.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Docking2010.Views.NativeMdi.NativeMdiView, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;viewSiteManager.Name" xml:space="preserve">
     <value>viewSiteManager</value>
   </data>
   <data name="&gt;&gt;viewSiteManager.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.ViewSiteManager, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.ViewSiteManager, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;modelSynchronizationManager.Name" xml:space="preserve">
     <value>modelSynchronizationManager</value>
   </data>
   <data name="&gt;&gt;modelSynchronizationManager.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Templates.ModelSynchronizationManager, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Templates.ModelSynchronizationManager, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;formStateModelSynchronizer.Name" xml:space="preserve">
     <value>formStateModelSynchronizer</value>
   </data>
   <data name="&gt;&gt;formStateModelSynchronizer.Type" xml:space="preserve">
-    <value>DevExpress.ExpressApp.Win.Core.FormStateModelSynchronizer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.ExpressApp.Win.Core.FormStateModelSynchronizer, DevExpress.ExpressApp.Win.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;contextMenu.Name" xml:space="preserve">
     <value>contextMenu</value>
   </data>
   <data name="&gt;&gt;contextMenu.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.PopupMenu, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>MainRibbonForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+    <value>DevExpress.XtraBars.Ribbon.RibbonForm, DevExpress.XtraBars.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <metadata name="documentManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>505, 17</value>

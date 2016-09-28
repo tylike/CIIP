@@ -14209,3 +14209,22 @@ Loaded assemblies
 29.07.16 17:01:40.970	Window closed: 欢迎使用商信互联企业信息管理平台
 29.07.16 17:01:41.086	Application stopping
 =====================
+28.09.16 16:32:53.890	================================================================================
+28.09.16 16:32:53.894	Trace Log for CIIP.Win.vshost.exe is started
+28.09.16 16:32:53.894	================================================================================
+28.09.16 16:32:53.896	System Environment
+	OS Version: Microsoft Windows NT 6.2.9200.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+
+	CLR Version: 4.0.30319.42000
+	eXpressApp Version: 16.1.5.0
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=True
+	Languages=zh-CN
+	SafeMode=trueoo
+28.09.16 16:32:53.905	Initialize application
+=======================
+28.09.16 16:32:53.906		Command line arguments: 
+		C:\Users\chenw\Source\Repos\CIIP\CIIP.Win\bin\Debug\CIIP.Win.vshost.exe
