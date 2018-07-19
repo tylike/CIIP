@@ -47,9 +47,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Admiral.ImportData">
-      <HintPath>..\lib\Admiral.ImportData.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.Diagram.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -407,6 +404,7 @@
       <SubType>Designer</SubType>
       <DependentUpon>ERPModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="System\ListView\DisableShowDetailViewViewController.resx">
       <DependentUpon>DisableShowDetailViewViewController.cs</DependentUpon>
     </EmbeddedResource>

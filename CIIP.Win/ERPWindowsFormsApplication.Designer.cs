@@ -62,8 +62,7 @@ namespace CIIP.Win {
             this.formCodeModule1 = new CIIP.FormCode.FormCodeModule();
             this.devDashboardModule1 = new CIIP.Dashboard.DevDashboardModule();
             this.iconModule1 = new CIIP.Icon.IconModule();
-            this.importDataModule1 = new Admiral.ImportData.ImportDataModule();
-            this.importDataWinModule1 = new Admiral.ImportData.Win.ImportDataWinModule();
+
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // securityStrategyComplex1
@@ -106,7 +105,6 @@ namespace CIIP.Win {
             // 
             this.ApplicationName = "IMatrix.ERP";
             this.LinkNewObjectToParentImmediately = false;
-            this.Modules.Add(this.importDataWinModule1);
 
             this.Modules.Add(this.module1);
             this.Modules.Add(this.module2);            
@@ -126,7 +124,6 @@ namespace CIIP.Win {
             this.Modules.Add(this.admiralStateMachineModule1);
             this.Modules.Add(this.formCodeModule1);
             this.Modules.Add(this.iconModule1);
-            this.Modules.Add(this.importDataModule1);
             this.Modules.Add(this.module3);
             this.Modules.Add(this.fileAttachmentsWindowsFormsModule);
             this.Modules.Add(this.htmlPropertyEditorWindowsFormsModule);
@@ -182,7 +179,6 @@ namespace CIIP.Win {
         private FormCodeModule formCodeModule1;
         private DevDashboardModule devDashboardModule1;
         private IconModule iconModule1;
-        private Admiral.ImportData.ImportDataModule importDataModule1;
-        private Admiral.ImportData.Win.ImportDataWinModule importDataWinModule1;
+
     }
 }

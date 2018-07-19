@@ -56,7 +56,6 @@
             this.RequiredModuleTypes.Add(typeof(CIIP.StateMachine.AdmiralStateMachineModule));
             this.RequiredModuleTypes.Add(typeof(CIIP.FormCode.FormCodeModule));
             this.RequiredModuleTypes.Add(typeof(CIIP.Icon.IconModule));
-            this.RequiredModuleTypes.Add(typeof(Admiral.ImportData.ImportDataModule));
 
 		}
 
