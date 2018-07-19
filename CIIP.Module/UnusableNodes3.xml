@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application>
-  <Views Id="Views">
-    <ListView Id="刑政区域_ListView" MasterDetailMode="ListViewAndDetailView" />
-    <ListView Id="刑政区域_子级_ListView" AllowEdit="True" NewItemRowPosition="Top" />
-  </Views>
-</Application>

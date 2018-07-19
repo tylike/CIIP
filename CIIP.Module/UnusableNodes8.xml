@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application>
-  <NavigationItems Id="NavigationItems">
-    <Items Id="Items">
-      <Item Id="销售统计" Index="10" />
-    </Items>
-  </NavigationItems>
-</Application>
