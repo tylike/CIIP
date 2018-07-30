@@ -43,11 +43,24 @@ namespace CIIP.Module.BusinessObjects.SYS
         public string GetCode()
         {
             var rst = new StringBuilder();
+
+            #region using
             rst.Append(CommonUsing());
 
+            #endregion
+
+
+            #region namespace
             rst.AppendLine($@"namespace {Category.FullName}
 {{");
+            #endregion
+
+            #region 说明
             rst.AppendLine("\t//BO:" + Oid);
+
+            #endregion
+
+            #region attributes
             if (!IsPersistent)
             {
                 rst.AppendLine("\t[NonPersistent]");
@@ -67,9 +80,10 @@ namespace CIIP.Module.BusinessObjects.SYS
             {
                 rst.AppendLine("\t[VisibleInReport]");
             }
+            #endregion
 
             rst.Append($"\tpublic ");
-            if(this.Modifier != Modifier.None)
+            if (this.Modifier != Modifier.None)
             {
                 rst.Append($"{ Modifier.ToString().ToLower()} ");
             }
@@ -77,19 +91,22 @@ namespace CIIP.Module.BusinessObjects.SYS
 
             //" { (Modifier == Modifier.Sealed ? "" : "sealed") + (IsAbstract ? "abstract" : "") }");
 
-            if (IsGenericTypeDefine)
+            #region 本类范型定义
+            if (GenericParameterDefines.Count > 0)
             {
                 //如果设置了泛型参数的值,则付入,否则认为本类也是泛型类
                 rst.AppendFormat("<{0}>",
                     string.Join(",",
-                        GenericParameters.Where(x => x.ParameterValue == null)
+                        GenericParameterDefines
                             .OrderBy(x => x.ParameterIndex)
                             .Select(x => x.Name)
                             .ToArray()));
             }
+            #endregion
 
             rst.Append(":");
 
+            #region 基类 范型处理
             if (Base.IsGenericTypeDefine)
             {
                 var n = Base.FullName;
@@ -101,33 +118,43 @@ namespace CIIP.Module.BusinessObjects.SYS
                 {
                     rst.Append("global::" + n.Substring(0, n.Length - 2));
                 }
+#warning where 等待制作
 
                 //如果设置了泛型参数的值,则付入,否则认为本类也是泛型类
                 rst.AppendFormat("<{0}>",
                     string.Join(",",
-                        GenericParameters.Select(
+                        GenericParameterInstances.Select(
                             x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
+                //where xxxx : xxxx
+                //var constraints = string.Join("\n", GenericParameterInstances.Where(x => !string.IsNullOrEmpty(x.Constraint)).Select(x => " where " + x.Name + " : " + x.Constraint));
+                //rst.AppendLine(constraints);
             }
             else
             {
                 rst.Append("global::" + Base.FullName);
             }
-            rst.AppendLine();
+            #endregion
 
-            var constraints = string.Join("\n", GenericParameters.Where(x => !string.IsNullOrEmpty(x.Constraint)).Select(x => " where " + x.Name + " : " + x.Constraint));
-            rst.AppendLine(constraints);
+            rst.AppendLine();
 
             //begin class
             rst.AppendLine("\t{");
 
+            #region 构造函数
             rst.AppendLine($"\t\tpublic {名称}(Session s):base(s){{  }}");
 
+            #endregion
+
+            #region 属性模板
             var propertyTemplate =
 "\t\tpublic {0} {1}\n" +
 "\t\t{\n" +
 "\t\t\tget { return _{1}; }\n" +
 "\t\t\tset { SetPropertyValue(\"{1}\",ref _{1},value); }\n" +
 "\t\t}\n";
+            #endregion
+
+            #region 属性生成
             foreach (var item in Properties)
             {
                 var pt = "global::" + item.PropertyType.FullName;
@@ -147,7 +174,9 @@ namespace CIIP.Module.BusinessObjects.SYS
 
                 rst.Append(propertyTemplate.Replace("{0}", pt).Replace("{1}", item.名称));
             }
+            #endregion
 
+            #region 关联集合
             var att = "\t\t[" + typeof(DevExpress.Xpo.AggregatedAttribute).FullName + "]";
             foreach (var item in CollectionProperties)
             {
@@ -162,17 +191,23 @@ namespace CIIP.Module.BusinessObjects.SYS
                 var pt = "global::" + item.PropertyType.FullName;
                 rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.名称}{{ get{{ return GetCollection<{pt}>(\"{item.名称}\"); }} }}");
             }
+            #endregion
 
+            #region 业务逻辑处理
             foreach (var method in Methods)
             {
                 rst.AppendLine(method.MethodDefineCode);
             }
+            #endregion
 
+            #region 结束
             //end class
             rst.AppendLine("\t}");
             rst.AppendLine("}");
+            #endregion
             return rst.ToString();
         }
+
         public void ProcessPropertyBase(StringBuilder code, PropertyBase property)
         {
             if (!string.IsNullOrEmpty(property.DataSourceProperty))
@@ -253,15 +288,18 @@ using DevExpress.Persistent.Validation;
 ";
         }
 
+        #region can custom logic
         private bool _CanCustomLogic;
         [XafDisplayName("可自定义逻辑")]
-        [ModelDefault("AllowEdit","False")]
+        [ModelDefault("AllowEdit", "False")]
         public bool CanCustomLogic
         {
             get { return _CanCustomLogic; }
             set { SetPropertyValue("CanCustomLogic", ref _CanCustomLogic, value); }
         }
+        #endregion
 
+        #region is persistent
         private bool _IsPersistent;
 
         [XafDisplayName("可持久化")]
@@ -272,9 +310,11 @@ using DevExpress.Persistent.Validation;
             get { return _IsPersistent; }
             set { SetPropertyValue("IsPersistent", ref _IsPersistent, value); }
         }
-
-
-
+        #endregion
+        
+        #region modifier
+        [XafDisplayName("继承设置")]
+        [ToolTip("可以设置为无,抽象,密封的")]
         public Modifier Modifier
         {
             get
@@ -285,7 +325,8 @@ using DevExpress.Persistent.Validation;
             {
                 SetPropertyValue(nameof(Modifier), value);
             }
-        }
+        } 
+        #endregion
 
 
 
@@ -297,6 +338,7 @@ using DevExpress.Persistent.Validation;
         [NonPersistent]
         public bool DisableCreateGenericParameterValues;
 
+        #region 继承
         private BusinessObject _Base;
 
         [XafDisplayName("继承")]
@@ -310,15 +352,36 @@ using DevExpress.Persistent.Validation;
                 SetPropertyValue("Base", ref _Base, value);
             }
         }
+        #endregion
+
+        #region 泛型
+        [XafDisplayName("范型参数定义")]
+        [ToolTip("如果需要类型参数时,可以在此定义,可以在属性及业务逻辑中使用!")]
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<GenericParameterDefine> GenericParameterDefines
+        {
+            get
+            {
+                return GetCollection<GenericParameterDefine>(nameof(GenericParameterDefines));
+            }
+        }
 
         private bool _IsGenericTypeDefine;
         [XafDisplayName("泛型定义")]
+        [ToolTip("本类是否是泛型定义")]
         public bool IsGenericTypeDefine
         {
             get { return _IsGenericTypeDefine; }
             set { SetPropertyValue("IsGenericTypeDefine", ref _IsGenericTypeDefine, value); }
         }
-        
+
+        [Association, DevExpress.Xpo.Aggregated]
+        [XafDisplayName("传入基类泛型参数")]
+        public XPCollection<GenericParameterInstance> GenericParameterInstances
+        {
+            get { return GetCollection<GenericParameterInstance>(nameof(GenericParameterInstances)); }
+        }
+
         //[Appearance("基类泛型参数可见", TargetItems = "GenericParameters", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
         protected bool GenericParameterIsVisible()
         {
@@ -334,7 +397,8 @@ using DevExpress.Persistent.Validation;
             }
             return true;
         }
-        
+        #endregion
+        #region 属性
         [Association, DevExpress.Xpo.Aggregated]
         [XafDisplayName("属性")]
         public XPCollection<Property> Properties
@@ -348,6 +412,32 @@ using DevExpress.Persistent.Validation;
         {
             get { return GetCollection<CollectionProperty>("CollectionProperties"); }
         }
+
+        public PropertyBase FindProperty(string name)
+        {
+            var sp = Properties.SingleOrDefault(x => x.名称 == name);
+            if (sp != null)
+            {
+                return sp;
+            }
+            return CollectionProperties.SingleOrDefault(x => x.名称 == name);
+        }
+
+        #region logic method
+        [Association, DevExpress.Xpo.Aggregated]
+        [XafDisplayName("业务逻辑")]
+        public XPCollection<BusinessObjectEvent> Methods
+        {
+            get
+            {
+                return GetCollection<BusinessObjectEvent>("Methods");
+            }
+        } 
+        #endregion
+
+        #endregion
+
+        #region option
 
         private bool? _IsCloneable;
 
@@ -392,6 +482,9 @@ using DevExpress.Persistent.Validation;
         [Browsable(false)]
         public int CreateIndex { get; set; }
 
+        #endregion
+
+        #region ctor
         public BusinessObject(Session s) : base(s)
         {
 
@@ -411,7 +504,7 @@ using DevExpress.Persistent.Validation;
             }
             if (propertyName == "Base" && !IsLoading && !DisableCreateGenericParameterValues)
             {
-                Session.Delete(GenericParameters);
+                Session.Delete(GenericParameterInstances);
                 if (newValue != null)
                 {
                     if (!Base.IsRuntimeDefine)
@@ -421,7 +514,7 @@ using DevExpress.Persistent.Validation;
                         {
                             foreach (var item in bt.GetGenericArguments())
                             {
-                                var gp = new GenericParameter(Session);
+                                var gp = new GenericParameterInstance(Session);
                                 gp.Owner = this;
                                 gp.Name = item.Name;
                             }
@@ -429,12 +522,12 @@ using DevExpress.Persistent.Validation;
                     }
                     else
                     {
-                        foreach (var gp in Base.GenericParameters)
+                        foreach (var gp in Base.GenericParameterInstances)
                         {
-                            var ngp = new GenericParameter(Session);
+                            var ngp = new GenericParameterInstance(Session);
                             ngp.Name = gp.Name;
                             ngp.ParameterIndex = gp.ParameterIndex;
-                            this.GenericParameters.Add(ngp);
+                            this.GenericParameterInstances.Add(ngp);
                         }
                     }
 
@@ -447,25 +540,10 @@ using DevExpress.Persistent.Validation;
             IsRuntimeDefine = true;
             this.IsPersistent = true;
             base.AfterConstruction();
-        }
-
-        public PropertyBase FindProperty(string name)
-        {
-            var sp = Properties.SingleOrDefault(x => x.名称 == name);
-            if (sp != null)
-            {
-                return sp;
-            }
-            return CollectionProperties.SingleOrDefault(x => x.名称 == name);
-        }
-
-        [Association, DevExpress.Xpo.Aggregated]
-        [XafDisplayName("传入基类泛型参数")]
-        public XPCollection<GenericParameter> GenericParameters
-        {
-            get { return GetCollection<GenericParameter>("GenericParameters"); }
-        }
-
+        } 
+        #endregion
+                
+        #region 导航设置
         List<NavigationItem> NavigationItemDataSources
         {
             get
@@ -483,7 +561,8 @@ using DevExpress.Persistent.Validation;
             get { return _NavigationItem; }
             set { SetPropertyValue("NavigationItem", ref _NavigationItem, value); }
         }
-        
+        #endregion
+
         //[Association, DevExpress.Xpo.Aggregated]
         //public XPCollection<MethodDefine> Methods
         //{
@@ -493,15 +572,7 @@ using DevExpress.Persistent.Validation;
         //    }
         //}
 
-        [Association, DevExpress.Xpo.Aggregated]
-        [XafDisplayName("业务逻辑")]
-        public XPCollection<BusinessObjectEvent> Methods
-        {
-            get
-            {
-                return GetCollection<BusinessObjectEvent>("Methods");
-            }
-        }
+        
 
         //private bool _UserDBView;
         //[XafDisplayName("使用DB视图")]
@@ -521,7 +592,7 @@ using DevExpress.Persistent.Validation;
         //{
         //    get
         //    {
-                
+
         //        return _MapToDBView;
         //    }
         //    set
@@ -529,9 +600,7 @@ using DevExpress.Persistent.Validation;
         //        SetPropertyValue("MapToDBView", ref _MapToDBView, value);
         //    }
         //}
-
-
-
+        
         #region quick add
         public Property AddProperty(string name, BusinessObjectBase type, int? size = null)
         {

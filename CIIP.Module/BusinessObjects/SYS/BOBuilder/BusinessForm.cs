@@ -42,13 +42,13 @@ namespace CIIP.Module.BusinessObjects.SYS
 
                 if (propertyName == "Base")
                 {
-                    ItemBusinessObject.Base = this.Base.GenericParameters.FirstOrDefault()?.DefaultGenericType;
-                    var gp = this.GenericParameters.FirstOrDefault();
+                    ItemBusinessObject.Base = this.Base.GenericParameterInstances.FirstOrDefault()?.DefaultGenericType;
+                    var gp = this.GenericParameterInstances.FirstOrDefault();
                     if (gp != null)
                     {
                         gp.ParameterValue = ItemBusinessObject;
                     }
-                    gp = ItemBusinessObject.GenericParameters.FirstOrDefault();
+                    gp = ItemBusinessObject.GenericParameterInstances.FirstOrDefault();
                     if (gp != null)
                         gp.ParameterValue = this;
                 }

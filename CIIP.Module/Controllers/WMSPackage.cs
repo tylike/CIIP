@@ -282,7 +282,11 @@ namespace 基础信息.往来单位
 
             var form = os.FindBusinessObject(typeof(单据<>));
             var order = CreateObject("订单", form, NS常用基类);
-            order.GenericParameters[0].Constraint = "DevExpress.Xpo.XPBaseObject";
+            var genericParameter = os.CreateObject<GenericParameterDefine>();
+            genericParameter.Name = "TItem";
+            genericParameter.Constraint = "DevExpress.Xpo.XPBaseObject";
+
+            order.GenericParameterDefines.Add(genericParameter);
             order.Modifier = Modifier.Abstract;
             order.IsPersistent = false;
             order.Caption = "订单<明细>";
@@ -391,7 +395,7 @@ namespace 基础信息.往来单位
             orderItem.AddProperty<decimal>("含税单价").AllowEdit = false;
             orderItem.AddProperty<decimal>("含税总价").AllowEdit = false;
             orderItem.IsGenericTypeDefine = true;
-            order.GenericParameters[0].DefaultGenericType = orderItem;
+            order.GenericParameterInstances[0].DefaultGenericType = orderItem;
 
             orderItem.AddPartialLogic(@"
 namespace 常用基类
@@ -635,10 +639,10 @@ namespace 仓库管理
 
             #region wmsFormItemBase
             var wmsFormItemBase = CreateObject("库存单据明细", 库存流水, NS常用基类);
-            var generic1 = os.CreateObject<GenericParameter>();
+            var generic1 = os.CreateObject<GenericParameterDefine>();
             generic1.Constraint = "常用基类.单据";
             generic1.Name = "TMaster";
-            wmsFormItemBase.GenericParameters.Add(generic1);
+            wmsFormItemBase.GenericParameterDefines.Add(generic1);
             wmsFormItemBase.IsGenericTypeDefine = true;
 
             wmsFormItemBase.AddPartialLogic(@"
@@ -690,8 +694,11 @@ namespace 常用基类
 
             #region wmsFormBase
             var wmsFormBase = CreateObject("仓库单据基类", form, NS常用基类);
-            wmsFormBase.GenericParameters[0].Constraint = "DevExpress.Xpo.XPBaseObject";
-            wmsFormBase.GenericParameters[0].DefaultGenericType = wmsFormItemBase;
+            var p = os.CreateObject<GenericParameterDefine>();
+            p.Constraint = "DevExpress.Xpo.XPBaseObject";
+            p.Name = "TItem";
+            wmsFormBase.GenericParameterDefines.Add(p);
+
             wmsFormBase.Modifier = Modifier.Abstract;
             wmsFormBase.IsPersistent = false;
             wmsFormBase.IsGenericTypeDefine = true;

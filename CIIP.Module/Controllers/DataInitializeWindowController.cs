@@ -113,7 +113,7 @@ namespace CIIP.Module.Controllers
 
                     foreach (var item in type.GetGenericArguments())
                     {
-                        var gp = ObjectSpace.CreateObject<GenericParameter>();
+                        var gp = ObjectSpace.CreateObject<GenericParameterInstance>();
                         gp.Owner = bob;
                         gp.Name = item.Name;
                         if (item.IsGenericParameter)

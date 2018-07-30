@@ -426,12 +426,11 @@
             </LayoutGroup>
             <LayoutGroup Id="BusinessObject" Index="2" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
               <LayoutGroup Id="Col1" Index="6" Direction="Horizontal" RelativeSize="30" IsNewNode="True">
-                <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="0" IsNewNode="True" />
-                <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="1" IsNewNode="True" />
-                <LayoutItem Id="CanInherits" ViewItem="CanInherits" Index="2" IsNewNode="True" />
+                <LayoutItem Id="Modifier" Index="0" ViewItem="Modifier" IsNewNode="True" />
+                <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="1" IsNewNode="True" />
+                <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="2" IsNewNode="True" />
                 <LayoutItem Id="IsVisibileInReports" ViewItem="IsVisibileInReports" Index="3" IsNewNode="True" />
-                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" Index="4" IsNewNode="True" />
-                <LayoutItem Id="IsCreatableItem" ViewItem="IsCreatableItem" Index="5" IsNewNode="True" />
+                <LayoutItem Id="IsCreatableItem" ViewItem="IsCreatableItem" Index="4" IsNewNode="True" />
               </LayoutGroup>
               <LayoutGroup Id="Col2" Index="7" IsNewNode="True" />
             </LayoutGroup>
@@ -442,16 +441,17 @@
               <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="变量" IsNewNode="True">
+          <LayoutGroup Id="范型" Index="1" IsNewNode="True">
             <LayoutGroup Id="GenericParameters" Index="2" ShowCaption="True" IsNewNode="True">
-              <LayoutItem Id="GenericParameters" ViewItem="GenericParameters" ShowCaption="False" Index="0" IsNewNode="True" />
+              <LayoutItem Id="GenericParameterDefines" ShowCaption="False" Index="0" ViewItem="GenericParameterDefines" IsNewNode="True" />
+              <LayoutItem Id="GenericParameterInstances" ViewItem="GenericParameterInstances" IsNewNode="True" />
             </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" Index="2" IsNewNode="True">
+            <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="关系" IsNewNode="True">
             <LayoutItem Id="CollectionProperties" ViewItem="CollectionProperties" ShowCaption="False" Index="0" IsNewNode="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" IsNewNode="True">
-            <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" IsNewNode="True" />
           </LayoutGroup>
         </TabbedGroup>
       </Layout>
@@ -460,13 +460,10 @@
       <Items IsNewNode="True">
         <PropertyEditor Id="Base" PropertyName="Base" IsNewNode="True" />
         <PropertyEditor Id="CanCustomLogic" PropertyName="CanCustomLogic" IsNewNode="True" />
-        <PropertyEditor Id="CanInherits" PropertyName="CanInherits" IsNewNode="True" />
         <PropertyEditor Id="Caption" PropertyName="Caption" IsNewNode="True" />
         <PropertyEditor Id="Category" PropertyName="Category" IsNewNode="True" />
         <PropertyEditor Id="CollectionProperties" PropertyName="CollectionProperties" View="BusinessObject_CollectionProperties_ListView" IsNewNode="True" />
         <PropertyEditor Id="Description" PropertyName="Description" IsNewNode="True" />
-        <PropertyEditor Id="GenericParameters" PropertyName="GenericParameters" View="BusinessObject_GenericParameters_ListView" IsNewNode="True" />
-        <PropertyEditor Id="IsAbstract" PropertyName="IsAbstract" IsNewNode="True" />
         <PropertyEditor Id="IsCloneable" PropertyName="IsCloneable" IsNewNode="True" />
         <PropertyEditor Id="IsCreatableItem" PropertyName="IsCreatableItem" IsNewNode="True" />
         <PropertyEditor Id="IsGenericTypeDefine" PropertyName="IsGenericTypeDefine" IsNewNode="True" />
@@ -488,7 +485,6 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="BusinessObject_GenericParameters_ListView" AllowEdit="True" AllowDelete="False" AllowLink="False" AllowNew="False" />
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="名称" PropertyName="名称" Index="0" IsNewNode="True" />
