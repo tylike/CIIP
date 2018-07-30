@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="起始页">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="辐射菜单">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SystemLogonParameter_DetailView">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="ConfigDB" ActionContainer="ConfigDB" />
+      </Items>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="客户关系">
+        <Items Id="Items">
+          <Item Id="往来单位">
+            <Items Id="Items">
+              <Item Id="职位_ListView" ViewId="职位_ListView" />
+              <Item Id="行政区域_ListView" ViewId="行政区域_ListView" />
+              <Item Id="地址类型_ListView" ViewId="地址类型_ListView" />
+              <Item Id="地址_ListView" ViewId="地址_ListView" />
+              <Item Id="销售区域_ListView" ViewId="销售区域_ListView" />
+              <Item Id="往来单位_ListView" ViewId="往来单位_ListView" />
+              <Item Id="客户信息" ViewId="往来单位_ListView" />
+              <Item Id="本月新增供应商" ViewId="往来单位_ListView" />
+              <Item Id="本周新增" ViewId="往来单位_ListView" />
+            </Items>
+          </Item>
+          <Item Id="销售合同" ViewId="销售合同_ListView" />
+          <Item Id="销售订单" ViewId="销售订单_ListView" />
+          <Item Id="销售报价" ViewId="销售报价_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

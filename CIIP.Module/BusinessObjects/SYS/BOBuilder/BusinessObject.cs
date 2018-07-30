@@ -19,6 +19,15 @@ using System.Text;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
+    public enum Modifier
+    {
+        [XafDisplayName("普通")]
+        None,
+        [XafDisplayName("抽象 - 必须被继承")]
+        Abstract,
+        [XafDisplayName("密封 - 不可以被继承")]
+        Sealed
+    }
     public partial class BusinessObject : IDocumentProvider
     {
         public Guid GetDocumentGuid()
@@ -59,7 +68,14 @@ namespace CIIP.Module.BusinessObjects.SYS
                 rst.AppendLine("\t[VisibleInReport]");
             }
 
-            rst.Append($"\tpublic { (CanInherits ? "" : "sealed") + (IsAbstract ? "abstract" : "") } partial class { 名称 } ");
+            rst.Append($"\tpublic ");
+            if(this.Modifier != Modifier.None)
+            {
+                rst.Append($"{ Modifier.ToString().ToLower()} ");
+            }
+            rst.Append($" partial class { 名称 } ");
+
+            //" { (Modifier == Modifier.Sealed ? "" : "sealed") + (IsAbstract ? "abstract" : "") }");
 
             if (IsGenericTypeDefine)
             {
@@ -257,37 +273,21 @@ using DevExpress.Persistent.Validation;
             set { SetPropertyValue("IsPersistent", ref _IsPersistent, value); }
         }
 
-        private bool _CanInherits;
 
-        [XafDisplayName("可被继承")]
-        [VisibleInListView(false)]
-        public bool CanInherits
+
+        public Modifier Modifier
         {
-            get { return _CanInherits; }
-            set { SetPropertyValue("CanInherits", ref _CanInherits, value); }
-        }
-
-        private bool _IsAbstract;
-
-        [XafDisplayName("抽象基类")]
-        [ToolTip("指本类型是不可以被创建实例的，仅用于继承时使用.")]
-        [VisibleInListView(false)]
-        public bool IsAbstract
-        {
-            get { return _IsAbstract; }
+            get
+            {
+                return GetPropertyValue<Modifier>(nameof(Modifier));
+            }
             set
             {
-                SetPropertyValue("IsAbstract", ref _IsAbstract, value);
-
-                if (!IsLoading)
-                {
-                    if (value)
-                    {
-                        CanInherits = true;
-                    }
-                }
+                SetPropertyValue(nameof(Modifier), value);
             }
         }
+
+
 
 #warning 考虑使用IsSystem来处理？
         /// <summary>
@@ -446,7 +446,6 @@ using DevExpress.Persistent.Validation;
         {
             IsRuntimeDefine = true;
             this.IsPersistent = true;
-            this.CanInherits = true;
             base.AfterConstruction();
         }
 

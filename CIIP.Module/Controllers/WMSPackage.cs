@@ -122,7 +122,7 @@ namespace CIIP.Module.Controllers
 
             var 地理单位 = CreateNameObject("地理单位", 地理);
             地理单位.IsPersistent = false;
-            地理单位.IsAbstract = true;
+            地理单位.Modifier = Modifier.Abstract;
 
             地理单位.AddProperty<decimal>("经度");
             地理单位.AddProperty<decimal>("纬度");
@@ -283,7 +283,7 @@ namespace 基础信息.往来单位
             var form = os.FindBusinessObject(typeof(单据<>));
             var order = CreateObject("订单", form, NS常用基类);
             order.GenericParameters[0].Constraint = "DevExpress.Xpo.XPBaseObject";
-            order.IsAbstract = true;
+            order.Modifier = Modifier.Abstract;
             order.IsPersistent = false;
             order.Caption = "订单<明细>";
 
@@ -368,7 +368,7 @@ namespace 基础信息.往来单位
             var orderItem = CreateObject("订单明细", formItem, NS常用基类);
             orderItem.名称 = "订单明细";
             orderItem.Caption = "订单明细<订单>";
-            orderItem.IsAbstract = true;
+            orderItem.Modifier = Modifier.Abstract;
             orderItem.IsPersistent = false;
             //formItem.AddProperty("产品价格",产品价格)
             orderItem.AddProperty("产品", product);
@@ -692,7 +692,7 @@ namespace 常用基类
             var wmsFormBase = CreateObject("仓库单据基类", form, NS常用基类);
             wmsFormBase.GenericParameters[0].Constraint = "DevExpress.Xpo.XPBaseObject";
             wmsFormBase.GenericParameters[0].DefaultGenericType = wmsFormItemBase;
-            wmsFormBase.IsAbstract = true;
+            wmsFormBase.Modifier = Modifier.Abstract;
             wmsFormBase.IsPersistent = false;
             wmsFormBase.IsGenericTypeDefine = true;
             wmsFormBase.Caption = "仓库单据基类<库存单据明细>";

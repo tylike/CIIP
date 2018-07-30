@@ -222,8 +222,8 @@
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
   <SchemaModules>
-    <SchemaModule Name="SchedulerModuleBase" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.4.0" IsNewNode="True" />
   </SchemaModules>
   <Validation>
     <Rules>
@@ -370,18 +370,15 @@
     </ListView>
     <DetailView Id="BusinessObject_DetailView">
       <Layout>
-        <LayoutGroup Id="Main">
+        <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="NameObject" Index="0" Direction="Horizontal">
+            <LayoutGroup Id="NameObject" Index="0" Direction="Horizontal" Removed="True">
               <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
               <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
               <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
               <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Descriptor" Index="1" IsNewNode="True">
-              <LayoutItem Id="Descripton" ViewItem="Description" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="BusinessObject" Index="2" ShowCaption="False">
+            <LayoutGroup Id="BusinessObject" Index="2" ShowCaption="False" Removed="True">
               <LayoutGroup Id="Col1" Index="6" Direction="Horizontal" RelativeSize="30" IsNewNode="True">
                 <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="0" IsNewNode="True" />
                 <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="1" IsNewNode="True" />
@@ -407,17 +404,56 @@
             <LayoutGroup Id="BusinessObjectBase" Index="2" Removed="True" />
             <LayoutGroup Id="SimpleObject" Removed="True" />
           </LayoutGroup>
-          <TabbedGroup Id="Tabs">
-            <LayoutGroup Id="Methods" Removed="True" />
-          </TabbedGroup>
-          <LayoutGroup Id="SimpleObject" Index="3" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
-            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
-            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
-            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
-            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
-          </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" Removed="True" />
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="CollectionProperties" Removed="True" />
+            <LayoutGroup Id="GenericParameters" Removed="True" />
+            <LayoutGroup Id="Methods" Removed="True" />
+            <LayoutGroup Id="Properties" Removed="True" />
+          </TabbedGroup>
         </LayoutGroup>
+        <TabbedGroup Id="Tab" IsNewNode="True">
+          <LayoutGroup Id="常规" Index="0" IsNewNode="True">
+            <LayoutGroup Id="NameObject" Direction="Horizontal" ShowCaption="False" Index="0" IsNewNode="True">
+              <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="0" IsNewNode="True" />
+              <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
+              <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
+              <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
+              <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Descriptor" Index="1" IsNewNode="True">
+              <LayoutItem Id="Descripton" ViewItem="Description" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObject" Index="2" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
+              <LayoutGroup Id="Col1" Index="6" Direction="Horizontal" RelativeSize="30" IsNewNode="True">
+                <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="0" IsNewNode="True" />
+                <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="1" IsNewNode="True" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" Index="2" IsNewNode="True" />
+                <LayoutItem Id="IsVisibileInReports" ViewItem="IsVisibileInReports" Index="3" IsNewNode="True" />
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" Index="4" IsNewNode="True" />
+                <LayoutItem Id="IsCreatableItem" ViewItem="IsCreatableItem" Index="5" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Col2" Index="7" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Index="3" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
+              <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
+              <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
+              <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
+              <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="变量" IsNewNode="True">
+            <LayoutGroup Id="GenericParameters" Index="2" ShowCaption="True" IsNewNode="True">
+              <LayoutItem Id="GenericParameters" ViewItem="GenericParameters" ShowCaption="False" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="关系" IsNewNode="True">
+            <LayoutItem Id="CollectionProperties" ViewItem="CollectionProperties" ShowCaption="False" Index="0" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" IsNewNode="True">
+            <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" IsNewNode="True" />
+          </LayoutGroup>
+        </TabbedGroup>
       </Layout>
     </DetailView>
     <DetailView Id="BusinessObject_DetailView_BOLogic" ClassName="CIIP.Module.BusinessObjects.SYS.BusinessObject" IsNewNode="True">
