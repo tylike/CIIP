@@ -34,17 +34,13 @@
     <Dashboards DashboardGroupCaption="仪表盘" />
   </Options>
   <SchemaModules>
-    <SchemaModule Name="SchedulerModuleBase" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SchedulerWindowsFormsModule" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SystemWindowsFormsModule" Version="15.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.4.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
     <DetailView Id="BusinessForm_DetailView">
-      <Items>
-        <PropertyEditor Id="Config" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" Caption="主表配置" />
-        <PropertyEditor Id="ItemBusinessObject.Config" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" Caption="子表配置" />
-      </Items>
       <Layout>
         <LayoutGroup Id="Main">
           <TabbedGroup Id="Info">
@@ -58,11 +54,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <DetailView Id="BusinessObject_DetailView">
-      <Items>
-        <PropertyEditor Id="Config" PropertyEditorType="DevExpress.ExpressApp.Editors.DetailPropertyEditor" />
-      </Items>
-    </DetailView>
+    <ListView Id="BusinessObjectBase_Interfaces_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
     <DetailView Id="DashboardDefinition_DetailView">
       <Layout>
         <LayoutGroup Id="Main" Direction="Vertical">
