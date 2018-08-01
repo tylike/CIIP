@@ -101,6 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategorySettingAttribute.cs" />
     <Compile Include="CodeFirstView.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="ViewsGeneratorUpdaterX1.cs" />
@@ -122,6 +123,7 @@
       <SubType>Designer</SubType>
       <DependentUpon>CodeFirstViewModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DatabaseUpdate\ReadMe.txt" />

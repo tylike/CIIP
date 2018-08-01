@@ -362,7 +362,7 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="BusinessObject_CollectionProperties_ListView" AllowEdit="True" NewItemRowPosition="Bottom">
+    <ListView Id="BusinessObject_CollectionProperties_ListView" AllowEdit="True" NewItemRowPosition="Bottom" MasterDetailMode="ListViewAndDetailView">
       <Columns>
         <ColumnInfo Id="PropertyType" Index="1" />
         <ColumnInfo Id="RelationProperty" Index="2" />
@@ -442,10 +442,9 @@
             </LayoutGroup>
           </LayoutGroup>
           <LayoutGroup Id="范型" Index="1" IsNewNode="True">
-            <LayoutGroup Id="GenericParameters" Index="2" ShowCaption="True" IsNewNode="True">
-              <LayoutItem Id="GenericParameterDefines" ShowCaption="False" Index="0" ViewItem="GenericParameterDefines" IsNewNode="True" />
-              <LayoutItem Id="GenericParameterInstances" ViewItem="GenericParameterInstances" IsNewNode="True" />
-            </LayoutGroup>
+            <LayoutItem Id="Interfaces" ViewItem="Interfaces" Index="0" CaptionLocation="Top" ShowCaption="True" IsNewNode="True" />
+            <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="1" ViewItem="GenericParameterDefines" CaptionLocation="Top" IsNewNode="True" />
+            <LayoutItem Id="GenericParameterInstances" ViewItem="GenericParameterInstances" CaptionLocation="Top" ShowCaption="True" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" Index="2" IsNewNode="True">
             <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" IsNewNode="True" />
@@ -485,6 +484,8 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <ListView Id="BusinessObject_GenericParameterDefines_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
+    <ListView Id="BusinessObject_GenericParameterInstances_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="名称" PropertyName="名称" Index="0" IsNewNode="True" />

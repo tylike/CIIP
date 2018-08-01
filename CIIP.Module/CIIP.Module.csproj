@@ -231,6 +231,7 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameter.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\IDocumentProvider.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\InheritsProperty.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Interface.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\IPartCodeProvider.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\BusinessObjectEvent.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\EventListViewBase.cs" />
@@ -496,6 +497,10 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>
