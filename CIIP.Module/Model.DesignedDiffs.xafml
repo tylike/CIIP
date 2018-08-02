@@ -395,7 +395,6 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="BusinessObject_GenericParameterDefines_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="名称" PropertyName="名称" Index="0" IsNewNode="True" />
@@ -419,7 +418,7 @@
         <ColumnInfo Id="Expression" Index="2" />
       </Columns>
     </ListView>
-    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" />
+    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top" />
     <ListView Id="BusinessObjectBase_LookupListView">
       <Columns>
         <ColumnInfo Id="Caption" PropertyName="Caption" IsNewNode="True" />
@@ -564,6 +563,17 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <DetailView Id="ImplementRelation_DetailView">
+      <Layout>
+        <LayoutItem Id="GenericParameters" ViewItem="GenericParameters" ShowCaption="" Index="0" IsNewNode="True" />
+        <LayoutGroup Id="Main" Removed="True">
+          <LayoutGroup Id="GenericParameters_Group">
+            <LayoutItem Id="GenericParameters" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ImplementRelation_GenericParameters_ListView" AllowEdit="True" AllowNew="False" AllowDelete="False" IsFooterVisible="True" />
     <DetailView Id="MethodDefine_DetailView">
       <Layout>
         <LayoutGroup Id="Main">

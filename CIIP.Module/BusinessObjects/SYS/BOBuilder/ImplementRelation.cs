@@ -4,10 +4,11 @@ using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
-    
+
     /// <summary>
     /// 一个类继承基类或实现接口时,信息在这里描述
     /// </summary>
+    [Appearance("BOBase.IsGenericParametersVisible",Method = "IsGenericParametersHide", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
     public class ImplementRelation : BaseObject
     {
         public ImplementRelation(Session s) : base(s)
@@ -36,11 +37,11 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue(nameof(ImplementBusinessObject), value); }
         }
 
-        [Appearance("BOBase.IsGenericParametersVisible", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
-        public bool IsGenericParametersHide()
+        public static bool IsGenericParametersHide(ImplementRelation ins)
         {
-            if (ImplementBusinessObject == null) return true;
-            return !(ImplementBusinessObject.GenericParameterDefines.Count > 0);
+            if (ins == null) return true;
+            if (ins.ImplementBusinessObject == null) return true;
+            return !(ins.ImplementBusinessObject.GenericParameterDefines.Count > 0);
         }
 
         /// <summary>
