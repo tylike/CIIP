@@ -1,8 +1,10 @@
 ﻿using DevExpress.Xpo;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
+    
     /// <summary>
     /// 一个类继承基类或实现接口时,信息在这里描述
     /// </summary>
@@ -12,6 +14,9 @@ namespace CIIP.Module.BusinessObjects.SYS
         {
 
         }
+
+
+
         /// <summary>
         /// 主业务对象
         /// </summary>
@@ -21,6 +26,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             get { return GetPropertyValue<BusinessObjectBase>(nameof(MasterBusinessObject)); }
             set { SetPropertyValue(nameof(MasterBusinessObject), value); }
         }
+        
         /// <summary>
         /// 继承或实现了哪个类/接口
         /// </summary>
@@ -29,6 +35,14 @@ namespace CIIP.Module.BusinessObjects.SYS
             get { return GetPropertyValue<BusinessObjectBase>(nameof(ImplementBusinessObject)); }
             set { SetPropertyValue(nameof(ImplementBusinessObject), value); }
         }
+
+        [Appearance("BOBase.IsGenericParametersVisible", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
+        public bool IsGenericParametersHide()
+        {
+            if (ImplementBusinessObject == null) return true;
+            return !(ImplementBusinessObject.GenericParameterDefines.Count > 0);
+        }
+
         /// <summary>
         /// 如果类是泛型定义,则传入泛型的参数
         /// </summary>

@@ -231,7 +231,8 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\CollectionProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameter.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterDefine.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterInstance.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\IDocumentProvider.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\ImplementRelation.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\InheritsProperty.cs" />
@@ -490,6 +491,14 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

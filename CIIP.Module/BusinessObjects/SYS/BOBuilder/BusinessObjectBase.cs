@@ -51,6 +51,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("Description", ref _Description, value); }
         }
 
+        [XafDisplayName("基类接口")]
         [Association, DevExpress.Xpo.Aggregated]
         public XPCollection<ImplementRelation> Implements
         {
@@ -59,6 +60,19 @@ namespace CIIP.Module.BusinessObjects.SYS
                 return GetCollection<ImplementRelation>(nameof(Implements));
             }
         }
+
+        #region 泛型参数定义
+        [XafDisplayName("泛型参数定义")]
+        [ToolTip("如果需要类型参数时,可以在此定义,可以在属性及业务逻辑中使用!")]
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<GenericParameterDefine> GenericParameterDefines
+        {
+            get
+            {
+                return GetCollection<GenericParameterDefine>(nameof(GenericParameterDefines));
+            }
+        }
+        #endregion
 
         //[Association]
         //[XafDisplayName("实现接口")]

@@ -62,18 +62,7 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         #region 泛型
 
-        #region 泛型参数定义
-        [XafDisplayName("泛型参数定义")]
-        [ToolTip("如果需要类型参数时,可以在此定义,可以在属性及业务逻辑中使用!")]
-        [Association, DevExpress.Xpo.Aggregated]
-        public XPCollection<GenericParameterDefine> GenericParameterDefines
-        {
-            get
-            {
-                return GetCollection<GenericParameterDefine>(nameof(GenericParameterDefines));
-            }
-        } 
-        #endregion
+        
 
         private bool _IsGenericTypeDefine;
         [XafDisplayName("泛型定义")]

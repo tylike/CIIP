@@ -354,7 +354,7 @@
             </LayoutGroup>
           </LayoutGroup>
           <LayoutGroup Id="泛型" Index="1" IsNewNode="True">
-            <LayoutItem Id="Interfaces" ViewItem="Interfaces" Index="0" CaptionLocation="Top" ShowCaption="True" IsNewNode="True" />
+            <LayoutItem Id="Implements" Index="0" CaptionLocation="Top" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
             <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="1" ViewItem="GenericParameterDefines" CaptionLocation="Top" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" Index="2" IsNewNode="True">
@@ -419,6 +419,7 @@
         <ColumnInfo Id="Expression" Index="2" />
       </Columns>
     </ListView>
+    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" />
     <ListView Id="BusinessObjectBase_LookupListView">
       <Columns>
         <ColumnInfo Id="Caption" PropertyName="Caption" IsNewNode="True" />
