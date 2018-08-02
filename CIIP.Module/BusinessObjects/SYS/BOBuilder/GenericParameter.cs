@@ -20,12 +20,12 @@ namespace CIIP.Module.BusinessObjects.SYS
         //public class ClassName<TItem,MyT> : Form<TItem,客户类型>
         //where MyT : class|interface|类型|接口|enum|delegate 等.
         
-        private BusinessObject _Owner;
+        private ImplementRelation _Owner;
 
         [Association]
         [XafDisplayName("所属业务对象")]
         [ToolTip("指这个参数实例是在哪个业务对象中定义的")]
-        public BusinessObject Owner
+        public ImplementRelation Owner
         {
             get { return _Owner; }
             set { SetPropertyValue("Owner", ref _Owner, value); }
@@ -55,19 +55,19 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("ParameterIndex", ref _ParameterIndex, value); }
         }
 
-        protected bool ParameterValueMutsBeNotNull
-        {
-            get
-            {
-                if (Owner == null)
-                    return true;
-                return !Owner.IsGenericTypeDefine;
-            }
-        }
+        //protected bool ParameterValueMutsBeNotNull
+        //{
+        //    get
+        //    {
+        //        if (Owner == null)
+        //            return true;
+        //        return !Owner.IsGenericTypeDefine;
+        //    }
+        //}
 
         private BusinessObjectBase _ParameterValue;
         [XafDisplayName("参数")]
-        [RuleRequiredField(TargetCriteria = "ParameterValueMutsBeNotNull")]
+        //[RuleRequiredField(TargetCriteria = "ParameterValueMutsBeNotNull")]
         [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
         public BusinessObjectBase ParameterValue
         {
@@ -78,7 +78,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         private BusinessObject _DefaultGenericType;
 
 #warning 可能是不合理的,需要优化
-        [ToolTip("当主表为范型类型时,做为基类使用时,默认派生于哪些子表类型.")]
+        [ToolTip("当主表为泛型类型时,做为基类使用时,默认派生于哪些子表类型.")]
         [XafDisplayName("默认类型")]
         public BusinessObject DefaultGenericType
         {

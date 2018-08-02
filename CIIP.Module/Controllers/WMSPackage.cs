@@ -395,7 +395,7 @@ namespace 基础信息.往来单位
             orderItem.AddProperty<decimal>("含税单价").AllowEdit = false;
             orderItem.AddProperty<decimal>("含税总价").AllowEdit = false;
             orderItem.IsGenericTypeDefine = true;
-            order.GenericParameterInstances[0].DefaultGenericType = orderItem;
+            //order.GenericParameterInstances[0].DefaultGenericType = orderItem;
 
             orderItem.AddPartialLogic(@"
 namespace 常用基类

@@ -283,19 +283,19 @@ namespace CIIP.Module.Win.Editors
                 s.Tag = node;
             };
             
-            para.DoShowNavigationItem = (x) =>
-            {
-                var snc = Application.MainWindow.GetController<SubSystemNavigationController>();
-                var sname = x.Split('/');
-                if (sname.Length > 3)
-                    snc.NavigationToSystem(sname[3]);
-                var ctrl = Application.MainWindow.GetController<ShowNavigationItemController>().ShowNavigationItemAction;
-                var toItem = FindChoiceActionItemByModelPath(ctrl.Items, x);
-                ctrl.SelectedItem = toItem;
-                ctrl.DoExecute(toItem);
+            //para.DoShowNavigationItem = (x) =>
+            //{
+            //    var snc = Application.MainWindow.GetController<SubSystemNavigationController>();
+            //    var sname = x.Split('/');
+            //    if (sname.Length > 3)
+            //        snc.NavigationToSystem(sname[3]);
+            //    var ctrl = Application.MainWindow.GetController<ShowNavigationItemController>().ShowNavigationItemAction;
+            //    var toItem = FindChoiceActionItemByModelPath(ctrl.Items, x);
+            //    ctrl.SelectedItem = toItem;
+            //    ctrl.DoExecute(toItem);
 
-                //ctrl.FindItemByIdPath()
-            };
+            //    //ctrl.FindItemByIdPath()
+            //};
 
             if (currentShape != null)
                 para.SelectedNode = currentShape.Tag as IFlowNode;

@@ -92,8 +92,6 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("VisibleInLookupView", ref _VisibleInLookupView, value); }
         }
 
-
-
         private bool? _Browsable;
         [XafDisplayName("可见")]
         [ToolTip("属性在任何位置是否可见")]
@@ -136,7 +134,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
 
         private RuleRange _Range;
-        [XafDisplayName("至于范围")]
+        [XafDisplayName("范围")]
         [VisibleInListView(false)]
         [ExpandObjectMembers(ExpandObjectMembers.InDetailView)]
         public RuleRange Range

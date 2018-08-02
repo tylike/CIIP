@@ -134,7 +134,7 @@ namespace Flow
         
         public string GetCode()
         {
-            var code = BusinessObject.CommonUsing() + codeTemplate;
+            var code = BusinessObjectCodeGenerateExtendesion.CommonUsing() + codeTemplate;
 
             code = code.Replace("{流程名称}", GetFlowLogicClassName());
 

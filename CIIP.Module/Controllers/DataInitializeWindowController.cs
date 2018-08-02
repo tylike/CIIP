@@ -109,12 +109,12 @@ namespace CIIP.Module.Controllers
 
                 if (type.IsGenericType)
                 {
-                    bob.DisableCreateGenericParameterValues = true;
+                    //bob.DisableCreateGenericParameterValues = true;
 
                     foreach (var item in type.GetGenericArguments())
                     {
                         var gp = ObjectSpace.CreateObject<GenericParameterInstance>();
-                        gp.Owner = bob;
+                        //gp.Owner = bob;
                         gp.Name = item.Name;
                         if (item.IsGenericParameter)
                         {
@@ -224,7 +224,7 @@ namespace CIIP.Module.Controllers
             if (t == null)
             {
                 t = ObjectSpace.CreateObject<BusinessObject>();
-                t.DisableCreateGenericParameterValues = true;
+                //t.DisableCreateGenericParameterValues = true;
                 t.Category = nameSpace;
                 t.名称 = type.Name;
                 t.Caption = caption;

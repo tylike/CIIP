@@ -320,12 +320,6 @@
     <Compile Include="Controllers\CheckMethodViewController.Designer.cs">
       <DependentUpon>CheckMethodViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\WinShowNavigationItemController.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\WinShowNavigationItemController.Designer.cs">
-      <DependentUpon>WinShowNavigationItemController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Editors\AdmiralPopupExpressionPropertyEditor.cs" />
     <Compile Include="Editors\CodeEditor\AdmAccessToken.cs" />
     <Compile Include="Editors\CodeEditor\AdmAuthentication.cs" />
@@ -392,9 +386,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\GenerateBusinessModuleController.resx">
       <DependentUpon>GenerateBusinessModuleController.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controllers\WinShowNavigationItemController.resx">
-      <DependentUpon>WinShowNavigationItemController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Editors\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>

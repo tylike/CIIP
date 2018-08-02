@@ -10,14 +10,15 @@ namespace CIIP.Module.BusinessObjects.SYS
         {
 
         }
-        [Association,XafDisplayName("实现业务"),ToolTip("以下业务实现了本接口")]
-        public XPCollection<BusinessObjectBase> Implements
-        {
-            get
-            {
-                return GetCollection<BusinessObjectBase>(nameof(Implements));
-            }
-        }
+
+        //[Association,XafDisplayName("实现业务"),ToolTip("以下业务实现了本接口")]
+        //public XPCollection<BusinessObjectBase> Implements
+        //{
+        //    get
+        //    {
+        //        return GetCollection<BusinessObjectBase>(nameof(Implements));
+        //    }
+        //}
 
     }
 }

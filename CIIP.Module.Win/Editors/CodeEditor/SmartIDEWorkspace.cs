@@ -180,7 +180,7 @@ namespace CIIP.Module.Win.Editors
 
         public static string GetCommonUsing()
         {
-            return BusinessObject.CommonUsing();
+            return BusinessObjectCodeGenerateExtendesion.CommonUsing();
         }
         
         private Dictionary<Guid, Document> Documents = new Dictionary<Guid, Document>();

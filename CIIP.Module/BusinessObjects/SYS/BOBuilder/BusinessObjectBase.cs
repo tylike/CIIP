@@ -51,14 +51,24 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("Description", ref _Description, value); }
         }
 
-        [Association][XafDisplayName("实现接口")]
-        public XPCollection<Interface> Interfaces
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<ImplementRelation> Implements
         {
             get
             {
-                return GetCollection<Interface>(nameof(Interfaces));
+                return GetCollection<ImplementRelation>(nameof(Implements));
             }
         }
+
+        //[Association]
+        //[XafDisplayName("实现接口")]
+        //public XPCollection<Interface> Interfaces
+        //{
+        //    get
+        //    {
+        //        return GetCollection<Interface>(nameof(Interfaces));
+        //    }
+        //}
 
         ITreeNode ICategorizedItem.Category
         {

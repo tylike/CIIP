@@ -222,14 +222,18 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessForm.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObject.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectCodeGenerateExtendesion.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectDocumentProvider.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectLayout.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogic.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogicBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectQuickAddExtendesion.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\CollectionProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameter.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\IDocumentProvider.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\ImplementRelation.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\InheritsProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Interface.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\IPartCodeProvider.cs" />
@@ -309,21 +313,9 @@
       <DependentUpon>DataInitializeWindowController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\IObjectSpaceExtend.cs" />
-    <Compile Include="Controllers\SecurityShowNavigationItemController.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\SecurityShowNavigationItemController.Designer.cs">
-      <DependentUpon>SecurityShowNavigationItemController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\ShowStateMachineDesignerViewController.cs" />
     <Compile Include="Controllers\ShowStateMachineDesignerViewController.Designer.cs">
       <DependentUpon>ShowStateMachineDesignerViewController.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controllers\SubSystemNavigationController.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\SubSystemNavigationController.Designer.cs">
-      <DependentUpon>SubSystemNavigationController.cs</DependentUpon>
     </Compile>
     <Compile Include="Controllers\WMSPackage.cs" />
     <Compile Include="DatabaseUpdate\TestDataGeneratorHelper.cs" />
@@ -381,9 +373,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controllers\ShowStateMachineDesignerViewController.resx">
       <DependentUpon>ShowStateMachineDesignerViewController.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controllers\SubSystemNavigationController.resx">
-      <DependentUpon>SubSystemNavigationController.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml">
       <SubType>Designer</SubType>

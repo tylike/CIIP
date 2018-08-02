@@ -64,72 +64,35 @@
   </BOModel>
   <NavigationItems StartupNavigationItem="起始页">
     <Items>
-      <Item Id="客户关系" Index="0" ImageName="relationship" IsNewNode="True">
+      <Item Id="业务定制" Index="0" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="市场营销" Index="0" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="销售报价" Index="1" ViewId="销售报价_ListView" AutoGenerate="True" ChildItemsDisplayStyle="List" IsNewNode="True" />
-          <Item Id="销售订单" Index="2" ChildItemsDisplayStyle="List" AutoGenerate="True" ViewId="销售订单_ListView" IsNewNode="True" />
-          <Item Id="销售合同" Index="3" ViewId="销售合同_ListView" AutoGenerate="True" ChildItemsDisplayStyle="List" IsNewNode="True" />
-          <Item Id="往来单位" Index="4" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="本周新增" Index="0" Caption="本月新增客户" ViewId="往来单位_ListView" Criteria="客户 &amp;&amp; IsThisMonth(创建时间)" IsNewNode="True" />
-              <Item Id="本月新增供应商" ViewId="往来单位_ListView" Caption="本月新增供应商" AutoGenerate="False" Criteria="供应商 &amp;&amp; IsThisMonth(创建时间)" Index="1" IsNewNode="True" />
-              <Item Id="客户信息" Criteria="客户" ViewId="往来单位_ListView" Caption="客户信息" Index="2" IsNewNode="True" />
-              <Item Id="往来单位_ListView" ViewId="往来单位_ListView" ObjectKey="" Index="5" IsNewNode="True" />
-              <Item Id="销售区域_ListView" ViewId="销售区域_ListView" ObjectKey="" Index="7" IsNewNode="True" />
-              <Item Id="地址_ListView" ViewId="地址_ListView" ObjectKey="" Index="8" IsNewNode="True" />
-              <Item Id="地址类型_ListView" ViewId="地址类型_ListView" ObjectKey="" Index="9" IsNewNode="True" />
-              <Item Id="行政区域_ListView" ViewId="行政区域_ListView" ObjectKey="" Index="10" IsNewNode="True" />
-              <Item Id="职位_ListView" ViewId="职位_ListView" ObjectKey="" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="销售计划" IsNewNode="True" />
+          <Item Id="NameSpace" ViewId="NameSpace_ListView" Index="0" IsNewNode="True" />
+          <Item Id="用户业务" ViewId="BusinessObject_ListView" Index="1" IsNewNode="True" />
+          <Item Id="简单类型" ViewId="SimpleType_ListView" Index="2" IsNewNode="True" />
+          <Item Id="BusinessModule" ViewId="BusinessModule_ListView" IsNewNode="True" />
+          <Item Id="控制器" ViewId="RuntimeController_ListView" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="采购管理" Index="1" ImageName="BO_Order_Item" IsNewNode="True">
+      <Item Id="审批流程" Index="1" IsNewNode="True" Removed="True">
         <Items IsNewNode="True">
-          <Item Id="采购计划" Index="0" IsNewNode="True" />
-          <Item Id="采购申请" Index="1" IsNewNode="True" />
-          <Item Id="采购询价" Index="2" IsNewNode="True" />
-          <Item Id="采购订单" Index="3" IsNewNode="True" />
-          <Item Id="采购合同" Index="4" IsNewNode="True" />
-          <Item Id="采购到货" Index="5" IsNewNode="True" />
-          <Item Id="采购入库" Index="6" IsNewNode="True" />
-          <Item Id="采购退货" Index="7" IsNewNode="True" />
-          <Item Id="退货出库" Index="8" IsNewNode="True" />
+          <Item Id="AdmiralXpoStateMachine_ListView" ObjectKey="" ViewId="CIIPXpoStateMachine_ListView" IsNewNode="True" />
+          <Item Id="Flow_ListView" ViewId="Flow_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="单据流程状态记录_ListView" ViewId="单据流程状态记录_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="销售管理" Index="2" ImageName="BO_Sale" IsNewNode="True">
+      <Item Id="单据设置" Index="2" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="销售计划" Index="0" IsNewNode="True" />
-          <Item Id="销售申请" Index="1" IsNewNode="True" />
-          <Item Id="销售报价" Index="2" IsNewNode="True" />
-          <Item Id="销售订单" Index="3" IsNewNode="True" />
-          <Item Id="销售合同" Index="4" IsNewNode="True" />
-          <Item Id="退货入库" Index="5" IsNewNode="True" />
-          <Item Id="销售发货" Index="6" IsNewNode="True" />
-          <Item Id="销售退货" Index="7" IsNewNode="True" />
-          <Item Id="销售出库" Index="8" IsNewNode="True" />
+          <Item Id="单据编号方案_ListView" ViewId="单据编号方案_ListView" ObjectKey="" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="财务管理" Index="3" ImageName="BO_Sale_v92" IsNewNode="True">
+      <Item Id="组织架构" Index="3" IsNewNode="True" />
+      <Item Id="系统菜单" Index="4" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="采购付款" Index="0" IsNewNode="True" />
-          <Item Id="采购退款" Index="1" IsNewNode="True" />
-          <Item Id="销售退款" Index="2" IsNewNode="True" />
-          <Item Id="销售收款" Index="3" IsNewNode="True" />
+          <Item Id="起始页" ObjectKey="系统菜单" ViewId="起始页" IsNewNode="True" />
+          <Item Id="系统菜单" ViewId="NavigationMenu_ListView" IsNewNode="True" />
         </Items>
       </Item>
-      <Item Id="售后服务" Index="4" ImageName="CustomerServices" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="客服记录" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="Reports" Caption="数据分析" Index="5" ImageName="Action_Chart_ShowDesigner">
+      <Item Id="Reports" Caption="数据分析" Index="5" ImageName="Action_Chart_ShowDesigner" Removed="True">
         <Items>
           <Item Id="Analysis_ListView" Removed="True" />
           <Item Id="Dashboard" IsNewNode="True" />
@@ -146,47 +109,9 @@
           </Item>
         </Items>
       </Item>
-      <Item Id="质量检测" Index="6" ImageName="qCheck" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="质检单据" IsNewNode="True" />
-          <Item Id="质检申请" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="Default" Caption="系统首页" Index="7" Visible="False">
+      <Item Id="Default" Caption="系统首页" Index="7" Visible="False" Removed="True">
         <Items>
           <Item Id="Event_ListView" Removed="True" />
-        </Items>
-      </Item>
-      <Item Id="技术支持" Index="8" ImageName="Settings" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="业务定制" Index="0" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="NameSpace" ViewId="NameSpace_ListView" Index="0" IsNewNode="True" />
-              <Item Id="用户业务" ViewId="BusinessObject_ListView" Index="1" IsNewNode="True" />
-              <Item Id="简单类型" ViewId="SimpleType_ListView" Index="2" IsNewNode="True" />
-              <Item Id="BusinessModule" ViewId="BusinessModule_ListView" IsNewNode="True" />
-              <Item Id="控制器" ViewId="RuntimeController_ListView" Caption="控制器" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="审批流程" Index="1" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="AdmiralXpoStateMachine_ListView" ObjectKey="" ViewId="CIIPXpoStateMachine_ListView" IsNewNode="True" />
-              <Item Id="Flow_ListView" ViewId="Flow_ListView" ObjectKey="" IsNewNode="True" />
-              <Item Id="单据流程状态记录_ListView" ViewId="单据流程状态记录_ListView" ObjectKey="" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="单据设置" Index="2" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="单据编号方案_ListView" ViewId="单据编号方案_ListView" ObjectKey="" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="组织架构" Index="3" IsNewNode="True" />
-          <Item Id="系统菜单" Index="4" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="起始页" ObjectKey="系统菜单" ViewId="起始页" IsNewNode="True" />
-              <Item Id="系统菜单" ViewId="NavigationMenu_ListView" IsNewNode="True" />
-            </Items>
-          </Item>
         </Items>
       </Item>
       <Item Id="系统设置" Index="8" Removed="True">
@@ -197,19 +122,6 @@
           <Item Id="日期维度_ListView" Removed="True" />
         </Items>
       </Item>
-      <Item Id="仓库管理" ImageName="warehouse" Index="9" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="采购入库" IsNewNode="True" />
-          <Item Id="采购退货" IsNewNode="True" />
-          <Item Id="产品调拨" IsNewNode="True" />
-          <Item Id="库存盘点" IsNewNode="True" />
-          <Item Id="库存情况" IsNewNode="True" />
-          <Item Id="销售出库" IsNewNode="True" />
-          <Item Id="销售退货" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="审批流程" Index="10" Removed="True" />
-      <Item Id="生产管理" ImageName="production" Index="10" IsNewNode="True" />
       <Item Id="安全设置" Index="12" Removed="True">
         <Items>
           <Item Id="系统用户_ListView" Removed="True" />
@@ -441,10 +353,9 @@
               <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
             </LayoutGroup>
           </LayoutGroup>
-          <LayoutGroup Id="范型" Index="1" IsNewNode="True">
+          <LayoutGroup Id="泛型" Index="1" IsNewNode="True">
             <LayoutItem Id="Interfaces" ViewItem="Interfaces" Index="0" CaptionLocation="Top" ShowCaption="True" IsNewNode="True" />
             <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="1" ViewItem="GenericParameterDefines" CaptionLocation="Top" IsNewNode="True" />
-            <LayoutItem Id="GenericParameterInstances" ViewItem="GenericParameterInstances" CaptionLocation="Top" ShowCaption="True" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" Index="2" IsNewNode="True">
             <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" IsNewNode="True" />
@@ -485,7 +396,6 @@
       </Layout>
     </DetailView>
     <ListView Id="BusinessObject_GenericParameterDefines_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
-    <ListView Id="BusinessObject_GenericParameterInstances_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="名称" PropertyName="名称" Index="0" IsNewNode="True" />
