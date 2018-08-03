@@ -1,6 +1,7 @@
 ﻿using DevExpress.Xpo;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.ConditionalAppearance;
+using DevExpress.ExpressApp.DC;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
@@ -9,6 +10,7 @@ namespace CIIP.Module.BusinessObjects.SYS
     /// 一个类继承基类或实现接口时,信息在这里描述
     /// </summary>
     [Appearance("BOBase.IsGenericParametersVisible",Method = "IsGenericParametersHide", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
+    [XafDisplayName("继承/实现接口")]
     public class ImplementRelation : BaseObject
     {
         public ImplementRelation(Session s) : base(s)
@@ -22,6 +24,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         /// 主业务对象
         /// </summary>
         [Association]
+        [XafDisplayName("所属业务")]
         public BusinessObjectBase MasterBusinessObject
         {
             get { return GetPropertyValue<BusinessObjectBase>(nameof(MasterBusinessObject)); }
@@ -31,6 +34,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         /// <summary>
         /// 继承或实现了哪个类/接口
         /// </summary>
+        [XafDisplayName("实现")]
         public BusinessObjectBase ImplementBusinessObject
         {
             get { return GetPropertyValue<BusinessObjectBase>(nameof(ImplementBusinessObject)); }
@@ -47,7 +51,8 @@ namespace CIIP.Module.BusinessObjects.SYS
         /// <summary>
         /// 如果类是泛型定义,则传入泛型的参数
         /// </summary>
-        [Association, Aggregated]
+        [Association, DevExpress.Xpo.Aggregated]
+        [XafDisplayName("输入参数")]
         public XPCollection<GenericParameterInstance> GenericParameters
         {
             get

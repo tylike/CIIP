@@ -329,7 +329,6 @@
             <LayoutGroup Id="NameObject" Direction="Horizontal" ShowCaption="False" Index="0" IsNewNode="True">
               <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="0" IsNewNode="True" />
               <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
-              <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
               <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
               <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
             </LayoutGroup>
@@ -338,7 +337,6 @@
             </LayoutGroup>
             <LayoutGroup Id="BusinessObject" Index="2" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
               <LayoutGroup Id="Col1" Index="6" Direction="Horizontal" RelativeSize="30" IsNewNode="True">
-                <LayoutItem Id="Modifier" Index="0" ViewItem="Modifier" IsNewNode="True" />
                 <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="1" IsNewNode="True" />
                 <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="2" IsNewNode="True" />
                 <LayoutItem Id="IsVisibileInReports" ViewItem="IsVisibileInReports" Index="3" IsNewNode="True" />
@@ -346,16 +344,20 @@
               </LayoutGroup>
               <LayoutGroup Id="Col2" Index="7" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="SimpleObject" Index="3" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" CaptionLocation="Top" IsNewNode="True" />
+            <LayoutGroup Id="派生设置" Index="4" IsNewNode="True">
+              <LayoutItem Id="Modifier" Index="1" ViewItem="Modifier" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="基类设置" Index="5" IsNewNode="True">
+              <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="Implements" Index="6" CaptionLocation="Top" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
+            <LayoutGroup Id="SimpleObject" Index="7" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
               <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
               <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
               <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
               <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
             </LayoutGroup>
-          </LayoutGroup>
-          <LayoutGroup Id="泛型" Index="1" IsNewNode="True">
-            <LayoutItem Id="Implements" Index="0" CaptionLocation="Top" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
-            <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="1" ViewItem="GenericParameterDefines" CaptionLocation="Top" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" Index="2" IsNewNode="True">
             <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" IsNewNode="True" />

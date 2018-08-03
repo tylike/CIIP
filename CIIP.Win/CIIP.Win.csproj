@@ -272,256 +272,331 @@
     <Compile Include="ERPWindowsFormsApplication.Designer.cs">
       <DependentUpon>ERPWindowsFormsApplication.cs</DependentUpon>
     </Compile>
-    <Content Include="ZH-Hans\DevExpress.Charts.Designer.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Charts.Designer.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Dashboard.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Dashboard.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Dashboard.v16.1.Web.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Dashboard.v18.1.Web.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Dashboard.v16.1.Win.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Dashboard.v18.1.Win.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Data.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Data.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.DataAccess.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.DataAccess.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.DataAccess.v16.1.UI.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.DataAccess.v18.1.UI.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Diagram.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Diagram.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Dialogs.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.PivotChart.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.AuditTrail.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Reports.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Dashboards.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Dashboards.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.Web.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Dashboards.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Security.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.FileAttachment.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.FileAttachment.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Validation.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.HtmlPropertyEditor.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Web.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Kpi.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.ExpressApp.Win.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Mobile.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Map.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Notifications.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Office.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Notifications.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Pdf.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Objects.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.PivotGrid.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Office.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Printing.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.PivotChart.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.RichEdit.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Reports.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Snap.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Reports.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Snap.v16.1.Extensions.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Reports.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Snap.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.ReportsV2.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Sparkline.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.ReportsV2.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Spreadsheet.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.ReportsV2.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Utils.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Utils.v16.1.UI.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxHtmlEditor.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Scheduler.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxRichEdit.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Security.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxScheduler.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.StateMachine.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpellChecker.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpreadsheet.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Validation.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.ASPxTreeList.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.ViewVariantsModule.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Web.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Charts.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Controls.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Workflow.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Core.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.ExpressApp.Workflow.Win.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Docking.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Map.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.DocumentViewer.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Mvvm.v18.1.DataModel.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Gauges.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Office.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Grid.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Pdf.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.LayoutControl.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.PivotGrid.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.NavBar.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Printing.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.PdfViewer.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.RichEdit.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Printing.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Snap.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.PropertyGrid.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Snap.v18.1.Extensions.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.ReportDesigner.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Snap.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Ribbon.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Sparkline.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.RichEdit.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Spreadsheet.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Scheduler.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Utils.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.SpellChecker.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Utils.v18.1.UI.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpf.Spreadsheet.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxHtmlEditor.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.Xpo.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxRichEdit.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraBars.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxScheduler.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraCharts.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpellChecker.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraCharts.v16.1.Wizard.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxSpreadsheet.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraEditors.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.ASPxTreeList.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraGauges.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.Resources.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraGauges.v16.1.Presets.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Web.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraGrid.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Charts.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraLayout.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Controls.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraNavBar.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Core.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraPdfViewer.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Docking.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraPivotGrid.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.DocumentViewer.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraPrinting.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Gauges.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraReports.v16.1.Extensions.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Grid.v18.1.Core.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraReports.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.LayoutControl.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraReports.v16.1.Web.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.NavBar.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v16.1.Extensions.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.PdfViewer.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Printing.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.Core.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.PropertyGrid.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.Extensions.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.ReportDesigner.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.Reporting.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Ribbon.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.RichEdit.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraSpellChecker.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Scheduler.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraSpreadsheet.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Scheduling.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraTreeList.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.SpellChecker.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraVerticalGrid.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpf.Spreadsheet.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\DevExpress.XtraWizard.v16.1.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.Xpo.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="ZH-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll">
+    <Content Include="ZH-Hans\DevExpress.XtraBars.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraCharts.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraCharts.v18.1.Wizard.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraEditors.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraGauges.v18.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraGauges.v18.1.Presets.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraGrid.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraLayout.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraNavBar.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraPdfViewer.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraPivotGrid.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraPrinting.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraReports.v18.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraReports.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraReports.v18.1.Web.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v18.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraRichEdit.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v18.1.Core.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v18.1.Extensions.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v18.1.Reporting.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraScheduler.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraSpellChecker.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraSpreadsheet.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraTreeList.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraVerticalGrid.v18.1.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ZH-Hans\DevExpress.XtraWizard.v18.1.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Form1.resx">
