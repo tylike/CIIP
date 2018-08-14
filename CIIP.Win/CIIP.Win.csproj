@@ -802,7 +802,6 @@
     <None Include="Resources\B.gif" />
     <None Include="Resources\B1.gif" />
     <None Include="Images\ReadMe.txt" />
-    <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CIIP.CodeFirstView\CIIP.CodeFirstView.csproj">
