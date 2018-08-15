@@ -17,7 +17,7 @@
       </Action>
       <Action Id="Link" Caption="链接" />
       <Action Id="Logoff" Caption="退出" />
-      <Action Id="Logon" Caption="登陆" />
+      <Action Id="Logon" Caption="进入系统" />
       <Action Id="NavigateBack" Caption="后退" />
       <Action Id="NavigateForward" Caption="向前" />
       <Action Id="New" Caption="新建" />
