@@ -40,7 +40,6 @@ namespace CIIP.Web {
         private CIIP.StateMachine.AdmiralStateMachineModule admiralStateMachineModule1;
         private FormCode.FormCodeModule formCodeModule1;
         private Icon.IconModule iconModule1;
-        private Admiral.ImportData.ImportDataModule importDataModule1;
         private DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule viewVariantsModule;
 
         public ERPAspNetApplication() {
@@ -132,7 +131,6 @@ namespace CIIP.Web {
             this.admiralStateMachineModule1 = new CIIP.StateMachine.AdmiralStateMachineModule();
             this.formCodeModule1 = new CIIP.FormCode.FormCodeModule();
             this.iconModule1 = new CIIP.Icon.IconModule();
-            this.importDataModule1 = new Admiral.ImportData.ImportDataModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // securityStrategyComplex1
@@ -197,7 +195,6 @@ namespace CIIP.Web {
             this.Modules.Add(this.admiralStateMachineModule1);
             this.Modules.Add(this.formCodeModule1);
             this.Modules.Add(this.iconModule1);
-            this.Modules.Add(this.importDataModule1);
             this.Modules.Add(this.module3);
             this.Modules.Add(this.fileAttachmentsAspNetModule);
             this.Modules.Add(this.htmlPropertyEditorAspNetModule);

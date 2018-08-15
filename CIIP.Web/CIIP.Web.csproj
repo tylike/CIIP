@@ -57,10 +57,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Admiral.ImportData, Version=1.0.6016.29153, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\Admiral.ImportData.dll</HintPath>
-    </Reference>
     <Reference Include="CIIP.FormCode, Version=1.0.6022.18009, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\CIIP.FormCode\bin\Debug\CIIP.FormCode.dll</HintPath>
