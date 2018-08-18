@@ -238,6 +238,7 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\InheritsProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Interface.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\IPartCodeProvider.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\ITokenList.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\BusinessObjectEvent.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\EventListViewBase.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectAfterConstruction.cs" />

@@ -15,7 +15,6 @@ using CIIP;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
-
     public enum Modifier
     {
         [XafDisplayName("∆’Õ®")]

@@ -199,9 +199,7 @@ namespace 常用基类
                 }
             }
         }
-
-
-
+        
         private string _创建者;
 
         [ModelDefault("AllowEdit", "False")]

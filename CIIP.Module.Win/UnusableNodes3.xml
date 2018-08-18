@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="BusinessObjectBase_Interfaces_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutItem Id="ItemBusinessObject.Config" ViewItem="ItemBusinessObject.Config" />
+              <LayoutItem Id="Config" ViewItem="Config" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Reports">
+        <Items Id="Items">
+          <Item Id="Dashboard">
+            <Items Id="Items">
+              <Item Id="DashboardDefinition_ListView" ViewId="DashboardDefinition_ListView" ObjectKey="" />
+            </Items>
+          </Item>
+          <Item Id="DashboardDefinition_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

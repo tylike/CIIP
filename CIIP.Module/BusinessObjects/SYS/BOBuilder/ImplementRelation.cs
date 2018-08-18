@@ -9,7 +9,7 @@ namespace CIIP.Module.BusinessObjects.SYS
     /// <summary>
     /// 一个类继承基类或实现接口时,信息在这里描述
     /// </summary>
-    [Appearance("BOBase.IsGenericParametersVisible",Method = "IsGenericParametersHide", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
+    [Appearance("BOBase.IsGenericParametersVisible", Method = "IsGenericParametersHide", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
     [XafDisplayName("继承/实现接口")]
     public class ImplementRelation : BaseObject
     {
@@ -30,7 +30,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             get { return GetPropertyValue<BusinessObjectBase>(nameof(MasterBusinessObject)); }
             set { SetPropertyValue(nameof(MasterBusinessObject), value); }
         }
-        
+
         /// <summary>
         /// 继承或实现了哪个类/接口
         /// </summary>
@@ -60,6 +60,8 @@ namespace CIIP.Module.BusinessObjects.SYS
                 return GetCollection<GenericParameterInstance>(nameof(GenericParameters));
             }
         }
+
+
 
         //验证,一个类只能有一个基类
         //但可以实现多个接口.

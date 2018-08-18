@@ -23,6 +23,7 @@ using CIIP.CodeFirstView;
 
 namespace CIIP.Module.Win.Editors
 {
+
     internal class CategorizedListEditorPropertyDescriptor : PropertyDescriptor
     {
         // Fields

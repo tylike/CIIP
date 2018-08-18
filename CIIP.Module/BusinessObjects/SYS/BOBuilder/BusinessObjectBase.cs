@@ -7,12 +7,14 @@ using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using DevExpress.Persistent.Base;
 using 常用基类;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
     [XafDisplayName("类型")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
-    public class BusinessObjectBase : NameObject,ICategorizedItem
+    public class BusinessObjectBase : NameObject, ICategorizedItem
     {
         private string _FullName;
 
@@ -87,11 +89,13 @@ namespace CIIP.Module.BusinessObjects.SYS
         ITreeNode ICategorizedItem.Category
         {
             get { return Category; }
-            set { Category = (NameSpace) value; }
+            set { Category = (NameSpace)value; }
         }
 
         public BusinessObjectBase(Session s) : base(s)
         {
         }
+
+
     }
 }

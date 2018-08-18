@@ -16,28 +16,14 @@
       <Action Id="生成业务模型" ImageName="build" />
     </Actions>
   </ActionDesign>
-  <NavigationItems>
-    <Items>
-      <Item Id="Reports">
-        <Items>
-          <Item Id="Dashboard">
-            <Items>
-              <Item Id="DashboardDefinition_ListView" ViewId="DashboardDefinition_ListView" ObjectKey="" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="DashboardDefinition_ListView" Removed="True" />
-        </Items>
-      </Item>
-    </Items>
-  </NavigationItems>
   <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI">
     <Dashboards DashboardGroupCaption="仪表盘" />
   </Options>
   <SchemaModules>
-    <SchemaModule Name="SchedulerModuleBase" Version="18.1.4.0" IsNewNode="True" />
-    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.4.0" IsNewNode="True" />
-    <SchemaModule Name="SystemModule" Version="18.1.4.0" IsNewNode="True" />
-    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
     <DetailView Id="BusinessForm_DetailView">
@@ -54,7 +40,11 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="BusinessObjectBase_Interfaces_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
+    <DetailView Id="BusinessObject_DetailView">
+      <Items>
+        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.TokenEditorPropertyEditor" />
+      </Items>
+    </DetailView>
     <DetailView Id="DashboardDefinition_DetailView">
       <Layout>
         <LayoutGroup Id="Main" Direction="Vertical">
