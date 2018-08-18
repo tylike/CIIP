@@ -349,6 +349,9 @@
     <Compile Include="Editors\FrmEditConnectionString.Designer.cs">
       <DependentUpon>FrmEditConnectionString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editors\GenericPropertyEditor.cs" />
+    <Compile Include="Editors\ImplementPropertyEditor.cs" />
+    <Compile Include="Editors\ImplementToken.cs" />
     <Compile Include="Editors\IntelligVariantPropertyEditor.cs" />
     <Compile Include="Editors\CodeEditor\SmartIDEWorkspace.cs" />
     <Compile Include="Editors\RadialMenuPropertyEditor.cs" />
@@ -358,7 +361,6 @@
     <Compile Include="Editors\CodeEditor\SmartVisualStudio.Designer.cs">
       <DependentUpon>SmartVisualStudio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Editors\TokenEditorPropertyEditor.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -441,11 +443,7 @@
     <None Include="Controllers\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="UnusableNodes2.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes3.xml">
+    <None Include="UnusableNodes.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>
@@ -500,14 +498,6 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="UnusableNodes1.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Resources\loading.gif" />
   </ItemGroup>
   <ItemGroup>

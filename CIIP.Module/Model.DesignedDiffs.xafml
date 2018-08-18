@@ -134,8 +134,8 @@
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
   <SchemaModules>
-    <SchemaModule Name="SchedulerModuleBase" Version="18.1.4.0" IsNewNode="True" />
-    <SchemaModule Name="SystemModule" Version="18.1.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
   </SchemaModules>
   <Validation>
     <Rules>
@@ -344,14 +344,14 @@
               </LayoutGroup>
               <LayoutGroup Id="Col2" Index="7" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" CaptionLocation="Top" IsNewNode="True" />
+            <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" IsNewNode="True" />
             <LayoutGroup Id="派生设置" Index="4" IsNewNode="True">
               <LayoutItem Id="Modifier" Index="1" ViewItem="Modifier" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="基类设置" Index="5" IsNewNode="True">
               <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutItem Id="Implements" Index="6" CaptionLocation="Top" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
+            <LayoutItem Id="Implements" Index="6" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
             <LayoutGroup Id="SimpleObject" Index="7" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
               <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
               <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />

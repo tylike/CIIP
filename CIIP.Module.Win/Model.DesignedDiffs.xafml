@@ -42,7 +42,8 @@
     </DetailView>
     <DetailView Id="BusinessObject_DetailView">
       <Items>
-        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.TokenEditorPropertyEditor" />
+        <PropertyEditor Id="GenericParameterDefines" PropertyEditorType="CIIP.Module.Win.Editors.GenericPropertyEditor" />
+        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
       </Items>
     </DetailView>
     <DetailView Id="DashboardDefinition_DetailView">
