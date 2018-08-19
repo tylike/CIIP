@@ -11,6 +11,9 @@ using System.Collections;
 using DevExpress.Utils;
 using DevExpress.ExpressApp;
 using System.Windows.Forms;
+using DevExpress.XtraEditors.Controls;
+using DevExpress.XtraEditors.Drawing;
+using DevExpress.LookAndFeel;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -32,8 +35,9 @@ namespace CIIP.Module.Win.Editors
             {
                 if (CurrentObject != null)
                 {
-                    var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid);// as System.ComponentModel.IBindingList;
-                    control.EditValue = string.Join(control.Properties.EditValueSeparatorChar.ToString(), values);
+                    var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid + ",\r\n");// as System.ComponentModel.IBindingList;
+
+                    control.EditValue = string.Join(",", values);
                 }
             }
         }
@@ -108,8 +112,28 @@ namespace CIIP.Module.Win.Editors
             i.ValidateToken += Control_ValidateToken;
             i.TokenAdded += I_TokenAdded;
             i.TokenRemoved += I_TokenRemoved;
+            i.DoubleClick += I_DoubleClick;
+            i.ShowTokenGlyph = true;
+            i.ShowDropDown = true;
+            //i.CustomDrawTokenGlyph += Properties_CustomDrawTokenGlyph;
         }
 
+        private void I_DoubleClick(object sender, EventArgs e)
+        {
+            XtraMessageBox.Show("double click!");
+        }
+
+        EditorButton btn = new EditorButton(ButtonPredefines.SpinLeft);
+        void Properties_CustomDrawTokenGlyph(object sender, TokenEditCustomDrawTokenGlyphEventArgs e)
+        {
+            
+            EditorButtonPainter painter = new SkinEditorButtonPainter(UserLookAndFeel.Default.ActiveLookAndFeel);
+            EditorButtonObjectInfoArgs args = new EditorButtonObjectInfoArgs(btn, Control.Properties.Appearance);
+            args.Bounds = e.Bounds;
+            args.Graphics = e.Graphics;
+            painter.DrawObject(args);
+            e.Handled = true;
+        }
         private void I_BeforeShowPopupPanel(object sender, TokenEditBeforeShowPopupPanelEventArgs e)
         {
             var value = tokenService.Implements.FirstOrDefault(x=>x.ImplementBusinessObject.Oid == (Guid)e.Value);
@@ -152,4 +176,11 @@ namespace CIIP.Module.Win.Editors
             this.application = application;
         }
     }
+
+
+    public class TokenEditExt : TokenEdit
+    {
+
+    }
+
 }

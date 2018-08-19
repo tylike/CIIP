@@ -107,6 +107,7 @@ namespace CIIP.Module.Win.Editors
             i.TokenAdded += I_TokenAdded;
             i.TokenRemoved += I_TokenRemoved;
             i.Tokens.ListChanged += Tokens_ListChanged;
+            
         }
 
         private void Tokens_ListChanged(object sender, System.ComponentModel.ListChangedEventArgs e)
