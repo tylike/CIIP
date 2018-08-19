@@ -34,7 +34,7 @@ namespace CIIP.Module.Controllers
     public class WMSPackage:Package
     {
         private BusinessObject NameObject;
-        private NameSpace NS基础信息;
+        private Namespace NS基础信息;
 
         public WMSPackage(IObjectSpace os) : base(os)
         {
@@ -1241,7 +1241,7 @@ AS
                 }
             }
         }
-        public BusinessForm CreateWMSForm(string name, BusinessObject @base, NameSpace category, string nl1, bool? isOut, string nl2 = null,Action<BusinessForm> userSetup = null)
+        public BusinessForm CreateWMSForm(string name, BusinessObject @base, Namespace category, string nl1, bool? isOut, string nl2 = null,Action<BusinessForm> userSetup = null)
         {
 
             var form = CreateForm(name, @base, category, nl1, nl2,false);
@@ -1279,7 +1279,7 @@ namespace {form.Category.FullName}
             return form;
         }
 
-        public BusinessForm CreateForm(string name,BusinessObject @base,NameSpace category,string navl1,string navl2=null,bool createLayout = true)
+        public BusinessForm CreateForm(string name,BusinessObject @base,Namespace category,string navl1,string navl2=null,bool createLayout = true)
         {
             var root = ModelDataSource.NavigationItemDataSources.FirstOrDefault(x => x.Name == navl1)?.Children.OfType<NavigationItem>().FirstOrDefault(x => x.Name == (navl2 ?? name));
 
@@ -1304,7 +1304,7 @@ namespace {form.Category.FullName}
 
         }
 
-        public BusinessObject CreateNameObject(string name, NameSpace ns, string nav1 = null, string nav2 = null)
+        public BusinessObject CreateNameObject(string name, Namespace ns, string nav1 = null, string nav2 = null)
         {
             return CreateObject(name, NameObject, ns, nav1, nav2);
         }
@@ -1317,7 +1317,7 @@ namespace {form.Category.FullName}
             return bopl;
         }
 
-        public BusinessObject CreateObject(string name, BusinessObject baseBO, NameSpace ns, string navl1 = null, string navl2 = null)
+        public BusinessObject CreateObject(string name, BusinessObject baseBO, Namespace ns, string navl1 = null, string navl2 = null)
         {
             var bo = os.CreateObject<BusinessObject>();
             bo.Category = ns;
@@ -1328,9 +1328,9 @@ namespace {form.Category.FullName}
             return bo;
         }
         
-        public NameSpace CreateNameSpace(string ns)
+        public Namespace CreateNameSpace(string ns)
         {
-            NameSpace find = os.FindObject<NameSpace>(new BinaryOperator("FullName", ns), true);
+            Namespace find = os.FindObject<Namespace>(new BinaryOperator("FullName", ns), true);
             
             //没找到：
             if (find == null)
@@ -1339,7 +1339,7 @@ namespace {form.Category.FullName}
                 if (part.Length > 0)
                 {
                     //是 “xxx.xxx”这样的多级空间。
-                    find = os.CreateObject<NameSpace>();
+                    find = os.CreateObject<Namespace>();
                     find.名称 = part[part.Length - 1];
                     //创建最后一级空间
                     if (part.Length > 1)

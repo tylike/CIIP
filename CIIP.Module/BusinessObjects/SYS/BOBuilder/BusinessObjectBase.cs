@@ -37,10 +37,10 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("FullName", ref _FullName, value); }
         }
 
-        private NameSpace _Category;
+        private Namespace _Category;
         [XafDisplayName("·ÖÀà")]
         [RuleRequiredField]
-        public NameSpace Category
+        public Namespace Category
         {
             get { return _Category; }
             set { SetPropertyValue("Category", ref _Category, value); }
@@ -115,7 +115,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         ITreeNode ICategorizedItem.Category
         {
             get { return Category; }
-            set { Category = (NameSpace)value; }
+            set { Category = (Namespace)value; }
         }
 
         public BusinessObjectBase(Session s) : base(s)

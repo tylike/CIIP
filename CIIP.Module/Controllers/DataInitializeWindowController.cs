@@ -200,16 +200,16 @@ namespace CIIP.Module.Controllers
             ObjectSpace.CommitChanges();
         }
 
-        public static NameSpace CreateNameSpace(string ns,IObjectSpace ObjectSpace)
+        public static Namespace CreateNameSpace(string ns,IObjectSpace ObjectSpace)
         {
-            var find = ObjectSpace.FindObject<NameSpace>(new BinaryOperator("FullName", ns));
+            var find = ObjectSpace.FindObject<Namespace>(new BinaryOperator("FullName", ns));
 
             if (find == null)
             {
                 var part = ns.Split('.');
                 if (part.Length > 0)
                 {
-                    find = ObjectSpace.CreateObject<NameSpace>();
+                    find = ObjectSpace.CreateObject<Namespace>();
                     find.名称 = part[part.Length - 1];
                     if (part.Length > 1)
                     {
@@ -219,7 +219,7 @@ namespace CIIP.Module.Controllers
             }
             return find;
         }
-        public static BusinessObject AddBusinessObject(Type type, string caption, NameSpace nameSpace, string description, bool isRuntimeDefine,IObjectSpace ObjectSpace)
+        public static BusinessObject AddBusinessObject(Type type, string caption, Namespace nameSpace, string description, bool isRuntimeDefine,IObjectSpace ObjectSpace)
         {
             var t = ObjectSpace.FindObject<BusinessObject>(new BinaryOperator("FullName", type.FullName),true);
             if (t == null)

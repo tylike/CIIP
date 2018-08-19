@@ -12,12 +12,12 @@ using DevExpress.ExpressApp.Utils;
 namespace CIIP.Module.BusinessObjects.SYS
 {
     [XafDisplayName("业务分类")]
-    public class NameSpace : NameObject, ITreeNode,ITreeNodeImageProvider
+    public class Namespace : NameObject, ITreeNode,ITreeNodeImageProvider
     {
         [Association, DevExpress.Xpo.Aggregated]
-        public XPCollection<NameSpace> Children
+        public XPCollection<Namespace> Children
         {
-            get { return GetCollection<NameSpace>("Children"); }
+            get { return GetCollection<Namespace>("Children"); }
         }
 
         public override string 名称
@@ -37,10 +37,10 @@ namespace CIIP.Module.BusinessObjects.SYS
             }
         }
 
-        private NameSpace _Parent;
+        private Namespace _Parent;
         [Association, DevExpress.Xpo.Aggregated]
         [VisibleInListView(false)]
-        public NameSpace Parent
+        public Namespace Parent
         {
             get { return _Parent; }
             set
@@ -100,7 +100,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             }
         }
 
-        public NameSpace(Session s) : base(s)
+        public Namespace(Session s) : base(s)
         {
 
         }

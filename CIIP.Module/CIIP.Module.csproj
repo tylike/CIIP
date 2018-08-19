@@ -229,7 +229,7 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogicBase.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectQuickAddExtendesion.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\CollectionProperty.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Property\CollectionProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterDefine.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterInstance.cs" />
@@ -267,7 +267,7 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\ModelNavigationToStringConverter.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\NameSpace.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\NavigationItem.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\PropertyBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Property\PropertyBase.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\RuleRange.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Solution.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\ViewController.cs" />
@@ -288,7 +288,7 @@
     <Compile Include="BusinessObjects\SYS\NavigationLine.cs" />
     <Compile Include="BusinessObjects\SYS\NavigationMenu.cs" />
     <Compile Include="BusinessObjects\SYS\NavigationValueConverter.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Property.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Property\Property.cs" />
     <Compile Include="BusinessObjects\SYS\ShowFlowInstanceViewController.cs">
       <SubType>Component</SubType>
     </Compile>

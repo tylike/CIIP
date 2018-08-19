@@ -229,10 +229,10 @@ namespace CIIP.Module.DatabaseUpdate {
                 
             //}
 
-            var nameSpace = ObjectSpace.FindObject<NameSpace>(new BinaryOperator("FullName", "系统类型"));
+            var nameSpace = ObjectSpace.FindObject<Namespace>(new BinaryOperator("FullName", "系统类型"));
             if (nameSpace == null)
             {
-                nameSpace = ObjectSpace.CreateObject<NameSpace>();
+                nameSpace = ObjectSpace.CreateObject<Namespace>();
                 nameSpace.名称 = "系统类型";
                 var createIndex = ObjectSpace.GetObjectsCount(typeof(BusinessObject), null);
 
@@ -260,7 +260,7 @@ namespace CIIP.Module.DatabaseUpdate {
             ERPModule.IsNewVersion = true;
         }
 
-        public SimpleType AddSimpleObject(Type type, string caption, NameSpace nameSpace, string description)
+        public SimpleType AddSimpleObject(Type type, string caption, Namespace nameSpace, string description)
         {
             var t = ObjectSpace.FindObject<SimpleType>(new BinaryOperator("FullName", type.FullName));
             if (t == null)
