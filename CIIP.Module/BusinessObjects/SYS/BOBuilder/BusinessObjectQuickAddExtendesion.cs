@@ -28,7 +28,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         public static CollectionProperty AddAssociation(this BusinessObject self, string name, BusinessObject bo, bool isAggregated,Property relation)
         {
             var cp = new CollectionProperty(self.Session);
-            self.CollectionProperties.Add(cp);
+            self.Properties.Add(cp);
             cp.PropertyType = bo;
             cp.名称 = name;
             cp.Aggregated = isAggregated;

@@ -332,27 +332,25 @@
               <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
               <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Descriptor" Index="1" IsNewNode="True">
-              <LayoutItem Id="Descripton" ViewItem="Description" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="BusinessObject" Index="2" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
-              <LayoutGroup Id="Col1" Index="6" Direction="Horizontal" RelativeSize="30" IsNewNode="True">
+            <LayoutGroup Id="BusinessObject" Index="1" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
+              <LayoutGroup Id="Col2" Index="0" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="Modifier" Index="1" ViewItem="Modifier" IsNewNode="True" />
+                <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Col1" Index="1" Direction="Horizontal" IsNewNode="True">
                 <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="1" IsNewNode="True" />
                 <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="2" IsNewNode="True" />
                 <LayoutItem Id="IsVisibileInReports" ViewItem="IsVisibileInReports" Index="3" IsNewNode="True" />
                 <LayoutItem Id="IsCreatableItem" ViewItem="IsCreatableItem" Index="4" IsNewNode="True" />
               </LayoutGroup>
-              <LayoutGroup Id="Col2" Index="7" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" IsNewNode="True" />
-            <LayoutGroup Id="派生设置" Index="4" IsNewNode="True">
-              <LayoutItem Id="Modifier" Index="1" ViewItem="Modifier" IsNewNode="True" />
+            <LayoutGroup Id="派生设置" Index="2" IsNewNode="True">
+              <LayoutItem Id="Implements" Index="6" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="基类设置" Index="5" IsNewNode="True">
-              <LayoutItem Id="Base" ViewItem="Base" Index="2" IsNewNode="True" />
+            <LayoutGroup Id="Descriptor" Index="3" IsNewNode="True">
+              <LayoutItem Id="Descripton" ViewItem="Description" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutItem Id="Implements" Index="6" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
-            <LayoutGroup Id="SimpleObject" Index="7" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
+            <LayoutGroup Id="SimpleObject" Index="4" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
               <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
               <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
               <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
@@ -370,7 +368,6 @@
     </DetailView>
     <DetailView Id="BusinessObject_DetailView_BOLogic" ClassName="CIIP.Module.BusinessObjects.SYS.BusinessObject" IsNewNode="True">
       <Items IsNewNode="True">
-        <PropertyEditor Id="Base" PropertyName="Base" IsNewNode="True" />
         <PropertyEditor Id="CanCustomLogic" PropertyName="CanCustomLogic" IsNewNode="True" />
         <PropertyEditor Id="Caption" PropertyName="Caption" IsNewNode="True" />
         <PropertyEditor Id="Category" PropertyName="Category" IsNewNode="True" />
@@ -420,7 +417,13 @@
         <ColumnInfo Id="Expression" Index="2" />
       </Columns>
     </ListView>
-    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top" />
+    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="MasterBusinessObject" Width="82" />
+        <ColumnInfo Id="Oid" Width="82" />
+        <ColumnInfo Id="ImplementBusinessObject" Width="440" />
+      </Columns>
+    </ListView>
     <ListView Id="BusinessObjectBase_LookupListView">
       <Columns>
         <ColumnInfo Id="Caption" PropertyName="Caption" IsNewNode="True" />

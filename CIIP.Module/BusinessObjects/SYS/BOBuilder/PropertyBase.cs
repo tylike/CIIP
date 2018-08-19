@@ -5,12 +5,38 @@ using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using 常用基类;
 using DevExpress.ExpressApp.Model;
+using System.Linq;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
     [XafDefaultProperty("DisplayName")]    
     public abstract class PropertyBase : NameObject
     {
+        private BusinessObjectBase _PropertyType;
+
+        [XafDisplayName("类型"), RuleRequiredField]
+        [ImmediatePostData]
+        [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
+        public BusinessObjectBase PropertyType
+        {
+            get { return _PropertyType; }
+            set
+            {
+                SetPropertyValue("PropertyType", ref _PropertyType, value);
+                if (!IsLoading)
+                {
+                    if (PropertyType != null)
+                    {
+                        if (string.IsNullOrEmpty(名称))
+                        {
+                            名称 = PropertyType.Caption;
+                        }
+                    }
+                }
+            }
+        }
+
+
         [VisibleInDetailView(false)]
         [VisibleInListView(false)]
         [XafDisplayName("显示名称")]
@@ -18,8 +44,8 @@ namespace CIIP.Module.BusinessObjects.SYS
         {
             get
             {
-                if (OwnerBusinessObject != null)
-                    return this.OwnerBusinessObject.FullName + "." + this.名称;
+                if (BusinessObject != null)
+                    return this.BusinessObject.FullName + "." + this.名称;
                 return this.名称;
             }
         }
@@ -49,11 +75,25 @@ namespace CIIP.Module.BusinessObjects.SYS
             }
         }
 
-        protected abstract List<PropertyBase> RelationPropertyDataSources { get; }
-
-        protected abstract BusinessObject OwnerBusinessObject
+        protected virtual List<PropertyBase> RelationPropertyDataSources
         {
-            get;
+            get
+            {
+                return PropertyType?.Properties.Where(x => x.PropertyType == BusinessObject).OfType<PropertyBase>().ToList();
+            }
+        }
+
+        [Association]
+        public BusinessObjectBase BusinessObject
+        {
+            get
+            {
+                return GetPropertyValue<BusinessObjectBase>(nameof(BusinessObject));
+            }
+            set
+            {
+                SetPropertyValue(nameof(BusinessObject), value);
+            }
         }
 
         public PropertyBase(Session s) : base(s)

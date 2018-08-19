@@ -30,6 +30,7 @@ namespace CIIP.Module.BusinessObjects.SYS
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     public partial class BusinessObject : BusinessObjectBase
     {
+
         #region is persistent
         private bool _IsPersistent;
 
@@ -58,46 +59,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             }
         }
         #endregion
-
-        #region 泛型
-
         
-
-        private bool _IsGenericTypeDefine;
-        [XafDisplayName("泛型定义")]
-        [ToolTip("本类是否是泛型定义")]
-        public bool IsGenericTypeDefine
-        {
-            get { return _IsGenericTypeDefine; }
-            set { SetPropertyValue("IsGenericTypeDefine", ref _IsGenericTypeDefine, value); }
-        }
-
-        //[Association, DevExpress.Xpo.Aggregated]
-        //[XafDisplayName("传入基类泛型参数")]
-        //public XPCollection<GenericParameterInstance> GenericParameterInstances
-        //{
-        //    get { return GetCollection<GenericParameterInstance>(nameof(GenericParameterInstances)); }
-        //}
-
-        //[Appearance("基类泛型参数可见", TargetItems = "GenericParameters", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
-        //protected bool GenericParameterIsVisible()
-        //{
-        //    if (Base != null)
-        //    {
-        //        if (Base.IsRuntimeDefine)
-        //            return true;
-        //        var bt = ReflectionHelper.FindType(Base.FullName);
-        //        if (bt != null)
-        //        {
-        //            return !bt.IsGenericType;
-        //        }
-        //    }
-        //    return true;
-        //}
-
-        
-        #endregion
-
         #region can custom logic
         private bool _CanCustomLogic;
         [XafDisplayName("可自定义逻辑")]
@@ -109,46 +71,11 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
         #endregion
 
-        #region 继承
-        private BusinessObject _Base;
-
-        [XafDisplayName("继承")]
-        [RuleRequiredField]
-        [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
-        public BusinessObject Base
-        {
-            get { return _Base; }
-            set
-            {
-                SetPropertyValue("Base", ref _Base, value);
-            }
-        }
-
-        #endregion
-
         #region 属性
-        [Association, DevExpress.Xpo.Aggregated]
-        [XafDisplayName("属性")]
-        public XPCollection<Property> Properties
-        {
-            get { return GetCollection<Property>("Properties"); }
-        }
-
-        [Association, DevExpress.Xpo.Aggregated]
-        [XafDisplayName("集合属性")]
-        public XPCollection<CollectionProperty> CollectionProperties
-        {
-            get { return GetCollection<CollectionProperty>("CollectionProperties"); }
-        }
 
         public PropertyBase FindProperty(string name)
         {
-            var sp = Properties.SingleOrDefault(x => x.名称 == name);
-            if (sp != null)
-            {
-                return sp;
-            }
-            return CollectionProperties.SingleOrDefault(x => x.名称 == name);
+            return Properties.SingleOrDefault(x => x.名称 == name);
         }
 
         #region logic method
@@ -197,15 +124,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("IsCreatableItem", ref _IsCreatableItem, value); }
         }
 
-        private bool _IsRuntimeDefine;
 
-        [XafDisplayName("动态定义")]
-        [ToolTip("为假时是通过代码方式上传的模块生成的。否则是在界面上定义并生成的。")]
-        public bool IsRuntimeDefine
-        {
-            get { return _IsRuntimeDefine; }
-            set { SetPropertyValue("IsRuntimeDefine", ref _IsRuntimeDefine, value); }
-        }
 
         [Browsable(false)]
         public int CreateIndex { get; set; }

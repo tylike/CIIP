@@ -14,6 +14,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Drawing;
 using DevExpress.LookAndFeel;
+using DevExpress.XtraEditors.Popup;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -35,7 +36,7 @@ namespace CIIP.Module.Win.Editors
             {
                 if (CurrentObject != null)
                 {
-                    var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid + ",\r\n");// as System.ComponentModel.IBindingList;
+                    var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid );// as System.ComponentModel.IBindingList;
 
                     control.EditValue = string.Join(",", values);
                 }
@@ -77,10 +78,10 @@ namespace CIIP.Module.Win.Editors
             }
         }
 
-        TokenEdit control;
+        TokenEditExt control;
         protected override object CreateControlCore()
         {
-            control = new TokenEdit();
+            control = new TokenEditExt();
             return control;
         }
         private void Control_ValidateToken(object sender, TokenEditValidateTokenEventArgs e)
@@ -95,7 +96,8 @@ namespace CIIP.Module.Win.Editors
             i.EditMode = TokenEditMode.Manual;
             i.ShowDropDown = true;
             i.DropDownShowMode = TokenEditDropDownShowMode.Default;
-            i.EditValueSeparatorChar = ',';
+            //i.EditValueSeparatorChar = Environment.NewLine;// '\n';
+            i.Separators.Add(Environment.NewLine);
             i.PopupPanelOptions.ShowMode = TokenEditPopupPanelShowMode.Default;
             i.PopupPanelOptions.ShowPopupPanel = true;
             i.PopupPanelOptions.Location = TokenEditPopupPanelLocation.Default;
@@ -113,9 +115,18 @@ namespace CIIP.Module.Win.Editors
             i.TokenAdded += I_TokenAdded;
             i.TokenRemoved += I_TokenRemoved;
             i.DoubleClick += I_DoubleClick;
+            i.TokenClick += I_TokenClick;
             i.ShowTokenGlyph = true;
             i.ShowDropDown = true;
+            i.MaxExpandLines = 10;
+            i.MinRowCount = 1;
             //i.CustomDrawTokenGlyph += Properties_CustomDrawTokenGlyph;
+        }
+
+        private void I_TokenClick(object sender, TokenEditTokenClickEventArgs e)
+        {
+            var info = control.CalcHitInfo(control.PointToClient(System.Windows.Forms.Control.MousePosition));
+            control.FlyoutPopupPanelController.ShowPopupPanel(info.TokenInfo);
         }
 
         private void I_DoubleClick(object sender, EventArgs e)
@@ -180,7 +191,36 @@ namespace CIIP.Module.Win.Editors
 
     public class TokenEditExt : TokenEdit
     {
+        protected override TokenEditHandler CreateHandler()
+        {
+            return new TokenEditHandlerExt(this);
+        }
+        public PopupPanelController FlyoutPopupPanelController
+        {
+            get
+            {
+                return base.PopupPanelController;
+            }
+        }
+    }
 
+    public class TokenEditHandlerExt : TokenEditHandler
+    {
+        public TokenEditHandlerExt(TokenEdit tokenEdit) : base(tokenEdit)
+        {
+        }
+
+        public override void OnMouseHover()
+        {
+            if (!this.OwnerEdit.ReadOnly)
+            {
+                var info = this.OwnerEdit.CalcHitInfo(this.GetMousePos());
+                if (info.InLink)
+                {
+                    //this.OwnerEdit.Properties.RaiseTokenMouseHover(TokenEditTokenBasedEventArgsBase.Create<TokenEditTokenMouseHoverEventArgs>(info.TokenInfo));
+                }
+            }
+        }
     }
 
 }

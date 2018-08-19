@@ -40,22 +40,9 @@ namespace CIIP.Module.Win.Editors
 
         protected override void WriteValueCore()
         {
-            //base.WriteValueCore();
-            //if (control != null)
-            //{
-            //    if (CurrentObject != null)
-            //    {
-            //        var attachmentList = this.PropertyValue as System.ComponentModel.IBindingList;
-            //        var result = String.Empty;
-            //        foreach (TokenEditToken item in control.Properties.Tokens)
-            //        {
-            //            var fileData = attachmentList.AddNew() as DevExpress.Persistent.Base.IFileData;
-            //            var archivo = (string)item.Value;
-            //            fileData.LoadFromStream(System.IO.Path.GetFileName(archivo), System.IO.File.OpenRead(archivo));
-            //        }
-            //    }
-            //}
+            
         }
+
         BusinessObjectBase _tokenService;
         BusinessObjectBase tokenService
         {
@@ -73,12 +60,19 @@ namespace CIIP.Module.Win.Editors
             }
         }
 
-        TokenEdit control;
+        TokenEditExt control;
         protected override object CreateControlCore()
         {
-            control = new TokenEdit();
+            control = new TokenEditExt();
+            control.DoubleClick += Control_DoubleClick;
             return control;
         }
+
+        private void Control_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
+
         private void Control_ValidateToken(object sender, TokenEditValidateTokenEventArgs e)
         {
             e.IsValid = true;//DocFormatRegex.IsMatch(e.Description);
@@ -107,7 +101,23 @@ namespace CIIP.Module.Win.Editors
             i.TokenAdded += I_TokenAdded;
             i.TokenRemoved += I_TokenRemoved;
             i.Tokens.ListChanged += Tokens_ListChanged;
+            i.TokenClick += I_TokenClick;
+            i.DoubleClick += I_DoubleClick;
+            i.MaxExpandLines = 10;
+            i.MinRowCount = 1;
             
+        }
+
+        private void I_DoubleClick(object sender, EventArgs e)
+        {
+            XtraMessageBox.Show("double click!");
+
+        }
+
+        private void I_TokenClick(object sender, TokenEditTokenClickEventArgs e)
+        {
+            var info = control.CalcHitInfo(control.PointToClient(System.Windows.Forms.Control.MousePosition));
+            control.FlyoutPopupPanelController.ShowPopupPanel(info.TokenInfo);
         }
 
         private void Tokens_ListChanged(object sender, System.ComponentModel.ListChangedEventArgs e)
@@ -150,6 +160,7 @@ namespace CIIP.Module.Win.Editors
         {
             return new RepositoryItemTokenEdit();
         }
+
         IObjectSpace os;
         XafApplication application;
         public void Setup(IObjectSpace objectSpace, XafApplication application)

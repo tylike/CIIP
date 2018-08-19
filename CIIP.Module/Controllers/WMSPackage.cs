@@ -325,7 +325,7 @@ namespace 基础信息.往来单位
             order.AddProperty<decimal>("折后总金额").AllowEdit = false;
             order.AddProperty<decimal>("税金").AllowEdit = false;
             order.AddProperty<decimal>("含税总金额").AllowEdit = false;
-            order.IsGenericTypeDefine = true;
+            //order.IsGenericTypeDefine = true;
 
             order.AddAfterConstruction(@"
             base.AfterConstruction();
@@ -394,7 +394,7 @@ namespace 基础信息.往来单位
             orderItem.AddProperty<decimal>("税率").AllowEdit = false;
             orderItem.AddProperty<decimal>("含税单价").AllowEdit = false;
             orderItem.AddProperty<decimal>("含税总价").AllowEdit = false;
-            orderItem.IsGenericTypeDefine = true;
+            //orderItem.IsGenericTypeDefine = true;
             //order.GenericParameterInstances[0].DefaultGenericType = orderItem;
 
             orderItem.AddPartialLogic(@"
@@ -643,7 +643,7 @@ namespace 仓库管理
             generic1.Constraint = "常用基类.单据";
             generic1.Name = "TMaster";
             wmsFormItemBase.GenericParameterDefines.Add(generic1);
-            wmsFormItemBase.IsGenericTypeDefine = true;
+            //wmsFormItemBase.IsGenericTypeDefine = true;
 
             wmsFormItemBase.AddPartialLogic(@"
 namespace 常用基类
@@ -701,7 +701,7 @@ namespace 常用基类
 
             wmsFormBase.Modifier = Modifier.Abstract;
             wmsFormBase.IsPersistent = false;
-            wmsFormBase.IsGenericTypeDefine = true;
+            //wmsFormBase.IsGenericTypeDefine = true;
             wmsFormBase.Caption = "仓库单据基类<库存单据明细>";
 
             wmsFormBase.AddProperty("目标仓库", 仓库);
@@ -1285,7 +1285,7 @@ namespace {form.Category.FullName}
 
             var form = os.CreateObject<BusinessForm>();
             form.名称 = name;
-            form.Base = @base;
+            //form.Base = @base;
             form.Category = category;
             form.NavigationItem = root;
             if (createLayout)
@@ -1321,7 +1321,7 @@ namespace {form.Category.FullName}
         {
             var bo = os.CreateObject<BusinessObject>();
             bo.Category = ns;
-            bo.Base = baseBO;
+            //bo.Base = baseBO;
             bo.名称 = name;
             var root = ModelDataSource.NavigationItemDataSources.FirstOrDefault(x => x.Name == navl1)?.Children.OfType<NavigationItem>().FirstOrDefault(x => x.Name == (navl2 ?? name));
             bo.NavigationItem = root;
@@ -1330,7 +1330,6 @@ namespace {form.Category.FullName}
         
         public NameSpace CreateNameSpace(string ns)
         {
-
             NameSpace find = os.FindObject<NameSpace>(new BinaryOperator("FullName", ns), true);
             
             //没找到：

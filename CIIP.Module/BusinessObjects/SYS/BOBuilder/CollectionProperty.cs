@@ -13,16 +13,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         public CollectionProperty(Session s) : base(s)
         {
         }
-
-        private BusinessObject _Owner;
-
-        [Association]
-        public BusinessObject Owner
-        {
-            get { return _Owner; }
-            set { SetPropertyValue("Owner", ref _Owner, value); }
-        }
-
+        
         protected override bool RelationPropertyNotNull
         {
             get
@@ -53,7 +44,7 @@ namespace CIIP.Module.BusinessObjects.SYS
                         {
                             try
                             {
-                                RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.Owner.Oid);
+                                RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
                             }
                             catch (Exception ex)
                             {
@@ -62,14 +53,13 @@ namespace CIIP.Module.BusinessObjects.SYS
                         }
                         if (RelationProperty == null)
                         {
-                            PropertyType.CollectionProperties.SingleOrDefault(x => x.PropertyType.Oid == this.Owner.Oid);
+                            RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
                         }
                     }
                     else
                     {
                         Ãû³Æ = "";
                     }
-
                 }
             }
         }
@@ -95,24 +85,14 @@ namespace CIIP.Module.BusinessObjects.SYS
             get { return _Aggregated; }
             set { SetPropertyValue("Aggregated", ref _Aggregated, value); }
         }
-
-        protected override BusinessObject OwnerBusinessObject
-        {
-            get
-            {
-                return this.Owner;
-            }
-        }
-
+        
         protected override List<PropertyBase> RelationPropertyDataSources
         {
             get
             {
                 if (PropertyType == null)
                     return null;
-                return PropertyType.Properties.Where(x => x.PropertyType == this.Owner).OfType<PropertyBase>().Union(
-                    PropertyType.CollectionProperties.Where(x => x.PropertyType == this.Owner).OfType<PropertyBase>()
-                    ).ToList();
+                return PropertyType.Properties.Where(x => x.PropertyType == this.BusinessObject).OfType<PropertyBase>().ToList();
             }
         }
     }

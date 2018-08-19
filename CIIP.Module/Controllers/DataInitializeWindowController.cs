@@ -99,12 +99,12 @@ namespace CIIP.Module.Controllers
                     var fullName = type.BaseType.Namespace + "." + type.BaseType.Name;
 
                     var baseType = bos.SingleOrDefault(x => x.FullName == fullName);
-                    bob.Base = baseType;
+                    //bob.Base = baseType;
 
-                    if (bob.Base == null)
-                    {
-                        Debug.WriteLine(type.FullName + "没有找到基类:" + fullName);
-                    }
+                    //if (bob.Base == null)
+                    //{
+                    //    Debug.WriteLine(type.FullName + "没有找到基类:" + fullName);
+                    //}
                 }
 
                 if (type.IsGenericType)
@@ -147,7 +147,7 @@ namespace CIIP.Module.Controllers
                         if (tim.MemberInfo.IsAssociation)
                         {
                             var collectionMember = ObjectSpace.CreateObject<CollectionProperty>();
-                            collectionMember.Owner = bob;
+                            collectionMember.BusinessObject = bob;
 
                             collectionMember.Aggregated = tim.MemberInfo.IsAggregated;
                             collectionMember.名称 = tim.Name;
@@ -161,10 +161,10 @@ namespace CIIP.Module.Controllers
                         else
                         {
                             var member = ObjectSpace.CreateObject<Property>();
-                            member.Owner = bob;
+                            member.BusinessObject = bob;
                             member.名称 = tim.Name;
                             member.PropertyType = exists.SingleOrDefault(x => x.FullName == tim.Type.FullName);
-                            member.Owner = bob;
+                            member.BusinessObject = bob;
                             if (member.PropertyType == null)
                             {
                                 Debug.WriteLine("没有找到属性类型:" + tim.Type.FullName);
@@ -182,11 +182,12 @@ namespace CIIP.Module.Controllers
             //第三步,设置属性的关联属性,因为可能用到第二步中创建的属性,及,创建关系.
             foreach (var bob in bos.Where(x => !x.IsRuntimeDefine))
             {
-                if (bob.CollectionProperties.Count > 0)
+                var cps = bob.Properties.OfType<CollectionProperty>();
+                if (bob.Properties.Count > 0)
                 {
                     var type = ReflectionHelper.FindType(bob.FullName);
                     var typeInfo = CaptionHelper.ApplicationModel.BOModel.GetClass(type);
-                    foreach (var cp in bob.CollectionProperties)
+                    foreach (var cp in cps)
                     {
                         var mi = typeInfo.FindMember(cp.名称);
                         cp.RelationProperty = cp.PropertyType.FindProperty(mi.MemberInfo.AssociatedMemberInfo.Name);
@@ -231,9 +232,7 @@ namespace CIIP.Module.Controllers
                 t.Description = description;
                 t.FullName = type.FullName;
                 //t.CanCustomLogic = typeof(ICustomLogic).IsAssignableFrom(type);
-
-                t.IsGenericTypeDefine = type.IsGenericType;
-
+                
                 t.IsRuntimeDefine = isRuntimeDefine;
             }
             return t;

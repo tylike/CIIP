@@ -16,6 +16,15 @@ namespace CIIP.Module.BusinessObjects.SYS
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     public class BusinessObjectBase : NameObject, ICategorizedItem
     {
+        private bool _IsRuntimeDefine;
+
+        [XafDisplayName("动态定义")]
+        [ToolTip("为假时是通过代码方式上传的模块生成的。否则是在界面上定义并生成的。")]
+        public bool IsRuntimeDefine
+        {
+            get { return _IsRuntimeDefine; }
+            set { SetPropertyValue("IsRuntimeDefine", ref _IsRuntimeDefine, value); }
+        }
         private string _FullName;
 
         [ModelDefault("AllowEdit", "False")]
@@ -46,7 +55,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
 
         private string _Description;
-        [XafDisplayName("说明")]
+        [XafDisplayName("说明"),Size(-1)]
         public string Description
         {
             get { return _Description; }
@@ -64,6 +73,24 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
 
         #region 泛型参数定义
+
+        #region 泛型
+        [Persistent("IsGenericTypeDefine")]
+        bool _isGenericTypeDefine;
+
+        [XafDisplayName("泛型定义")]
+        [ToolTip("本类是否是泛型定义")]
+        [PersistentAlias("_isGenericTypeDefine")]
+        public bool IsGenericTypeDefine
+        {
+            get
+            {
+                return _isGenericTypeDefine;
+            }
+        }
+
+        #endregion
+
         [XafDisplayName("泛型参数定义")]
         [ToolTip("如果需要类型参数时,可以在此定义,可以在属性及业务逻辑中使用!")]
         [Association, DevExpress.Xpo.Aggregated]
@@ -76,15 +103,14 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
         #endregion
 
-        //[Association]
-        //[XafDisplayName("实现接口")]
-        //public XPCollection<Interface> Interfaces
-        //{
-        //    get
-        //    {
-        //        return GetCollection<Interface>(nameof(Interfaces));
-        //    }
-        //}
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<PropertyBase> Properties
+        {
+            get
+            {
+                return GetCollection<PropertyBase>(nameof(Properties));
+            }
+        }
 
         ITreeNode ICategorizedItem.Category
         {
@@ -94,6 +120,21 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         public BusinessObjectBase(Session s) : base(s)
         {
+        }
+
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        {
+            base.OnChanged(propertyName, oldValue, newValue);
+            if(propertyName == nameof(GenericParameterDefines))
+            {
+
+            }
+        }
+
+        protected override void OnSaving()
+        {
+            _isGenericTypeDefine = GenericParameterDefines.Count > 0;
+            base.OnSaving();
         }
 
 

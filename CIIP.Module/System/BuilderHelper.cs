@@ -159,34 +159,35 @@ namespace CIIP
 
         public static void Assocication(this PropertyDefinition self, CollectionProperty p1)
         {
-            var name = p1.DisplayName + "-" + p1.RelationProperty.DisplayName;
-            if (p1.RelationProperty is Property)
-            {
-                var p = p1.RelationProperty as Property;
-                if (p.Owner!=null && p.Owner.IsRuntimeDefine)
-                {
-                    var pt = p.Owner;
-                    if (pt != null)
-                    {
-                        var relationType = pt.GetTypeDefintion();
-                        if (relationType == null)
-                        {
-                            throw new Exception("错误,没有找到类型定义!");
-                        }
-                        var relationPropertyDefine = relationType.Properties.Single(x => x.Name == p.名称);
-                        relationPropertyDefine.Assocication(name);
-                    }
-                    else
-                    {
-                        throw new Exception("关联属性只能建立在用户定义的类型上面.系统内置的类型是无法更改的!如果需要建立已有类型的关联,可以继承该类型,并增加属性建立关联!");
-                    }
-                }
-                else
-                {
-                    throw new Exception("关联属性只能建立在用户定义的类型上面!");
-                }
-            }
-            self.Assocication(name);
+#warning 未处理的!
+            //var name = p1.DisplayName + "-" + p1.RelationProperty.DisplayName;
+            //if (p1.RelationProperty is Property)
+            //{
+            //    var p = p1.RelationProperty as Property;
+            //    if (p.BusinessObject!=null && p.BusinessObject.IsRuntimeDefine)
+            //    {
+            //        var pt = p.BusinessObject;
+            //        if (pt != null)
+            //        {
+            //            var relationType = pt.GetTypeDefintion();
+            //            if (relationType == null)
+            //            {
+            //                throw new Exception("错误,没有找到类型定义!");
+            //            }
+            //            var relationPropertyDefine = relationType.Properties.Single(x => x.Name == p.名称);
+            //            relationPropertyDefine.Assocication(name);
+            //        }
+            //        else
+            //        {
+            //            throw new Exception("关联属性只能建立在用户定义的类型上面.系统内置的类型是无法更改的!如果需要建立已有类型的关联,可以继承该类型,并增加属性建立关联!");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        throw new Exception("关联属性只能建立在用户定义的类型上面.系统内置的类型是无法更改的!如果需要建立已有类型的关联,可以继承该类型,并增加属性建立关联!");
+            //    }
+            //}
+            //self.Assocication(name);
         }
 
         public static void Assocication(this PropertyDefinition self, string name)

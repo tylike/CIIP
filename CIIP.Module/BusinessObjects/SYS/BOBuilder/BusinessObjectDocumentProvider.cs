@@ -86,32 +86,32 @@ namespace CIIP.Module.BusinessObjects.SYS
             rst.Append(":");
 
             #region 基类 泛型处理
-            if (Base.IsGenericTypeDefine)
-            {
-                var n = Base.FullName;
-                if (Base.IsRuntimeDefine)
-                {
-                    rst.Append("global::" + n);
-                }
-                else
-                {
-                    rst.Append("global::" + n.Substring(0, n.Length - 2));
-                }
-#warning where 等待制作
+//            if (Base.IsGenericTypeDefine)
+//            {
+//                var n = Base.FullName;
+//                if (Base.IsRuntimeDefine)
+//                {
+//                    rst.Append("global::" + n);
+//                }
+//                else
+//                {
+//                    rst.Append("global::" + n.Substring(0, n.Length - 2));
+//                }
+//#warning where 等待制作
 
-                //如果设置了泛型参数的值,则付入,否则认为本类也是泛型类
-                //rst.AppendFormat("<{0}>",
-                //    string.Join(",",
-                //        GenericParameterInstances.Select(
-                //            x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
-                //where xxxx : xxxx
-                //var constraints = string.Join("\n", GenericParameterInstances.Where(x => !string.IsNullOrEmpty(x.Constraint)).Select(x => " where " + x.Name + " : " + x.Constraint));
-                //rst.AppendLine(constraints);
-            }
-            else
-            {
-                rst.Append("global::" + Base.FullName);
-            }
+//                //如果设置了泛型参数的值,则付入,否则认为本类也是泛型类
+//                //rst.AppendFormat("<{0}>",
+//                //    string.Join(",",
+//                //        GenericParameterInstances.Select(
+//                //            x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
+//                //where xxxx : xxxx
+//                //var constraints = string.Join("\n", GenericParameterInstances.Where(x => !string.IsNullOrEmpty(x.Constraint)).Select(x => " where " + x.Name + " : " + x.Constraint));
+//                //rst.AppendLine(constraints);
+//            }
+//            else
+//            {
+//                rst.Append("global::" + Base.FullName);
+//            }
             #endregion
 
             rst.AppendLine();
@@ -134,42 +134,42 @@ namespace CIIP.Module.BusinessObjects.SYS
             #endregion
 
             #region 属性生成
-            foreach (var item in Properties)
-            {
-                var pt = "global::" + item.PropertyType.FullName;
-                rst.AppendLine($"\t\t{ pt } _{ item.名称 };");
+            //foreach (var item in Properties)
+            //{
+            //    var pt = "global::" + item.PropertyType.FullName;
+            //    rst.AppendLine($"\t\t{ pt } _{ item.名称 };");
 
-                if (item.Size != 100 && item.Size != 0)
-                {
-                    rst.AppendLine($"\t\t[Size({item.Size})]");
-                }
-                ProcessPropertyBase(rst, item);
-                if (item.RelationProperty != null)
-                {
-                    var assName = string.Format("{0}_{1}", item.RelationProperty.名称, item.名称);
-                    rst.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, assName);
-                }
+            //    if (item.Size != 100 && item.Size != 0)
+            //    {
+            //        rst.AppendLine($"\t\t[Size({item.Size})]");
+            //    }
+            //    ProcessPropertyBase(rst, item);
+            //    if (item.RelationProperty != null)
+            //    {
+            //        var assName = string.Format("{0}_{1}", item.RelationProperty.名称, item.名称);
+            //        rst.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, assName);
+            //    }
 
 
-                rst.Append(propertyTemplate.Replace("{0}", pt).Replace("{1}", item.名称));
-            }
+            //    rst.Append(propertyTemplate.Replace("{0}", pt).Replace("{1}", item.名称));
+            //}
             #endregion
 
             #region 关联集合
-            var att = "\t\t[" + typeof(DevExpress.Xpo.AggregatedAttribute).FullName + "]";
-            foreach (var item in CollectionProperties)
-            {
-                if (item.Aggregated)
-                {
-                    rst.AppendLine(att);
-                }
-                ProcessPropertyBase(rst, item);
+            //var att = "\t\t[" + typeof(DevExpress.Xpo.AggregatedAttribute).FullName + "]";
+            //foreach (var item in CollectionProperties)
+            //{
+            //    if (item.Aggregated)
+            //    {
+            //        rst.AppendLine(att);
+            //    }
+            //    ProcessPropertyBase(rst, item);
 
-                var assName = string.Format("{0}_{1}", item.名称, item.RelationProperty.名称);
-                rst.AppendFormat("\t\t[{0}(\"{1}\")]\n", typeof(AssociationAttribute).FullName, assName);
-                var pt = "global::" + item.PropertyType.FullName;
-                rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.名称}{{ get{{ return GetCollection<{pt}>(\"{item.名称}\"); }} }}");
-            }
+            //    var assName = string.Format("{0}_{1}", item.名称, item.RelationProperty.名称);
+            //    rst.AppendFormat("\t\t[{0}(\"{1}\")]\n", typeof(AssociationAttribute).FullName, assName);
+            //    var pt = "global::" + item.PropertyType.FullName;
+            //    rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.名称}{{ get{{ return GetCollection<{pt}>(\"{item.名称}\"); }} }}");
+            //}
             #endregion
 
             #region 业务逻辑处理
