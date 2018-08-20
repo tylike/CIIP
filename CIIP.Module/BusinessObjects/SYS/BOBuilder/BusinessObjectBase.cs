@@ -103,7 +103,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
         #endregion
 
-        [Association, DevExpress.Xpo.Aggregated]
+        [Association, DevExpress.Xpo.Aggregated,XafDisplayName(" Ù–‘")]
         public XPCollection<PropertyBase> Properties
         {
             get

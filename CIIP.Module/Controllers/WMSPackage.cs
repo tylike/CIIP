@@ -298,7 +298,7 @@ namespace 基础信息.往来单位
 
             order.AddProperty("业务员", emp);
             var orderDept = order.AddProperty("部门", dept);
-            orderDept.DataSourceProperty = "业务员.往来单位.部门";
+            //orderDept.DataSourceProperty = "业务员.往来单位.部门";
 
 
 
@@ -311,20 +311,20 @@ namespace 基础信息.往来单位
             order.AddProperty("税率", 常用税率);
             order.AddProperty("客户", company);
 
-            order.AddProperty("收货地址", 地址).DataSourceProperty = "客户.地址";
+            order.AddProperty("收货地址", 地址);//.DataSourceProperty = "客户.地址";
 
 
-            order.AddProperty("发货地址", 地址).DataSourceProperty = "供应商.地址";
+            order.AddProperty("发货地址", 地址);//.DataSourceProperty = "供应商.地址";
 
-            order.AddProperty("客户联系人", emp).DataSourceProperty = "客户.联系人";
+            order.AddProperty("客户联系人", emp);//.DataSourceProperty = "客户.联系人";
             order.AddProperty("供应商", company);
-            order.AddProperty("供应商联系人", emp).DataSourceProperty = "供应商.联系人";
+            order.AddProperty("供应商联系人", emp);//.DataSourceProperty = "供应商.联系人";
 
-            order.AddProperty<decimal>("订单总金额").AllowEdit = false;
-            order.AddProperty<decimal>("折扣总金额").AllowEdit = false;
-            order.AddProperty<decimal>("折后总金额").AllowEdit = false;
-            order.AddProperty<decimal>("税金").AllowEdit = false;
-            order.AddProperty<decimal>("含税总金额").AllowEdit = false;
+            order.AddProperty<decimal>("订单总金额");//.AllowEdit = false;
+            order.AddProperty<decimal>("折扣总金额");//.AllowEdit = false;
+            order.AddProperty<decimal>("折后总金额");//.AllowEdit = false;
+            order.AddProperty<decimal>("税金");//.AllowEdit = false;
+            order.AddProperty<decimal>("含税总金额");//.AllowEdit = false;
             //order.IsGenericTypeDefine = true;
 
             order.AddAfterConstruction(@"
@@ -377,23 +377,23 @@ namespace 基础信息.往来单位
             //formItem.AddProperty("产品价格",产品价格)
             orderItem.AddProperty("产品", product);
             orderItem.AddProperty("单位", 计量单位);
-            orderItem.AddProperty<decimal>("单价").ImmediatePostData = true;
+            //orderItem.AddProperty<decimal>("单价").ImmediatePostData = true;
             var zkl = orderItem.AddProperty<decimal>("折扣率");
-            zkl.ImmediatePostData = true;
-            zkl.Range = new RuleRange(zkl.Session);
-            zkl.Range.Begin = 0;
-            zkl.Range.End = 1;
-            zkl.DisplayFormat = "p";
-            zkl.EditMask = "p";
+            //zkl.ImmediatePostData = true;
+            //zkl.Range = new RuleRange(zkl.Session);
+            //zkl.Range.Begin = 0;
+            //zkl.Range.End = 1;
+            //zkl.DisplayFormat = "p";
+            //zkl.EditMask = "p";
 
-            orderItem.AddProperty<decimal>("折扣单价").AllowEdit = false;
-            orderItem.AddProperty<decimal>("折后总价").AllowEdit = false;
-            orderItem.AddProperty<decimal>("折扣金额").AllowEdit = false;
-            orderItem.AddProperty<decimal>("数量").ImmediatePostData = true;
-            orderItem.AddProperty<decimal>("总价").AllowEdit = false;
-            orderItem.AddProperty<decimal>("税率").AllowEdit = false;
-            orderItem.AddProperty<decimal>("含税单价").AllowEdit = false;
-            orderItem.AddProperty<decimal>("含税总价").AllowEdit = false;
+            orderItem.AddProperty<decimal>("折扣单价");//.AllowEdit = false;
+            orderItem.AddProperty<decimal>("折后总价");//.AllowEdit = false;
+            orderItem.AddProperty<decimal>("折扣金额");//.AllowEdit = false;
+            orderItem.AddProperty<decimal>("数量");//.ImmediatePostData = true;
+            orderItem.AddProperty<decimal>("总价");//.AllowEdit = false;
+            orderItem.AddProperty<decimal>("税率");//.AllowEdit = false;
+            orderItem.AddProperty<decimal>("含税单价");//.AllowEdit = false;
+            orderItem.AddProperty<decimal>("含税总价");//.AllowEdit = false;
             //orderItem.IsGenericTypeDefine = true;
             //order.GenericParameterInstances[0].DefaultGenericType = orderItem;
 
@@ -574,10 +574,10 @@ namespace 常用基类
             #region 库存流水
             var 库存流水 = CreateObject("库存流水", SimpleObject, NSWMS);
             var p1 = 库存流水.AddProperty("产品", product);
-            p1.RuleRequiredField = true;
+            //p1.RuleRequiredField = true;
             p1 = 库存流水.AddProperty("库位", 库位);
-            p1.RuleRequiredField = true;
-            p1.DataSourceProperty = "库位来源";
+            //p1.RuleRequiredField = true;
+            //p1.DataSourceProperty = "库位来源";
 
             库存流水.AddProperty<decimal>("数量");
             库存流水.AddProperty("计量单位", 计量单位);

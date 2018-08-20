@@ -189,60 +189,60 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         public void ProcessPropertyBase(StringBuilder code, PropertyBase property)
         {
-            if (!string.IsNullOrEmpty(property.DataSourceProperty))
-            {
-                code.AppendFormat("\t\t[{0}(\"{1}\")]\n", typeof(DataSourcePropertyAttribute).FullName, property.DataSourceProperty);
-            }
+            //if (!string.IsNullOrEmpty(property.DataSourceProperty))
+            //{
+            //    code.AppendFormat("\t\t[{0}(\"{1}\")]\n", typeof(DataSourcePropertyAttribute).FullName, property.DataSourceProperty);
+            //}
 
-            if (property.VisibleInDetailView.HasValue && !property.VisibleInDetailView.Value)
-            {
-                code.AppendFormat("\t\t[{0}(false)]\n", typeof(VisibleInDetailViewAttribute).FullName);
-            }
+            //if (property.VisibleInDetailView.HasValue && !property.VisibleInDetailView.Value)
+            //{
+            //    code.AppendFormat("\t\t[{0}(false)]\n", typeof(VisibleInDetailViewAttribute).FullName);
+            //}
 
-            if (property.VisibleInListView.HasValue && !property.VisibleInListView.Value)
-            {
-                code.AppendFormat("\t\t[{0}(false)]\n", typeof(VisibleInListViewAttribute).FullName);
-            }
+            //if (property.VisibleInListView.HasValue && !property.VisibleInListView.Value)
+            //{
+            //    code.AppendFormat("\t\t[{0}(false)]\n", typeof(VisibleInListViewAttribute).FullName);
+            //}
 
             if (property.Browsable.HasValue && !property.Browsable.Value)
             {
                 code.AppendFormat("\t\t[{0}(false)]\n", typeof(BrowsableAttribute).FullName);
             }
 
-            if (property.AllowEdit.HasValue && !property.AllowEdit.Value)
-            {
-                code.AppendFormat("\t\t[ModelDefault(\"AllowEdit\",\"false\")]\n");
-            }
+            //if (property.AllowEdit.HasValue && !property.AllowEdit.Value)
+            //{
+            //    code.AppendFormat("\t\t[ModelDefault(\"AllowEdit\",\"false\")]\n");
+            //}
 
-            if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
-            {
-                code.AppendFormat("\t\t[ImmediatePostData]\n");
-            }
+            //if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
+            //{
+            //    code.AppendFormat("\t\t[ImmediatePostData]\n");
+            //}
 
-            if (!string.IsNullOrEmpty(property.DisplayFormat))
-            {
-                code.AppendFormat("\t\t[ModelDefault(\"DisplayFormat\",\"{0}\")]\n", property.DisplayFormat);
-            }
+            //if (!string.IsNullOrEmpty(property.DisplayFormat))
+            //{
+            //    code.AppendFormat("\t\t[ModelDefault(\"DisplayFormat\",\"{0}\")]\n", property.DisplayFormat);
+            //}
 
-            if (!string.IsNullOrEmpty(property.EditMask))
-            {
-                code.AppendFormat("\t\t[ModelDefault(\"EditMask\",\"{0}\")]\n", property.EditMask);
-            }
+            //if (!string.IsNullOrEmpty(property.EditMask))
+            //{
+            //    code.AppendFormat("\t\t[ModelDefault(\"EditMask\",\"{0}\")]\n", property.EditMask);
+            //}
 
-            if (property.Range != null)
-            {
-                code.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
-            }
+            //if (property.Range != null)
+            //{
+            //    code.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
+            //}
 
-            if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
-            {
-                code.AppendFormat("\t\t[RuleRequiredField]\n");
-            }
+            //if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
+            //{
+            //    code.AppendFormat("\t\t[RuleRequiredField]\n");
+            //}
 
-            if (property.UniqueValue.HasValue && property.UniqueValue.Value)
-            {
-                code.AppendFormat("\t\t[RuleUniqueValue]\n");
-            }
+            //if (property.UniqueValue.HasValue && property.UniqueValue.Value)
+            //{
+            //    code.AppendFormat("\t\t[RuleUniqueValue]\n");
+            //}
         }
     }
 

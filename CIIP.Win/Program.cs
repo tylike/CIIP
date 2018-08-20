@@ -32,6 +32,7 @@ using System.Threading;
 
 namespace CIIP.Win {
     static class Program {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -42,6 +43,7 @@ namespace CIIP.Win {
 #if EASYTEST
             DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register();
 #endif
+
 
             CIIP.CIIPDebugger.ShowView = (t) => {
                 var t1 = t as XPBaseObject;

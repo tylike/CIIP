@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="起始页">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="辐射菜单">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView_BOLogic">
+      <Items Id="Items">
+        <PropertyEditor Id="Properties" View="BusinessObject_Properties_ListView" />
+      </Items>
+    </DetailView>
+    <DetailView Id="SystemLogonParameter_DetailView">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="ConfigDB" ActionContainer="ConfigDB" />
+      </Items>
+    </DetailView>
+    <DetailView Id="CollectionProperty_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="R3">
+              <LayoutItem Id="Range.End" ViewItem="Range.End" />
+              <LayoutItem Id="Range.Begin" ViewItem="Range.Begin" />
+            </LayoutGroup>
+            <LayoutGroup Id="R2">
+              <LayoutItem Id="UniqueValue" ViewItem="UniqueValue" />
+              <LayoutItem Id="RuleRequiredField" ViewItem="RuleRequiredField" />
+              <LayoutItem Id="ImmediatePostData" ViewItem="ImmediatePostData" />
+              <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" />
+              <LayoutItem Id="DataSourceProperty" ViewItem="DataSourceProperty" />
+            </LayoutGroup>
+            <LayoutGroup Id="R1">
+              <LayoutItem Id="VisibleInLookupView" ViewItem="VisibleInLookupView" />
+              <LayoutItem Id="VisibleInListView" ViewItem="VisibleInListView" />
+              <LayoutItem Id="VisibleInDetailView" ViewItem="VisibleInDetailView" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject">
+              <LayoutItem Id="EditMask" ViewItem="EditMask" />
+              <LayoutItem Id="DisplayFormat" ViewItem="DisplayFormat" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Property_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PropertyBase">
+              <LayoutGroup Id="PropertyBase_col1">
+                <LayoutItem Id="名称" ViewItem="名称" Index="0" />
+                <LayoutItem Id="Expression" ViewItem="Expression" Index="1" />
+                <LayoutItem Id="PropertyType" Index="1" ViewItem="PropertyType" />
+                <LayoutItem Id="RelationProperty" Index="2" />
+                <LayoutItem Id="DataSourceProperty" Index="3" />
+                <LayoutItem Id="VisibleInDetailView" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PropertyBase_col2">
+                <LayoutItem Id="Size" ViewItem="Size" Index="0" />
+                <LayoutItem Id="VisibleInDetailView" ViewItem="VisibleInDetailView" Index="2" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" ViewItem="ItemBusinessObject.IsAbstract" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" ViewItem="ItemBusinessObject.CanInherits" />
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="常用设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="ItemBusinessObject.Base" ViewItem="ItemBusinessObject.Base" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="Base" ViewItem="Base" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="业务定制">
+        <Items Id="Items">
+          <Item Id="NameSpace" ViewId="NameSpace_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>
