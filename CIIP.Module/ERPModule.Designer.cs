@@ -52,9 +52,6 @@
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.TreeListEditors.TreeListEditorsModuleBase));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.ValidationModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule));
-            this.RequiredModuleTypes.Add(typeof(CIIP.CodeFirstView.CodeFirstViewModule));
-            this.RequiredModuleTypes.Add(typeof(CIIP.StateMachine.AdmiralStateMachineModule));
-            this.RequiredModuleTypes.Add(typeof(CIIP.FormCode.FormCodeModule));
             this.RequiredModuleTypes.Add(typeof(CIIP.Icon.IconModule));
 
 		}

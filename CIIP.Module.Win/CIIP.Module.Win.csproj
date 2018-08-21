@@ -417,21 +417,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CIIP.CodeFirstView\CIIP.CodeFirstView.csproj">
-      <Project>{F4B65FB1-9137-4FFD-9D6B-F7B28B7B7925}</Project>
-      <Name>CIIP.CodeFirstView</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CIIP.StateMachine\CIIP.StateMachine.csproj">
-      <Project>{ad288c48-d444-4885-a557-38db6ce8195e}</Project>
-      <Name>CIIP.StateMachine</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CIIP.Common\CIIP.Common.csproj">
       <Project>{2380464f-5516-4f22-869e-ab916b154df5}</Project>
       <Name>CIIP.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CIIP.Dashboard\CIIP.Dashboard.csproj">
-      <Project>{1e9501b3-a97d-4667-a434-f19f0af6b110}</Project>
-      <Name>CIIP.Dashboard</Name>
     </ProjectReference>
     <ProjectReference Include="..\CIIP.Module\CIIP.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
@@ -444,6 +432,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes1.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

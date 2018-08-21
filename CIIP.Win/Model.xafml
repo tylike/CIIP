@@ -1,38 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application PreferredLanguage="zh-CN">
-  <NavigationItems DefaultLeafImageName="BO_Product" DefaultChildItemsDisplayStyle="List" StartupNavigationItem="">
-    <Items>
-      <Item Id="Default">
-        <Items>
-          <Item Id="MyDetails" Removed="True" />
-          <Item Id="SecuritySystemRole_ListView" Removed="True" />
-          <Item Id="SecuritySystemUser_ListView" Removed="True" />
-        </Items>
-      </Item>
-      <Item Id="技术支持">
-        <Items>
-          <Item Id="审批流程" Index="1" />
-          <Item Id="单据设置" Index="2" />
-          <Item Id="系统菜单" Index="3" />
-          <Item Id="安全设置" Index="4" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="SecuritySystemRole_ListView" ViewId="SecuritySystemRole_ListView" ObjectKey="" Caption="角色设置" IsNewNode="True" />
-              <Item Id="SecuritySystemUser_ListView" ViewId="SecuritySystemUser_ListView" ObjectKey="" Caption="系统用户" IsNewNode="True" />
-              <Item Id="我的信息" ViewId="SecuritySystemUser_DetailView" ObjectKey="@CurrentUserID" Caption="我的信息" ImageName="BO_MyDetails" IsNewNode="True" />
-            </Items>
-          </Item>
-        </Items>
-      </Item>
-    </Items>
-  </NavigationItems>
+<Application PreferredLanguage="zh-CN" Title="商信互联企业信息管理平台  ">
+  <NavigationItems DefaultLeafImageName="BO_Product" DefaultChildItemsDisplayStyle="List" StartupNavigationItem="" />
   <Options Skin="Office 2016 Colorful" UIType="TabbedMDI" FormStyle="Ribbon">
     <RibbonOptions RibbonControlStyle="Office2013" />
   </Options>
   <SchemaModules>
-    <SchemaModule Name="SchedulerModuleBase" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SchedulerWindowsFormsModule" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
-    <SchemaModule Name="SystemWindowsFormsModule" Version="15.2.9.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
     <ListView Id="Event_ListView" DataAccessMode="Client" />

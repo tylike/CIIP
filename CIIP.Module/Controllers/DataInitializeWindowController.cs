@@ -41,7 +41,6 @@ namespace CIIP.Module.Controllers
             // Unsubscribe from previously subscribed events and release other references and resources.
             base.OnDeactivated();
         }
-        IObjectSpace ObjectSpace;
 
         private void 数据初始化_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
@@ -61,17 +60,6 @@ namespace CIIP.Module.Controllers
             #region 系统类型
             AddBusinessObject(typeof (单据<>), "单据<明细>", CreateNameSpace(typeof (单据<>).Namespace,ObjectSpace),
                 "单据<明细>,继承自单据基类,支持将明细类型做为参数传入(内部使用泛型实现)", false,ObjectSpace);
-
-            //AddBusinessObject(typeof (订单<>), "订单<明细>", CreateNameSpace(typeof (订单<>).Namespace, ObjectSpace),
-            //    "订单<明细>,继承自 单据<明细>基类 ,支持将明细类型做为参数传入(内部使用泛型实现),并支持各类订单类型的抽象实现.", false, ObjectSpace);
-
-            //AddBusinessObject(typeof (仓库单据基类<>), "仓库单据基类<明细>", CreateNameSpace(typeof (仓库单据基类<>).Namespace,ObjectSpace),
-            //    "仓库单据基类<明细>,继承自 单据<明细>基类,支持将明细类型做为参数传入(内部使用泛型实现),并支持各类仓库类单据的抽象实现.", false,ObjectSpace);
-
-            //AddBusinessObject(typeof (库存单据明细<>), "库存单据明细<单据>", CreateNameSpace(typeof (库存单据明细<>).Namespace,ObjectSpace),
-            //    "继承自库存流水,用于库存单据明细的基类,需要传入单据类型.", false,ObjectSpace);
-
-            //AddBusinessObject(typeof (订单明细<>), "订单明细<订单>", CreateNameSpace(typeof (订单明细<>).Namespace,ObjectSpace), "可以与订单<订单明细>成对出现使用.",false,ObjectSpace);
 
             AddBusinessObject(typeof (明细<>), "明细<单据>", CreateNameSpace(typeof (明细<>).Namespace, ObjectSpace),
                 "可以与单据<明细>成对继承使用.", false, ObjectSpace);
@@ -238,20 +226,6 @@ namespace CIIP.Module.Controllers
             return t;
         }
 
-        private void simpleAction1_Execute(object sender, SimpleActionExecuteEventArgs e)
-        {
-            var os = Application.CreateObjectSpace();
-            CreateWMS(os,true);
-            os.CommitChanges();
-        }
 
-        public static void CreateWMS(IObjectSpace os,bool deleteExist)
-        {            
-            WMSPackage wms = new WMSPackage(os);
-            wms.Create(deleteExist);
-            wms.AutoRun();
-            os.CommitChanges();
-
-        }
     }
 }

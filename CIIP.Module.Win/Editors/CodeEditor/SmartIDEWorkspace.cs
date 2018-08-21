@@ -19,7 +19,6 @@ using Microsoft.CodeAnalysis.Formatting;
 using System.Windows.Media.Imaging;
 using ICSharpCode.AvalonEdit.CodeCompletion;
 using System.Windows.Media;
-using CIIP.Module.BusinessObjects.Flow;
 using DevExpress.Xpo;
 
 namespace CIIP.Module.Win.Editors
@@ -159,11 +158,7 @@ namespace CIIP.Module.Win.Editors
             {
                 CreateDocument(logic);
             }
-            var flowactions = this.objectSpace.GetObjects<FlowAction>(null, true);
-            foreach (var flowacion in flowactions)
-            {
-                CreateDocument(flowacion);
-            }
+            
             var layouts = this.objectSpace.GetObjects<BusinessObjectLayout>();
             foreach (var item in layouts)
             {

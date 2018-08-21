@@ -1,5 +1,4 @@
 using System;
-using CIIP.StateMachine;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 using 常用基类;

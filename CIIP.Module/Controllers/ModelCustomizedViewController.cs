@@ -13,7 +13,6 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
-using CIIP.CodeFirstView;
 using CIIP.Module.BusinessObjects.SYS;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Model.Core;

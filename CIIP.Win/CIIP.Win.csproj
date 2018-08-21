@@ -88,12 +88,6 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Admiral.ImportData">
-      <HintPath>..\lib\Admiral.ImportData.dll</HintPath>
-    </Reference>
-    <Reference Include="Admiral.ImportData.Win">
-      <HintPath>..\lib\Admiral.ImportData.Win.dll</HintPath>
-    </Reference>
     <Reference Include="DevExpress.BonusSkins.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -272,6 +266,10 @@
     <Compile Include="ERPWindowsFormsApplication.Designer.cs">
       <DependentUpon>ERPWindowsFormsApplication.cs</DependentUpon>
     </Compile>
+    <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -804,21 +802,9 @@
     <None Include="Images\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CIIP.CodeFirstView\CIIP.CodeFirstView.csproj">
-      <Project>{F4B65FB1-9137-4FFD-9D6B-F7B28B7B7925}</Project>
-      <Name>CIIP.CodeFirstView</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CIIP.StateMachine\CIIP.StateMachine.csproj">
-      <Project>{ad288c48-d444-4885-a557-38db6ce8195e}</Project>
-      <Name>CIIP.StateMachine</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CIIP.Common\CIIP.Common.csproj">
       <Project>{2380464f-5516-4f22-869e-ab916b154df5}</Project>
       <Name>CIIP.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CIIP.Dashboard\CIIP.Dashboard.csproj">
-      <Project>{1e9501b3-a97d-4667-a434-f19f0af6b110}</Project>
-      <Name>CIIP.Dashboard</Name>
     </ProjectReference>
     <ProjectReference Include="..\CIIP.Module.Win\CIIP.Module.Win.csproj">
       <Project>{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}</Project>
@@ -827,10 +813,6 @@
     <ProjectReference Include="..\CIIP.Module\CIIP.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
       <Name>CIIP.Module</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CIIP.FormCode\CIIP.FormCode.csproj">
-      <Project>{1b520ae2-cfbe-4ba0-b39a-50bb98704caa}</Project>
-      <Name>CIIP.FormCode</Name>
     </ProjectReference>
     <ProjectReference Include="..\CIIP.Icon\CIIP.Icon.csproj">
       <Project>{11754553-e0c7-4c0a-9b4c-52249c67df7c}</Project>

@@ -12,7 +12,6 @@ using 常用基类;
 using DevExpress.ExpressApp.Utils;
 using System.IO;
 using CIIP.Module.BusinessObjects.Flow;
-using CIIP.StateMachine;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.DC;
@@ -20,16 +19,6 @@ using DevExpress.ExpressApp.Xpo;
 
 namespace CIIP.Module.Controllers
 {
-    public abstract class Package
-    {
-        protected IObjectSpace os;
-        public Package(IObjectSpace os)
-        {
-            this.os = os;
-        }
-        public abstract void Create(bool deleteExist);
-        public abstract void AutoRun();
-    }
 
     public class WMSPackage:Package
     {
@@ -829,16 +818,16 @@ namespace 基础信息
             #endregion
 
             #region 仓库管理
-            var pmsIn = CreateWMSForm("采购入库", wmsFormBase, NSWMS, "采购管理", false);
-            var pmsReturn = CreateWMSForm("采购退货出库", wmsFormBase, NSWMS, "采购管理", true, "采购退货");
-            var smsOut = CreateWMSForm("销售出库", wmsFormBase, NSWMS, "销售管理", true);
-            var smsReturn = CreateWMSForm("销售退货入库", wmsFormBase, NSWMS, "销售管理", false, "销售退货");
+            //var pmsIn = CreateWMSForm("采购入库", wmsFormBase, NSWMS, "采购管理", false);
+            //var pmsReturn = CreateWMSForm("采购退货出库", wmsFormBase, NSWMS, "采购管理", true, "采购退货");
+            //var smsOut = CreateWMSForm("销售出库", wmsFormBase, NSWMS, "销售管理", true);
+            //var smsReturn = CreateWMSForm("销售退货入库", wmsFormBase, NSWMS, "销售管理", false, "销售退货");
 
-            var wmsBS = CreateWMSForm("报损单", wmsFormBase, NSWMS, "仓库管理", true, "库存盘点");
-            var wmsBY = CreateWMSForm("报溢单", wmsFormBase, NSWMS, "仓库管理", false, "库存盘点");
-            var wmsPD = CreateWMSForm("库存盘点", wmsFormBase, NSWMS, "仓库管理", null, "库存盘点");
-            var wmsDBCK = CreateWMSForm("调拨出库", wmsFormBase, NSWMS, "仓库管理", true, "产品调拨");
-            var wmsDBRK = CreateWMSForm("调拨入库", wmsFormBase, NSWMS, "仓库管理", false, "产品调拨");
+            //var wmsBS = CreateWMSForm("报损单", wmsFormBase, NSWMS, "仓库管理", true, "库存盘点");
+            //var wmsBY = CreateWMSForm("报溢单", wmsFormBase, NSWMS, "仓库管理", false, "库存盘点");
+            //var wmsPD = CreateWMSForm("库存盘点", wmsFormBase, NSWMS, "仓库管理", null, "库存盘点");
+            //var wmsDBCK = CreateWMSForm("调拨出库", wmsFormBase, NSWMS, "仓库管理", true, "产品调拨");
+            //var wmsDBRK = CreateWMSForm("调拨入库", wmsFormBase, NSWMS, "仓库管理", false, "产品调拨");
             
             #region 调拨单
             var wmsdbd = CreateWMSForm("调拨单", wmsFormBase, NSWMS, "仓库管理", null, "产品调拨", t =>
@@ -1083,201 +1072,7 @@ AS
                 session.ExecuteNonQuery(createView);
             }
         }
-
-        public void CreateStateMachine(string targetTypeName)
-        {
-            var targetType = ReflectionHelper.FindType(targetTypeName);
-            if (targetType == null)
-            {
-                return;
-            }
-            var cls = CaptionHelper.ApplicationModel.BOModel.GetClass(targetType);
-            var name = cls.Caption + "状态转换";
-
-            var obj = os.FindObject<CIIPXpoStateMachine>(new BinaryOperator("Name", name));
-            if (obj == null)
-            {
-                obj = os.CreateObject<CIIPXpoStateMachine>();
-                obj.TargetObjectType = targetType;
-                obj.StatePropertyName = new StringObject(cls.AllMembers.FirstOrDefault(x => x.MemberInfo.MemberType == typeof(CIIPXpoState))?.Name);
-                obj.Name = name;
-                obj.Active = true;
-                obj.ExpandActionsInDetailView = true;
-                obj.Save();
-                var f = obj as IFlow;
-                var NEW = f.CreateNode(307, 137, 64, 64, null, "新建");
-                obj.StartState = NEW as CIIPXpoState;
-                var CHECKED = f.CreateNode(658, 215, 64, 64, null, "已审核");
-
-                (CHECKED as CIIPXpoState).Value = checkedState;
-
-                var FINISHED = f.CreateNode(585, 426, 64, 64, null, "已完成");
-                var CLOSED = f.CreateNode(392, 391, 64, 64, null, "已关闭");
-
-                CreateSMAction(f, NEW, CHECKED, 0, 0);
-                CreateSMAction(f, CHECKED, FINISHED, 0, 0);
-                CreateSMAction(f, FINISHED, CLOSED, 0, 0);
-            }
-            
-            //SELECT
-            //'var ','T_' + replace(Oid, '-', '') ,'=', 'f.CreateNode(',
-            //[X],','
-            //,[Y],','
-            //,[Width],','
-            //,[Height],','
-            //,'null',','
-            //,'"'+[Caption]+'"',');'      
-            //FROM[IMatrix.ERP.R2].[dbo].[CIIPXpoState]
-           
-        }
-
-        void CreateSMAction(IFlow flow, IFlowNode from, IFlowNode to, int beginIndex, int endIndex)
-        {
-            var fa = flow.CreateAction(from, to) as StateMachine.CIIPXpoTransition;
-            fa.BeginItemPointIndex = beginIndex;
-            fa.EndItemPointIndex = endIndex;
-        }
-
-        void CreateAction(IFlow flow, IFlowNode from,IFlowNode to,int beginIndex,int endIndex)
-        {
-            var fa = flow.CreateAction(from,to) as FlowAction;
-            fa.Created();
-            fa.BeginItemPointIndex = beginIndex;
-            fa.EndItemPointIndex = endIndex;
-        }
-
-        public IFlowNode CreateNode(IFlow flow, int x,int y,int width,int height,string form,string caption)
-        {
-            var n = flow.CreateNode(x, y, width, height, form, caption);
-            CreateStateMachine(form);
-            return n;
-        }
-
-        public void CreateFormConvert()
-        {
-            var exist = ReflectionHelper.FindType("采购管理.采购询价");
-            if (exist != null)
-            {
-                var flow = os.FindObject<Flow>(new BinaryOperator("名称", "单据转换流程"));
-                if (flow == null)
-                {
-                    flow = os.CreateObject<Flow>();
-                    flow.名称 = "单据转换流程";
-                    var f = flow as IFlow;
-
-                    //SELECT
-                    //'var ',caption,'=','f.CreateNode('
-                    //,[X],','
-                    //,[Y],','
-                    //,[Width],','
-                    //,[Height],','
-                    //,'"'+[Form]+'"',','
-                    //,'"'+Caption+'");'
-                    //FROM[IMatrix.ERP.R2].[dbo].[FlowNode]
-
-                    var 采购询价 = CreateNode(f,480, 177, 64, 64, "采购管理.采购询价", "采购询价");
-                    var 采购申请 = CreateNode(f,304, 177, 64, 64, "采购管理.采购申请", "采购申请");
-                    var 采购退货 = CreateNode(f,866, 360, 64, 64, "采购管理.采购退货", "采购退货");
-                    var 采购入库 = CreateNode(f,1080, 360, 64, 64, "仓库管理.采购入库", "采购入库");
-                    var 采购订单 = CreateNode(f,866, 180, 64, 64, "采购管理.采购订单", "采购订单");
-                    var 采购合同 = CreateNode(f,660, 180, 64, 64, "采购管理.采购合同", "采购合同");
-                    var 采购退货出库 = CreateNode(f,660, 360, 64, 64, "仓库管理.采购退货出库", "采购退货出库");
-                    var 采购到货 = CreateNode(f,1080, 180, 64, 64, "采购管理.采购到货", "采购到货");
-
-
-                    var 销售报价 = CreateNode(f,304, 570, 64, 64, "销售管理.销售报价", "销售报价");
-                    var 销售订单 = CreateNode(f,660, 570, 64, 64, "销售管理.销售订单", "销售订单");
-                    var 销售合同 = CreateNode(f,480, 570, 64, 64, "销售管理.销售合同", "销售合同");
-
-                    var 销售发货 = CreateNode(f,866, 570, 64, 64, "销售管理.销售发货", "销售发货");
-                    var 销售出库 = CreateNode(f,1080, 570, 64, 64, "仓库管理.销售出库", "销售出库");
-
-                    var 销售退货 = CreateNode(f,660, 780, 64, 64, "销售管理.销售退货", "销售退货");
-                    var 销售退货入库 = CreateNode(f,866, 780, 64, 64, "仓库管理.销售退货入库", "销售退货入库");
-
-
-                    var 调拨单 = CreateNode(f,360, 1140, 64, 64, "仓库管理.调拨单", "调拨单");
-                    var 调拨出库 = CreateNode(f,600, 1140, 64, 64, "仓库管理.调拨出库", "调拨出库");
-                    var 调拨入库 = CreateNode(f,120, 1140, 64, 64, "仓库管理.调拨入库", "调拨入库");
-
-                    var 库存盘点 = CreateNode(f,360, 960, 64, 64, "仓库管理.库存盘点", "库存盘点");
-                    var 报溢单 = CreateNode(f,120, 960, 64, 64, "仓库管理.报溢单", "报溢单");
-                    var 报损单 = CreateNode(f,600, 960, 64, 64, "仓库管理.报损单", "报损单");
-
-                    //FromCaption ToCaption   MC CC  Caption BeginItemPointIndex EndItemPointIndex
-
-                    //SELECT   'CreateAction(f,' AS Expr1,
-                    //FromCaption.Caption,',',
-                    //ToCaption.Caption,',',
-                    //FlowAction.BeginItemPointIndex,',', 
-                    //FlowAction.EndItemPointIndex, 
-				
-                    //');' AS Expr2
-                    //FROM FlowAction   LEFT OUTER JOIN
-                    //FlowNode AS FromCaption ON FlowAction.[From] = FromCaption.Oid LEFT OUTER JOIN
-                    //FlowNode AS ToCaption ON FlowAction.[To] = ToCaption.Oid
-                    //where FlowAction.Caption not like N'%采购%'
-
-                    CreateAction(f, 采购退货, 采购退货出库, 3, -1);
-                    CreateAction(f, 采购订单, 采购退货, 2, 0);
-                    CreateAction(f, 采购询价, 采购合同, 1, 3);
-                    CreateAction(f, 采购订单, 采购到货, 1, 3);
-                    CreateAction(f, 采购到货, 采购入库, 2, 0);
-                    CreateAction(f, 采购合同, 采购订单, 1, 3);
-                    CreateAction(f, 采购申请, 采购询价, 1, 3);
-
-                    CreateAction(f, 调拨单, 调拨出库, 1, 3);
-                    CreateAction(f, 销售合同, 销售订单, -1, 3);
-                    CreateAction(f, 调拨单, 调拨入库, 3, 1);
-                    CreateAction(f, 销售退货, 销售退货入库, 1, -1);
-                    CreateAction(f, 库存盘点, 报溢单, 3, 1);
-                    CreateAction(f, 销售订单, 销售发货, 1, 3);
-                    CreateAction(f, 销售报价, 销售合同, 1, -1);
-                    CreateAction(f, 销售发货, 销售出库, 1, 3);
-                    CreateAction(f, 销售订单, 销售退货, 2, 0);
-                    CreateAction(f, 库存盘点, 报损单, 1, 3);
-
-
-                }
-            }
-        }
-        public BusinessForm CreateWMSForm(string name, BusinessObject @base, Namespace category, string nl1, bool? isOut, string nl2 = null,Action<BusinessForm> userSetup = null)
-        {
-
-            var form = CreateForm(name, @base, category, nl1, nl2,false);
-            userSetup?.Invoke(form);
-
-            string cklx = "不操作";
-            if (isOut.HasValue)
-                cklx = isOut.Value ? "出库" : "入库";
-            var template = $@"
-namespace {category.FullName}
-{{
-    public partial class {name}
-    {{
-        public override 库存操作类型 操作类型
-        {{
-            get {{ return 库存操作类型.{cklx}; }}
-        }}
-    }}
-}}
-";
-            
-
-            form.AddPartialLogic(template);
-            var layout = $@"
-namespace {form.Category.FullName}
-{{
-    public partial class {form.名称}_ListView : 仓库单据布局<{form.名称}, {form.ItemBusinessObject.名称}>
-    {{
-
-    }}
-}}
-";
-
-            form.AddLayout(layout);
-            return form;
-        }
+        
 
         public BusinessForm CreateForm(string name,BusinessObject @base,Namespace category,string navl1,string navl2=null,bool createLayout = true)
         {

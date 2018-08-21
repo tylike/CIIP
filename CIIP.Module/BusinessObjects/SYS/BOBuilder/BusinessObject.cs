@@ -3,7 +3,6 @@ using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
-using CIIP.Module.BusinessObjects.Flow;
 using System.Linq;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Validation;

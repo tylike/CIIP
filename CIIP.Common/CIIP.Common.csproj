@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="ApplicationType.cs" />
     <Compile Include="BusinessConfigTypeAttribute.cs" />
+    <Compile Include="CategorySettingAttribute.cs" />
     <Compile Include="ChildrenTypeAttribute.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="FormInfo.cs" />

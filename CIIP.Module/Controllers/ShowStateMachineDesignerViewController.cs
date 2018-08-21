@@ -13,7 +13,6 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
-using CIIP.StateMachine;
 using CIIP.Module.BusinessObjects.Flow;
 
 namespace CIIP.Module.Controllers

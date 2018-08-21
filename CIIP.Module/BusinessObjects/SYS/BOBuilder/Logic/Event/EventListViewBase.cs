@@ -1,5 +1,4 @@
 using System.Linq;
-using CIIP.CodeFirstView;
 using DevExpress.ExpressApp.Model;
 
 namespace CIIP.Module.BusinessObjects.SYS.Logic

@@ -10,7 +10,6 @@ using DevExpress.ExpressApp.Security.Strategy;
 using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
-using CIIP.FormCode;
 using System.Drawing;
 using DevExpress.ExpressApp.Utils;
 using System.Collections.Generic;

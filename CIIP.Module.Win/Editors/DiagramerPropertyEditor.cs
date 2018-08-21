@@ -434,7 +434,6 @@ namespace CIIP.Module.Win.Editors
                     fa.EndItemPointIndex = conn.EndItemPointIndex;
                 }
             }
-            FlowViewController.ActionInfos = null;
         }
         #endregion
 

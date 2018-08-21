@@ -6,7 +6,6 @@ using DevExpress.ExpressApp.Win.Editors;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Xpo;
 using CIIP.Module.BusinessObjects;
-using CIIP.Module.BusinessObjects.Flow;
 using DevExpress.ExpressApp;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Win.Controls;

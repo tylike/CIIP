@@ -19,7 +19,6 @@ using DevExpress.Xpo;
 using DevExpress.Persistent.BaseImpl;
 using System.ComponentModel;
 using CIIP.Module.BusinessObjects;
-using CIIP.Module.BusinessObjects.Flow;
 using 常用基类;
 using DevExpress.ExpressApp.Model;
 

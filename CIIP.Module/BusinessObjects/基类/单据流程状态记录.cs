@@ -1,5 +1,4 @@
 ﻿using System.ComponentModel;
-using CIIP.Module.BusinessObjects.Flow;
 using DevExpress.Xpo;
 using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Utils;

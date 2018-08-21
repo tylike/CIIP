@@ -12,7 +12,6 @@ using System.Collections.Generic;
 using System.Text;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.ExpressApp.ConditionalAppearance;
-using CIIP.StateMachine;
 using CIIP;
 using CIIP.Module.BusinessObjects.SYS;
 

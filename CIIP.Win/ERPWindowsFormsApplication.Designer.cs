@@ -1,8 +1,7 @@
 ﻿using CIIP.Module;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.Module.Win;
-using CIIP.Dashboard;
-using CIIP.FormCode;
+
 using CIIP.Icon;
 
 namespace CIIP.Win {
@@ -57,10 +56,6 @@ namespace CIIP.Win {
             this.validationModule = new DevExpress.ExpressApp.Validation.ValidationModule();
             this.validationWindowsFormsModule = new DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule();
             this.viewVariantsModule = new DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule();
-            this.codeFirstViewModule1 = new CIIP.CodeFirstView.CodeFirstViewModule();
-            this.admiralStateMachineModule1 = new CIIP.StateMachine.AdmiralStateMachineModule();
-            this.formCodeModule1 = new CIIP.FormCode.FormCodeModule();
-            this.devDashboardModule1 = new CIIP.Dashboard.DevDashboardModule();
             this.iconModule1 = new CIIP.Icon.IconModule();
 
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -94,7 +89,6 @@ namespace CIIP.Win {
             // 
             // stateMachineModule
             // 
-            this.stateMachineModule.StateMachineStorageType = typeof(CIIP.StateMachine.CIIPXpoStateMachine);
             // 
             // validationModule
             // 
@@ -120,9 +114,6 @@ namespace CIIP.Win {
             this.Modules.Add(this.stateMachineModule);
             this.Modules.Add(this.treeListEditorsModuleBase);
             this.Modules.Add(this.viewVariantsModule);
-            this.Modules.Add(this.codeFirstViewModule1);
-            this.Modules.Add(this.admiralStateMachineModule1);
-            this.Modules.Add(this.formCodeModule1);
             this.Modules.Add(this.iconModule1);
             this.Modules.Add(this.module3);
             this.Modules.Add(this.fileAttachmentsWindowsFormsModule);
@@ -134,7 +125,6 @@ namespace CIIP.Win {
             this.Modules.Add(this.schedulerWindowsFormsModule);
             this.Modules.Add(this.treeListEditorsWindowsFormsModule);
             this.Modules.Add(this.validationWindowsFormsModule);
-            this.Modules.Add(this.devDashboardModule1);
             this.Modules.Add(this.module4);
             this.Modules.Add(this.securityModule1);
             this.Security = this.securityStrategyComplex1;
@@ -174,10 +164,6 @@ namespace CIIP.Win {
         private DevExpress.ExpressApp.Validation.ValidationModule validationModule;
         private DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule validationWindowsFormsModule;
         private DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule viewVariantsModule;
-        private CIIP.CodeFirstView.CodeFirstViewModule codeFirstViewModule1;
-        private CIIP.StateMachine.AdmiralStateMachineModule admiralStateMachineModule1;
-        private FormCodeModule formCodeModule1;
-        private DevDashboardModule devDashboardModule1;
         private IconModule iconModule1;
 
     }

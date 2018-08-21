@@ -1,7 +1,6 @@
 ﻿using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Win.Editors;
-using CIIP.Module.BusinessObjects.Flow;
 using System;
 using System.Collections.Generic;
 using System.Linq;

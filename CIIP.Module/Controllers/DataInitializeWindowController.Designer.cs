@@ -38,18 +38,8 @@
             this.数据初始化.Category = "Tools";
             this.数据初始化.ConfirmationMessage = "此动作将清除现有数据重新初始化内置的系统类型，这将导致自定义的用户业务不可用，确定要这样做吗？";
             this.数据初始化.Id = "数据初始化";
-            this.数据初始化.TargetObjectsCriteria = "";
-            this.数据初始化.ToolTip = null;
             this.数据初始化.Execute += new DevExpress.ExpressApp.Actions.SimpleActionExecuteEventHandler(this.数据初始化_Execute);
-            // 
-            // ActionCreateWMS
-            // 
-            this.ActionCreateWMS.Caption = "内置系统";
-            this.ActionCreateWMS.Category = "Tools";
-            this.ActionCreateWMS.ConfirmationMessage = "此动作将清除现有数据重新初始化内置的系统类型，这将导致自定义的用户业务不可用，确定要这样做吗？";
-            this.ActionCreateWMS.Id = "CreateWMS";
-            this.ActionCreateWMS.ToolTip = null;
-            this.ActionCreateWMS.Execute += new DevExpress.ExpressApp.Actions.SimpleActionExecuteEventHandler(this.simpleAction1_Execute);
+            
             // 
             // DataInitializeWindowController
             // 

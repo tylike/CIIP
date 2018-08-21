@@ -14,11 +14,9 @@ using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.Model;
-using CIIP.Module.BusinessObjects.Flow;
 
 namespace CIIP.Module.Controllers
 {
-    // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppViewControllertopic.aspx.
     public partial class DisableShowDetailViewViewController : ViewController<ListView>
     {
         public DisableShowDetailViewViewController()
