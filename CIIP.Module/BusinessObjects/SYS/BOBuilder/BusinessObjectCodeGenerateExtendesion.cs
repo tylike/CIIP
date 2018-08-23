@@ -11,8 +11,6 @@ using DevExpress.Xpo;
 using System.Linq;
 using System.ComponentModel;
 using DevExpress.ExpressApp.Model;
-using 常用基类;
-using 基础信息;
 using DevExpress.Persistent.Validation;
 ";
         }

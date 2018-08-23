@@ -42,37 +42,37 @@ namespace CIIP.Module {
         {
             InitializeComponent();
 
-            if (!DesignMode)
-            {
-                var configSafeMode = ConfigurationManager.AppSettings["SafeMode"];
-                //if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
-                if (configSafeMode != "true")
-                {
-                    var runtimeModule = BusinessBuilder.Instance.Register();
+            //if (!DesignMode)
+            //{
+            //    var configSafeMode = ConfigurationManager.AppSettings["SafeMode"];
+            //    //if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            //    if (configSafeMode != "true")
+            //    {
+            //        var runtimeModule = BusinessBuilder.Instance.Register();
 
-                    if (runtimeModule != null)
-                        this.RequiredModuleTypes.Add(runtimeModule);
+            //        if (runtimeModule != null)
+            //            this.RequiredModuleTypes.Add(runtimeModule);
 
-                }
-                else
-                {
-                    IsSafeMode = true;
-                }
+            //    }
+            //    else
+            //    {
+            //        IsSafeMode = true;
+            //    }
 
                 
 
-                //var types = BusinessBuilder.Instance.RegisteBusinessLogics();
-                //if (types != null)
-                //{
-                //    foreach (var type in types)
-                //    {
-                //        if (type != null)
-                //        {
-                //            //this.RequiredModuleTypes.Add(type);
-                //        }
-                //    }
-                //}
-            }
+            //    //var types = BusinessBuilder.Instance.RegisteBusinessLogics();
+            //    //if (types != null)
+            //    //{
+            //    //    foreach (var type in types)
+            //    //    {
+            //    //        if (type != null)
+            //    //        {
+            //    //            //this.RequiredModuleTypes.Add(type);
+            //    //        }
+            //    //    }
+            //    //}
+            //}
             BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
         }
 

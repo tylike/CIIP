@@ -24,6 +24,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Emit;
 using CIIP.Module.Win.Editors;
+using System.Diagnostics;
 
 namespace CIIP.Module.BusinessObjects.SYS.BOBuilder
 {
@@ -77,19 +78,10 @@ namespace CIIP.Module.BusinessObjects.SYS.BOBuilder
                         runtimeModule.Save();
                         os.CommitChanges();
                     }
-
-
-                    var moduleInfo = os.FindObject<ModuleInfo>(new BinaryOperator("Name", "RuntimeModule"));
-                    if (moduleInfo != null)
-                    {
-                        os.Delete(moduleInfo);
-                        os.CommitChanges();
-                    }
-                    var restart = Application as IRestartApplication;
-                    if (restart != null)
-                    {
-                        restart.RestartApplication();
-                    }
+                    Process.Start(@"E:\dev\CIIP.git\trunk\CIIP.Client\CIIP.Client\CIIP.Client.Win\bin\Debug\CIIP.Client.Win.exe");
+                    //Application.ShowViewStrategy.ShowMessage("编译成功!" + AdmiralEnvironment.UserDefineBusinessTempFile.FullName);
+                    
+                    
                 }
             }
         }

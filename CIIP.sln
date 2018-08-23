@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Dashboard", "CIIP.Dash
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Icon", "CIIP.Icon\CIIP.Icon.csproj", "{11754553-E0C7-4C0A-9B4C-52249C67DF7C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CIIP.Client", "CIIP.Client", "{9B83B958-78A4-40BF-AB1A-25DFB3BD2EE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -113,7 +115,7 @@ Global
 		{11754553-E0C7-4C0A-9B4C-52249C67DF7C} = {7A916F4E-A0AD-491B-A91B-79C379F94433}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9868EFA8-F239-4017-BD03-CC9C27BF7F21}
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {9868EFA8-F239-4017-BD03-CC9C27BF7F21}
 	EndGlobalSection
 EndGlobal

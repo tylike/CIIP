@@ -119,7 +119,7 @@ namespace CIIP.Module.Win.Editors
                 }
                 refs.Add(MetadataReference.CreateFromFile(asm.Location));
             }
-            refs.Add(MetadataReference.CreateFromFile(typeof(CIIP.Module.ERPModule).Assembly.Location));
+            //refs.Add(MetadataReference.CreateFromFile(typeof(CIIP.Module.ERPModule).Assembly.Location));
             refs.Add(MetadataReference.CreateFromFile(typeof(XPCollection).Assembly.Location));
             return refs;
         }
@@ -206,7 +206,7 @@ namespace CIIP.Module.Win.Editors
         public void CreateRuntimeModule()
         {
             var str =
-                $"public class RuntimeModule:{typeof(RuntimeModuleBase).FullName} {{ public RuntimeModule():base(){{}} }}\n";
+                $"public class RuntimeModule:{typeof(ModuleBase).FullName} {{ public RuntimeModule():base(){{}} }}\n";
             Workspace.AddDocument(ModuleProject.Id, "RunttimeModule.cs", SourceText.From(str,Encoding.UTF8));
             
         }
