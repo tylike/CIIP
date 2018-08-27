@@ -56,9 +56,10 @@
     <Items>
       <Item Id="业务定制" Index="0" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="Namespace" Index="0" ViewId="Namespace_ListView" IsNewNode="True" />
-          <Item Id="用户业务" ViewId="BusinessObject_ListView" Index="1" IsNewNode="True" />
-          <Item Id="简单类型" ViewId="SimpleType_ListView" Index="2" IsNewNode="True" />
+          <Item Id="Project" Index="0" ViewId="Project_ListView" IsNewNode="True" />
+          <Item Id="Namespace" Index="1" ViewId="Namespace_ListView" IsNewNode="True" />
+          <Item Id="用户业务" ViewId="BusinessObject_ListView" Index="2" IsNewNode="True" />
+          <Item Id="简单类型" ViewId="SimpleType_ListView" Index="3" IsNewNode="True" />
           <Item Id="BusinessModule" ViewId="BusinessModule_ListView" IsNewNode="True" />
           <Item Id="控制器" ViewId="RuntimeController_ListView" IsNewNode="True" />
         </Items>
