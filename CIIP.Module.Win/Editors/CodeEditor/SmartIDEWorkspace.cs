@@ -42,7 +42,7 @@ namespace CIIP.Module.Win.Editors
         
         public AdhocWorkspace Workspace { get;  }
 
-        Project ModuleProject {
+        Microsoft.CodeAnalysis.Project ModuleProject {
             get { return Workspace.CurrentSolution.Projects.First(); }
         }
 
