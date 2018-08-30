@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems" StartupNavigationItem="采购询价单_ListView" />
+</Application>
