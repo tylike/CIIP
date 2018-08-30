@@ -266,6 +266,27 @@
     <Compile Include="ERPWindowsFormsApplication.Designer.cs">
       <DependentUpon>ERPWindowsFormsApplication.cs</DependentUpon>
     </Compile>
+    <Content Include="StartupFile\Win\CIIP.Client.Module.dll" />
+    <Content Include="StartupFile\Win\CIIP.Client.Module.pdb" />
+    <Content Include="StartupFile\Win\CIIP.Client.Module.Win.dll" />
+    <Content Include="StartupFile\Win\CIIP.Client.Module.Win.pdb" />
+    <Content Include="StartupFile\Win\CIIP.Client.Win.exe" />
+    <Content Include="StartupFile\Win\CIIP.Client.Win.pdb" />
+    <Content Include="StartupFile\Win\CIIP.Common.Win.dll" />
+    <Content Include="StartupFile\Win\DevExpress.Dialogs.v18.1.Core.dll" />
+    <Content Include="StartupFile\Win\DevExpress.ExpressApp.FileAttachment.Win.v18.1.dll" />
+    <Content Include="StartupFile\Win\DevExpress.ExpressApp.FileAttachment.Win.v18.1.xml" />
+    <Content Include="StartupFile\Win\DevExpress.XtraDialogs.v18.1.dll" />
+    <Content Include="StartupFile\Win\ModelAssembly.dll" />
+    <Content Include="StartupFile\Win\Newtonsoft.Json.dll" />
+    <Content Include="StartupFile\Win\Newtonsoft.Json.xml" />
+    <None Include="StartupFile\Win\CIIP.Client.Win.exe.config" />
+    <None Include="StartupFile\Win\eXpressAppFramework.log" />
+    <None Include="StartupFile\Win\Model.User.xafml" />
+    <None Include="StartupFile\Win\Model.User_zh-CN.xafml" />
+    <None Include="StartupFile\Win\Model.xafml" />
+    <None Include="StartupFile\Win\ModulesInfo.cfg" />
+    <None Include="StartupFile\Win\ModulesVersionInfo" />
     <None Include="UnusableNodes3.xml">
       <DependentUpon>Model.xafml</DependentUpon>
       <SubType>Designer</SubType>

@@ -34,6 +34,7 @@ namespace CIIP.Module.Win {
         public ERPWindowsFormsModule() {
             InitializeComponent();
             Context.ApplicationType = ApplicationType.Win;
+            RequiredModuleTypes.Add(typeof(CIIP.Common.Win.WinModule));
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
             return ModuleUpdater.EmptyModuleUpdaters;

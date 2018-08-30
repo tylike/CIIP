@@ -29,6 +29,7 @@ using DevExpress.DataAccess.Wizard.Model;
 using DevExpress.DataAccess.UI.Sql;
 using CIIP.Module.Win.Editors;
 using System.Threading;
+using CIIP.ProjectManager;
 
 namespace CIIP.Win {
     static class Program {
@@ -39,6 +40,7 @@ namespace CIIP.Win {
         [STAThread]
         static void Main()
         {
+            Project.ApplicationStartupPath = Application.StartupPath;
             System.Threading.Thread.CurrentThread.CurrentCulture = System.Globalization.CultureInfo.CreateSpecificCulture("zh-CN");
 #if EASYTEST
             DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register();
