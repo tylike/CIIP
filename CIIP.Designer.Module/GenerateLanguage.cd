@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.MethodCode" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAAAAAAAAAAgEAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\MethodCodeBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.AssignValue" Collapsed="true">
+    <Position X="4.25" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAAIAgEAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\AssignValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.BatchAssignValue" Collapsed="true">
+    <Position X="4.25" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\AssignValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.CreateBusinessObject" Collapsed="true">
+    <Position X="1" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\CreateBusinessObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.FindBusinessObject" Collapsed="true">
+    <Position X="0.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAiAAAAAAAAAgAAAAAAgAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\FindBusinessObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ShowViewWindow" Collapsed="true">
+    <Position X="9.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAgAAgACAAACAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\ShowViewWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.VariantDefineBase" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAABAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\VariantDefine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.NameObject" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.BusinessObjectEvent" Collapsed="true">
+    <Position X="14.25" Y="7.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Event\BusinessObjectEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.SYS.Logic.MethodDefine" Collapsed="true">
+    <Position X="14.25" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAAAAAAAAAAAAAAQAQQAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\MethodDefine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ObjectAfterConstruction" Collapsed="true">
+    <Position X="7.75" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectAfterConstruction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ObjectDeletingEvent" Collapsed="true">
+    <Position X="10" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectDeletingEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ObjectPropertyChangedEvent" Collapsed="true">
+    <Position X="12" Y="9.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectPropertyChangedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ObjectSavedEvent" Collapsed="true">
+    <Position X="14.75" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectSavedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ObjectSavingEvent" Collapsed="true">
+    <Position X="16.75" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectSavingEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.VariantDefine" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\VariantDefine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.ForEachStatement" Collapsed="true">
+    <Position X="12.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgABAACAAAAAAEAIEAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\ForEachStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.SwitchStatement" Collapsed="true">
+    <Position X="1" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\SwitchStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IMatrix.ERP.Module.BusinessObjects.Flow.SwitchCaseStatement" Collapsed="true">
+    <Position X="7.75" Y="6.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIQAAAAAAAQEQAAEACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BusinessObjects\SYS\BOBuilder\Logic\Method\Statement\SwitchStatement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

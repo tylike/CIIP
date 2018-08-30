@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Your XAF application</title>
+    <style>
+        body {
+            background: #fff;
+            color: #505050;
+            font: 12px 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        #header {
+            background: #efefef;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0 30px;
+            line-height: 50px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #fff;
+            background: #ff6a00;
+            padding: 0 30px;
+            line-height: 50px;
+        }
+
+        #main {
+            padding: 5px 30px;
+        }
+
+        .section {
+            width: 15.5%;
+            float: left;
+            min-width : 205px;
+            margin: 10px 0 0 15px;
+        }
+
+            .section h2 {
+                font-size: 13px;
+                text-transform: uppercase;
+                margin: 0;
+                border-bottom: 1px solid silver;
+                padding-bottom: 12px;
+                margin-bottom: 8px;
+            }
+
+            .section.first {
+                margin-left: 0;
+                margin-right : 14px;
+                width: 32.0%;
+                min-width : 350px;
+            }
+
+                .section.first h2 {
+                    font-size: 14px;
+                    text-transform: none;
+                    margin-bottom: 2px;
+                    border: none;
+                }
+
+                .section.first li {
+                    border-top: 1px solid silver;
+                    padding: 8px 0;
+                }
+
+            .section.last {
+                margin-right: 0;
+            }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            line-height: 20px;
+        }
+
+        li {
+            padding: 4px 0;
+        }
+
+        a {
+            color: #267cb2;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <p>Congratulations! You've created a project</p>
+    </div>
+
+    <div id="main" style="width:100%">
+		<table style="width:100%">
+		<tr>
+		<td style="width:350px; vertical-align:top; min-width:350px">
+        <div class="section first">
+            <h2>The XAF Solution Wizard has successfully generated the solution according to your settings.</h2>
+            <ul>
+                <li>The <b>IMatrix.ERP.Module</b> project keeps your platform-agnostic code.
+                Add persistent objects code to the <b>Business Objects</b> folder of this project and XAF will automatically create a UI to create, read, update and delete these persistent objects.</li>
+                <li>The <b>IMatrix.ERP.Win</b> project is a startup project for the desktop application.</li>
+                <li>The <b>IMatrix.ERP.Web</b> project is a startup project for the web application.</li>
+				<li>目标仓库 specify the database used by your application, modify the ConnectionString attribute in the configuration file located in the startup project.</li>
+				<li>目标仓库 login, enter the <b>"Admin"</b> user name with empty password.</li>
+            </ul>
+        </div>
+		</td>
+		<td style="vertical-align:top">
+        <div class="section">
+            <h2>1. Design data model</h2>
+            <ul>
+                <li><a href="https://documentation.devexpress.com/#Xaf/CustomDocument3586">Define the Logical Data Model and Relationships</a></li>
+                <li><a href="https://documentation.devexpress.com/#Xaf/CustomDocument2847">Ways to Add a Business Class</a></li>
+                <li><a href="https://documentation.devexpress.com/#Xaf/CustomDocument2600">Business Model Design with XPO</a></li>
+                <li><a href="https://documentation.devexpress.com/#Xaf/CustomDocument2788">Supply Initial Data</a></li>
+                <li><a href="https://documentation.devexpress.com/#Xaf/CustomDocument3583">Custom Fields</a></li>
+                <li><a href="https://documentation.devexpress.com/#Xaf/CustomDocument2701">Built-in Attributes</a></li>
+				<li><a href="https://help.devexpress.com/#Xaf/CustomDocument3014">Supported Data Types and Editors</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>2. Customize UI metadata</h2>
+            <ul>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument2748">UI Customization</a></li>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument2579">Application Model</a></li>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument3298">Localization</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>3. Implement custom behavior</h2>
+            <ul>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument2740">Extend Functionality (Tutorial)</a></li>
+                <li><a href="https://documentation.devexpress.com/#eXpressAppFramework/CustomDocument113708">Data Manipulation and Business Logic</a></li>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument2621">Controllers</a></li>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument3097">Implement Custom Property Editors</a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>4. Deployment</h2>
+            <ul>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument3033">Redistribution and Deployment</a></li>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument3231">Deployment Tutorial</a></li>
+                <li><a href="https://help.devexpress.com/#Xaf/CustomDocument3238">Deployment Troubleshooting Guide</a></li>
+            </ul>
+        </div>
+		</td>
+		</tr>
+		</table>
+    </div>
+    <div id="footer">
+        <ul><li>If you have questions or need assistance, our <a href="https://www.devexpress.com/Support/Center/">best-in-class support service</a> is ready to help you.</li></ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,566 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CIIP.Module</RootNamespace>
+    <AssemblyName>CIIP.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Diagram.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Notifications.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Objects.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Validation.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v18.1.Export">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v18.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v18.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CodeAnalysis, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Common.1.2.2\lib\net45\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.1.2.2\lib\net45\Microsoft.CodeAnalysis.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.CSharp.Workspaces.1.2.2\lib\net45\Microsoft.CodeAnalysis.CSharp.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.VisualBasic.1.2.2\lib\net45\Microsoft.CodeAnalysis.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.VisualBasic.Workspaces, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.VisualBasic.Workspaces.1.2.2\lib\net45\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Workspaces.Common.1.2.2\lib\net45\Microsoft.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeAnalysis.Workspaces.Desktop, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeAnalysis.Workspaces.Common.1.2.2\lib\net45\Microsoft.CodeAnalysis.Workspaces.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=1.1.37.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.1.1.37\lib\dotnet\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Composition.AttributedModel, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.AttributedModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Convention, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.Convention.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Hosting, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.Hosting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.Runtime, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Composition.TypedParts, Version=1.0.27.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Composition.1.0.27\lib\portable-net45+win8+wp8+wpa81\System.Composition.TypedParts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata, Version=1.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.Metadata.1.2.0\lib\portable-net45+win8\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Flow\Agg.cs" />
+    <Compile Include="BusinessObjects\Flow\ChildrenConverter.cs" />
+    <Compile Include="BusinessObjects\Flow\ExecuteFlowAction.cs" />
+    <Compile Include="BusinessObjects\Flow\ExpressionParameter.cs" />
+    <Compile Include="BusinessObjects\Flow\F.cs" />
+    <Compile Include="BusinessObjects\Flow\Flow.cs" />
+    <Compile Include="BusinessObjects\Flow\FlowAction_ListView.cs" />
+    <Compile Include="BusinessObjects\Flow\FlowAction.cs" />
+    <Compile Include="BusinessObjects\Flow\FlowNode.cs" />
+    <Compile Include="BusinessObjects\Flow\FormConverter.cs" />
+    <Compile Include="BusinessObjects\Flow\FormConvertRule.cs" />
+    <Compile Include="BusinessObjects\Flow\IExecuteFlowAction.cs" />
+    <Compile Include="BusinessObjects\Flow\IgnoreFormConvertAttribute.cs" />
+    <Compile Include="BusinessObjects\Flow\MasterConverter.cs" />
+    <Compile Include="BusinessObjects\Flow\动作类型.cs" />
+    <Compile Include="BusinessObjects\Flow\单据转换多次生成控制.cs" />
+    <Compile Include="BusinessObjects\Flow\目标类型.cs" />
+    <Compile Include="BusinessObjects\Security\系统用户.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\AdmiralEnvironment.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessBuilder.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessForm.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObject.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectCodeGenerateExtendesion.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectDocumentProvider.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectLayout.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogic.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogicBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectQuickAddExtendesion.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\CollectionProperty.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterDefine.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterInstance.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\IDocumentProvider.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\ImplementRelation.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\InheritsProperty.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Interface.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\IPartCodeProvider.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\BusinessObjectEvent.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\EventListViewBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectAfterConstruction.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectAfterConstruction_ListView.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectDeletingEvent.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectDeletingEvent_ListView.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectPropertyChangedEvent.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectPropertyChangedEvent_ListView.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectSavedEvent.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectSavedEvent_ListView.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectSavingEvent.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectSavingEvent_ListView.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Method\AccessorModifier.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Method\CsharpCode.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Method\CSharpCodeToStringConverter.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Method\MethodDefine.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Method\MethodModifier.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Method\ParameterDefine.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\ShowBusinessObjectLogicViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\ShowBusinessObjectLogicViewController.Designer.cs">
+      <DependentUpon>ShowBusinessObjectLogicViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\SYS\BOBuilder\ModelDataSource.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\ModelNavigationToStringConverter.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\NameSpace.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\NavigationItem.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\PropertyBase.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\RuleRange.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Solution.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\ViewController.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\WindowController.cs" />
+    <Compile Include="BusinessObjects\SYS\BusinessModule.cs" />
+    <Compile Include="BusinessObjects\SYS\FlowInstanceAction.cs" />
+    <Compile Include="BusinessObjects\SYS\FlowInstanceNode.cs" />
+    <Compile Include="BusinessObjects\SYS\FlowInstance.cs" />
+    <Compile Include="BusinessObjects\SYS\IRadialMenu.cs" />
+    <Compile Include="BusinessObjects\SYS\NavigationMenuDesignerModeSwitchViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\SYS\NavigationMenuDesignerModeSwitchViewController.Designer.cs">
+      <DependentUpon>NavigationMenuDesignerModeSwitchViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\SYS\NavigationMenuItem.cs" />
+    <Compile Include="BusinessObjects\SYS\ModelNavigation.cs" />
+    <Compile Include="BusinessObjects\SYS\NavigationLine.cs" />
+    <Compile Include="BusinessObjects\SYS\NavigationMenu.cs" />
+    <Compile Include="BusinessObjects\SYS\NavigationValueConverter.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Property.cs" />
+    <Compile Include="BusinessObjects\SYS\ShowFlowInstanceViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\SYS\ShowFlowInstanceViewController.Designer.cs">
+      <DependentUpon>ShowFlowInstanceViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\SYS\BOBuilder\SimpleType.cs" />
+    <Compile Include="BusinessObjects\SYS\SystemLogonParameter.cs" />
+    <Compile Include="BusinessObjects\基类\业务项目.cs" />
+    <Compile Include="BusinessObjects\基类\单据.cs" />
+    <Compile Include="BusinessObjects\基类\单据流程状态记录.cs" />
+    <Compile Include="BusinessObjects\基类\单据流程记录明细.cs" />
+    <Compile Include="BusinessObjects\基类\布局基类\单据布局.cs" />
+    <Compile Include="BusinessObjects\基类\明细.cs" />
+    <Compile Include="BusinessObjects\基类\状态变更记录.cs" />
+    <Content Include="Controllers\NZController.cs">
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="Controllers\DataInitializeWindowController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DataInitializeWindowController.Designer.cs">
+      <DependentUpon>DataInitializeWindowController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\IObjectSpaceExtend.cs" />
+    <Compile Include="Controllers\ShowStateMachineDesignerViewController.cs" />
+    <Compile Include="Controllers\ShowStateMachineDesignerViewController.Designer.cs">
+      <DependentUpon>ShowStateMachineDesignerViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WMSPackage.cs" />
+    <Compile Include="DatabaseUpdate\TestDataGeneratorHelper.cs" />
+    <Compile Include="System\BuilderHelper.cs" />
+    <Compile Include="System\CustomCodeRule.cs" />
+    <Compile Include="System\IListViewCriteriaNavigationItem.cs" />
+    <Compile Include="System\IObjectSpaceExtend.cs" />
+    <Compile Include="System\ListView\DisableShowDetailViewViewController.cs" />
+    <Compile Include="System\ListView\DisableShowDetailViewViewController.Designer.cs">
+      <DependentUpon>DisableShowDetailViewViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\FlowViewController.cs" />
+    <Compile Include="Controllers\FlowViewController.Designer.cs">
+      <DependentUpon>FlowViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\ModelCustomizedViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\ModelCustomizedViewController.Designer.cs">
+      <DependentUpon>ModelCustomizedViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System\ListView\IModelListViewExtendesion.cs" />
+    <Compile Include="System\ListView\IModelListViewSetting.cs" />
+    <Compile Include="System\ListView\ModelListViewSetting.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+    <Compile Include="ERPModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ERPModule.Designer.cs">
+      <DependentUpon>ERPModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\RuntimeModuleBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusinessObjects\SYS\BOBuilder\Logic\ShowBusinessObjectLogicViewController.resx">
+      <DependentUpon>ShowBusinessObjectLogicViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessObjects\SYS\NavigationMenuDesignerModeSwitchViewController.resx">
+      <DependentUpon>NavigationMenuDesignerModeSwitchViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessObjects\SYS\ShowFlowInstanceViewController.resx">
+      <DependentUpon>ShowFlowInstanceViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\DataInitializeWindowController.resx">
+      <DependentUpon>DataInitializeWindowController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\FlowViewController.resx">
+      <DependentUpon>FlowViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ModelCustomizedViewController.resx">
+      <DependentUpon>ModelCustomizedViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\ShowStateMachineDesignerViewController.resx">
+      <DependentUpon>ShowStateMachineDesignerViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ERPModule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ERPModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="System\ListView\DisableShowDetailViewViewController.resx">
+      <DependentUpon>DisableShowDetailViewViewController.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GenerateLanguage.cd" />
+    <None Include="packages.config" />
+    <None Include="业务结构.cd" />
+    <None Include="DatabaseUpdate\ReadMe.txt" />
+    <None Include="xp.snippet" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controllers\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\sample.ets" />
+    <None Include="Images\ReadMe.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FunctionalTests\config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\ActiveCustomersList.png" />
+    <EmbeddedResource Include="Images\ActiveCustomersList_32x32.png" />
+    <EmbeddedResource Include="Images\blueray.png" />
+    <EmbeddedResource Include="Images\BO_Actor.png" />
+    <EmbeddedResource Include="Images\BO_Actor_32x32.png" />
+    <EmbeddedResource Include="Images\BO_Categories.png" />
+    <EmbeddedResource Include="Images\BO_Categories_32x32.png" />
+    <EmbeddedResource Include="Images\BO_Company.png" />
+    <EmbeddedResource Include="Images\BO_Company_32x32.png" />
+    <EmbeddedResource Include="Images\BO_DashboardDefinition.png" />
+    <EmbeddedResource Include="Images\BO_DashboardDefinition_32x32.png" />
+    <EmbeddedResource Include="Images\BO_Languages.jpg" />
+    <EmbeddedResource Include="Images\BO_Languages_32x32.jpg" />
+    <EmbeddedResource Include="Images\BO_Movie.png" />
+    <EmbeddedResource Include="Images\BO_Movie_32x32.png" />
+    <EmbeddedResource Include="Images\CustomerFilmRentsList.png" />
+    <EmbeddedResource Include="Images\CustomerFilmRentsList_32x32.png" />
+    <EmbeddedResource Include="Images\CustomerInfoCards.png" />
+    <EmbeddedResource Include="Images\CustomerInfoCards_32x32.png" />
+    <EmbeddedResource Include="Images\CustomerRevenue.png" />
+    <EmbeddedResource Include="Images\CustomerRevenue_32x32.png" />
+    <EmbeddedResource Include="Images\CustomersByDate.png" />
+    <EmbeddedResource Include="Images\CustomersByDate_32x32.png" />
+    <EmbeddedResource Include="Images\CustomersKPI.png" />
+    <EmbeddedResource Include="Images\CustomersKPI_32x32.png" />
+    <EmbeddedResource Include="Images\DVD.png" />
+    <EmbeddedResource Include="Images\female.png" />
+    <EmbeddedResource Include="Images\FilmItemInfoCards.png" />
+    <EmbeddedResource Include="Images\FilmItemInfoCards_32x32.png" />
+    <EmbeddedResource Include="Images\GRating.png" />
+    <EmbeddedResource Include="Images\G_250x37.png" />
+    <EmbeddedResource Include="Images\male.png" />
+    <EmbeddedResource Include="Images\MediaPerformance.png" />
+    <EmbeddedResource Include="Images\MediaPerformance_32x32.png" />
+    <EmbeddedResource Include="Images\MoviesKPI.png" />
+    <EmbeddedResource Include="Images\MoviesKPI_32x32.png" />
+    <EmbeddedResource Include="Images\NC17Rating.png" />
+    <EmbeddedResource Include="Images\NC17_250x37.png" />
+    <EmbeddedResource Include="Images\PG13Rating.png" />
+    <EmbeddedResource Include="Images\PG13_250x37.png" />
+    <EmbeddedResource Include="Images\PGRating.png" />
+    <EmbeddedResource Include="Images\PG_250x37.png" />
+    <EmbeddedResource Include="Images\Return.png" />
+    <EmbeddedResource Include="Images\Return_32x32.png" />
+    <EmbeddedResource Include="Images\Revenue.png" />
+    <EmbeddedResource Include="Images\RevenueSplit.png" />
+    <EmbeddedResource Include="Images\RevenueSplit_32x32.png" />
+    <EmbeddedResource Include="Images\Revenue_32x32.png" />
+    <EmbeddedResource Include="Images\RRating.png" />
+    <EmbeddedResource Include="Images\R_250x37.png" />
+    <EmbeddedResource Include="Images\Sale_16x16.png" />
+    <EmbeddedResource Include="Images\Sale_32x32.png" />
+    <EmbeddedResource Include="Images\SchedulerRental.png" />
+    <EmbeddedResource Include="Images\SchedulerRental_32x32.png" />
+    <EmbeddedResource Include="Images\TheMostProfitableGenresList.png" />
+    <EmbeddedResource Include="Images\TheMostProfitableGenresList_32x32.png" />
+    <EmbeddedResource Include="Images\TopCustomers.png" />
+    <EmbeddedResource Include="Images\TopCustomers_32x32.png" />
+    <EmbeddedResource Include="Images\TopFilmList.png" />
+    <EmbeddedResource Include="Images\TopFilmList_32x32.png" />
+    <EmbeddedResource Include="Images\Unknown-movie.png" />
+    <EmbeddedResource Include="Images\Unknown-user.png" />
+    <EmbeddedResource Include="Images\VideoCd.png" />
+    <EmbeddedResource Include="Images\Views_16x16.png" />
+    <EmbeddedResource Include="Images\Views_32x32.png" />
+    <EmbeddedResource Include="Images\PG_Class.jpeg" />
+    <EmbeddedResource Include="Images\PG_Method.jpeg" />
+    <EmbeddedResource Include="Images\PG_Namespace.jpeg" />
+    <EmbeddedResource Include="Images\PG_Property.jpeg" />
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes7.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Welcome.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CIIP.CodeFirstView\CIIP.CodeFirstView.csproj">
+      <Project>{F4B65FB1-9137-4FFD-9D6B-F7B28B7B7925}</Project>
+      <Name>CIIP.CodeFirstView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIIP.StateMachine\CIIP.StateMachine.csproj">
+      <Project>{AD288C48-D444-4885-A557-38DB6CE8195E}</Project>
+      <Name>CIIP.StateMachine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIIP.Common\CIIP.Common.csproj">
+      <Project>{2380464f-5516-4f22-869e-ab916b154df5}</Project>
+      <Name>CIIP.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIIP.FormCode\CIIP.FormCode.csproj">
+      <Project>{1b520ae2-cfbe-4ba0-b39a-50bb98704caa}</Project>
+      <Name>CIIP.FormCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CIIP.Icon\CIIP.Icon.csproj">
+      <Project>{11754553-e0c7-4c0a-9b4c-52249c67df7c}</Project>
+      <Name>CIIP.Icon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sample\Analysis\" />
+    <Folder Include="sample\ASS\" />
+    <Folder Include="sample\CRM\" />
+    <Folder Include="sample\Flow\" />
+    <Folder Include="sample\FMS\" />
+    <Folder Include="sample\GeneralLanguage\" />
+    <Folder Include="sample\Meta\" />
+    <Folder Include="sample\PMS\" />
+    <Folder Include="sample\Security\" />
+    <Folder Include="sample\SMS\" />
+    <Folder Include="sample\SYS\" />
+    <Folder Include="sample\WMS\" />
+    <Folder Include="sample\基础信息\" />
+    <Folder Include="sample\基类\布局基类\" />
+    <Folder Include="sample\基类\订单\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

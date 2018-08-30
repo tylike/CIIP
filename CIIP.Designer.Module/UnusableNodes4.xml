@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="BusinessObject_GenericParameterInstances_ListView" AllowEdit="True" MasterDetailMode="ListViewAndDetailView" />
+    <DetailView Id="起始页">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="辐射菜单">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="SystemLogonParameter_DetailView">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="ConfigDB" ActionContainer="ConfigDB" />
+      </Items>
+    </DetailView>
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" ViewItem="ItemBusinessObject.IsAbstract" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" ViewItem="ItemBusinessObject.CanInherits" />
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tab">
+          <LayoutGroup Id="泛型">
+            <LayoutItem Id="GenericParameterInstances" ViewItem="GenericParameterInstances" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

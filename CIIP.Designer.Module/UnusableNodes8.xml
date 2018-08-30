@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="系统设置" Index="8" Removed="True">
+        <Items Id="Items">
+          <Item Id="常用税率_ListView" Removed="True" />
+          <Item Id="单据编号方案_ListView" Removed="True" />
+          <Item Id="节假日_ListView" Removed="True" />
+          <Item Id="日期维度_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="单据设置">
+        <Items Id="Items">
+          <Item Id="单据编号方案_ListView" ViewId="单据编号方案_ListView" />
+        </Items>
+      </Item>
+      <Item Id="审批流程">
+        <Items Id="Items">
+          <Item Id="单据流程状态记录_ListView" ViewId="单据流程状态记录_ListView" />
+          <Item Id="Flow_ListView" ViewId="Flow_ListView" />
+          <Item Id="AdmiralXpoStateMachine_ListView" ViewId="CIIPXpoStateMachine_ListView" />
+        </Items>
+      </Item>
+      <Item Id="业务定制">
+        <Items Id="Items">
+          <Item Id="NameSpace" ViewId="NameSpace_ListView" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views Id="Views">
+    <DetailView Id="CIIPXpoStateMachine_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="TargetObjectType" AllowEdit="False" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="CIIPXpoStateMachine">
+              <LayoutGroup Id="CIIPXpoStateMachine_col1">
+                <LayoutItem Id="Active" Removed="True" />
+                <LayoutItem Id="ExpandActionsInDetailView" Removed="True" />
+                <LayoutItem Id="Flow" Removed="True" />
+                <LayoutItem Id="Name" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="CIIPXpoStateMachine_col2">
+                <LayoutItem Id="StartState" Removed="True" />
+                <LayoutItem Id="StatePropertyName" Removed="True" />
+                <LayoutItem Id="TargetObjectType" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="States_Group" Removed="True">
+            <LayoutItem Id="States" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="设计" Index="0" Caption="设计">
+              <LayoutItem Id="Flow" ViewItem="Flow" Index="0" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+            <LayoutGroup Id="设置" Index="1">
+              <LayoutItem Id="StartState" ViewItem="StartState" Index="0" />
+              <LayoutItem Id="States" ViewItem="States" Index="0" />
+              <LayoutItem Id="Active" ViewItem="Active" Index="1" />
+              <LayoutItem Id="StatePropertyName" ViewItem="StatePropertyName" Index="1" />
+              <LayoutItem Id="ExpandActionsInDetailView" ViewItem="ExpandActionsInDetailView" Index="2" />
+              <LayoutItem Id="TargetObjectType" ViewItem="TargetObjectType" Index="2" />
+              <LayoutItem Id="Name" ViewItem="Name" Index="3" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CIIPXpoTransition_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="SourceState" AllowEdit="False" />
+        <PropertyEditor Id="TargetState" AllowEdit="False" />
+      </Items>
+    </DetailView>
+    <DetailView Id="Flow_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="SimpleEditors" Index="0" ShowCaption="True" Caption="单据转换流程设计">
+              <LayoutGroup Id="NameObject" Index="0" ShowCaption="False">
+                <LayoutItem Id="名称" ViewItem="名称" Index="0" />
+              </LayoutGroup>
+              <LayoutGroup Id="Flow" Index="2" ShowCaption="False">
+                <LayoutItem Id="FlowObject" ViewItem="FlowObject" ShowCaption="False" Index="0" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Actions" Caption="详细信息">
+              <LayoutItem Id="Nodes" ViewItem="Nodes" ShowCaption="False" Index="0" />
+            </LayoutGroup>
+            <LayoutGroup Id="Nodes" Index="1" Removed="True">
+              <LayoutItem Id="Nodes" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="NameObject" Index="0" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="1" Removed="True" />
+            <LayoutGroup Id="Flow" Index="2">
+              <LayoutItem Id="FlowObject" ShowCaption="False" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FlowAction_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="FlowAction">
+              <LayoutGroup Id="R1" Direction="Horizontal">
+                <LayoutItem Id="From" ViewItem="From" Index="1" />
+                <LayoutItem Id="To" ViewItem="To" Index="2" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FlowInstance_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="FlowInstance">
+              <LayoutItem Id="Flow" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="起始页">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="辐射菜单">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView_BOLogic">
+      <Items Id="Items">
+        <PropertyEditor Id="Properties" View="BusinessObject_Properties_ListView" />
+      </Items>
+    </DetailView>
+    <DetailView Id="SystemLogonParameter_DetailView">
+      <Items Id="Items">
+        <ActionContainerViewItem Id="ConfigDB" ActionContainer="ConfigDB" />
+      </Items>
+    </DetailView>
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" ViewItem="ItemBusinessObject.IsAbstract" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" ViewItem="ItemBusinessObject.CanInherits" />
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="常用设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="ItemBusinessObject.Base" ViewItem="ItemBusinessObject.Base" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="Base" ViewItem="Base" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="FlowToNext" ImageName="BO_StateMachine">
+        <ChoiceActionItems Id="ChoiceActionItems">
+          <ChoiceActionItem Id="Entry 1" ImageName="Action_Debug_Stop" />
+          <ChoiceActionItem Id="Entry 2" ImageName="Action_ModelDifferences_Reset" />
+        </ChoiceActionItems>
+      </Action>
+      <Action Id="更新模型" ImageName="ModelEditor_DashboardView" />
+      <Action Id="显示流程" ImageName="Action_Workflow_ShowWorkflowInstances" />
+      <Action Id="状态转换设计" ImageName="BO_StateMachine" Caption="状态转换" />
+    </Actions>
+  </ActionDesign>
+</Application>
