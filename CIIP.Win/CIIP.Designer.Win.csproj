@@ -8,8 +8,8 @@
     <ProjectGuid>{D05D93DF-312D-4D4E-B980-726871EC7833}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CIIP.Win</RootNamespace>
-    <AssemblyName>CIIP.Win</AssemblyName>
+    <RootNamespace>CIIP.Designer</RootNamespace>
+    <AssemblyName>CIIP.Designer</AssemblyName>
     <ApplicationIcon>epr.ico</ApplicationIcon>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
@@ -267,26 +267,15 @@
       <DependentUpon>ERPWindowsFormsApplication.cs</DependentUpon>
     </Compile>
     <Content Include="StartupFile\Win\CIIP.Client.Module.dll" />
-    <Content Include="StartupFile\Win\CIIP.Client.Module.pdb" />
     <Content Include="StartupFile\Win\CIIP.Client.Module.Win.dll" />
-    <Content Include="StartupFile\Win\CIIP.Client.Module.Win.pdb" />
     <Content Include="StartupFile\Win\CIIP.Client.Win.exe" />
-    <Content Include="StartupFile\Win\CIIP.Client.Win.pdb" />
     <Content Include="StartupFile\Win\CIIP.Common.Win.dll" />
-    <Content Include="StartupFile\Win\DevExpress.Dialogs.v18.1.Core.dll" />
-    <Content Include="StartupFile\Win\DevExpress.ExpressApp.FileAttachment.Win.v18.1.dll" />
-    <Content Include="StartupFile\Win\DevExpress.ExpressApp.FileAttachment.Win.v18.1.xml" />
-    <Content Include="StartupFile\Win\DevExpress.XtraDialogs.v18.1.dll" />
-    <Content Include="StartupFile\Win\ModelAssembly.dll" />
     <Content Include="StartupFile\Win\Newtonsoft.Json.dll" />
-    <Content Include="StartupFile\Win\Newtonsoft.Json.xml" />
     <None Include="StartupFile\Win\CIIP.Client.Win.exe.config" />
-    <None Include="StartupFile\Win\eXpressAppFramework.log" />
     <None Include="StartupFile\Win\Model.User.xafml" />
     <None Include="StartupFile\Win\Model.User_zh-CN.xafml" />
     <None Include="StartupFile\Win\Model.xafml" />
     <None Include="StartupFile\Win\ModulesInfo.cfg" />
-    <None Include="StartupFile\Win\ModulesVersionInfo" />
     <None Include="UnusableNodes3.xml">
       <DependentUpon>Model.xafml</DependentUpon>
       <SubType>Designer</SubType>
@@ -827,13 +816,13 @@
       <Project>{2380464f-5516-4f22-869e-ab916b154df5}</Project>
       <Name>CIIP.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CIIP.Module.Win\CIIP.Module.Win.csproj">
+    <ProjectReference Include="..\CIIP.Module.Win\CIIP.Designer.Module.Win.csproj">
       <Project>{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}</Project>
-      <Name>CIIP.Module.Win</Name>
+      <Name>CIIP.Designer.Module.Win</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CIIP.Module\CIIP.Module.csproj">
+    <ProjectReference Include="..\CIIP.Module\CIIP.Designer.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
-      <Name>CIIP.Module</Name>
+      <Name>CIIP.Designer.Module</Name>
     </ProjectReference>
     <ProjectReference Include="..\CIIP.Icon\CIIP.Icon.csproj">
       <Project>{11754553-e0c7-4c0a-9b4c-52249c67df7c}</Project>
@@ -868,22 +857,22 @@
   <ItemGroup>
     <PublishFile Include="DevExpress.XtraPrinting.v18.1">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
     <PublishFile Include="DevExpress.XtraRichEdit.v18.1">
       <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
       <Group>
       </Group>
       <TargetPath>
       </TargetPath>
-      <PublishState>Include</PublishState>
-      <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
   </ItemGroup>

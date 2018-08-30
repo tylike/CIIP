@@ -552,13 +552,13 @@
       <Project>{2380464f-5516-4f22-869e-ab916b154df5}</Project>
       <Name>CIIP.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CIIP.Module.Web\CIIP.Module.Web.csproj">
+    <ProjectReference Include="..\CIIP.Module.Web\CIIP.Designer.Module.Web.csproj">
       <Project>{0C729AAD-7626-4668-A7F1-35F7D240489D}</Project>
-      <Name>CIIP.Module.Web</Name>
+      <Name>CIIP.Designer.Module.Web</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CIIP.Module\CIIP.Module.csproj">
+    <ProjectReference Include="..\CIIP.Module\CIIP.Designer.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
-      <Name>CIIP.Module</Name>
+      <Name>CIIP.Designer.Module</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

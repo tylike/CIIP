@@ -210,9 +210,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CIIP.Module\CIIP.Module.csproj">
+    <ProjectReference Include="..\CIIP.Module\CIIP.Designer.Module.csproj">
       <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
-      <Name>CIIP.Module</Name>
+      <Name>CIIP.Designer.Module</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

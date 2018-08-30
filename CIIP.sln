@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Module", "CIIP.Module\CIIP.Module.csproj", "{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Module", "CIIP.Module\CIIP.Designer.Module.csproj", "{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Module.Web", "CIIP.Module.Web\CIIP.Module.Web.csproj", "{0C729AAD-7626-4668-A7F1-35F7D240489D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Module.Web", "CIIP.Module.Web\CIIP.Designer.Module.Web.csproj", "{0C729AAD-7626-4668-A7F1-35F7D240489D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Web", "CIIP.Web\CIIP.Web.csproj", "{82A6DBC9-B1B4-44E4-9718-55DF930CD349}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Web", "CIIP.Web\CIIP.Designer.Web.csproj", "{82A6DBC9-B1B4-44E4-9718-55DF930CD349}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Module.Win", "CIIP.Module.Win\CIIP.Module.Win.csproj", "{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Module.Win", "CIIP.Module.Win\CIIP.Designer.Module.Win.csproj", "{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Win", "CIIP.Win\CIIP.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Win", "CIIP.Win\CIIP.Designer.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.CodeFirstView", "CIIP.CodeFirstView\CIIP.CodeFirstView.csproj", "{F4B65FB1-9137-4FFD-9D6B-F7B28B7B7925}"
 EndProject
@@ -124,7 +124,7 @@ Global
 		{AD9C0E2C-5F5B-48D9-9E0B-67963A62F986} = {7A916F4E-A0AD-491B-A91B-79C379F94433}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {9868EFA8-F239-4017-BD03-CC9C27BF7F21}
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {9868EFA8-F239-4017-BD03-CC9C27BF7F21}
 	EndGlobalSection
 EndGlobal
