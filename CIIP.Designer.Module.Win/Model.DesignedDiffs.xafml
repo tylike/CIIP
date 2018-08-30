@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="商信互联企业信息管理平台 ">
+  <ActionDesign>
+    <Actions>
+      <Action Id="About Info" Caption="关于..." />
+      <Action Id="AddFromFile" Caption="从文件填加..." />
+      <Action Id="CancelAction" Caption="取消" />
+      <Action Id="ChartWizard" Caption="设计图表" />
+      <Action Id="ChooseSkin" Caption="选择皮肤" />
+      <Action Id="Close" Caption="关闭" />
+      <Action Id="CopyCellValue" Caption="复制单元格值" />
+      <Action Id="EditModel" Caption="编辑模型" />
+      <Action Id="Open" Caption="打开..." />
+      <Action Id="OpenObject" Caption="打开" />
+      <Action Id="生成业务模型" ImageName="build" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="CIIP.Module.BusinessObjects.SYS.Project">
+      <OwnMembers>
+        <Member Name="ProjectPath" PropertyEditorType="CIIP.Common.Win.Editors.ChoosePathPropertyEditor" />
+        <Member Name="StartupFile" PropertyEditorType="CIIP.Common.Win.Editors.ChooseFilePropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI">
+    <Dashboards DashboardGroupCaption="仪表盘" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutGroup Id="子表设置" Index="2" />
+              <LayoutItem Id="ItemBusinessObject.Description" Index="3" />
+              <LayoutItem Id="Config" ViewItem="Config" Index="4" ShowCaption="True" IsNewNode="True" />
+              <LayoutItem Id="ItemBusinessObject.Config" ViewItem="ItemBusinessObject.Config" Index="5" ShowCaption="True" IsNewNode="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView">
+      <Items>
+        <PropertyEditor Id="GenericParameterDefines" PropertyEditorType="CIIP.Module.Win.Editors.GenericPropertyEditor" />
+        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="SimpleType_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor">
+      <Columns>
+        <ColumnInfo Id="Category" Removed="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>
