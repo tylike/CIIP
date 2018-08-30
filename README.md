@@ -14,5 +14,8 @@ CIIP是用于快速构建企业级信息系统的工具,基于XAF开发.<BR>
 CIIP.Designer : 用于快速的,以信息表单方式维护元数据.与传统的编码方式相比,在C#中支持类似于多重继承的功能.<BR>
 CIIP.Client : 使用CIIP.Designer的输出项目，展示给最终客户。<BR>
 将会区分为WinForm版本，Web版本，Mobile版本。<BR>
-  
+CIIP是高度模块化的设计的，用户根据需要选择对应的模块。
+CIIP是高度可自定义的，用户可以在运行时配置很多内容。
+
+
 XAF是一个不错的面向开发人员的商业框架,由DevExpress公司开发.如果需要进行开发工作请购买正版,网址:http://www.devexpress.com <BR>
