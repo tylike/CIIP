@@ -274,10 +274,6 @@
     <None Include="StartupFile\Win\Model.User_zh-CN.xafml" />
     <None Include="StartupFile\Win\Model.xafml" />
     <None Include="StartupFile\Win\ModulesInfo.cfg" />
-    <None Include="UnusableNodes3.xml">
-      <DependentUpon>Model.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
     <EmbeddedResource Include="FrmDataSourceWizard.resx">
       <DependentUpon>FrmDataSourceWizard.cs</DependentUpon>
     </EmbeddedResource>
@@ -790,18 +786,6 @@
     <Content Include="epr.ico" />
     <Content Include="ExpressApp.ico" />
     <Content Include="Images\loading.gif" />
-    <None Include="UnusableNodes2.xml">
-      <DependentUpon>Model.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes1.xml">
-      <DependentUpon>Model.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes.xml">
-      <DependentUpon>Model.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Resources\B.gif" />
     <None Include="Resources\B1.gif" />
     <None Include="Images\ReadMe.txt" />
