@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Application>
-  <SchemaModules>
-    <SchemaModule Name="SystemModule" Version="15.2.9.0" IsNewNode="True" />
-  </SchemaModules>
-</Application>
