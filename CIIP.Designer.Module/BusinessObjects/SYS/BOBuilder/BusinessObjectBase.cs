@@ -6,7 +6,7 @@ using DevExpress.Persistent.Base.General;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 using DevExpress.Persistent.Base;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using System.Collections.Generic;
 using System.Linq;
 

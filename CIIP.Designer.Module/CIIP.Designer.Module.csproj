@@ -326,8 +326,6 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\Property\Property.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\SimpleType.cs" />
     <Compile Include="BusinessObjects\SYS\SystemLogonParameter.cs" />
-    <Compile Include="BusinessObjects\基类\单据.cs" />
-    <Compile Include="BusinessObjects\基类\明细.cs" />
     <Compile Include="Controllers\DataInitializeWindowController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -472,6 +470,10 @@
     <EmbeddedResource Include="Images\PG_Method.jpeg" />
     <EmbeddedResource Include="Images\PG_Namespace.jpeg" />
     <EmbeddedResource Include="Images\PG_Property.jpeg" />
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup>

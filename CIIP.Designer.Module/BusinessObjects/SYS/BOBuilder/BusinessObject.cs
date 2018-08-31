@@ -6,7 +6,7 @@ using DevExpress.Xpo;
 using System.Linq;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Validation;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp;
 using System.Collections.Generic;
 using CIIP.Module.BusinessObjects.SYS.Logic;
@@ -46,15 +46,15 @@ namespace CIIP.Module.BusinessObjects.SYS
         #region modifier
         [XafDisplayName("继承设置")]
         [ToolTip("可以设置为无,抽象,密封的")]
-        public Modifier Modifier
+        public Modifier DomainObjectModifier
         {
             get
             {
-                return GetPropertyValue<Modifier>(nameof(Modifier));
+                return GetPropertyValue<Modifier>(nameof(DomainObjectModifier));
             }
             set
             {
-                SetPropertyValue(nameof(Modifier), value);
+                SetPropertyValue(nameof(DomainObjectModifier), value);
             }
         }
         #endregion

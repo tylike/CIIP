@@ -65,9 +65,9 @@ namespace CIIP.Module.BusinessObjects.SYS
             #endregion
 
             rst.Append($"\tpublic ");
-            if (this.Modifier != Modifier.None)
+            if (this.DomainObjectModifier != SYS.Modifier.None)
             {
-                rst.Append($"{ Modifier.ToString().ToLower()} ");
+                rst.Append($"{ DomainObjectModifier.ToString().ToLower()} ");
             }
             rst.Append($" partial class { Name } ");
 

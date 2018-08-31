@@ -1,7 +1,7 @@
 using System;
 using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.Xpo;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {

@@ -322,6 +322,9 @@
     <Compile Include="Controllers\GenerateBusinessModuleController.Designer.cs">
       <DependentUpon>GenerateBusinessModuleController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\RibbonFromModelWithoutEventController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controllers\Solution.cs" />
     <Compile Include="Controllers\SuppressConfirmationStartPageController.cs" />
     <Compile Include="Controllers\CheckMethodViewController.cs" />
@@ -476,6 +479,18 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

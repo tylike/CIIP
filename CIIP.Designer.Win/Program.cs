@@ -38,6 +38,7 @@ namespace CIIP.Win
             EditModelPermission.AlwaysGranted = Debugger.IsAttached;
             AdmiralEnvironment.IsWindows = true;
             var conn = "Provider=Microsoft.Jet.OLEDB.4.0;Password=;User ID=Admin;Data Source=app.cfg;Mode=Share Deny None;";
+            //conn = @"Integrated Security=SSPI;Pooling=false;Data Source=.\sql2016;Initial Catalog=CIIP180831";
             CIIPDesignerWindowsFormsApplication winApplication = new CIIPDesignerWindowsFormsApplication();
             winApplication.ConnectionString = conn;
 #if EASYTEST

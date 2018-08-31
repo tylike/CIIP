@@ -17,7 +17,7 @@ using CIIP.Module.BusinessObjects;
 using System.Diagnostics;
 using System.Drawing;
 using CIIP.Module.BusinessObjects.SYS;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 
 namespace CIIP.Module.Controllers
@@ -51,18 +51,14 @@ namespace CIIP.Module.Controllers
 
         public static void CreateSystemTypes(IObjectSpace ObjectSpace,IModelApplication app,bool deleteExists)
         {
-            var objs = ObjectSpace.GetObjects<BusinessObject>(new BinaryOperator("IsRuntimeDefine", false));
+            var objs = ObjectSpace.GetObjectsQuery<BusinessObject>().Where(x => !x.IsRuntimeDefine).ToList(); //(new BinaryOperator("IsRuntimeDefine", false));
             if (objs.Count > 0)
                 return;
 
             ObjectSpace.Delete(objs);
 
             #region 系统类型
-            AddBusinessObject(typeof (单据<>), "单据<明细>", CreateNameSpace(typeof (单据<>).Namespace,ObjectSpace),
-                "单据<明细>,继承自单据基类,支持将明细类型做为参数传入(内部使用泛型实现)", false,ObjectSpace);
 
-            AddBusinessObject(typeof (明细<>), "明细<单据>", CreateNameSpace(typeof (明细<>).Namespace, ObjectSpace),
-                "可以与单据<明细>成对继承使用.", false, ObjectSpace);
             //第一步,创建出所有基类类型
 
             var exists = ObjectSpace.GetObjects<BusinessObjectBase>(null, true);

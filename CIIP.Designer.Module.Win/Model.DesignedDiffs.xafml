@@ -12,17 +12,20 @@
       <Action Id="EditModel" Caption="编辑模型" />
       <Action Id="Open" Caption="打开..." />
       <Action Id="OpenObject" Caption="打开" />
+      <Action Id="SwitchProject" TargetRibbonPage="Home" TargetRibbonGroup="项目" RibbonStyle="All" />
       <Action Id="生成业务模型" ImageName="build" />
     </Actions>
+    <ActionToContainerMapping>
+      <ActionContainer Id="Unspecified">
+        <ActionLink ActionId="GenerateStartupFile" Removed="True" />
+        <ActionLink ActionId="SwitchProject" Removed="True" />
+      </ActionContainer>
+      <ActionContainer Id="项目" IsNewNode="True">
+        <ActionLink ActionId="GenerateStartupFile" IsNewNode="True" />
+        <ActionLink ActionId="SwitchProject" IsNewNode="True" />
+      </ActionContainer>
+    </ActionToContainerMapping>
   </ActionDesign>
-  <BOModel>
-    <Class Name="CIIP.Module.BusinessObjects.SYS.Project">
-      <OwnMembers>
-        <Member Name="ProjectPath" PropertyEditorType="CIIP.Common.Win.Editors.ChoosePathPropertyEditor" />
-        <Member Name="StartupFile" PropertyEditorType="CIIP.Common.Win.Editors.ChooseFilePropertyEditor" />
-      </OwnMembers>
-    </Class>
-  </BOModel>
   <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI">
     <Dashboards DashboardGroupCaption="仪表盘" />
   </Options>

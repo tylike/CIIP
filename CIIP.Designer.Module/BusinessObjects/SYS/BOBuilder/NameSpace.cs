@@ -6,7 +6,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Base.General;
 using DevExpress.Xpo;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Utils;
 
 namespace CIIP.Module.BusinessObjects.SYS

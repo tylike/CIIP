@@ -18,7 +18,7 @@ using DevExpress.ExpressApp.Xpo.Updating;
 using DevExpress.Xpo;
 using System.ComponentModel;
 using CIIP;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using SR = System.Reflection;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis;

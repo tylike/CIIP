@@ -11,7 +11,7 @@ using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.Persistent.Validation;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using System;
 
 namespace CIIP.Module.BusinessObjects.SYS.Logic

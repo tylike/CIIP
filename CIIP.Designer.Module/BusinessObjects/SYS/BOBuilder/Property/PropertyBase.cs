@@ -3,7 +3,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 using System.Linq;
 

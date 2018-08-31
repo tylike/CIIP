@@ -3,7 +3,8 @@ using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
+using System.Linq;
 
 namespace CIIP.ProjectManager
 {
@@ -12,13 +13,8 @@ namespace CIIP.ProjectManager
     //1.先运行生成按project,
     //2.运行StartupFile
     //3.startupFile如何知道生成的文件?
-
-
-
     //生成按钮:生成project,内容包含bo文件
     //起动文件中配置了自动读取dll模块的方法
-
-
 
     [XafDisplayName("项目管理")]
     [NavigationItem]
@@ -69,7 +65,7 @@ namespace CIIP.ProjectManager
             set { SetPropertyValue(nameof(ProjectPath), value); }
         }
     }
-    
+
     public class ProjectViewController : ViewController
     {
         public ProjectViewController()
@@ -80,11 +76,63 @@ namespace CIIP.ProjectManager
             generateStartFile.Caption = "生成启动文件";
             generateStartFile.Execute += GenerateStartFile_Execute;
         }
+        protected override void OnActivated()
+        {
+            base.OnActivated();
+            ObjectSpace.Committed += ObjectSpace_Committed;
+        }
+
+        private void ObjectSpace_Committed(object sender, System.EventArgs e)
+        {
+            Application.MainWindow.GetController<SwitchProjectController>().CreateProjectItems();
+
+            //Frame.GetController<SwitchProjectController>().CreateProjectItems();
+        }
 
         private void GenerateStartFile_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             //copy默认起动文件到项目目录中去
 
+        }
+    }
+
+    public class SwitchProjectController : WindowController
+    {
+        public static Project CurrentProject { get; set; }
+        SingleChoiceAction switchProject;
+        public SwitchProjectController()
+        {
+            TargetWindowType = WindowType.Main;
+            switchProject = new SingleChoiceAction(this, "SwitchProject", PredefinedCategory.Unspecified);
+            switchProject.Caption = "当前项目";
+            switchProject.Execute += SwitchProject_Execute;
+            switchProject.ItemType = SingleChoiceActionItemType.ItemIsOperation;
+        }
+        protected override void OnActivated()
+        {
+            base.OnActivated();
+            CreateProjectItems();
+
+        }
+
+        public void CreateProjectItems()
+        {
+            switchProject.Items.Clear();
+            var os = Application.CreateObjectSpace();
+            var projects = os.GetObjectsQuery<Project>().ToArray();
+            foreach (var item in projects)
+            {
+                switchProject.Items.Add(new ChoiceActionItem(item.Name, item));
+            }
+        }
+
+        private void SwitchProject_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
+        {
+            CurrentProject = e.SelectedChoiceActionItem?.Data as Project;
+            if (CurrentProject != null)
+            {
+                switchProject.Caption = CurrentProject.Name;
+            }
         }
     }
 }

@@ -26,7 +26,7 @@ using CIIP.Module.BusinessObjects;
 using DevExpress.Xpo;
 using DevExpress.Xpo.DB;
 using CIIP;
-using 常用基类;
+using CIIP.Persistent.BaseImpl;
 
 namespace CIIP.Module {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppModuleBasetopic.aspx.
@@ -161,30 +161,7 @@ namespace CIIP.Module {
             base.CustomizeTypesInfo(typesInfo);
             CalculatedPersistentAliasHelper.CustomizeTypesInfo(typesInfo);
 
-            #region 自动创建关联属性功能
-            //派生自 单据<T>的类型，将根据基类使用情况创建关联的Items和Master属性，这样可以实现使用泛型类型做为主从结构的基类
-            var dict = XpoTypesInfoHelper.GetXpoTypeInfoSource().XPDictionary;
-
-            var autoCreatePropertyTypes = XafTypesInfo.Instance.FindTypeInfo(typeof(单据)).Descendants.Where(x => x.IsPersistent);
-            foreach (var i in autoCreatePropertyTypes)
-            {
-
-                var master = dict.GetClassInfo(i.Type);
-                if (master.BaseClass.ClassType.IsGenericType)
-                {
-                    var child = dict.GetClassInfo(master.BaseClass.ClassType.GetGenericArguments()[0]);
-                    var relationName = master.ClassType.Name + "-" + child.ClassType.Name;
-                    master.CreateMember("Items", typeof(XPCollection<>).MakeGenericType(child.ClassType), true, true,
-                        new AssociationAttribute(relationName, child.ClassType),
-                        new DevExpress.Xpo.AggregatedAttribute());
-                    child.CreateMember("Master", i.Type, false, true, new AssociationAttribute(relationName));
-
-                    XafTypesInfo.Instance.RefreshInfo(master.ClassType);
-                    XafTypesInfo.Instance.RefreshInfo(child.ClassType);
-                    Debug.WriteLine("自动为单据创建了属性：" + master.FullName);
-                }
-            }
-            #endregion
+            
 
         }
         

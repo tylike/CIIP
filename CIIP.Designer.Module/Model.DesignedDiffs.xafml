@@ -32,6 +32,7 @@
       <Action Id="ShowLayout" ImageName="ModelEditor_Action_Modules" />
       <Action Id="ShowNavigationItem" Caption="导航" />
       <Action Id="ShowPartialLogic" ImageName="logic" />
+      <Action Id="SwitchProject" ShowItemsOnClick="True" DefaultItemMode="LastExecutedItem" PaintStyle="CaptionAndImage" ImageName="BO_Categories" />
       <Action Id="UnbindAnalysisData" Caption="取消绑定" />
       <Action Id="Unlink" Caption="取消链接" />
     </Actions>
@@ -50,7 +51,6 @@
       </OwnMembers>
     </Class>
     <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="任务日历" />
-    <Class Name="常用基类.单据" ImageName="order" />
   </BOModel>
   <NavigationItems StartupNavigationItem="起始页">
     <Items>
@@ -156,10 +156,10 @@
             </LayoutGroup>
           </TabbedGroup>
           <LayoutGroup Id="SimpleObject" Index="1" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
-            <LayoutItem Id="创建者" ViewItem="创建者" Index="0" RelativeSize="25.619834710743802" IsNewNode="True" />
-            <LayoutItem Id="修改者" ViewItem="修改者" Index="1" RelativeSize="23.140495867768596" IsNewNode="True" />
-            <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" RelativeSize="23.140495867768596" IsNewNode="True" />
-            <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" RelativeSize="28.099173553719009" IsNewNode="True" />
+            <LayoutItem Id="Creator" ViewItem="Creator" Index="0" RelativeSize="25.619834710743802" IsNewNode="True" />
+            <LayoutItem Id="Modifier" ViewItem="Modifier" Index="1" RelativeSize="23.140495867768596" IsNewNode="True" />
+            <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="2" RelativeSize="23.140495867768596" IsNewNode="True" />
+            <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="3" RelativeSize="28.099173553719009" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="SimpleEditors" RelativeSize="77.055103884372173" Removed="True">
             <LayoutGroup Id="BusinessForm" Caption="主表" RelativeSize="35.052754982415" Index="2" Removed="True">
@@ -179,10 +179,10 @@
                 <LayoutItem Id="ItemBusinessObject.Caption" RelativeSize="10.447761194029852" Index="1" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.Description" RelativeSize="10.447761194029852" Index="2" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.Name" RelativeSize="10.447761194029852" Index="3" Removed="True" />
-                <LayoutItem Id="ItemBusinessObject.创建者" RelativeSize="10.447761194029852" Index="4" Removed="True" />
-                <LayoutItem Id="ItemBusinessObject.修改者" RelativeSize="10.447761194029852" Index="5" Removed="True" />
-                <LayoutItem Id="ItemBusinessObject.创建时间" RelativeSize="10.447761194029852" Index="6" Removed="True" />
-                <LayoutItem Id="ItemBusinessObject.修改时间" RelativeSize="23.880597014925375" Index="7" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.Creator" RelativeSize="10.447761194029852" Index="4" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.Modifier" RelativeSize="10.447761194029852" Index="5" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.CreateTime" RelativeSize="10.447761194029852" Index="6" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.ModifyTime" RelativeSize="23.880597014925375" Index="7" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
             <LayoutGroup Id="BusinessObject" RelativeSize="21.922626025791324" Index="3" Removed="True">
@@ -209,10 +209,10 @@
               <LayoutItem Id="Name" RelativeSize="100" Removed="True" />
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" RelativeSize="14.185228604923799" Index="6" Removed="True">
-              <LayoutItem Id="创建时间" RelativeSize="23.140495867768596" />
-              <LayoutItem Id="创建者" RelativeSize="25.619834710743802" />
-              <LayoutItem Id="修改时间" RelativeSize="28.099173553719009" />
-              <LayoutItem Id="修改者" RelativeSize="23.140495867768596" />
+              <LayoutItem Id="CreateTime" RelativeSize="23.140495867768596" />
+              <LayoutItem Id="Creator" RelativeSize="25.619834710743802" />
+              <LayoutItem Id="Modifier" RelativeSize="23.140495867768596" />
+              <LayoutItem Id="ModifyTime" RelativeSize="28.099173553719009" />
             </LayoutGroup>
           </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" Removed="True" />
@@ -293,7 +293,7 @@
             </LayoutGroup>
             <LayoutGroup Id="BusinessObject" Index="1" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
               <LayoutGroup Id="Col2" Index="0" Direction="Horizontal" IsNewNode="True">
-                <LayoutItem Id="Modifier" Index="1" ViewItem="Modifier" IsNewNode="True" />
+                <LayoutItem Id="DomainObjectModifier" Index="1" ViewItem="DomainObjectModifier" IsNewNode="True" />
                 <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" IsNewNode="True" />
               </LayoutGroup>
               <LayoutGroup Id="Col1" Index="1" Direction="Horizontal" IsNewNode="True">
@@ -313,10 +313,10 @@
               <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" CaptionLocation="Top" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" Index="5" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
-              <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
-              <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
-              <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
-              <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
+              <LayoutItem Id="Creator" ViewItem="Creator" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Modifier" ViewItem="Modifier" Index="1" IsNewNode="True" />
+              <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="2" IsNewNode="True" />
+              <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="3" IsNewNode="True" />
             </LayoutGroup>
           </LayoutGroup>
         </TabbedGroup>
@@ -327,6 +327,8 @@
         <PropertyEditor Id="CanCustomLogic" PropertyName="CanCustomLogic" IsNewNode="True" />
         <PropertyEditor Id="Caption" PropertyName="Caption" IsNewNode="True" />
         <PropertyEditor Id="Category" PropertyName="Category" IsNewNode="True" />
+        <PropertyEditor Id="CreateTime" PropertyName="CreateTime" IsNewNode="True" />
+        <PropertyEditor Id="Creator" PropertyName="Creator" IsNewNode="True" />
         <PropertyEditor Id="Description" PropertyName="Description" IsNewNode="True" />
         <PropertyEditor Id="IsCloneable" PropertyName="IsCloneable" IsNewNode="True" />
         <PropertyEditor Id="IsCreatableItem" PropertyName="IsCreatableItem" IsNewNode="True" />
@@ -335,13 +337,11 @@
         <PropertyEditor Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" IsNewNode="True" />
         <PropertyEditor Id="IsVisibileInReports" PropertyName="IsVisibileInReports" IsNewNode="True" />
         <PropertyEditor Id="Methods" PropertyName="Methods" View="BusinessObject_Methods_ListView" IsNewNode="True" />
+        <PropertyEditor Id="Modifier" PropertyName="Modifier" IsNewNode="True" />
+        <PropertyEditor Id="ModifyTime" PropertyName="ModifyTime" IsNewNode="True" />
+        <PropertyEditor Id="Name" PropertyName="Name" IsNewNode="True" />
         <PropertyEditor Id="NavigationItem" PropertyName="NavigationItem" IsNewNode="True" />
         <PropertyEditor Id="Properties" PropertyName="Properties" View="BusinessObject_Properties_ListView" IsNewNode="True" />
-        <PropertyEditor Id="创建时间" PropertyName="创建时间" IsNewNode="True" />
-        <PropertyEditor Id="创建者" PropertyName="创建者" IsNewNode="True" />
-        <PropertyEditor Id="Name" PropertyName="Name" IsNewNode="True" />
-        <PropertyEditor Id="修改时间" PropertyName="修改时间" IsNewNode="True" />
-        <PropertyEditor Id="修改者" PropertyName="修改者" IsNewNode="True" />
       </Items>
       <Layout IsNewNode="True">
         <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
@@ -380,8 +380,8 @@
     </ListView>
     <ListView Id="BusinessObjectBase_Properties_ListView" MasterDetailMode="ListViewAndDetailView">
       <Columns>
-        <ColumnInfo Id="PropertyType" Width="93" />
         <ColumnInfo Id="Name" Width="123" />
+        <ColumnInfo Id="PropertyType" Width="93" />
         <ColumnInfo Id="DisplayName" Index="2" Width="116" />
         <ColumnInfo Id="Browsable" Index="3" />
         <ColumnInfo Id="RelationProperty" Width="108" Index="4" />
@@ -530,10 +530,10 @@
               <LayoutItem Id="功能说明" ViewItem="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Index="0" CaptionLocation="Top" IsNewNode="True" />
               <LayoutItem Id="Parameters" ViewItem="Parameters" SizeConstraintsType="Default" MaxSize="200, 0" ShowCaption="False" Index="1" CaptionLocation="Top" IsNewNode="True" />
               <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
-                <LayoutItem Id="创建者" ViewItem="创建者" Index="0" IsNewNode="True" />
-                <LayoutItem Id="修改者" ViewItem="修改者" Index="1" IsNewNode="True" />
-                <LayoutItem Id="创建时间" ViewItem="创建时间" Index="2" IsNewNode="True" />
-                <LayoutItem Id="修改时间" ViewItem="修改时间" Index="3" IsNewNode="True" />
+                <LayoutItem Id="Creator" ViewItem="Creator" Index="0" IsNewNode="True" />
+                <LayoutItem Id="Modifier" ViewItem="Modifier" Index="1" IsNewNode="True" />
+                <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="2" IsNewNode="True" />
+                <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="3" IsNewNode="True" />
               </LayoutGroup>
             </LayoutGroup>
           </TabbedGroup>
