@@ -507,7 +507,7 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ERPAspNetApplication.cs">
+    <Compile Include="CIIPDesignerAspNetApplication.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Default.aspx.cs">
@@ -525,8 +525,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="ERPAspNetApplication.resx">
-      <DependentUpon>ERPAspNetApplication.cs</DependentUpon>
+    <EmbeddedResource Include="CIIPDesignerAspNetApplication.resx">
+      <DependentUpon>CIIPDesignerAspNetApplication.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

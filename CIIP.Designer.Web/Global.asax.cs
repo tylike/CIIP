@@ -27,7 +27,7 @@ namespace CIIP.Web {
 #endif
         }
         protected void Session_Start(Object sender, EventArgs e) {
-            WebApplication.SetInstance(Session, new ERPAspNetApplication());
+            WebApplication.SetInstance(Session, new CIIPDesignerAspNetApplication());
             var isNewStyleValue = ConfigurationManager.AppSettings["NewStyle"];
 
             if (!string.IsNullOrEmpty(isNewStyleValue))

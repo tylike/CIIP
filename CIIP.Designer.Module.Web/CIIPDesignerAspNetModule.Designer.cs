@@ -1,5 +1,5 @@
 ﻿namespace CIIP.Module.Web {
-    partial class ERPAspNetModule {
+    partial class CIIPDesignerAspNetModule {
         /// <summary> 
         /// Required designer variable.
         /// </summary>

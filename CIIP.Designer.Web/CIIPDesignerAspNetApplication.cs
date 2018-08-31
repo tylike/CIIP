@@ -9,11 +9,11 @@ using DevExpress.ExpressApp.Xpo;
 
 namespace CIIP.Web {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/DevExpressExpressAppWebWebApplicationMembersTopicAll.aspx
-    public partial class ERPAspNetApplication : WebApplication {
+    public partial class CIIPDesignerAspNetApplication : WebApplication {
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule module2;
         private CIIPDesignerModule module3;
-        private ERPAspNetModule module4;
+        private CIIPDesignerAspNetModule module4;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
         private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;
         private DevExpress.ExpressApp.Security.AuthenticationStandard authenticationStandard1;
@@ -39,7 +39,7 @@ namespace CIIP.Web {
 
         private DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule viewVariantsModule;
 
-        public ERPAspNetApplication() {
+        public CIIPDesignerAspNetApplication() {
             InitializeComponent();
             
             
@@ -100,7 +100,7 @@ namespace CIIP.Web {
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule();
             this.module3 = new CIIP.Module.CIIPDesignerModule();
-            this.module4 = new CIIP.Module.Web.ERPAspNetModule();
+            this.module4 = new CIIP.Module.Web.CIIPDesignerAspNetModule();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
             this.authenticationStandard1 = new DevExpress.ExpressApp.Security.AuthenticationStandard();

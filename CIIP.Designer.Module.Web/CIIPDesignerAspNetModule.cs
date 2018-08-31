@@ -17,7 +17,7 @@ using DevExpress.Persistent.BaseImpl;
 namespace CIIP.Module.Web {
     [ToolboxItemFilter("Xaf.Platform.Web")]
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppModuleBasetopic.aspx.
-    public sealed partial class ERPAspNetModule : ModuleBase {
+    public sealed partial class CIIPDesignerAspNetModule : ModuleBase {
         private void Application_CreateCustomModelDifferenceStore(Object sender, CreateCustomModelDifferenceStoreEventArgs e) {
 		#if !DEBUG
             e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), true, "Web");
@@ -30,7 +30,7 @@ namespace CIIP.Module.Web {
             e.Store = new ModelDifferenceDbStore((XafApplication)sender, typeof(ModelDifference), false, "Web");
             e.Handled = true;
         }
-        public ERPAspNetModule() {
+        public CIIPDesignerAspNetModule() {
             InitializeComponent();
         }
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {

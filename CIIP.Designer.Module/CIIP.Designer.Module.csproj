@@ -353,11 +353,11 @@
     <Compile Include="System\ListView\IModelListViewSetting.cs" />
     <Compile Include="System\ListView\ModelListViewSetting.cs" />
     <Compile Include="DatabaseUpdate\Updater.cs" />
-    <Compile Include="ERPModule.cs">
+    <Compile Include="CIIPDesignerModule.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ERPModule.Designer.cs">
-      <DependentUpon>ERPModule.cs</DependentUpon>
+    <Compile Include="CIIPDesignerModule.Designer.cs">
+      <DependentUpon>CIIPDesignerModule.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="System\RuntimeModuleBase.cs">
@@ -377,9 +377,9 @@
     <EmbeddedResource Include="Model.DesignedDiffs.xafml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ERPModule.resx">
+    <EmbeddedResource Include="CIIPDesignerModule.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>ERPModule.cs</DependentUpon>
+      <DependentUpon>CIIPDesignerModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="System\ListView\DisableShowDetailViewViewController.resx">

@@ -1,5 +1,5 @@
 ﻿namespace CIIP.Module.Win {
-    partial class ERPWindowsFormsModule {
+    partial class CIIPDesignerWindowsFormsModule {
         /// <summary> 
         /// Required designer variable.
         /// </summary>

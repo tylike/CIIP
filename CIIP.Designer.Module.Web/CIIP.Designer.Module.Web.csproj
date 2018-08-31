@@ -192,20 +192,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ERPAspNetModule.cs">
+    <Compile Include="CIIPDesignerAspNetModule.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ERPAspNetModule.Designer.cs">
-      <DependentUpon>ERPAspNetModule.cs</DependentUpon>
+    <Compile Include="CIIPDesignerAspNetModule.Designer.cs">
+      <DependentUpon>CIIPDesignerAspNetModule.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Model.DesignedDiffs.xafml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ERPAspNetModule.resx">
-      <DependentUpon>ERPAspNetModule.cs</DependentUpon>
+    <EmbeddedResource Include="CIIPDesignerAspNetModule.resx">
+      <DependentUpon>CIIPDesignerAspNetModule.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
