@@ -76,7 +76,8 @@ namespace CIIP.Win {
             //    MessageBox.Show(sds.Connection.ConnectionString);
             //}
             AdmiralEnvironment.IsWindows = true;
-            var conn = "";// AdmiralEnvironment.ReadConnectionString();// "Provider=Microsoft.Jet.OLEDB.4.0;Password=;User ID=Admin;Data Source=IMatrix.ERP.mdb;Mode=Share Deny None;";
+            var conn = "Provider=Microsoft.Jet.OLEDB.4.0;Password=;User ID=Admin;Data Source=app.cfg;Mode=Share Deny None;";
+            // AdmiralEnvironment.ReadConnectionString();// "Provider=Microsoft.Jet.OLEDB.4.0;Password=;User ID=Admin;Data Source=IMatrix.ERP.mdb;Mode=Share Deny None;";
 
             //while (string.IsNullOrEmpty(conn))
             //{
@@ -92,54 +93,53 @@ namespace CIIP.Win {
 
 
 
-            if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
-            {
-                //winApplication.ConnectionString = 
-                conn = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
-            }
+            //if (ConfigurationManager.ConnectionStrings["ConnectionString"] != null)
+            //{
+            //    //winApplication.ConnectionString = 
+            //    conn = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+            //}
 
-            try
-            {
-                //检查数据库中的模块,与本地的是否版本一致.
-                //不一致时,则将库中模块保存到本地
-                //等待模块被加载应用
-                var datalayer = XpoDefault.GetDataLayer(conn, DevExpress.Xpo.DB.AutoCreateOption.None);
-                var session = new Session(datalayer);
-                var modules = session.Query<BusinessModule>().ToList();
-                BusinessBuilder.Instance.LoadAssemblies(modules);
+            //try
+            //{
+            //    //检查数据库中的模块,与本地的是否版本一致.
+            //    //不一致时,则将库中模块保存到本地
+            //    //等待模块被加载应用
+            //    var datalayer = XpoDefault.GetDataLayer(conn, DevExpress.Xpo.DB.AutoCreateOption.None);
+            //    var session = new Session(datalayer);
+            //    var modules = session.Query<BusinessModule>().ToList();
+            //    BusinessBuilder.Instance.LoadAssemblies(modules);
 
-                //if (this.File != null && !this.File.IsEmpty)
-                //{
-                //    var file = AdmiralEnvironment.SaveBusinessLogic(this.File);
-                //    this.FileVersion = FileVersionInfo.GetVersionInfo(file).FileVersion;
-                //    var asm = Mono.Cecil.AssemblyDefinition.ReadAssembly(file);
-                //    this.Version = asm.Name.Version.ToString();
-                //    this.Description =
-                //        asm.CustomAttributes.FirstOrDefault(
-                //            x => x.AttributeType.FullName == typeof(AssemblyDescriptionAttribute).FullName)?
-                //            .ConstructorArguments.FirstOrDefault()
-                //            .Value.ToString();
-                //    //asm.MainModule.Types..Name;
-                //}
-            }
-            catch (SchemaCorrectionNeededException ex)
-            {
+            //    //if (this.File != null && !this.File.IsEmpty)
+            //    //{
+            //    //    var file = AdmiralEnvironment.SaveBusinessLogic(this.File);
+            //    //    this.FileVersion = FileVersionInfo.GetVersionInfo(file).FileVersion;
+            //    //    var asm = Mono.Cecil.AssemblyDefinition.ReadAssembly(file);
+            //    //    this.Version = asm.Name.Version.ToString();
+            //    //    this.Description =
+            //    //        asm.CustomAttributes.FirstOrDefault(
+            //    //            x => x.AttributeType.FullName == typeof(AssemblyDescriptionAttribute).FullName)?
+            //    //            .ConstructorArguments.FirstOrDefault()
+            //    //            .Value.ToString();
+            //    //    //asm.MainModule.Types..Name;
+            //    //}
+            //}
+            //catch (SchemaCorrectionNeededException ex)
+            //{
 
-            }
-            catch (UnableToOpenDatabaseException)
-            {
+            //}
+            //catch (UnableToOpenDatabaseException)
+            //{
                 
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    throw ex;
+            //}
 
 
 
             CIIPDesignerWindowsFormsApplication winApplication = new CIIPDesignerWindowsFormsApplication();
             // Refer to the https://documentation.devexpress.com/eXpressAppFramework/CustomDocument112680.aspx help article for more details on how to provide a custom splash form.
-            winApplication.SplashScreen = new DevExpress.ExpressApp.Win.Utils.DXSplashScreen(typeof(WinSplashForm));// ("YourSplashImage.png");
             IsGrantedAdapter.Enable(XPOSecurityAdapterHelper.GetXpoCachedRequestSecurityAdapters());
             winApplication.ConnectionString = conn;
 
@@ -175,18 +175,6 @@ namespace CIIP.Win {
             {
                 winApplication.Setup();
                 winApplication.Start();
-                if (winApplication.IsRestartApplication)
-                {
-                    try
-                    {
-                        Application.Restart();
-                    }
-                    catch
-                    {
-
-                    }
-                }
-
             }
             catch (Exception e)
             {

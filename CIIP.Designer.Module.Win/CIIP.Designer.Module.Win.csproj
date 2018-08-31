@@ -9,8 +9,8 @@
     <ProjectGuid>{7964F87D-BC5D-4C4E-8B2F-71E89739AA97}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CIIP.Module.Win</RootNamespace>
-    <AssemblyName>CIIP.Module.Win</AssemblyName>
+    <RootNamespace>CIIP.Designer.Module.Win</RootNamespace>
+    <AssemblyName>CIIP.Designer.Module.Win</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -380,12 +380,6 @@
     <Compile Include="CIIPDesignerWindowsFormsModule.Designer.cs">
       <DependentUpon>CIIPDesignerWindowsFormsModule.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinSplashForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="WinSplashForm.designer.cs">
-      <DependentUpon>WinSplashForm.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controllers\CheckMethodViewController.resx">
@@ -419,9 +413,6 @@
       <DependentUpon>CIIPDesignerWindowsFormsModule.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinSplashForm.resx">
-      <DependentUpon>WinSplashForm.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CIIP.Designer.Module\CIIP.Designer.Module.csproj">
@@ -434,10 +425,6 @@
     <None Include="Controllers\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="VSCsharp.xshd">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
-    </Content>
     <None Include="Editors\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>

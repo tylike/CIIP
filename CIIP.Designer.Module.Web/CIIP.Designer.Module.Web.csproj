@@ -8,8 +8,8 @@
     <ProjectGuid>{0C729AAD-7626-4668-A7F1-35F7D240489D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CIIP.Module.Web</RootNamespace>
-    <AssemblyName>CIIP.Module.Web</AssemblyName>
+    <RootNamespace>CIIP.Designer.Module.Web</RootNamespace>
+    <AssemblyName>CIIP.Designer.Module.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>

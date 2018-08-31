@@ -33,8 +33,6 @@ namespace CIIP.Win {
             this.module3 = new CIIP.Module.CIIPDesignerModule();
             this.module4 = new CIIP.Module.Win.CIIPDesignerWindowsFormsModule();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
-            this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
-            this.authenticationStandard1 = new DevExpress.ExpressApp.Security.AuthenticationStandard();
             this.objectsModule = new DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule();
             this.conditionalAppearanceModule = new DevExpress.ExpressApp.ConditionalAppearance.ConditionalAppearanceModule();
             this.fileAttachmentsWindowsFormsModule = new DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule();
@@ -55,28 +53,21 @@ namespace CIIP.Win {
             this.validationModule = new DevExpress.ExpressApp.Validation.ValidationModule();
             this.validationWindowsFormsModule = new DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule();
             this.viewVariantsModule = new DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule();
-
+            this.winModule1 = new CIIP.Common.Win.WinModule();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // securityStrategyComplex1
-            // 
-            this.securityStrategyComplex1.Authentication = this.authenticationStandard1;
-            this.securityStrategyComplex1.RoleType = typeof(DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole);
-            this.securityStrategyComplex1.UserType = typeof(DevExpress.ExpressApp.Security.Strategy.SecuritySystemUser);
-            // 
-            // authenticationStandard1
-            // 
-            this.authenticationStandard1.LogonParametersType = typeof(CIIP.Module.BusinessObjects.SYS.SystemLogonParameter);
             // 
             // notificationsModule
             // 
             this.notificationsModule.CanAccessPostponedItems = false;
             this.notificationsModule.NotificationsRefreshInterval = System.TimeSpan.Parse("00:05:00");
             this.notificationsModule.NotificationsStartDelay = System.TimeSpan.Parse("00:00:05");
+            this.notificationsModule.ShowDismissAllAction = false;
             this.notificationsModule.ShowNotificationsWindow = true;
+            this.notificationsModule.ShowRefreshAction = false;
             // 
             // pivotChartModuleBase
             // 
+            this.pivotChartModuleBase.DataAccessMode = DevExpress.ExpressApp.CollectionSourceDataAccessMode.Client;
             this.pivotChartModuleBase.ShowAdditionalNavigation = false;
             // 
             // reportsModuleV2
@@ -87,20 +78,20 @@ namespace CIIP.Win {
             // 
             // stateMachineModule
             // 
+            this.stateMachineModule.StateMachineStorageType = typeof(DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine);
             // 
             // validationModule
             // 
             this.validationModule.AllowValidationDetailsAccess = true;
             this.validationModule.IgnoreWarningAndInformationRules = false;
             // 
-            // ERPWindowsFormsApplication
+            // CIIPDesignerWindowsFormsApplication
             // 
-            this.ApplicationName = "IMatrix.ERP";
+            this.ApplicationName = "CIIP.Designer";
+            this.CheckCompatibilityType = DevExpress.ExpressApp.CheckCompatibilityType.DatabaseSchema;
             this.LinkNewObjectToParentImmediately = false;
-
             this.Modules.Add(this.module1);
-            this.Modules.Add(this.module2);            
-
+            this.Modules.Add(this.module2);
             this.Modules.Add(this.objectsModule);
             this.Modules.Add(this.conditionalAppearanceModule);
             this.Modules.Add(this.notificationsModule);
@@ -122,9 +113,9 @@ namespace CIIP.Win {
             this.Modules.Add(this.schedulerWindowsFormsModule);
             this.Modules.Add(this.treeListEditorsWindowsFormsModule);
             this.Modules.Add(this.validationWindowsFormsModule);
+            this.Modules.Add(this.winModule1);
             this.Modules.Add(this.module4);
             this.Modules.Add(this.securityModule1);
-            this.Security = this.securityStrategyComplex1;
             this.UseOldTemplates = false;
             this.DatabaseVersionMismatch += new System.EventHandler<DevExpress.ExpressApp.DatabaseVersionMismatchEventArgs>(this.ERPWindowsFormsApplication_DatabaseVersionMismatch);
             this.CustomizeLanguagesList += new System.EventHandler<DevExpress.ExpressApp.CustomizeLanguagesListEventArgs>(this.ERPWindowsFormsApplication_CustomizeLanguagesList);
@@ -139,8 +130,6 @@ namespace CIIP.Win {
         private CIIPDesignerModule module3;
         private CIIPDesignerWindowsFormsModule module4;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
-        private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;
-        private DevExpress.ExpressApp.Security.AuthenticationStandard authenticationStandard1;
         private DevExpress.ExpressApp.Objects.BusinessClassLibraryCustomizationModule objectsModule;
         private DevExpress.ExpressApp.ConditionalAppearance.ConditionalAppearanceModule conditionalAppearanceModule;
         private DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule fileAttachmentsWindowsFormsModule;
@@ -161,6 +150,6 @@ namespace CIIP.Win {
         private DevExpress.ExpressApp.Validation.ValidationModule validationModule;
         private DevExpress.ExpressApp.Validation.Win.ValidationWindowsFormsModule validationWindowsFormsModule;
         private DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule viewVariantsModule;
-
+        private Common.Win.WinModule winModule1;
     }
 }
