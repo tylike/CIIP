@@ -20,16 +20,16 @@ namespace CIIP.Module.BusinessObjects.SYS
             get { return GetCollection<Namespace>("Children"); }
         }
 
-        public override string 名称
+        public override string Name
         {
             get
             {
-                return base.名称;
+                return base.Name;
             }
 
             set
             {
-                base.名称 = value;
+                base.Name = value;
                 if (!IsLoading)
                 {
                     _fullName = null;
@@ -55,7 +55,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         
         string ITreeNode.Name
         {
-            get { return 名称; }
+            get { return Name; }
         }
 
         ITreeNode ITreeNode.Parent
@@ -82,11 +82,11 @@ namespace CIIP.Module.BusinessObjects.SYS
                 {
                     if (Parent != null)
                     {
-                        _fullName = Parent.FullName + "." + this.名称;
+                        _fullName = Parent.FullName + "." + this.Name;
                     }
                     else
                     {
-                        _fullName = this.名称;
+                        _fullName = this.Name;
                     }
                 }
                 return _fullName;

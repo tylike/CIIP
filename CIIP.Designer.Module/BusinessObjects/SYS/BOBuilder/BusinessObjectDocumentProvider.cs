@@ -69,7 +69,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             {
                 rst.Append($"{ Modifier.ToString().ToLower()} ");
             }
-            rst.Append($" partial class { 名称 } ");
+            rst.Append($" partial class { Name } ");
 
             //" { (Modifier == Modifier.Sealed ? "" : "sealed") + (IsAbstract ? "abstract" : "") }");
 
@@ -126,7 +126,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             rst.AppendLine("\t{");
 
             #region 构造函数
-            rst.AppendLine($"\t\tpublic {名称}(Session s):base(s){{  }}");
+            rst.AppendLine($"\t\tpublic {Name}(Session s):base(s){{  }}");
 
             #endregion
 
@@ -147,7 +147,7 @@ $@"     public {type} {name}
             foreach (var item in properties)
             {
                 var pt = "global::" + item.PropertyType.FullName;
-                rst.AppendLine($"\t\t{ pt } _{ item.名称 };");
+                rst.AppendLine($"\t\t{ pt } _{ item.Name };");
 
                 if (item.Size != 100 && item.Size != 0)
                 {
@@ -156,12 +156,12 @@ $@"     public {type} {name}
                 ProcessPropertyBase(rst, item);
                 if (item.RelationProperty != null)
                 {
-                    var assName = string.Format("{0}_{1}", item.RelationProperty.名称, item.名称);
+                    var assName = string.Format("{0}_{1}", item.RelationProperty.Name, item.Name);
                     rst.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, assName);
                 }
 
 
-                rst.Append(propertyTemplate(pt, item.名称));
+                rst.Append(propertyTemplate(pt, item.Name));
             }
             #endregion
 
@@ -176,10 +176,10 @@ $@"     public {type} {name}
                 }
                 ProcessPropertyBase(rst, item);
 
-                var assName = string.Format("{0}_{1}", item.名称, item.RelationProperty.名称);
+                var assName = string.Format("{0}_{1}", item.Name, item.RelationProperty.Name);
                 rst.AppendFormat("\t\t[{0}(\"{1}\")]\n", typeof(AssociationAttribute).FullName, assName);
                 var pt = "global::" + item.PropertyType.FullName;
-                rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.名称}{{ get{{ return GetCollection<{pt}>(\"{item.名称}\"); }} }}");
+                rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.Name}{{ get{{ return GetCollection<{pt}>(\"{item.Name}\"); }} }}");
             }
             #endregion
 

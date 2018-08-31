@@ -23,11 +23,11 @@ namespace CIIP.Module.BusinessObjects.SYS.Logic
             this.SetCode("base.AfterConstruction();");
         }
 
-        public override string 名称
+        public override string Name 
         {
             get { return "对象创建"; }
 
-            set { base.名称 = value; }
+            set { base.Name = value; }
         }
         
     }

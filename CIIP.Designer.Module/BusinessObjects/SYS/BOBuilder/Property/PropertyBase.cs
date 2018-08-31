@@ -43,9 +43,9 @@ namespace CIIP.Module.BusinessObjects.SYS
                 {
                     if (PropertyType != null)
                     {
-                        if (string.IsNullOrEmpty(名称))
+                        if (string.IsNullOrEmpty(Name))
                         {
-                            名称 = PropertyType.Caption;
+                            Name = PropertyType.Caption;
                         }
                     }
                 }
@@ -61,8 +61,8 @@ namespace CIIP.Module.BusinessObjects.SYS
             get
             {
                 if (BusinessObject != null)
-                    return this.BusinessObject.FullName + "." + this.名称;
-                return this.名称;
+                    return this.BusinessObject.FullName + "." + this.Name;
+                return this.Name;
             }
         }
         #endregion

@@ -328,10 +328,6 @@
     <Compile Include="BusinessObjects\SYS\SystemLogonParameter.cs" />
     <Compile Include="BusinessObjects\基类\单据.cs" />
     <Compile Include="BusinessObjects\基类\明细.cs" />
-    <Content Include="Controllers\NZController.cs">
-      <SubType>Component</SubType>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Compile Include="Controllers\DataInitializeWindowController.cs">
       <SubType>Component</SubType>
     </Compile>

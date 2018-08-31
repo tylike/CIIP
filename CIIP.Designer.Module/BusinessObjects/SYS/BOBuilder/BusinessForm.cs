@@ -37,7 +37,7 @@ namespace CIIP.Module.BusinessObjects.SYS
 
                 if (propertyName == "Caption")
                 {
-                    ItemBusinessObject.名称 = 名称 + "明细";
+                    ItemBusinessObject.Name = Name + "明细";
                 }
 
                 if (propertyName == "Base")

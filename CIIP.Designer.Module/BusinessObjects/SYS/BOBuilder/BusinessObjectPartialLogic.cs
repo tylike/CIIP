@@ -18,7 +18,7 @@ namespace CIIP.Module.BusinessObjects.SYS
                 return
                     $@"namespace {this.BusinessObject.Category.FullName}
 {{
-    public partial class {this.BusinessObject.Ãû³Æ}
+    public partial class {this.BusinessObject.Name}
     {{
 
     }}

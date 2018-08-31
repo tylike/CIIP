@@ -115,7 +115,7 @@
             <LayoutGroup Id="常用设置" Index="0" IsNewNode="True">
               <LayoutGroup Id="主表设置" ShowCaption="True" IsNewNode="True">
                 <LayoutGroup Id="R1" Direction="Horizontal" Index="0" IsNewNode="True">
-                  <LayoutItem Id="名称" ViewItem="名称" Index="0" IsNewNode="True" />
+                  <LayoutItem Id="Name" ViewItem="Name" Index="0" IsNewNode="True" />
                   <LayoutItem Id="Caption" ViewItem="Caption" Index="1" IsNewNode="True" />
                   <LayoutItem Id="Base" Index="2" ViewItem="Base" IsNewNode="True" />
                   <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
@@ -125,7 +125,7 @@
               </LayoutGroup>
               <LayoutGroup Id="子表设置" ShowCaption="True" IsNewNode="True">
                 <LayoutGroup Id="R1" Index="0" Direction="Horizontal" IsNewNode="True">
-                  <LayoutItem Id="ItemBusinessObject.名称" Index="0" ViewItem="ItemBusinessObject.名称" IsNewNode="True" />
+                  <LayoutItem Id="ItemBusinessObject.Name" Index="0" ViewItem="ItemBusinessObject.Name" IsNewNode="True" />
                   <LayoutItem Id="ItemBusinessObject.Caption" Index="1" ViewItem="ItemBusinessObject.Caption" IsNewNode="True" />
                   <LayoutItem Id="ItemBusinessObject.Base" Index="2" ViewItem="ItemBusinessObject.Base" IsNewNode="True" />
                 </LayoutGroup>
@@ -178,7 +178,7 @@
                 <LayoutItem Id="ItemBusinessObject.Category" RelativeSize="13.432835820895523" Index="0" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.Caption" RelativeSize="10.447761194029852" Index="1" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.Description" RelativeSize="10.447761194029852" Index="2" Removed="True" />
-                <LayoutItem Id="ItemBusinessObject.名称" RelativeSize="10.447761194029852" Index="3" Removed="True" />
+                <LayoutItem Id="ItemBusinessObject.Name" RelativeSize="10.447761194029852" Index="3" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.创建者" RelativeSize="10.447761194029852" Index="4" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.修改者" RelativeSize="10.447761194029852" Index="5" Removed="True" />
                 <LayoutItem Id="ItemBusinessObject.创建时间" RelativeSize="10.447761194029852" Index="6" Removed="True" />
@@ -206,7 +206,7 @@
               <LayoutItem Id="Caption" RelativeSize="30.107526881720432" Removed="True" />
             </LayoutGroup>
             <LayoutGroup Id="NameObject" RelativeSize="3.9859320046893316" Index="5" Removed="True">
-              <LayoutItem Id="名称" RelativeSize="100" Removed="True" />
+              <LayoutItem Id="Name" RelativeSize="100" Removed="True" />
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" RelativeSize="14.185228604923799" Index="6" Removed="True">
               <LayoutItem Id="创建时间" RelativeSize="23.140495867768596" />
@@ -286,7 +286,7 @@
         <TabbedGroup Id="Tab" IsNewNode="True">
           <LayoutGroup Id="常规" Index="0" IsNewNode="True">
             <LayoutGroup Id="NameObject" Direction="Horizontal" ShowCaption="False" Index="0" IsNewNode="True">
-              <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" IsNewNode="True" />
               <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
               <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
               <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
@@ -339,7 +339,7 @@
         <PropertyEditor Id="Properties" PropertyName="Properties" View="BusinessObject_Properties_ListView" IsNewNode="True" />
         <PropertyEditor Id="创建时间" PropertyName="创建时间" IsNewNode="True" />
         <PropertyEditor Id="创建者" PropertyName="创建者" IsNewNode="True" />
-        <PropertyEditor Id="名称" PropertyName="名称" IsNewNode="True" />
+        <PropertyEditor Id="Name" PropertyName="Name" IsNewNode="True" />
         <PropertyEditor Id="修改时间" PropertyName="修改时间" IsNewNode="True" />
         <PropertyEditor Id="修改者" PropertyName="修改者" IsNewNode="True" />
       </Items>
@@ -351,7 +351,7 @@
     </DetailView>
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
-        <ColumnInfo Id="名称" PropertyName="名称" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Name" PropertyName="Name" Index="0" IsNewNode="True" />
         <ColumnInfo Id="Caption" Index="1" />
       </Columns>
     </ListView>
@@ -381,7 +381,7 @@
     <ListView Id="BusinessObjectBase_Properties_ListView" MasterDetailMode="ListViewAndDetailView">
       <Columns>
         <ColumnInfo Id="PropertyType" Width="93" />
-        <ColumnInfo Id="名称" Width="123" />
+        <ColumnInfo Id="Name" Width="123" />
         <ColumnInfo Id="DisplayName" Index="2" Width="116" />
         <ColumnInfo Id="Browsable" Index="3" />
         <ColumnInfo Id="RelationProperty" Width="108" Index="4" />
@@ -419,7 +419,7 @@
           <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="SimpleObject" Direction="Horizontal" />
             <LayoutGroup Id="NameObject" Removed="True">
-              <LayoutItem Id="名称" Removed="True" />
+              <LayoutItem Id="Name" Removed="True" />
             </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>
@@ -430,7 +430,7 @@
         <LayoutGroup Id="Main" RelativeSize="100">
           <LayoutGroup Id="R1" Index="0" Direction="Horizontal" ShowCaption="False" RelativeSize="100" IsNewNode="True">
             <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
             <LayoutItem Id="DisplayName" ViewItem="DisplayName" Index="2" IsNewNode="True" />
             <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="3" IsNewNode="True" />
             <LayoutGroup Id="Group" Direction="Horizontal" IsNewNode="True">
@@ -440,7 +440,7 @@
           </LayoutGroup>
           <LayoutGroup Id="SimpleEditors" RelativeSize="100" Removed="True">
             <LayoutGroup Id="NameObject" Index="0" Direction="Horizontal" Removed="True">
-              <LayoutItem Id="名称" Removed="True" />
+              <LayoutItem Id="Name" Removed="True" />
             </LayoutGroup>
             <LayoutGroup Id="CollectionProperty" Index="4" Removed="True">
               <LayoutItem Id="Aggregated" Index="2" Removed="True" />
@@ -498,13 +498,13 @@
                 <LayoutItem Id="MethodModifier" Index="2" />
               </LayoutGroup>
               <LayoutGroup Id="MethodDefine_col2">
-                <LayoutItem Id="名称" ViewItem="名称" Index="3" IsNewNode="True" />
+                <LayoutItem Id="Name" ViewItem="Name" Index="3" IsNewNode="True" />
                 <LayoutItem Id="DefaultLocation" Removed="True" />
                 <LayoutItem Id="MethodDefineCode" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
             <LayoutGroup Id="NameObject" Removed="True">
-              <LayoutItem Id="名称" Removed="True" />
+              <LayoutItem Id="Name" Removed="True" />
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
           </LayoutGroup>
@@ -524,7 +524,7 @@
                 </LayoutGroup>
                 <LayoutGroup Id="MethodDefine_col2" Index="1" ShowCaption="False" IsNewNode="True">
                   <LayoutItem Id="CodeName" ViewItem="CodeName" Index="0" IsNewNode="True" />
-                  <LayoutItem Id="名称" ViewItem="名称" Index="3" IsNewNode="True" />
+                  <LayoutItem Id="Name" ViewItem="Name" Index="3" IsNewNode="True" />
                 </LayoutGroup>
               </LayoutGroup>
               <LayoutItem Id="功能说明" ViewItem="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Index="0" CaptionLocation="Top" IsNewNode="True" />
@@ -619,7 +619,7 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="NameObject" Index="2" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
             <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
             <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="2" IsNewNode="True" />
             <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="3" IsNewNode="True" />
             <LayoutItem Id="Size" ViewItem="Size" ShowCaption="" Index="4" IsNewNode="True" />
@@ -628,7 +628,7 @@
           <LayoutGroup Id="SimpleEditors" Removed="True">
             <LayoutGroup Id="NameObject" Removed="True">
               <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-              <LayoutItem Id="名称" Index="1" />
+              <LayoutItem Id="Name" Index="1" />
               <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="2" IsNewNode="True" />
               <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="3" IsNewNode="True" />
               <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="4" IsNewNode="True" />
@@ -650,7 +650,7 @@
     </DetailView>
     <ListView Id="Property_ListView">
       <Columns>
-        <ColumnInfo Id="名称" Width="80" />
+        <ColumnInfo Id="Name" Width="80" />
         <ColumnInfo Id="Expression" Width="0" Index="1" />
         <ColumnInfo Id="Size" Width="63" />
       </Columns>
@@ -660,17 +660,17 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="PropertyBase" Index="0" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
             <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
             <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="2" IsNewNode="True" />
             <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="3" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="SimpleEditors" Removed="True">
             <LayoutGroup Id="NameObject" Removed="True">
-              <LayoutItem Id="名称" Removed="True" />
+              <LayoutItem Id="Name" Removed="True" />
             </LayoutGroup>
             <LayoutGroup Id="PropertyBase" Removed="True">
               <LayoutItem Id="PropertyType" Index="0" />
-              <LayoutItem Id="名称" ViewItem="名称" ShowCaption="" Index="1" IsNewNode="True" />
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
               <LayoutItem Id="RelationProperty" Index="2" />
               <LayoutItem Id="Browsable" Index="3" />
             </LayoutGroup>

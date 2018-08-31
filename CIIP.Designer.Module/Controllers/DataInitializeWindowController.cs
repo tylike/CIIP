@@ -138,7 +138,7 @@ namespace CIIP.Module.Controllers
                             collectionMember.BusinessObject = bob;
 
                             collectionMember.Aggregated = tim.MemberInfo.IsAggregated;
-                            collectionMember.名称 = tim.Name;
+                            collectionMember.Name = tim.Name;
                             collectionMember.PropertyType = bos.SingleOrDefault(x => x.FullName == tim.Type.FullName);
                             if (collectionMember.PropertyType == null)
                             {
@@ -150,7 +150,7 @@ namespace CIIP.Module.Controllers
                         {
                             var member = ObjectSpace.CreateObject<Property>();
                             member.BusinessObject = bob;
-                            member.名称 = tim.Name;
+                            member.Name = tim.Name;
                             member.PropertyType = exists.SingleOrDefault(x => x.FullName == tim.Type.FullName);
                             member.BusinessObject = bob;
                             if (member.PropertyType == null)
@@ -177,7 +177,7 @@ namespace CIIP.Module.Controllers
                     var typeInfo = CaptionHelper.ApplicationModel.BOModel.GetClass(type);
                     foreach (var cp in cps)
                     {
-                        var mi = typeInfo.FindMember(cp.名称);
+                        var mi = typeInfo.FindMember(cp.Name);
                         cp.RelationProperty = cp.PropertyType.FindProperty(mi.MemberInfo.AssociatedMemberInfo.Name);
                     }
                 }
@@ -198,7 +198,7 @@ namespace CIIP.Module.Controllers
                 if (part.Length > 0)
                 {
                     find = ObjectSpace.CreateObject<Namespace>();
-                    find.名称 = part[part.Length - 1];
+                    find.Name = part[part.Length - 1];
                     if (part.Length > 1)
                     {
                         find.Parent = CreateNameSpace(string.Join(".", part.Take(part.Length - 1)), ObjectSpace);
@@ -215,7 +215,7 @@ namespace CIIP.Module.Controllers
                 t = ObjectSpace.CreateObject<BusinessObject>();
                 //t.DisableCreateGenericParameterValues = true;
                 t.Category = nameSpace;
-                t.名称 = type.Name;
+                t.Name = type.Name;
                 t.Caption = caption;
                 t.Description = description;
                 t.FullName = type.FullName;

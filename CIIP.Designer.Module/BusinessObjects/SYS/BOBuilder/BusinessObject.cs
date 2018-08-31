@@ -74,7 +74,7 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         public PropertyBase FindProperty(string name)
         {
-            return Properties.SingleOrDefault(x => x.名称 == name);
+            return Properties.SingleOrDefault(x => x.Name == name);
         }
 
         #region logic method
@@ -159,11 +159,11 @@ namespace CIIP.Module.BusinessObjects.SYS
         protected override void OnChanged(string propertyName, object oldValue, object newValue)
         {
             base.OnChanged(propertyName, oldValue, newValue);
-            if (!IsLoading && (propertyName == "名称" || propertyName == "Category"))
+            if (!IsLoading && (propertyName == nameof(Name) || propertyName == nameof(Category)))
             {
                 if (this.Category != null)
-                    this.FullName = this.Category.FullName + "." + this.名称;
-                if (propertyName == "名称" && string.IsNullOrEmpty(Caption))
+                    this.FullName = this.Category.FullName + "." + this.Name;
+                if (propertyName == nameof(Name) && string.IsNullOrEmpty(Caption))
                 {
                     this.Caption = newValue + "";
                 }

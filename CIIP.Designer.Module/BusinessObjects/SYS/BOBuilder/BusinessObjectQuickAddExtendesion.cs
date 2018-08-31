@@ -10,7 +10,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         {
             var property = new Property(self.Session);
             property.PropertyType = type;
-            property.名称 = name;
+            property.Name = name;
             if (size.HasValue)
                 property.Size = size.Value;
             self.Properties.Add(property);
@@ -30,7 +30,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             var cp = new CollectionProperty(self.Session);
             self.Properties.Add(cp);
             cp.PropertyType = bo;
-            cp.名称 = name;
+            cp.Name = name;
             cp.Aggregated = isAggregated;
             cp.RelationProperty = relation;
             return cp;

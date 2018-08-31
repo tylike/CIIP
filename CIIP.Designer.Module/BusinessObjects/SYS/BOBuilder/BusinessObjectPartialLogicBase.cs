@@ -48,7 +48,7 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         protected virtual void OnSetBusinessObject(BusinessObject value)
         {
-            this.Ãû³Æ = value.Ãû³Æ;
+            this.Name = value.Name;
             var temp = BusinessObjectCodeGenerateExtendesion.CommonUsing();
             temp += Template;
             this.Code = new CsharpCode(temp, this);

@@ -36,9 +36,9 @@ namespace CIIP.Module.BusinessObjects.SYS
                 {
                     if (PropertyType != null)
                     {
-                        if (string.IsNullOrEmpty(Ãû³Æ))
+                        if (string.IsNullOrEmpty(Name))
                         {
-                            Ãû³Æ = PropertyType.Caption;
+                            Name = PropertyType.Caption;
                         }
                         if (RelationProperty == null)
                         {
@@ -58,7 +58,7 @@ namespace CIIP.Module.BusinessObjects.SYS
                     }
                     else
                     {
-                        Ãû³Æ = "";
+                        Name = "";
                     }
                 }
             }

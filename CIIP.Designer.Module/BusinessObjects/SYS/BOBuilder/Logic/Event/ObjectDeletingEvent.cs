@@ -21,7 +21,7 @@ namespace CIIP.Module.BusinessObjects.SYS.Logic
             this.SetCode("base.OnDeleting();");
         }
         
-        public override string Ãû³Æ
+        public override string Name
         {
             get
             {
@@ -30,7 +30,7 @@ namespace CIIP.Module.BusinessObjects.SYS.Logic
 
             set
             {
-                base.Ãû³Æ = value;
+                base.Name = value;
             }
         }
     }

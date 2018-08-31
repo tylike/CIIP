@@ -21,13 +21,13 @@ namespace CIIP.Module.BusinessObjects.SYS.Logic
             this.SetCode("base.OnSaving();");
         }
         
-        public override string 名称
+        public override string Name
         {
             get { return "对象保存"; }
 
             set
             {
-                base.名称 = value;
+                base.Name = value;
             }
         }
     }
