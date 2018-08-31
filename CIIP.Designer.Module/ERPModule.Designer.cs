@@ -1,5 +1,5 @@
 ﻿namespace CIIP.Module {
-	partial class ERPModule {
+	partial class CIIPDesignerModule {
 		/// <summary> 
 		/// Required designer variable.
 		/// </summary>

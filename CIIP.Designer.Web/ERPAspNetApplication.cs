@@ -12,7 +12,7 @@ namespace CIIP.Web {
     public partial class ERPAspNetApplication : WebApplication {
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule module2;
-        private ERPModule module3;
+        private CIIPDesignerModule module3;
         private ERPAspNetModule module4;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
         private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;
@@ -99,7 +99,7 @@ namespace CIIP.Web {
         private void InitializeComponent() {
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule();
-            this.module3 = new CIIP.Module.ERPModule();
+            this.module3 = new CIIP.Module.CIIPDesignerModule();
             this.module4 = new CIIP.Module.Web.ERPAspNetModule();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();

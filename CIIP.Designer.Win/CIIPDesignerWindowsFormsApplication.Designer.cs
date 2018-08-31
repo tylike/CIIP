@@ -30,7 +30,7 @@ namespace CIIP.Win {
         private void InitializeComponent() {
             this.module1 = new DevExpress.ExpressApp.SystemModule.SystemModule();
             this.module2 = new DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule();
-            this.module3 = new CIIP.Module.ERPModule();
+            this.module3 = new CIIP.Module.CIIPDesignerModule();
             this.module4 = new CIIP.Module.Win.ERPWindowsFormsModule();
             this.securityModule1 = new DevExpress.ExpressApp.Security.SecurityModule();
             this.securityStrategyComplex1 = new DevExpress.ExpressApp.Security.SecurityStrategyComplex();
@@ -136,7 +136,7 @@ namespace CIIP.Win {
 
         private DevExpress.ExpressApp.SystemModule.SystemModule module1;
         private DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule module2;
-        private ERPModule module3;
+        private CIIPDesignerModule module3;
         private ERPWindowsFormsModule module4;
         private DevExpress.ExpressApp.Security.SecurityModule securityModule1;
         private DevExpress.ExpressApp.Security.SecurityStrategyComplex securityStrategyComplex1;

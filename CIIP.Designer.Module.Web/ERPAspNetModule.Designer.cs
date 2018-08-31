@@ -26,7 +26,7 @@
             // 
             // ERPAspNetModule
             // 
-            this.RequiredModuleTypes.Add(typeof(ERPModule));
+            this.RequiredModuleTypes.Add(typeof(CIIPDesignerModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Web.SystemModule.SystemAspNetModule));
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.FileAttachments.Web.FileAttachmentsAspNetModule));
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.HtmlPropertyEditor.Web.HtmlPropertyEditorAspNetModule));

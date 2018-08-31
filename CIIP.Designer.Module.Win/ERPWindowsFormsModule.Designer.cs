@@ -31,7 +31,7 @@
             this.AdditionalExportedTypes.Add(typeof(DevExpress.Xpo.XPCustomObject));
             this.AdditionalExportedTypes.Add(typeof(DevExpress.Xpo.XPBaseObject));
             this.AdditionalExportedTypes.Add(typeof(DevExpress.Xpo.PersistentBase));
-            this.RequiredModuleTypes.Add(typeof(CIIP.Module.ERPModule));
+            this.RequiredModuleTypes.Add(typeof(CIIP.Module.CIIPDesignerModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Win.SystemModule.SystemWindowsFormsModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.FileAttachments.Win.FileAttachmentsWindowsFormsModule));
             this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.HtmlPropertyEditor.Win.HtmlPropertyEditorWindowsFormsModule));

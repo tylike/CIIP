@@ -30,7 +30,7 @@ using 常用基类;
 
 namespace CIIP.Module {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppModuleBasetopic.aspx.
-    public sealed partial class ERPModule : ModuleBase {
+    public sealed partial class CIIPDesignerModule : ModuleBase {
 
 
 
@@ -38,7 +38,7 @@ namespace CIIP.Module {
         
         public static bool IsSafeMode { get; set; }
 
-        public ERPModule()
+        public CIIPDesignerModule()
         {
             InitializeComponent();
 

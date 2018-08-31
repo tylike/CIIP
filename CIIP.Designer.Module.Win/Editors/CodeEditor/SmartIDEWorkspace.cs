@@ -106,7 +106,7 @@ namespace CIIP.Module.Win.Editors
         {
             List<MetadataReference> refs = new List<MetadataReference>();
             var asms = AppDomain.CurrentDomain.GetAssemblies();
-            foreach (var item in typeof(ERPModule).Assembly.GetReferencedAssemblies())
+            foreach (var item in typeof(CIIPDesignerModule).Assembly.GetReferencedAssemblies())
             {
                 var asm = asms.SingleOrDefault(x => x.FullName == item.FullName);
                 if (asm == null)

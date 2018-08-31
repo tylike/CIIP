@@ -256,7 +256,7 @@ namespace CIIP.Module.DatabaseUpdate {
             }
 
             ObjectSpace.CommitChanges(); //This line persists created object(s).
-            ERPModule.IsNewVersion = true;
+            CIIPDesignerModule.IsNewVersion = true;
         }
 
         public SimpleType AddSimpleObject(Type type, string caption, Namespace nameSpace, string description)

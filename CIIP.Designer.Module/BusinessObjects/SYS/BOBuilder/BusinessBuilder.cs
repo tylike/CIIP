@@ -100,7 +100,7 @@ namespace CIIP.Module.BusinessObjects.SYS
                                 fs.Flush();
                                 fs.Close();
                             }
-                            ERPModule.IsNewVersion = true;
+                            CIIPDesignerModule.IsNewVersion = true;
                         }
                     }
                 }
