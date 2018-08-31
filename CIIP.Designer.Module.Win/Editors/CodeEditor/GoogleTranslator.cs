@@ -16,7 +16,6 @@ using System.Text;
 using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Web;
-using DevExpress.XtraRichEdit.API.Native;
 using System.Xml;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.Module.BusinessObjects.SYS.BOBuilder;

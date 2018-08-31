@@ -40,10 +40,11 @@
   <BOModel>
     <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessForm" ImageName="ModelEditor_Views" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessModule" ImageName="module" />
-    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObject" ImageName="businessModel" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObject" ImageName="Action_Workflow_ShowWorkflowInstances" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObjectPartialLogic" ImageName="logic" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.RuntimeController" ImageName="ModelEditor_Controllers" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.SimpleType" ImageName="PG_Class" />
+    <Class Name="CIIP.ProjectManager.Project" ImageName="BO_Categories" />
     <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
       <OwnMembers>
         <Member Name="Password" Caption="密码" />
@@ -52,54 +53,6 @@
     </Class>
     <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="任务日历" />
   </BOModel>
-  <NavigationItems StartupNavigationItem="起始页">
-    <Items>
-      <Item Id="业务定制" Index="0" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="Project" Index="0" ViewId="Project_ListView" IsNewNode="True" />
-          <Item Id="Namespace" Index="1" ViewId="Namespace_ListView" IsNewNode="True" />
-          <Item Id="用户业务" ViewId="BusinessObject_ListView" Index="2" IsNewNode="True" />
-          <Item Id="简单类型" ViewId="SimpleType_ListView" Index="3" IsNewNode="True" />
-          <Item Id="BusinessModule" ViewId="BusinessModule_ListView" IsNewNode="True" />
-          <Item Id="控制器" ViewId="RuntimeController_ListView" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="系统菜单" Index="4" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="起始页" ObjectKey="系统菜单" ViewId="起始页" IsNewNode="True" />
-          <Item Id="系统菜单" ViewId="NavigationMenu_ListView" IsNewNode="True" />
-        </Items>
-      </Item>
-      <Item Id="Reports" Caption="数据分析" Index="5" ImageName="Action_Chart_ShowDesigner" Removed="True">
-        <Items>
-          <Item Id="Analysis_ListView" Removed="True" />
-          <Item Id="Dashboard" IsNewNode="True" />
-          <Item Id="ReportsV2" Removed="True" />
-          <Item Id="数据分析" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="Analysis_ListView" ViewId="Analysis_ListView" ObjectKey="" IsNewNode="True" />
-            </Items>
-          </Item>
-          <Item Id="业务报表" IsNewNode="True">
-            <Items IsNewNode="True">
-              <Item Id="ReportsV2" ViewId="ReportDataV2_ListView" ObjectKey="" Caption="Reports" IsNewNode="True" />
-            </Items>
-          </Item>
-        </Items>
-      </Item>
-      <Item Id="Default" Caption="系统首页" Index="7" Visible="False" Removed="True">
-        <Items>
-          <Item Id="Event_ListView" Removed="True" />
-        </Items>
-      </Item>
-      <Item Id="安全设置" Index="12" Removed="True">
-        <Items>
-          <Item Id="系统用户_ListView" Removed="True" />
-        </Items>
-      </Item>
-      <Item Id="State Machine" Removed="True" />
-    </Items>
-  </NavigationItems>
   <Options DataAccessMode="Server">
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>

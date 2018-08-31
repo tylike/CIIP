@@ -6,7 +6,6 @@ using DevExpress.Data.Filtering;
 using DevExpress.Persistent.Base;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Security;
-using DevExpress.ExpressApp.Security.Strategy;
 using DevExpress.Xpo;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
@@ -14,7 +13,6 @@ using System.Drawing;
 using DevExpress.ExpressApp.Utils;
 using System.Collections.Generic;
 using CIIP.Module.BusinessObjects;
-using CIIP.Module.BusinessObjects.Security;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.ProjectManager;
 

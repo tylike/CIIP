@@ -17,7 +17,7 @@ namespace CIIP.ProjectManager
     //起动文件中配置了自动读取dll模块的方法
 
     [XafDisplayName("项目管理")]
-    [NavigationItem]
+    [DefaultClassOptions]
     public class Project : NameObject
     {
         public static string ApplicationStartupPath { get; set; }

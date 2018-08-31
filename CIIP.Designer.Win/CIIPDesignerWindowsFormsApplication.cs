@@ -77,12 +77,7 @@ namespace CIIP.Win {
 #endif
         }
 
-        protected override void OnLoggingOn(LogonEventArgs args)
-        {
-            var para = args.LogonParameters as SystemLogonParameter;
-            //Module.ERPModule.IsSafeMode = para.SafeMode;
-            base.OnLoggingOn(args);
-        }
+
 
         public void RestartApplication()
         {

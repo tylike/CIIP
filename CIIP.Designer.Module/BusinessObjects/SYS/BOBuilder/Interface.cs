@@ -4,6 +4,7 @@ using DevExpress.Xpo;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
+    [DefaultClassOptions]
     public class Interface : BusinessObjectBase
     {
         public Interface(Session s) : base(s)

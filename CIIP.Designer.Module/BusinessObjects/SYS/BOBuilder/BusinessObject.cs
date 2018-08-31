@@ -27,6 +27,7 @@ namespace CIIP.Module.BusinessObjects.SYS
     [XafDefaultProperty("Caption")]
     [XafDisplayName("用户业务")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
+    [DefaultClassOptions]
     public partial class BusinessObject : BusinessObjectBase
     {
 

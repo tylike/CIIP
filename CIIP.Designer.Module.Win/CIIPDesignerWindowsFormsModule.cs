@@ -43,11 +43,6 @@ namespace CIIP.Module.Win {
             base.Setup(application);
             application.CreateCustomModelDifferenceStore += Application_CreateCustomModelDifferenceStore;
             application.CreateCustomUserModelDifferenceStore += Application_CreateCustomUserModelDifferenceStore;
-            // Manage various aspects of the application UI and behavior at the module level.
-            application.CreateCustomLogonWindowControllers += (s, e) =>
-            {
-                e.Controllers.Add(((XafApplication)s).CreateController<ConfigDBViewController>());
-            };
         }
     }
 }
