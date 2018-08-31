@@ -19,6 +19,8 @@ using System.Drawing;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
+using DevExpress.Persistent.BaseImpl;
+using DevExpress.Xpo;
 
 namespace CIIP.Module.Controllers
 {
@@ -31,17 +33,7 @@ namespace CIIP.Module.Controllers
             TargetWindowType = WindowType.Main;
             // Target required Windows (via the TargetXXX properties) and create their Actions.
         }
-        protected override void OnActivated()
-        {
-            base.OnActivated();
-            // Perform various tasks depending on the target Window.
-        }
-        protected override void OnDeactivated()
-        {
-            // Unsubscribe from previously subscribed events and release other references and resources.
-            base.OnDeactivated();
-        }
-
+        
         private void 数据初始化_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             var os = Application.CreateObjectSpace();
@@ -52,7 +44,7 @@ namespace CIIP.Module.Controllers
         public static void CreateSystemTypes(IObjectSpace ObjectSpace,IModelApplication app,bool deleteExists)
         {
             var objs = ObjectSpace.GetObjectsQuery<BusinessObject>().Where(x => !x.IsRuntimeDefine).ToList(); //(new BinaryOperator("IsRuntimeDefine", false));
-            if (objs.Count > 0)
+            if (!deleteExists && objs.Count > 0)
                 return;
 
             ObjectSpace.Delete(objs);
@@ -62,13 +54,16 @@ namespace CIIP.Module.Controllers
             //第一步,创建出所有基类类型
 
             var exists = ObjectSpace.GetObjects<BusinessObjectBase>(null, true);
+            var types = new List<Type>();
+            types.AddRange(typeof(BaseObject).Assembly.GetTypes().Where(x => x.Namespace == typeof(BaseObject).Namespace));
+            types.AddRange(typeof(XPBaseObject).Assembly.GetTypes().Where(x => x.Namespace == typeof(BaseObject).Namespace));
 
-            foreach (var bom in app.BOModel)
+            foreach (var bom in types)
             {
-                if (!bom.TypeInfo.Type.IsGenericType && bom.TypeInfo.Type.Assembly.Location != AdmiralEnvironment.UserDefineBusinessFile.FullName)
+                if (!bom.IsGenericType)
                 {
-                    var ns = CreateNameSpace(bom.TypeInfo.Type.Namespace, ObjectSpace);
-                    AddBusinessObject(bom.TypeInfo.Type, bom.Caption, ns, "", false, ObjectSpace);
+                    var ns = CreateNameSpace(bom.Namespace, ObjectSpace);
+                    AddBusinessObject(bom, bom.Name, ns, "", false, ObjectSpace);
                 }
             }
 
