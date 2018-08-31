@@ -60,10 +60,10 @@ namespace CIIP.Module.Win.Editors
             }
         }
 
-        TokenEditExt control;
+        TokenEditV2 control;
         protected override object CreateControlCore()
         {
-            control = new TokenEditExt();
+            control = new TokenEditV2();
             control.DoubleClick += Control_DoubleClick;
             return control;
         }

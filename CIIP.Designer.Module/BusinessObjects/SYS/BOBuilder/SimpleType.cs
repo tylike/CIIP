@@ -11,5 +11,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         public SimpleType(Session s) : base(s)
         {
         }
+
+        public override Modifier DomainObjectModifier { get => SYS.Modifier.Sealed; set { } }
     }
 }

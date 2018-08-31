@@ -12,6 +12,8 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         }
 
+        public override Modifier DomainObjectModifier { get => SYS.Modifier.Abstract; set { } }
+
         //[Association,XafDisplayName("实现业务"),ToolTip("以下业务实现了本接口")]
         //public XPCollection<BusinessObjectBase> Implements
         //{

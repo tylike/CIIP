@@ -17,6 +17,23 @@ namespace CIIP.Module.BusinessObjects.SYS
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     public class BusinessObjectBase : NameObject, ICategorizedItem
     {
+        #region modifier
+        [XafDisplayName("继承设置")]
+        [ToolTip("可以设置为无,抽象,密封的")]
+        public virtual Modifier DomainObjectModifier
+        {
+            get
+            {
+                return GetPropertyValue<Modifier>(nameof(DomainObjectModifier));
+            }
+            set
+            {
+                SetPropertyValue(nameof(DomainObjectModifier), value);
+            }
+        }
+        #endregion
+
+
         private bool _IsRuntimeDefine;
 
         [XafDisplayName("动态定义")]

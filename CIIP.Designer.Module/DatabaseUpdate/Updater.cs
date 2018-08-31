@@ -84,6 +84,7 @@ namespace CIIP.Module.DatabaseUpdate {
                 t.Caption = caption;
                 t.Category = nameSpace;
                 t.Description = description;
+               
                 t.FullName = type.FullName;
             }
             return t;

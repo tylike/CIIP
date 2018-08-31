@@ -44,21 +44,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
         #endregion
 
-        #region modifier
-        [XafDisplayName("继承设置")]
-        [ToolTip("可以设置为无,抽象,密封的")]
-        public Modifier DomainObjectModifier
-        {
-            get
-            {
-                return GetPropertyValue<Modifier>(nameof(DomainObjectModifier));
-            }
-            set
-            {
-                SetPropertyValue(nameof(DomainObjectModifier), value);
-            }
-        }
-        #endregion
+
         
         #region can custom logic
         private bool _CanCustomLogic;

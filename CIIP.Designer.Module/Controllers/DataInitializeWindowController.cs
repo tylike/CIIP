@@ -54,18 +54,19 @@ namespace CIIP.Module.Controllers
             //第一步,创建出所有基类类型
 
             var exists = ObjectSpace.GetObjects<BusinessObjectBase>(null, true);
-            var types = new List<Type>();
-            types.AddRange(typeof(BaseObject).Assembly.GetTypes().Where(x => x.Namespace == typeof(BaseObject).Namespace));
-            types.AddRange(typeof(XPBaseObject).Assembly.GetTypes().Where(x => x.Namespace == typeof(BaseObject).Namespace));
+            var types = new List<Type>() { typeof(BaseObject),typeof(XPBaseObject),typeof(XPLiteObject),typeof(XPCustomObject),typeof(XPObject) };
+            var commonBase = CreateNameSpace("常用基类", ObjectSpace);
+            AddBusinessObject(typeof(BaseObject), "BaseObject", commonBase, "主键:GUID,逻辑删除:是,并发锁:是", false, ObjectSpace);
+            AddBusinessObject(typeof(XPBaseObject), "XPBaseObject", commonBase, "主键:无,逻辑删除:是,并发锁:无", false, ObjectSpace);
+            AddBusinessObject(typeof(XPLiteObject), "XPLiteObject", commonBase, "主键:无,逻辑删除:否,并发锁:否", false, ObjectSpace);
+            AddBusinessObject(typeof(XPCustomObject), "XPCustomObject", commonBase, "主键:无,逻辑删除:是,并发锁:是", false, ObjectSpace);
+            AddBusinessObject(typeof(XPObject), "XPObject", commonBase, "主键:int,逻辑删除:是,并发锁:是", false, ObjectSpace);
+//Class Name  Deferred Deletion   Optimistic Locking  Built -in OID key
+//XPBaseObject - +-
+//XPLiteObject - - -
+//XPCustomObject + +-
+//XPObject + + +
 
-            foreach (var bom in types)
-            {
-                if (!bom.IsGenericType)
-                {
-                    var ns = CreateNameSpace(bom.Namespace, ObjectSpace);
-                    AddBusinessObject(bom, bom.Name, ns, "", false, ObjectSpace);
-                }
-            }
 
             //第二步,创建这些类的属性,因为属性中可能使用了类型,所以先要创建类型.
             var bos = ObjectSpace.GetObjects<BusinessObject>(null, true);
@@ -185,16 +186,18 @@ namespace CIIP.Module.Controllers
 
             if (find == null)
             {
-                var part = ns.Split('.');
-                if (part.Length > 0)
-                {
-                    find = ObjectSpace.CreateObject<Namespace>();
-                    find.Name = part[part.Length - 1];
-                    if (part.Length > 1)
-                    {
-                        find.Parent = CreateNameSpace(string.Join(".", part.Take(part.Length - 1)), ObjectSpace);
-                    }
-                }
+                find = ObjectSpace.CreateObject<Namespace>();
+                find.Name = ns;
+                //var part = ns.Split('.');
+                //if (part.Length > 0)
+                //{
+                //    find = ObjectSpace.CreateObject<Namespace>();
+                //    find.Name = part[part.Length - 1];
+                //    if (part.Length > 1)
+                //    {
+                //        find.Parent = CreateNameSpace(string.Join(".", part.Take(part.Length - 1)), ObjectSpace);
+                //    }
+                //}
             }
             return find;
         }
@@ -210,6 +213,12 @@ namespace CIIP.Module.Controllers
                 t.Caption = caption;
                 t.Description = description;
                 t.FullName = type.FullName;
+                t.DomainObjectModifier = Modifier.None;
+                if (type.IsAbstract)
+                    t.DomainObjectModifier = Modifier.Abstract;
+                if (type.IsSealed)
+                    t.DomainObjectModifier = Modifier.Sealed;
+
                 //t.CanCustomLogic = typeof(ICustomLogic).IsAssignableFrom(type);
                 
                 t.IsRuntimeDefine = isRuntimeDefine;

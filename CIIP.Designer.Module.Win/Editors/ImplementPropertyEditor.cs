@@ -15,6 +15,11 @@ using DevExpress.XtraEditors.Controls;
 using DevExpress.XtraEditors.Drawing;
 using DevExpress.LookAndFeel;
 using DevExpress.XtraEditors.Popup;
+using DevExpress.XtraEditors.Registrator;
+using System.Drawing;
+using System.Collections.Generic;
+using System.ComponentModel;
+using DevExpress.XtraEditors.ViewInfo;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -78,10 +83,10 @@ namespace CIIP.Module.Win.Editors
             }
         }
 
-        TokenEditExt control;
+        TokenEditV2 control;
         protected override object CreateControlCore()
         {
-            control = new TokenEditExt();
+            control = new TokenEditV2();
             return control;
         }
         private void Control_ValidateToken(object sender, TokenEditValidateTokenEventArgs e)
@@ -92,8 +97,8 @@ namespace CIIP.Module.Win.Editors
         {
             base.SetupRepositoryItem(item);
             this.AllowEdit.RemoveItem("MemberIsNotReadOnly");
-            RepositoryItemTokenEdit i = item as RepositoryItemTokenEdit;
-            i.EditMode = TokenEditMode.Manual;
+            var i = item as RepositoryItemTokenEditV2;
+            i.EditMode = TokenEditMode.TokenList;
             i.ShowDropDown = true;
             i.DropDownShowMode = TokenEditDropDownShowMode.Default;
             //i.EditValueSeparatorChar = Environment.NewLine;// '\n';
@@ -106,9 +111,10 @@ namespace CIIP.Module.Win.Editors
             flyoutPanel.Height = 300;
             i.PopupPanel = flyoutPanel;
             i.BeforeShowPopupPanel += I_BeforeShowPopupPanel;
-
+            i.UseCustomFilter = true;
+            i.CustomFilterHandler += I_CustomFilterHandler;
             i.EditValueType = TokenEditValueType.String;
-            var list = tokenService.Session.Query<BusinessObjectBase>().ToArray();
+            var list = tokenService.Session.Query<BusinessObjectBase>().Where(x => x.DomainObjectModifier != Modifier.Sealed).ToArray();
 
             i.Tokens.AddRange(list.Select(x => new ImplementToken { Value = x.Oid, BusinessObject = x, Description = x.Caption }));
             i.ValidateToken += Control_ValidateToken;
@@ -123,10 +129,34 @@ namespace CIIP.Module.Win.Editors
             //i.CustomDrawTokenGlyph += Properties_CustomDrawTokenGlyph;
         }
 
+        private void I_CustomFilterHandler(object sender, TokenEditFilterEventArgs e)
+        {
+
+            var selected = control.SelectedItems.OfType<ImplementToken>();
+            var hasClass = selected.Any(x => x.BusinessObject is BusinessObject);
+            if (hasClass)
+            {
+                e.IsValidToken = (e.Token as ImplementToken).BusinessObject is Interface;
+            }
+            else
+            {
+                e.IsValidToken = true;
+            }
+        }
+
         private void I_TokenClick(object sender, TokenEditTokenClickEventArgs e)
         {
-            var info = control.CalcHitInfo(control.PointToClient(System.Windows.Forms.Control.MousePosition));
-            control.FlyoutPopupPanelController.ShowPopupPanel(info.TokenInfo);
+            try
+            {
+                var info = control.CalcHitInfo(control.PointToClient(System.Windows.Forms.Control.MousePosition));
+                var ti = info?.TokenInfo;
+                if (ti != null)
+                    control.FlyoutPopupPanelController.ShowPopupPanel(info.TokenInfo);
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
 
         private void I_DoubleClick(object sender, EventArgs e)
@@ -188,12 +218,11 @@ namespace CIIP.Module.Win.Editors
         }
     }
 
-
-    public class TokenEditExt : TokenEdit
+    public class TokenEditV2 : TokenEdit
     {
         protected override TokenEditHandler CreateHandler()
         {
-            return new TokenEditHandlerExt(this);
+            return new TokenEditHandlerV2(this);
         }
         public PopupPanelController FlyoutPopupPanelController
         {
@@ -202,11 +231,229 @@ namespace CIIP.Module.Win.Editors
                 return base.PopupPanelController;
             }
         }
+
+        internal void OnCustomFilterText(TokenEditFilterEventArgs args)
+        {
+            this.Properties.OnCustomFilterText(args);
+        }
+
+        static TokenEditV2()
+        {
+            RepositoryItemTokenEditV2.RegisterTokenEditV2();
+        }
+
+        public TokenEditV2()
+        {
+        }
+
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
+        public new RepositoryItemTokenEditV2 Properties
+        {
+            get
+            {
+                return base.Properties as RepositoryItemTokenEditV2;
+            }
+        }
+
+        public override string EditorTypeName
+        {
+            get
+            {
+                return RepositoryItemTokenEditV2.CustomEditName;
+            }
+        }
+
+        protected override TokenEditPopupForm CreatePopupForm()
+        {
+            return new TokenEditPopupFormV2(this);
+        }
+
+        protected override BaseTokenEditPopupController CreatePopupController()
+        {
+            if (Properties.EditMode == TokenEditMode.TokenList || Properties.EditMode == TokenEditMode.Default) return new TokenEditTokenListPopupControllerV2(this);
+            return new TokenEditManualModePopupController(this);
+        }
     }
 
-    public class TokenEditHandlerExt : TokenEditHandler
+    [UserRepositoryItem("RegisterTokenEditV2")]
+    public class RepositoryItemTokenEditV2 : RepositoryItemTokenEdit
     {
-        public TokenEditHandlerExt(TokenEdit tokenEdit) : base(tokenEdit)
+        static RepositoryItemTokenEditV2()
+        {
+            RegisterTokenEditV2();
+        }
+
+        public bool UseCustomFilter { get; set; }
+
+        public EventHandler<TokenEditFilterEventArgs> CustomFilterTokens { get; set; }
+
+        public const string CustomEditName = "TokenEditV2";
+
+        public RepositoryItemTokenEditV2()
+        {
+        }
+
+        public override string EditorTypeName
+        {
+            get
+            {
+                return CustomEditName;
+            }
+        }
+
+        public event EventHandler<TokenEditFilterEventArgs> CustomFilterHandler;
+
+        public static void RegisterTokenEditV2()
+        {
+            Image img = null;
+            EditorRegistrationInfo.Default.Editors.Add(new EditorClassInfo(CustomEditName, typeof(TokenEditV2), typeof(RepositoryItemTokenEditV2), typeof(TokenEditViewInfoV2), new TokenEditPainter(), true, img));
+        }
+
+        public override void Assign(RepositoryItem item)
+        {
+            BeginUpdate();
+            try
+            {
+                base.Assign(item);
+                RepositoryItemTokenEditV2 source = item as RepositoryItemTokenEditV2;
+                if (source == null) return;
+                this.UseCustomFilter = source.UseCustomFilter;
+                this.CustomFilterTokens = source.CustomFilterTokens;
+                //
+            }
+            finally
+            {
+                EndUpdate();
+            }
+        }
+
+        internal void OnCustomFilterText(TokenEditFilterEventArgs args)
+        {
+            CustomFilterHandler?.Invoke(this, args);
+        }
+    }
+
+    public class TokenEditViewInfoV2 : TokenEditViewInfo
+    {
+        public TokenEditViewInfoV2(RepositoryItem item) : base(item)
+        {
+        }
+    }
+
+    public class TokenEditPopupFormV2 : TokenEditPopupForm
+    {
+        public TokenEditPopupFormV2(TokenEdit edit)
+            : base(edit)
+        {
+        }
+
+        protected override ITokenEditDropDownControl CreateDropDownControl()
+        {
+            var control = new DefaultTokenEditDropDownControlV2();
+            return control;
+        }
+    }
+
+    public class DefaultTokenEditDropDownControlV2 : DefaultTokenEditDropDownControl
+    {
+        public DefaultTokenEditDropDownControlV2()
+            : base()
+        {
+        }
+
+        private IList GetCustomFilterSourceCore()
+        {
+            TokenEditTokenCollection tokCol = Properties.Tokens;
+            TokenEditSelectedItemCollection selCol = Properties.SelectedItems;
+            if (selCol.Count == 0) return tokCol;
+            HashSet<int> indices = new HashSet<int>();
+            for (int i = 0; i < selCol.Count; i++)
+            {
+                TokenEditToken tok = selCol[i];
+                indices.Add(Properties.Tokens.IndexOf(tok));
+            }
+            List<TokenEditToken> list = new List<TokenEditToken>(tokCol.Count);
+            for (int i = 0; i < tokCol.Count; i++)
+            {
+                if (indices.Contains(i)) continue;
+                list.Add(tokCol[i]);
+            }
+            return list;
+        }
+
+        private IList GetCustomFilterSource()
+        {
+            IList list = GetCustomFilterSourceCore();
+            List<TokenEditToken> newList = new List<TokenEditToken>();
+            var edit = this.OwnerEdit as TokenEditV2;
+            for (int i = 0; i < list.Count; i++)
+            {
+                TokenEditFilterEventArgs args = new TokenEditFilterEventArgs(list[i] as TokenEditToken);
+                edit.OnCustomFilterText(args);
+                if (args.IsValidToken)
+                {
+                    newList.Add(list[i] as TokenEditToken);
+                }
+            }
+            return newList;
+        }
+
+        public override void SetDataSource(object obj)
+        {
+            if (((OwnerEdit as TokenEditV2).Properties as RepositoryItemTokenEditV2).UseCustomFilter)
+                base.SetDataSource(GetCustomFilterSource());
+            else
+                base.SetDataSource(obj);
+        }
+    }
+
+    public class TokenEditTokenListPopupControllerV2 : TokenEditTokenListPopupController
+    {
+        public TokenEditTokenListPopupControllerV2(TokenEdit edit)
+            : base(edit)
+        {
+        }
+        public override void UpdateFilter(string filter)
+        {
+            if (((OwnerEdit as TokenEditV2).Properties as RepositoryItemTokenEditV2).UseCustomFilter)
+                filter = string.Empty;
+            base.UpdateFilter(filter);
+        }
+    }
+
+    public class TokenEditFilterEventArgs : EventArgs
+    {
+        // Fields...
+        private bool _IsValidToken;
+        private TokenEditToken _Token;
+        public TokenEditToken Token
+        {
+            get { return _Token; }
+            set
+            {
+                _Token = value;
+            }
+        }
+
+        public bool IsValidToken
+        {
+            get { return _IsValidToken; }
+            set
+            {
+                _IsValidToken = value;
+            }
+        }
+
+        public TokenEditFilterEventArgs(TokenEditToken token)
+        {
+            this.Token = token;
+            IsValidToken = true;
+        }
+    }
+
+    public class TokenEditHandlerV2 : TokenEditHandler
+    {
+        public TokenEditHandlerV2(TokenEdit tokenEdit) : base(tokenEdit)
         {
         }
 
