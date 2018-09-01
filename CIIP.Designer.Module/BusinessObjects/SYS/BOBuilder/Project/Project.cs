@@ -84,7 +84,7 @@ namespace CIIP.ProjectManager
 
         private void ObjectSpace_Committed(object sender, System.EventArgs e)
         {
-            Application.MainWindow.GetController<SwitchProjectController>().CreateProjectItems();
+            Application.MainWindow.GetController<SwitchProjectControllerBase>().CreateProjectItems();
 
             //Frame.GetController<SwitchProjectController>().CreateProjectItems();
         }
@@ -96,18 +96,32 @@ namespace CIIP.ProjectManager
         }
     }
 
-    public class SwitchProjectController : WindowController
+    public abstract class SwitchProjectControllerBase : WindowController
     {
         public static Project CurrentProject { get; set; }
         SingleChoiceAction switchProject;
-        public SwitchProjectController()
+        public SwitchProjectControllerBase()
         {
             TargetWindowType = WindowType.Main;
-            switchProject = new SingleChoiceAction(this, "SwitchProject", PredefinedCategory.Unspecified);
+            switchProject = new SingleChoiceAction(this, "SwitchProject", "项目");
             switchProject.Caption = "当前项目";
             switchProject.Execute += SwitchProject_Execute;
             switchProject.ItemType = SingleChoiceActionItemType.ItemIsOperation;
+
+            var compileProject = new SingleChoiceAction(this, "CompileProject", "项目");
+            compileProject.Caption = "生成";
+            compileProject.Items.Add(new ChoiceActionItem("生成项目", false));
+            compileProject.Items.Add(new ChoiceActionItem("生成运行", true));
+            compileProject.ItemType = SingleChoiceActionItemType.ItemIsOperation;
+
+            compileProject.Execute += CompileProject_Execute;
         }
+        protected abstract void Compile(SingleChoiceActionExecuteEventArgs e, bool showCode);
+        private void CompileProject_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
+        {
+            Compile(e, false);
+        }
+
         protected override void OnActivated()
         {
             base.OnActivated();

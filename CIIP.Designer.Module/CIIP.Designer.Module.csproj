@@ -182,7 +182,7 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogicBase.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectQuickAddExtendesion.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Project.cs" />
+    <Compile Include="BusinessObjects\SYS\BOBuilder\Project\Project.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Property\CollectionProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterDefine.cs" />
@@ -379,18 +379,6 @@
     <EmbeddedResource Include="Images\PG_Method.jpeg" />
     <EmbeddedResource Include="Images\PG_Namespace.jpeg" />
     <EmbeddedResource Include="Images\PG_Property.jpeg" />
-    <None Include="UnusableNodes.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes1.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="UnusableNodes2.xml">
-      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
-      <SubType>Designer</SubType>
-    </None>
     <Content Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup>

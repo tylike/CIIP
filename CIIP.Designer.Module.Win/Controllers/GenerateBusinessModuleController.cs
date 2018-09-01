@@ -21,12 +21,10 @@ using CIIP;
 using CIIP.Persistent.BaseImpl;
 using SR = System.Reflection;
 using Microsoft.CodeAnalysis.CSharp;
-using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Emit;
-using CIIP.Module.Win.Editors;
-using System.Diagnostics;
+using CIIP.ProjectManager;
 
-namespace CIIP.Module.BusinessObjects.SYS.BOBuilder
+namespace CIIP.ProjectManager
 {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppWindowControllertopic.aspx.
     public partial class GenerateBusinessModuleController : WindowController
@@ -35,7 +33,6 @@ namespace CIIP.Module.BusinessObjects.SYS.BOBuilder
         {
             InitializeComponent();
             this.TargetWindowType = WindowType.Main;
-            // Target required Windows (via the TargetXXX properties) and create their Actions.
         }
 
         private void 生成业务模型_Execute(object sender, SimpleActionExecuteEventArgs e)
@@ -43,48 +40,7 @@ namespace CIIP.Module.BusinessObjects.SYS.BOBuilder
             Compile(e,false);
         }
 
-        private void Compile(SimpleActionExecuteEventArgs e,bool showCode)
-        {
-            var os = Application.CreateObjectSpace();
-            var workspace = SmartIDEWorkspace.GetIDE(os);
-            var rst = workspace.Compile();
-            if (rst != null)
-            {
 
-                if (!rst.Success || showCode)
-                {
-                    var solution = new Solution();
-                    solution.Code = new SYS.Logic.CsharpCode("", null);
-                    solution.Code.ShowSolutionFiles = true;
-                    solution.Code.Workspace = workspace;
-                    solution.Code.Diagnostics = rst.Diagnostics.ToList();
-                    var view = Application.CreateDetailView(os, solution);
-                    e.ShowViewParameters.CreatedView = view;
-                    e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
-                }
-                else
-                {
-                    var runtimeModule = os.FindObject<BusinessModule>(new BinaryOperator("ModuleName", "RuntimeModule.dll"));
-                    if (runtimeModule == null)
-                    {
-                        runtimeModule = os.CreateObject<BusinessModule>();
-                        runtimeModule.Description = "用户定义的模块";
-                    }
-
-                    using (var stream = File.OpenRead(AdmiralEnvironment.UserDefineBusinessTempFile.FullName))
-                    {
-                        runtimeModule.File = new DevExpress.Persistent.BaseImpl.FileData(runtimeModule.Session);
-                        runtimeModule.File.LoadFromStream(AdmiralEnvironment.UserDefineBusinessTempFile.Name, stream);
-                        runtimeModule.Save();
-                        os.CommitChanges();
-                    }
-                    Process.Start(@"E:\dev\CIIP.git\trunk\CIIP.Client\CIIP.Client\CIIP.Client.Win\bin\Debug\CIIP.Client.Win.exe");
-                    //Application.ShowViewStrategy.ShowMessage("编译成功!" + AdmiralEnvironment.UserDefineBusinessTempFile.FullName);
-                    
-                    
-                }
-            }
-        }
 
         //Solution GenateAssembly()
         //{

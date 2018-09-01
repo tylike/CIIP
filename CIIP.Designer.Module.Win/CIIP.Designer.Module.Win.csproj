@@ -237,12 +237,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\GenerateBusinessModuleController.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controllers\GenerateBusinessModuleController.Designer.cs">
-      <DependentUpon>GenerateBusinessModuleController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\RibbonFromModelWithoutEventController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -251,6 +245,9 @@
     <Compile Include="Controllers\CheckMethodViewController.cs" />
     <Compile Include="Controllers\CheckMethodViewController.Designer.cs">
       <DependentUpon>CheckMethodViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\SwitchProjectController.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Editors\AdmiralPopupExpressionPropertyEditor.cs" />
     <Compile Include="Editors\CodeEditor\AdmAccessToken.cs" />
@@ -297,9 +294,6 @@
     <EmbeddedResource Include="Controllers\CheckMethodViewController.resx">
       <DependentUpon>CheckMethodViewController.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controllers\GenerateBusinessModuleController.resx">
-      <DependentUpon>GenerateBusinessModuleController.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Editors\CodeEditor\SmartVisualStudio.resx">
       <DependentUpon>SmartVisualStudio.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,6 +323,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Controllers\ReadMe.txt" />
+    <None Include="VSCsharp.xshd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Editors\ReadMe.txt" />

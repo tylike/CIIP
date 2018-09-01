@@ -2,10 +2,14 @@
 <Application Title="商信互联企业信息管理平台" Logo="ExpressAppLogo">
   <ActionDesign>
     <Actions>
-      <Action Id="BindAnalysisData" Caption="绑定数据" />
       <Action Id="Cancel" Caption="取消" />
-      <Action Id="ChangeStateAction" Caption="改变状态" />
       <Action Id="ChangeVariant" Caption="视图" />
+      <Action Id="CompileProject" PaintStyle="CaptionAndImage" ImageName="Action_SimpleAction" ImageMode="UseItemImage" DefaultItemMode="LastExecutedItem" ShowItemsOnClick="False">
+        <ChoiceActionItems>
+          <ChoiceActionItem Id="生成项目" ImageName="Action_SingleChoiceAction" />
+          <ChoiceActionItem Id="生成运行" ImageName="Action_ResumeRecording" />
+        </ChoiceActionItems>
+      </Action>
       <Action Id="Delete" Caption="删除" />
       <Action Id="DialogCancel" Caption="取消" />
       <Action Id="DialogClose" Caption="关闭" />
@@ -16,11 +20,8 @@
       <Action Id="NavigateForward" Caption="向前" />
       <Action Id="New" Caption="新建" />
       <Action Id="NextObject" Caption="下一个" />
-      <Action Id="PreviewReportV2" Caption="预览" />
       <Action Id="PreviousObject" Caption="上一个" />
       <Action Id="Refresh" Caption="刷新" />
-      <Action Id="RefreshNotifications" Caption="刷新" />
-      <Action Id="ReportViewerDialogControllerV2_Close" Caption="关闭" />
       <Action Id="ResetViewSettings" Caption="重置设置" />
       <Action Id="RuntimeListViewSetup" ImageName="Action_Copy_CellValue" />
       <Action Id="Save" Caption="保存" />
@@ -28,12 +29,10 @@
       <Action Id="SaveAndNew" Caption="保存新建" />
       <Action Id="ShowAllContexts" Caption="验证" />
       <Action Id="ShowBusinessObjectLogic" ImageName="whitix" />
-      <Action Id="ShowInReportV2" Caption="显示报表" />
       <Action Id="ShowLayout" ImageName="ModelEditor_Action_Modules" />
       <Action Id="ShowNavigationItem" Caption="导航" />
       <Action Id="ShowPartialLogic" ImageName="logic" />
-      <Action Id="SwitchProject" ShowItemsOnClick="True" DefaultItemMode="LastExecutedItem" PaintStyle="CaptionAndImage" ImageName="BO_Categories" />
-      <Action Id="UnbindAnalysisData" Caption="取消绑定" />
+      <Action Id="SwitchProject" DefaultItemMode="LastExecutedItem" PaintStyle="CaptionAndImage" ImageName="BO_Categories" />
       <Action Id="Unlink" Caption="取消链接" />
     </Actions>
   </ActionDesign>
@@ -45,13 +44,6 @@
     <Class Name="CIIP.Module.BusinessObjects.SYS.RuntimeController" ImageName="ModelEditor_Controllers" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.SimpleType" ImageName="PG_Class" />
     <Class Name="CIIP.ProjectManager.Project" ImageName="BO_Categories" />
-    <Class Name="DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters">
-      <OwnMembers>
-        <Member Name="Password" Caption="密码" />
-        <Member Name="UserName" Caption="用户" />
-      </OwnMembers>
-    </Class>
-    <Class Name="DevExpress.Persistent.BaseImpl.Event" Caption="任务日历" />
   </BOModel>
   <Options DataAccessMode="Server">
     <LayoutManagerOptions RequiredFieldMark="*" />
@@ -424,7 +416,6 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="Event_ListView" DataAccessMode="Client" />
     <DetailView Id="ImplementRelation_DetailView">
       <Layout>
         <LayoutItem Id="GenericParameters" ViewItem="GenericParameters" ShowCaption="" Index="0" IsNewNode="True" />
@@ -652,34 +643,6 @@
               <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" Removed="True" />
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="SystemLogonParameter_DetailView" Caption="欢迎使用商信互联企业信息管理平台" DefaultFocusedItem="Password">
-      <Items>
-        <ActionContainerViewItem Id="ConfigDB" ActionContainer="ConfigDB" PaintStyle="Caption" IsNewNode="True" />
-        <StaticImage Id="Logo" ImageName="B" SizeMode="StretchImage" IsNewNode="True" />
-        <PropertyEditor Id="Password" Caption="        密    码    " />
-        <PropertyEditor Id="UserName" Caption="        用    户    " />
-      </Items>
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutItem Id="LogoFF" Index="0" SizeConstraintsType="Custom" MinSize="600, 305" ViewItem="" IsNewNode="True" />
-            <LayoutGroup Id="AuthenticationStandardLogonParameters" Index="1" Direction="Horizontal">
-              <LayoutGroup Id="Content" IsNewNode="True">
-                <LayoutItem Id="UserName" Index="0" ViewItem="UserName" IsNewNode="True" />
-                <LayoutItem Id="Password" Index="1" ViewItem="Password" IsNewNode="True" />
-              </LayoutGroup>
-              <LayoutItem Id="Password" SizeConstraintsType="Custom" MinSize="400, 32" Removed="True" />
-              <LayoutItem Id="UserName" SizeConstraintsType="Custom" MinSize="400, 32" Removed="True" />
-              <LayoutGroup Id="ZW" RelativeSize="5" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="SystemLogonParameter" Index="2" Direction="Horizontal">
-              <LayoutItem Id="ConfigDB" ViewItem="ConfigDB" IsNewNode="True" />
-              <LayoutItem Id="SafeMode" Removed="True" />
-            </LayoutGroup>
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
