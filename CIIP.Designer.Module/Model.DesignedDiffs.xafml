@@ -2,14 +2,15 @@
 <Application Title="商信互联企业信息管理平台" Logo="ExpressAppLogo">
   <ActionDesign>
     <Actions>
-      <Action Id="Cancel" Caption="取消" />
-      <Action Id="ChangeVariant" Caption="视图" />
       <Action Id="CompileProject" PaintStyle="CaptionAndImage" ImageName="Action_SimpleAction" ImageMode="UseItemImage" DefaultItemMode="LastExecutedItem" ShowItemsOnClick="False">
-        <ChoiceActionItems>
+        <ChoiceActionItems Id="ChoiceActionItems">
           <ChoiceActionItem Id="生成项目" ImageName="Action_SingleChoiceAction" />
           <ChoiceActionItem Id="生成运行" ImageName="Action_ResumeRecording" />
         </ChoiceActionItems>
       </Action>
+      <Action Id="SwitchProject" DefaultItemMode="LastExecutedItem" PaintStyle="CaptionAndImage" ImageName="BO_Categories" />
+      <Action Id="Cancel" Caption="取消" />
+      <Action Id="ChangeVariant" Caption="视图" />
       <Action Id="Delete" Caption="删除" />
       <Action Id="DialogCancel" Caption="取消" />
       <Action Id="DialogClose" Caption="关闭" />
@@ -32,7 +33,6 @@
       <Action Id="ShowLayout" ImageName="ModelEditor_Action_Modules" />
       <Action Id="ShowNavigationItem" Caption="导航" />
       <Action Id="ShowPartialLogic" ImageName="logic" />
-      <Action Id="SwitchProject" DefaultItemMode="LastExecutedItem" PaintStyle="CaptionAndImage" ImageName="BO_Categories" />
       <Action Id="Unlink" Caption="取消链接" />
     </Actions>
   </ActionDesign>
@@ -554,6 +554,35 @@
                 <LayoutItem Id="Y" Index="2" />
               </LayoutGroup>
             </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Project_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="NameObject" Index="0">
+              <LayoutItem Id="ProjectPath" ViewItem="ProjectPath" ShowCaption="" Index="1" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="WindowsApplication" Index="1" ShowCaption="True" Caption="Windows Application" IsNewNode="True">
+              <LayoutItem Id="WinProjectPath" ViewItem="WinProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
+              <LayoutItem Id="WinStartupFile" ViewItem="WinStartupFile" ShowCaption="" Index="1" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="WebApplication" Index="2" ShowCaption="True" Caption="Web Application" IsNewNode="True">
+              <LayoutItem Id="WebProjectPath" ViewItem="WebProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="Project" Index="3" Removed="True">
+              <LayoutGroup Id="Project_col1">
+                <LayoutItem Id="WinProjectPath" Removed="True" />
+                <LayoutItem Id="WinStartupFile" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Project_col2">
+                <LayoutItem Id="ProjectPath" Removed="True" />
+                <LayoutItem Id="WebProjectPath" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="4" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>

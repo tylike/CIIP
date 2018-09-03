@@ -5,6 +5,8 @@ using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 using CIIP.Persistent.BaseImpl;
 using System.Linq;
+using DevExpress.ExpressApp.Model;
+using System.IO;
 
 namespace CIIP.ProjectManager
 {
@@ -25,11 +27,22 @@ namespace CIIP.ProjectManager
         {
         }
 
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        {
+            base.OnChanged(propertyName, oldValue, newValue);
+            if (propertyName == nameof(Name) || propertyName == nameof(ProjectPath))
+            {
+                WinProjectPath = Path.Combine(ProjectPath + "", Name + "", "Win");
+                WinStartupFile = Path.Combine(WinProjectPath + "",  "CIIP.Client.Win.Exe");
+                WebProjectPath = Path.Combine(ProjectPath + "", Name + "", "Web");
+            }
+        }
+
         public override void AfterConstruction()
         {
             base.AfterConstruction();
             ProjectPath = ApplicationStartupPath;
-            StartupFile = ApplicationStartupPath + "\\CIIP.Client.Win.Exe";
+            WinStartupFile = ApplicationStartupPath + "\\CIIP.Client.Win.Exe";
         }
 
         /// <summary>
@@ -37,23 +50,36 @@ namespace CIIP.ProjectManager
         /// </summary>
         [XafDisplayName("定制生成")]
         [ToolTip("选中时为定系统生成的,否则为存在的dll导入的.")]
+        [ModelDefault("AllowEdit", "False")]
         public bool Generated
         {
             get { return GetPropertyValue<bool>(nameof(Generated)); }
             set { SetPropertyValue(nameof(Generated), value); }
         }
 
-
         /// <summary>
         /// 在windows下调试时使用哪个起动文件
         /// </summary>
         [XafDisplayName("起动文件")]
-
-        public string StartupFile
+        public string WinStartupFile
         {
-            get { return GetPropertyValue<string>(nameof(StartupFile)); }
-            set { SetPropertyValue(nameof(StartupFile), value); }
+            get { return GetPropertyValue<string>(nameof(WinStartupFile)); }
+            set { SetPropertyValue(nameof(WinStartupFile), value); }
         }
+        [XafDisplayName("项目路径")]
+
+        public string WinProjectPath
+        {
+            get { return GetPropertyValue<string>(nameof(WinProjectPath)); }
+            set { SetPropertyValue(nameof(WinProjectPath), value); }
+        }
+        [XafDisplayName("项目路径")]
+        public string WebProjectPath
+        {
+            get { return GetPropertyValue<string>(nameof(WebProjectPath)); }
+            set { SetPropertyValue(nameof(WebProjectPath), value); }
+        }
+
 
         /// <summary>
         /// 路径:生成dll时保存到如下路径中去.
@@ -64,6 +90,58 @@ namespace CIIP.ProjectManager
             get { return GetPropertyValue<string>(nameof(ProjectPath)); }
             set { SetPropertyValue(nameof(ProjectPath), value); }
         }
+
+        protected override void OnSaved()
+        {
+            base.OnSaved();
+            //如果启动文件缺少,则复复制.
+            var source = Path.Combine(ApplicationStartupPath, @"StartupFile\Win");
+            DirectoryInfo fi = new DirectoryInfo(source);
+            var files = fi.EnumerateFiles("*.*", SearchOption.AllDirectories);
+            if (!File.Exists(WinStartupFile))
+            {
+                //File.Copy(ApplicationStartupPath)
+                DirectoryCopy(source, WinProjectPath, true);
+            }
+        }
+
+        private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
+        {
+            // Get the subdirectories for the specified directory.
+            DirectoryInfo dir = new DirectoryInfo(sourceDirName);
+
+            if (!dir.Exists)
+            {
+                throw new DirectoryNotFoundException(
+                    "Source directory does not exist or could not be found: "
+                    + sourceDirName);
+            }
+
+            DirectoryInfo[] dirs = dir.GetDirectories();
+            // If the destination directory doesn't exist, create it.
+            if (!Directory.Exists(destDirName))
+            {
+                Directory.CreateDirectory(destDirName);
+            }
+
+            // Get the files in the directory and copy them to the new location.
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo file in files)
+            {
+                string temppath = Path.Combine(destDirName, file.Name);
+                file.CopyTo(temppath, false);
+            }
+
+            // If copying subdirectories, copy them and their contents to new location.
+            if (copySubDirs)
+            {
+                foreach (DirectoryInfo subdir in dirs)
+                {
+                    string temppath = Path.Combine(destDirName, subdir.Name);
+                    DirectoryCopy(subdir.FullName, temppath, copySubDirs);
+                }
+            }
+        }
     }
 
     public class ProjectViewController : ViewController
@@ -71,29 +149,23 @@ namespace CIIP.ProjectManager
         public ProjectViewController()
         {
             TargetObjectType = typeof(Project);
-
-            var generateStartFile = new SimpleAction(this, "GenerateStartupFile", PredefinedCategory.Unspecified);
-            generateStartFile.Caption = "生成启动文件";
-            generateStartFile.Execute += GenerateStartFile_Execute;
         }
         protected override void OnActivated()
         {
             base.OnActivated();
             ObjectSpace.Committed += ObjectSpace_Committed;
         }
+        
+        protected override void OnDeactivated()
+        {
+            ObjectSpace.Committed -= ObjectSpace_Committed;
+            base.OnDeactivated();
+        }
 
         private void ObjectSpace_Committed(object sender, System.EventArgs e)
         {
-            Application.MainWindow.GetController<SwitchProjectControllerBase>().CreateProjectItems();
-
-            //Frame.GetController<SwitchProjectController>().CreateProjectItems();
-        }
-
-        private void GenerateStartFile_Execute(object sender, SimpleActionExecuteEventArgs e)
-        {
-            //copy默认起动文件到项目目录中去
-
-        }
+            Application.MainWindow?.GetController<SwitchProjectControllerBase>()?.CreateProjectItems();
+        }        
     }
 
     public abstract class SwitchProjectControllerBase : WindowController
@@ -110,15 +182,25 @@ namespace CIIP.ProjectManager
 
             var compileProject = new SingleChoiceAction(this, "CompileProject", "项目");
             compileProject.Caption = "生成";
-            compileProject.Items.Add(new ChoiceActionItem("生成项目", false));
             compileProject.Items.Add(new ChoiceActionItem("生成运行", true));
+            compileProject.Items.Add(new ChoiceActionItem("生成项目", false));
             compileProject.ItemType = SingleChoiceActionItemType.ItemIsOperation;
-
             compileProject.Execute += CompileProject_Execute;
         }
         protected abstract void Compile(SingleChoiceActionExecuteEventArgs e, bool showCode);
         private void CompileProject_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
+            if (CurrentProject == null)
+            {
+                var msg = new MessageOptions();
+                msg.Duration = 3000;
+                msg.Message = "当前没有选中的项目!";
+                msg.Type = InformationType.Error;
+                msg.Win.Caption = "错误";
+                msg.Win.Type = WinMessageType.Flyout;
+                Application.ShowViewStrategy.ShowMessage(msg);// "", InformationType.Error, 3000, InformationPosition.Left);
+                return;
+            }
             Compile(e, false);
         }
 
@@ -129,20 +211,39 @@ namespace CIIP.ProjectManager
 
         }
 
+        protected abstract void ShowMessage(string msg);
+
         public void CreateProjectItems()
         {
             switchProject.Items.Clear();
             var os = Application.CreateObjectSpace();
-            var projects = os.GetObjectsQuery<Project>().ToArray();
+            var projects = os.GetObjectsQuery<Project>().ToList();
+            if (projects.Count == 0)
+            {
+                ShowMessage("当前系统还没有默认项目,请建立一个默认项目!");
+                var obj = os.CreateObject<Project>();
+                var view = Application.CreateDetailView(os, obj);
+                Application.ShowViewStrategy.ShowViewInPopupWindow(view, okButtonCaption: "创建项目", cancelDelegate: () => { Application.Exit(); }, cancelButtonCaption: "退出系统");
+                projects.Add(obj);
+            }
+
             foreach (var item in projects)
             {
                 switchProject.Items.Add(new ChoiceActionItem(item.Name, item));
             }
+
+            switchProject.SelectedItem = switchProject.Items.FirstOrDefault();
+            SwitchProjectCore(switchProject.SelectedItem?.Data as Project);
         }
 
         private void SwitchProject_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
-            CurrentProject = e.SelectedChoiceActionItem?.Data as Project;
+            SwitchProjectCore(e.SelectedChoiceActionItem?.Data as Project);
+        }
+
+        private void SwitchProjectCore(Project project)
+        {
+            CurrentProject = project;
             if (CurrentProject != null)
             {
                 switchProject.Caption = CurrentProject.Name;

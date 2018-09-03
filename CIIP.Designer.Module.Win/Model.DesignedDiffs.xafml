@@ -5,7 +5,6 @@
       <Action Id="About Info" Caption="关于..." />
       <Action Id="AddFromFile" Caption="从文件填加..." />
       <Action Id="CancelAction" Caption="取消" />
-      <Action Id="ChartWizard" Caption="设计图表" />
       <Action Id="ChooseSkin" Caption="选择皮肤" />
       <Action Id="Close" Caption="关闭" />
       <Action Id="CopyCellValue" Caption="复制单元格值" />
@@ -13,12 +12,10 @@
       <Action Id="Open" Caption="打开..." />
       <Action Id="OpenObject" Caption="打开" />
       <Action Id="SwitchProject" TargetRibbonPage="Home" TargetRibbonGroup="项目" RibbonStyle="All" />
-      <Action Id="生成业务模型" ImageName="build" />
     </Actions>
     <ActionToContainerMapping>
       <ActionContainer Id="Unspecified">
         <ActionLink ActionId="GenerateStartupFile" Removed="True" />
-        <ActionLink ActionId="SwitchProject" Removed="True" />
       </ActionContainer>
       <ActionContainer Id="项目" IsNewNode="True">
         <ActionLink ActionId="GenerateStartupFile" IsNewNode="True" />
@@ -26,6 +23,14 @@
       </ActionContainer>
     </ActionToContainerMapping>
   </ActionDesign>
+  <BOModel>
+    <Class Name="CIIP.ProjectManager.Project">
+      <OwnMembers>
+        <Member Name="ProjectPath" PropertyEditorType="CIIP.Common.Win.Editors.ChoosePathPropertyEditor" />
+        <Member Name="StartupFile" PropertyEditorType="CIIP.Common.Win.Editors.ChooseFilePropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
   <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI">
     <Dashboards DashboardGroupCaption="仪表盘" />
   </Options>

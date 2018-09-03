@@ -6,11 +6,19 @@ using CIIP.Module.Win.Editors;
 using System.Diagnostics;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.Module.BusinessObjects.SYS.Logic;
+using DevExpress.XtraEditors;
 
 namespace CIIP.ProjectManager
 {
     public class SwitchProjectController : SwitchProjectControllerBase
     {
+        protected override void ShowMessage(string text)
+        {
+            var msg = new XtraMessageBoxArgs();
+            msg.MessageBeepSound = MessageBeepSound.Error;
+            msg.Text = text;
+            XtraMessageBox.Show(msg);
+        }
         protected override void Compile(SingleChoiceActionExecuteEventArgs e,bool showCode)
         {
             var os = Application.CreateObjectSpace();
@@ -34,7 +42,7 @@ namespace CIIP.ProjectManager
                 {
                     if (e.SelectedChoiceActionItem != null && Equals(e.SelectedChoiceActionItem.Data, true))
                     {
-                        Process.Start(@"E:\dev\CIIP.git\trunk\CIIP.Client\CIIP.Client\CIIP.Client.Win\bin\Debug\CIIP.Client.Win.exe");
+                        Process.Start(CurrentProject.WinStartupFile);
                     }
                     //Application.ShowViewStrategy.ShowMessage("编译成功!" + AdmiralEnvironment.UserDefineBusinessTempFile.FullName);
                 }

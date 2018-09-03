@@ -29,15 +29,15 @@ namespace CIIP.Module.DatabaseUpdate {
 
             CreateSimpleType();
 
-            var first = ObjectSpace.GetObjectsQuery<Project>().FirstOrDefault();
-            if(first == null)
-            {
-                first = ObjectSpace.CreateObject<Project>();
-                first.Name = "DefaultProject";
-                first.ProjectPath = Project.ApplicationStartupPath + "\\" + first.Name;
-            }
+            //var first = ObjectSpace.GetObjectsQuery<Project>().FirstOrDefault();
+            //if(first == null)
+            //{
+            //    first = ObjectSpace.CreateObject<Project>();
+            //    first.Name = "DefaultProject";
+            //    first.ProjectPath = Project.ApplicationStartupPath + "\\" + first.Name;
+            //}
 
-            ObjectSpace.CommitChanges();
+            //ObjectSpace.CommitChanges();
 
             CIIPDesignerModule.IsNewVersion = true;
         }

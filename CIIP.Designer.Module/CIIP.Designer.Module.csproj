@@ -379,6 +379,10 @@
     <EmbeddedResource Include="Images\PG_Method.jpeg" />
     <EmbeddedResource Include="Images\PG_Namespace.jpeg" />
     <EmbeddedResource Include="Images\PG_Property.jpeg" />
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup>
