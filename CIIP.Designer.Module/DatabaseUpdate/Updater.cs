@@ -15,6 +15,7 @@ using System.Collections.Generic;
 using CIIP.Module.BusinessObjects;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.ProjectManager;
+using CIIP.Module.Controllers;
 
 namespace CIIP.Module.DatabaseUpdate {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppUpdatingModuleUpdatertopic.aspx
@@ -38,6 +39,7 @@ namespace CIIP.Module.DatabaseUpdate {
             //}
 
             //ObjectSpace.CommitChanges();
+            DataInitializeWindowController.CreateSystemTypes(ObjectSpace, false);
 
             CIIPDesignerModule.IsNewVersion = true;
         }

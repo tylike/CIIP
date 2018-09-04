@@ -33,15 +33,15 @@ namespace CIIP.Module.Controllers
             TargetWindowType = WindowType.Main;
             // Target required Windows (via the TargetXXX properties) and create their Actions.
         }
-        
+
         private void 数据初始化_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
             var os = Application.CreateObjectSpace();
-            CreateSystemTypes(os,Application.Model,true);
+            CreateSystemTypes(os, true);
             os.CommitChanges();
         }
 
-        public static void CreateSystemTypes(IObjectSpace ObjectSpace,IModelApplication app,bool deleteExists)
+        public static void CreateSystemTypes(IObjectSpace ObjectSpace,bool deleteExists)
         {
             var objs = ObjectSpace.GetObjectsQuery<BusinessObject>().Where(x => !x.IsRuntimeDefine).ToList(); //(new BinaryOperator("IsRuntimeDefine", false));
             if (!deleteExists && objs.Count > 0)
@@ -61,13 +61,11 @@ namespace CIIP.Module.Controllers
             AddBusinessObject(typeof(XPLiteObject), "XPLiteObject", commonBase, "主键:无,逻辑删除:否,并发锁:否", false, ObjectSpace);
             AddBusinessObject(typeof(XPCustomObject), "XPCustomObject", commonBase, "主键:无,逻辑删除:是,并发锁:是", false, ObjectSpace);
             AddBusinessObject(typeof(XPObject), "XPObject", commonBase, "主键:int,逻辑删除:是,并发锁:是", false, ObjectSpace);
-//Class Name  Deferred Deletion   Optimistic Locking  Built -in OID key
-//XPBaseObject - +-
-//XPLiteObject - - -
-//XPCustomObject + +-
-//XPObject + + +
-
-
+            //Class Name  Deferred Deletion   Optimistic Locking  Built -in OID key
+            //XPBaseObject - +-
+            //XPLiteObject - - -
+            //XPCustomObject + +-
+            //XPObject + + +
             //第二步,创建这些类的属性,因为属性中可能使用了类型,所以先要创建类型.
             var bos = ObjectSpace.GetObjects<BusinessObject>(null, true);
             foreach (var bob in bos.Where(x => !x.IsRuntimeDefine))

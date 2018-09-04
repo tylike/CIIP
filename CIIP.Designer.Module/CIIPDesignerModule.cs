@@ -30,12 +30,10 @@ using CIIP.Persistent.BaseImpl;
 
 namespace CIIP.Module {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppModuleBasetopic.aspx.
-    public sealed partial class CIIPDesignerModule : ModuleBase {
-
-
-
+    public sealed partial class CIIPDesignerModule : ModuleBase
+    {
         public static bool IsNewVersion { get; set; }
-        
+
         public static bool IsSafeMode { get; set; }
 
         public CIIPDesignerModule()
@@ -59,8 +57,6 @@ namespace CIIP.Module {
             //        IsSafeMode = true;
             //    }
 
-                
-
             //    //var types = BusinessBuilder.Instance.RegisteBusinessLogics();
             //    //if (types != null)
             //    //{
@@ -76,7 +72,8 @@ namespace CIIP.Module {
             BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
         }
 
-        public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB) {
+        public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB)
+        {
             var updater = new DatabaseUpdate.Updater(objectSpace, versionFromDB);
             return new ModuleUpdater[] { updater };
         }
@@ -134,7 +131,7 @@ namespace CIIP.Module {
 
             #endregion
 
-            
+
             // Manage various aspects of the application UI and behavior at the module level.
         }
 
@@ -146,9 +143,9 @@ namespace CIIP.Module {
         public override void Setup(ApplicationModulesManager moduleManager)
         {
             base.Setup(moduleManager);
-            ValidationRulesRegistrator.RegisterRule(moduleManager, typeof (CustomCodeRule), typeof (IRuleBaseProperties));
+            ValidationRulesRegistrator.RegisterRule(moduleManager, typeof(CustomCodeRule), typeof(IRuleBaseProperties));
         }
-        
+
         public override void ExtendModelInterfaces(ModelInterfaceExtenders extenders)
         {
             base.ExtendModelInterfaces(extenders);
@@ -161,9 +158,9 @@ namespace CIIP.Module {
             base.CustomizeTypesInfo(typesInfo);
             CalculatedPersistentAliasHelper.CustomizeTypesInfo(typesInfo);
 
-            
+
 
         }
-        
+
     }
 }
