@@ -2,13 +2,6 @@
 <Application Title="商信互联企业信息管理平台" Logo="ExpressAppLogo">
   <ActionDesign>
     <Actions>
-      <Action Id="CompileProject" PaintStyle="CaptionAndImage" ImageName="Action_SimpleAction" ImageMode="UseItemImage" DefaultItemMode="LastExecutedItem" ShowItemsOnClick="False">
-        <ChoiceActionItems Id="ChoiceActionItems">
-          <ChoiceActionItem Id="生成项目" ImageName="Action_SingleChoiceAction" />
-          <ChoiceActionItem Id="生成运行" ImageName="Action_ResumeRecording" />
-        </ChoiceActionItems>
-      </Action>
-      <Action Id="SwitchProject" DefaultItemMode="LastExecutedItem" PaintStyle="CaptionAndImage" ImageName="BO_Categories" />
       <Action Id="Cancel" Caption="取消" />
       <Action Id="ChangeVariant" Caption="视图" />
       <Action Id="Delete" Caption="删除" />
@@ -372,17 +365,18 @@
     </DetailView>
     <DetailView Id="CollectionProperty_DetailView">
       <Layout>
-        <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="R1" Index="0" Direction="Horizontal" ShowCaption="False" RelativeSize="100" IsNewNode="True">
-            <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
-            <LayoutItem Id="DisplayName" ViewItem="DisplayName" Index="2" IsNewNode="True" />
-            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="3" IsNewNode="True" />
-            <LayoutGroup Id="Group" Direction="Horizontal" IsNewNode="True">
-              <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="4" IsNewNode="True" />
-              <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="5" IsNewNode="True" />
-            </LayoutGroup>
+        <LayoutGroup Id="R1" Index="0" Direction="Horizontal" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+          <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
+          <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
+          <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
+          <LayoutItem Id="DisplayName" ViewItem="DisplayName" Index="3" IsNewNode="True" />
+          <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="4" IsNewNode="True" />
+          <LayoutGroup Id="Group" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="4" IsNewNode="True" />
+            <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="5" IsNewNode="True" />
           </LayoutGroup>
+        </LayoutGroup>
+        <LayoutGroup Id="Main" RelativeSize="100" Removed="True">
           <LayoutGroup Id="SimpleEditors" RelativeSize="100" Removed="True">
             <LayoutGroup Id="NameObject" Index="0" Direction="Horizontal" Removed="True">
               <LayoutItem Id="Name" Removed="True" />
@@ -593,10 +587,11 @@
           <LayoutGroup Id="NameObject" Index="2" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
             <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
             <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
-            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="2" IsNewNode="True" />
-            <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="3" IsNewNode="True" />
-            <LayoutItem Id="Size" ViewItem="Size" ShowCaption="" Index="4" IsNewNode="True" />
-            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="5" IsNewNode="True" />
+            <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
+            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="3" IsNewNode="True" />
+            <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="4" IsNewNode="True" />
+            <LayoutItem Id="Size" ViewItem="Size" ShowCaption="" Index="5" IsNewNode="True" />
+            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="6" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="SimpleEditors" Removed="True">
             <LayoutGroup Id="NameObject" Removed="True">

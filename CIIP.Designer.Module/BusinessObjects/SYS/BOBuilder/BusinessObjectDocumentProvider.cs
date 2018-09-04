@@ -61,7 +61,10 @@ namespace CIIP.Module.BusinessObjects.SYS
 
             }
             rst.AppendLine("\t[NavigationItem]");
-
+            if (Caption != Name)
+            {
+                rst.AppendLine($"\t[ModelDefault(\"Caption\",\"{this.Caption}\")]");
+            }
             #endregion
 
             rst.Append($"\tpublic ");
@@ -152,6 +155,10 @@ $@"     public {type} {name}
                 if (item.Size != 100 && item.Size != 0)
                 {
                     rst.AppendLine($"\t\t[Size({item.Size})]");
+                }
+                if (item.Caption != item.Name)
+                {
+                    rst.AppendLine($"\t\t[ModelDefault(\"Caption\",\"{item.Caption}\")]");
                 }
                 ProcessPropertyBase(rst, item);
                 if (item.RelationProperty != null)

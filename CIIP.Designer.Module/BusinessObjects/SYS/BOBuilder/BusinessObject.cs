@@ -30,7 +30,6 @@ namespace CIIP.Module.BusinessObjects.SYS
     [DefaultClassOptions]
     public partial class BusinessObject : BusinessObjectBase
     {
-
         #region is persistent
         private bool _IsPersistent;
 
@@ -43,8 +42,6 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("IsPersistent", ref _IsPersistent, value); }
         }
         #endregion
-
-
         
         #region can custom logic
         private bool _CanCustomLogic;

@@ -51,6 +51,13 @@ namespace CIIP.Module.BusinessObjects.SYS
                 }
             }
         }
+        [ToolTip("用于显示在界面上的标题内容.")]
+        [XafDisplayName("标题")]
+        public string Caption
+        {
+            get { return GetPropertyValue<string>(nameof(Caption)); }
+            set { SetPropertyValue(nameof(Caption), value); }
+        }
 
 
         [VisibleInDetailView(false)]
@@ -102,7 +109,6 @@ namespace CIIP.Module.BusinessObjects.SYS
             }
         }
         #endregion
-
         
         #region 可见性
         private bool? _Browsable;
@@ -114,6 +120,8 @@ namespace CIIP.Module.BusinessObjects.SYS
             set { SetPropertyValue("Browsable", ref _Browsable, value); }
         }
         #endregion
+
+
 
         public override void AfterConstruction()
         {
