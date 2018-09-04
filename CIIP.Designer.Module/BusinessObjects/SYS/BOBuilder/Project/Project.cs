@@ -168,6 +168,13 @@ namespace CIIP.ProjectManager
         }        
     }
 
+    public enum CompileAction
+    {
+        编译运行,
+        开始暂停,
+        运行,
+        编译
+    }
     public abstract class SwitchProjectControllerBase : WindowController
     {
         public static Project CurrentProject { get; set; }
@@ -182,12 +189,15 @@ namespace CIIP.ProjectManager
 
             var compileProject = new SingleChoiceAction(this, "CompileProject", "项目");
             compileProject.Caption = "生成";
-            compileProject.Items.Add(new ChoiceActionItem("生成运行", true));
-            compileProject.Items.Add(new ChoiceActionItem("生成项目", false));
+            compileProject.Items.Add(new ChoiceActionItem("生成运行", CompileAction.编译运行));
+            compileProject.Items.Add(new ChoiceActionItem("生成运行-开始时暂停", CompileAction.开始暂停));
+
+            compileProject.Items.Add(new ChoiceActionItem("生成项目", CompileAction.编译));
+            compileProject.Items.Add(new ChoiceActionItem("运行", CompileAction.运行));
             compileProject.ItemType = SingleChoiceActionItemType.ItemIsOperation;
             compileProject.Execute += CompileProject_Execute;
         }
-        protected abstract void Compile(SingleChoiceActionExecuteEventArgs e, bool showCode);
+        protected abstract void Compile(SingleChoiceActionExecuteEventArgs e);
         private void CompileProject_Execute(object sender, SingleChoiceActionExecuteEventArgs e)
         {
             if (CurrentProject == null)
@@ -201,7 +211,7 @@ namespace CIIP.ProjectManager
                 Application.ShowViewStrategy.ShowMessage(msg);// "", InformationType.Error, 3000, InformationPosition.Left);
                 return;
             }
-            Compile(e, false);
+            Compile(e);
         }
 
         protected override void OnActivated()

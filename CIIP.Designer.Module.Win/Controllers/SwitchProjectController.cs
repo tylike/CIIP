@@ -7,6 +7,7 @@ using System.Diagnostics;
 using CIIP.Module.BusinessObjects.SYS;
 using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.XtraEditors;
+using System.IO;
 
 namespace CIIP.ProjectManager
 {
@@ -19,34 +20,65 @@ namespace CIIP.ProjectManager
             msg.Text = text;
             XtraMessageBox.Show(msg);
         }
-        protected override void Compile(SingleChoiceActionExecuteEventArgs e,bool showCode)
+        protected override void Compile(SingleChoiceActionExecuteEventArgs e)
         {
-            var os = Application.CreateObjectSpace();
-            var workspace = SmartIDEWorkspace.GetIDE(os);
-            var rst = workspace.Compile();
-            if (rst != null)
+            var ca = (CompileAction)e.SelectedChoiceActionItem.Data;
+            var compile = ca == CompileAction.开始暂停 || ca == CompileAction.编译 || ca == CompileAction.编译运行;
+            var run = ca != CompileAction.编译;
+            var compileSuccess = true;
+            if (compile)
             {
+                var os = Application.CreateObjectSpace();
+                var workspace = SmartIDEWorkspace.GetIDE(os);
+                var rst = workspace.Compile();
+                if (rst != null)
+                {
 
-                if (!rst.Success || showCode)
-                {
-                    var solution = new Solution();
-                    solution.Code = new CsharpCode("", null);
-                    solution.Code.ShowSolutionFiles = true;
-                    solution.Code.Workspace = workspace;
-                    solution.Code.Diagnostics = rst.Diagnostics.ToList();
-                    var view = Application.CreateDetailView(os, solution);
-                    e.ShowViewParameters.CreatedView = view;
-                    e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
-                }
-                else
-                {
-                    if (e.SelectedChoiceActionItem != null && Equals(e.SelectedChoiceActionItem.Data, true))
+                    if (!rst.Success)
                     {
-                        Process.Start(CurrentProject.WinStartupFile);
+                        var solution = new Solution();
+                        solution.Code = new CsharpCode("", null);
+                        solution.Code.ShowSolutionFiles = true;
+                        solution.Code.Workspace = workspace;
+                        solution.Code.Diagnostics = rst.Diagnostics.ToList();
+                        var view = Application.CreateDetailView(os, solution);
+                        e.ShowViewParameters.CreatedView = view;
+                        e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
+                        compileSuccess = false;
                     }
-                    //Application.ShowViewStrategy.ShowMessage("编译成功!" + AdmiralEnvironment.UserDefineBusinessTempFile.FullName);
+                    else
+                    {
+                        Application.ShowViewStrategy.ShowMessage("编译通过!");
+                    }
                 }
             }
+
+            if (run && compileSuccess)
+            {
+                var msg = new MessageOptions();
+                msg.Message = "准备启动客户端:" + CurrentProject.WinStartupFile;
+                msg.OkDelegate = () =>
+                {
+                    var fi = new FileInfo(CurrentProject.WinStartupFile);
+                    Process.Start(fi.DirectoryName);
+                };
+                Application.ShowViewStrategy.ShowMessage(msg);
+                var para = "";
+                if (ca == CompileAction.开始暂停)
+                {
+                    para = " -debug";
+                }
+                var pc = Process.Start(CurrentProject.WinStartupFile, para);
+                pc.Exited += (s, evt) =>
+                {
+                    Application.ShowViewStrategy.ShowMessage("退出代码:" + pc.ExitCode);
+                };
+            }
+        }
+
+        private void Pc_Exited(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

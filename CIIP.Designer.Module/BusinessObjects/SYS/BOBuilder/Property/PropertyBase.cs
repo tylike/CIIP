@@ -108,12 +108,18 @@ namespace CIIP.Module.BusinessObjects.SYS
         private bool? _Browsable;
         [XafDisplayName("可见")]
         [ToolTip("属性在任何位置是否可见")]
-        public bool? Browsable
+        public bool? Browsable 
         {
             get { return _Browsable; }
             set { SetPropertyValue("Browsable", ref _Browsable, value); }
         }
         #endregion
+
+        public override void AfterConstruction()
+        {
+            base.AfterConstruction();
+            Browsable = true;
+        }
 
         #region 在客户端进行配置即可
         //private string _DataSourceProperty;

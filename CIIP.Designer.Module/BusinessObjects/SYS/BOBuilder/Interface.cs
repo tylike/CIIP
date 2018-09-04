@@ -5,6 +5,7 @@ using DevExpress.Xpo;
 namespace CIIP.Module.BusinessObjects.SYS
 {
     [DefaultClassOptions]
+    [XafDisplayName("接口定义")]
     public class Interface : BusinessObjectBase
     {
         public Interface(Session s) : base(s)
