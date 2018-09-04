@@ -28,9 +28,10 @@ namespace CIIP.ProjectManager
             var compileSuccess = true;
             if (compile)
             {
+                var outputFullPath = Path.Combine(CurrentProject.WinProjectPath, CurrentProject.Name + ".dll");
                 var os = Application.CreateObjectSpace();
-                var workspace = SmartIDEWorkspace.GetIDE(os);
-                var rst = workspace.Compile();
+                var workspace = SmartIDEWorkspace.GetIDE(os,CurrentProject);
+                var rst = workspace.Compile(outputFullPath);
                 if (rst != null)
                 {
 

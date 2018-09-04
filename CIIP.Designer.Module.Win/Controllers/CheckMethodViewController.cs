@@ -61,7 +61,7 @@ namespace CIIP.Module.Win.Controllers
 
         private void simpleAction1_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
-            var ide = new SmartIDEWorkspace(this.ObjectSpace);
+            var ide = new SmartIDEWorkspace(this.ObjectSpace,);
 
             ide.Compile();
 

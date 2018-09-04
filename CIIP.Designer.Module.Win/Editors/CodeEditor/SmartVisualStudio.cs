@@ -21,7 +21,7 @@ using System.Xml;
 using ICSharpCode.AvalonEdit.Highlighting;
 using System.Text.RegularExpressions;
 using DevExpress.XtraEditors;
-
+using cp = CIIP.ProjectManager.Project;
 namespace CIIP.Module.Win.Editors
 {
     public partial class SmartVisualStudio : UserControl
@@ -41,7 +41,7 @@ namespace CIIP.Module.Win.Editors
         private CsharpCode _codeObject;
         readonly IDocumentProvider _document;
 
-        public SmartVisualStudio(IObjectSpace os, CsharpCode value) : this()
+        public SmartVisualStudio(IObjectSpace os, CsharpCode value,cp project) : this()
         {
             this._codeObject = value;
 
@@ -50,11 +50,11 @@ namespace CIIP.Module.Win.Editors
             {
                 if (value.Workspace != null)
                 {
-                    this._workspace = (SmartIDEWorkspace) value.Workspace;
+                    this._workspace = (SmartIDEWorkspace)value.Workspace;
                 }
                 else
                 {
-                    this._workspace = SmartIDEWorkspace.GetIDE(os);
+                    this._workspace = SmartIDEWorkspace.GetIDE(os, project);
                 }
                 this._document = value.Provider;
 

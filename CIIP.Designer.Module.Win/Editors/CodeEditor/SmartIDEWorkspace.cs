@@ -20,6 +20,7 @@ using System.Windows.Media.Imaging;
 using ICSharpCode.AvalonEdit.CodeCompletion;
 using System.Windows.Media;
 using DevExpress.Xpo;
+using cp = CIIP.ProjectManager.Project;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -28,7 +29,7 @@ namespace CIIP.Module.Win.Editors
     /// </summary>
     public class SmartIDEWorkspace
     {
-        public static SmartIDEWorkspace GetIDE(IObjectSpace os,CIIP. Project project)
+        public static SmartIDEWorkspace GetIDE(IObjectSpace os,cp project)
         {
             return new SmartIDEWorkspace(os,project);
             //if (Instance == null)
@@ -37,6 +38,8 @@ namespace CIIP.Module.Win.Editors
             //}
             //return Instance;
         }
+
+        public cp Project { get; set; }
 
         public static SmartIDEWorkspace Instance { get; private set; }
         
@@ -48,10 +51,11 @@ namespace CIIP.Module.Win.Editors
 
         private IObjectSpace objectSpace;
 
-        public SmartIDEWorkspace(IObjectSpace objectSpace,Project project)
+        public SmartIDEWorkspace(IObjectSpace objectSpace,cp project)
         {
             this.Workspace = new AdhocWorkspace();// MSBuildWorkspace.Create();
             this.objectSpace = objectSpace;
+            this.Project = project;
             CreateSolution();
 
             InitializeKeywordItems();
@@ -82,15 +86,13 @@ namespace CIIP.Module.Win.Editors
             }
         }
 
-        public EmitResult Compile()
+        public EmitResult Compile(string path)
         {
-            var outputPath = AdmiralEnvironment.UserDefineBusinessTempFile.FullName;
             foreach (var doc in this.ModuleProject.Documents)
             {
                 Debug.WriteLine(doc.Name);
             }
-            var pdb = outputPath + ".pdb";
-            return ModuleProject.GetCompilationAsync().Result.Emit(outputPath);
+            return ModuleProject.GetCompilationAsync().Result.Emit(path);
         }
 
         public IEnumerable<Diagnostic> GetDocumentDiagnostic(Guid documentGuid)

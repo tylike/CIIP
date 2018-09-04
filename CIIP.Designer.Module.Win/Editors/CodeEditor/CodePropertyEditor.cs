@@ -4,6 +4,7 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Win.Editors;
 using DevExpress.ExpressApp;
 using CIIP.Module.BusinessObjects.SYS.Logic;
+using CIIP.ProjectManager;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -20,7 +21,7 @@ namespace CIIP.Module.Win.Editors
 
         protected override object CreateControlCore()
         {
-            var codeEditor = new SmartVisualStudio(os, this.Value);
+            var codeEditor = new SmartVisualStudio(os, this.Value, SwitchProjectController.CurrentProject);
             editor = codeEditor;
             codeEditor.OnValueChanged += CodeEditor_OnValueChanged;
             ControlBindingProperty = "Code";
