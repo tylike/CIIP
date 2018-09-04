@@ -28,9 +28,9 @@ namespace CIIP.Module.Win.Editors
     /// </summary>
     public class SmartIDEWorkspace
     {
-        public static SmartIDEWorkspace GetIDE(IObjectSpace os)
+        public static SmartIDEWorkspace GetIDE(IObjectSpace os,CIIP. Project project)
         {
-            return new SmartIDEWorkspace(os);
+            return new SmartIDEWorkspace(os,project);
             //if (Instance == null)
             //{
             //    Instance = new SmartIDEWorkspace(os);
@@ -48,7 +48,7 @@ namespace CIIP.Module.Win.Editors
 
         private IObjectSpace objectSpace;
 
-        public SmartIDEWorkspace(IObjectSpace objectSpace)
+        public SmartIDEWorkspace(IObjectSpace objectSpace,Project project)
         {
             this.Workspace = new AdhocWorkspace();// MSBuildWorkspace.Create();
             this.objectSpace = objectSpace;

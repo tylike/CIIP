@@ -182,7 +182,7 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogicBase.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectQuickAddExtendesion.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Project\Project.cs" />
+    <Compile Include="BusinessObjects\Project\Project.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Property\CollectionProperty.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterDefine.cs" />
