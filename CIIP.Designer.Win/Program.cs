@@ -28,7 +28,7 @@ namespace CIIP.Win
 
             NonPersistentController.Settings.Add(new CustomLoadDataInfo
             {
-                Type = typeof(ReferenceModule),
+                Type = typeof(ReferenceFileModule),
                 LoadData = () =>
                {
                    var list = new List<Object>();

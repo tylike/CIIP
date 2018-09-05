@@ -1,4 +1,5 @@
-﻿using CIIP.Persistent.BaseImpl;
+﻿using CIIP.Module.BusinessObjects.SYS;
+using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
@@ -14,7 +15,6 @@ namespace CIIP
 
         }
 
-
         /// <summary>
         /// 路径:生成dll时保存到如下路径中去.
         /// </summary>
@@ -23,6 +23,23 @@ namespace CIIP
         {
             get { return GetPropertyValue<string>(nameof(OutputPath)); }
             set { SetPropertyValue(nameof(OutputPath), value); }
+        }
+
+        [XafDisplayName("所属项目"), Association]
+        public ProjectManager.Project Project
+        {
+            get { return GetPropertyValue<ProjectManager.Project>(nameof(Project)); }
+            set { SetPropertyValue(nameof(Project), value); }
+        }
+
+
+        [Association]
+        public XPCollection<BusinessObjectBase> BusinessObjects
+        {
+            get
+            {
+                return GetCollection<BusinessObjectBase>(nameof(BusinessObjects));
+            }
         }
     }
 }

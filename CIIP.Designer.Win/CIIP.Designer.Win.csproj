@@ -567,9 +567,6 @@
     <None Include="StartupFile\Win\Model.xafml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="StartupFile\Win\ModulesInfo.cfg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <EmbeddedResource Include="FrmDataSourceWizard.resx">
       <DependentUpon>FrmDataSourceWizard.cs</DependentUpon>
     </EmbeddedResource>

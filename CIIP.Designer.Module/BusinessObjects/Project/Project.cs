@@ -44,6 +44,16 @@ namespace CIIP.ProjectManager
             base.AfterConstruction();
             ProjectPath = ApplicationStartupPath;
             WinStartupFile = ApplicationStartupPath + "\\CIIP.Client.Win.Exe";
+            var module = new BusinessModule(Session);
+            module.Name = "<<自动生成>>";
+            module.OutputPath = "<<自动生成>>";
+
+            var refModule = new ReferenceModule(Session);
+            refModule.Module = module;
+
+            this.Modules.Add(module);
+            this.ReferencedModules.Add(refModule);
+
         }
 
         /// <summary>
@@ -91,21 +101,36 @@ namespace CIIP.ProjectManager
             get { return GetPropertyValue<string>(nameof(ProjectPath)); }
             set { SetPropertyValue(nameof(ProjectPath), value); }
         }
-
+        protected override void OnSaving()
+        {
+            base.OnSaving();
+            if (!string.IsNullOrEmpty(Name))
+            {
+                foreach (var item in Modules)
+                {
+                    if (item.Name == "<<自动生成>>")
+                    {
+                        item.Name = Name;
+                        item.OutputPath = Path.Combine(ProjectPath + "", Name + "", Name + ".dll");
+                    }
+                }
+            }
+        }
         protected override void OnSaved()
         {
             base.OnSaved();
             //如果启动文件缺少,则复复制.
             var source = Path.Combine(ApplicationStartupPath, @"StartupFile\Win");
-            DirectoryInfo fi = new DirectoryInfo(source);
-            var files = fi.EnumerateFiles("*.*", SearchOption.AllDirectories);
+            //DirectoryInfo fi = new DirectoryInfo(source);
+            //var files = fi.EnumerateFiles("*.*", SearchOption.AllDirectories);
             if (!File.Exists(WinStartupFile))
             {
                 //File.Copy(ApplicationStartupPath)
                 DirectoryCopy(source, WinProjectPath, true);
+
             }
             //如果是新建的项目,则立即建立对应的module info cfg文件.
-
+            File.WriteAllText(Path.Combine(WinProjectPath, "ModulesInfo.cfg"), Newtonsoft.Json.JsonConvert.SerializeObject(ReferencedModules.ToArray()));
         }
 
         private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
@@ -146,12 +171,12 @@ namespace CIIP.ProjectManager
             }
         }
 
-        [Association, DevExpress.Xpo.Aggregated]
-        public XPCollection<ReferenceModule> Modules
+        [Association, DevExpress.Xpo.Aggregated,XafDisplayName("引用模块")]
+        public XPCollection<ReferenceModuleBase> ReferencedModules
         {
             get
             {
-                return GetCollection<ReferenceModule>(nameof(Modules));
+                return GetCollection<ReferenceModuleBase>(nameof(ReferencedModules));
                 //使用json去对应的目录去读取
                 //if (_modules == null)
                 //{
@@ -163,6 +188,16 @@ namespace CIIP.ProjectManager
                 //    }
                 //}
                 //return _modules;
+            }
+        }
+
+        [XafDisplayName("模块")]
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<BusinessModule> Modules
+        {
+            get
+            {
+                return GetCollection<BusinessModule>(nameof(Modules));
             }
         }
     }
