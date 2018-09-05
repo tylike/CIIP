@@ -70,6 +70,7 @@ namespace CIIP.Module {
             //    //}
             //}
             BaseObject.OidInitializationMode = OidInitializationMode.AfterConstruction;
+            this.AdditionalControllerTypes.Add(typeof(NonPersistentController));
         }
 
         public override IEnumerable<ModuleUpdater> GetModuleUpdaters(IObjectSpace objectSpace, Version versionFromDB)

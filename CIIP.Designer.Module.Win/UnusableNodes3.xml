@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options Id="Options">
+    <Dashboards Id="Dashboards" DashboardGroupCaption="仪表盘" />
+  </Options>
+  <BOModel Id="BOModel">
+    <Class Name="CIIP.ProjectManager.Project">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="StartupFile" PropertyEditorType="CIIP.Common.Win.Editors.ChooseFilePropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <ActionDesign Id="ActionDesign">
+    <ActionToContainerMapping Id="ActionToContainerMapping">
+      <ActionContainer Id="Unspecified">
+        <ActionLink ActionId="GenerateStartupFile" Removed="True" />
+      </ActionContainer>
+    </ActionToContainerMapping>
+  </ActionDesign>
+  <Views Id="Views">
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutItem Id="ItemBusinessObject.Config" ViewItem="ItemBusinessObject.Config" />
+              <LayoutItem Id="Config" ViewItem="Config" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

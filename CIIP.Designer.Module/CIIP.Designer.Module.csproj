@@ -129,6 +129,9 @@
     <Reference Include="Mono.Cecil">
       <HintPath>..\Mono.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <Name>System</Name>
       <Private>False</Private>
@@ -170,29 +173,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\SYS\BOBuilder\AdmiralEnvironment.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessBuilder.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessForm.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObject.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectBase.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectCodeGenerateExtendesion.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectDocumentProvider.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectLayout.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogic.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectPartialLogicBase.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\BusinessObjectQuickAddExtendesion.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\CodeFile.cs" />
+    <Compile Include="BusinessObjects\Module\BusinessModule.cs" />
+    <Compile Include="BusinessObjects\Project\ReferenceModule.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\AdmiralEnvironment.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessBuilder.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessForm.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObject.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectBase.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectCodeGenerateExtendesion.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectDocumentProvider.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectLayout.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectPartialLogic.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectPartialLogicBase.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectQuickAddExtendesion.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\CodeFile.cs" />
     <Compile Include="BusinessObjects\Project\Project.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Property\CollectionProperty.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Controller.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterDefine.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\GenericParameterInstance.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\IDocumentProvider.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\ImplementRelation.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\InheritsProperty.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Interface.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\IPartCodeProvider.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\ITokenList.cs" />
+    <Compile Include="BusinessObjects\Property\CollectionProperty.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\Controller.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\GenericParameterDefine.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\GenericParameterInstance.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\IDocumentProvider.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\ImplementRelation.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\InheritsProperty.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\Interface.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\IPartCodeProvider.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\ITokenList.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\BusinessObjectEvent.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectAfterConstruction.cs" />
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\Event\ObjectDeletingEvent.cs" />
@@ -211,16 +216,15 @@
     <Compile Include="BusinessObjects\SYS\BOBuilder\Logic\ShowBusinessObjectLogicViewController.Designer.cs">
       <DependentUpon>ShowBusinessObjectLogicViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="BusinessObjects\SYS\BOBuilder\ModelDataSource.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\ModelNavigationToStringConverter.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\NameSpace.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\NavigationItem.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Property\PropertyBase.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\RuleRange.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Solution.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\ViewController.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\WindowController.cs" />
-    <Compile Include="BusinessObjects\SYS\BusinessModule.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\ModelDataSource.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\ModelNavigationToStringConverter.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\NameSpace.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\NavigationItem.cs" />
+    <Compile Include="BusinessObjects\Property\PropertyBase.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\RuleRange.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\Solution.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\ViewController.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\WindowController.cs" />
     <Compile Include="BusinessObjects\SYS\IRadialMenu.cs" />
     <Compile Include="BusinessObjects\SYS\NavigationMenuDesignerModeSwitchViewController.cs">
       <SubType>Component</SubType>
@@ -233,8 +237,8 @@
     <Compile Include="BusinessObjects\SYS\NavigationLine.cs" />
     <Compile Include="BusinessObjects\SYS\NavigationMenu.cs" />
     <Compile Include="BusinessObjects\SYS\NavigationValueConverter.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\Property\Property.cs" />
-    <Compile Include="BusinessObjects\SYS\BOBuilder\SimpleType.cs" />
+    <Compile Include="BusinessObjects\Property\Property.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\SimpleType.cs" />
     <Compile Include="Controllers\DataInitializeWindowController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -386,21 +390,7 @@
     <Content Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="sample\Analysis\" />
-    <Folder Include="sample\ASS\" />
-    <Folder Include="sample\CRM\" />
-    <Folder Include="sample\Flow\" />
-    <Folder Include="sample\FMS\" />
-    <Folder Include="sample\GeneralLanguage\" />
-    <Folder Include="sample\Meta\" />
-    <Folder Include="sample\PMS\" />
-    <Folder Include="sample\Security\" />
-    <Folder Include="sample\SMS\" />
-    <Folder Include="sample\SYS\" />
-    <Folder Include="sample\WMS\" />
-    <Folder Include="sample\基础信息\" />
-    <Folder Include="sample\基类\布局基类\" />
-    <Folder Include="sample\基类\订单\" />
+    <Folder Include="BusinessObjects\SYS\BOBuilder\Property\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

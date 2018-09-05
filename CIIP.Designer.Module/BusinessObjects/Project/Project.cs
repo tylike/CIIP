@@ -7,6 +7,7 @@ using CIIP.Persistent.BaseImpl;
 using System.Linq;
 using DevExpress.ExpressApp.Model;
 using System.IO;
+using System.Collections.Generic;
 
 namespace CIIP.ProjectManager
 {
@@ -33,7 +34,7 @@ namespace CIIP.ProjectManager
             if (propertyName == nameof(Name) || propertyName == nameof(ProjectPath))
             {
                 WinProjectPath = Path.Combine(ProjectPath + "", Name + "", "Win");
-                WinStartupFile = Path.Combine(WinProjectPath + "",  "CIIP.Client.Win.Exe");
+                WinStartupFile = Path.Combine(WinProjectPath + "", "CIIP.Client.Win.Exe");
                 WebProjectPath = Path.Combine(ProjectPath + "", Name + "", "Web");
             }
         }
@@ -103,6 +104,8 @@ namespace CIIP.ProjectManager
                 //File.Copy(ApplicationStartupPath)
                 DirectoryCopy(source, WinProjectPath, true);
             }
+            //如果是新建的项目,则立即建立对应的module info cfg文件.
+
         }
 
         private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
@@ -140,6 +143,26 @@ namespace CIIP.ProjectManager
                     string temppath = Path.Combine(destDirName, subdir.Name);
                     DirectoryCopy(subdir.FullName, temppath, copySubDirs);
                 }
+            }
+        }
+
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<ReferenceModule> Modules
+        {
+            get
+            {
+                return GetCollection<ReferenceModule>(nameof(Modules));
+                //使用json去对应的目录去读取
+                //if (_modules == null)
+                //{
+                //    _modules = new List<BusinessModuleInfo>();
+                //    var rst = BusinessModuleInfo.GetModules(Path.Combine(WinProjectPath, "BusinessModules.cfg"));
+                //    if (rst != null)
+                //    {
+                //        _modules.AddRange(rst);
+                //    }
+                //}
+                //return _modules;
             }
         }
     }

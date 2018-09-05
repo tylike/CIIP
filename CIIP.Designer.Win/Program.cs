@@ -8,6 +8,7 @@ using System.Threading;
 using CIIP.ProjectManager;
 using DevExpress.ExpressApp.Win.Utils;
 using DevExpress.LookAndFeel;
+using System.Collections.Generic;
 
 namespace CIIP.Win
 {
@@ -24,6 +25,17 @@ namespace CIIP.Win
 #if EASYTEST
             DevExpress.ExpressApp.Win.EasyTest.EasyTestRemotingRegistration.Register();
 #endif
+
+            NonPersistentController.Settings.Add(new CustomLoadDataInfo
+            {
+                Type = typeof(ReferenceModule),
+                LoadData = () =>
+               {
+                   var list = new List<Object>();
+                   return list;
+               }
+            });
+
             CIIP.CIIPDebugger.ShowView = (t) => {
                 var t1 = t as XPBaseObject;
                 var frm = new Form();
@@ -55,7 +67,7 @@ namespace CIIP.Win
             }
 #endif
             winApplication.DatabaseUpdateMode = DatabaseUpdateMode.UpdateOldDatabase;
-            winApplication.CheckCompatibilityType = CheckCompatibilityType.ModuleInfo;
+            winApplication.CheckCompatibilityType = CheckCompatibilityType.DatabaseSchema;
             try
             {
                 winApplication.Setup();
