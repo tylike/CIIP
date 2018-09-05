@@ -31,7 +31,6 @@
   </ActionDesign>
   <BOModel>
     <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessForm" ImageName="ModelEditor_Views" />
-    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessModule" ImageName="module" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObject" ImageName="Action_Workflow_ShowWorkflowInstances" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObjectPartialLogic" ImageName="logic" />
     <Class Name="CIIP.Module.BusinessObjects.SYS.RuntimeController" ImageName="ModelEditor_Controllers" />
@@ -559,11 +558,7 @@
             <LayoutGroup Id="NameObject" Index="0">
               <LayoutItem Id="ProjectPath" ViewItem="ProjectPath" ShowCaption="" Index="1" IsNewNode="True" />
             </LayoutGroup>
-            <LayoutGroup Id="WindowsApplication" Index="1" ShowCaption="True" Caption="Windows Application" IsNewNode="True">
-              <LayoutItem Id="WinProjectPath" ViewItem="WinProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
-              <LayoutItem Id="WinStartupFile" ViewItem="WinStartupFile" ShowCaption="" Index="1" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="WebApplication" Index="2" ShowCaption="True" Caption="Web Application" IsNewNode="True">
+            <LayoutGroup Id="WebApplication" Index="1" ShowCaption="True" Caption="Web Application" IsNewNode="True">
               <LayoutItem Id="WebProjectPath" ViewItem="WebProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="Project" Index="3" Removed="True">
@@ -576,7 +571,48 @@
                 <LayoutItem Id="WebProjectPath" Removed="True" />
               </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="4" />
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="4" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Win" Index="0" ShowCaption="True" IsNewNode="True">
+              <LayoutItem Id="WinProjectPath" ViewItem="WinProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
+              <LayoutItem Id="WinStartupFile" ViewItem="WinStartupFile" ShowCaption="" Index="1" IsNewNode="True" />
+              <LayoutGroup Id="ReferencedModules" Index="2" ShowCaption="True" IsNewNode="True">
+                <LayoutItem Id="ReferencedModules" ViewItem="ReferencedModules" ShowCaption="False" Index="0" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Modules" Index="3" ShowCaption="True" IsNewNode="True">
+                <LayoutItem Id="Modules" ViewItem="Modules" ShowCaption="False" Index="0" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="SystemModules" ShowCaption="False" Direction="Vertical" Index="4" Caption="Win Audit Trail" IsNewNode="True">
+                <LayoutItem Id="WinAuditTrail" ViewItem="WinAuditTrail" Index="0" IsNewNode="True" />
+                <LayoutItem Id="WinOffice" ViewItem="WinOffice" Index="1" IsNewNode="True" />
+                <LayoutItem Id="WinTreeListEditor" ViewItem="WinTreeListEditor" Index="2" IsNewNode="True" />
+                <LayoutItem Id="WinValidation" ViewItem="WinValidation" Index="3" IsNewNode="True" />
+                <LayoutItem Id="WinViewVariant" ViewItem="WinViewVariant" Index="4" IsNewNode="True" />
+                <LayoutItem Id="WinPivotChart" ViewItem="WinPivotChart" Index="5" IsNewNode="True" />
+                <LayoutItem Id="WinStateMachine" ViewItem="WinStateMachine" Index="6" IsNewNode="True" />
+                <LayoutItem Id="WinNotifications" ViewItem="WinNotifications" Index="7" IsNewNode="True" />
+                <LayoutItem Id="WinPivotGrid" ViewItem="WinPivotGrid" Index="8" IsNewNode="True" />
+                <LayoutItem Id="WinReport" ViewItem="WinReport" Index="9" IsNewNode="True" />
+                <LayoutItem Id="WinHtmlPropertyEditor" ViewItem="WinHtmlPropertyEditor" Index="10" IsNewNode="True" />
+                <LayoutItem Id="WinKPI" ViewItem="WinKPI" Index="11" IsNewNode="True" />
+                <LayoutItem Id="WinConditionalAppearance" ViewItem="WinConditionalAppearance" Index="12" IsNewNode="True" />
+                <LayoutItem Id="WinFileAttachment" ViewItem="WinFileAttachment" Index="13" IsNewNode="True" />
+                <LayoutItem Id="WinDashboard" ViewItem="WinDashboard" Index="14" IsNewNode="True" />
+                <LayoutItem Id="WinClone" ViewItem="WinClone" Index="15" IsNewNode="True" />
+                <LayoutItem Id="WinChart" ViewItem="WinChart" Index="16" IsNewNode="True" />
+                <LayoutItem Id="WinScheduler" ViewItem="WinScheduler" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Web" ShowCaption="True" Direction="Horizontal" Index="1" IsNewNode="True" />
+            <LayoutGroup Id="Modules" Removed="True" />
+            <LayoutGroup Id="ReferencedModules" Removed="True" />
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
+            <LayoutItem Id="Creator" ViewItem="Creator" ShowCaption="" Index="0" IsNewNode="True" />
+            <LayoutItem Id="Modifier" ViewItem="Modifier" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="CreateTime" ViewItem="CreateTime" ShowCaption="" Index="2" IsNewNode="True" />
+            <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" ShowCaption="" Index="3" IsNewNode="True" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>

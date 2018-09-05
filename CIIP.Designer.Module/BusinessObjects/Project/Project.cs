@@ -8,6 +8,7 @@ using System.Linq;
 using DevExpress.ExpressApp.Model;
 using System.IO;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace CIIP.ProjectManager
 {
@@ -21,6 +22,7 @@ namespace CIIP.ProjectManager
 
     [XafDisplayName("项目管理")]
     [DefaultClassOptions]
+    [JsonObject(MemberSerialization.OptIn)]
     public class Project : NameObject
     {
         public static string ApplicationStartupPath { get; set; }
@@ -91,7 +93,6 @@ namespace CIIP.ProjectManager
             set { SetPropertyValue(nameof(WebProjectPath), value); }
         }
 
-
         /// <summary>
         /// 路径:生成dll时保存到如下路径中去.
         /// </summary>
@@ -131,6 +132,9 @@ namespace CIIP.ProjectManager
             }
             //如果是新建的项目,则立即建立对应的module info cfg文件.
             File.WriteAllText(Path.Combine(WinProjectPath, "ModulesInfo.cfg"), Newtonsoft.Json.JsonConvert.SerializeObject(ReferencedModules.ToArray()));
+
+            File.WriteAllText(Path.Combine(WinProjectPath, "app.module"), Newtonsoft.Json.JsonConvert.SerializeObject(this));
+
         }
 
         private static void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
@@ -171,7 +175,7 @@ namespace CIIP.ProjectManager
             }
         }
 
-        [Association, DevExpress.Xpo.Aggregated,XafDisplayName("引用模块")]
+        [Association, DevExpress.Xpo.Aggregated, XafDisplayName("引用模块")]
         public XPCollection<ReferenceModuleBase> ReferencedModules
         {
             get
@@ -199,6 +203,117 @@ namespace CIIP.ProjectManager
             {
                 return GetCollection<BusinessModule>(nameof(Modules));
             }
+        }
+
+        [JsonProperty]
+        public bool WinReport
+        {
+            get { return GetPropertyValue<bool>(nameof(WinReport)); }
+            set { SetPropertyValue(nameof(WinReport), value); }
+        }
+        [JsonProperty]
+        public bool WinValidation
+        {
+            get { return GetPropertyValue<bool>(nameof(WinValidation)); }
+            set { SetPropertyValue(nameof(WinValidation), value); }
+        }
+        [JsonProperty]
+        public bool WinAuditTrail
+        {
+            get { return GetPropertyValue<bool>(nameof(WinAuditTrail)); }
+            set { SetPropertyValue(nameof(WinAuditTrail), value); }
+        }
+        [JsonProperty]
+        public bool WinChart
+        {
+            get { return GetPropertyValue<bool>(nameof(WinChart)); }
+            set { SetPropertyValue(nameof(WinChart), value); }
+        }
+        [JsonProperty]
+        public bool WinClone
+        {
+            get { return GetPropertyValue<bool>(nameof(WinClone)); }
+            set { SetPropertyValue(nameof(WinClone), value); }
+        }
+        [JsonProperty]
+        public bool WinConditionalAppearance
+        {
+            get { return GetPropertyValue<bool>(nameof(WinConditionalAppearance)); }
+            set { SetPropertyValue(nameof(WinConditionalAppearance), value); }
+        }
+        [JsonProperty]
+        public bool WinDashboard
+        {
+            get { return GetPropertyValue<bool>(nameof(WinDashboard)); }
+            set { SetPropertyValue(nameof(WinDashboard), value); }
+        }
+        [JsonProperty]
+        public bool WinFileAttachment
+        {
+            get { return GetPropertyValue<bool>(nameof(WinFileAttachment)); }
+            set { SetPropertyValue(nameof(WinFileAttachment), value); }
+        }
+        [JsonProperty]
+        public bool WinHtmlPropertyEditor
+        {
+            get { return GetPropertyValue<bool>(nameof(WinHtmlPropertyEditor)); }
+            set { SetPropertyValue(nameof(WinHtmlPropertyEditor), value); }
+        }
+        [JsonProperty]
+        public bool WinKPI
+        {
+            get { return GetPropertyValue<bool>(nameof(WinKPI)); }
+            set { SetPropertyValue(nameof(WinKPI), value); }
+        }
+        [JsonProperty]
+        public bool WinNotifications
+        {
+            get { return GetPropertyValue<bool>(nameof(WinNotifications)); }
+            set { SetPropertyValue(nameof(WinNotifications), value); }
+        }
+        [JsonProperty]
+        public bool WinOffice
+        {
+            get { return GetPropertyValue<bool>(nameof(WinOffice)); }
+            set { SetPropertyValue(nameof(WinOffice), value); }
+        }
+        [JsonProperty]
+        public bool WinPivotChart
+        {
+            get { return GetPropertyValue<bool>(nameof(WinPivotChart)); }
+            set { SetPropertyValue(nameof(WinPivotChart), value); }
+        }
+        [JsonProperty]
+        public bool WinPivotGrid
+        {
+            get { return GetPropertyValue<bool>(nameof(WinPivotGrid)); }
+            set { SetPropertyValue(nameof(WinPivotGrid), value); }
+        }
+        [JsonProperty]
+        public bool WinStateMachine
+        {
+            get { return GetPropertyValue<bool>(nameof(WinStateMachine)); }
+            set { SetPropertyValue(nameof(WinStateMachine), value); }
+        }
+        [JsonProperty]
+        public bool WinTreeListEditor
+        {
+            get { return GetPropertyValue<bool>(nameof(WinTreeListEditor)); }
+            set { SetPropertyValue(nameof(WinTreeListEditor), value); }
+        }
+
+        [JsonProperty]
+        public bool WinViewVariant
+        {
+            get { return GetPropertyValue<bool>(nameof(WinViewVariant)); }
+            set { SetPropertyValue(nameof(WinViewVariant), value); }
+        }
+
+        [JsonProperty]
+        public bool WinScheduler
+        {
+            get { return GetPropertyValue<bool>(nameof(WinScheduler)); }
+            set { SetPropertyValue(nameof(WinScheduler), value); }
         }
     }
 
