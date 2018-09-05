@@ -12,7 +12,6 @@ using System.Linq;
 
 namespace CIIP.Module.BusinessObjects.SYS
 {
-
     [XafDisplayName("¿‡–Õ")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     public class BusinessObjectBase : NameObject, ICategorizedItem

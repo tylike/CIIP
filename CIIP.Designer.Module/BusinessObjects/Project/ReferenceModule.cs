@@ -133,4 +133,97 @@ namespace CIIP
         }
     }
 
+    public class ReferenceSystemModule : ReferenceModuleBase
+    {
+        public ReferenceSystemModule(Session session) : base(session)
+        {
+        }
+
+        public SystemModule Module
+        {
+            get { return GetPropertyValue<SystemModule>(nameof(Module)); }
+            set { SetPropertyValue(nameof(Module), value); }
+        }
+
+
+        //public XPCollection<File>
+    }
+
+    [NavigationItem]
+    public class SystemModule : BaseObject
+    {
+        public SystemModule(Session s) : base(s)
+        {
+
+        }
+
+        public string Name
+        {
+            get { return GetPropertyValue<string>(nameof(Name)); }
+            set { SetPropertyValue(nameof(Name), value); }
+        }
+
+        public bool Win
+        {
+            get { return GetPropertyValue<bool>(nameof(Win)); }
+            set { SetPropertyValue(nameof(Win), value); }
+        }
+
+        public bool Web
+        {
+            get { return GetPropertyValue<bool>(nameof(Web)); }
+            set { SetPropertyValue(nameof(Web), value); }
+        }
+
+        public bool Mobile
+        {
+            get { return GetPropertyValue<bool>(nameof(Mobile)); }
+            set { SetPropertyValue(nameof(Mobile), value); }
+        }
+
+        [Size(-1)]
+        public string Memo
+        {
+            get { return GetPropertyValue<string>(nameof(Memo)); }
+            set { SetPropertyValue(nameof(Memo), value); }
+        }
+
+        public string Version
+        {
+            get { return GetPropertyValue<string>(nameof(Version)); }
+            set { SetPropertyValue(nameof(Version), value); }
+        }
+
+
+        [DevExpress.Xpo.Aggregated, Association]
+        public XPCollection<SystemModuleFile> Files
+        {
+            get
+            {
+                return GetCollection<SystemModuleFile>(nameof(Files));
+            }
+        }
+    }
+
+    public class SystemModuleFile : BaseObject
+    {
+        public SystemModuleFile(Session s) : base(s)
+        {
+
+        }
+        [Size(-1)]
+        [ModelDefault("RowCount", "0")]
+        public string File
+        {
+            get { return GetPropertyValue<string>(nameof(File)); }
+            set { SetPropertyValue(nameof(File), value); }
+        }
+        [Association]
+        public SystemModule Module
+        {
+            get { return GetPropertyValue<SystemModule>(nameof(Module)); }
+            set { SetPropertyValue(nameof(Module), value); }
+        }
+    }
+
 }

@@ -23,13 +23,18 @@ namespace CIIP.Module.DatabaseUpdate {
         public Updater(IObjectSpace objectSpace, Version currentDBVersion) : base(objectSpace, currentDBVersion)
         {
         }
-
+        List<SystemModule> systemModules;
         public override void UpdateDatabaseAfterUpdateSchema()
         {
             base.UpdateDatabaseAfterUpdateSchema();
 
             CreateSimpleType();
-
+            systemModules = ObjectSpace.GetObjectsQuery<SystemModule>().ToList();
+            CreateSystemModule("报表模块", true, false, false,
+                @"C:\Program Files (x86)\DevExpress 18.2\Components\Bin\Framework\DevExpress.ExpressApp.ReportsV2.v18.2.dll",
+                @"C:\Program Files (x86)\DevExpress 18.2\Components\Bin\Framework\DevExpress.ExpressApp.ReportsV2.Win.v18.2.dll"
+            );
+            ObjectSpace.CommitChanges();
             //var first = ObjectSpace.GetObjectsQuery<Project>().FirstOrDefault();
             //if(first == null)
             //{
@@ -44,7 +49,25 @@ namespace CIIP.Module.DatabaseUpdate {
             CIIPDesignerModule.IsNewVersion = true;
         }
 
+        private void CreateSystemModule(string name, bool win, bool web, bool mobile, params string[] file)
+        {
+            var obj = systemModules.SingleOrDefault(x => x.Name == name);
+            if(obj == null)
+            {
+                obj = ObjectSpace.CreateObject<SystemModule>();
+                obj.Name = name;
+                obj.Web = web;
+                obj.Win = win;
+                obj.Mobile = mobile;
 
+                foreach (var item in file)
+                {
+                    var f = ObjectSpace.CreateObject<SystemModuleFile>();
+                    f.File = item;
+                    obj.Files.Add(f);
+                }
+            }
+        }
 
         private void CreateSimpleType()
         {

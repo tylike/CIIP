@@ -9,6 +9,7 @@ using CIIP.ProjectManager;
 using DevExpress.ExpressApp.Win.Utils;
 using DevExpress.LookAndFeel;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace CIIP.Win
 {
@@ -80,4 +81,15 @@ namespace CIIP.Win
             
         }
     }
+
+    public class B1
+    {
+        public string Name { get; set; }
+    }
+
+    public class B2:B1
+    {
+        public string Address { get; set; }
+    }
+
 }
