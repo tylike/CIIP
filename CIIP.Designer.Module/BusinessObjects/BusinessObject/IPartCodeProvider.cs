@@ -1,4 +1,4 @@
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     /// <summary>
     /// 是否是局部代码

@@ -14,8 +14,8 @@ using DevExpress.ExpressApp.Utils;
 using System.Collections.Generic;
 using CIIP.Module.BusinessObjects;
 using CIIP.Module.BusinessObjects.SYS;
-using CIIP.ProjectManager;
 using CIIP.Module.Controllers;
+using CIIP.Designer;
 
 namespace CIIP.Module.DatabaseUpdate {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/clsDevExpressExpressAppUpdatingModuleUpdatertopic.aspx

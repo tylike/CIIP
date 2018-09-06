@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using DevExpress.ExpressApp.DC;
 using Microsoft.CodeAnalysis;
 
-namespace CIIP.Module.BusinessObjects.SYS.Logic
+namespace CIIP.Designer
 {
     /// <summary>
     /// ÓÃÓÚc#´úÂë±à¼­

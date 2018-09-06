@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIPDesigner
 {
     public class BusinessBuilder
     {

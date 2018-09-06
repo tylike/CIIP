@@ -6,7 +6,7 @@ using System.Linq;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     public class CollectionProperty : PropertyBase
     {

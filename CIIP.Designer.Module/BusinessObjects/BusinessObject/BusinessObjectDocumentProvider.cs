@@ -5,8 +5,15 @@ using System.Linq;
 using System;
 using System.Text;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
+    public static class StringBuilderExtend
+    {
+        public static void ModelDefault(this StringBuilder self, string name,string value)
+        {
+            self.Append($"\t\t[ModelDefault(\"{name}\",\"{value}\")]");
+        }
+    }
     public partial class BusinessObject : IDocumentProvider
     {
         public Guid GetDocumentGuid()
@@ -22,7 +29,7 @@ namespace CIIP.Module.BusinessObjects.SYS
         public string GetCode()
         {
             var rst = new StringBuilder();
-
+            var True = "True";
             #region using
             rst.Append(BusinessObjectCodeGenerateExtendesion.CommonUsing());
 
@@ -47,12 +54,12 @@ namespace CIIP.Module.BusinessObjects.SYS
 
             if (IsCloneable.HasValue && IsCloneable.Value)
             {
-                rst.AppendLine("\t[ModelDefault(\"Cloneable\",\"True\")]");
+                rst.ModelDefault("Cloneable", True);
             }
 
             if (IsCreatableItem.HasValue && IsCreatableItem.Value)
             {
-                rst.AppendLine("\t[ModelDefault(\"Createable\",\"True\")]");
+                rst.ModelDefault("Createable", True);
             }
 
             if (IsVisibileInReports.HasValue && IsVisibileInReports.Value)
@@ -63,12 +70,12 @@ namespace CIIP.Module.BusinessObjects.SYS
             rst.AppendLine("\t[NavigationItem]");
             if (Caption != Name)
             {
-                rst.AppendLine($"\t[ModelDefault(\"Caption\",\"{this.Caption}\")]");
+                rst.ModelDefault(nameof(Caption), Caption);
             }
             #endregion
 
             rst.Append($"\tpublic ");
-            if (this.DomainObjectModifier != SYS.Modifier.None)
+            if (this.DomainObjectModifier != BusinessObjectModifier.None)
             {
                 rst.Append($"{ DomainObjectModifier.ToString().ToLower()} ");
             }
@@ -158,7 +165,7 @@ $@"     public {type} {name}
                 }
                 if (item.Caption != item.Name)
                 {
-                    rst.AppendLine($"\t\t[ModelDefault(\"Caption\",\"{item.Caption}\")]");
+                    rst.ModelDefault("Caption", item.Caption);
                 }
                 ProcessPropertyBase(rst, item);
                 if (item.RelationProperty != null)
@@ -166,6 +173,8 @@ $@"     public {type} {name}
                     var assName = string.Format("{0}_{1}", item.RelationProperty.Name, item.Name);
                     rst.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, assName);
                 }
+
+
 
 
                 rst.Append(propertyTemplate(pt, item.Name));
@@ -190,12 +199,12 @@ $@"     public {type} {name}
             }
             #endregion
 
-            #region 业务逻辑处理
-            foreach (var method in Methods)
-            {
-                rst.AppendLine(method.MethodDefineCode);
-            }
-            #endregion
+            //#region 业务逻辑处理
+            //foreach (var method in Methods)
+            //{
+            //    rst.AppendLine(method.MethodDefineCode);
+            //}
+            //#endregion
 
             #region 结束
             //end class
@@ -227,40 +236,40 @@ $@"     public {type} {name}
                 code.AppendFormat("\t\t[{0}(false)]\n", typeof(BrowsableAttribute).FullName);
             }
 
-            //if (property.AllowEdit.HasValue && !property.AllowEdit.Value)
-            //{
-            //    code.AppendFormat("\t\t[ModelDefault(\"AllowEdit\",\"false\")]\n");
-            //}
+            if (property.AllowEdit.HasValue && !property.AllowEdit.Value)
+            {
+                code.ModelDefault(nameof(property.AllowEdit), "False");
+            }
 
-            //if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
-            //{
-            //    code.AppendFormat("\t\t[ImmediatePostData]\n");
-            //}
+            if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
+            {
+                code.AppendFormat("\t\t[ImmediatePostData]\n");
+            }
 
-            //if (!string.IsNullOrEmpty(property.DisplayFormat))
-            //{
-            //    code.AppendFormat("\t\t[ModelDefault(\"DisplayFormat\",\"{0}\")]\n", property.DisplayFormat);
-            //}
+            if (!string.IsNullOrEmpty(property.DisplayFormat))
+            {
+                code.ModelDefault("DisplayFormat", property.DisplayFormat);
+            }
 
-            //if (!string.IsNullOrEmpty(property.EditMask))
-            //{
-            //    code.AppendFormat("\t\t[ModelDefault(\"EditMask\",\"{0}\")]\n", property.EditMask);
-            //}
+            if (!string.IsNullOrEmpty(property.EditMask))
+            {
+                code.AppendFormat("EditMask", property.EditMask);
+            }
 
-            //if (property.Range != null)
-            //{
-            //    code.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
-            //}
+            if (property.Range != null)
+            {
+                code.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
+            }
 
-            //if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
-            //{
-            //    code.AppendFormat("\t\t[RuleRequiredField]\n");
-            //}
+            if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
+            {
+                code.AppendFormat("\t\t[RuleRequiredField]\n");
+            }
 
-            //if (property.UniqueValue.HasValue && property.UniqueValue.Value)
-            //{
-            //    code.AppendFormat("\t\t[RuleUniqueValue]\n");
-            //}
+            if (property.UniqueValue.HasValue && property.UniqueValue.Value)
+            {
+                code.AppendFormat("\t\t[RuleUniqueValue]\n");
+            }
         }
     }
 

@@ -553,13 +553,11 @@
     </DetailView>
     <DetailView Id="Project_DetailView">
       <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="NameObject" Index="0">
-              <LayoutItem Id="ProjectPath" ViewItem="ProjectPath" ShowCaption="" Index="1" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="WebApplication" Index="1" ShowCaption="True" Caption="Web Application" IsNewNode="True">
-              <LayoutItem Id="WebProjectPath" ViewItem="WebProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="5.6387665198237888">
+            <LayoutGroup Id="NameObject" Index="0" RelativeSize="100">
+              <LayoutItem Id="Name" RelativeSize="51.5625" />
+              <LayoutItem Id="ProjectPath" ViewItem="ProjectPath" ShowCaption="" Index="1" RelativeSize="48.4375" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="Project" Index="3" Removed="True">
               <LayoutGroup Id="Project_col1">
@@ -573,50 +571,77 @@
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" Direction="Horizontal" Index="4" Removed="True" />
           </LayoutGroup>
-          <TabbedGroup Id="Tabs">
-            <LayoutGroup Id="Win" Index="0" ShowCaption="True" IsNewNode="True">
-              <LayoutItem Id="WinProjectPath" ViewItem="WinProjectPath" ShowCaption="" Index="0" IsNewNode="True" />
-              <LayoutItem Id="WinStartupFile" ViewItem="WinStartupFile" ShowCaption="" Index="1" IsNewNode="True" />
-              <LayoutGroup Id="ReferencedModules" Index="2" ShowCaption="True" IsNewNode="True">
-                <LayoutItem Id="ReferencedModules" ViewItem="ReferencedModules" ShowCaption="False" Index="0" IsNewNode="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="Modules" Index="3" ShowCaption="True" IsNewNode="True">
-                <LayoutItem Id="Modules" ViewItem="Modules" ShowCaption="False" Index="0" IsNewNode="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="SystemModules" ShowCaption="False" Direction="Vertical" Index="4" Caption="Win Audit Trail" IsNewNode="True">
-                <LayoutItem Id="WinAuditTrail" ViewItem="WinAuditTrail" Index="0" IsNewNode="True" />
-                <LayoutItem Id="WinOffice" ViewItem="WinOffice" Index="1" IsNewNode="True" />
-                <LayoutItem Id="WinTreeListEditor" ViewItem="WinTreeListEditor" Index="2" IsNewNode="True" />
-                <LayoutItem Id="WinValidation" ViewItem="WinValidation" Index="3" IsNewNode="True" />
-                <LayoutItem Id="WinViewVariant" ViewItem="WinViewVariant" Index="4" IsNewNode="True" />
-                <LayoutItem Id="WinPivotChart" ViewItem="WinPivotChart" Index="5" IsNewNode="True" />
-                <LayoutItem Id="WinStateMachine" ViewItem="WinStateMachine" Index="6" IsNewNode="True" />
-                <LayoutItem Id="WinNotifications" ViewItem="WinNotifications" Index="7" IsNewNode="True" />
-                <LayoutItem Id="WinPivotGrid" ViewItem="WinPivotGrid" Index="8" IsNewNode="True" />
-                <LayoutItem Id="WinReport" ViewItem="WinReport" Index="9" IsNewNode="True" />
-                <LayoutItem Id="WinHtmlPropertyEditor" ViewItem="WinHtmlPropertyEditor" Index="10" IsNewNode="True" />
-                <LayoutItem Id="WinKPI" ViewItem="WinKPI" Index="11" IsNewNode="True" />
-                <LayoutItem Id="WinConditionalAppearance" ViewItem="WinConditionalAppearance" Index="12" IsNewNode="True" />
-                <LayoutItem Id="WinFileAttachment" ViewItem="WinFileAttachment" Index="13" IsNewNode="True" />
-                <LayoutItem Id="WinDashboard" ViewItem="WinDashboard" Index="14" IsNewNode="True" />
-                <LayoutItem Id="WinClone" ViewItem="WinClone" Index="15" IsNewNode="True" />
-                <LayoutItem Id="WinChart" ViewItem="WinChart" Index="16" IsNewNode="True" />
-                <LayoutItem Id="WinScheduler" ViewItem="WinScheduler" IsNewNode="True" />
-              </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="51.277533039647579">
+            <LayoutGroup Id="Win" Index="0" ShowCaption="True" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="WinProjectPath" ViewItem="WinProjectPath" ShowCaption="" Index="0" RelativeSize="6.0109289617486334" IsNewNode="True" />
+              <LayoutItem Id="WinStartupFile" ViewItem="WinStartupFile" ShowCaption="" Index="1" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <TabbedGroup Id="Tab" Index="2" RelativeSize="89.617486338797818" IsNewNode="True">
+                <LayoutGroup Id="SystemModules" ShowCaption="True" Index="0" Caption="系统模块" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="WinAuditTrail" ViewItem="WinAuditTrail" Index="0" RelativeSize="7.3660714285714288" IsNewNode="True" />
+                  <LayoutItem Id="WinOffice" ViewItem="WinOffice" Index="1" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinTreeListEditor" ViewItem="WinTreeListEditor" Index="2" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinValidation" ViewItem="WinValidation" Index="3" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinViewVariant" ViewItem="WinViewVariant" Index="4" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinPivotChart" ViewItem="WinPivotChart" Index="5" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinStateMachine" ViewItem="WinStateMachine" Index="6" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinNotifications" ViewItem="WinNotifications" Index="7" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinPivotGrid" ViewItem="WinPivotGrid" Index="8" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinReport" ViewItem="WinReport" Index="9" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinHtmlPropertyEditor" ViewItem="WinHtmlPropertyEditor" Index="10" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinKPI" ViewItem="WinKPI" Index="11" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinConditionalAppearance" ViewItem="WinConditionalAppearance" Index="12" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinFileAttachment" ViewItem="WinFileAttachment" Index="13" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinDashboard" ViewItem="WinDashboard" Index="14" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinClone" ViewItem="WinClone" Index="15" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinChart" ViewItem="WinChart" Index="16" RelativeSize="5.3571428571428568" IsNewNode="True" />
+                  <LayoutItem Id="WinScheduler" ViewItem="WinScheduler" Index="17" RelativeSize="6.9196428571428568" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="ReferencedModules" Index="1" ShowCaption="True" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="ReferencedModules" ViewItem="ReferencedModules" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Modules" Index="2" ShowCaption="True" RelativeSize="100" IsNewNode="True">
+                  <LayoutItem Id="Modules" ViewItem="Modules" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+              </TabbedGroup>
             </LayoutGroup>
-            <LayoutGroup Id="Web" ShowCaption="True" Direction="Horizontal" Index="1" IsNewNode="True" />
+            <LayoutGroup Id="Web" ShowCaption="True" Direction="Vertical" Index="1" Caption="Web" RelativeSize="100" IsNewNode="True">
+              <LayoutItem Id="WebProjectPath" ViewItem="WebProjectPath" ShowCaption="" Index="0" RelativeSize="6.0109289617486334" IsNewNode="True" />
+              <LayoutItem Id="WebDashboard" ViewItem="WebDashboard" Index="1" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebHtmlPropertyEditor" ViewItem="WebHtmlPropertyEditor" Index="2" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebKPI" ViewItem="WebKPI" Index="3" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebOffice" ViewItem="WebOffice" Index="4" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebReport" ViewItem="WebReport" Index="5" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebAuditTrail" ViewItem="WebAuditTrail" Index="6" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebClone" ViewItem="WebClone" Index="7" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebScheduler" ViewItem="WebScheduler" Index="8" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebViewVariant" ViewItem="WebViewVariant" Index="9" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebTreeListEditor" ViewItem="WebTreeListEditor" Index="10" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebNotifications" ViewItem="WebNotifications" Index="11" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebPivotGrid" ViewItem="WebPivotGrid" Index="12" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebPivotChart" ViewItem="WebPivotChart" Index="13" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebChart" ViewItem="WebChart" Index="14" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebConditionalAppearance" ViewItem="WebConditionalAppearance" Index="15" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebFileAttachment" ViewItem="WebFileAttachment" Index="16" RelativeSize="4.3715846994535523" IsNewNode="True" />
+              <LayoutItem Id="WebStateMachine" ViewItem="WebStateMachine" Index="17" RelativeSize="24.043715846994534" IsNewNode="True" />
+            </LayoutGroup>
             <LayoutGroup Id="Modules" Removed="True" />
             <LayoutGroup Id="ReferencedModules" Removed="True" />
           </TabbedGroup>
-          <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
-            <LayoutItem Id="Creator" ViewItem="Creator" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="Modifier" ViewItem="Modifier" ShowCaption="" Index="1" IsNewNode="True" />
-            <LayoutItem Id="CreateTime" ViewItem="CreateTime" ShowCaption="" Index="2" IsNewNode="True" />
-            <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" ShowCaption="" Index="3" IsNewNode="True" />
+          <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False" RelativeSize="43.083700440528638" IsNewNode="True">
+            <LayoutItem Id="Creator" ViewItem="Creator" ShowCaption="" Index="0" RelativeSize="24.914908100748807" IsNewNode="True" />
+            <LayoutItem Id="Modifier" ViewItem="Modifier" ShowCaption="" Index="1" RelativeSize="24.914908100748807" IsNewNode="True" />
+            <LayoutItem Id="CreateTime" ViewItem="CreateTime" ShowCaption="" Index="2" RelativeSize="24.982981620149761" IsNewNode="True" />
+            <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" ShowCaption="" Index="3" RelativeSize="25.187202178352621" IsNewNode="True" />
           </LayoutGroup>
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <ListView Id="Project_Modules_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="68" />
+        <ColumnInfo Id="OutputPath" Width="166" />
+      </Columns>
+    </ListView>
     <DetailView Id="Property_DetailView">
       <Layout>
         <LayoutGroup Id="Main">

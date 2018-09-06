@@ -21,6 +21,7 @@ using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
+using CIIP.Designer;
 
 namespace CIIP.Module.Controllers
 {
@@ -211,11 +212,11 @@ namespace CIIP.Module.Controllers
                 t.Caption = caption;
                 t.Description = description;
                 t.FullName = type.FullName;
-                t.DomainObjectModifier = Modifier.None;
+                t.DomainObjectModifier = BusinessObjectModifier.None;
                 if (type.IsAbstract)
-                    t.DomainObjectModifier = Modifier.Abstract;
+                    t.DomainObjectModifier = BusinessObjectModifier.Abstract;
                 if (type.IsSealed)
-                    t.DomainObjectModifier = Modifier.Sealed;
+                    t.DomainObjectModifier = BusinessObjectModifier.Sealed;
 
                 //t.CanCustomLogic = typeof(ICustomLogic).IsAssignableFrom(type);
                 

@@ -10,7 +10,7 @@ using CIIP.Persistent.BaseImpl;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [XafDisplayName("类型")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
@@ -20,11 +20,11 @@ namespace CIIP.Module.BusinessObjects.SYS
         #region modifier
         [XafDisplayName("继承设置")]
         [ToolTip("可以设置为无,抽象,密封的")]
-        public virtual Modifier DomainObjectModifier
+        public virtual BusinessObjectModifier DomainObjectModifier
         {
             get
             {
-                return GetPropertyValue<Modifier>(nameof(DomainObjectModifier));
+                return GetPropertyValue<BusinessObjectModifier>(nameof(DomainObjectModifier));
             }
             set
             {

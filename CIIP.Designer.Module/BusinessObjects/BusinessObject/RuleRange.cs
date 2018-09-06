@@ -2,7 +2,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     public class RuleRange:BaseObject
     {

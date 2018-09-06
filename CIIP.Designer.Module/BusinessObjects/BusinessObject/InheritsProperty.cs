@@ -1,6 +1,6 @@
 using DevExpress.ExpressApp.DC;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [XafDisplayName("ºÃ≥– Ù–‘")]
     [DomainComponent]

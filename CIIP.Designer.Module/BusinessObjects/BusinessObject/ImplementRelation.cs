@@ -3,7 +3,7 @@ using DevExpress.Persistent.BaseImpl;
 using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
 
     /// <summary>

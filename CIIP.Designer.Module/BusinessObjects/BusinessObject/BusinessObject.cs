@@ -12,17 +12,8 @@ using System.Collections.Generic;
 using CIIP.Module.BusinessObjects.SYS.Logic;
 using CIIP;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
-    public enum Modifier
-    {
-        [XafDisplayName("普通")]
-        None,
-        [XafDisplayName("抽象 - 必须被继承")]
-        Abstract,
-        [XafDisplayName("密封 - 不可以被继承")]
-        Sealed
-    }
 
     [XafDefaultProperty("Caption")]
     [XafDisplayName("用户业务")]
@@ -62,15 +53,15 @@ namespace CIIP.Module.BusinessObjects.SYS
         }
 
         #region logic method
-        [Association, DevExpress.Xpo.Aggregated]
-        [XafDisplayName("业务逻辑")]
-        public XPCollection<BusinessObjectEvent> Methods
-        {
-            get
-            {
-                return GetCollection<BusinessObjectEvent>("Methods");
-            }
-        }
+        //[Association, DevExpress.Xpo.Aggregated]
+        //[XafDisplayName("业务逻辑")]
+        //public XPCollection<BusinessObjectEvent> Methods
+        //{
+        //    get
+        //    {
+        //        return GetCollection<BusinessObjectEvent>("Methods");
+        //    }
+        //}
         #endregion
 
         #endregion
@@ -112,26 +103,6 @@ namespace CIIP.Module.BusinessObjects.SYS
         [Browsable(false)]
         public int CreateIndex { get; set; }
 
-        #endregion
-
-        #region 导航设置
-        List<NavigationItem> NavigationItemDataSources
-        {
-            get
-            {
-                return ModelDataSource.NavigationItemDataSources;
-            }
-        }
-
-        private NavigationItem _NavigationItem;
-        [ValueConverter(typeof(ModelNavigationToStringConverter))]
-        [DataSourceProperty("NavigationItemDataSources")]
-        [XafDisplayName("导航")]
-        public NavigationItem NavigationItem
-        {
-            get { return _NavigationItem; }
-            set { SetPropertyValue("NavigationItem", ref _NavigationItem, value); }
-        }
         #endregion
         
         #region ctor

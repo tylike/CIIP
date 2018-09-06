@@ -2,7 +2,7 @@
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [DefaultClassOptions]
     [XafDisplayName("接口定义")]
@@ -13,7 +13,7 @@ namespace CIIP.Module.BusinessObjects.SYS
 
         }
 
-        public override Modifier DomainObjectModifier { get => SYS.Modifier.Abstract; set { } }
+        public override BusinessObjectModifier DomainObjectModifier { get => BusinessObjectModifier.Abstract; set { } }
 
         //[Association,XafDisplayName("实现业务"),ToolTip("以下业务实现了本接口")]
         //public XPCollection<BusinessObjectBase> Implements

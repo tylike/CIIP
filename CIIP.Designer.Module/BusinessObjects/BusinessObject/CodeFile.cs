@@ -3,7 +3,7 @@ using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.Xpo;
 using CIIP.Persistent.BaseImpl;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     public abstract class CodeFile : NameObject, IDocumentProvider
     {

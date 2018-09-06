@@ -1,7 +1,7 @@
 using System;
 using DevExpress.Xpo.Metadata;
 
-namespace CIIP.Module.BusinessObjects.SYS.Logic
+namespace CIIP.Designer
 {
     public class CSharpCodeToStringConverter : ValueConverter
     {

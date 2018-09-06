@@ -2,7 +2,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [XafDisplayName("¼òµ¥ÀàÐÍ")]
     [DefaultClassOptions]
@@ -12,6 +12,6 @@ namespace CIIP.Module.BusinessObjects.SYS
         {
         }
 
-        public override Modifier DomainObjectModifier { get => SYS.Modifier.Sealed; set { } }
+        public override BusinessObjectModifier DomainObjectModifier { get => Designer.BusinessObjectModifier.Sealed; set { } }
     }
 }

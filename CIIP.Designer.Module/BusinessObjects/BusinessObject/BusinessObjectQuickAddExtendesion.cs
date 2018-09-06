@@ -1,7 +1,7 @@
 ﻿using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.Data.Filtering;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     public static class BusinessObjectQuickAddExtendesion
     {
@@ -35,69 +35,7 @@ namespace CIIP.Module.BusinessObjects.SYS
             cp.RelationProperty = relation;
             return cp;
         }
-
-        public static ObjectAfterConstruction AddAfterConstruction(this BusinessObject self, string code)
-        {
-            var after = new ObjectAfterConstruction(self.Session);
-            after.SetCode(code);
-            self.Methods.Add(after);
-            return after;
-        }
-
-        public static ObjectSavingEvent AddSavingEvent(this BusinessObject self, string code)
-        {
-            var after = new ObjectSavingEvent(self.Session);
-            after.SetCode(code);
-            self.Methods.Add(after);
-            return after;
-        }
-
-        public static ObjectDeletingEvent AddDeletingEvent(this BusinessObject self, string code)
-        {
-            var after = new ObjectDeletingEvent(self.Session);
-            after.SetCode(code);
-            self.Methods.Add(after);
-            return after;
-        }
-
-        public static ObjectPropertyChangedEvent AddPropertyChangedEvent(this BusinessObject self, string code)
-        {
-            var after = new ObjectPropertyChangedEvent(self.Session);
-            after.SetCode(code);
-            self.Methods.Add(after);
-            return after;
-        }
-        public static ObjectSavedEvent AddObjectSavedEvent(this BusinessObject self, string code)
-        {
-            var after = new ObjectSavedEvent(self.Session);
-            after.SetCode(code);
-            self.Methods.Add(after);
-            return after;
-        }
-
-        public static BusinessObjectPartialLogic AddPartialLogic(this BusinessObject self, string code,string usingBlock = null)
-        {
-            var logic = new BusinessObjectPartialLogic(self.Session);
-            logic.BusinessObject = self;
-            if (usingBlock == null)
-            {
-                code = BusinessObjectCodeGenerateExtendesion.CommonUsing() + code;
-            }
-            logic.Code = new CsharpCode(code, logic);
-            return logic;
-        }
-
-        public static BusinessObjectLayout AddLayout(this BusinessObject self, string code, string usingBlock = null)
-        {
-            var logic = new BusinessObjectLayout(self.Session);
-            logic.BusinessObject = self;
-            if (usingBlock == null)
-            {
-                code = BusinessObjectCodeGenerateExtendesion.CommonUsing() + code;
-            }
-            logic.Code = new CsharpCode(code, logic);
-            return logic;
-        }
+        
 
         #endregion
     }

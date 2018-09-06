@@ -10,7 +10,7 @@ using System.IO;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace CIIP.ProjectManager
+namespace CIIP.Designer
 {
     //系统起动后,必须选择一个项目才可以继续.
     //启动按钮:
@@ -206,6 +206,7 @@ namespace CIIP.ProjectManager
         }
 
         [JsonProperty]
+        [XafDisplayName("报表模块")]
         public bool WinReport
         {
             get { return GetPropertyValue<bool>(nameof(WinReport)); }
@@ -218,84 +219,102 @@ namespace CIIP.ProjectManager
             set { SetPropertyValue(nameof(WinValidation), value); }
         }
         [JsonProperty]
+        [XafDisplayName("变更记录")]
         public bool WinAuditTrail
         {
             get { return GetPropertyValue<bool>(nameof(WinAuditTrail)); }
             set { SetPropertyValue(nameof(WinAuditTrail), value); }
         }
         [JsonProperty]
+        [XafDisplayName("图表列表")]
         public bool WinChart
         {
             get { return GetPropertyValue<bool>(nameof(WinChart)); }
             set { SetPropertyValue(nameof(WinChart), value); }
         }
         [JsonProperty]
+        [XafDisplayName("克隆模块")]
         public bool WinClone
         {
             get { return GetPropertyValue<bool>(nameof(WinClone)); }
             set { SetPropertyValue(nameof(WinClone), value); }
         }
         [JsonProperty]
+        [XafDisplayName("外观控制")]
         public bool WinConditionalAppearance
         {
             get { return GetPropertyValue<bool>(nameof(WinConditionalAppearance)); }
             set { SetPropertyValue(nameof(WinConditionalAppearance), value); }
         }
         [JsonProperty]
+        [XafDisplayName("Dashboard")]
         public bool WinDashboard
         {
             get { return GetPropertyValue<bool>(nameof(WinDashboard)); }
             set { SetPropertyValue(nameof(WinDashboard), value); }
         }
         [JsonProperty]
+        [XafDisplayName("文件附件")]
         public bool WinFileAttachment
         {
             get { return GetPropertyValue<bool>(nameof(WinFileAttachment)); }
             set { SetPropertyValue(nameof(WinFileAttachment), value); }
         }
         [JsonProperty]
+        [XafDisplayName("HTML控件")]
         public bool WinHtmlPropertyEditor
         {
             get { return GetPropertyValue<bool>(nameof(WinHtmlPropertyEditor)); }
             set { SetPropertyValue(nameof(WinHtmlPropertyEditor), value); }
         }
         [JsonProperty]
+        [XafDisplayName("KPI模块")]
         public bool WinKPI
         {
             get { return GetPropertyValue<bool>(nameof(WinKPI)); }
             set { SetPropertyValue(nameof(WinKPI), value); }
         }
         [JsonProperty]
+        [XafDisplayName("提醒模块")]
+
         public bool WinNotifications
         {
             get { return GetPropertyValue<bool>(nameof(WinNotifications)); }
             set { SetPropertyValue(nameof(WinNotifications), value); }
         }
         [JsonProperty]
+        [XafDisplayName("Word编辑")]
         public bool WinOffice
         {
             get { return GetPropertyValue<bool>(nameof(WinOffice)); }
             set { SetPropertyValue(nameof(WinOffice), value); }
         }
         [JsonProperty]
+        [XafDisplayName("透视图表")]
         public bool WinPivotChart
         {
             get { return GetPropertyValue<bool>(nameof(WinPivotChart)); }
             set { SetPropertyValue(nameof(WinPivotChart), value); }
         }
+
         [JsonProperty]
+        [XafDisplayName("透视列表")]
         public bool WinPivotGrid
+
         {
             get { return GetPropertyValue<bool>(nameof(WinPivotGrid)); }
             set { SetPropertyValue(nameof(WinPivotGrid), value); }
         }
         [JsonProperty]
+        [XafDisplayName("状态机")]
         public bool WinStateMachine
         {
             get { return GetPropertyValue<bool>(nameof(WinStateMachine)); }
             set { SetPropertyValue(nameof(WinStateMachine), value); }
         }
         [JsonProperty]
+        [XafDisplayName("树形列表")]
+
         public bool WinTreeListEditor
         {
             get { return GetPropertyValue<bool>(nameof(WinTreeListEditor)); }
@@ -303,6 +322,8 @@ namespace CIIP.ProjectManager
         }
 
         [JsonProperty]
+        [XafDisplayName("视图切换")]
+
         public bool WinViewVariant
         {
             get { return GetPropertyValue<bool>(nameof(WinViewVariant)); }
@@ -310,10 +331,141 @@ namespace CIIP.ProjectManager
         }
 
         [JsonProperty]
+        [XafDisplayName("日程安排")]
         public bool WinScheduler
         {
             get { return GetPropertyValue<bool>(nameof(WinScheduler)); }
             set { SetPropertyValue(nameof(WinScheduler), value); }
+        }
+
+
+
+        [JsonProperty]
+        [XafDisplayName("报表模块")]
+        public bool WebReport
+        {
+            get { return GetPropertyValue<bool>(nameof(WebReport)); }
+            set { SetPropertyValue(nameof(WebReport), value); }
+        }
+
+        [JsonProperty]
+        [XafDisplayName("变更记录")]
+        public bool WebAuditTrail
+        {
+            get { return GetPropertyValue<bool>(nameof(WebAuditTrail)); }
+            set { SetPropertyValue(nameof(WebAuditTrail), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("图表列表")]
+        public bool WebChart
+        {
+            get { return GetPropertyValue<bool>(nameof(WebChart)); }
+            set { SetPropertyValue(nameof(WebChart), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("克隆模块")]
+        public bool WebClone
+        {
+            get { return GetPropertyValue<bool>(nameof(WebClone)); }
+            set { SetPropertyValue(nameof(WebClone), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("外观控制")]
+        public bool WebConditionalAppearance
+        {
+            get { return GetPropertyValue<bool>(nameof(WebConditionalAppearance)); }
+            set { SetPropertyValue(nameof(WebConditionalAppearance), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("Dashboard")]
+        public bool WebDashboard
+        {
+            get { return GetPropertyValue<bool>(nameof(WebDashboard)); }
+            set { SetPropertyValue(nameof(WebDashboard), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("文件附件")]
+        public bool WebFileAttachment
+        {
+            get { return GetPropertyValue<bool>(nameof(WebFileAttachment)); }
+            set { SetPropertyValue(nameof(WebFileAttachment), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("HTML控件")]
+        public bool WebHtmlPropertyEditor
+        {
+            get { return GetPropertyValue<bool>(nameof(WebHtmlPropertyEditor)); }
+            set { SetPropertyValue(nameof(WebHtmlPropertyEditor), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("KPI模块")]
+        public bool WebKPI
+        {
+            get { return GetPropertyValue<bool>(nameof(WebKPI)); }
+            set { SetPropertyValue(nameof(WebKPI), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("提醒模块")]
+
+        public bool WebNotifications
+        {
+            get { return GetPropertyValue<bool>(nameof(WebNotifications)); }
+            set { SetPropertyValue(nameof(WebNotifications), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("Word编辑")]
+        public bool WebOffice
+        {
+            get { return GetPropertyValue<bool>(nameof(WebOffice)); }
+            set { SetPropertyValue(nameof(WebOffice), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("透视图表")]
+        public bool WebPivotChart
+        {
+            get { return GetPropertyValue<bool>(nameof(WebPivotChart)); }
+            set { SetPropertyValue(nameof(WebPivotChart), value); }
+        }
+
+        [JsonProperty]
+        [XafDisplayName("透视列表")]
+        public bool WebPivotGrid
+
+        {
+            get { return GetPropertyValue<bool>(nameof(WebPivotGrid)); }
+            set { SetPropertyValue(nameof(WebPivotGrid), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("状态机")]
+        public bool WebStateMachine
+        {
+            get { return GetPropertyValue<bool>(nameof(WebStateMachine)); }
+            set { SetPropertyValue(nameof(WebStateMachine), value); }
+        }
+        [JsonProperty]
+        [XafDisplayName("树形列表")]
+
+        public bool WebTreeListEditor
+        {
+            get { return GetPropertyValue<bool>(nameof(WebTreeListEditor)); }
+            set { SetPropertyValue(nameof(WebTreeListEditor), value); }
+        }
+
+        [JsonProperty]
+        [XafDisplayName("视图切换")]
+
+        public bool WebViewVariant
+        {
+            get { return GetPropertyValue<bool>(nameof(WebViewVariant)); }
+            set { SetPropertyValue(nameof(WebViewVariant), value); }
+        }
+
+        [JsonProperty]
+        [XafDisplayName("日程安排")]
+        public bool WebScheduler
+        {
+            get { return GetPropertyValue<bool>(nameof(WebScheduler)); }
+            set { SetPropertyValue(nameof(WebScheduler), value); }
         }
     }
 

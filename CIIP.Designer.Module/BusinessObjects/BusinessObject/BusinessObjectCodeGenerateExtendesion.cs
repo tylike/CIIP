@@ -1,4 +1,4 @@
-﻿namespace CIIP.Module.BusinessObjects.SYS
+﻿namespace CIIP.Designer
 {
     public static class BusinessObjectCodeGenerateExtendesion
     {

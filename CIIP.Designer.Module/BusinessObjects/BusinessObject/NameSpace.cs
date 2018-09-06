@@ -9,7 +9,7 @@ using DevExpress.Xpo;
 using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Utils;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [XafDisplayName("业务分类")]
     public class Namespace : NameObject, ITreeNode,ITreeNodeImageProvider

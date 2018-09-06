@@ -4,12 +4,8 @@ using System.Diagnostics;
 using System.Linq;
 using System.Reflection;
 using System.Text;
-using CIIP.Module.BusinessObjects.SYS;
-using CIIP.Module.BusinessObjects.SYS.BOBuilder;
-using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
-using CIIP;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Emit;
@@ -20,7 +16,8 @@ using System.Windows.Media.Imaging;
 using ICSharpCode.AvalonEdit.CodeCompletion;
 using System.Windows.Media;
 using DevExpress.Xpo;
-using cp = CIIP.ProjectManager.Project;
+
+using CIIP.Designer;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -29,7 +26,7 @@ namespace CIIP.Module.Win.Editors
     /// </summary>
     public class SmartIDEWorkspace
     {
-        public static SmartIDEWorkspace GetIDE(IObjectSpace os,cp project)
+        public static SmartIDEWorkspace GetIDE(IObjectSpace os,CIIP.Designer.Project project)
         {
             return new SmartIDEWorkspace(os,project);
             //if (Instance == null)
@@ -39,7 +36,7 @@ namespace CIIP.Module.Win.Editors
             //return Instance;
         }
 
-        public cp Project { get; set; }
+        public CIIP.Designer.Project Project { get; set; }
 
         public static SmartIDEWorkspace Instance { get; private set; }
         
@@ -51,7 +48,7 @@ namespace CIIP.Module.Win.Editors
 
         private IObjectSpace objectSpace;
 
-        public SmartIDEWorkspace(IObjectSpace objectSpace,cp project)
+        public SmartIDEWorkspace(IObjectSpace objectSpace,CIIP.Designer.Project project)
         {
             this.Workspace = new AdhocWorkspace();// MSBuildWorkspace.Create();
             this.objectSpace = objectSpace;
@@ -154,23 +151,6 @@ namespace CIIP.Module.Win.Editors
             {
                 CreateDocument(bo);
             }
-
-            var partialLogics = this.objectSpace.GetObjects<BusinessObjectPartialLogic>(null,true);
-            foreach (var logic in partialLogics)
-            {
-                CreateDocument(logic);
-            }
-            
-            var layouts = this.objectSpace.GetObjects<BusinessObjectLayout>();
-            foreach (var item in layouts)
-            {
-                CreateDocument(item);
-            }
-            var controllers = this.objectSpace.GetObjects<RuntimeController>(null,true);
-            foreach (var item in controllers)
-            {
-                CreateDocument(item);
-            }
         }
         
         string AggregatedAttribute = typeof(AggregatedAttribute).FullName;
@@ -188,7 +168,7 @@ namespace CIIP.Module.Win.Editors
 
             #region GetVersion
 
-            var ver = BusinessBuilder.GetVersion(AdmiralEnvironment.UserDefineBusinessFile);
+            Version ver = null;// BusinessBuilder.GetVersion(AdmiralEnvironment.UserDefineBusinessFile);
 
             if (ver != null)
             {
@@ -201,8 +181,8 @@ namespace CIIP.Module.Win.Editors
 
             #endregion
 
-            var str = $"[assembly: {typeof (AssemblyVersionAttribute).FullName}(\"{ver.ToString()}\")]\n";
-            Workspace.AddDocument(ModuleProject.Id, "AssemblyInfo.cs", SourceText.From(str,Encoding.UTF8));
+            var str = $"[assembly: {typeof(AssemblyVersionAttribute).FullName}(\"{ver.ToString()}\")]\n";
+            Workspace.AddDocument(ModuleProject.Id, "AssemblyInfo.cs", SourceText.From(str, Encoding.UTF8));
         }
 
         public void CreateRuntimeModule()

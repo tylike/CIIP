@@ -1,5 +1,4 @@
-﻿using CIIP.ProjectManager;
-using DevExpress.ExpressApp.DC;
+﻿using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
@@ -9,7 +8,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Linq;
 
-namespace CIIP
+namespace CIIP.Designer
 {
 
     //用于加载模型信息

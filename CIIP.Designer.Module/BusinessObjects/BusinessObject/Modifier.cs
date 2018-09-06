@@ -1,21 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using DevExpress.ExpressApp.DC;
 
 namespace CIIP.Designer
 {
-    public interface ITokenService
+    public enum BusinessObjectModifier
     {
-        IEnumerable<TokenItem> GetTokenList(string propertyName);
-    }
-
-    public interface IToken
-    {
-        string Name { get;  }
-        string Oid { get;  }
-    }
-
-    public class TokenItem {
-        public object Value { get; set; }
-        public string Description { get; set; }
+        [XafDisplayName("普通")]
+        None,
+        [XafDisplayName("抽象 - 必须被继承")]
+        Abstract,
+        [XafDisplayName("密封 - 不可以被继承")]
+        Sealed
     }
 
 #warning 需要验证属性名称不可以重名的情况.

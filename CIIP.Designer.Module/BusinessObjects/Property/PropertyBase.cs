@@ -7,7 +7,7 @@ using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 using System.Linq;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [XafDefaultProperty("DisplayName")]    
     public abstract class PropertyBase : NameObject
@@ -179,76 +179,76 @@ namespace CIIP.Module.BusinessObjects.SYS
         //}
 
         #region 允许编辑
-        //private bool? _AllowEdit;
-        //[XafDisplayName("允许编辑")]
-        //public bool? AllowEdit
-        //{
-        //    get { return _AllowEdit; }
-        //    set { SetPropertyValue("AllowEdit", ref _AllowEdit, value); }
-        //}
+        private bool? _AllowEdit;
+        [XafDisplayName("允许编辑")]
+        public bool? AllowEdit
+        {
+            get { return _AllowEdit; }
+            set { SetPropertyValue("AllowEdit", ref _AllowEdit, value); }
+        }
         #endregion
 
         #region 立即回发
-        //private bool? _ImmediatePostData;
-        //[XafDisplayName("立即回发")]
-        //[ToolTip("当属性值发生变化后,立即通知系统,系统可以即时做计算等相关操作,通常用于公式依赖的属性,web中较为常见.")]
-        //public bool? ImmediatePostData
-        //{
-        //    get { return _ImmediatePostData; }
-        //    set { SetPropertyValue("ImmediatePostData", ref _ImmediatePostData, value); }
-        //}
+        private bool? _ImmediatePostData;
+        [XafDisplayName("立即回发")]
+        [ToolTip("当属性值发生变化后,立即通知系统,系统可以即时做计算等相关操作,通常用于公式依赖的属性,web中较为常见.")]
+        public bool? ImmediatePostData
+        {
+            get { return _ImmediatePostData; }
+            set { SetPropertyValue("ImmediatePostData", ref _ImmediatePostData, value); }
+        }
         #endregion
 
         #region 显示与编辑格式
-        //private string _DisplayFormat;
-        //[XafDisplayName("显示格式")]
-        //public string DisplayFormat
-        //{
-        //    get { return _DisplayFormat; }
-        //    set { SetPropertyValue("DisplayFormat", ref _DisplayFormat, value); }
-        //}
+        private string _DisplayFormat;
+        [XafDisplayName("显示格式")]
+        public string DisplayFormat
+        {
+            get { return _DisplayFormat; }
+            set { SetPropertyValue("DisplayFormat", ref _DisplayFormat, value); }
+        }
 
-        //private string _EditMask;
-        //[XafDisplayName("编辑格式")]
-        //public string EditMask
-        //{
-        //    get { return _EditMask; }
-        //    set { SetPropertyValue("EditMask", ref _EditMask, value); }
-        //}
+        private string _EditMask;
+        [XafDisplayName("编辑格式")]
+        public string EditMask
+        {
+            get { return _EditMask; }
+            set { SetPropertyValue("EditMask", ref _EditMask, value); }
+        }
         #endregion
 
         #region 值范围
-        //private RuleRange _Range;
-        //[XafDisplayName("范围")]
-        //[VisibleInListView(false)]
-        //[ExpandObjectMembers(ExpandObjectMembers.InDetailView)]
-        //public RuleRange Range
-        //{
-        //    get { return _Range; }
-        //    set { SetPropertyValue("Range", ref _Range, value); }
-        //}
+        private RuleRange _Range;
+        [XafDisplayName("范围")]
+        [VisibleInListView(false)]
+        [ExpandObjectMembers(ExpandObjectMembers.InDetailView)]
+        public RuleRange Range
+        {
+            get { return _Range; }
+            set { SetPropertyValue("Range", ref _Range, value); }
+        }
         #endregion
 
         #region 验证
         #region 必填
 
-        //private bool? _RuleRequiredField;
-        //[XafDisplayName("必填")]
-        //public bool? RuleRequiredField
-        //{
-        //    get { return _RuleRequiredField; }
-        //    set { SetPropertyValue("RuleRequiredField", ref _RuleRequiredField, value); }
-        //}
-        //#endregion
+        private bool? _RuleRequiredField;
+        [XafDisplayName("必填")]
+        public bool? RuleRequiredField
+        {
+            get { return _RuleRequiredField; }
+            set { SetPropertyValue("RuleRequiredField", ref _RuleRequiredField, value); }
+        }
+        #endregion
 
-        //#region 唯一
-        //private bool? _UniqueValue;
-        //[XafDisplayName("唯一")]
-        //public bool? UniqueValue
-        //{
-        //    get { return _UniqueValue; }
-        //    set { SetPropertyValue("UniqueValue", ref _UniqueValue, value); }
-        //}
+        #region 唯一
+        private bool? _UniqueValue;
+        [XafDisplayName("唯一")]
+        public bool? UniqueValue
+        {
+            get { return _UniqueValue; }
+            set { SetPropertyValue("UniqueValue", ref _UniqueValue, value); }
+        }
         #endregion
         #endregion 
         #endregion

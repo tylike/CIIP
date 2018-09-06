@@ -2,7 +2,7 @@ using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Xpo;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     [DomainComponent]
     public class Solution

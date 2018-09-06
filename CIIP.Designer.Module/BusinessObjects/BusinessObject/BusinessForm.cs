@@ -3,7 +3,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     //[DefaultClassOptions]
     [XafDisplayName("±íµ¥")]

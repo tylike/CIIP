@@ -4,7 +4,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Xpo;
 
-namespace CIIP
+namespace CIIP.Designer
 {
     [NavigationItem]
     [XafDisplayName("模块定义")]
@@ -26,12 +26,11 @@ namespace CIIP
         }
 
         [XafDisplayName("所属项目"), Association]
-        public ProjectManager.Project Project
+        public Project Project
         {
-            get { return GetPropertyValue<ProjectManager.Project>(nameof(Project)); }
+            get { return GetPropertyValue<Project>(nameof(Project)); }
             set { SetPropertyValue(nameof(Project), value); }
         }
-
 
         [Association]
         public XPCollection<BusinessObjectBase> BusinessObjects

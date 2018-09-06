@@ -15,19 +15,19 @@ namespace CIIP
         {
             var appPath = new FileInfo( new Uri( typeof (AdmiralEnvironment).Assembly.CodeBase).AbsolutePath).Directory.FullName;
             // AppDomain.CurrentDomain.SetupInformation.ApplicationBase;
-            UserDefineBusinessFile = new FileInfo(appPath + "\\Runtime\\BusinessObject\\RuntimeBusinessObject.dll");
-            if (!UserDefineBusinessFile.Exists)
-            {
-                if (!UserDefineBusinessFile.Directory.Exists)
-                {
-                    UserDefineBusinessFile.Directory.Create();
-                }
-                UserDefineBusinessTempFile = UserDefineBusinessFile;
-            }
-            else
-            {
-                UserDefineBusinessTempFile = new FileInfo(appPath + "\\Runtime\\BusinessObject\\RuntimeBusinessObjectTemp.dll");
-            }
+            //UserDefineBusinessFile = new FileInfo(appPath + "\\Runtime\\BusinessObject\\RuntimeBusinessObject.dll");
+            //if (!UserDefineBusinessFile.Exists)
+            //{
+            //    if (!UserDefineBusinessFile.Directory.Exists)
+            //    {
+            //        UserDefineBusinessFile.Directory.Create();
+            //    }
+            //    UserDefineBusinessTempFile = UserDefineBusinessFile;
+            //}
+            //else
+            //{
+            //    UserDefineBusinessTempFile = new FileInfo(appPath + "\\Runtime\\BusinessObject\\RuntimeBusinessObjectTemp.dll");
+            //}
 
             //Runtime = new DirectoryInfo(ApplicationBase + "\\Runtime");
             //UserDefineBusinessDirectoryInfo = new DirectoryInfo(Runtime.FullName + "\\DCD");
@@ -70,15 +70,7 @@ namespace CIIP
             File.WriteAllText(ConnectionStringConfigFileInfo.FullName, connectionString);
         }
 
-        public static string SaveBusinessLogic(FileData value)
-        {
-            var path = UserDefineBusinessFile.Directory.Parent.FullName + "\\" + value.FileName;
-            var stream = File.OpenWrite(path);
-            value.SaveToStream(stream);
-            stream.Flush();
-            stream.Close();
-            return path;
-        }
+
 
         
 
@@ -100,8 +92,7 @@ namespace CIIP
         /// <summary>
         /// 运行时用户定义的业务dll所在中径
         /// </summary>
-        public static FileInfo UserDefineBusinessFile { get; }
-        public static FileInfo UserDefineBusinessTempFile { get; }
+
         
         ///// <summary>
         ///// dc.dll 的名称,保存到这个配置文件中

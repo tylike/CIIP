@@ -1,6 +1,6 @@
 using System;
 
-namespace CIIP.Module.BusinessObjects.SYS
+namespace CIIP.Designer
 {
     public interface IDocumentProvider
     {

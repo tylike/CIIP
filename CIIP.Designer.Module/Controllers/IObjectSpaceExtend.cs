@@ -3,7 +3,7 @@ using CIIP.Module.BusinessObjects.SYS;
 using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp;
 
-namespace CIIP.Module.Controllers
+namespace CIIP.Designer
 {
     public static class IObjectSpaceExtend
     {
