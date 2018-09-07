@@ -12,10 +12,10 @@ using DevExpress.ExpressApp.Win.Controls;
 using DevExpress.ExpressApp.Win.SystemModule;
 using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
-using CIIP.Module.BusinessObjects.SYS;
 
 namespace CIIP.Module.Win.Editors
-{[PropertyEditor(typeof(IRadialMenu), true)]
+{
+    //[PropertyEditor(typeof(IRadialMenu), true)]
     public class RadialMenuPropertyEditor : PropertyEditor, IComplexControl, IComplexViewItem
     {
         private RadialMenu menu;

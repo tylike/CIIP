@@ -1,23 +1,31 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using DevExpress.ExpressApp.ConditionalAppearance;
 using DevExpress.ExpressApp.DC;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 
+namespace CIIP
+{
+    public class Editors
+    {
+        public const string PropertyTypeTokenEditor = "PropertyTypeTokenEditor";
+    }
+}
+
 namespace CIIP.Designer
 {
+
+    [XafDisplayName("0.属性")]
+    [Appearance("SizeIsVisible",TargetItems ="Size",Method = "SizeIsVisible", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
     public class Property : PropertyBase
     {
-        private string _Expression;
 
-        [XafDisplayName("计算公式")]
-        [ToolTip("填正了公式后，此属性将为只读，使用公式进行计算")]
-        public string Expression
+        public static bool SizeIsVisible(Property property)
         {
-            get { return _Expression; }
-            set { SetPropertyValue("Expression", ref _Expression, value); }
+            return property?.PropertyType?.FullName != typeof(string).FullName;
         }
         
         private int _Size;

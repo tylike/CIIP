@@ -4,12 +4,10 @@ using DevExpress.ExpressApp.Actions;
 //using Microsoft.CodeAnalysis;
 using CIIP.Module.Win.Editors;
 using System.Diagnostics;
-using CIIP.Module.BusinessObjects.SYS;
-using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.XtraEditors;
 using System.IO;
 
-namespace CIIP.ProjectManager
+namespace CIIP.Designer
 {
     public class SwitchProjectController : SwitchProjectControllerBase
     {

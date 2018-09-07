@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraEditors;
 using CIIP.Module.BusinessObjects.SYS;
+using CIIP.Designer;
 
 namespace CIIP.Module.Win.Editors
 {

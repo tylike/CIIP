@@ -20,18 +20,6 @@
       </ActionContainer>
     </ActionToContainerMapping>
   </ActionDesign>
-  <BOModel>
-    <Class Name="CIIP.BusinessModuleInfo">
-      <OwnMembers>
-        <Member Name="FullName" PropertyEditorType="CIIP.Common.Win.Editors.ChooseFilePropertyEditor" />
-      </OwnMembers>
-    </Class>
-    <Class Name="CIIP.ProjectManager.Project">
-      <OwnMembers>
-        <Member Name="ProjectPath" PropertyEditorType="CIIP.Common.Win.Editors.ChoosePathPropertyEditor" />
-      </OwnMembers>
-    </Class>
-  </BOModel>
   <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI">
     <Dashboards DashboardGroupCaption="仪表盘" />
   </Options>
@@ -62,6 +50,11 @@
         <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
       </Items>
     </DetailView>
+    <ListView Id="BusinessObjectBase_Properties_ListView">
+      <Columns>
+        <ColumnInfo Id="PropertyType" PropertyEditorType="DevExpress.ExpressApp.Win.Editors.LookupPropertyEditor" />
+      </Columns>
+    </ListView>
     <ListView Id="SimpleType_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor">
       <Columns>
         <ColumnInfo Id="Category" Removed="True" />

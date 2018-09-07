@@ -12,16 +12,18 @@ using DevExpress.Utils;
 using DevExpress.ExpressApp;
 using System.Windows.Forms;
 using CIIP.Designer;
+using CIIP.Module.Win.Editors;
 
-namespace CIIP.Module.Win.Editors
+namespace CIIP.Module.Win
 {
     /// <summary>
     /// 仅用于实现基类+接口控件
     /// </summary>
-    [PropertyEditor(typeof(object), false)]
-    public class GenericPropertyEditor : DXPropertyEditor,IComplexViewItem
+    [PropertyEditor(typeof(object), CIIP.Editors.PropertyTypeTokenEditor)]
+    public class PropertyTypeTokenEditor : DXPropertyEditor,IComplexViewItem
     {
-        public GenericPropertyEditor(Type objectType, IModelMemberViewItem model)
+        
+        public PropertyTypeTokenEditor(Type objectType, IModelMemberViewItem model)
             : base(objectType, model)
         {
             //ControlBindingProperty = "EditValue";
@@ -33,38 +35,42 @@ namespace CIIP.Module.Win.Editors
             {
                 if (CurrentObject != null)
                 {
-                    var values = (this.PropertyValue as IEnumerable).OfType<GenericParameterDefine>().Select(x => x.Name);// as System.ComponentModel.IBindingList;
-                    control.EditValue = string.Join(control.Properties.EditValueSeparatorChar.ToString(), values);
+                    //var values = (this.PropertyValue as IEnumerable).OfType<GenericParameterDefine>().Select(x => x.Name);// as System.ComponentModel.IBindingList;
+                    if (PropertyValue != null)
+                        control.EditValue = (PropertyValue as BusinessObjectBase).Oid.ToString(); //string.Join(control.Properties.EditValueSeparatorChar.ToString(), values);
+                    else
+                        control.EditValue = null;
                 }
             }
         }
 
         protected override void WriteValueCore()
         {
-            
+            var t = control.SelectedItems.FirstOrDefault() as ImplementToken;
+            PropertyValue = t?.BusinessObject;
         }
 
-        BusinessObjectBase _tokenService;
-        BusinessObjectBase tokenService
+        PropertyBase _tokenService;
+        PropertyBase tokenService
         {
             get
             {
                 if (_tokenService == null)
                 {
-                    _tokenService = CurrentObject as BusinessObjectBase;
+                    _tokenService = CurrentObject as PropertyBase;
                     if(_tokenService == null)
                     {
-                        throw new Exception("CurrentObject must be is a BusinessObjectBase!");
+                        throw new Exception("CurrentObject must be is a PropertyBase!");
                     }
                 }
                 return _tokenService;
             }
         }
 
-        TokenEditV2 control;
+        TokenEdit control;
         protected override object CreateControlCore()
         {
-            control = new TokenEditV2();
+            control = new TokenEdit();
             control.DoubleClick += Control_DoubleClick;
             return control;
         }
@@ -83,78 +89,64 @@ namespace CIIP.Module.Win.Editors
             base.SetupRepositoryItem(item);
             this.AllowEdit.RemoveItem("MemberIsNotReadOnly");
             RepositoryItemTokenEdit i = item as RepositoryItemTokenEdit;
-            i.EditMode = TokenEditMode.Manual;
+            i.EditMode = TokenEditMode.TokenList;
             i.ShowDropDown = true;
             i.DropDownShowMode = TokenEditDropDownShowMode.Default;
             i.EditValueSeparatorChar = ',';
             i.PopupPanelOptions.ShowMode = TokenEditPopupPanelShowMode.Default;
             i.PopupPanelOptions.ShowPopupPanel = true;
             i.PopupPanelOptions.Location = TokenEditPopupPanelLocation.Default;
+            i.CheckMode = TokenEditCheckMode.Single;
+            i.ValidateToken += I_ValidateToken;
             var flyoutPanel = new FlyoutPanel();
             flyoutPanel.Width = 500;
             flyoutPanel.Height = 100;
             i.PopupPanel = flyoutPanel;
             i.BeforeShowPopupPanel += I_BeforeShowPopupPanel;
-
+            i.SelectedItemsChanged += (s, e) => { WriteValue(); };
             i.EditValueType = TokenEditValueType.String;
+            if (CurrentObject != null)
+            {
+                var list = tokenService.Session.Query<BusinessObjectBase>().ToArray();
 
-            i.ValidateToken += Control_ValidateToken;
-            i.TokenAdded += I_TokenAdded;
-            i.TokenRemoved += I_TokenRemoved;
-            i.Tokens.ListChanged += Tokens_ListChanged;
+                i.Tokens.AddRange(
+                    list.Select(x => new ImplementToken
+                    {
+                        Value = x.Oid.ToString(),
+                        BusinessObject = x,
+                        Description = x.Caption
+                    }));
+            }
+
+
             i.TokenClick += I_TokenClick;
-            i.DoubleClick += I_DoubleClick;
             i.MaxExpandLines = 10;
             i.MinRowCount = 1;
             
         }
 
-        private void I_DoubleClick(object sender, EventArgs e)
+        private void I_ValidateToken(object sender, TokenEditValidateTokenEventArgs e)
         {
-            XtraMessageBox.Show("double click!");
-
+            
         }
 
         private void I_TokenClick(object sender, TokenEditTokenClickEventArgs e)
         {
             var info = control.CalcHitInfo(control.PointToClient(System.Windows.Forms.Control.MousePosition));
-            control.FlyoutPopupPanelController.ShowPopupPanel(info.TokenInfo);
+            //control.FlyoutPopupPanelController.ShowPopupPanel(info.TokenInfo);
         }
-
-        private void Tokens_ListChanged(object sender, System.ComponentModel.ListChangedEventArgs e)
-        {
-            if (e.ListChangedType == System.ComponentModel.ListChangedType.ItemAdded)
-            {
-                var token = new GenericParameterDefine(tokenService.Session);
-                token.Name = (sender as TokenEditTokenCollection)[e.NewIndex].Description;
-                tokenService.GenericParameterDefines.Add(token);
-                OnValueStored();
-            }
-        }
-
+        
         private void I_BeforeShowPopupPanel(object sender, TokenEditBeforeShowPopupPanelEventArgs e)
         {
-            var value = tokenService.GenericParameterDefines.FirstOrDefault(x=>x.Name == e.Description);
-            if (value != null)
-            {
-                var view = application.CreateDetailView(os, value, false);
-                view.CreateControls();
-                var fp = control.Properties.PopupPanel as FlyoutPanel;
-                fp.Controls.Clear();
-                fp.Controls.Add((Control)view.Control);
-            }
-        }
-
-        private void I_TokenRemoved(object sender, TokenEditTokenRemovedEventArgs e)
-        {
-            var token = tokenService.GenericParameterDefines.FirstOrDefault(x => x.Name == e.Token.Description);
-            tokenService.GenericParameterDefines.Remove(token);
-            OnValueStored();
-        }
-
-        private void I_TokenAdded(object sender, TokenEditTokenAddedEventArgs e)
-        {
-
+            //var value = tokenService.GenericParameterDefines.FirstOrDefault(x=>x.Name == e.Description);
+            //if (value != null)
+            //{
+            //    var view = application.CreateDetailView(os, value, false);
+            //    view.CreateControls();
+            //    var fp = control.Properties.PopupPanel as FlyoutPanel;
+            //    fp.Controls.Clear();
+            //    fp.Controls.Add((Control)view.Control);
+            //}
         }
 
         protected override RepositoryItem CreateRepositoryItem()

@@ -17,9 +17,6 @@ using System.IO;
 using System.Runtime.Serialization.Json;
 using System.Web;
 using System.Xml;
-using CIIP.Module.BusinessObjects.SYS;
-using CIIP.Module.BusinessObjects.SYS.BOBuilder;
-using CIIP.Module.BusinessObjects.SYS.Logic;
 using DevExpress.XtraBars.Docking;
 
 namespace CIIP.Module.Win.Editors

@@ -261,6 +261,7 @@
     <Compile Include="Editors\FrmEditConnectionString.Designer.cs">
       <DependentUpon>FrmEditConnectionString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editors\PropertyTypeTokenEditor.cs" />
     <Compile Include="Editors\GenericPropertyEditor.cs" />
     <Compile Include="Editors\ImplementPropertyEditor.cs" />
     <Compile Include="Editors\ImplementToken.cs" />
@@ -393,6 +394,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes4.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

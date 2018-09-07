@@ -6,12 +6,29 @@ using DevExpress.Xpo;
 using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 using System.Linq;
+using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace CIIP.Designer
 {
-    [XafDefaultProperty("DisplayName")]    
+    [XafDefaultProperty("DisplayName")]
+    [Appearance("PropertyBase.RelationIsEnable", TargetItems = "RelationProperty", Enabled = false,Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide,Method ="RelationIsEnable")]
     public abstract class PropertyBase : NameObject
     {
+        private string _Expression;
+
+        [XafDisplayName("计算公式")]
+        [ToolTip("填正了公式后，此属性将为只读，使用公式进行计算")]
+        public string Expression
+        {
+            get { return _Expression; }
+            set { SetPropertyValue("Expression", ref _Expression, value); }
+        }
+
+        public static bool RelationIsEnable(PropertyBase obj)
+        {
+            return obj != null && obj.PropertyType is SimpleType;
+        }
+        
         #region 所属业务
         [Association]
         public BusinessObjectBase BusinessObject
@@ -33,6 +50,7 @@ namespace CIIP.Designer
         [XafDisplayName("类型"), RuleRequiredField]
         [ImmediatePostData]
         [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
+        [EditorAlias(Editors.PropertyTypeTokenEditor)]
         public BusinessObjectBase PropertyType
         {
             get { return _PropertyType; }

@@ -42,7 +42,7 @@ namespace CIIP.Module.Controllers
             os.CommitChanges();
         }
 
-        public static void CreateSystemTypes(IObjectSpace ObjectSpace,bool deleteExists)
+        public static void CreateSystemTypes(IObjectSpace ObjectSpace, bool deleteExists)
         {
             var objs = ObjectSpace.GetObjectsQuery<BusinessObject>().Where(x => !x.IsRuntimeDefine).ToList(); //(new BinaryOperator("IsRuntimeDefine", false));
             if (!deleteExists && objs.Count > 0)
@@ -55,13 +55,13 @@ namespace CIIP.Module.Controllers
             //第一步,创建出所有基类类型
 
             var exists = ObjectSpace.GetObjects<BusinessObjectBase>(null, true);
-            var types = new List<Type>() { typeof(BaseObject),typeof(XPBaseObject),typeof(XPLiteObject),typeof(XPCustomObject),typeof(XPObject) };
+            var types = new List<Type>() { typeof(BaseObject), typeof(XPBaseObject), typeof(XPLiteObject), typeof(XPCustomObject), typeof(XPObject) };
             var commonBase = CreateNameSpace("常用基类", ObjectSpace);
-            AddBusinessObject(typeof(BaseObject), "BaseObject", commonBase, "主键:GUID,逻辑删除:是,并发锁:是", false, ObjectSpace);
-            AddBusinessObject(typeof(XPBaseObject), "XPBaseObject", commonBase, "主键:无,逻辑删除:是,并发锁:无", false, ObjectSpace);
-            AddBusinessObject(typeof(XPLiteObject), "XPLiteObject", commonBase, "主键:无,逻辑删除:否,并发锁:否", false, ObjectSpace);
-            AddBusinessObject(typeof(XPCustomObject), "XPCustomObject", commonBase, "主键:无,逻辑删除:是,并发锁:是", false, ObjectSpace);
-            AddBusinessObject(typeof(XPObject), "XPObject", commonBase, "主键:int,逻辑删除:是,并发锁:是", false, ObjectSpace);
+            AddBusinessObject(typeof(BaseObject), "BaseObject", commonBase, "主键:GUID,逻辑删除:是,并发锁:是", false, false, ObjectSpace);
+            AddBusinessObject(typeof(XPBaseObject), "XPBaseObject", commonBase, "主键:无,逻辑删除:是,并发锁:无", false, false, ObjectSpace);
+            AddBusinessObject(typeof(XPLiteObject), "XPLiteObject", commonBase, "主键:无,逻辑删除:否,并发锁:否", false, false, ObjectSpace);
+            AddBusinessObject(typeof(XPCustomObject), "XPCustomObject", commonBase, "主键:无,逻辑删除:是,并发锁:是", false, false, ObjectSpace);
+            AddBusinessObject(typeof(XPObject), "XPObject", commonBase, "主键:int,逻辑删除:是,并发锁:是", false, false, ObjectSpace);
             //Class Name  Deferred Deletion   Optimistic Locking  Built -in OID key
             //XPBaseObject - +-
             //XPLiteObject - - -
@@ -73,7 +73,7 @@ namespace CIIP.Module.Controllers
             {
                 var type = ReflectionHelper.FindType(bob.FullName);
 
-                if (type.BaseType != null && type.BaseType != typeof (object))
+                if (type.BaseType != null && type.BaseType != typeof(object))
                 {
                     var fullName = type.BaseType.Namespace + "." + type.BaseType.Name;
 
@@ -106,7 +106,7 @@ namespace CIIP.Module.Controllers
                             gp.ParameterValue = exists.SingleOrDefault(x => x.FullName == item.FullName);
 
                         var att =
-                            item.GetCustomAttributes(typeof (ItemTypeAttribute), false)
+                            item.GetCustomAttributes(typeof(ItemTypeAttribute), false)
                                 .OfType<ItemTypeAttribute>()
                                 .FirstOrDefault();
                         if (att != null)
@@ -200,7 +200,7 @@ namespace CIIP.Module.Controllers
             }
             return find;
         }
-        public static BusinessObject AddBusinessObject(Type type, string caption, Namespace nameSpace, string description, bool isRuntimeDefine,IObjectSpace ObjectSpace)
+        public static BusinessObject AddBusinessObject(Type type, string caption, Namespace nameSpace, string description, bool isRuntimeDefine,bool persistent,IObjectSpace ObjectSpace)
         {
             var t = ObjectSpace.FindObject<BusinessObject>(new BinaryOperator("FullName", type.FullName),true);
             if (t == null)
@@ -212,6 +212,7 @@ namespace CIIP.Module.Controllers
                 t.Caption = caption;
                 t.Description = description;
                 t.FullName = type.FullName;
+                t.IsPersistent = persistent;
                 t.DomainObjectModifier = BusinessObjectModifier.None;
                 if (type.IsAbstract)
                     t.DomainObjectModifier = BusinessObjectModifier.Abstract;

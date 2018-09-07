@@ -22,21 +22,10 @@
       <Action Id="SaveAndClose" Caption="保存关闭" />
       <Action Id="SaveAndNew" Caption="保存新建" />
       <Action Id="ShowAllContexts" Caption="验证" />
-      <Action Id="ShowBusinessObjectLogic" ImageName="whitix" />
-      <Action Id="ShowLayout" ImageName="ModelEditor_Action_Modules" />
       <Action Id="ShowNavigationItem" Caption="导航" />
-      <Action Id="ShowPartialLogic" ImageName="logic" />
       <Action Id="Unlink" Caption="取消链接" />
     </Actions>
   </ActionDesign>
-  <BOModel>
-    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessForm" ImageName="ModelEditor_Views" />
-    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObject" ImageName="Action_Workflow_ShowWorkflowInstances" />
-    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObjectPartialLogic" ImageName="logic" />
-    <Class Name="CIIP.Module.BusinessObjects.SYS.RuntimeController" ImageName="ModelEditor_Controllers" />
-    <Class Name="CIIP.Module.BusinessObjects.SYS.SimpleType" ImageName="PG_Class" />
-    <Class Name="CIIP.ProjectManager.Project" ImageName="BO_Categories" />
-  </BOModel>
   <Options DataAccessMode="Server">
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
@@ -259,48 +248,10 @@
         </TabbedGroup>
       </Layout>
     </DetailView>
-    <DetailView Id="BusinessObject_DetailView_BOLogic" ClassName="CIIP.Module.BusinessObjects.SYS.BusinessObject" IsNewNode="True">
-      <Items IsNewNode="True">
-        <PropertyEditor Id="CanCustomLogic" PropertyName="CanCustomLogic" IsNewNode="True" />
-        <PropertyEditor Id="Caption" PropertyName="Caption" IsNewNode="True" />
-        <PropertyEditor Id="Category" PropertyName="Category" IsNewNode="True" />
-        <PropertyEditor Id="CreateTime" PropertyName="CreateTime" IsNewNode="True" />
-        <PropertyEditor Id="Creator" PropertyName="Creator" IsNewNode="True" />
-        <PropertyEditor Id="Description" PropertyName="Description" IsNewNode="True" />
-        <PropertyEditor Id="IsCloneable" PropertyName="IsCloneable" IsNewNode="True" />
-        <PropertyEditor Id="IsCreatableItem" PropertyName="IsCreatableItem" IsNewNode="True" />
-        <PropertyEditor Id="IsGenericTypeDefine" PropertyName="IsGenericTypeDefine" IsNewNode="True" />
-        <PropertyEditor Id="IsPersistent" PropertyName="IsPersistent" IsNewNode="True" />
-        <PropertyEditor Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" IsNewNode="True" />
-        <PropertyEditor Id="IsVisibileInReports" PropertyName="IsVisibileInReports" IsNewNode="True" />
-        <PropertyEditor Id="Methods" PropertyName="Methods" View="BusinessObject_Methods_ListView" IsNewNode="True" />
-        <PropertyEditor Id="Modifier" PropertyName="Modifier" IsNewNode="True" />
-        <PropertyEditor Id="ModifyTime" PropertyName="ModifyTime" IsNewNode="True" />
-        <PropertyEditor Id="Name" PropertyName="Name" IsNewNode="True" />
-        <PropertyEditor Id="NavigationItem" PropertyName="NavigationItem" IsNewNode="True" />
-        <PropertyEditor Id="Properties" PropertyName="Properties" View="BusinessObject_Properties_ListView" IsNewNode="True" />
-      </Items>
-      <Layout IsNewNode="True">
-        <LayoutGroup Id="Main" Index="0" ShowCaption="False" IsNewNode="True">
-          <LayoutItem Id="Methods" ViewItem="Methods" ShowCaption="False" Index="0" IsNewNode="True" />
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="Name" PropertyName="Name" Index="0" IsNewNode="True" />
         <ColumnInfo Id="Caption" Index="1" />
-      </Columns>
-    </ListView>
-    <ListView Id="BusinessObject_Methods_ListView">
-      <Columns>
-        <ColumnInfo Id="AccessorModifier" Index="-1" />
-        <ColumnInfo Id="CodeName" Index="-1" />
-        <ColumnInfo Id="MethodModifier" Index="-1" />
-        <ColumnInfo Id="ReturnValue" Index="-1" />
-        <ColumnInfo Id="Code" Removed="True" />
-        <ColumnInfo Id="DefaultLocation" Width="160" Removed="True" />
-        <ColumnInfo Id="MethodDefineCode" Width="150" Removed="True" />
       </Columns>
     </ListView>
     <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top">
@@ -317,7 +268,7 @@
     </ListView>
     <ListView Id="BusinessObjectBase_Properties_ListView" MasterDetailMode="ListViewAndDetailView">
       <Columns>
-        <ColumnInfo Id="Name" Width="123" />
+        <ColumnInfo Id="Name" Width="121" />
         <ColumnInfo Id="PropertyType" Width="93" />
         <ColumnInfo Id="DisplayName" Index="2" Width="116" />
         <ColumnInfo Id="Browsable" Index="3" />
@@ -325,54 +276,18 @@
       </Columns>
       <SplitLayout Direction="Vertical" ViewsOrder="DetailViewListView" />
     </ListView>
-    <DetailView Id="BusinessObjectEvent_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="Parameters_Group" Removed="True" />
-          <LayoutGroup Id="SimpleEditors" Removed="True" />
-          <LayoutGroup Id="SizeableEditors" Removed="True" />
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="BusinessObjectLayout_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="CodeFile">
-              <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
-            </LayoutGroup>
-            <LayoutGroup Id="BusinessObjectPartialLogicBase" Removed="True">
-              <LayoutItem Id="BusinessObject" Removed="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="NameObject" Removed="True" />
-            <LayoutGroup Id="SimpleObject" Removed="True" />
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="BusinessObjectPartialLogic_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="SimpleObject" Direction="Horizontal" />
-            <LayoutGroup Id="NameObject" Removed="True">
-              <LayoutItem Id="Name" Removed="True" />
-            </LayoutGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
     <DetailView Id="CollectionProperty_DetailView">
       <Layout>
-        <LayoutGroup Id="R1" Index="0" Direction="Horizontal" ShowCaption="False" RelativeSize="100" IsNewNode="True">
+        <LayoutGroup Id="R1" Index="0" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
           <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
           <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
           <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
-          <LayoutItem Id="DisplayName" ViewItem="DisplayName" Index="3" IsNewNode="True" />
+          <LayoutItem Id="DisplayName" Index="3" ViewItem="ManyToMany" IsNewNode="True" />
           <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="4" IsNewNode="True" />
-          <LayoutGroup Id="Group" Direction="Horizontal" IsNewNode="True">
-            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="4" IsNewNode="True" />
-            <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="5" IsNewNode="True" />
+          <LayoutGroup Id="Group" Direction="Horizontal" ShowCaption="False" Index="5" IsNewNode="True">
+            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="0" IsNewNode="True" />
+            <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" Index="2" IsNewNode="True" />
           </LayoutGroup>
         </LayoutGroup>
         <LayoutGroup Id="Main" RelativeSize="100" Removed="True">
@@ -420,137 +335,11 @@
       </Layout>
     </DetailView>
     <ListView Id="ImplementRelation_GenericParameters_ListView" AllowEdit="True" AllowNew="False" AllowDelete="False" IsFooterVisible="True" />
-    <DetailView Id="MethodDefine_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="Parameters_Group" ShowCaption="False" Removed="True">
-            <LayoutItem Id="Parameters" SizeConstraintsType="Custom" MaxSize="200, 0" Index="1" ShowCaption="False" Removed="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="SimpleEditors" Removed="True">
-            <LayoutGroup Id="MethodDefine" Removed="True">
-              <LayoutGroup Id="MethodDefine_col1">
-                <LayoutItem Id="AccessorModifier" Index="0" />
-                <LayoutItem Id="ReturnValue" Index="1" />
-                <LayoutItem Id="Code" Index="2" Removed="True" />
-                <LayoutItem Id="MethodModifier" Index="2" />
-              </LayoutGroup>
-              <LayoutGroup Id="MethodDefine_col2">
-                <LayoutItem Id="Name" ViewItem="Name" Index="3" IsNewNode="True" />
-                <LayoutItem Id="DefaultLocation" Removed="True" />
-                <LayoutItem Id="MethodDefineCode" Removed="True" />
-              </LayoutGroup>
-            </LayoutGroup>
-            <LayoutGroup Id="NameObject" Removed="True">
-              <LayoutItem Id="Name" Removed="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="SizeableEditors" Removed="True">
-            <LayoutItem Id="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Removed="True" />
-          </LayoutGroup>
-          <TabbedGroup Id="Tab" IsNewNode="True">
-            <LayoutGroup Id="代码" Caption="代码" IsNewNode="True">
-              <LayoutItem Id="Code" ViewItem="Code" ShowCaption="False" Index="0" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="声明" IsNewNode="True">
-              <LayoutGroup Id="MethodDefine" Index="0" Caption="Method Define" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
-                <LayoutGroup Id="MethodDefine_col1" Index="0" ShowCaption="False" IsNewNode="True">
-                  <LayoutItem Id="AccessorModifier" Index="0" ViewItem="AccessorModifier" IsNewNode="True" />
-                  <LayoutItem Id="ReturnValue" Index="1" ViewItem="ReturnValue" IsNewNode="True" />
-                  <LayoutItem Id="MethodModifier" Index="2" ViewItem="MethodModifier" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutGroup Id="MethodDefine_col2" Index="1" ShowCaption="False" IsNewNode="True">
-                  <LayoutItem Id="CodeName" ViewItem="CodeName" Index="0" IsNewNode="True" />
-                  <LayoutItem Id="Name" ViewItem="Name" Index="3" IsNewNode="True" />
-                </LayoutGroup>
-              </LayoutGroup>
-              <LayoutItem Id="功能说明" ViewItem="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Index="0" CaptionLocation="Top" IsNewNode="True" />
-              <LayoutItem Id="Parameters" ViewItem="Parameters" SizeConstraintsType="Default" MaxSize="200, 0" ShowCaption="False" Index="1" CaptionLocation="Top" IsNewNode="True" />
-              <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
-                <LayoutItem Id="Creator" ViewItem="Creator" Index="0" IsNewNode="True" />
-                <LayoutItem Id="Modifier" ViewItem="Modifier" Index="1" IsNewNode="True" />
-                <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="2" IsNewNode="True" />
-                <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="3" IsNewNode="True" />
-              </LayoutGroup>
-            </LayoutGroup>
-          </TabbedGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
     <ListView Id="Namespace_ListView">
       <Columns>
         <ColumnInfo Id="FullName" Index="-1" />
       </Columns>
     </ListView>
-    <ListView Id="NavigationItem_LookupListView">
-      <Columns>
-        <ColumnInfo Id="Name" SortIndex="-1" SortOrder="None" />
-      </Columns>
-    </ListView>
-    <DetailView Id="NavigationLine_DetailView">
-      <Items>
-        <PropertyEditor Id="Caption" Index="0" />
-        <PropertyEditor Id="From" AllowEdit="False" />
-        <PropertyEditor Id="To" AllowEdit="False" />
-      </Items>
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors" ShowCaption="True" Caption="导航线段">
-            <LayoutItem Id="Caption" ViewItem="Caption" Index="0" IsNewNode="True" />
-            <LayoutGroup Id="NavigationLine" ShowCaption="False">
-              <LayoutGroup Id="NavigationLine_col1">
-                <LayoutItem Id="Caption" Index="0" Removed="True" />
-                <LayoutItem Id="BeginItemPointIndex" Index="1" />
-              </LayoutGroup>
-            </LayoutGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="NavigationMenu_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <TabbedGroup Id="LayoutTabs" IsNewNode="True">
-            <LayoutGroup Id="L0" Index="0" Caption="设计器" IsNewNode="True">
-              <LayoutItem Id="Caption" Index="0" ViewItem="Name" IsNewNode="True" />
-              <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="L1" Index="1" Caption="详细信息" IsNewNode="True">
-              <LayoutItem Id="Actions" ViewItem="Actions" ShowCaption="False" Index="0" IsNewNode="True" />
-              <LayoutItem Id="Nodes" ViewItem="Nodes" ShowCaption="False" Index="0" IsNewNode="True" />
-            </LayoutGroup>
-          </TabbedGroup>
-          <LayoutGroup Id="SimpleEditors" Removed="True">
-            <LayoutGroup Id="NavigationMenu">
-              <LayoutItem Id="Menu" Removed="True" />
-            </LayoutGroup>
-          </LayoutGroup>
-          <TabbedGroup Id="Tabs" Removed="True" />
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="NavigationMenuItem_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="NavigationMenuItem" Caption="导航菜单项目">
-              <LayoutGroup Id="NavigationMenuItem_col1">
-                <LayoutItem Id="NavigationItemPath" ViewItem="NavigationItemPath" Index="0" IsNewNode="True" />
-                <LayoutItem Id="Width" Index="1" />
-                <LayoutItem Id="Height" Index="2" />
-                <LayoutItem Id="Caption" Removed="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="NavigationMenuItem_col2">
-                <LayoutItem Id="Caption" ViewItem="Caption" Index="0" IsNewNode="True" />
-                <LayoutItem Id="NavigationItemPath" Index="0" Removed="True" />
-                <LayoutItem Id="X" Index="1" />
-                <LayoutItem Id="Y" Index="2" />
-              </LayoutGroup>
-            </LayoutGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
     <DetailView Id="Project_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
@@ -644,33 +433,62 @@
     </ListView>
     <DetailView Id="Property_DetailView">
       <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="NameObject" Index="2" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
-            <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
-            <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
-            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="3" IsNewNode="True" />
-            <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="4" IsNewNode="True" />
-            <LayoutItem Id="Size" ViewItem="Size" ShowCaption="" Index="5" IsNewNode="True" />
-            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="6" IsNewNode="True" />
+        <LayoutGroup Id="R1" Index="1" Direction="Horizontal" IsNewNode="True">
+          <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
+          <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
+          <LayoutItem Id="Caption" ViewItem="Caption" ShowCaption="" Index="2" IsNewNode="True" />
+          <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="3" IsNewNode="True" />
+          <LayoutItem Id="Size" ViewItem="Size" ShowCaption="" Index="4" IsNewNode="True" />
+        </LayoutGroup>
+        <LayoutGroup Id="R2" Index="2" Direction="Horizontal" IsNewNode="True">
+          <LayoutGroup Id="C1" Index="0" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="DisplayFormat" ViewItem="DisplayFormat" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="EditMask" ViewItem="EditMask" ShowCaption="" Index="2" IsNewNode="True" />
           </LayoutGroup>
-          <LayoutGroup Id="SimpleEditors" Removed="True">
+          <LayoutGroup Id="C2" Index="1" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="Range.Begin" ViewItem="Range.Begin" ShowCaption="" Index="2" IsNewNode="True" />
+            <LayoutItem Id="Range.End" ViewItem="Range.End" ShowCaption="" Index="4" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C3" Index="2" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="3" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C5" Direction="Horizontal" Index="3" IsNewNode="True">
+            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="0" IsNewNode="True" />
+            <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="RuleRequiredField" ViewItem="RuleRequiredField" ShowCaption="" Index="2" IsNewNode="True" />
+            <LayoutItem Id="UniqueValue" ViewItem="UniqueValue" ShowCaption="" Index="3" IsNewNode="True" />
+            <LayoutItem Id="ImmediatePostData" ViewItem="ImmediatePostData" ShowCaption="" Index="4" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C4" Direction="Horizontal" IsNewNode="True" />
+        </LayoutGroup>
+        <LayoutGroup Id="Main" Removed="True">
+          <LayoutGroup Id="SimpleEditors">
             <LayoutGroup Id="NameObject" Removed="True">
-              <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-              <LayoutItem Id="Name" Index="1" />
-              <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="2" IsNewNode="True" />
-              <LayoutItem Id="Expression" ViewItem="Expression" ShowCaption="" Index="3" IsNewNode="True" />
-              <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="4" IsNewNode="True" />
-              <LayoutItem Id="Size" ViewItem="Size" ShowCaption="" Index="5" IsNewNode="True" />
+              <LayoutItem Id="Name" Removed="True" />
             </LayoutGroup>
-            <LayoutGroup Id="Property" Removed="True">
+            <LayoutGroup Id="Property">
               <LayoutItem Id="Expression" Removed="True" />
               <LayoutItem Id="Size" Removed="True" />
             </LayoutGroup>
-            <LayoutGroup Id="PropertyBase" Removed="True">
-              <LayoutItem Id="Browsable" Removed="True" />
-              <LayoutItem Id="PropertyType" Removed="True" />
-              <LayoutItem Id="RelationProperty" Removed="True" />
+            <LayoutGroup Id="PropertyBase">
+              <LayoutGroup Id="PropertyBase_col1" Removed="True">
+                <LayoutItem Id="Browsable" Index="0" />
+                <LayoutItem Id="AllowEdit" Index="1" />
+                <LayoutItem Id="RuleRequiredField" ViewItem="RuleRequiredField" ShowCaption="" Index="2" IsNewNode="True" />
+                <LayoutItem Id="UniqueValue" ViewItem="UniqueValue" ShowCaption="" Index="3" IsNewNode="True" />
+                <LayoutItem Id="ImmediatePostData" Index="4" />
+                <LayoutItem Id="Caption" Removed="True" />
+                <LayoutItem Id="PropertyType" Removed="True" />
+                <LayoutItem Id="RelationProperty" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="PropertyBase_col2" Removed="True">
+                <LayoutItem Id="DisplayFormat" Removed="True" />
+                <LayoutItem Id="EditMask" Removed="True" />
+                <LayoutItem Id="Range.Begin" Removed="True" />
+                <LayoutItem Id="Range.End" Removed="True" />
+                <LayoutItem Id="RuleRequiredField" Removed="True" />
+                <LayoutItem Id="UniqueValue" Removed="True" />
+              </LayoutGroup>
             </LayoutGroup>
             <LayoutGroup Id="SimpleObject" Removed="True" />
           </LayoutGroup>
@@ -680,8 +498,8 @@
     <ListView Id="Property_ListView">
       <Columns>
         <ColumnInfo Id="Name" Width="80" />
-        <ColumnInfo Id="Expression" Width="0" Index="1" />
         <ColumnInfo Id="Size" Width="63" />
+        <ColumnInfo Id="Expression" Width="0" Index="1" />
       </Columns>
     </ListView>
     <DetailView Id="PropertyBase_DetailView">
@@ -706,48 +524,6 @@
             <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
           </LayoutGroup>
         </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="RuntimeViewController_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="CodeFile">
-              <LayoutItem Id="Code" CaptionLocation="Top" ShowCaption="False" />
-            </LayoutGroup>
-            <LayoutGroup Id="SimpleObject" Removed="True" />
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="RuntimeWindowController_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main">
-          <LayoutGroup Id="SimpleEditors">
-            <LayoutGroup Id="CodeFile">
-              <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
-            </LayoutGroup>
-            <LayoutGroup Id="SimpleObject" Removed="True" />
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <DetailView Id="起始页" ClassName="CIIP.Module.BusinessObjects.SYS.NavigationMenu" Caption="起始页" AllowDelete="False" AllowEdit="False" AllowNew="False" IsNewNode="True">
-      <Items IsNewNode="True">
-        <PropertyEditor Id="Actions" PropertyName="Actions" View="NavigationMenu_Actions_ListView" IsNewNode="True" />
-        <PropertyEditor Id="Menu" PropertyName="Menu" IsNewNode="True" />
-        <PropertyEditor Id="Name" PropertyName="Name" IsNewNode="True" />
-        <PropertyEditor Id="Nodes" PropertyName="Nodes" View="NavigationMenu_Nodes_ListView" IsNewNode="True" />
-      </Items>
-      <Layout IsNewNode="True">
-        <TabbedGroup Id="Tabs" IsNewNode="True">
-          <LayoutGroup Id="流程菜单" Index="0" Caption="流程菜单" IsNewNode="True">
-            <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" IsNewNode="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="辐射菜单" Index="1" IsNewNode="True">
-            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" IsNewNode="True" />
-          </LayoutGroup>
-        </TabbedGroup>
       </Layout>
     </DetailView>
   </Views>

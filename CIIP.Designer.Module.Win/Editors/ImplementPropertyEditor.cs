@@ -20,6 +20,7 @@ using System.Drawing;
 using System.Collections.Generic;
 using System.ComponentModel;
 using DevExpress.XtraEditors.ViewInfo;
+using CIIP.Designer;
 
 namespace CIIP.Module.Win.Editors
 {
@@ -114,7 +115,7 @@ namespace CIIP.Module.Win.Editors
             i.UseCustomFilter = true;
             i.CustomFilterHandler += I_CustomFilterHandler;
             i.EditValueType = TokenEditValueType.String;
-            var list = tokenService.Session.Query<BusinessObjectBase>().Where(x => x.DomainObjectModifier != Modifier.Sealed).ToArray();
+            var list = tokenService.Session.Query<BusinessObjectBase>().Where(x => x.DomainObjectModifier != BusinessObjectModifier.Sealed).ToArray();
 
             i.Tokens.AddRange(list.Select(x => new ImplementToken { Value = x.Oid, BusinessObject = x, Description = x.Caption }));
             i.ValidateToken += Control_ValidateToken;

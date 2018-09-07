@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessForm" ImageName="ModelEditor_Views" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObject" ImageName="Action_Workflow_ShowWorkflowInstances" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.BusinessObjectPartialLogic" ImageName="logic" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.RuntimeController" ImageName="ModelEditor_Controllers" />
+    <Class Name="CIIP.Module.BusinessObjects.SYS.SimpleType" ImageName="PG_Class" />
+    <Class Name="CIIP.ProjectManager.Project" ImageName="BO_Categories" />
+  </BOModel>
+  <Views Id="Views">
+    <ListView Id="BusinessObject_Methods_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="AccessorModifier" Index="-1" />
+        <ColumnInfo Id="CodeName" Index="-1" />
+        <ColumnInfo Id="MethodModifier" Index="-1" />
+        <ColumnInfo Id="ReturnValue" Index="-1" />
+        <ColumnInfo Id="Code" Removed="True" />
+        <ColumnInfo Id="DefaultLocation" Width="160" Removed="True" />
+        <ColumnInfo Id="MethodDefineCode" Width="150" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="BusinessObjectEvent_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Parameters_Group" Removed="True" />
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+          <LayoutGroup Id="SizeableEditors" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObjectLayout_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeFile">
+              <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+            <LayoutGroup Id="BusinessObjectPartialLogicBase" Removed="True">
+              <LayoutItem Id="BusinessObject" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True" />
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObjectPartialLogic_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" />
+            <LayoutGroup Id="NameObject" Removed="True">
+              <LayoutItem Id="Name" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="MethodDefine_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Parameters_Group" ShowCaption="False" Removed="True">
+            <LayoutItem Id="Parameters" SizeConstraintsType="Custom" MaxSize="200, 0" Index="1" ShowCaption="False" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="MethodDefine" Removed="True">
+              <LayoutGroup Id="MethodDefine_col1">
+                <LayoutItem Id="AccessorModifier" Index="0" />
+                <LayoutItem Id="ReturnValue" Index="1" />
+                <LayoutItem Id="Code" Index="2" Removed="True" />
+                <LayoutItem Id="MethodModifier" Index="2" />
+              </LayoutGroup>
+              <LayoutGroup Id="MethodDefine_col2">
+                <LayoutItem Id="Name" ViewItem="Name" Index="3" />
+                <LayoutItem Id="DefaultLocation" Removed="True" />
+                <LayoutItem Id="MethodDefineCode" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject" Removed="True">
+              <LayoutItem Id="Name" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Direction="Horizontal" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Removed="True">
+            <LayoutItem Id="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tab">
+            <LayoutGroup Id="代码" Caption="代码">
+              <LayoutItem Id="Code" ViewItem="Code" ShowCaption="False" Index="0" />
+            </LayoutGroup>
+            <LayoutGroup Id="声明">
+              <LayoutGroup Id="MethodDefine" Index="0" Caption="Method Define" Direction="Horizontal" ShowCaption="False">
+                <LayoutGroup Id="MethodDefine_col1" Index="0" ShowCaption="False">
+                  <LayoutItem Id="AccessorModifier" Index="0" ViewItem="AccessorModifier" />
+                  <LayoutItem Id="ReturnValue" Index="1" ViewItem="ReturnValue" />
+                  <LayoutItem Id="MethodModifier" Index="2" ViewItem="MethodModifier" />
+                </LayoutGroup>
+                <LayoutGroup Id="MethodDefine_col2" Index="1" ShowCaption="False">
+                  <LayoutItem Id="CodeName" ViewItem="CodeName" Index="0" />
+                  <LayoutItem Id="Name" ViewItem="Name" Index="3" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutItem Id="功能说明" ViewItem="功能说明" SizeConstraintsType="Custom" MaxSize="0, 200" Index="0" CaptionLocation="Top" />
+              <LayoutItem Id="Parameters" ViewItem="Parameters" SizeConstraintsType="Default" MaxSize="200, 0" ShowCaption="False" Index="1" CaptionLocation="Top" />
+              <LayoutGroup Id="SimpleObject" Index="2" Direction="Horizontal" ShowCaption="False">
+                <LayoutItem Id="Creator" ViewItem="Creator" Index="0" />
+                <LayoutItem Id="Modifier" ViewItem="Modifier" Index="1" />
+                <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="2" />
+                <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="3" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="NavigationItem_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Name" SortIndex="-1" SortOrder="None" />
+      </Columns>
+    </ListView>
+    <DetailView Id="NavigationLine_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="Caption" Index="0" />
+        <PropertyEditor Id="From" AllowEdit="False" />
+        <PropertyEditor Id="To" AllowEdit="False" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" ShowCaption="True" Caption="导航线段">
+            <LayoutItem Id="Caption" ViewItem="Caption" Index="0" />
+            <LayoutGroup Id="NavigationLine" ShowCaption="False">
+              <LayoutGroup Id="NavigationLine_col1">
+                <LayoutItem Id="Caption" Index="0" Removed="True" />
+                <LayoutItem Id="BeginItemPointIndex" Index="1" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="NavigationMenu_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="LayoutTabs">
+            <LayoutGroup Id="L0" Index="0" Caption="设计器">
+              <LayoutItem Id="Caption" Index="0" ViewItem="Name" />
+              <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+            <LayoutGroup Id="L1" Index="1" Caption="详细信息">
+              <LayoutItem Id="Actions" ViewItem="Actions" ShowCaption="False" Index="0" />
+              <LayoutItem Id="Nodes" ViewItem="Nodes" ShowCaption="False" Index="0" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors" Removed="True">
+            <LayoutGroup Id="NavigationMenu">
+              <LayoutItem Id="Menu" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="NavigationMenuItem_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="NavigationMenuItem" Caption="导航菜单项目">
+              <LayoutGroup Id="NavigationMenuItem_col1">
+                <LayoutItem Id="NavigationItemPath" ViewItem="NavigationItemPath" Index="0" />
+                <LayoutItem Id="Width" Index="1" />
+                <LayoutItem Id="Height" Index="2" />
+                <LayoutItem Id="Caption" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="NavigationMenuItem_col2">
+                <LayoutItem Id="Caption" ViewItem="Caption" Index="0" />
+                <LayoutItem Id="NavigationItemPath" Index="0" Removed="True" />
+                <LayoutItem Id="X" Index="1" />
+                <LayoutItem Id="Y" Index="2" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuntimeViewController_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeFile">
+              <LayoutItem Id="Code" CaptionLocation="Top" ShowCaption="False" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="RuntimeWindowController_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CodeFile">
+              <LayoutItem Id="Code" ShowCaption="False" CaptionLocation="Top" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="起始页" ClassName="CIIP.Module.BusinessObjects.SYS.NavigationMenu" Caption="起始页" AllowDelete="False" AllowEdit="False" AllowNew="False">
+      <Items Id="Items">
+        <PropertyEditor Id="Actions" PropertyName="Actions" View="NavigationMenu_Actions_ListView" />
+        <PropertyEditor Id="Menu" PropertyName="Menu" />
+        <PropertyEditor Id="Name" PropertyName="Name" />
+        <PropertyEditor Id="Nodes" PropertyName="Nodes" View="NavigationMenu_Nodes_ListView" />
+      </Items>
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tabs">
+          <LayoutGroup Id="流程菜单" Index="0" Caption="流程菜单">
+            <LayoutItem Id="Menu" ViewItem="Menu" Index="1" ShowCaption="False" CaptionLocation="Top" />
+          </LayoutGroup>
+          <LayoutGroup Id="辐射菜单" Index="1">
+            <LayoutItem Id="RadialMenu" ViewItem="RadialMenu" />
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView_BOLogic" ClassName="CIIP.Module.BusinessObjects.SYS.BusinessObject">
+      <Items Id="Items">
+        <PropertyEditor Id="CanCustomLogic" PropertyName="CanCustomLogic" />
+        <PropertyEditor Id="Caption" PropertyName="Caption" />
+        <PropertyEditor Id="Category" PropertyName="Category" />
+        <PropertyEditor Id="CreateTime" PropertyName="CreateTime" />
+        <PropertyEditor Id="Creator" PropertyName="Creator" />
+        <PropertyEditor Id="Description" PropertyName="Description" />
+        <PropertyEditor Id="IsCloneable" PropertyName="IsCloneable" />
+        <PropertyEditor Id="IsCreatableItem" PropertyName="IsCreatableItem" />
+        <PropertyEditor Id="IsGenericTypeDefine" PropertyName="IsGenericTypeDefine" />
+        <PropertyEditor Id="IsPersistent" PropertyName="IsPersistent" />
+        <PropertyEditor Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" />
+        <PropertyEditor Id="IsVisibileInReports" PropertyName="IsVisibileInReports" />
+        <PropertyEditor Id="Methods" PropertyName="Methods" View="BusinessObject_Methods_ListView" />
+        <PropertyEditor Id="Modifier" PropertyName="Modifier" />
+        <PropertyEditor Id="ModifyTime" PropertyName="ModifyTime" />
+        <PropertyEditor Id="Name" PropertyName="Name" />
+        <PropertyEditor Id="NavigationItem" PropertyName="NavigationItem" />
+        <PropertyEditor Id="Properties" PropertyName="Properties" View="BusinessObject_Properties_ListView" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" Index="0" ShowCaption="False">
+          <LayoutItem Id="Methods" ViewItem="Methods" ShowCaption="False" Index="0" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" ViewItem="ItemBusinessObject.IsAbstract" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" ViewItem="ItemBusinessObject.CanInherits" />
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="常用设置">
+              <LayoutGroup Id="子表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="ItemBusinessObject.Base" ViewItem="ItemBusinessObject.Base" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="Navigation" ViewItem="NavigationItem" />
+                  <LayoutItem Id="Base" ViewItem="Base" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tab">
+          <LayoutGroup Id="常规">
+            <LayoutGroup Id="NameObject">
+              <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="ShowBusinessObjectLogic" ImageName="whitix" />
+      <Action Id="ShowLayout" ImageName="ModelEditor_Action_Modules" />
+      <Action Id="ShowPartialLogic" ImageName="logic" />
+    </Actions>
+  </ActionDesign>
+</Application>

@@ -21,7 +21,9 @@ using System.Xml;
 using ICSharpCode.AvalonEdit.Highlighting;
 using System.Text.RegularExpressions;
 using DevExpress.XtraEditors;
-using cp = CIIP.ProjectManager.Project;
+using cp = CIIP.Designer.Project;
+using CIIP.Designer;
+
 namespace CIIP.Module.Win.Editors
 {
     public partial class SmartVisualStudio : UserControl

@@ -3,8 +3,7 @@ using DevExpress.ExpressApp.Editors;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Win.Editors;
 using DevExpress.ExpressApp;
-using CIIP.Module.BusinessObjects.SYS.Logic;
-using CIIP.ProjectManager;
+using CIIP.Designer;
 
 namespace CIIP.Module.Win.Editors
 {

@@ -8,6 +8,7 @@ using DevExpress.Persistent.Validation;
 
 namespace CIIP.Designer
 {
+    [XafDisplayName("1.集合属性")]
     public class CollectionProperty : PropertyBase
     {
         public CollectionProperty(Session s) : base(s)
@@ -85,7 +86,15 @@ namespace CIIP.Designer
             get { return _Aggregated; }
             set { SetPropertyValue("Aggregated", ref _Aggregated, value); }
         }
-        
+
+        [CaptionsForBoolValues("对多对", "一对多")]
+        public bool ManyToMany
+        {
+            get { return GetPropertyValue<bool>(nameof(ManyToMany)); }
+            set { SetPropertyValue(nameof(ManyToMany), value); }
+        }
+
+
         protected override List<PropertyBase> RelationPropertyDataSources
         {
             get

@@ -5,11 +5,11 @@ using DevExpress.ExpressApp.Security;
 using System.Diagnostics;
 using DevExpress.Xpo;
 using System.Threading;
-using CIIP.ProjectManager;
 using DevExpress.ExpressApp.Win.Utils;
 using DevExpress.LookAndFeel;
 using System.Collections.Generic;
 using Newtonsoft.Json;
+using CIIP.Designer;
 
 namespace CIIP.Win
 {
