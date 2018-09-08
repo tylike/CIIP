@@ -248,6 +248,12 @@
         </TabbedGroup>
       </Layout>
     </DetailView>
+    <ListView Id="BusinessObject_ListView">
+      <Columns>
+        <ColumnInfo Id="CanCustomLogic" Width="92" />
+      </Columns>
+      <SplitLayout SplitterPosition="400" />
+    </ListView>
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="Name" PropertyName="Name" Index="0" IsNewNode="True" />
@@ -283,8 +289,11 @@
           <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
           <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
           <LayoutItem Id="DisplayName" Index="3" ViewItem="ManyToMany" IsNewNode="True" />
-          <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="4" IsNewNode="True" />
-          <LayoutGroup Id="Group" Direction="Horizontal" ShowCaption="False" Index="5" IsNewNode="True">
+          <LayoutGroup Id="Relation" Index="6" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="AutoCreateRelationProperty" ViewItem="AutoCreateRelationProperty" Index="4" IsNewNode="True" />
+            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="5" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Group" Direction="Horizontal" ShowCaption="False" Index="7" IsNewNode="True">
             <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="0" IsNewNode="True" />
             <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="1" IsNewNode="True" />
             <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" Index="2" IsNewNode="True" />

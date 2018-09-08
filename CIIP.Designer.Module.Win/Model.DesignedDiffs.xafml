@@ -50,6 +50,9 @@
         <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
       </Items>
     </DetailView>
+    <ListView Id="BusinessObject_ListView" MasterDetailMode="ListViewAndDetailView">
+      <SplitLayout Direction="Vertical" />
+    </ListView>
     <ListView Id="BusinessObjectBase_Properties_ListView">
       <Columns>
         <ColumnInfo Id="PropertyType" PropertyEditorType="DevExpress.ExpressApp.Win.Editors.LookupPropertyEditor" />

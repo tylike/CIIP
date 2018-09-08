@@ -18,7 +18,7 @@ namespace CIIP
 namespace CIIP.Designer
 {
 
-    [XafDisplayName("0.属性")]
+    [XafDisplayName("属性")]
     [Appearance("SizeIsVisible",TargetItems ="Size",Method = "SizeIsVisible", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
     public class Property : PropertyBase
     {
@@ -27,7 +27,10 @@ namespace CIIP.Designer
         {
             return property?.PropertyType?.FullName != typeof(string).FullName;
         }
-        
+
+
+
+
         private int _Size;
         [XafDisplayName("长度")]
         public int Size

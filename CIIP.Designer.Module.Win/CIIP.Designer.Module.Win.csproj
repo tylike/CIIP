@@ -246,6 +246,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Editors\AdmiralPopupExpressionPropertyEditor.cs" />
+    <Compile Include="Editors\CategorizedListEditorEx.cs" />
     <Compile Include="Editors\CodeEditor\AdmAccessToken.cs" />
     <Compile Include="Editors\CodeEditor\AdmAuthentication.cs" />
     <Compile Include="Editors\CodeEditor\TokenType.cs" />
@@ -400,6 +401,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="UnusableNodes4.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes5.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

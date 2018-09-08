@@ -5,10 +5,13 @@ using DevExpress.Xpo;
 using System.Linq;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
+using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace CIIP.Designer
 {
-    [XafDisplayName("1.集合属性")]
+    [XafDisplayName("子表")]
+    [Appearance("ManyToManyHiddenAggregated",Criteria = "ManyToMany", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "Aggregated")]
+    [Appearance("PropertyBase.AutoCreateRelationIsEnable", TargetItems = "AutoCreateRelationProperty", Criteria = "ManyToMany", Enabled = false)]
     public class CollectionProperty : PropertyBase
     {
         public CollectionProperty(Session s) : base(s)
@@ -88,11 +91,26 @@ namespace CIIP.Designer
         }
 
         [CaptionsForBoolValues("对多对", "一对多")]
+        [XafDisplayName("关系类型")]
+        [ImmediatePostData]
         public bool ManyToMany
         {
             get { return GetPropertyValue<bool>(nameof(ManyToMany)); }
             set { SetPropertyValue(nameof(ManyToMany), value); }
         }
+
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        {
+            base.OnChanged(propertyName, oldValue, newValue);
+            if (!IsLoading)
+            {
+                if (propertyName == nameof(ManyToMany))
+                {
+                    AutoCreateRelationProperty = true;
+                }
+            }
+        }
+
 
 
         protected override List<PropertyBase> RelationPropertyDataSources

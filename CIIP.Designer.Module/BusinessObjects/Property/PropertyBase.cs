@@ -10,8 +10,14 @@ using DevExpress.ExpressApp.ConditionalAppearance;
 
 namespace CIIP.Designer
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [XafDefaultProperty("DisplayName")]
-    [Appearance("PropertyBase.RelationIsEnable", TargetItems = "RelationProperty", Enabled = false,Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide,Method ="RelationIsEnable")]
+    [Appearance("PropertyBase.RelationIsEnable", TargetItems = "RelationProperty", Enabled = false, Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, Method = "RelationIsEnable")]
+    [Appearance("PropertyBase.RelationPropertyStateByAutoCreate", TargetItems = "RelationProperty", Criteria = "AutoCreateRelationProperty", Enabled = false)]
+    //对多对时,自动创建是必须的.
+    //一对多时,可选手动创建,默认是自动创建.
     public abstract class PropertyBase : NameObject
     {
         private string _Expression;
@@ -28,7 +34,7 @@ namespace CIIP.Designer
         {
             return obj != null && obj.PropertyType is SimpleType;
         }
-        
+
         #region 所属业务
         [Association]
         public BusinessObjectBase BusinessObject
@@ -41,7 +47,7 @@ namespace CIIP.Designer
             {
                 SetPropertyValue(nameof(BusinessObject), value);
             }
-        } 
+        }
         #endregion
 
         #region 基本
@@ -103,7 +109,7 @@ namespace CIIP.Designer
 
         private PropertyBase _RelationProperty;
         [XafDisplayName("关联属性"), DataSourceProperty("RelationPropertyDataSources")]
-        [RuleRequiredField(TargetCriteria = "RelationPropertyNotNull"), LookupEditorMode(LookupEditorMode.AllItems)]
+        [RuleRequiredField(TargetCriteria = "RelationPropertyNotNull && !AutoCreateRelationProperty"), LookupEditorMode(LookupEditorMode.AllItems)]
         [ToolTip("一对多或多对多时,两个属性的对应关系.")]
         public PropertyBase RelationProperty
         {
@@ -127,24 +133,44 @@ namespace CIIP.Designer
             }
         }
         #endregion
-        
+
         #region 可见性
         private bool? _Browsable;
         [XafDisplayName("可见")]
         [ToolTip("属性在任何位置是否可见")]
-        public bool? Browsable 
+        public bool? Browsable
         {
             get { return _Browsable; }
             set { SetPropertyValue("Browsable", ref _Browsable, value); }
         }
         #endregion
 
+        [CaptionsForBoolValues("自动", "手动")]
+        [XafDisplayName("创建关联属性")]
+        [ImmediatePostData]
+        public bool AutoCreateRelationProperty
+        {
+            get { return GetPropertyValue<bool>(nameof(AutoCreateRelationProperty)); }
+            set { SetPropertyValue(nameof(AutoCreateRelationProperty), value); }
+        }
 
+        protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        {
+            base.OnChanged(propertyName, oldValue, newValue);
+            if (propertyName == nameof(AutoCreateRelationProperty))
+            {
+                if (AutoCreateRelationProperty)
+                {
+                    RelationProperty = null;
+                }
+            }
+        }
 
         public override void AfterConstruction()
         {
             base.AfterConstruction();
             Browsable = true;
+            AutoCreateRelationProperty = true;
         }
 
         #region 在客户端进行配置即可

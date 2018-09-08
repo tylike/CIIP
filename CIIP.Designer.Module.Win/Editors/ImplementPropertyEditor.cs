@@ -34,6 +34,24 @@ namespace CIIP.Module.Win.Editors
             : base(objectType, model)
         {
             //ControlBindingProperty = "EditValue";
+            this.CurrentObjectChanged += ImplementPropertyEditor_CurrentObjectChanged;
+            this.AllowEditChanged += ImplementPropertyEditor_AllowEditChanged;
+        }
+
+        private void ImplementPropertyEditor_AllowEditChanged(object sender, EventArgs e)
+        {
+            this.AllowEdit.RemoveItem("MemberIsNotReadOnly");
+        }
+
+        private void ImplementPropertyEditor_CurrentObjectChanged(object sender, EventArgs e)
+        {
+            if (tokenService != null)
+            {
+
+                control.Properties.Tokens.Clear();
+                var list = tokenService.Session.Query<BusinessObjectBase>().Where(x => x.DomainObjectModifier != BusinessObjectModifier.Sealed).ToArray();
+                control.Properties.Tokens.AddRange(list.Select(x => new ImplementToken { Value = x.Oid.ToString(), BusinessObject = x, Description = x.Caption }));
+            }
         }
 
         protected override void ReadValueCore()
@@ -42,9 +60,11 @@ namespace CIIP.Module.Win.Editors
             {
                 if (CurrentObject != null)
                 {
-                    var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid );// as System.ComponentModel.IBindingList;
-
-                    control.EditValue = string.Join(",", values);
+                    if (control.Properties.Tokens.Count > 0)
+                    {
+                        var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid);// as System.ComponentModel.IBindingList;
+                        control.EditValue = string.Join(",", values);
+                    }
                 }
             }
         }
@@ -75,10 +95,10 @@ namespace CIIP.Module.Win.Editors
                 if (_tokenService == null)
                 {
                     _tokenService = CurrentObject as BusinessObjectBase;
-                    if(_tokenService == null)
-                    {
-                        throw new Exception("CurrentObject Must Be implement ITokenService!");
-                    }
+                    //if(_tokenService == null)
+                    //{
+                    //    throw new Exception("CurrentObject Must Be implement ITokenService!");
+                    //}
                 }
                 return _tokenService;
             }
@@ -115,9 +135,10 @@ namespace CIIP.Module.Win.Editors
             i.UseCustomFilter = true;
             i.CustomFilterHandler += I_CustomFilterHandler;
             i.EditValueType = TokenEditValueType.String;
-            var list = tokenService.Session.Query<BusinessObjectBase>().Where(x => x.DomainObjectModifier != BusinessObjectModifier.Sealed).ToArray();
 
-            i.Tokens.AddRange(list.Select(x => new ImplementToken { Value = x.Oid, BusinessObject = x, Description = x.Caption }));
+            ImplementPropertyEditor_CurrentObjectChanged(null, null);
+
+
             i.ValidateToken += Control_ValidateToken;
             i.TokenAdded += I_TokenAdded;
             i.TokenRemoved += I_TokenRemoved;

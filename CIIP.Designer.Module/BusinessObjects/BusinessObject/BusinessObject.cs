@@ -7,7 +7,6 @@ using System.Linq;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Validation;
 using CIIP.Persistent.BaseImpl;
-using DevExpress.ExpressApp;
 using System.Collections.Generic;
 using CIIP.Module.BusinessObjects.SYS.Logic;
 using CIIP;
@@ -118,6 +117,9 @@ namespace CIIP.Designer
             {
                 if (this.Category != null)
                     this.FullName = this.Category.FullName + "." + this.Name;
+                else
+                    this.FullName = this.Name;
+
                 if (propertyName == nameof(Name) && string.IsNullOrEmpty(Caption))
                 {
                     this.Caption = newValue + "";

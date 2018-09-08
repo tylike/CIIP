@@ -20,10 +20,17 @@ using CIIP.Module.BusinessObjects.SYS;
 namespace CIIP.Win {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/DevExpressExpressAppWinWinApplicationMembersTopicAll.aspx
     public partial class CIIPDesignerWindowsFormsApplication : WinApplication,IRestartApplication {
-        public CIIPDesignerWindowsFormsApplication() {
+        public CIIPDesignerWindowsFormsApplication()
+        {
             InitializeComponent();
+            InitializeDefaults();
         }
-
+        private void InitializeDefaults()
+        {
+            LinkNewObjectToParentImmediately = false;
+            OptimizedControllersCreation = true;
+            UseLightStyle = true;
+        }
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             args.ObjectSpaceProvider =  new XPObjectSpaceProvider(args.ConnectionString, args.Connection, false);
             args.ObjectSpaceProviders.Add(new NonPersistentObjectSpaceProvider(TypesInfo, null));

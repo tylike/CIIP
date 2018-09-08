@@ -64,7 +64,7 @@ namespace CIIP.Designer
 
         private Namespace _Category;
         [XafDisplayName("·ÖÀà")]
-        [RuleRequiredField]
+        //[RuleRequiredField]
         public Namespace Category
         {
             get { return _Category; }
