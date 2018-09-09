@@ -25,63 +25,37 @@ namespace CIIP.Designer
                 return true;
             }
         }
-
-        private BusinessObject _PropertyType;
-
-        [XafDisplayName("类型"), RuleRequiredField, DataSourceProperty("PropertyTypes")]
-        [ImmediatePostData, LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
-        public BusinessObject PropertyType
+        protected override void OnSaving()
         {
-            get { return _PropertyType; }
-            set
+            base.OnSaving();
+            CreateRelationProperty();
+        }
+        protected void CreateRelationProperty()
+        {
+            if (!IsAutoCreated && AutoCreateRelationProperty && Session.IsNewObject(this))
             {
-                SetPropertyValue("PropertyType", ref _PropertyType, value);
-                if (!IsLoading)
+                if (ManyToMany)
                 {
-                    if (PropertyType != null)
-                    {
-                        if (string.IsNullOrEmpty(Name))
-                        {
-                            Name = PropertyType.Caption;
-                        }
-                        if (RelationProperty == null)
-                        {
-                            try
-                            {
-                                RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
-                            }
-                            catch (Exception ex)
-                            {
-                                throw ex;
-                            }
-                        }
-                        if (RelationProperty == null)
-                        {
-                            RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
-                        }
-                    }
-                    else
-                    {
-                        Name = "";
-                    }
+                    //当前是xpcollection<学生> 学生s {get;} 属性
+                    //自动创建的属性是 xpcollection<教师> 教师s {get;} 属性
+                }
+                else
+                {
+                    //当前是xpcollection<order> orders {get;} 属性
+                    //自动创建的属性是 customer customer {get;} 属性
+                    var property = new Property(Session);
+                    property.BusinessObject = this.PropertyType;
+                    property.PropertyType = this.BusinessObject;
+                    property.AutoCreateRelationProperty = false;
+                    property.Name = BusinessObject.Name;
+                    property.Caption = BusinessObject.Caption;
+                    property.IsAutoCreated = true;
+                    property.RelationProperty = this;
+                    RelationProperty = property;
                 }
             }
         }
         
-        private BusinessObject[] types;
-
-        protected  IEnumerable<BusinessObjectBase> PropertyTypes
-        {
-            get
-            {
-                if (types == null)
-                {
-                    types = Session.Query<BusinessObject>().Where(x => x.IsPersistent).ToArray();
-                }
-                return types;
-            }
-        }
-
         private bool _Aggregated;
         [XafDisplayName("聚合")]
         public bool Aggregated

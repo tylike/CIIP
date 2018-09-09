@@ -37,8 +37,13 @@ namespace CIIP.Designer
 
 
             #region namespace
-            rst.AppendLine($@"namespace {Category.FullName}
-{{");
+            if (Category != null)
+            {
+                rst.AppendLine($@"namespace {Category.FullName}");
+                rst.AppendLine("{");
+            }
+
+
             #endregion
 
             #region 说明
@@ -173,10 +178,6 @@ $@"     public {type} {name}
                     var assName = string.Format("{0}_{1}", item.RelationProperty.Name, item.Name);
                     rst.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, assName);
                 }
-
-
-
-
                 rst.Append(propertyTemplate(pt, item.Name));
             }
             #endregion
@@ -209,7 +210,9 @@ $@"     public {type} {name}
             #region 结束
             //end class
             rst.AppendLine("\t}");
-            rst.AppendLine("}");
+
+            if (Category != null)
+                rst.AppendLine("}");
             #endregion
             return rst.ToString();
         }

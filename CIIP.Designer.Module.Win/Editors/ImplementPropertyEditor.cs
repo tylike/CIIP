@@ -45,12 +45,12 @@ namespace CIIP.Module.Win.Editors
 
         private void ImplementPropertyEditor_CurrentObjectChanged(object sender, EventArgs e)
         {
-            if (tokenService != null)
+            if (tokenService != null && control!=null)
             {
 
                 control.Properties.Tokens.Clear();
                 var list = tokenService.Session.Query<BusinessObjectBase>().Where(x => x.DomainObjectModifier != BusinessObjectModifier.Sealed).ToArray();
-                control.Properties.Tokens.AddRange(list.Select(x => new ImplementToken { Value = x.Oid.ToString(), BusinessObject = x, Description = x.Caption }));
+                control.Properties.Tokens.AddRange(list.Select(x => new ImplementToken { Value = x.Oid.ToString(), BusinessObject = x, Description = x.Name + "-" + x.Caption }));
             }
         }
 
@@ -87,6 +87,7 @@ namespace CIIP.Module.Win.Editors
             //    }
             //}
         }
+
         BusinessObjectBase _tokenService;
         BusinessObjectBase tokenService
         {
@@ -153,7 +154,6 @@ namespace CIIP.Module.Win.Editors
 
         private void I_CustomFilterHandler(object sender, TokenEditFilterEventArgs e)
         {
-
             var selected = control.SelectedItems.OfType<ImplementToken>();
             var hasClass = selected.Any(x => x.BusinessObject is BusinessObject);
             if (hasClass)
@@ -231,6 +231,7 @@ namespace CIIP.Module.Win.Editors
         {
             return new RepositoryItemTokenEdit();
         }
+
         IObjectSpace os;
         XafApplication application;
         public void Setup(IObjectSpace objectSpace, XafApplication application)

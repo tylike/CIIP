@@ -16,7 +16,10 @@ namespace CIIP.Designer
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     public class BusinessObjectBase : NameObject, ICategorizedItem
     {
-
+        public PropertyBase FindProperty(string name)
+        {
+            return Properties.SingleOrDefault(x => x.Name == name);
+        }
         #region modifier
         [XafDisplayName("继承设置")]
         [ToolTip("可以设置为无,抽象,密封的")]

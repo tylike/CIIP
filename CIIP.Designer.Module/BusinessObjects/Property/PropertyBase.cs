@@ -7,6 +7,7 @@ using CIIP.Persistent.BaseImpl;
 using DevExpress.ExpressApp.Model;
 using System.Linq;
 using DevExpress.ExpressApp.ConditionalAppearance;
+using System;
 
 namespace CIIP.Designer
 {
@@ -56,7 +57,7 @@ namespace CIIP.Designer
         [XafDisplayName("类型"), RuleRequiredField]
         [ImmediatePostData]
         [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
-        [EditorAlias(Editors.PropertyTypeTokenEditor)]
+        [EditorAlias(Editors.PropertyTypeTokenEditor),DataSourceProperty(nameof(PropertyTypes))]
         public BusinessObjectBase PropertyType
         {
             get { return _PropertyType; }
@@ -75,6 +76,21 @@ namespace CIIP.Designer
                 }
             }
         }
+        
+        private BusinessObject[] types;
+
+        protected IEnumerable<BusinessObjectBase> PropertyTypes
+        {
+            get
+            {
+                if (types == null)
+                {
+                    types = Session.Query<BusinessObject>().Where(x => x.IsPersistent).ToArray();
+                }
+                return types;
+            }
+        }
+
         [ToolTip("用于显示在界面上的标题内容.")]
         [XafDisplayName("标题")]
         public string Caption
@@ -157,6 +173,9 @@ namespace CIIP.Designer
         protected override void OnChanged(string propertyName, object oldValue, object newValue)
         {
             base.OnChanged(propertyName, oldValue, newValue);
+            if (IsLoading || IsSaving)
+                return;
+
             if (propertyName == nameof(AutoCreateRelationProperty))
             {
                 if (AutoCreateRelationProperty)
@@ -164,7 +183,53 @@ namespace CIIP.Designer
                     RelationProperty = null;
                 }
             }
+            if (propertyName == nameof(PropertyType) && AutoCreateRelationProperty)
+            {
+                if (PropertyType != null)
+                {
+                    if (string.IsNullOrEmpty(Name))
+                    {
+                        Name = PropertyType.Name;
+                        Caption = PropertyType.Caption;
+                    }
+
+                    //查找一个属性,修改为自动创建一个.
+                    //if (RelationProperty == null)
+                    //{
+                    //    try
+                    //    {
+                    //        RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
+                    //    }
+                    //    catch (Exception ex)
+                    //    {
+                    //        throw ex;
+                    //    }
+                    //}
+
+                    //if (RelationProperty == null)
+                    //{
+                    //    RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
+                    //}
+                }
+                else
+                {
+                    Name = "";
+                }
+
+            }
+
         }
+
+        [ModelDefault("AllowEdit","False")]
+        public bool IsAutoCreated
+        {
+            get { return GetPropertyValue<bool>(nameof(IsAutoCreated)); }
+            set { SetPropertyValue(nameof(IsAutoCreated), value); }
+        }
+
+
+
+
 
         public override void AfterConstruction()
         {

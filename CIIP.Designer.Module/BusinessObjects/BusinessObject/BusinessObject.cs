@@ -46,10 +46,7 @@ namespace CIIP.Designer
 
         #region ÊôÐÔ
 
-        public PropertyBase FindProperty(string name)
-        {
-            return Properties.SingleOrDefault(x => x.Name == name);
-        }
+
 
         #region logic method
         //[Association, DevExpress.Xpo.Aggregated]
