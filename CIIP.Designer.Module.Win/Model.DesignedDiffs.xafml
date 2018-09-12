@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application Title="商信互联企业信息管理平台 ">
+<Application>
   <ActionDesign>
     <Actions>
       <Action Id="About Info" Caption="关于..." />
       <Action Id="AddFromFile" Caption="从文件填加..." />
-      <Action Id="CancelAction" Caption="取消" />
       <Action Id="ChooseSkin" Caption="选择皮肤" />
       <Action Id="Close" Caption="关闭" />
       <Action Id="CopyCellValue" Caption="复制单元格值" />
@@ -13,55 +12,52 @@
       <Action Id="OpenObject" Caption="打开" />
       <Action Id="SwitchProject" TargetRibbonPage="Home" TargetRibbonGroup="项目" RibbonStyle="All" />
     </Actions>
-    <ActionToContainerMapping>
-      <ActionContainer Id="项目" IsNewNode="True">
-        <ActionLink ActionId="GenerateStartupFile" IsNewNode="True" />
-        <ActionLink ActionId="SwitchProject" IsNewNode="True" />
-      </ActionContainer>
-    </ActionToContainerMapping>
   </ActionDesign>
-  <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI">
-    <Dashboards DashboardGroupCaption="仪表盘" />
-  </Options>
+  <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI" />
   <SchemaModules>
-    <SchemaModule Name="SchedulerModuleBase" Version="18.1.5.0" IsNewNode="True" />
-    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
     <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
-    <DetailView Id="BusinessForm_DetailView">
+    <DetailView Id="CollectionProperty_DetailView">
+      <Items>
+        <PropertyEditor Id="AssocicationInfo.LeftTable" View="BusinessObject_List_LookupListView" />
+      </Items>
       <Layout>
-        <LayoutGroup Id="Main">
-          <TabbedGroup Id="Info">
-            <LayoutGroup Id="高级设置">
-              <LayoutGroup Id="子表设置" Index="2" />
-              <LayoutItem Id="ItemBusinessObject.Description" Index="3" />
-              <LayoutItem Id="Config" ViewItem="Config" Index="4" ShowCaption="True" IsNewNode="True" />
-              <LayoutItem Id="ItemBusinessObject.Config" ViewItem="ItemBusinessObject.Config" Index="5" ShowCaption="True" IsNewNode="True" />
-            </LayoutGroup>
-          </TabbedGroup>
+        <LayoutGroup Id="R1">
+          <LayoutItem Id="ManyToMany" Index="0" ViewItem="AssocicationInfo.ManyToMany" TextAlignMode="AutoSize" IsNewNode="True" />
+          <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="False" Index="1" TextAlignMode="AutoSize" SizeConstraintsType="Custom" MaxSize="60, 0" IsNewNode="True" />
+          <LayoutItem Id="LT" Index="2" ViewItem="AssocicationInfo.LeftTable" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
+          <LayoutItem Id="LP" ViewItem="AssocicationInfo.LeftProperty" Index="3" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
+          <LayoutItem Id="RT" ViewItem="AssocicationInfo.RightTable" Index="4" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
+          <LayoutItem Id="RP" ViewItem="AssocicationInfo.RightProperty" Index="5" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
+          <LayoutGroup Id="C3" Index="6" Removed="True">
+            <LayoutItem Id="AN" Removed="True" />
+            <LayoutItem Id="Caption" Removed="True" />
+            <LayoutItem Id="Name" Removed="True" />
+          </LayoutGroup>
+          <LayoutItem Id="Name" Index="6" ViewItem="Name" ShowCaption="" IsNewNode="True" />
+          <LayoutItem Id="Caption" Index="7" ViewItem="Caption" IsNewNode="True" />
+          <LayoutItem Id="AN" ViewItem="AssocicationInfo.Name" Index="8" IsNewNode="True" />
+          <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="False" Index="9" TextAlignMode="AutoSize" SizeConstraintsType="Custom" MaxSize="60, 0" IsNewNode="True" />
+          <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" Index="10" ShowCaption="False" TextAlignMode="AutoSize" SizeConstraintsType="Custom" MaxSize="100, 0" IsNewNode="True" />
+          <LayoutGroup Id="C1" Removed="True">
+            <LayoutItem Id="Aggregated" TextAlignMode="AutoSize" Removed="True" />
+            <LayoutItem Id="ManyToMany" TextAlignMode="AutoSize" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C2" Removed="True">
+            <LayoutItem Id="LP" TextAlignMode="AutoSize" Removed="True" />
+            <LayoutItem Id="LT" TextAlignMode="AutoSize" Removed="True" />
+            <LayoutItem Id="RP" TextAlignMode="AutoSize" Removed="True" />
+            <LayoutItem Id="RT" TextAlignMode="AutoSize" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C4" Removed="True">
+            <LayoutItem Id="AllowEdit" TextAlignMode="AutoSize" Removed="True" />
+            <LayoutItem Id="Browsable" TextAlignMode="AutoSize" Removed="True" />
+          </LayoutGroup>
+          <LayoutItem Id="E" IsNewNode="True" />
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <DetailView Id="BusinessObject_DetailView">
-      <Items>
-        <PropertyEditor Id="GenericParameterDefines" PropertyEditorType="CIIP.Module.Win.Editors.GenericPropertyEditor" />
-        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
-      </Items>
-    </DetailView>
-    <ListView Id="BusinessObject_ListView" MasterDetailMode="ListViewAndDetailView">
-      <SplitLayout Direction="Vertical" />
-    </ListView>
-    <ListView Id="BusinessObjectBase_Properties_ListView">
-      <Columns>
-        <ColumnInfo Id="PropertyType" PropertyEditorType="DevExpress.ExpressApp.Win.Editors.LookupPropertyEditor" />
-      </Columns>
-    </ListView>
-    <ListView Id="SimpleType_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor">
-      <Columns>
-        <ColumnInfo Id="Category" Removed="True" />
-      </Columns>
-    </ListView>
   </Views>
 </Application>

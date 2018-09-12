@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application Title="商信互联企业信息管理平台" Logo="ExpressAppLogo">
+<Application Title="商信互联企业信息管理平台 " Logo="ExpressAppLogo">
   <ActionDesign>
     <Actions>
       <Action Id="Cancel" Caption="取消" />
+      <Action Id="CancelAction" Caption="取消" />
       <Action Id="ChangeVariant" Caption="视图" />
       <Action Id="Delete" Caption="删除" />
       <Action Id="DialogCancel" Caption="取消" />
@@ -25,13 +26,22 @@
       <Action Id="ShowNavigationItem" Caption="导航" />
       <Action Id="Unlink" Caption="取消链接" />
     </Actions>
+    <ActionToContainerMapping>
+      <ActionContainer Id="项目" IsNewNode="True">
+        <ActionLink ActionId="GenerateStartupFile" IsNewNode="True" />
+        <ActionLink ActionId="SwitchProject" IsNewNode="True" />
+      </ActionContainer>
+    </ActionToContainerMapping>
   </ActionDesign>
   <Options DataAccessMode="Server">
+    <Dashboards DashboardGroupCaption="仪表盘" />
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
   <SchemaModules>
     <SchemaModule Name="SchedulerModuleBase" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
     <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
     <DetailView Id="BusinessForm_DetailView">
@@ -69,7 +79,7 @@
                 <LayoutItem Id="IsAbstract" Index="3" ViewItem="IsAbstract" IsNewNode="True" />
               </LayoutGroup>
               <LayoutItem Id="Description" Index="1" ViewItem="Description" IsNewNode="True" />
-              <LayoutGroup Id="子表设置" Index="1" Direction="Horizontal" IsNewNode="True">
+              <LayoutGroup Id="子表设置" Index="2" Direction="Horizontal" IsNewNode="True">
                 <LayoutItem Id="ItemBusinessObject.CanCustomLogic" ViewItem="ItemBusinessObject.CanCustomLogic" Index="0" IsNewNode="True" />
                 <LayoutItem Id="ItemBusinessObject.IsCloneable" Index="1" ViewItem="ItemBusinessObject.IsCloneable" IsNewNode="True" />
                 <LayoutItem Id="ItemBusinessObject.IsPersistent" Index="2" ViewItem="ItemBusinessObject.IsPersistent" IsNewNode="True" />
@@ -78,7 +88,9 @@
                 <LayoutItem Id="ItemBusinessObject.IsCreatableItem" Index="5" ViewItem="ItemBusinessObject.IsCreatableItem" IsNewNode="True" />
                 <LayoutItem Id="ItemBusinessObject.IsAbstract" Index="6" ViewItem="ItemBusinessObject.IsAbstract" IsNewNode="True" />
               </LayoutGroup>
-              <LayoutItem Id="ItemBusinessObject.Description" Index="2" ViewItem="ItemBusinessObject.Description" IsNewNode="True" />
+              <LayoutItem Id="ItemBusinessObject.Description" Index="3" ViewItem="ItemBusinessObject.Description" IsNewNode="True" />
+              <LayoutItem Id="Config" ViewItem="Config" Index="4" ShowCaption="True" IsNewNode="True" />
+              <LayoutItem Id="ItemBusinessObject.Config" ViewItem="ItemBusinessObject.Config" Index="5" ShowCaption="True" IsNewNode="True" />
             </LayoutGroup>
           </TabbedGroup>
           <LayoutGroup Id="SimpleObject" Index="1" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
@@ -166,6 +178,10 @@
       </Layout>
     </DetailView>
     <DetailView Id="BusinessObject_DetailView">
+      <Items>
+        <PropertyEditor Id="GenericParameterDefines" PropertyEditorType="CIIP.Module.Win.Editors.GenericPropertyEditor" />
+        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
+      </Items>
       <Layout>
         <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors">
@@ -248,11 +264,17 @@
         </TabbedGroup>
       </Layout>
     </DetailView>
-    <ListView Id="BusinessObject_ListView">
+    <ListView Id="BusinessObject_List_LookupListView" ClassName="CIIP.Designer.BusinessObject" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Name" PropertyName="Name" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="Caption" PropertyName="Caption" Index="1" Width="340" SortIndex="0" SortOrder="Ascending" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="BusinessObject_ListView" MasterDetailMode="ListViewAndDetailView">
       <Columns>
         <ColumnInfo Id="CanCustomLogic" Width="92" />
       </Columns>
-      <SplitLayout SplitterPosition="400" />
+      <SplitLayout SplitterPosition="400" Direction="Vertical" />
     </ListView>
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
@@ -275,7 +297,7 @@
     <ListView Id="BusinessObjectBase_Properties_ListView" MasterDetailMode="ListViewAndDetailView">
       <Columns>
         <ColumnInfo Id="Name" Width="121" />
-        <ColumnInfo Id="PropertyType" Width="93" />
+        <ColumnInfo Id="PropertyType" Width="93" PropertyEditorType="DevExpress.ExpressApp.Win.Editors.LookupPropertyEditor" />
         <ColumnInfo Id="DisplayName" Index="2" Width="116" />
         <ColumnInfo Id="Browsable" Index="3" />
         <ColumnInfo Id="RelationProperty" Width="108" Index="4" />
@@ -283,20 +305,30 @@
       <SplitLayout Direction="Vertical" ViewsOrder="DetailViewListView" />
     </ListView>
     <DetailView Id="CollectionProperty_DetailView">
+      <Items>
+        <PropertyEditor Id="AssocicationInfo.LeftTable" View="" />
+        <StaticText Id="D" Text="对" Caption="对" IsNewNode="True" />
+      </Items>
       <Layout>
         <LayoutGroup Id="R1" Index="0" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
-          <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
-          <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="1" IsNewNode="True" />
-          <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
-          <LayoutItem Id="DisplayName" Index="3" ViewItem="ManyToMany" IsNewNode="True" />
-          <LayoutGroup Id="Relation" Index="6" Direction="Horizontal" IsNewNode="True">
-            <LayoutItem Id="AutoCreateRelationProperty" ViewItem="AutoCreateRelationProperty" Index="4" IsNewNode="True" />
-            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="5" IsNewNode="True" />
+          <LayoutGroup Id="C1" Index="0" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="ManyToMany" Index="1" ViewItem="AssocicationInfo.ManyToMany" IsNewNode="True" />
+            <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="2" IsNewNode="True" />
           </LayoutGroup>
-          <LayoutGroup Id="Group" Direction="Horizontal" ShowCaption="False" Index="7" IsNewNode="True">
-            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="0" IsNewNode="True" />
-            <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="" Index="1" IsNewNode="True" />
-            <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" Index="2" IsNewNode="True" />
+          <LayoutGroup Id="C2" Index="3" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="LT" Index="3" ViewItem="AssocicationInfo.LeftTable" ShowCaption="False" IsNewNode="True" />
+            <LayoutItem Id="LP" ViewItem="AssocicationInfo.LeftProperty" Index="4" ShowCaption="False" IsNewNode="True" />
+            <LayoutItem Id="RT" ViewItem="AssocicationInfo.RightTable" Index="5" ShowCaption="False" IsNewNode="True" />
+            <LayoutItem Id="RP" ViewItem="AssocicationInfo.RightProperty" Index="6" ShowCaption="False" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C3" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="Name" Index="0" ViewItem="Name" ShowCaption="" IsNewNode="True" />
+            <LayoutItem Id="Caption" Index="1" ViewItem="Caption" IsNewNode="True" />
+            <LayoutItem Id="AN" ViewItem="AssocicationInfo.Name" Index="2" IsNewNode="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="C4" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="False" Index="7" IsNewNode="True" />
+            <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" Index="8" ShowCaption="False" IsNewNode="True" />
           </LayoutGroup>
         </LayoutGroup>
         <LayoutGroup Id="Main" RelativeSize="100" Removed="True">
@@ -535,5 +567,10 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <ListView Id="SimpleType_ListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor">
+      <Columns>
+        <ColumnInfo Id="Category" Removed="True" />
+      </Columns>
+    </ListView>
   </Views>
 </Application>

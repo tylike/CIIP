@@ -11,12 +11,13 @@ using System;
 
 namespace CIIP.Designer
 {
+
     /// <summary>
     /// 
     /// </summary>
     [XafDefaultProperty("DisplayName")]
     [Appearance("PropertyBase.RelationIsEnable", TargetItems = "RelationProperty", Enabled = false, Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, Method = "RelationIsEnable")]
-    [Appearance("PropertyBase.RelationPropertyStateByAutoCreate", TargetItems = "RelationProperty", Criteria = "AutoCreateRelationProperty", Enabled = false)]
+    //[Appearance("PropertyBase.RelationPropertyStateByAutoCreate", TargetItems = "RelationProperty", Criteria = "AutoCreateRelationProperty", Enabled = false)]
     //对多对时,自动创建是必须的.
     //一对多时,可选手动创建,默认是自动创建.
     public abstract class PropertyBase : NameObject
@@ -57,8 +58,9 @@ namespace CIIP.Designer
         [XafDisplayName("类型"), RuleRequiredField]
         [ImmediatePostData]
         [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
-        [EditorAlias(Editors.PropertyTypeTokenEditor),DataSourceProperty(nameof(PropertyTypes))]
-        public BusinessObjectBase PropertyType
+        //[EditorAlias(Editors.PropertyTypeTokenEditor)]
+        [DataSourceProperty(nameof(PropertyTypes))]
+        public virtual BusinessObjectBase PropertyType
         {
             get { return _PropertyType; }
             set
@@ -76,18 +78,18 @@ namespace CIIP.Designer
                 }
             }
         }
-        
-        private BusinessObject[] types;
 
-        protected IEnumerable<BusinessObjectBase> PropertyTypes
+        protected BusinessObjectBase[] propertyTypes;
+
+        protected virtual IEnumerable<BusinessObjectBase> PropertyTypes
         {
             get
             {
-                if (types == null)
+                if (propertyTypes == null)
                 {
-                    types = Session.Query<BusinessObject>().Where(x => x.IsPersistent).ToArray();
+                    propertyTypes = Session.Query<BusinessObjectBase>().ToArray();
                 }
-                return types;
+                return propertyTypes;
             }
         }
 
@@ -115,39 +117,39 @@ namespace CIIP.Designer
         #endregion
 
         #region 关联属性:一对多或多对多时,两个属性的对应关系.
-        protected virtual bool RelationPropertyNotNull
-        {
-            get
-            {
-                return false;
-            }
-        }
+        //protected virtual bool RelationPropertyNotNull
+        //{
+        //    get
+        //    {
+        //        return false;
+        //    }
+        //}
 
-        private PropertyBase _RelationProperty;
-        [XafDisplayName("关联属性"), DataSourceProperty("RelationPropertyDataSources")]
-        [RuleRequiredField(TargetCriteria = "RelationPropertyNotNull && !AutoCreateRelationProperty"), LookupEditorMode(LookupEditorMode.AllItems)]
-        [ToolTip("一对多或多对多时,两个属性的对应关系.")]
-        public PropertyBase RelationProperty
-        {
-            get { return _RelationProperty; }
-            set
-            {
-                SetPropertyValue("RelationProperty", ref _RelationProperty, value);
-                if (!IsLoading && !IsSaving && value != null)
-                {
-                    if (value.RelationProperty != this)
-                        value.RelationProperty = this;
-                }
-            }
-        }
+        //private PropertyBase _RelationProperty;
+        //[XafDisplayName("关联属性"), DataSourceProperty("RelationPropertyDataSources")]
+        //[RuleRequiredField(TargetCriteria = "RelationPropertyNotNull"), LookupEditorMode(LookupEditorMode.AllItems)]
+        //[ToolTip("一对多或多对多时,两个属性的对应关系.")]
+        //public PropertyBase RelationProperty
+        //{
+        //    get { return _RelationProperty; }
+        //    set
+        //    {
+        //        SetPropertyValue("RelationProperty", ref _RelationProperty, value);
+        //        if (!IsLoading && !IsSaving && value != null)
+        //        {
+        //            if (value.RelationProperty != this)
+        //                value.RelationProperty = this;
+        //        }
+        //    }
+        //}
 
-        protected virtual List<PropertyBase> RelationPropertyDataSources
-        {
-            get
-            {
-                return PropertyType?.Properties.Where(x => x.PropertyType == BusinessObject).OfType<PropertyBase>().ToList();
-            }
-        }
+        //protected virtual List<PropertyBase> RelationPropertyDataSources
+        //{
+        //    get
+        //    {
+        //        return PropertyType?.Properties.Where(x => x.PropertyType == BusinessObject).OfType<PropertyBase>().ToList();
+        //    }
+        //}
         #endregion
 
         #region 可见性
@@ -160,82 +162,29 @@ namespace CIIP.Designer
             set { SetPropertyValue("Browsable", ref _Browsable, value); }
         }
         #endregion
-
-        [CaptionsForBoolValues("自动", "手动")]
-        [XafDisplayName("创建关联属性")]
-        [ImmediatePostData]
-        public bool AutoCreateRelationProperty
+        
+        public void CalcNameCaption()
         {
-            get { return GetPropertyValue<bool>(nameof(AutoCreateRelationProperty)); }
-            set { SetPropertyValue(nameof(AutoCreateRelationProperty), value); }
-        }
-
-        protected override void OnChanged(string propertyName, object oldValue, object newValue)
-        {
-            base.OnChanged(propertyName, oldValue, newValue);
-            if (IsLoading || IsSaving)
-                return;
-
-            if (propertyName == nameof(AutoCreateRelationProperty))
+            if (PropertyType == null) return;
+            if (string.IsNullOrEmpty(Name))
             {
-                if (AutoCreateRelationProperty)
-                {
-                    RelationProperty = null;
-                }
+                Name = PropertyType.Name;
+                Caption = PropertyType.Caption;
             }
-            if (propertyName == nameof(PropertyType) && AutoCreateRelationProperty)
-            {
-                if (PropertyType != null)
-                {
-                    if (string.IsNullOrEmpty(Name))
-                    {
-                        Name = PropertyType.Name;
-                        Caption = PropertyType.Caption;
-                    }
-
-                    //查找一个属性,修改为自动创建一个.
-                    //if (RelationProperty == null)
-                    //{
-                    //    try
-                    //    {
-                    //        RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
-                    //    }
-                    //    catch (Exception ex)
-                    //    {
-                    //        throw ex;
-                    //    }
-                    //}
-
-                    //if (RelationProperty == null)
-                    //{
-                    //    RelationProperty = PropertyType.Properties.SingleOrDefault(x => x.PropertyType.Oid == this.BusinessObject.Oid);
-                    //}
-                }
-                else
-                {
-                    Name = "";
-                }
-
-            }
-
         }
-
-        [ModelDefault("AllowEdit","False")]
-        public bool IsAutoCreated
-        {
-            get { return GetPropertyValue<bool>(nameof(IsAutoCreated)); }
-            set { SetPropertyValue(nameof(IsAutoCreated), value); }
-        }
-
-
-
-
 
         public override void AfterConstruction()
         {
             base.AfterConstruction();
             Browsable = true;
-            AutoCreateRelationProperty = true;
+        }
+
+        [ModelDefault("AllowEdit", "False")]
+        [ExpandObjectMembers(ExpandObjectMembers.Always)]
+        public AssocicationInfo AssocicationInfo
+        {
+            get { return GetPropertyValue<AssocicationInfo>(nameof(AssocicationInfo)); }
+            set { SetPropertyValue(nameof(AssocicationInfo), value); }
         }
 
         #region 在客户端进行配置即可
@@ -361,10 +310,9 @@ namespace CIIP.Designer
         #endregion
         #endregion 
         #endregion
+
         public PropertyBase(Session s) : base(s)
         {
         }
-
-
     }
 }

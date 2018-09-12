@@ -25,16 +25,16 @@ namespace CIIP.Designer
                 );
         }
 
-        public static CollectionProperty AddAssociation(this BusinessObject self, string name, BusinessObject bo, bool isAggregated,Property relation)
-        {
-            var cp = new CollectionProperty(self.Session);
-            self.Properties.Add(cp);
-            cp.PropertyType = bo;
-            cp.Name = name;
-            cp.Aggregated = isAggregated;
-            cp.RelationProperty = relation;
-            return cp;
-        }
+        //public static CollectionProperty AddAssociation(this BusinessObject self, string name, BusinessObject bo, bool isAggregated,Property relation)
+        //{
+        //    var cp = new CollectionProperty(self.Session);
+        //    self.Properties.Add(cp);
+        //    cp.PropertyType = bo;
+        //    cp.Name = name;
+        //    cp.Aggregated = isAggregated;
+        //    //cp.RelationProperty = relation;
+        //    return cp;
+        //}
         
 
         #endregion

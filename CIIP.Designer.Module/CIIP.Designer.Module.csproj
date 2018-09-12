@@ -187,6 +187,7 @@
     <Compile Include="BusinessObjects\BusinessObject\BusinessObjectQuickAddExtendesion.cs" />
     <Compile Include="BusinessObjects\BusinessObject\CodeFile.cs" />
     <Compile Include="BusinessObjects\Project\Project.cs" />
+    <Compile Include="BusinessObjects\Property\AssocicationInfo.cs" />
     <Compile Include="BusinessObjects\Property\CollectionProperty.cs" />
     <Compile Include="BusinessObjects\BusinessObject\GenericParameterDefine.cs" />
     <Compile Include="BusinessObjects\BusinessObject\GenericParameterInstance.cs" />
@@ -368,6 +369,42 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="UnusableNodes7.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes8.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes9.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes11.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes12.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes13.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes14.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes15.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes16.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

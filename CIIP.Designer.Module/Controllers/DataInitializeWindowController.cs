@@ -159,20 +159,20 @@ namespace CIIP.Module.Controllers
             }
 
             //第三步,设置属性的关联属性,因为可能用到第二步中创建的属性,及,创建关系.
-            foreach (var bob in bos.Where(x => !x.IsRuntimeDefine))
-            {
-                var cps = bob.Properties.OfType<CollectionProperty>();
-                if (bob.Properties.Count > 0)
-                {
-                    var type = ReflectionHelper.FindType(bob.FullName);
-                    var typeInfo = CaptionHelper.ApplicationModel.BOModel.GetClass(type);
-                    foreach (var cp in cps)
-                    {
-                        var mi = typeInfo.FindMember(cp.Name);
-                        cp.RelationProperty = cp.PropertyType.FindProperty(mi.MemberInfo.AssociatedMemberInfo.Name);
-                    }
-                }
-            }
+            //foreach (var bob in bos.Where(x => !x.IsRuntimeDefine))
+            //{
+            //    var cps = bob.Properties.OfType<CollectionProperty>();
+            //    if (bob.Properties.Count > 0)
+            //    {
+            //        var type = ReflectionHelper.FindType(bob.FullName);
+            //        var typeInfo = CaptionHelper.ApplicationModel.BOModel.GetClass(type);
+            //        foreach (var cp in cps)
+            //        {
+            //            var mi = typeInfo.FindMember(cp.Name);
+            //            cp.RelationProperty = cp.PropertyType.FindProperty(mi.MemberInfo.AssociatedMemberInfo.Name);
+            //        }
+            //    }
+            //}
 
             #endregion
 

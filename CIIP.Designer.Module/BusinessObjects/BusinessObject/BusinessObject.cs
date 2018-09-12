@@ -164,7 +164,10 @@ namespace CIIP.Designer
         } 
         #endregion
         
+
     }
+
+
 
 #warning 需要验证属性名称不可以重名的情况.
 

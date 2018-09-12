@@ -62,7 +62,7 @@ namespace CIIP.Module.Win.Editors
                 {
                     if (control.Properties.Tokens.Count > 0)
                     {
-                        var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid);// as System.ComponentModel.IBindingList;
+                        var values = (this.PropertyValue as IEnumerable).OfType<ImplementRelation>().Select(x => x.ImplementBusinessObject.Oid).Distinct();// as System.ComponentModel.IBindingList;
                         control.EditValue = string.Join(",", values);
                     }
                 }

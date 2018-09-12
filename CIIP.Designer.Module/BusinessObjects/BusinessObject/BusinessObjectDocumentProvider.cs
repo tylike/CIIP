@@ -13,6 +13,15 @@ namespace CIIP.Designer
         {
             self.Append($"\t\t[ModelDefault(\"{name}\",\"{value}\")]");
         }
+        public static void Assocication(this StringBuilder self,string name)
+        {
+            self.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, name);
+
+        }
+        public static void Aggregated(this StringBuilder self)
+        {
+            self.Append("\t\t[" + typeof(AggregatedAttribute).FullName + "]");
+        }
     }
     public partial class BusinessObject : IDocumentProvider
     {
@@ -173,10 +182,9 @@ $@"     public {type} {name}
                     rst.ModelDefault("Caption", item.Caption);
                 }
                 ProcessPropertyBase(rst, item);
-                if (item.RelationProperty != null)
+                if (item.AssocicationInfo != null)
                 {
-                    var assName = string.Format("{0}_{1}", item.RelationProperty.Name, item.Name);
-                    rst.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, assName);
+                    rst.Assocication(item.AssocicationInfo.Name);
                 }
                 rst.Append(propertyTemplate(pt, item.Name));
             }
@@ -184,17 +192,14 @@ $@"     public {type} {name}
 
             #region 关联集合
             var collectionProperties = Properties.OfType<CollectionProperty>();
-            var att = "\t\t[" + typeof(AggregatedAttribute).FullName + "]";
             foreach (var item in collectionProperties)
             {
                 if (item.Aggregated)
                 {
-                    rst.AppendLine(att);
+                    rst.Aggregated();
                 }
-                ProcessPropertyBase(rst, item);
-
-                var assName = string.Format("{0}_{1}", item.Name, item.RelationProperty.Name);
-                rst.AppendFormat("\t\t[{0}(\"{1}\")]\n", typeof(AssociationAttribute).FullName, assName);
+                ProcessPropertyBase(rst, item);                
+                rst.Assocication(item.AssocicationInfo.Name);
                 var pt = "global::" + item.PropertyType.FullName;
                 rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.Name}{{ get{{ return GetCollection<{pt}>(\"{item.Name}\"); }} }}");
             }
