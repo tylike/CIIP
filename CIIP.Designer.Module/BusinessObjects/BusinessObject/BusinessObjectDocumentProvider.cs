@@ -182,6 +182,40 @@ $@"     public {type} {name}
                     rst.ModelDefault("Caption", item.Caption);
                 }
                 ProcessPropertyBase(rst, item);
+
+                if (item is Property property)
+                {
+                    if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
+                    {
+                        rst.AppendFormat("\t\t[ImmediatePostData]\n");
+                    }
+
+                    if (!string.IsNullOrEmpty(property.DisplayFormat))
+                    {
+                        rst.ModelDefault("DisplayFormat", property.DisplayFormat);
+                    }
+
+                    if (!string.IsNullOrEmpty(property.EditMask))
+                    {
+                        rst.AppendFormat("EditMask", property.EditMask);
+                    }
+
+                    if (property.Range != null)
+                    {
+                        rst.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
+                    }
+
+                    if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
+                    {
+                        rst.AppendFormat("\t\t[RuleRequiredField]\n");
+                    }
+
+                    if (property.UniqueValue.HasValue && property.UniqueValue.Value)
+                    {
+                        rst.AppendFormat("\t\t[RuleUniqueValue]\n");
+                    }
+                }
+
                 if (item.AssocicationInfo != null)
                 {
                     rst.Assocication(item.AssocicationInfo.Name);
@@ -249,35 +283,7 @@ $@"     public {type} {name}
                 code.ModelDefault(nameof(property.AllowEdit), "False");
             }
 
-            if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
-            {
-                code.AppendFormat("\t\t[ImmediatePostData]\n");
-            }
-
-            if (!string.IsNullOrEmpty(property.DisplayFormat))
-            {
-                code.ModelDefault("DisplayFormat", property.DisplayFormat);
-            }
-
-            if (!string.IsNullOrEmpty(property.EditMask))
-            {
-                code.AppendFormat("EditMask", property.EditMask);
-            }
-
-            if (property.Range != null)
-            {
-                code.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
-            }
-
-            if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
-            {
-                code.AppendFormat("\t\t[RuleRequiredField]\n");
-            }
-
-            if (property.UniqueValue.HasValue && property.UniqueValue.Value)
-            {
-                code.AppendFormat("\t\t[RuleUniqueValue]\n");
-            }
+            
         }
     }
 

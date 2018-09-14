@@ -30,6 +30,7 @@ namespace CIIP.Win {
             LinkNewObjectToParentImmediately = false;
             OptimizedControllersCreation = true;
             UseLightStyle = true;
+            UseOldTemplates = false;
         }
         protected override void CreateDefaultObjectSpaceProvider(CreateCustomObjectSpaceProviderEventArgs args) {
             args.ObjectSpaceProvider =  new XPObjectSpaceProvider(args.ConnectionString, args.Connection, false);

@@ -6,80 +6,64 @@ using System.Linq;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using DevExpress.ExpressApp.ConditionalAppearance;
+using System.Diagnostics;
 
 namespace CIIP.Designer
 {
     [XafDisplayName("子表")]
-    [Appearance("ManyToManyHiddenAggregated", AppearanceItemType = "LayoutItem", Criteria = "AssocicationInfo.ManyToMany", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "Aggregated")]
-    [Appearance("LVisible", AppearanceItemType = "LayoutItem" , Criteria = "Oid == AssocicationInfo.LeftProperty.Oid", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "LT,LP")]
-    [Appearance("RVisible", AppearanceItemType = "LayoutItem", Criteria = "Oid != AssocicationInfo.LeftProperty.Oid", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "RT,RP")]
+    //[Appearance("ManyToManyHiddenAggregated", AppearanceItemType = "LayoutItem", Criteria = "AssocicationInfo.ManyToMany", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "Aggregated")]
+    //[Appearance("LVisible", AppearanceItemType = "LayoutItem", Criteria = "SelfAtLeft", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "LT,LP")]
+    //[Appearance("RVisible", AppearanceItemType = "LayoutItem", Criteria = "!SelfAtLeft", Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, TargetItems = "RT,RP")]
+    //[Appearance("LVisible1",  Criteria = "SelfAtLeft",Enabled=false,TargetItems = "AssocicationInfo.LeftTable,AssocicationInfo.LeftProperty")]
+    //[Appearance("RVisible1",  Criteria = "!SelfAtLeft",Enabled=false,TargetItems = "AssocicationInfo.RightTable,AssocicationInfo.RightProperty")]
     public class CollectionProperty : PropertyBase
     {
+        //public bool SelfAtLeft
+        //{
+        //    get { return GetPropertyValue<bool>(nameof(SelfAtLeft)); }
+        //    set { SetPropertyValue(nameof(SelfAtLeft), value); }
+        //}
+
         public CollectionProperty(Session s) : base(s)
         {
+            //CreateAssociation();
         }
 
-        public override BusinessObjectBase PropertyType
-        {
-            get
-            {
-                if (AssocicationInfo?.LeftProperty?.Oid != this.Oid)
-                {
-                    return AssocicationInfo?.LeftTable;
-                }
-                return AssocicationInfo?.RightTable;
-            }
-            set => base.PropertyType = value;
-        }
+        //public CollectionProperty(Session s, AssocicationInfo associcationInfo) : base(s)
+        //{
+        //    this.SelfAtLeft = true;
+        //    this.AssocicationInfo = associcationInfo;
+        //}
 
-        public override void AfterConstruction()
-        {
-            base.AfterConstruction();
-            AssocicationInfo = new AssocicationInfo(Session);
-            AssocicationInfo.RightProperty = this;
-        }
+        //public override BusinessObjectBase PropertyType
+        //{
+        //    get
+        //    {
+        //        if (AssocicationInfo?.LeftProperty?.Oid != this.Oid)
+        //        {
+        //            return AssocicationInfo?.LeftTable;
+        //        }
+        //        return AssocicationInfo?.RightTable;
+        //    }
+        //    set => base.PropertyType = value;
+        //}
 
-        protected override void OnSaving()
-        {
-            base.OnSaving();
-            CreateRelationProperty();
-        }
-        protected void CreateRelationProperty()
-        {
-            //if (ManyToMany)
-            //{
-            //    //当前是xpcollection<学生> 学生s {get;} 属性
-            //    //自动创建的属性是 xpcollection<教师> 教师s {get;} 属性
-            //    var property = new CollectionProperty(Session);
-            //    property.BusinessObject = this.PropertyType;
-            //    property.PropertyType = this.BusinessObject;
-            //    property.ManyToMany = true;
-            //    property.Name = BusinessObject.Name;
-            //    property.Caption = BusinessObject.Caption;
-            //    property.RelationProperty = this;
-            //    RelationProperty = property;
-            //}
-            //else
-            //{
-            //    //当前是xpcollection<order> orders {get;} 属性
-            //    //自动创建的属性是 customer customer {get;} 属性
-            //    var property = new Property(Session);
-            //    property.BusinessObject = this.PropertyType;
-            //    property.PropertyType = this.BusinessObject;
-            //    property.Name = BusinessObject.Name;
-            //    property.Caption = BusinessObject.Caption;
-            //    property.RelationProperty = this;
-            //    RelationProperty = property;
-            //}
-        }
+        //private void CreateAssociation()
+        //{
+        //    if (!SelfAtLeft && !Session.IsObjectsLoading)
+        //    {
+        //        AssocicationInfo = new AssocicationInfo(Session);
+        //        AssocicationInfo.RightProperty = this;
+        //    }
+        //}
 
-        private bool _Aggregated;
         [XafDisplayName("聚合")]
         public bool Aggregated
         {
-            get { return _Aggregated; }
-            set { SetPropertyValue("Aggregated", ref _Aggregated, value); }
+            get { return GetPropertyValue<bool>(nameof(Aggregated)); }
+            set { SetPropertyValue(nameof(Aggregated), value); }
         }
+
         protected override IEnumerable<BusinessObjectBase> PropertyTypes
         {
             get
@@ -100,10 +84,13 @@ namespace CIIP.Designer
             //**********************************************************
             //应该不能放到基类中去,否则可能导致错误的修改右表,需要验证
             //**********************************************************
-            if (propertyName == nameof(this.BusinessObject))
-            {
-                AssocicationInfo.RightTable = this.BusinessObject;
-            }
+            //if (propertyName == nameof(this.BusinessObject))
+            //{
+            //    if (SelfAtLeft)
+            //        AssocicationInfo.LeftTable = this.BusinessObject as BusinessObject;
+            //    else
+            //        AssocicationInfo.RightTable = this.BusinessObject as BusinessObject;
+            //}
         }
 
 

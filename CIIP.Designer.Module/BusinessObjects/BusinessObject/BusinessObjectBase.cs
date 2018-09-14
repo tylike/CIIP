@@ -9,9 +9,71 @@ using DevExpress.Persistent.Base;
 using CIIP.Persistent.BaseImpl;
 using System.Collections.Generic;
 using System.Linq;
+using DevExpress.Persistent.BaseImpl;
 
 namespace CIIP.Designer
 {
+    [NavigationItem]
+    public class Order : BaseObject
+    {
+        public Order(Session session) : base(session)
+        {
+        }
+        public string Code
+        {
+            get { return GetPropertyValue<string>(nameof(Code)); }
+            set { SetPropertyValue(nameof(Code), value); }
+        }
+
+
+        public string Test
+        {
+            get
+            {
+                return "";
+            }
+        }
+
+        //[PersistentAlias("[Items]")]
+        //public XPCollection<OrderItem> Items2
+        //{
+        //    get
+        //    {
+        //        var t = EvaluateAlias(nameof(Items2));
+        //        return (XPCollection<OrderItem>)t;
+        //    }
+        //}
+
+
+        [Association, DevExpress.Xpo.Aggregated]
+        public XPCollection<OrderItem> Items
+        {
+            get
+            {
+                return GetCollection<OrderItem>(nameof(Items));
+            }
+        }
+    }
+
+    public class OrderItem : BaseObject
+    {
+        public OrderItem(Session session) : base(session)
+        {
+        }
+        [Association]
+        public Order Order
+        {
+            get { return GetPropertyValue<Order>(nameof(Order)); }
+            set { SetPropertyValue(nameof(Order), value); }
+        }
+
+        public string Product
+        {
+            get { return GetPropertyValue<string>(nameof(Product)); }
+            set { SetPropertyValue(nameof(Product), value); }
+        }
+    }
+
     [XafDisplayName("¿‡–Õ")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     public class BusinessObjectBase : NameObject, ICategorizedItem

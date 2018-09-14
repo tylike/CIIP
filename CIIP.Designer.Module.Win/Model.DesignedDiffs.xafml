@@ -15,47 +15,16 @@
   </ActionDesign>
   <Options FormStyle="Ribbon" Skin="Office 2016 Colorful" UIType="TabbedMDI" />
   <SchemaModules>
-    <SchemaModule Name="SystemModule" Version="18.1.5.0" IsNewNode="True" />
-    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="18.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
     <DetailView Id="CollectionProperty_DetailView">
-      <Items>
-        <PropertyEditor Id="AssocicationInfo.LeftTable" View="BusinessObject_List_LookupListView" />
-      </Items>
       <Layout>
-        <LayoutGroup Id="R1">
-          <LayoutItem Id="ManyToMany" Index="0" ViewItem="AssocicationInfo.ManyToMany" TextAlignMode="AutoSize" IsNewNode="True" />
-          <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="False" Index="1" TextAlignMode="AutoSize" SizeConstraintsType="Custom" MaxSize="60, 0" IsNewNode="True" />
-          <LayoutItem Id="LT" Index="2" ViewItem="AssocicationInfo.LeftTable" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
-          <LayoutItem Id="LP" ViewItem="AssocicationInfo.LeftProperty" Index="3" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
-          <LayoutItem Id="RT" ViewItem="AssocicationInfo.RightTable" Index="4" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
-          <LayoutItem Id="RP" ViewItem="AssocicationInfo.RightProperty" Index="5" ShowCaption="False" TextAlignMode="AutoSize" IsNewNode="True" />
-          <LayoutGroup Id="C3" Index="6" Removed="True">
-            <LayoutItem Id="AN" Removed="True" />
-            <LayoutItem Id="Caption" Removed="True" />
-            <LayoutItem Id="Name" Removed="True" />
-          </LayoutGroup>
-          <LayoutItem Id="Name" Index="6" ViewItem="Name" ShowCaption="" IsNewNode="True" />
-          <LayoutItem Id="Caption" Index="7" ViewItem="Caption" IsNewNode="True" />
-          <LayoutItem Id="AN" ViewItem="AssocicationInfo.Name" Index="8" IsNewNode="True" />
-          <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="False" Index="9" TextAlignMode="AutoSize" SizeConstraintsType="Custom" MaxSize="60, 0" IsNewNode="True" />
-          <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" Index="10" ShowCaption="False" TextAlignMode="AutoSize" SizeConstraintsType="Custom" MaxSize="100, 0" IsNewNode="True" />
-          <LayoutGroup Id="C1" Removed="True">
-            <LayoutItem Id="Aggregated" TextAlignMode="AutoSize" Removed="True" />
-            <LayoutItem Id="ManyToMany" TextAlignMode="AutoSize" Removed="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="C2" Removed="True">
-            <LayoutItem Id="LP" TextAlignMode="AutoSize" Removed="True" />
-            <LayoutItem Id="LT" TextAlignMode="AutoSize" Removed="True" />
-            <LayoutItem Id="RP" TextAlignMode="AutoSize" Removed="True" />
-            <LayoutItem Id="RT" TextAlignMode="AutoSize" Removed="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="C4" Removed="True">
-            <LayoutItem Id="AllowEdit" TextAlignMode="AutoSize" Removed="True" />
-            <LayoutItem Id="Browsable" TextAlignMode="AutoSize" Removed="True" />
-          </LayoutGroup>
-          <LayoutItem Id="E" IsNewNode="True" />
+        <LayoutGroup Id="R">
+          <LayoutItem Id="Browsable" TextAlignMode="AutoSize" />
+          <LayoutItem Id="AllowEdit" TextAlignMode="AutoSize" />
+          <LayoutItem Id="Aggregated" TextAlignMode="AutoSize" />
         </LayoutGroup>
       </Layout>
     </DetailView>

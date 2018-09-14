@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="CollectionProperty_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="AssocicationInfo.LeftTable" View="BusinessObject_List_LookupListView" />
+      </Items>
+      <Layout Id="Layout">
+        <LayoutGroup Id="R1">
+          <LayoutItem Id="RP" ViewItem="AssocicationInfo.RightProperty" />
+          <LayoutItem Id="RT" ViewItem="AssocicationInfo.RightTable" />
+          <LayoutItem Id="LP" ViewItem="AssocicationInfo.LeftProperty" />
+          <LayoutItem Id="LT" ViewItem="AssocicationInfo.LeftTable" />
+          <LayoutItem Id="ManyToMany" ViewItem="AssocicationInfo.ManyToMany" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

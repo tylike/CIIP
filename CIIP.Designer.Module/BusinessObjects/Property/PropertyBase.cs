@@ -8,6 +8,10 @@ using DevExpress.ExpressApp.Model;
 using System.Linq;
 using DevExpress.ExpressApp.ConditionalAppearance;
 using System;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Actions;
+using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Xpo;
 
 namespace CIIP.Designer
 {
@@ -16,27 +20,11 @@ namespace CIIP.Designer
     /// 
     /// </summary>
     [XafDefaultProperty("DisplayName")]
-    [Appearance("PropertyBase.RelationIsEnable", TargetItems = "RelationProperty", Enabled = false, Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide, Method = "RelationIsEnable")]
     //[Appearance("PropertyBase.RelationPropertyStateByAutoCreate", TargetItems = "RelationProperty", Criteria = "AutoCreateRelationProperty", Enabled = false)]
     //对多对时,自动创建是必须的.
     //一对多时,可选手动创建,默认是自动创建.
     public abstract class PropertyBase : NameObject
     {
-        private string _Expression;
-
-        [XafDisplayName("计算公式")]
-        [ToolTip("填正了公式后，此属性将为只读，使用公式进行计算")]
-        public string Expression
-        {
-            get { return _Expression; }
-            set { SetPropertyValue("Expression", ref _Expression, value); }
-        }
-
-        public static bool RelationIsEnable(PropertyBase obj)
-        {
-            return obj != null && obj.PropertyType is SimpleType;
-        }
-
         #region 所属业务
         [Association]
         public BusinessObjectBase BusinessObject
@@ -95,6 +83,7 @@ namespace CIIP.Designer
 
         [ToolTip("用于显示在界面上的标题内容.")]
         [XafDisplayName("标题")]
+        [ImmediatePostData]
         public string Caption
         {
             get { return GetPropertyValue<string>(nameof(Caption)); }
@@ -162,7 +151,7 @@ namespace CIIP.Designer
             set { SetPropertyValue("Browsable", ref _Browsable, value); }
         }
         #endregion
-        
+
         public void CalcNameCaption()
         {
             if (PropertyType == null) return;
@@ -172,7 +161,16 @@ namespace CIIP.Designer
                 Caption = PropertyType.Caption;
             }
         }
-
+        //protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        //{
+        //    base.OnChanged(propertyName, oldValue, newValue);
+        //    if (IsLoading) return;
+        //    if(propertyName == nameof(Name))
+        //    {
+        //        AssocicationInfo?.CalcName();
+        //        CalcNameCaption();
+        //    }
+        //}
         public override void AfterConstruction()
         {
             base.AfterConstruction();
@@ -180,7 +178,6 @@ namespace CIIP.Designer
         }
 
         [ModelDefault("AllowEdit", "False")]
-        [ExpandObjectMembers(ExpandObjectMembers.Always)]
         public AssocicationInfo AssocicationInfo
         {
             get { return GetPropertyValue<AssocicationInfo>(nameof(AssocicationInfo)); }
@@ -246,73 +243,73 @@ namespace CIIP.Designer
         }
         #endregion
 
-        #region 立即回发
-        private bool? _ImmediatePostData;
-        [XafDisplayName("立即回发")]
-        [ToolTip("当属性值发生变化后,立即通知系统,系统可以即时做计算等相关操作,通常用于公式依赖的属性,web中较为常见.")]
-        public bool? ImmediatePostData
-        {
-            get { return _ImmediatePostData; }
-            set { SetPropertyValue("ImmediatePostData", ref _ImmediatePostData, value); }
-        }
-        #endregion
 
-        #region 显示与编辑格式
-        private string _DisplayFormat;
-        [XafDisplayName("显示格式")]
-        public string DisplayFormat
-        {
-            get { return _DisplayFormat; }
-            set { SetPropertyValue("DisplayFormat", ref _DisplayFormat, value); }
-        }
-
-        private string _EditMask;
-        [XafDisplayName("编辑格式")]
-        public string EditMask
-        {
-            get { return _EditMask; }
-            set { SetPropertyValue("EditMask", ref _EditMask, value); }
-        }
-        #endregion
-
-        #region 值范围
-        private RuleRange _Range;
-        [XafDisplayName("范围")]
-        [VisibleInListView(false)]
-        [ExpandObjectMembers(ExpandObjectMembers.InDetailView)]
-        public RuleRange Range
-        {
-            get { return _Range; }
-            set { SetPropertyValue("Range", ref _Range, value); }
-        }
-        #endregion
-
-        #region 验证
-        #region 必填
-
-        private bool? _RuleRequiredField;
-        [XafDisplayName("必填")]
-        public bool? RuleRequiredField
-        {
-            get { return _RuleRequiredField; }
-            set { SetPropertyValue("RuleRequiredField", ref _RuleRequiredField, value); }
-        }
-        #endregion
-
-        #region 唯一
-        private bool? _UniqueValue;
-        [XafDisplayName("唯一")]
-        public bool? UniqueValue
-        {
-            get { return _UniqueValue; }
-            set { SetPropertyValue("UniqueValue", ref _UniqueValue, value); }
-        }
-        #endregion
-        #endregion 
         #endregion
 
         public PropertyBase(Session s) : base(s)
         {
         }
+
+
+    }
+
+    public class PropertyBaseViewController : ObjectViewController<ObjectView, PropertyBase>
+    {
+        public PropertyBaseViewController()
+        {
+            var action = new SimpleAction(this, "CreateRelationProperty", "CreateRelationProperty");
+            action.Caption = "创建";
+            action.ImageName = "Action_New";
+            action.Execute += Action_Execute;
+        }
+
+        private void Action_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            //var os = this.ObjectSpace.CreateNestedObjectSpace();
+            //var obj = CreateRelationProperty(os.GetObject(this.ViewCurrentObject), os);
+
+            //os.Committed += (s, evt) =>
+            //{
+            //    this.ViewCurrentObject.AssocicationInfo.LeftProperty = this.ObjectSpace.GetObject(obj);
+
+            //};
+
+            //var view = Application.CreateDetailView(os, obj, true);
+            //e.ShowViewParameters.CreatedView = view;
+            //e.ShowViewParameters.Context = TemplateContext.PopupWindow;
+            //e.ShowViewParameters.NewWindowTarget = NewWindowTarget.Separate;
+            //e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
+            //var dc = new DialogController();
+
+            //dc.Accepting += (s, evt) =>
+            //{
+            //    //os.CommitChanges();
+            //};
+
+            //e.ShowViewParameters.Controllers.Add(dc);
+
+        }
+
+        //public PropertyBase CreateRelationProperty(PropertyBase currentProperty, IObjectSpace os)
+        //{
+        //    PropertyBase property;
+        //    if (currentProperty.AssocicationInfo.ManyToMany)
+        //    {
+        //        //当前是xpcollection<学生> 学生s {get;} 属性
+        //        //自动创建的属性是 xpcollection<教师> 教师s {get;} 属性
+        //        property = new CollectionProperty((os as XPObjectSpace).Session, currentProperty.AssocicationInfo);// os.CreateObject<CollectionProperty>();
+        //    }
+        //    else
+        //    {
+        //        //当前是xpcollection<order> orders {get;} 属性
+        //        //自动创建的属性是 customer customer {get;} 属性
+        //        property = os.CreateObject<Property>();
+        //    }
+        //    property.BusinessObject = currentProperty.PropertyType;
+        //    property.PropertyType = currentProperty.BusinessObject;
+        //    property.Name = currentProperty.BusinessObject.Name;
+        //    property.Caption = currentProperty.BusinessObject.Caption;
+        //    return property;
+        //}
     }
 }
