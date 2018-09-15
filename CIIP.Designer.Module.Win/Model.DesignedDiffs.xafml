@@ -25,6 +25,7 @@
           <LayoutItem Id="Browsable" TextAlignMode="AutoSize" />
           <LayoutItem Id="AllowEdit" TextAlignMode="AutoSize" />
           <LayoutItem Id="Aggregated" TextAlignMode="AutoSize" />
+          <LayoutItem Id="AssocicationInfo" TextAlignMode="AutoSize" SizeConstraintsType="Custom" />
         </LayoutGroup>
       </Layout>
     </DetailView>

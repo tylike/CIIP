@@ -12,6 +12,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.SystemModule;
 using DevExpress.ExpressApp.Xpo;
+using DevExpress.ExpressApp.Editors;
 
 namespace CIIP.Designer
 {
@@ -177,7 +178,9 @@ namespace CIIP.Designer
             Browsable = true;
         }
 
-        [ModelDefault("AllowEdit", "False")]
+        //[ModelDefault("AllowEdit", "False")]
+        [XafDisplayName("≈‰÷√")]
+        [EditorAlias(EditorAliases.ObjectPropertyEditor)]
         public AssocicationInfo AssocicationInfo
         {
             get { return GetPropertyValue<AssocicationInfo>(nameof(AssocicationInfo)); }

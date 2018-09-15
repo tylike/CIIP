@@ -312,9 +312,10 @@
           <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="False" Index="3" MaxSize="80, 0" SizeConstraintsType="Custom" IsNewNode="True" />
           <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" ShowCaption="False" Index="4" MaxSize="80, 0" SizeConstraintsType="Custom" IsNewNode="True" />
           <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="False" Index="5" MaxSize="80, 0" SizeConstraintsType="Custom" IsNewNode="True" />
-          <LayoutItem Id="AssocicationInfo" ViewItem="AssocicationInfo" ShowCaption="" Index="6" IsNewNode="True" />
+          <LayoutItem Id="AssocicationInfo" ViewItem="AssocicationInfo" ShowCaption="" Index="6" MaxSize="200, 0" MinSize="150, 0" IsNewNode="True" />
           <LayoutItem Id="E" IsNewNode="True" />
         </LayoutGroup>
+        <LayoutGroup Id="E" IsNewNode="True" />
         <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors" Removed="True">
             <LayoutGroup Id="CollectionProperty">
