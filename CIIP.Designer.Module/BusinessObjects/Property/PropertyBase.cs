@@ -21,6 +21,8 @@ namespace CIIP.Designer
     /// 
     /// </summary>
     [XafDefaultProperty("DisplayName")]
+    [Appearance("HiddenAssicationInfo",TargetItems =nameof(AssocicationInfo), Enabled =false,Visibility = ViewItemVisibility.Hide,Criteria = "!IsAssocication")]
+    [Appearance("HiddenIsAssocication", TargetItems = nameof(IsAssocication), Enabled = false, Visibility = ViewItemVisibility.Hide, Criteria = "PropertyType is null or !PropertyType.CanCreateAssocication")]
     //[Appearance("PropertyBase.RelationPropertyStateByAutoCreate", TargetItems = "RelationProperty", Criteria = "AutoCreateRelationProperty", Enabled = false)]
     //对多对时,自动创建是必须的.
     //一对多时,可选手动创建,默认是自动创建.
@@ -42,7 +44,6 @@ namespace CIIP.Designer
         #endregion
 
         #region 基本
-        private BusinessObjectBase _PropertyType;
 
         [XafDisplayName("类型"), RuleRequiredField]
         [ImmediatePostData]
@@ -51,10 +52,10 @@ namespace CIIP.Designer
         [DataSourceProperty(nameof(PropertyTypes))]
         public virtual BusinessObjectBase PropertyType
         {
-            get { return _PropertyType; }
+            get { return GetPropertyValue<BusinessObjectBase>(nameof(PropertyType)); }
             set
             {
-                SetPropertyValue("PropertyType", ref _PropertyType, value);
+                SetPropertyValue("PropertyType", value);
                 if (!IsLoading)
                 {
                     if (PropertyType != null)
@@ -143,13 +144,12 @@ namespace CIIP.Designer
         #endregion
 
         #region 可见性
-        private bool? _Browsable;
         [XafDisplayName("可见")]
         [ToolTip("属性在任何位置是否可见")]
-        public bool? Browsable
+        public bool Browsable
         {
-            get { return _Browsable; }
-            set { SetPropertyValue("Browsable", ref _Browsable, value); }
+            get { return GetPropertyValue<bool>(nameof(Browsable)); }
+            set { SetPropertyValue(nameof(Browsable), value); }
         }
         #endregion
 
@@ -176,11 +176,12 @@ namespace CIIP.Designer
         {
             base.AfterConstruction();
             Browsable = true;
+            AllowEdit = true;
         }
 
         //[ModelDefault("AllowEdit", "False")]
         [XafDisplayName("配置")]
-        [EditorAlias(EditorAliases.ObjectPropertyEditor)]
+        [EditorAlias("OPE")]
         public AssocicationInfo AssocicationInfo
         {
             get { return GetPropertyValue<AssocicationInfo>(nameof(AssocicationInfo)); }
@@ -237,23 +238,27 @@ namespace CIIP.Designer
         //}
 
         #region 允许编辑
-        private bool? _AllowEdit;
         [XafDisplayName("允许编辑")]
-        public bool? AllowEdit
+        public bool AllowEdit
         {
-            get { return _AllowEdit; }
-            set { SetPropertyValue("AllowEdit", ref _AllowEdit, value); }
+            get { return GetPropertyValue<bool>(nameof(AllowEdit)); ; }
+            set { SetPropertyValue(nameof(AllowEdit),value); }
         }
         #endregion
 
 
         #endregion
+
+        [XafDisplayName("关系"),ImmediatePostData]
+        public bool IsAssocication
+        {
+            get { return GetPropertyValue<bool>(nameof(IsAssocication)); }
+            set { SetPropertyValue(nameof(IsAssocication), value); }
+        }
 
         public PropertyBase(Session s) : base(s)
         {
         }
-
-
     }
 
     public class PropertyBaseViewController : ObjectViewController<ObjectView, PropertyBase>

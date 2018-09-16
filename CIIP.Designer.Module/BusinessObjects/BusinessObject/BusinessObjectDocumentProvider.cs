@@ -16,8 +16,12 @@ namespace CIIP.Designer
         public static void Assocication(this StringBuilder self,string name)
         {
             self.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, name);
-
         }
+        public static void Assocication(this StringBuilder self)
+        {
+            self.AppendFormat("\t\t[{0}]", typeof(AssociationAttribute).FullName);
+        }
+
         public static void Aggregated(this StringBuilder self)
         {
             self.Append("\t\t[" + typeof(AggregatedAttribute).FullName + "]");
@@ -66,22 +70,23 @@ namespace CIIP.Designer
                 rst.AppendLine("\t[NonPersistent]");
             }
 
-            if (IsCloneable.HasValue && IsCloneable.Value)
+            if (IsCloneable)
             {
                 rst.ModelDefault("Cloneable", True);
             }
 
-            if (IsCreatableItem.HasValue && IsCreatableItem.Value)
+            if (IsCreatableItem)
             {
                 rst.ModelDefault("Createable", True);
             }
 
-            if (IsVisibileInReports.HasValue && IsVisibileInReports.Value)
+            if (IsVisibileInReports)
             {
                 rst.AppendLine("\t[VisibleInReport]");
-
             }
+
             rst.AppendLine("\t[NavigationItem]");
+
             if (Caption != Name)
             {
                 rst.ModelDefault(nameof(Caption), Caption);
@@ -129,9 +134,9 @@ namespace CIIP.Designer
                     {
                         rst.Append("global::" + n.Substring(0, n.Length - 2));
                     }
-                    
+
                     //传入参数
-                    rst.AppendFormat("<{0}>",string.Join(",",imp.GenericParameters.Select(x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
+                    rst.AppendFormat("<{0}>", string.Join(",", imp.GenericParameters.Select(x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
 
                 }
                 else
@@ -155,7 +160,7 @@ namespace CIIP.Designer
             #endregion
 
             #region 属性模板
-            string propertyTemplate(string type,string name)
+            string propertyTemplate(string type, string name)
             {
                 return
 $@"     public {type} {name}
@@ -177,15 +182,17 @@ $@"     public {type} {name}
                 {
                     rst.AppendLine($"\t\t[Size({item.Size})]");
                 }
+
                 if (item.Caption != item.Name)
                 {
                     rst.ModelDefault("Caption", item.Caption);
                 }
+
                 ProcessPropertyBase(rst, item);
 
                 if (item is Property property)
                 {
-                    if (property.ImmediatePostData.HasValue && property.ImmediatePostData.Value)
+                    if (property.ImmediatePostData)
                     {
                         rst.AppendFormat("\t\t[ImmediatePostData]\n");
                     }
@@ -205,21 +212,19 @@ $@"     public {type} {name}
                         rst.AppendFormat("\t\t[RuleRange({0},{1})]\n", property.Range.Begin, property.Range.End);
                     }
 
-                    if (property.RuleRequiredField.HasValue && property.RuleRequiredField.Value)
+                    if (property.RuleRequiredField)
                     {
                         rst.AppendFormat("\t\t[RuleRequiredField]\n");
                     }
 
-                    if (property.UniqueValue.HasValue && property.UniqueValue.Value)
+                    if (property.UniqueValue)
                     {
                         rst.AppendFormat("\t\t[RuleUniqueValue]\n");
                     }
                 }
 
-                if (item.AssocicationInfo != null)
-                {
-                    rst.Assocication(item.AssocicationInfo.Name);
-                }
+
+
                 rst.Append(propertyTemplate(pt, item.Name));
             }
             #endregion
@@ -232,8 +237,9 @@ $@"     public {type} {name}
                 {
                     rst.Aggregated();
                 }
-                ProcessPropertyBase(rst, item);                
-                rst.Assocication(item.AssocicationInfo.Name);
+
+                ProcessPropertyBase(rst, item);
+
                 var pt = "global::" + item.PropertyType.FullName;
                 rst.AppendLine($"\t\tpublic XPCollection<{pt}> {item.Name}{{ get{{ return GetCollection<{pt}>(\"{item.Name}\"); }} }}");
             }
@@ -273,17 +279,24 @@ $@"     public {type} {name}
             //    code.AppendFormat("\t\t[{0}(false)]\n", typeof(VisibleInListViewAttribute).FullName);
             //}
 
-            if (property.Browsable.HasValue && !property.Browsable.Value)
+            if (!property.Browsable)
             {
                 code.AppendFormat("\t\t[{0}(false)]\n", typeof(BrowsableAttribute).FullName);
             }
 
-            if (property.AllowEdit.HasValue && !property.AllowEdit.Value)
+            if (!property.AllowEdit)
             {
                 code.ModelDefault(nameof(property.AllowEdit), "False");
             }
 
-            
+            if (property.IsAssocication)
+            {
+                if (property.AssocicationInfo != null)
+                    code.Assocication(property.AssocicationInfo.Name);
+                else
+                    code.Assocication();
+            }
+
         }
     }
 

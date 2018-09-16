@@ -76,12 +76,17 @@ namespace CIIP.Designer
 
     [XafDisplayName("类型")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
-    public class BusinessObjectBase : NameObject, ICategorizedItem
+    public abstract class BusinessObjectBase : NameObject, ICategorizedItem
     {
         public PropertyBase FindProperty(string name)
         {
             return Properties.SingleOrDefault(x => x.Name == name);
         }
+
+        [XafDisplayName("可建关系")]
+        public abstract bool CanCreateAssocication { get; }
+
+
         #region modifier
         [XafDisplayName("继承设置")]
         [ToolTip("可以设置为无,抽象,密封的")]
@@ -105,17 +110,13 @@ namespace CIIP.Designer
             set { SetPropertyValue(nameof(BusinessModule), value); }
         }
 
-
-        private bool _IsRuntimeDefine;
-
         [XafDisplayName("动态定义")]
         [ToolTip("为假时是通过代码方式上传的模块生成的。否则是在界面上定义并生成的。")]
         public bool IsRuntimeDefine
         {
-            get { return _IsRuntimeDefine; }
-            set { SetPropertyValue("IsRuntimeDefine", ref _IsRuntimeDefine, value); }
+            get { return GetPropertyValue<bool>(nameof(IsRuntimeDefine)); }
+            set { SetPropertyValue(nameof(IsRuntimeDefine), value); }
         }
-        private string _FullName;
 
         [ModelDefault("AllowEdit", "False")]
         [RuleRequiredField]
@@ -123,37 +124,34 @@ namespace CIIP.Designer
         [Size(-1)]
         public string FullName
         {
-            get { return _FullName; }
-            set { SetPropertyValue("FullName", ref _FullName, value); }
+            get { return GetPropertyValue<string>(nameof(FullName)); }
+            set { SetPropertyValue(nameof(FullName), value); }
         }
 
-        private Namespace _Category;
         [XafDisplayName("分类")]
         //[RuleRequiredField]
         public Namespace Category
         {
-            get { return _Category; }
-            set { SetPropertyValue("Category", ref _Category, value); }
+            get { return GetPropertyValue<Namespace>(nameof(Category)); }
+            set { SetPropertyValue(nameof(Category), value); }
         }
 
-        private string _Caption;
         [XafDisplayName("标题")]
         public string Caption
         {
-            get { return _Caption; }
-            set { SetPropertyValue("Caption", ref _Caption, value); }
+            get { return GetPropertyValue<string>(nameof(Caption)); }
+            set { SetPropertyValue(nameof(Caption), value); }
         }
 
-        private string _Description;
         [XafDisplayName("说明"),Size(-1)]
         public string Description
         {
-            get { return _Description; }
-            set { SetPropertyValue("Description", ref _Description, value); }
+            get { return GetPropertyValue<string>(nameof(Description)); }
+            set { SetPropertyValue(nameof(Description), value); }
         }
 
         [XafDisplayName("基类接口")]
-        [Association, DevExpress.Xpo.Aggregated]
+        [Association, DevExpress.Xpo.Aggregated,EditorAlias("ImplementPropertyEditor")]
         public XPCollection<ImplementRelation> Implements
         {
             get
@@ -183,7 +181,7 @@ namespace CIIP.Designer
 
         [XafDisplayName("泛型参数定义")]
         [ToolTip("如果需要类型参数时,可以在此定义,可以在属性及业务逻辑中使用!")]
-        [Association, DevExpress.Xpo.Aggregated]
+        [Association, DevExpress.Xpo.Aggregated,EditorAlias("GenericPropertyEditor")]
         public XPCollection<GenericParameterDefine> GenericParameterDefines
         {
             get

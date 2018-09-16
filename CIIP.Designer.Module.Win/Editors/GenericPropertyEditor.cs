@@ -18,7 +18,7 @@ namespace CIIP.Module.Win.Editors
     /// <summary>
     /// 仅用于实现基类+接口控件
     /// </summary>
-    [PropertyEditor(typeof(object), false)]
+    [PropertyEditor(typeof(object), "GenericPropertyEditor", false)]
     public class GenericPropertyEditor : DXPropertyEditor,IComplexViewItem
     {
         public GenericPropertyEditor(Type objectType, IModelMemberViewItem model)

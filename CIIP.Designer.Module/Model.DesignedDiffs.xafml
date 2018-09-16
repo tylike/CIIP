@@ -178,10 +178,6 @@
       </Layout>
     </DetailView>
     <DetailView Id="BusinessObject_DetailView">
-      <Items>
-        <PropertyEditor Id="GenericParameterDefines" PropertyEditorType="CIIP.Module.Win.Editors.GenericPropertyEditor" />
-        <PropertyEditor Id="Implements" PropertyEditorType="CIIP.Module.Win.Editors.ImplementPropertyEditor" />
-      </Items>
       <Layout>
         <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors">
@@ -284,8 +280,8 @@
     </ListView>
     <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top">
       <Columns>
-        <ColumnInfo Id="MasterBusinessObject" Width="82" />
         <ColumnInfo Id="Oid" Width="82" />
+        <ColumnInfo Id="MasterBusinessObject" Width="82" />
         <ColumnInfo Id="ImplementBusinessObject" Width="440" />
       </Columns>
     </ListView>
@@ -312,7 +308,8 @@
           <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="False" Index="3" MaxSize="80, 0" SizeConstraintsType="Custom" IsNewNode="True" />
           <LayoutItem Id="AllowEdit" ViewItem="AllowEdit" ShowCaption="False" Index="4" MaxSize="80, 0" SizeConstraintsType="Custom" IsNewNode="True" />
           <LayoutItem Id="Aggregated" ViewItem="Aggregated" ShowCaption="False" Index="5" MaxSize="80, 0" SizeConstraintsType="Custom" IsNewNode="True" />
-          <LayoutItem Id="AssocicationInfo" ViewItem="AssocicationInfo" ShowCaption="" Index="6" MaxSize="200, 0" MinSize="150, 0" IsNewNode="True" />
+          <LayoutItem Id="IsAssocication" ViewItem="IsAssocication" Index="6" SizeConstraintsType="Custom" MaxSize="80, 0" IsNewNode="True" />
+          <LayoutItem Id="AssocicationInfo" ViewItem="AssocicationInfo" ShowCaption="False" Index="7" MaxSize="200, 0" MinSize="150, 0" IsNewNode="True" />
           <LayoutItem Id="E" IsNewNode="True" />
         </LayoutGroup>
         <LayoutGroup Id="E" IsNewNode="True" />
@@ -466,7 +463,8 @@
             <LayoutItem Id="Range.End" ViewItem="Range.End" ShowCaption="" Index="4" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="C3" Index="2" Direction="Horizontal" IsNewNode="True">
-            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" ShowCaption="" Index="3" IsNewNode="True" />
+            <LayoutItem Id="IsAssociation" Index="0" ViewItem="IsAssocication" ShowCaption="False" SizeConstraintsType="Custom" MaxSize="80, 0" IsNewNode="True" />
+            <LayoutItem Id="AssocicationInfo" ShowCaption="False" Index="1" ViewItem="AssocicationInfo" IsNewNode="True" />
           </LayoutGroup>
           <LayoutGroup Id="C5" Direction="Horizontal" Index="3" IsNewNode="True">
             <LayoutItem Id="Browsable" ViewItem="Browsable" ShowCaption="" Index="0" IsNewNode="True" />

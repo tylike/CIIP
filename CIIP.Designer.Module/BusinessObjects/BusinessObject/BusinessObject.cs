@@ -14,33 +14,30 @@ using CIIP;
 namespace CIIP.Designer
 {
 
-    [XafDefaultProperty("Caption")]
+    [XafDefaultProperty(nameof(Caption))]
     [XafDisplayName("用户业务")]
     [LookupEditorMode(LookupEditorMode.AllItemsWithSearch)]
     [DefaultClassOptions]
     public partial class BusinessObject : BusinessObjectBase
     {
         #region is persistent
-        private bool _IsPersistent;
-
         [XafDisplayName("可持久化")]
         [ToolTip("即是否在数据库中创建表，可以进行读写，如果不是持久化的，则只做为组合类型时使用.")]
         [VisibleInListView(false)]
         public bool IsPersistent
         {
-            get { return _IsPersistent; }
-            set { SetPropertyValue("IsPersistent", ref _IsPersistent, value); }
+            get { return GetPropertyValue<bool>(nameof(IsPersistent)); }
+            set { SetPropertyValue(nameof(IsPersistent), value); }
         }
         #endregion
-        
+
         #region can custom logic
-        private bool _CanCustomLogic;
         [XafDisplayName("可自定义逻辑")]
         [ModelDefault("AllowEdit", "False")]
         public bool CanCustomLogic
         {
-            get { return _CanCustomLogic; }
-            set { SetPropertyValue("CanCustomLogic", ref _CanCustomLogic, value); }
+            get { return GetPropertyValue<bool>(nameof(CanCustomLogic)); }
+            set { SetPropertyValue(nameof(CanCustomLogic), value); }
         }
         #endregion
 
@@ -64,34 +61,31 @@ namespace CIIP.Designer
 
         #region option
 
-        private bool? _IsCloneable;
 
         [XafDisplayName("允许复制")]
         [VisibleInListView(false)]
-        public bool? IsCloneable
+        public bool IsCloneable
         {
-            get { return _IsCloneable; }
-            set { SetPropertyValue("IsCloneable", ref _IsCloneable, value); }
+            get { return GetPropertyValue<bool>(nameof(IsCloneable)); }
+            set { SetPropertyValue(nameof(IsCloneable), value); }
         }
 
-        private bool? _IsVisibileInReports;
 
         [XafDisplayName("可做报表")]
         [VisibleInListView(false)]
-        public bool? IsVisibileInReports
+        public bool IsVisibileInReports
         {
-            get { return _IsVisibileInReports; }
-            set { SetPropertyValue("IsVisibileInReports", ref _IsVisibileInReports, value); }
+            get { return GetPropertyValue<bool>(nameof(IsVisibileInReports)); }
+            set { SetPropertyValue(nameof(IsVisibileInReports), value); }
         }
 
-        private bool? _IsCreatableItem;
 
         [XafDisplayName("快速创建")]
         [VisibleInListView(false)]
-        public bool? IsCreatableItem
+        public bool IsCreatableItem
         {
-            get { return _IsCreatableItem; }
-            set { SetPropertyValue("IsCreatableItem", ref _IsCreatableItem, value); }
+            get { return GetPropertyValue<bool>(nameof(IsCreatableItem)); }
+            set { SetPropertyValue(nameof(IsCreatableItem), value); }
         }
 
 
@@ -99,8 +93,10 @@ namespace CIIP.Designer
         [Browsable(false)]
         public int CreateIndex { get; set; }
 
+        public override bool CanCreateAssocication => IsRuntimeDefine;
+
         #endregion
-        
+
         #region ctor
         public BusinessObject(Session s) : base(s)
         {
@@ -159,11 +155,11 @@ namespace CIIP.Designer
         public override void AfterConstruction()
         {
             IsRuntimeDefine = true;
-            this.IsPersistent = true;
+            IsPersistent = true;
             base.AfterConstruction();
-        } 
+        }
         #endregion
-        
+
 
     }
 

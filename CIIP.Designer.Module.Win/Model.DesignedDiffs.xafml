@@ -19,13 +19,30 @@
     <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
+    <ListView Id="BusinessObjectBase_LookupListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" PreviewColumnName="Description">
+      <Columns>
+        <ColumnInfo Id="Name" Index="0" Width="101" />
+        <ColumnInfo Id="Caption" Index="1" />
+        <ColumnInfo Id="FullName" PropertyName="FullName" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="IsGenericTypeDefine" PropertyName="IsGenericTypeDefine" Index="4" IsNewNode="True" />
+        <ColumnInfo Id="CanCreateAssocication" PropertyName="CanCreateAssocication" Index="5" IsNewNode="True" />
+        <ColumnInfo Id="BusinessModule.Name" PropertyName="BusinessModule.Name" Index="6" Width="149" Caption="所属模块" IsNewNode="True" />
+        <ColumnInfo Id="Category" PropertyName="Category" Index="7" IsNewNode="True" />
+        <ColumnInfo Id="Description" PropertyName="Description" Index="8" IsNewNode="True" />
+      </Columns>
+    </ListView>
     <DetailView Id="CollectionProperty_DetailView">
+      <Items>
+        <PropertyEditor Id="PropertyType" View="BusinessObjectBase_LookupListView" />
+      </Items>
       <Layout>
         <LayoutGroup Id="R">
           <LayoutItem Id="Browsable" TextAlignMode="AutoSize" />
           <LayoutItem Id="AllowEdit" TextAlignMode="AutoSize" />
           <LayoutItem Id="Aggregated" TextAlignMode="AutoSize" />
-          <LayoutItem Id="AssocicationInfo" TextAlignMode="AutoSize" SizeConstraintsType="Custom" />
+          <LayoutItem Id="IsAssocication" TextAlignMode="AutoSize" ShowCaption="False" />
+          <LayoutItem Id="AssocicationInfo" TextAlignMode="AutoSize" SizeConstraintsType="Custom" ShowCaption="False" />
         </LayoutGroup>
       </Layout>
     </DetailView>

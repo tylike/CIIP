@@ -11,7 +11,6 @@ using System.ComponentModel;
 
 namespace CIIP.Module.Win.Editors
 {
-
     internal class CategorizedListEditorPropertyDescriptor : PropertyDescriptor
     {
         // Fields

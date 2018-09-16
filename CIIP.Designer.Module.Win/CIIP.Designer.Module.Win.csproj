@@ -262,6 +262,7 @@
     <Compile Include="Editors\FrmEditConnectionString.Designer.cs">
       <DependentUpon>FrmEditConnectionString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editors\ObjectPropertyEditorEx.cs" />
     <Compile Include="Editors\PropertyTypeTokenEditor.cs" />
     <Compile Include="Editors\GenericPropertyEditor.cs" />
     <Compile Include="Editors\ImplementPropertyEditor.cs" />

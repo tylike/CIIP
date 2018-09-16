@@ -15,6 +15,8 @@ namespace CIIP.Designer
 
         public override BusinessObjectModifier DomainObjectModifier { get => BusinessObjectModifier.Abstract; set { } }
 
+        public override bool CanCreateAssocication => false;
+
         //[Association,XafDisplayName("实现业务"),ToolTip("以下业务实现了本接口")]
         //public XPCollection<BusinessObjectBase> Implements
         //{

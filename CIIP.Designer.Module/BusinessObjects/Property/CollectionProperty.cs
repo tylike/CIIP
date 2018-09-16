@@ -28,6 +28,11 @@ namespace CIIP.Designer
         {
             //CreateAssociation();
         }
+        public override void AfterConstruction()
+        {
+            base.AfterConstruction();
+            IsAssocication = true;
+        }
 
         //public CollectionProperty(Session s, AssocicationInfo associcationInfo) : base(s)
         //{

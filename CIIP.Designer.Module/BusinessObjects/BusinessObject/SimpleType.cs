@@ -11,7 +11,7 @@ namespace CIIP.Designer
         public SimpleType(Session s) : base(s)
         {
         }
-
+        public override bool CanCreateAssocication => false;
         public override BusinessObjectModifier DomainObjectModifier { get => Designer.BusinessObjectModifier.Sealed; set { } }
     }
 }
