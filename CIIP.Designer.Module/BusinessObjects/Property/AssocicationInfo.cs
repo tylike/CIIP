@@ -303,6 +303,7 @@ namespace CIIP.Designer
                 property.PropertyType = cp.BusinessObject;
                 property.Name = cp.BusinessObject.Name;
                 property.Caption = cp.BusinessObject.Caption;
+                ai.Properties.Add(property);
             }
             else
             {
@@ -317,7 +318,7 @@ namespace CIIP.Designer
             var ai = (Frame as NestedFrame).ViewItem.CurrentObject as AssocicationInfo;
             if (ai.Properties.Count == 1)
             {
-                var cp = ai.Properties[0];
+                var cp = ai.Properties[0];                
                 //    //当前是xpcollection<order> orders {get;} 属性
                 //    //自动创建的属性是 customer customer {get;} 属性
                 var property = ObjectSpace.CreateObject<Property>();
@@ -325,6 +326,7 @@ namespace CIIP.Designer
                 property.PropertyType = cp.BusinessObject;
                 property.Name = cp.BusinessObject.Name;
                 property.Caption = cp.BusinessObject.Caption;
+                ai.Properties.Add(property);
             }
             else
             {
