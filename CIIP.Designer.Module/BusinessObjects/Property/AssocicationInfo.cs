@@ -7,22 +7,96 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Diagnostics;
 using DevExpress.Persistent.BaseImpl;
+using DevExpress.Persistent.Validation;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Actions;
 
 namespace CIIP.Designer
 {
-    [NavigationItem]
+    [NavigationItem]    
     public class AssocicationInfo : NameObject
     {
         public AssocicationInfo(Session s) : base(s)
         {
+            Properties.CollectionChanged += Properties_CollectionChanged;
         }
 
-        [Association, DevExpress.Xpo.Aggregated,XafDisplayName("属性")]
-        public XPCollection<AssocicationItem> Properties
+        private void Properties_CollectionChanged(object sender, XPCollectionChangedEventArgs e)
+        {
+            if (!IsLoading && !IsSaving)
+            {
+                _propertiesDataSource = null;
+                OnChanged(nameof(CollectionPropertyCount));
+                OnChanged(nameof(ReferencePropertyCount));
+                OnChanged(nameof(PropertyCount));
+                calcName();
+            }
+        }
+
+        void calcName()
+        {
+            var ps = Properties.OrderBy(x => x.Name);
+            var first = ps.FirstOrDefault();
+            var last = ps.LastOrDefault();
+            Name = first?.DisplayName + "-" + last?.DisplayName;
+        }
+
+        [RuleValueComparison(ValueComparisonType.GreaterThanOrEqual, 1, CustomMessageTemplate = "至少应有一个集合属性!")]
+        [XafDisplayName("集合属性数量")]
+        public int CollectionPropertyCount { get { return Properties.OfType<CollectionProperty>().Count(); } }
+
+        [RuleValueComparison(ValueComparisonType.LessThan,2,CustomMessageTemplate ="最多只能有一个引用型属性,即为一对多关系.")]
+        [XafDisplayName("引用属性数量")]
+        public int ReferencePropertyCount { get { return Properties.OfType<Property>().Where(x => x.PropertyType.CanCreateAssocication).Count(); } }
+
+        [RuleValueComparison(ValueComparisonType.Equals,2,CustomMessageTemplate ="必须有选择两个属性!")]
+        [XafDisplayName("属性数量")]
+        public int PropertyCount { get { return Properties.Count; } }
+
+        public string 关系类型
         {
             get
             {
-                return GetCollection<AssocicationItem>(nameof(Properties));
+                if (PropertyCount == 2 && (ReferencePropertyCount + CollectionPropertyCount) == 2)
+                {
+                    if (CollectionPropertyCount == 2)
+                    {
+                        return "对多对";
+                    }
+                    return "一对多";
+                }
+                return "";
+            }
+        }
+
+
+        [Association,XafDisplayName("属性"),DataSourceProperty(nameof(PropertiesDataSource))]
+        public XPCollection<PropertyBase> Properties
+        {
+            get
+            {
+                return GetCollection<PropertyBase>(nameof(Properties));
+            }
+        }
+
+        List<PropertyBase> _propertiesDataSource;
+        List<PropertyBase> PropertiesDataSource
+        {
+            get
+            {
+                if (_propertiesDataSource == null)
+                {
+                    var fromProperty = Properties.FirstOrDefault();
+                    if (fromProperty != null)
+                    {
+                        _propertiesDataSource = Session.QueryInTransaction<PropertyBase>().ToArray().Where(x => x.PropertyType.CanCreateAssocication && x.BusinessObject == fromProperty.PropertyType && !Properties.Contains(x)).ToList();
+                    }
+                    else
+                    {
+                        throw new UserFriendlyException("错误,请先将来源属性填加!");
+                    }
+                }
+                return _propertiesDataSource;
             }
         }
 
@@ -197,26 +271,65 @@ namespace CIIP.Designer
 //            set { SetPropertyValue(nameof(RightProperty), value); }
 //        }
     }
-
-    public class AssocicationItem : BaseObject
+    
+    public class CreateAssocicationPropertyViewController : ObjectViewController<ListView, PropertyBase>
     {
-        public AssocicationItem(Session session) : base(session)
+        public CreateAssocicationPropertyViewController()
         {
+            TargetViewNesting = Nesting.Nested;
+            TargetViewId = "AssocicationInfo_Properties_ListView";
+
+            var crp = new SimpleAction(this, "CreateAssocicationReferenceProperty", PredefinedCategory.ObjectsCreation);
+            crp.Caption = "自动创建引用属性";
+            crp.Execute += Crp_Execute;
+            var ccp = new SimpleAction(this, "CreateAssocicationCollectionProperty", PredefinedCategory.ObjectsCreation);
+            ccp.Caption = "自动创建集合属性";
+            ccp.Execute += Ccp_Execute;
+            //action.Items.Add()
+        }
+        
+        private void Ccp_Execute(object sender, SimpleActionExecuteEventArgs e)
+        {
+            //创建集合属性.
+            var cs = this.View.CollectionSource;//.List.FirstOrDefault();
+            var ai = (Frame as NestedFrame).ViewItem.CurrentObject as AssocicationInfo;
+            if (ai.Properties.Count == 1)
+            {
+                var cp = ai.Properties[0];
+                //当前是xpcollection<学生> 学生s {get;} 属性
+                //自动创建的属性是 xpcollection<教师> 教师s {get;} 属性
+                var property = ObjectSpace.CreateObject<CollectionProperty>();
+                property.BusinessObject = cp.PropertyType;
+                property.PropertyType = cp.BusinessObject;
+                property.Name = cp.BusinessObject.Name;
+                property.Caption = cp.BusinessObject.Caption;
+            }
+            else
+            {
+                Application.ShowViewStrategy.ShowMessage("当前列表中有一个属性时才可以推导创建出另一个属性!", InformationType.Info, 3000, InformationPosition.Bottom);
+            }
         }
 
-        [Association]
-        public AssocicationInfo AssocicationInfo
+        private void Crp_Execute(object sender, SimpleActionExecuteEventArgs e)
         {
-            get { return GetPropertyValue<AssocicationInfo>(nameof(AssocicationInfo)); }
-            set { SetPropertyValue(nameof(AssocicationInfo), value); }
+            //创建引用属性
+            var cs = this.View.CollectionSource;//.List.FirstOrDefault();
+            var ai = (Frame as NestedFrame).ViewItem.CurrentObject as AssocicationInfo;
+            if (ai.Properties.Count == 1)
+            {
+                var cp = ai.Properties[0];
+                //    //当前是xpcollection<order> orders {get;} 属性
+                //    //自动创建的属性是 customer customer {get;} 属性
+                var property = ObjectSpace.CreateObject<Property>();
+                property.BusinessObject = cp.PropertyType;
+                property.PropertyType = cp.BusinessObject;
+                property.Name = cp.BusinessObject.Name;
+                property.Caption = cp.BusinessObject.Caption;
+            }
+            else
+            {
+                Application.ShowViewStrategy.ShowMessage("当前列表中有一个属性时才可以推导创建出另一个属性!", InformationType.Info, 3000, InformationPosition.Bottom);
+            }
         }
-
-
-        public PropertyBase Property
-        {
-            get { return GetPropertyValue<PropertyBase>(nameof(Property)); }
-            set { SetPropertyValue(nameof(Property), value); }
-        }
-
     }
 }

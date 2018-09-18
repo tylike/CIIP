@@ -7,14 +7,6 @@ using DevExpress.Persistent.Base;
 using DevExpress.Persistent.Validation;
 using DevExpress.Xpo;
 
-namespace CIIP
-{
-    public class Editors
-    {
-        public const string PropertyTypeTokenEditor = "PropertyTypeTokenEditor";
-    }
-}
-
 namespace CIIP.Designer
 {
 
@@ -100,8 +92,6 @@ namespace CIIP.Designer
             set { SetPropertyValue(nameof(Size), value); }
         }
         
-        
-
         public override void AfterConstruction()
         {
             base.AfterConstruction();

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Module.Win", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CIIP.Designer.Win", "CIIP.Designer.Win\CIIP.Designer.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpress.ExpressApp.Win", "C:\Program Files (x86)\DevExpress 18.1\Components\Sources\DevExpress.ExpressApp\DevExpress.ExpressApp.Win\DevExpress.ExpressApp.Win.csproj", "{C5DBCF36-36A3-4871-8EDC-5C52408C7317}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,11 @@ Global
 		{D05D93DF-312D-4D4E-B980-726871EC7833}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
 		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D05D93DF-312D-4D4E-B980-726871EC7833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DBCF36-36A3-4871-8EDC-5C52408C7317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DBCF36-36A3-4871-8EDC-5C52408C7317}.EasyTest|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DBCF36-36A3-4871-8EDC-5C52408C7317}.EasyTest|Any CPU.Build.0 = Release|Any CPU
+		{C5DBCF36-36A3-4871-8EDC-5C52408C7317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DBCF36-36A3-4871-8EDC-5C52408C7317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -162,6 +162,7 @@ namespace CIIP.Designer
                 Caption = PropertyType.Caption;
             }
         }
+
         //protected override void OnChanged(string propertyName, object oldValue, object newValue)
         //{
         //    base.OnChanged(propertyName, oldValue, newValue);
@@ -181,7 +182,7 @@ namespace CIIP.Designer
 
         //[ModelDefault("AllowEdit", "False")]
         [XafDisplayName("配置")]
-        [EditorAlias("OPE")]
+        [EditorAlias("OPE"),Association,VisibleInDetailView(true)]
         public AssocicationInfo AssocicationInfo
         {
             get { return GetPropertyValue<AssocicationInfo>(nameof(AssocicationInfo)); }
@@ -256,68 +257,17 @@ namespace CIIP.Designer
             set { SetPropertyValue(nameof(IsAssocication), value); }
         }
 
+        [XafDisplayName("说明")]
+        [Size(-1)]
+        [ModelDefault("RowCount","2")]
+        public string Memo
+        {
+            get { return GetPropertyValue<string>(nameof(Memo)); }
+            set { SetPropertyValue(nameof(Memo), value); }
+        }
+
         public PropertyBase(Session s) : base(s)
         {
         }
-    }
-
-    public class PropertyBaseViewController : ObjectViewController<ObjectView, PropertyBase>
-    {
-        public PropertyBaseViewController()
-        {
-            var action = new SimpleAction(this, "CreateRelationProperty", "CreateRelationProperty");
-            action.Caption = "创建";
-            action.ImageName = "Action_New";
-            action.Execute += Action_Execute;
-        }
-
-        private void Action_Execute(object sender, SimpleActionExecuteEventArgs e)
-        {
-            //var os = this.ObjectSpace.CreateNestedObjectSpace();
-            //var obj = CreateRelationProperty(os.GetObject(this.ViewCurrentObject), os);
-
-            //os.Committed += (s, evt) =>
-            //{
-            //    this.ViewCurrentObject.AssocicationInfo.LeftProperty = this.ObjectSpace.GetObject(obj);
-
-            //};
-
-            //var view = Application.CreateDetailView(os, obj, true);
-            //e.ShowViewParameters.CreatedView = view;
-            //e.ShowViewParameters.Context = TemplateContext.PopupWindow;
-            //e.ShowViewParameters.NewWindowTarget = NewWindowTarget.Separate;
-            //e.ShowViewParameters.TargetWindow = TargetWindow.NewModalWindow;
-            //var dc = new DialogController();
-
-            //dc.Accepting += (s, evt) =>
-            //{
-            //    //os.CommitChanges();
-            //};
-
-            //e.ShowViewParameters.Controllers.Add(dc);
-
-        }
-
-        //public PropertyBase CreateRelationProperty(PropertyBase currentProperty, IObjectSpace os)
-        //{
-        //    PropertyBase property;
-        //    if (currentProperty.AssocicationInfo.ManyToMany)
-        //    {
-        //        //当前是xpcollection<学生> 学生s {get;} 属性
-        //        //自动创建的属性是 xpcollection<教师> 教师s {get;} 属性
-        //        property = new CollectionProperty((os as XPObjectSpace).Session, currentProperty.AssocicationInfo);// os.CreateObject<CollectionProperty>();
-        //    }
-        //    else
-        //    {
-        //        //当前是xpcollection<order> orders {get;} 属性
-        //        //自动创建的属性是 customer customer {get;} 属性
-        //        property = os.CreateObject<Property>();
-        //    }
-        //    property.BusinessObject = currentProperty.PropertyType;
-        //    property.PropertyType = currentProperty.BusinessObject;
-        //    property.Name = currentProperty.BusinessObject.Name;
-        //    property.Caption = currentProperty.BusinessObject.Caption;
-        //    return property;
-        //}
     }
 }

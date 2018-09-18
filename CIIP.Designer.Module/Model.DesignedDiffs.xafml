@@ -44,6 +44,28 @@
     <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.5.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
+    <DetailView Id="AssocicationInfo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" IsNewNode="True" />
+            <LayoutGroup Id="AssocicationInfo" Direction="Horizontal" Removed="True" />
+            <LayoutGroup Id="NameObject" Removed="True">
+              <LayoutItem Id="Name" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Properties_Group" ShowCaption="False" />
+          <LayoutGroup Id="AssocicationInfo" Index="2" Direction="Horizontal" ShowCaption="False" IsNewNode="True">
+            <LayoutItem Id="关系类型" ViewItem="关系类型" ShowCaption="" Index="0" IsNewNode="True" />
+            <LayoutItem Id="CollectionPropertyCount" ViewItem="CollectionPropertyCount" ShowCaption="" Index="1" IsNewNode="True" />
+            <LayoutItem Id="ReferencePropertyCount" ViewItem="ReferencePropertyCount" ShowCaption="" Index="2" IsNewNode="True" />
+            <LayoutItem Id="PropertyCount" ViewItem="PropertyCount" ShowCaption="" Index="3" IsNewNode="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="AssocicationInfo_Properties_ListView" AllowNew="False" AllowLink="True" />
     <DetailView Id="BusinessForm_DetailView">
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
@@ -280,8 +302,8 @@
     </ListView>
     <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top">
       <Columns>
-        <ColumnInfo Id="Oid" Width="82" />
         <ColumnInfo Id="MasterBusinessObject" Width="82" />
+        <ColumnInfo Id="Oid" Width="82" />
         <ColumnInfo Id="ImplementBusinessObject" Width="440" />
       </Columns>
     </ListView>
@@ -292,14 +314,23 @@
     </ListView>
     <ListView Id="BusinessObjectBase_Properties_ListView" MasterDetailMode="ListViewAndDetailView">
       <Columns>
+        <ColumnInfo Id="DisplayName" Index="-1" Width="116" />
         <ColumnInfo Id="Name" Width="121" />
-        <ColumnInfo Id="PropertyType" Width="93" PropertyEditorType="DevExpress.ExpressApp.Win.Editors.LookupPropertyEditor" />
-        <ColumnInfo Id="DisplayName" Index="2" Width="116" />
+        <ColumnInfo Id="PropertyType" Width="93" PropertyEditorType="DevExpress.ExpressApp.Win.Editors.LookupPropertyEditor" Index="1" />
+        <ColumnInfo Id="Caption" Index="2" />
         <ColumnInfo Id="Browsable" Index="3" />
+        <ColumnInfo Id="AllowEdit" Index="4" Width="66" />
+        <ColumnInfo Id="IsAssocication" Index="5" Width="50" />
+        <ColumnInfo Id="AssocicationInfo.关系类型" PropertyName="AssocicationInfo.关系类型" Index="6" Width="95" IsNewNode="True" />
+        <ColumnInfo Id="AssocicationInfo" Width="126" Index="7" />
+        <ColumnInfo Id="Memo" Index="8" Width="473" />
       </Columns>
       <SplitLayout Direction="Vertical" ViewsOrder="DetailViewListView" />
     </ListView>
     <DetailView Id="CollectionProperty_DetailView">
+      <Items>
+        <PropertyEditor Id="AssocicationInfo" PropertyName="AssocicationInfo" IsNewNode="True" />
+      </Items>
       <Layout>
         <LayoutGroup Id="R" Direction="Horizontal" Index="0" IsNewNode="True">
           <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
@@ -312,7 +343,9 @@
           <LayoutItem Id="AssocicationInfo" ViewItem="AssocicationInfo" ShowCaption="False" Index="7" MaxSize="200, 0" MinSize="150, 0" IsNewNode="True" />
           <LayoutItem Id="E" IsNewNode="True" />
         </LayoutGroup>
-        <LayoutGroup Id="E" IsNewNode="True" />
+        <LayoutGroup Id="E" IsNewNode="True">
+          <LayoutItem Id="Memo" ViewItem="Memo" IsNewNode="True" />
+        </LayoutGroup>
         <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors" Removed="True">
             <LayoutGroup Id="CollectionProperty">
@@ -445,6 +478,9 @@
       </Columns>
     </ListView>
     <DetailView Id="Property_DetailView">
+      <Items>
+        <PropertyEditor Id="AssocicationInfo" PropertyName="AssocicationInfo" IsNewNode="True" />
+      </Items>
       <Layout>
         <LayoutGroup Id="R1" Index="1" Direction="Horizontal" IsNewNode="True">
           <LayoutItem Id="PropertyType" ViewItem="PropertyType" ShowCaption="" Index="0" IsNewNode="True" />
@@ -473,7 +509,9 @@
             <LayoutItem Id="UniqueValue" ViewItem="UniqueValue" ShowCaption="" Index="3" IsNewNode="True" />
             <LayoutItem Id="ImmediatePostData" ViewItem="ImmediatePostData" ShowCaption="" Index="4" IsNewNode="True" />
           </LayoutGroup>
-          <LayoutGroup Id="C4" Direction="Horizontal" IsNewNode="True" />
+          <LayoutGroup Id="C4" Direction="Horizontal" IsNewNode="True">
+            <LayoutItem Id="Memo" ViewItem="Memo" IsNewNode="True" />
+          </LayoutGroup>
         </LayoutGroup>
         <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors">

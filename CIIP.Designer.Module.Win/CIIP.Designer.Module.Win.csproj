@@ -276,6 +276,12 @@
     <Compile Include="Editors\CodeEditor\SmartVisualStudio.Designer.cs">
       <DependentUpon>SmartVisualStudio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModelEditor\ModelEditorControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ModelEditor\ModelEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

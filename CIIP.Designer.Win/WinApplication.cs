@@ -16,6 +16,9 @@ using CIIP;
 using CIIP.Module.BusinessObjects;
 using DevExpress.ExpressApp.Actions;
 using CIIP.Module.BusinessObjects.SYS;
+using System.Windows.Forms;
+using DevExpress.ExpressApp.Win.Core.ModelEditor;
+using DevExpress.ExpressApp.Utils;
 
 namespace CIIP.Win {
     // For more typical usage scenarios, be sure to check out https://documentation.devexpress.com/eXpressAppFramework/DevExpressExpressAppWinWinApplicationMembersTopicAll.aspx
@@ -25,6 +28,22 @@ namespace CIIP.Win {
             InitializeComponent();
             InitializeDefaults();
         }
+
+        protected override Form CreateModelEditorForm()
+        {
+            ModelEditorViewController controller = new ModelEditorViewController(this.Model, base.CreateUserModelDifferenceStore());
+            ModelDifferenceStore moduleStore = base.CreateModelDifferenceStore();
+            if (moduleStore != null)
+            {
+                List<ModuleDiffStoreInfo> modulesDiffStoreInfo = new List<ModuleDiffStoreInfo> {
+            new ModuleDiffStoreInfo(null, moduleStore, "Model")
+        };
+                controller.SetModuleDiffStore(modulesDiffStoreInfo);
+            }
+            return new ModelEditor.ModelEditorForm(controller, new SettingsStorageOnModel(((IModelApplicationModelEditor)this.Model).ModelEditorSettings));
+
+        }
+
         private void InitializeDefaults()
         {
             LinkNewObjectToParentImmediately = false;
