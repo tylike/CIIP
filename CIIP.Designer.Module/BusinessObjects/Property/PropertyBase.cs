@@ -23,7 +23,6 @@ namespace CIIP.Designer
     [XafDefaultProperty("DisplayName")]
     [Appearance("HiddenAssicationInfo",TargetItems =nameof(AssocicationInfo), Enabled =false,Visibility = ViewItemVisibility.Hide,Criteria = "!IsAssocication")]
     [Appearance("HiddenIsAssocication", TargetItems = nameof(IsAssocication), Enabled = false, Visibility = ViewItemVisibility.Hide, Criteria = "PropertyType is null or !PropertyType.CanCreateAssocication")]
-    //[Appearance("PropertyBase.RelationPropertyStateByAutoCreate", TargetItems = "RelationProperty", Criteria = "AutoCreateRelationProperty", Enabled = false)]
     //对多对时,自动创建是必须的.
     //一对多时,可选手动创建,默认是自动创建.
     public abstract class PropertyBase : NameObject
@@ -106,43 +105,7 @@ namespace CIIP.Designer
             }
         }
         #endregion
-
-        #region 关联属性:一对多或多对多时,两个属性的对应关系.
-        //protected virtual bool RelationPropertyNotNull
-        //{
-        //    get
-        //    {
-        //        return false;
-        //    }
-        //}
-
-        //private PropertyBase _RelationProperty;
-        //[XafDisplayName("关联属性"), DataSourceProperty("RelationPropertyDataSources")]
-        //[RuleRequiredField(TargetCriteria = "RelationPropertyNotNull"), LookupEditorMode(LookupEditorMode.AllItems)]
-        //[ToolTip("一对多或多对多时,两个属性的对应关系.")]
-        //public PropertyBase RelationProperty
-        //{
-        //    get { return _RelationProperty; }
-        //    set
-        //    {
-        //        SetPropertyValue("RelationProperty", ref _RelationProperty, value);
-        //        if (!IsLoading && !IsSaving && value != null)
-        //        {
-        //            if (value.RelationProperty != this)
-        //                value.RelationProperty = this;
-        //        }
-        //    }
-        //}
-
-        //protected virtual List<PropertyBase> RelationPropertyDataSources
-        //{
-        //    get
-        //    {
-        //        return PropertyType?.Properties.Where(x => x.PropertyType == BusinessObject).OfType<PropertyBase>().ToList();
-        //    }
-        //}
-        #endregion
-
+        
         #region 可见性
         [XafDisplayName("可见")]
         [ToolTip("属性在任何位置是否可见")]
@@ -163,16 +126,7 @@ namespace CIIP.Designer
             }
         }
 
-        //protected override void OnChanged(string propertyName, object oldValue, object newValue)
-        //{
-        //    base.OnChanged(propertyName, oldValue, newValue);
-        //    if (IsLoading) return;
-        //    if(propertyName == nameof(Name))
-        //    {
-        //        AssocicationInfo?.CalcName();
-        //        CalcNameCaption();
-        //    }
-        //}
+
         public override void AfterConstruction()
         {
             base.AfterConstruction();
