@@ -173,13 +173,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectBaseViewController.cs" />
     <Compile Include="BusinessObjects\BusinessObject\Modifier.cs" />
     <Compile Include="BusinessObjects\BusinessObject\QuickAddBusinessObject.cs" />
+    <Compile Include="BusinessObjects\Interface\InterfaceViewController.cs" />
     <Compile Include="BusinessObjects\Module\BusinessModule.cs" />
     <Compile Include="BusinessObjects\Project\ReferenceModule.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\AdmiralEnvironment.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\BusinessBuilder.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\BusinessForm.cs" />
+    <Compile Include="BusinessObjects\AdmiralEnvironment.cs" />
+    <Compile Include="BusinessObjects\BusinessBuilder.cs" />
+    <Compile Include="BusinessObjects\FormBuilder\BusinessForm.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObject.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObjectBase.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObjectCodeGenerateExtendesion.cs" />
@@ -194,7 +196,7 @@
     <Compile Include="BusinessObjects\BusinessObject\IDocumentProvider.cs" />
     <Compile Include="BusinessObjects\BusinessObject\ImplementRelation.cs" />
     <Compile Include="BusinessObjects\BusinessObject\InheritsProperty.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\Interface.cs" />
+    <Compile Include="BusinessObjects\Interface\Interface.cs" />
     <Compile Include="BusinessObjects\BusinessObject\IPartCodeProvider.cs" />
     <Compile Include="BusinessObjects\BusinessObject\ITokenList.cs" />
     <Compile Include="BusinessObjects\Code\AccessorModifier.cs" />
@@ -434,6 +436,42 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="UnusableNodes23.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes24.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes25.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes26.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes27.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes28.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes29.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes30.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes31.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes32.xml">
       <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
       <SubType>Designer</SubType>
     </None>

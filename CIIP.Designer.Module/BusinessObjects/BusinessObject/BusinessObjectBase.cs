@@ -150,13 +150,22 @@ namespace CIIP.Designer
             set { SetPropertyValue(nameof(Description), value); }
         }
 
-        [XafDisplayName("基类接口")]
-        [Association, DevExpress.Xpo.Aggregated,EditorAlias("ImplementPropertyEditor")]
-        public XPCollection<ImplementRelation> Implements
+        [XafDisplayName("实现接口")]
+        [Association]
+        public XPCollection<ImplementInterface> ImplementInterfaces
         {
             get
             {
-                return GetCollection<ImplementRelation>(nameof(Implements));
+                return GetCollection<ImplementInterface>(nameof(ImplementInterfaces));
+            }
+        }
+
+        [XafDisplayName("实现接口")]
+        public string ImplementInterfaceNames
+        {
+            get
+            {
+                return string.Join(",", ImplementInterfaces.Select(x => x.ImplementInterfaceInfo.Name));
             }
         }
 
@@ -178,6 +187,14 @@ namespace CIIP.Designer
         }
 
         #endregion
+        [XafDisplayName("参数定义")]
+        public string GenericParameterDefineString
+        {
+            get
+            {
+                return string.Join(",", GenericParameterDefines.Select(x => x.Name));
+            }
+        }
 
         [XafDisplayName("泛型参数定义")]
         [ToolTip("如果需要类型参数时,可以在此定义,可以在属性及业务逻辑中使用!")]
@@ -210,12 +227,29 @@ namespace CIIP.Designer
         {
         }
 
+        //protected override void OnChanged(string propertyName, object oldValue, object newValue)
+        //{
+        //    base.OnChanged(propertyName, oldValue, newValue);
+        //    if(propertyName == nameof(GenericParameterDefines))
+        //    {
+
+        //    }
+        //}
+
         protected override void OnChanged(string propertyName, object oldValue, object newValue)
         {
             base.OnChanged(propertyName, oldValue, newValue);
-            if(propertyName == nameof(GenericParameterDefines))
+            if (!IsLoading && (propertyName == nameof(Name) || propertyName == nameof(Category)))
             {
+                if (this.Category != null)
+                    this.FullName = this.Category.FullName + "." + this.Name;
+                else
+                    this.FullName = this.Name;
 
+                if (propertyName == nameof(Name) && string.IsNullOrEmpty(Caption))
+                {
+                    this.Caption = newValue + "";
+                }
             }
         }
 

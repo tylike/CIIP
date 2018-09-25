@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options Id="Options">
+    <Dashboards Id="Dashboards" DashboardGroupCaption="仪表盘" />
+  </Options>
+  <Views Id="Views">
+    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top">
+      <Columns Id="Columns">
+        <ColumnInfo Id="MasterBusinessObject" Width="82" />
+        <ColumnInfo Id="Oid" Width="82" />
+        <ColumnInfo Id="ImplementBusinessObject" Width="440" />
+      </Columns>
+    </ListView>
+    <DetailView Id="ImplementRelation_DetailView">
+      <Layout Id="Layout">
+        <LayoutItem Id="GenericParameters" ViewItem="GenericParameters" ShowCaption="" Index="0" />
+        <LayoutGroup Id="Main" Removed="True">
+          <LayoutGroup Id="GenericParameters_Group">
+            <LayoutItem Id="GenericParameters" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="ImplementRelation_GenericParameters_ListView" AllowEdit="True" AllowNew="False" AllowDelete="False" IsFooterVisible="True" />
+    <DetailView Id="BusinessForm_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Info">
+            <LayoutGroup Id="高级设置">
+              <LayoutItem Id="ItemBusinessObject.Config" ViewItem="ItemBusinessObject.Config" />
+              <LayoutItem Id="Config" ViewItem="Config" />
+              <LayoutGroup Id="子表设置">
+                <LayoutItem Id="ItemBusinessObject.IsAbstract" ViewItem="ItemBusinessObject.IsAbstract" />
+                <LayoutItem Id="ItemBusinessObject.CanInherits" ViewItem="ItemBusinessObject.CanInherits" />
+              </LayoutGroup>
+              <LayoutGroup Id="主表设置">
+                <LayoutItem Id="IsAbstract" ViewItem="IsAbstract" />
+                <LayoutItem Id="CanInherits" ViewItem="CanInherits" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="常用设置">
+              <LayoutGroup Id="主表设置">
+                <LayoutGroup Id="R1">
+                  <LayoutItem Id="Navigation" ViewItem="NavigationItem" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="BusinessObject_DetailView">
+      <Layout Id="Layout">
+        <TabbedGroup Id="Tab">
+          <LayoutGroup Id="常规">
+            <LayoutGroup Id="派生设置">
+              <LayoutItem Id="Implements" ViewItem="Implements" />
+            </LayoutGroup>
+            <LayoutGroup Id="NameObject">
+              <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="PropertyBase_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="PropertyBase">
+            <LayoutItem Id="RelationProperty" ViewItem="RelationProperty" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

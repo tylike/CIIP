@@ -11,14 +11,12 @@ namespace CIIP.Designer
     /// </summary>
     [Appearance("BOBase.IsGenericParametersVisible", Method = "IsGenericParametersHide", TargetItems = nameof(GenericParameters), Visibility = DevExpress.ExpressApp.Editors.ViewItemVisibility.Hide)]
     [XafDisplayName("继承/实现接口")]
-    public class ImplementRelation : BaseObject
+    public class ImplementInterface : BaseObject
     {
-        public ImplementRelation(Session s) : base(s)
+        public ImplementInterface(Session s) : base(s)
         {
 
         }
-
-
 
         /// <summary>
         /// 主业务对象
@@ -35,17 +33,17 @@ namespace CIIP.Designer
         /// 继承或实现了哪个类/接口
         /// </summary>
         [XafDisplayName("实现")]
-        public BusinessObjectBase ImplementBusinessObject
+        public Interface ImplementInterfaceInfo
         {
-            get { return GetPropertyValue<BusinessObjectBase>(nameof(ImplementBusinessObject)); }
-            set { SetPropertyValue(nameof(ImplementBusinessObject), value); }
+            get { return GetPropertyValue<Interface>(nameof(ImplementInterfaceInfo)); }
+            set { SetPropertyValue(nameof(ImplementInterfaceInfo), value); }
         }
 
-        public static bool IsGenericParametersHide(ImplementRelation ins)
+        public static bool IsGenericParametersHide(ImplementInterface ins)
         {
             if (ins == null) return true;
-            if (ins.ImplementBusinessObject == null) return true;
-            return !(ins.ImplementBusinessObject.GenericParameterDefines.Count > 0);
+            if (ins.ImplementInterfaceInfo == null) return true;
+            return !(ins.ImplementInterfaceInfo.GenericParameterDefines.Count > 0);
         }
 
         /// <summary>

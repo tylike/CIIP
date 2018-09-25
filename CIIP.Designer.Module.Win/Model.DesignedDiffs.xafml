@@ -19,6 +19,27 @@
     <SchemaModule Name="SystemWindowsFormsModule" Version="18.1.6.0" IsNewNode="True" />
   </SchemaModules>
   <Views>
+    <DetailView Id="BusinessObject_DetailView">
+      <Layout>
+        <TabbedGroup Id="Tab">
+          <LayoutGroup Id="常规">
+            <LayoutGroup Id="BusinessObject">
+              <LayoutGroup Id="C11">
+                <LayoutGroup Id="C2">
+                  <LayoutItem Id="ShowImplementInterfaces" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Col1">
+                <LayoutGroup Id="G1">
+                  <LayoutItem Id="ShowGenericParametersListView" TextAlignMode="AutoSize" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </TabbedGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="BusinessObject_LookupListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" />
     <ListView Id="BusinessObjectBase_LookupListView" EditorTypeName="DevExpress.ExpressApp.Win.Editors.GridListEditor" PreviewColumnName="Description">
       <Columns>
         <ColumnInfo Id="Name" Index="0" Width="101" />
@@ -44,6 +65,22 @@
           <LayoutItem Id="IsAssocication" TextAlignMode="AutoSize" ShowCaption="False" />
           <LayoutItem Id="AssocicationInfo" TextAlignMode="AutoSize" SizeConstraintsType="Custom" ShowCaption="False" />
         </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Interface_DetailView">
+      <Layout>
+        <TabbedGroup Id="Tab">
+          <LayoutGroup Id="常规">
+            <LayoutGroup Id="NameObject">
+              <LayoutGroup Id="G1">
+                <LayoutItem Id="ShowImplementInterfaces" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+              <LayoutGroup Id="G2">
+                <LayoutItem Id="ShowGenericParametersListView" TextAlignMode="AutoSize" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </TabbedGroup>
       </Layout>
     </DetailView>
   </Views>

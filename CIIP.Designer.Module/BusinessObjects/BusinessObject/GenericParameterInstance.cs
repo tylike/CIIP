@@ -19,12 +19,12 @@ namespace CIIP.Designer
         //public class ClassName<TItem,MyT> : Form<TItem,客户类型>
         //where MyT : class|interface|类型|接口|enum|delegate 等.
 
-        private ImplementRelation _Owner;
+        private ImplementInterface _Owner;
 
         [Association]
         [XafDisplayName("所属业务对象")]
         [ToolTip("指这个参数实例是在哪个业务对象中定义的")]
-        public ImplementRelation Owner
+        public ImplementInterface Owner
         {
             get { return _Owner; }
             set { SetPropertyValue("Owner", ref _Owner, value); }

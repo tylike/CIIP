@@ -103,54 +103,7 @@ namespace CIIP.Designer
 
         }
 
-        protected override void OnChanged(string propertyName, object oldValue, object newValue)
-        {
-            base.OnChanged(propertyName, oldValue, newValue);
-            if (!IsLoading && (propertyName == nameof(Name) || propertyName == nameof(Category)))
-            {
-                if (this.Category != null)
-                    this.FullName = this.Category.FullName + "." + this.Name;
-                else
-                    this.FullName = this.Name;
 
-                if (propertyName == nameof(Name) && string.IsNullOrEmpty(Caption))
-                {
-                    this.Caption = newValue + "";
-                }
-            }
-            //if (propertyName == "Base" && !IsLoading 
-            //    //&& !DisableCreateGenericParameterValues
-            //    )
-            //{
-            //    Session.Delete(GenericParameterInstances);
-            //    if (newValue != null)
-            //    {
-            //        if (!Base.IsRuntimeDefine)
-            //        {
-            //            var bt = ReflectionHelper.FindType(Base.FullName);
-            //            if (bt.IsGenericType)
-            //            {
-            //                foreach (var item in bt.GetGenericArguments())
-            //                {
-            //                    var gp = new GenericParameterInstance(Session);
-            //                    //gp.Owner = this;
-            //                    gp.Name = item.Name;
-            //                }
-            //            }
-            //        }
-            //        else
-            //        {
-            //            foreach (var gp in Base.GenericParameterInstances)
-            //            {
-            //                var ngp = new GenericParameterInstance(Session);
-            //                ngp.Name = gp.Name;
-            //                ngp.ParameterIndex = gp.ParameterIndex;
-            //                this.GenericParameterInstances.Add(ngp);
-            //            }
-            //        }
-            //    }
-            //}
-        }
 
         public override void AfterConstruction()
         {
@@ -160,10 +113,15 @@ namespace CIIP.Designer
         }
         #endregion
 
+        [DataSourceCriteria("DomainObjectModifier != 'Sealed'")]
+        [XafDisplayName("继承")]
+        public BusinessObject Base
+        {
+            get { return GetPropertyValue<BusinessObject>(nameof(Base)); }
+            set { SetPropertyValue(nameof(Base), value); }
+        }
 
     }
-
-
 
 #warning 需要验证属性名称不可以重名的情况.
 

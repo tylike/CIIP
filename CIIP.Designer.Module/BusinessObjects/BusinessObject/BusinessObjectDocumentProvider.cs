@@ -119,10 +119,10 @@ namespace CIIP.Designer
 
             #region 基类 泛型处理
 
-            var imp = Implements.FirstOrDefault(x => x.ImplementBusinessObject is BusinessObject);
+            var imp = ImplementInterfaces.FirstOrDefault(x => x.ImplementInterfaceInfo is BusinessObject);
             if (imp != null)
             {
-                var impBase = imp.ImplementBusinessObject;
+                var impBase = imp.ImplementInterfaceInfo;
                 if (impBase.IsGenericTypeDefine)
                 {
                     var n = impBase.FullName;

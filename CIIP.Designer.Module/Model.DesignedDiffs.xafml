@@ -200,6 +200,10 @@
       </Layout>
     </DetailView>
     <DetailView Id="BusinessObject_DetailView">
+      <Items>
+        <ActionContainerViewItem Id="ShowGenericParameters" IsNewNode="True" />
+        <ActionContainerViewItem Id="ShowImplementInterfaces" IsNewNode="True" />
+      </Items>
       <Layout>
         <LayoutGroup Id="Main" Removed="True">
           <LayoutGroup Id="SimpleEditors">
@@ -249,22 +253,30 @@
               <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" IsNewNode="True" />
               <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
               <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
-              <LayoutItem Id="NavigationItem" ViewItem="NavigationItem" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutGroup Id="BusinessObject" Index="1" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
-              <LayoutGroup Id="Col2" Index="0" Direction="Horizontal" IsNewNode="True">
-                <LayoutItem Id="DomainObjectModifier" Index="1" ViewItem="DomainObjectModifier" IsNewNode="True" />
-                <LayoutItem Id="GenericParameterDefines" ShowCaption="True" Index="3" ViewItem="GenericParameterDefines" IsNewNode="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="Col1" Index="1" Direction="Horizontal" IsNewNode="True">
+              <LayoutGroup Id="G1" Direction="Horizontal" IsNewNode="True">
                 <LayoutItem Id="IsCloneable" ViewItem="IsCloneable" Index="1" IsNewNode="True" />
                 <LayoutItem Id="IsPersistent" ViewItem="IsPersistent" Index="2" IsNewNode="True" />
                 <LayoutItem Id="IsVisibileInReports" ViewItem="IsVisibileInReports" Index="3" IsNewNode="True" />
                 <LayoutItem Id="IsCreatableItem" ViewItem="IsCreatableItem" Index="4" IsNewNode="True" />
               </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="派生设置" Index="2" IsNewNode="True">
-              <LayoutItem Id="Implements" Index="6" ShowCaption="True" ViewItem="Implements" IsNewNode="True" />
+            <LayoutGroup Id="BusinessObject" Index="1" Direction="Horizontal" ShowCaption="False" Caption="Business Object" IsNewNode="True">
+              <LayoutGroup Id="C11" Direction="Horizontal" Index="0" IsNewNode="True">
+                <LayoutGroup Id="C1" Index="0" IsNewNode="True">
+                  <LayoutItem Id="Base" Index="1" ShowCaption="True" ViewItem="Base" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="C2" Direction="Horizontal" IsNewNode="True">
+                  <LayoutItem Id="ImplementInterfaceNames" ViewItem="ImplementInterfaceNames" Index="2" IsNewNode="True" />
+                  <LayoutItem Id="ShowImplementInterfaces" ViewItem="ShowImplementInterfaces" Index="3" ShowCaption="False" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Col1" Index="1" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="DomainObjectModifier" Index="0" ViewItem="DomainObjectModifier" IsNewNode="True" />
+                <LayoutGroup Id="G1" Direction="Horizontal" IsNewNode="True">
+                  <LayoutItem Id="GenericParameterDefineString" ShowCaption="True" Index="1" ViewItem="GenericParameterDefineString" IsNewNode="True" />
+                  <LayoutItem Id="ShowGenericParametersListView" Index="2" ViewItem="ShowGenericParameters" ShowCaption="False" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
             </LayoutGroup>
             <LayoutGroup Id="Descriptor" Index="3" IsNewNode="True">
               <LayoutItem Id="Descripton" ViewItem="Description" MaxSize="0, 50" SizeConstraintsType="Custom" IsNewNode="True" />
@@ -297,16 +309,25 @@
     <ListView Id="BusinessObject_LookupListView">
       <Columns>
         <ColumnInfo Id="Name" PropertyName="Name" Index="0" IsNewNode="True" />
-        <ColumnInfo Id="Caption" Index="1" />
+        <ColumnInfo Id="Caption" Index="1" Width="129" />
+        <ColumnInfo Id="GenericParameterDefineString" PropertyName="GenericParameterDefineString" Index="2" Width="182" IsNewNode="True" />
+        <ColumnInfo Id="ImplementInterfaceNames" PropertyName="ImplementInterfaceNames" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="IsGenericTypeDefine" PropertyName="IsGenericTypeDefine" Index="4" IsNewNode="True" />
+        <ColumnInfo Id="IsRuntimeDefine" PropertyName="IsRuntimeDefine" Index="5" IsNewNode="True" />
+        <ColumnInfo Id="Category" PropertyName="Category" Index="6" IsNewNode="True" />
+        <ColumnInfo Id="Base" PropertyName="Base" Index="7" IsNewNode="True" />
+        <ColumnInfo Id="DomainObjectModifier" PropertyName="DomainObjectModifier" Index="8" IsNewNode="True" />
+        <ColumnInfo Id="IsPersistent" PropertyName="IsPersistent" Index="9" IsNewNode="True" />
+        <ColumnInfo Id="CanCreateAssocication" PropertyName="CanCreateAssocication" Index="10" IsNewNode="True" />
+        <ColumnInfo Id="IsVisibileInReports" PropertyName="IsVisibileInReports" Index="11" IsNewNode="True" />
+        <ColumnInfo Id="IsCreatableItem" PropertyName="IsCreatableItem" Index="12" IsNewNode="True" />
+        <ColumnInfo Id="IsCloneable" PropertyName="IsCloneable" Index="13" IsNewNode="True" />
+        <ColumnInfo Id="BusinessModule" PropertyName="BusinessModule" Index="14" IsNewNode="True" />
+        <ColumnInfo Id="Description" PropertyName="Description" Index="15" Width="175" IsNewNode="True" />
       </Columns>
     </ListView>
-    <ListView Id="BusinessObjectBase_Implements_ListView" MasterDetailMode="ListViewAndDetailView" AllowEdit="True" IsFooterVisible="True" NewItemRowPosition="Top">
-      <Columns>
-        <ColumnInfo Id="MasterBusinessObject" Width="82" />
-        <ColumnInfo Id="Oid" Width="82" />
-        <ColumnInfo Id="ImplementBusinessObject" Width="440" />
-      </Columns>
-    </ListView>
+    <ListView Id="BusinessObjectBase_GenericParameterDefines_ListView" MasterDetailMode="ListViewAndDetailView" />
+    <ListView Id="BusinessObjectBase_ImplementInterfaces_ListView" MasterDetailMode="ListViewAndDetailView" />
     <ListView Id="BusinessObjectBase_LookupListView">
       <Columns>
         <ColumnInfo Id="Caption" PropertyName="Caption" IsNewNode="True" />
@@ -370,17 +391,70 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <DetailView Id="ImplementRelation_DetailView">
+    <DetailView Id="Interface_DetailView">
+      <Items>
+        <PropertyEditor Id="DomainObjectModifier" AllowEdit="False" Removed="True" />
+        <ActionContainerViewItem Id="ShowGenericParameters" IsNewNode="True" />
+        <ActionContainerViewItem Id="ShowImplementInterfaces" IsNewNode="True" />
+      </Items>
       <Layout>
-        <LayoutItem Id="GenericParameters" ViewItem="GenericParameters" ShowCaption="" Index="0" IsNewNode="True" />
         <LayoutGroup Id="Main" Removed="True">
-          <LayoutGroup Id="GenericParameters_Group">
-            <LayoutItem Id="GenericParameters" Removed="True" />
-          </LayoutGroup>
+          <LayoutItem Id="BusinessModule" ViewItem="BusinessModule" Index="0" IsNewNode="True" />
+          <LayoutItem Id="CanCreateAssocication" ViewItem="CanCreateAssocication" Index="1" IsNewNode="True" />
+          <LayoutItem Id="Caption" ViewItem="Caption" Index="2" IsNewNode="True" />
+          <LayoutItem Id="Category" ViewItem="Category" Index="3" IsNewNode="True" />
+          <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="4" IsNewNode="True" />
+          <LayoutItem Id="Creator" ViewItem="Creator" Index="5" IsNewNode="True" />
+          <LayoutItem Id="DefaultImplement" ViewItem="DefaultImplement" Index="6" IsNewNode="True" />
+          <LayoutItem Id="Description" ViewItem="Description" Index="7" IsNewNode="True" />
+          <LayoutItem Id="DomainObjectModifier" ViewItem="DomainObjectModifier" Index="8" IsNewNode="True" />
+          <LayoutItem Id="FullName" ViewItem="FullName" Index="9" IsNewNode="True" />
+          <LayoutItem Id="GenericParameterDefines" ViewItem="GenericParameterDefines" Index="10" IsNewNode="True" />
+          <LayoutItem Id="GenericParameterDefineString" ViewItem="GenericParameterDefineString" Index="11" IsNewNode="True" />
+          <LayoutItem Id="ImplementInterfaceNames" ViewItem="ImplementInterfaceNames" Index="12" IsNewNode="True" />
+          <LayoutItem Id="ImplementInterfaces" ViewItem="ImplementInterfaces" Index="13" IsNewNode="True" />
+          <LayoutItem Id="IsGenericTypeDefine" ViewItem="IsGenericTypeDefine" Index="14" IsNewNode="True" />
+          <LayoutItem Id="IsRuntimeDefine" ViewItem="IsRuntimeDefine" Index="15" IsNewNode="True" />
+          <LayoutItem Id="Modifier" ViewItem="Modifier" Index="16" IsNewNode="True" />
+          <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="17" IsNewNode="True" />
+          <LayoutItem Id="Name" ViewItem="Name" Index="18" IsNewNode="True" />
+          <LayoutItem Id="Properties" ViewItem="Properties" Index="19" IsNewNode="True" />
         </LayoutGroup>
+        <TabbedGroup Id="Tab" IsNewNode="True">
+          <LayoutGroup Id="常规" Index="0" IsNewNode="True">
+            <LayoutGroup Id="NameObject" Direction="Horizontal" ShowCaption="False" Index="0" IsNewNode="True">
+              <LayoutItem Id="Name" ViewItem="Name" ShowCaption="" Index="0" IsNewNode="True" />
+              <LayoutItem Id="标题" ViewItem="Caption" Index="1" IsNewNode="True" />
+              <LayoutItem Id="Category" ViewItem="Category" Index="2" IsNewNode="True" />
+              <LayoutItem Id="DefaultImplement" ViewItem="DefaultImplement" Index="3" IsNewNode="True" />
+              <LayoutGroup Id="G1" Direction="Horizontal" Index="4" IsNewNode="True">
+                <LayoutItem Id="ImplementInterfaceNames" ViewItem="ImplementInterfaceNames" Index="2" IsNewNode="True" />
+                <LayoutItem Id="ShowImplementInterfaces" ViewItem="ShowImplementInterfaces" Index="3" ShowCaption="False" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="G2" Index="5" Direction="Horizontal" IsNewNode="True">
+                <LayoutItem Id="GenericParameterDefineString" ShowCaption="True" Index="1" ViewItem="GenericParameterDefineString" IsNewNode="True" />
+                <LayoutItem Id="ShowGenericParametersListView" Index="2" ViewItem="ShowGenericParameters" ShowCaption="False" IsNewNode="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Descriptor" Index="3" IsNewNode="True">
+              <LayoutItem Id="Descripton" ViewItem="Description" MaxSize="0, 50" SizeConstraintsType="Custom" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="属性" ToolTip="此业务对象包含的属性(字段)" Index="4" IsNewNode="True">
+              <LayoutItem Id="Properties" ViewItem="Properties" ShowCaption="False" Index="0" CaptionLocation="Top" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="SimpleObject" Index="5" ShowCaption="False" Direction="Horizontal" IsNewNode="True">
+              <LayoutItem Id="Creator" ViewItem="Creator" Index="0" IsNewNode="True" />
+              <LayoutItem Id="Modifier" ViewItem="Modifier" Index="1" IsNewNode="True" />
+              <LayoutItem Id="CreateTime" ViewItem="CreateTime" Index="2" IsNewNode="True" />
+              <LayoutItem Id="ModifyTime" ViewItem="ModifyTime" Index="3" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </TabbedGroup>
       </Layout>
     </DetailView>
-    <ListView Id="ImplementRelation_GenericParameters_ListView" AllowEdit="True" AllowNew="False" AllowDelete="False" IsFooterVisible="True" />
+    <ListView Id="Interface_ListView" MasterDetailMode="ListViewAndDetailView">
+      <SplitLayout Direction="Vertical" />
+    </ListView>
     <ListView Id="Namespace_ListView">
       <Columns>
         <ColumnInfo Id="FullName" Index="-1" />

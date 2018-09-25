@@ -256,17 +256,20 @@
     <Compile Include="Editors\CodeEditor\ColorizeAvalonEdit.cs" />
     <Compile Include="Editors\CodeEditor\CompletionData.cs" />
     <Compile Include="Editors\CodeEditor\Translator.cs" />
+    <Compile Include="Editors\DefaultTokenEditDropDownControlV2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Editors\FrmEditConnectionString.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Editors\FrmEditConnectionString.Designer.cs">
       <DependentUpon>FrmEditConnectionString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editors\TokenEdit\ImplementPropertyEditor.cs" />
     <Compile Include="Editors\ObjectPropertyEditorEx.cs" />
     <Compile Include="Editors\PropertyTypeTokenEditor.cs" />
     <Compile Include="Editors\GenericPropertyEditor.cs" />
-    <Compile Include="Editors\ImplementPropertyEditor.cs" />
-    <Compile Include="Editors\ImplementToken.cs" />
+    <Compile Include="Editors\TokenEdit\ImplementToken.cs" />
     <Compile Include="Editors\IntelligVariantPropertyEditor.cs" />
     <Compile Include="Editors\CodeEditor\SmartIDEWorkspace.cs" />
     <Compile Include="Editors\RadialMenuPropertyEditor.cs" />
@@ -276,6 +279,19 @@
     <Compile Include="Editors\CodeEditor\SmartVisualStudio.Designer.cs">
       <DependentUpon>SmartVisualStudio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Editors\TokenEdit\RepositoryItemTokenEditV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\TokenEdit\TokenEditFilterEventArgs.cs" />
+    <Compile Include="Editors\TokenEdit\TokenEditHandlerV2.cs" />
+    <Compile Include="Editors\TokenEdit\TokenEditPopupFormV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editors\TokenEdit\TokenEditTokenListPopupControllerV2.cs" />
+    <Compile Include="Editors\TokenEdit\TokenEditV2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Editors\TokenEdit\TokenEditViewInfoV2.cs" />
     <Compile Include="ModelEditor\ModelEditorControlEx.cs">
       <SubType>Component</SubType>
     </Compile>
