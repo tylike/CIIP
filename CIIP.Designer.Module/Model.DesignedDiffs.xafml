@@ -33,6 +33,15 @@
       </ActionContainer>
     </ActionToContainerMapping>
   </ActionDesign>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="业务管理" ViewId="BusinessObjectBase_ListView" Caption="业务管理" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
   <Options DataAccessMode="Server">
     <Dashboards DashboardGroupCaption="仪表盘" />
     <LayoutManagerOptions RequiredFieldMark="*" />
@@ -326,8 +335,20 @@
         <ColumnInfo Id="Description" PropertyName="Description" Index="15" Width="175" IsNewNode="True" />
       </Columns>
     </ListView>
+    <DetailView Id="BusinessObjectBase_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" Removed="True" />
+          <LayoutGroup Id="SizeableEditors" Removed="True" />
+          <TabbedGroup Id="Tabs" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <ListView Id="BusinessObjectBase_GenericParameterDefines_ListView" MasterDetailMode="ListViewAndDetailView" />
     <ListView Id="BusinessObjectBase_ImplementInterfaces_ListView" MasterDetailMode="ListViewAndDetailView" />
+    <ListView Id="BusinessObjectBase_ListView" MasterDetailMode="ListViewAndDetailView" Criteria="[SystemCategory] &lt;&gt; ##Enum#CIIP.Designer.SystemCategory,SimpleType#" DataAccessMode="Client">
+      <SplitLayout Direction="Vertical" />
+    </ListView>
     <ListView Id="BusinessObjectBase_LookupListView">
       <Columns>
         <ColumnInfo Id="Caption" PropertyName="Caption" IsNewNode="True" />
@@ -435,6 +456,7 @@
                 <LayoutItem Id="GenericParameterDefineString" ShowCaption="True" Index="1" ViewItem="GenericParameterDefineString" IsNewNode="True" />
                 <LayoutItem Id="ShowGenericParametersListView" Index="2" ViewItem="ShowGenericParameters" ShowCaption="False" IsNewNode="True" />
               </LayoutGroup>
+              <LayoutItem Id="IsRuntimeDefine" ViewItem="IsRuntimeDefine" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="Descriptor" Index="3" IsNewNode="True">
               <LayoutItem Id="Descripton" ViewItem="Description" MaxSize="0, 50" SizeConstraintsType="Custom" IsNewNode="True" />

@@ -142,7 +142,7 @@ namespace CIIP.Module.Win.Editors
             Workspace.AddProject(projInfo);
 
             //取得所有用户定义的业务类型,并生成文档.
-            var businessObjects = this.objectSpace.GetObjects<BusinessObject>(new BinaryOperator("IsRuntimeDefine", true));
+            var businessObjects = this.objectSpace.GetObjectsQuery<BusinessObjectBase>().Where(x => x.IsRuntimeDefine);
 
             CreateAssembyInfoDocument();
             CreateRuntimeModule();

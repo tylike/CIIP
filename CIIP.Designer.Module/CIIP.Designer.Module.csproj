@@ -173,9 +173,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectBaseViewController.cs" />
+    <Compile Include="BusinessObjects\BOBase\BusinessObjectBaseViewController.cs" />
+    <Compile Include="BusinessObjects\BusinessObject\BatchInputBusinessObject.cs" />
+    <Compile Include="BusinessObjects\Interface\ImplementInterface.cs" />
     <Compile Include="BusinessObjects\BusinessObject\Modifier.cs" />
     <Compile Include="BusinessObjects\BusinessObject\QuickAddBusinessObject.cs" />
+    <Compile Include="BusinessObjects\StringBuilderExtend.cs" />
     <Compile Include="BusinessObjects\Interface\InterfaceViewController.cs" />
     <Compile Include="BusinessObjects\Module\BusinessModule.cs" />
     <Compile Include="BusinessObjects\Project\ReferenceModule.cs" />
@@ -183,33 +186,30 @@
     <Compile Include="BusinessObjects\BusinessBuilder.cs" />
     <Compile Include="BusinessObjects\FormBuilder\BusinessForm.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObject.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\BusinessObjectBase.cs" />
+    <Compile Include="BusinessObjects\BOBase\BusinessObjectBase.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObjectCodeGenerateExtendesion.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObjectDocumentProvider.cs" />
     <Compile Include="BusinessObjects\BusinessObject\BusinessObjectQuickAddExtendesion.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\CodeFile.cs" />
+    <Compile Include="BusinessObjects\CodeFile.cs" />
     <Compile Include="BusinessObjects\Project\Project.cs" />
     <Compile Include="BusinessObjects\Property\AssocicationInfo.cs" />
     <Compile Include="BusinessObjects\Property\CollectionProperty.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\GenericParameterDefine.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\GenericParameterInstance.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\IDocumentProvider.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\ImplementRelation.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\InheritsProperty.cs" />
+    <Compile Include="BusinessObjects\Generic\GenericParameterDefine.cs" />
+    <Compile Include="BusinessObjects\Generic\GenericParameterInstance.cs" />
+    <Compile Include="BusinessObjects\IDocumentProvider.cs" />
     <Compile Include="BusinessObjects\Interface\Interface.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\IPartCodeProvider.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\ITokenList.cs" />
+    <Compile Include="BusinessObjects\IPartCodeProvider.cs" />
     <Compile Include="BusinessObjects\Code\AccessorModifier.cs" />
     <Compile Include="BusinessObjects\Code\CsharpCode.cs" />
     <Compile Include="BusinessObjects\Code\CSharpCodeToStringConverter.cs" />
     <Compile Include="BusinessObjects\Code\MethodModifier.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\NameSpace.cs" />
+    <Compile Include="BusinessObjects\Namespace\NameSpace.cs" />
     <Compile Include="BusinessObjects\Property\Editors.cs" />
     <Compile Include="BusinessObjects\Property\PropertyBase.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\RuleRange.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\Solution.cs" />
+    <Compile Include="BusinessObjects\Rule\RuleRange.cs" />
+    <Compile Include="BusinessObjects\Solution.cs" />
     <Compile Include="BusinessObjects\Property\Property.cs" />
-    <Compile Include="BusinessObjects\BusinessObject\SimpleType.cs" />
+    <Compile Include="BusinessObjects\SimpleType\SimpleType.cs" />
     <Compile Include="Controllers\DataInitializeWindowController.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -347,6 +347,10 @@
     <EmbeddedResource Include="Images\PG_Method.jpeg" />
     <EmbeddedResource Include="Images\PG_Namespace.jpeg" />
     <EmbeddedResource Include="Images\PG_Property.jpeg" />
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup />

@@ -1,33 +1,12 @@
 ﻿using System.ComponentModel;
 using DevExpress.Persistent.Base;
-using DevExpress.Xpo;
 using System.Linq;
 using System;
 using System.Text;
 
 namespace CIIP.Designer
 {
-    public static class StringBuilderExtend
-    {
-        public static void ModelDefault(this StringBuilder self, string name,string value)
-        {
-            self.Append($"\t\t[ModelDefault(\"{name}\",\"{value}\")]");
-        }
-        public static void Assocication(this StringBuilder self,string name)
-        {
-            self.AppendFormat("\t\t[{0}(\"{1}\")]", typeof(AssociationAttribute).FullName, name);
-        }
-        public static void Assocication(this StringBuilder self)
-        {
-            self.AppendFormat("\t\t[{0}]", typeof(AssociationAttribute).FullName);
-        }
-
-        public static void Aggregated(this StringBuilder self)
-        {
-            self.Append("\t\t[" + typeof(AggregatedAttribute).FullName + "]");
-        }
-    }
-    public partial class BusinessObject : IDocumentProvider
+    public partial class BusinessObject 
     {
         public Guid GetDocumentGuid()
         {
@@ -39,7 +18,7 @@ namespace CIIP.Designer
             return this.FullName;
         }
 
-        public string GetCode()
+        public override string GetCode()
         {
             var rst = new StringBuilder();
             var True = "True";
@@ -119,14 +98,12 @@ namespace CIIP.Designer
 
             #region 基类 泛型处理
 
-            var imp = ImplementInterfaces.FirstOrDefault(x => x.ImplementInterfaceInfo is BusinessObject);
-            if (imp != null)
+            if (Base != null)
             {
-                var impBase = imp.ImplementInterfaceInfo;
-                if (impBase.IsGenericTypeDefine)
+                if (Base.IsGenericTypeDefine)
                 {
-                    var n = impBase.FullName;
-                    if (impBase.IsRuntimeDefine)
+                    var n = Base.FullName;
+                    if (Base.IsRuntimeDefine)
                     {
                         rst.Append("global::" + n);
                     }
@@ -136,14 +113,16 @@ namespace CIIP.Designer
                     }
 
                     //传入参数
-                    rst.AppendFormat("<{0}>", string.Join(",", imp.GenericParameters.Select(x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
+                    #warning 需要实现范型类型的基类实现.
+                    //rst.AppendFormat("<{0}>", string.Join(",", Base.GenericParameters.Select(x => x.ParameterValue == null ? x.Name : "global::" + x.ParameterValue.FullName).ToArray()));
 
                 }
                 else
                 {
-                    rst.Append("global::" + impBase.FullName);
+                    rst.Append("global::" + Base.FullName);
                 }
             }
+
             #endregion
 
             //where xxxx : xxxx
@@ -227,6 +206,15 @@ $@"     public {type} {name}
 
                 rst.Append(propertyTemplate(pt, item.Name));
             }
+
+            //为接口生成默认实现
+            //1.当前类是接口的默认实现,正准备生成代码.接口.默认实现==this
+
+            //2.当前类要实现接口,使用某个默认实现.
+            foreach (var item in ImplementInterfaces)
+            {
+                
+            }
             #endregion
 
             #region 关联集合
@@ -299,18 +287,4 @@ $@"     public {type} {name}
 
         }
     }
-
-#warning 需要验证属性名称不可以重名的情况.
-
-
-#warning 此功能可以后续实现,当前可以使用复制功能直接copy已有布局
-    // 业务类型上面,使用Attribute指定使用哪个布局模板
-    // 系统起动时,检查所有使用了Attribute的类,遍历并进行更新
-
-    //[LayoutTemplate(typeof(布局模板)] 
-    //泛型参数类型应该是: 某单据,单据明细 两个类型.
-    //这种情况,只支持两种类型,如果基类中有多个类型,就按顺序传入,反射取得,无需处理.
-    //public class 某单据 :  ......
-    //{
-    //}
 }

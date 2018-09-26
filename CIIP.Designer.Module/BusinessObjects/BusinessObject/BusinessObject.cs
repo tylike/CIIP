@@ -121,7 +121,10 @@ namespace CIIP.Designer
             set { SetPropertyValue(nameof(Base), value); }
         }
 
+        public override SystemCategory SystemCategory => SystemCategory.BusinessObject;
     }
+
+    //
 
 #warning 需要验证属性名称不可以重名的情况.
 
