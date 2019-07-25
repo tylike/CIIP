@@ -10,31 +10,31 @@
 <configuration>
   <configSections>
     <sectionGroup name="devExpress">
-      <section name="compression" requirePermission="false" type="DevExpress.Web.CompressionConfigurationSection, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <section name="themes" requirePermission="false" type="DevExpress.Web.ThemesConfigurationSection, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <section name="settings" requirePermission="false" type="DevExpress.Web.SettingsConfigurationSection, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      <section name="compression" requirePermission="false" type="DevExpress.Web.CompressionConfigurationSection, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <section name="themes" requirePermission="false" type="DevExpress.Web.ThemesConfigurationSection, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <section name="settings" requirePermission="false" type="DevExpress.Web.SettingsConfigurationSection, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
     </sectionGroup>
-    <section name="DevExpressXpoProfiler" type="DevExpress.Xpo.Logger.ProfilerConfigSection, DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" allowLocation="true" allowDefinition="Everywhere" />
+    <section name="DevExpressXpoProfiler" type="DevExpress.Xpo.Logger.ProfilerConfigSection, DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" allowLocation="true" allowDefinition="Everywhere"/>
   </configSections>
   <devExpress>
-    <settings rightToLeft="false" doctypeMode="Html5" ieCompatibilityVersion="edge" embedRequiredClientLibraries="true" />
-    <compression enableHtmlCompression="true" enableCallbackCompression="true" enableResourceCompression="true" enableResourceMerging="true" />
-    <themes enableThemesAssembly="true" theme="Office2010Blue" />
+    <settings rightToLeft="false" doctypeMode="Html5" ieCompatibilityVersion="edge" embedRequiredClientLibraries="true"/>
+    <compression enableHtmlCompression="true" enableCallbackCompression="true" enableResourceCompression="true" enableResourceMerging="true"/>
+    <themes enableThemesAssembly="true" theme="Office2010Blue"/>
   </devExpress>
   <appSettings>
-    <add key="Modules" value="" />
-    <add key="ErrorReportEmail" value="" />
-    <add key="ErrorReportEmailServer" value="" />
-    <add key="NewStyle" value="true" />
+    <add key="Modules" value=""/>
+    <add key="ErrorReportEmail" value=""/>
+    <add key="ErrorReportEmailServer" value=""/>
+    <add key="NewStyle" value="true"/>
     <!--
     <add key="ErrorReportEmailSubject" value="{0:ExceptionMessage}"/>
     <add key="ErrorReportEmailFrom" value="null@nospam.com"/>
     <add key="ErrorReportEmailFromName" value="{0:ApplicationName} Error handling system"/>    
     <add key="Languages" value="de;es;ja;ru" />
     -->
-    <add key="SimpleErrorReportPage" value="" />
-    <add key="RichErrorReportPage" value="Error.aspx" />
-    <add key="EnableDiagnosticActions" value="True" />
+    <add key="SimpleErrorReportPage" value=""/>
+    <add key="RichErrorReportPage" value="Error.aspx"/>
+    <add key="EnableDiagnosticActions" value="True"/>
     <!-- 
     Use the one of predefined values: None, ApplicationFolder. The default value is ApplicationFolder.
     <add key="TraceLogLocation" value="ApplicationFolder"/>
@@ -42,8 +42,8 @@
     -->
   </appSettings>
   <connectionStrings>
-    <add name="EasyTestConnectionString" connectionString="Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\v11.0;Initial Catalog=IMatrix.ERPEasyTest" />
-    <add name="ConnectionString" connectionString="Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=CIIP2018" />
+    <add name="EasyTestConnectionString" connectionString="Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\v11.0;Initial Catalog=IMatrix.ERPEasyTest"/>
+    <add name="ConnectionString" connectionString="Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\mssqllocaldb;Initial Catalog=CIIP2018"/>
     <!--<add name="ConnectionString" connectionString="Integrated Security=SSPI;Pooling=false;Data Source=(localdb)\v11.0;Initial Catalog=IMatrix.ERP" />-->
     <!--    
     Use the following connection string to connect to a Jet (Microsoft Access) database that is already created and located in the <application root>/app_data folder. 
@@ -55,7 +55,7 @@
   <system.diagnostics>
     <switches>
       <!-- Use the one of predefined values: 0-Off, 1-Errors, 2-Warnings, 3-Info, 4-Verbose. The default value is 3. -->
-      <add name="eXpressAppFramework" value="3" />
+      <add name="eXpressAppFramework" value="3"/>
       <!--
       <add name="XPO" value="3" />
     -->
@@ -63,17 +63,17 @@
   </system.diagnostics>
   <system.webServer>
     <handlers>
-      <add name="ASPxUploadProgressHandler" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
-      <add name="XafHttpHandler" path="DXX.axd" verb="*" type="DevExpress.ExpressApp.Web.XafHttpHandler, DevExpress.ExpressApp.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
-      <add name="ASPxHttpHandlerModuleXAF" path="DXXRD.axd" verb="GET,POST" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode" />
-      <add name="ASPxWebDocumentViewerHandlerModule" preCondition="integratedMode" verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add name="ASPxQueryBuilderDesignerHandlerModule" preCondition="integratedMode" verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add name="ASPxChartDesignerHandlerModule" preCondition="integratedMode" verb="GET,POST" path="DXXCD.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      <add name="ASPxUploadProgressHandler" verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode"/>
+      <add name="XafHttpHandler" path="DXX.axd" verb="*" type="DevExpress.ExpressApp.Web.XafHttpHandler, DevExpress.ExpressApp.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode"/>
+      <add name="ASPxHttpHandlerModuleXAF" path="DXXRD.axd" verb="GET,POST" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" preCondition="integratedMode"/>
+      <add name="ASPxWebDocumentViewerHandlerModule" preCondition="integratedMode" verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add name="ASPxQueryBuilderDesignerHandlerModule" preCondition="integratedMode" verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add name="ASPxChartDesignerHandlerModule" preCondition="integratedMode" verb="GET,POST" path="DXXCD.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
     </handlers>
-    <validation validateIntegratedModeConfiguration="false" />
+    <validation validateIntegratedModeConfiguration="false"/>
     <modules>
-      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add name="XafHttpModule" type="DevExpress.ExpressApp.Web.XafHttpModule, DevExpress.ExpressApp.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add name="XafHttpModule" type="DevExpress.ExpressApp.Web.XafHttpModule, DevExpress.ExpressApp.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
     </modules>
   </system.webServer>
   <!--
@@ -85,19 +85,19 @@
       </system.Web>
   -->
   <system.web>
-    <httpRuntime />
-    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID" />
+    <httpRuntime/>
+    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID"/>
     <httpHandlers>
-      <add path="DXX.axd" verb="*" type="DevExpress.ExpressApp.Web.XafHttpHandler, DevExpress.ExpressApp.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" validate="false" type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add path="DXXRD.axd" verb="GET,POST" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" validate="false" />
-      <add validate="false" verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add validate="false" verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add validate="false" verb="GET,POST" path="DXXCD.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      <add path="DXX.axd" verb="*" type="DevExpress.ExpressApp.Web.XafHttpHandler, DevExpress.ExpressApp.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add verb="GET,POST" path="ASPxUploadProgressHandlerPage.ashx" validate="false" type="DevExpress.Web.ASPxUploadProgressHttpHandler, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add path="DXXRD.axd" verb="GET,POST" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" validate="false"/>
+      <add validate="false" verb="GET,POST" path="DXXRDV.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add validate="false" verb="GET,POST" path="DXQB.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add validate="false" verb="GET,POST" path="DXXCD.axd" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
     </httpHandlers>
     <httpModules>
-      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-      <add name="XafHttpModule" type="DevExpress.ExpressApp.Web.XafHttpModule, DevExpress.ExpressApp.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+      <add name="ASPxHttpHandlerModule" type="DevExpress.Web.ASPxHttpHandlerModule, DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+      <add name="XafHttpModule" type="DevExpress.ExpressApp.Web.XafHttpModule, DevExpress.ExpressApp.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
     </httpModules>
     <!--
     Set compilation debug="true" to insert debugging
@@ -105,41 +105,41 @@
     affects performance, set this value to true only
     during development.
     -->
-    <compilation debug="true" targetFramework="4.5">
+    <compilation debug="true" targetFramework="4.5.2">
       <assemblies>
-        <add assembly="DevExpress.ExpressApp.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Persistent.Base.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Images.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Printing.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Data.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Utils.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Web.ASPxTreeList.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Web.ASPxThemes.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.Xpo.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Objects.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.FileAttachment.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.HtmlPropertyEditor.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Notifications.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Notifications.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.PivotChart.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.PivotChart.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.PivotGrid.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.PivotGrid.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.ReportsV2.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.ReportsV2.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Scheduler.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Scheduler.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.StateMachine.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.TreeListEditors.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Validation.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.Validation.Web.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.ExpressApp.ViewVariantsModule.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-        <add assembly="DevExpress.RichEdit.v18.1.Core, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+        <add assembly="DevExpress.ExpressApp.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Persistent.Base.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Images.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Web.ASPxTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Web.ASPxThemes.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Objects.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.FileAttachment.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.HtmlPropertyEditor.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Notifications.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Notifications.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.PivotChart.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.PivotChart.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.PivotGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.PivotGrid.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.ReportsV2.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.ReportsV2.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Scheduler.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Scheduler.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.StateMachine.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.TreeListEditors.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.Validation.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.ExpressApp.ViewVariantsModule.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
+        <add assembly="DevExpress.RichEdit.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"/>
       </assemblies>
     </compilation>
     <!--
@@ -147,13 +147,13 @@
     of the security authentication mode used by
     ASP.NET to identify an incoming user.
     -->
-    <identity impersonate="true" />
+    <identity impersonate="true"/>
     <authentication mode="Forms">
-      <forms name="Login" loginUrl="Login.aspx" path="/" timeout="10" />
+      <forms name="Login" loginUrl="Login.aspx" path="/" timeout="10"/>
     </authentication>
     <authorization>
-      <deny users="?" />
-      <allow users="*" />
+      <deny users="?"/>
+      <allow users="*"/>
     </authorization>
     <!--
     The <customErrors> section enables configuration
@@ -172,16 +172,16 @@
   <location path="DXX.axd">
     <system.web>
       <authorization>
-        <allow users="?" />
+        <allow users="?"/>
       </authorization>
     </system.web>
   </location>
   <location path="Error.aspx">
     <system.web>
       <authorization>
-        <allow users="?" />
+        <allow users="?"/>
       </authorization>
     </system.web>
   </location>
-  <DevExpressXpoProfiler serverType="DevExpress.Xpo.Logger.Transport.LogServer" serverAssembly="DevExpress.Xpo.v18.1, Version=18.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" categories="SQL;Session;DataCache" port="52934" />
+  <DevExpressXpoProfiler serverType="DevExpress.Xpo.Logger.Transport.LogServer" serverAssembly="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" categories="SQL;Session;DataCache" port="52934"/>
 </configuration>

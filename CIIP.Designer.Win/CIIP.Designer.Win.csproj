@@ -11,7 +11,7 @@
     <RootNamespace>CIIP.Designer.Win</RootNamespace>
     <AssemblyName>CIIP.Designer.Win</AssemblyName>
     <ApplicationIcon>epr.ico</ApplicationIcon>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -93,77 +93,77 @@
       <HintPath>..\lib\CIIP.Common.dll</HintPath>
     </Reference>
     <Reference Include="CIIP.Common.Win, Version=1.0.6816.29042, Culture=neutral, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.BonusSkins.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraDialogs.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.FileAttachment.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.Images.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.Objects.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.Validation.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.Win.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Persistent.Base.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Persistent.BaseImpl.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraNavBar.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Images.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.BonusSkins.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v19.1.UI, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.FileAttachment.Win.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Win.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Images.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Win.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Validation.Win.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1.UI, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v18.1">
+    <Reference Include="DevExpress.Xpo.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v18.1">
+    <Reference Include="DevExpress.XtraGrid.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v18.1">
+    <Reference Include="DevExpress.XtraBars.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v18.1">
+    <Reference Include="DevExpress.XtraEditors.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v18.1">
+    <Reference Include="DevExpress.XtraLayout.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v18.1">
+    <Reference Include="DevExpress.XtraNavBar.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraPrinting.v18.1">
-      <SpecificVersion>False</SpecificVersion>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Images.v18.1">
+    <Reference Include="DevExpress.XtraPrinting.v19.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Office.v18.1.Core">
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v18.1.Core">
+    <Reference Include="DevExpress.Office.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraRichEdit.v18.1">
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
       <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.XtraRichEdit.v19.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CodeAnalysis.CSharp.Workspaces">
@@ -1136,7 +1136,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <PublishFile Include="DevExpress.XtraPrinting.v18.1">
+    <PublishFile Include="DevExpress.XtraPrinting.v19.1">
       <Visible>False</Visible>
       <Group>
       </Group>
@@ -1146,7 +1146,7 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
-    <PublishFile Include="DevExpress.XtraRichEdit.v18.1">
+    <PublishFile Include="DevExpress.XtraRichEdit.v19.1">
       <Visible>False</Visible>
       <Group>
       </Group>

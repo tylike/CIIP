@@ -12,7 +12,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CIIP.Designer.Web</RootNamespace>
     <AssemblyName>CIIP.Designer.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
@@ -61,143 +61,143 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\CIIP.Common.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.FileAttachment.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.FileAttachment.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.HtmlPropertyEditor.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Notifications.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Notifications.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Notifications.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Notifications.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Objects.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Objects.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotChart.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotChart.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotChart.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotChart.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.PivotGrid.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ReportsV2.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ReportsV2.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ReportsV2.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Scheduler.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Scheduler.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Scheduler.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Scheduler.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Security.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.StateMachine.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Validation.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Validation.Web.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Validation.Web.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v18.1">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Pdf.v18.1.Core">
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v18.1.Export">
+    <Reference Include="DevExpress.RichEdit.v19.1.Export">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v18.1.Core">
+    <Reference Include="DevExpress.Printing.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v18.1">
+    <Reference Include="DevExpress.Data.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v18.1">
+    <Reference Include="DevExpress.ExpressApp.Images.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v18.1">
+    <Reference Include="DevExpress.ExpressApp.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Web.v18.1">
-      <SpecificVersion>False</SpecificVersion>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v18.1">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v18.1">
-      <SpecificVersion>False</SpecificVersion>
-    </Reference>
-    <Reference Include="DevExpress.Spreadsheet.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v18.1">
+    <Reference Include="DevExpress.ExpressApp.Web.v19.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxPivotGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxScheduler.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxSpellChecker.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.ASPxThemes.v18.1">
+    <Reference Include="DevExpress.Persistent.Base.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxTreeList.v18.1">
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v19.1">
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevExpress.Office.v18.1.Core">
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v18.1.Core">
+    <Reference Include="DevExpress.Web.ASPxTreeList.v19.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.v18.1">
+    <Reference Include="DevExpress.RichEdit.v19.1.Core">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v18.1">
+    <Reference Include="DevExpress.Web.v19.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraCharts.v18.1.Web, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.CodeParser.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v18.1.Extensions, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Web.Resources.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v18.1.Web.WebForms, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraReports.v18.1.Web, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v19.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.1.Web, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Extensions, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web.WebForms, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.1.Web, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
